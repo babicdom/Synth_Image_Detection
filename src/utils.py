@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import transforms
+import clip
+import tqdm
 
 import os
 from io import BytesIO
@@ -65,7 +67,7 @@ def get_transforms():
 
 
 def get_loaders(
-    experiment, transforms_train, transforms_val, transforms_test, workers, ds_frac=None
+    experiment, transforms_train, transforms_val, transforms_test, workers, ds_frac=None, target="both"
 ):
     if experiment["training_set"] == "progan":
         generators = get_generators()
@@ -75,6 +77,7 @@ def get_loaders(
                 classes=experiment["classes"],
                 transforms=transforms_train,
                 ds_frac=ds_frac,
+                target=target
             ),
             batch_size=experiment["batch_size"],
             shuffle=True,
@@ -84,7 +87,7 @@ def get_loaders(
         )
         val = DataLoader(
             TrainingDataset(
-                split="val", classes=experiment["classes"], transforms=transforms_val
+                split="val", classes=experiment["classes"], transforms=transforms_val, target=target
             ),
             batch_size=experiment["batch_size"],
             shuffle=False,
@@ -95,7 +98,7 @@ def get_loaders(
     elif experiment["training_set"] == "ldm":
         generators = get_generators("synthbuster")
         train = DataLoader(
-            TrainingDatasetLDM(split="train", transforms=transforms_train),
+            TrainingDatasetLDM(split="train", transforms=transforms_train, target=target),
             batch_size=experiment["batch_size"],
             shuffle=True,
             num_workers=workers,
@@ -103,7 +106,7 @@ def get_loaders(
             drop_last=False,
         )
         val = DataLoader(
-            TrainingDatasetLDM(split="valid", transforms=transforms_val),
+            TrainingDatasetLDM(split="valid", transforms=transforms_val, target=target),
             batch_size=experiment["batch_size"],
             shuffle=False,
             num_workers=workers,
@@ -606,3 +609,80 @@ class SupConLoss(nn.Module):
         loss = loss.view(anchor_count, batch_size).mean()
 
         return loss
+    
+"""
+SID Codebase
+"""
+
+def load_split(experiment, split="train", ds_frac=0.1, target="both"):
+    """
+    Load the dataset split (train, val, test) and apply transformations.
+    """
+    transforms_train, transform_val, transforms_test = get_transforms()
+
+    # Get a batch of images and labels
+    train, val, test = get_loaders(
+        experiment=experiment,
+        transforms_train=transforms_train,
+        transforms_test=transforms_test,
+        transforms_val=transform_val,
+        ds_frac=ds_frac,
+        workers=12,
+        target=target
+    )
+    if split == "train":
+        return train
+    elif split == "val":
+        return val
+    elif split == "test":
+        return test
+    else:
+        raise ValueError("split must be one of train, val, test")
+
+def extract_clip_features(
+        experiment,
+        split="train",
+        ds_frac=0.1,
+        device=None,
+        target="both"
+):
+    dl = load_split(experiment, split=split, ds_frac=ds_frac, target=target)
+    print("Num. of images in the dataset:", len(dl.dataset))
+    print("Num. of batches in the dataloader:", len(dl))
+
+    # Get the CLIP model and preprocess function
+    # TODO: fix loading
+    model = clip.load(experiment["backbone"][0], device=device)[0]
+    model.to(device)
+
+    features = []
+    labels = []
+    # Get the features
+    with torch.no_grad():
+        for data in tqdm.tqdm(dl):
+            images, label = data
+            images = images.to(device)
+            feature = model.encode_image(images)
+            features.append(feature.to(device))
+            labels.append(label.to(device))
+    features = torch.cat(features, dim=0).to(device)
+    labels = torch.cat(labels, dim=0).to(device)
+
+    return features, labels
+
+def train_flow_experiment(
+    experiment,
+    epochss,
+    epochs_reduce_lr,
+    transforms_train,
+    transforms_val,
+    transforms_test,
+    workers,
+    device,
+    without=None,  # None, contrastive, alpha, intermediate
+    store=False,
+    ds_frac=None,
+):
+    seed_everything(0)
+
+    # TODO: Implement the function to train the flow experiment

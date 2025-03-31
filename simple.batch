@@ -1,4 +1,0 @@
-#!/bin/sh
-
-srun -l /bin/hostname
-srun - /bin/pwd

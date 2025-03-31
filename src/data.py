@@ -9,7 +9,7 @@ from src.perturbation import perturbation
 MAIN_DIR = "/mnt/personal/babicdom"
 
 class TrainingDataset(Dataset):
-    def __init__(self, split, classes=None, transforms=None, ds_frac=None):
+    def __init__(self, split, classes=None, transforms=None, ds_frac=None, target="both"):
         self.real = [
             (f"{MAIN_DIR}/data/{split}/{y}/0_real/{x}", 0)
             for y in classes
@@ -21,7 +21,15 @@ class TrainingDataset(Dataset):
             for x in os.listdir(f"{MAIN_DIR}/data/{split}/{y}/1_fake")
         ]
 
-        self.images = self.real + self.fake
+        if target == "both":
+            self.images = self.real + self.fake
+        elif target == "real":
+            self.images = self.real
+        elif target == "fake":
+            self.images == self.fake
+        else:
+            raise TypeError('Specify the target data.')
+        
         random.shuffle(self.images)
         if ds_frac is not None:
             self.images = self.images[: int(len(self.images) * ds_frac)]
@@ -43,7 +51,7 @@ class TrainingDataset(Dataset):
 
 
 class TrainingDatasetLDM(Dataset):
-    def __init__(self, split, transforms=None):
+    def __init__(self, split, transforms=None, target="both"):
         self.real = [
             (f"{MAIN_DIR}/data/train/{x.split('_')[0]}/0_real/{x.split('_')[1]}", 0)
             for x in pd.read_csv(
@@ -74,7 +82,14 @@ class TrainingDatasetLDM(Dataset):
             if os.path.isdir(f"{fake_dir}{split}/{x}")
             for y in os.listdir(f"{fake_dir}{split}/{x}")
         ]
-        self.images = self.real + self.fake
+        if target == "both":
+            self.images = self.real + self.fake
+        elif target == "real":
+            self.images = self.real
+        elif target == "fake":
+            self.images == self.fake
+        else:
+            raise TypeError('Specify the target data.')
         random.shuffle(self.images)
 
         self.transforms = transforms
