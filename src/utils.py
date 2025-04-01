@@ -644,31 +644,66 @@ def extract_clip_features(
         split="train",
         ds_frac=0.1,
         device=None,
-        target="both"
+        target="both",
+        save=False,
 ):
-    dl = load_split(experiment, split=split, ds_frac=ds_frac, target=target)
-    print("Num. of images in the dataset:", len(dl.dataset))
-    print("Num. of batches in the dataloader:", len(dl))
-
     # Get the CLIP model and preprocess function
-    # TODO: fix loading
     model = clip.load(experiment["backbone"][0], device=device)[0]
     model.to(device)
+    model.eval()    
 
+    # Dataloader
+    dl = load_split(experiment, split=split, ds_frac=ds_frac, target=target)
+    
     features = []
     labels = []
     # Get the features
     with torch.no_grad():
-        for data in tqdm.tqdm(dl):
+        for data in tqdm.tqdm(dl, desc="Extracting features"):
             images, label = data
             images = images.to(device)
             feature = model.encode_image(images)
             features.append(feature.to(device))
             labels.append(label.to(device))
-    features = torch.cat(features, dim=0).to(device)
-    labels = torch.cat(labels, dim=0).to(device)
+    features = torch.cat(features, dim=0).cpu()
+    labels = torch.cat(labels, dim=0).cpu()
+
+    if save:
+        os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}", exist_ok=True)
+        torch.save(features, f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
+        print("Saved features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
 
     return features, labels
+
+def get_clip_features(
+        mode="train",
+        experiment=None,
+        split="train",
+        ds_frac=0.1,
+        device=None,
+        target="both",
+        save=False,
+):
+    """
+    Get the CLIP features for the dataset.
+    """
+    if mode == "train":
+        return extract_clip_features(
+            experiment=experiment,
+            split=split,
+            ds_frac=ds_frac,
+            device=device,
+            target=target,
+            save=save,
+        )
+    elif mode == "load":
+        # Load the features from disk
+        path = f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt"
+        features = torch.load(path)
+        return features, None
+    else:
+        raise ValueError("mode must be one of train, load")
+    
 
 def train_flow_experiment(
     experiment,

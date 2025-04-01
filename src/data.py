@@ -26,7 +26,7 @@ class TrainingDataset(Dataset):
         elif target == "real":
             self.images = self.real
         elif target == "fake":
-            self.images == self.fake
+            self.images = self.fake
         else:
             raise TypeError('Specify the target data.')
         

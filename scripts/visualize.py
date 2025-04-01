@@ -1,4 +1,4 @@
-from src.utils import extract_clip_features
+from src.utils import get_clip_features
 import os
 import torch
 from sklearn.manifold import TSNE
@@ -6,36 +6,32 @@ import matplotlib.pyplot as plt
 
 MAIN_DIR = "/mnt/personal/babicdom"
 
-def visualize_features_tsne(experiment, split="train", ds_frac=0.1, device=None):
+def visualize_features_tsne(experiment, mode="load", split="train", ds_frac=0.1, device=None, save=True):
     """
     Visualize the features of the dataset using the CLIP model.
     """
-    real_features, _ = extract_clip_features(
+    real_features, _ = get_clip_features(
+        mode=mode,
         experiment=experiment,
         split=split,
         ds_frac=ds_frac,
         device=device,
         target="real",
+        save=save,
     )
 
-    fake_features, _ = extract_clip_features(
+    fake_features, _ = get_clip_features(
+        mode=mode,
         experiment=experiment,
         split=split,
         ds_frac=ds_frac,
         device=device,
         target="fake",
+        save=save,
     )
 
-    if not os.path.exists(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}"):
-        os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/0_real")
-        os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/1_fake")
-  
-    # Save the features and labels
-    torch.save(real_features, f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/0_real/features.pt")
-    print("Saved real features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/0_real/features.pt")
-    torch.save(fake_features, f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/1_fake/features.pt")
-    print("Saved fake features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/1_fake/features.pt")
-
+    print("Real features shape:", real_features.shape)
+    print("Fake features shape:", fake_features.shape)
     # Get the t-SNE representation
     tsne = TSNE(n_components=2).fit(real_features)
     real_images = tsne.transform(real_features)
@@ -51,8 +47,7 @@ def visualize_features_tsne(experiment, split="train", ds_frac=0.1, device=None)
     plt.ylabel("t-SNE component 2")
     
     # Saving plots and features
-    if not os.path.exists(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}"):
-        os.makedirs(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}")
+    os.makedirs(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}", exist_ok=True)
   
     # Save the t-SNE plot
     plt.savefig(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}/tsne.png")    
@@ -70,8 +65,10 @@ if __name__ == "__main__":
     }
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     visualize_features_tsne(
-        experiment=experiment, 
+        experiment=experiment,
+        mode="load",
         device=device, 
         split="train", 
-        ds_frac=1
+        ds_frac=1,
+        save=True,
         )

@@ -3,3 +3,4 @@ script.sh
 **/*.pyc
 **/*.pyo
 **/*.pyd
+/results/features/*
