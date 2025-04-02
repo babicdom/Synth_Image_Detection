@@ -1,6 +1,7 @@
-script.sh
 **/__pycache__/
 **/*.pyc
 **/*.pyo
 **/*.pyd
 /results/features/*
+*.sh
+*.batch
