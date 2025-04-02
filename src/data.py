@@ -87,7 +87,7 @@ class TrainingDatasetLDM(Dataset):
         elif target == "real":
             self.images = self.real
         elif target == "fake":
-            self.images == self.fake
+            self.images = self.fake
         else:
             raise TypeError('Specify the target data.')
         random.shuffle(self.images)
@@ -109,7 +109,7 @@ class TrainingDatasetLDM(Dataset):
 
 
 class EvaluationDataset(Dataset):
-    def __init__(self, generator, transforms=None, perturb=None):
+    def __init__(self, generator, transforms=None, perturb=None, target="both"):
         if generator in ["cyclegan", "progan", "stylegan", "stylegan2"]:
             self.real = [
                 (f"{MAIN_DIR}/data/test/{generator}/{y}/0_real/{x}", 0)
@@ -190,7 +190,14 @@ class EvaluationDataset(Dataset):
             #     if all([y not in x for y in [".txt", ".py"]])
             # ]
 
-        self.images = self.real + self.fake
+        if target == "both":
+            self.images = self.real + self.fake
+        elif target == "real":
+            self.images = self.real
+        elif target == "fake":
+            self.images = self.fake
+        else:
+            raise TypeError('Specify the target data.')
 
         self.transforms = transforms
         self.perturb = perturb
@@ -211,4 +218,49 @@ class EvaluationDataset(Dataset):
                 image = perturbation(self.perturb)(image)
             else:
                 image = self.transforms(image)
+        return [image, target]
+
+
+FEAT_DIR = "~/SID/results/features"
+
+class TrainFeatureDataset(Dataset):
+    def __init__(self, split, classes=None, ds_frac=None, target="both"):
+        self.real = [(x, 0) for x in torch.cat(
+            [
+                torch.load(f"{FEAT_DIR}/{split}/{y}/real/features.pt")
+                for y in classes
+            ]
+        )]
+
+        self.fake = [(x, 1) for x in torch.cat(
+            [
+                torch.load(f"{FEAT_DIR}/{split}/{y}/fake/features.pt")
+                for y in classes
+            ]
+        )]
+
+        if target == "both":
+            self.features = self.real + self.fake
+        elif target == "real":
+            self.features = self.real
+        elif target == "fake":
+            self.features = self.fake
+        else:
+            raise TypeError('Specify the target data.')
+        
+        random.shuffle(self.features)
+        if ds_frac is not None:
+            self.features = self.features[: int(len(self.features) * ds_frac)]
+
+    def __len__(self):
+        return len(self.features)
+
+    def __getitem__(self, idx):
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+
+        image_path, target = self.features[idx]
+        image = Image.open(image_path).convert("RGB")
+        if self.transforms is not None:
+            image = self.transforms(image)
         return [image, target]

@@ -139,7 +139,7 @@ def get_loader(
             (
                 g,
                 DataLoader(
-                    EvaluationDataset(g, transforms=transforms),
+                    EvaluationDataset(g, transforms=transforms, target=target),
                     batch_size=(
                         experiment["batch_size"]
                         if experiment["training_set"] == "progan"
@@ -666,6 +666,9 @@ SID Codebase
 
 def extract_clip_features(
         experiment,
+        dl=None,
+        model=None,
+        preprocess=None,
         split="train",
         ds_frac=0.1,
         device=None,
@@ -673,21 +676,24 @@ def extract_clip_features(
         save=False,
         workers=12,
 ):
-    # Get the CLIP model and preprocess function
-    model = clip.load(experiment["backbone"][0], device=device)[0]
+    """
+    Extract CLIP features for the dataset.
+    """
+    if model is None:
+        model, preprocess = clip.load(experiment["backbone"][0], device=device)
     model.to(device)
     model.eval()    
 
     # Dataloader
-    transforms = get_transform(split)
-    dl = get_loader(
-        experiment=experiment,
-        split=split,
-        transforms=transforms,
-        workers=workers,
-        ds_frac=ds_frac,
-        target=target
-    )
+    if dl is None:
+        dl = get_loader(
+            experiment=experiment,
+            split=split,
+            transforms=preprocess,
+            workers=workers,
+            ds_frac=ds_frac,
+            target=target
+        )
     
     features = []
     labels = []
@@ -699,8 +705,8 @@ def extract_clip_features(
             feature = model.encode_image(images)
             features.append(feature.to(device))
             labels.append(label.to(device))
-    features = torch.cat(features, dim=0).cpu()
-    labels = torch.cat(labels, dim=0).cpu()
+        features = torch.cat(features, dim=0).cpu()
+        labels = torch.cat(labels, dim=0).cpu()
 
     if save:
         os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}", exist_ok=True)
@@ -708,36 +714,6 @@ def extract_clip_features(
         print("Saved features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
 
     return features, labels
-
-def get_clip_features(
-        mode="extract",
-        experiment=None,
-        split="train",
-        ds_frac=0.1,
-        device=None,
-        target="both",
-        save=False,
-):
-    """
-    Get the CLIP features for the dataset.
-    """
-    if mode == "extract":
-        return extract_clip_features(
-            experiment=experiment,
-            split=split,
-            ds_frac=ds_frac,
-            device=device,
-            target=target,
-            save=save,
-        )
-    elif mode == "load":
-        # Load the features from disk
-        path = f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt"
-        features = torch.load(path)
-        return features, None
-    else:
-        raise ValueError("mode must be one of train, load")
-    
 
 def train_flow_experiment(
     experiment,
