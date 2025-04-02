@@ -259,8 +259,4 @@ class TrainFeatureDataset(Dataset):
         if torch.is_tensor(idx):
             idx = idx.tolist()
 
-        image_path, target = self.features[idx]
-        image = Image.open(image_path).convert("RGB")
-        if self.transforms is not None:
-            image = self.transforms(image)
-        return [image, target]
+        return self.features[idx]

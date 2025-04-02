@@ -1,4 +1,3 @@
-from src.utils import get_clip_features
 import os
 import torch
 from sklearn.manifold import TSNE
@@ -38,7 +37,7 @@ def visualize_features_tsne(experiment, split="train"):
     pca_features = PCA(n_components=50).fit_transform(combined_features)
     print("PCA features shape:", pca_features.shape)
     # Apply t-SNE
-    tsne = TSNE(n_components=2, perplexity=30, max_iter=1000, random_state=42, verbose=3)
+    tsne = TSNE(n_components=2, perplexity=30, random_state=42, verbose=3)
     tsne_results = tsne.fit_transform(combined_features)
 
     # Plot the t-SNE representation
@@ -60,7 +59,7 @@ def visualize_features_tsne(experiment, split="train"):
 
 if __name__ == "__main__":
     experiment = {
-        "classes": ["horse", "chair"], # os.listdir(f"{MAIN_DIR}/data/train/"),
+        "classes": ["horse"], # os.listdir(f"{MAIN_DIR}/data/train/"),
         "savpath": f"results/visualize/tsne",
         "featpath": "results/features",
     }
