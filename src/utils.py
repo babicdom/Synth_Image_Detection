@@ -24,116 +24,166 @@ from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
 from src.models import Model
 from src.ablations import ModelAblations
 
-
+def get_transform(split="train"):
+    if split == "train":
+        return transforms.Compose(
+            [
+                transforms.Lambda(lambda img: data_augment(img)),
+                transforms.RandomCrop(224),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "val":
+        return transforms.Compose(
+            [
+                transforms.CenterCrop(224),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "test":
+        return transforms.Compose(
+            [
+                transforms.TenCrop(224),
+                transforms.Lambda(
+                    lambda crops: torch.stack(
+                        [transforms.PILToTensor()(crop) for crop in crops]
+                    )
+                ),
+                transforms.Lambda(lambda x: x / 255),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    else:
+        raise ValueError("split must be one of train, val, test")
+    
 def get_transforms():
-    transforms_train = transforms.Compose(
-        [
-            transforms.Lambda(lambda img: data_augment(img)),
-            transforms.RandomCrop(224),
-            transforms.RandomHorizontalFlip(p=0.5),
-            transforms.ToTensor(),
-            transforms.Normalize(
-                mean=(0.48145466, 0.4578275, 0.40821073),
-                std=(0.26862954, 0.26130258, 0.27577711),
-            ),
-        ]
-    )
-    transforms_test_1 = transforms.Compose(
-        [
-            transforms.CenterCrop(224),
-            transforms.ToTensor(),
-            transforms.Normalize(
-                mean=(0.48145466, 0.4578275, 0.40821073),
-                std=(0.26862954, 0.26130258, 0.27577711),
-            ),
-        ]
-    )
-    transforms_test_2 = transforms.Compose(
-        [
-            transforms.TenCrop(224),
-            transforms.Lambda(
-                lambda crops: torch.stack(
-                    [transforms.PILToTensor()(crop) for crop in crops]
-                )
-            ),
-            transforms.Lambda(lambda x: x / 255),
-            transforms.Normalize(
-                mean=(0.48145466, 0.4578275, 0.40821073),
-                std=(0.26862954, 0.26130258, 0.27577711),
-            ),
-        ]
-    )
-    return transforms_train, transforms_test_1, transforms_test_2
+    transforms_train = get_transform("train")
+    transforms_val = get_transform("val")
+    transforms_test = get_transform("test")
+    return transforms_train, transforms_val, transforms_test
 
-
-def get_loaders(
-    experiment, transforms_train, transforms_val, transforms_test, workers, ds_frac=None, target="both"
+def get_loader(
+    experiment, split, transforms, workers, ds_frac=None, target="both"
 ):
     if experiment["training_set"] == "progan":
         generators = get_generators()
-        train = DataLoader(
-            TrainingDataset(
-                split="train",
-                classes=experiment["classes"],
-                transforms=transforms_train,
-                ds_frac=ds_frac,
-                target=target
-            ),
-            batch_size=experiment["batch_size"],
-            shuffle=True,
-            num_workers=workers,
-            pin_memory=True,
-            drop_last=False,
-        )
-        val = DataLoader(
-            TrainingDataset(
-                split="val", classes=experiment["classes"], transforms=transforms_val, target=target
-            ),
-            batch_size=experiment["batch_size"],
-            shuffle=False,
-            num_workers=workers,
-            pin_memory=True,
-            drop_last=False,
-        )
+        if split == "train":
+            return DataLoader(
+                    TrainingDataset(
+                        split="train",
+                        classes=experiment["classes"],
+                        transforms=transforms,
+                        ds_frac=ds_frac,
+                        target=target
+                    ),
+                    batch_size=experiment["batch_size"],
+                    shuffle=True,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False,
+                )
+        if split == "val":
+            return DataLoader(
+                    TrainingDataset(
+                        split="val", 
+                        classes=experiment["classes"], 
+                        transforms=transforms, 
+                        target=target
+                    ),
+                    batch_size=experiment["batch_size"],
+                    shuffle=False,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False,
+                )
     elif experiment["training_set"] == "ldm":
         generators = get_generators("synthbuster")
-        train = DataLoader(
-            TrainingDatasetLDM(split="train", transforms=transforms_train, target=target),
-            batch_size=experiment["batch_size"],
-            shuffle=True,
-            num_workers=workers,
-            pin_memory=True,
-            drop_last=False,
-        )
-        val = DataLoader(
-            TrainingDatasetLDM(split="valid", transforms=transforms_val, target=target),
-            batch_size=experiment["batch_size"],
-            shuffle=False,
-            num_workers=workers,
-            pin_memory=True,
-            drop_last=False,
-        )
-
-    test = [
-        (
-            g,
-            DataLoader(
-                EvaluationDataset(g, transforms=transforms_test),
-                batch_size=(
-                    experiment["batch_size"]
-                    if experiment["training_set"] == "progan"
-                    else 16
+        if split == "train":
+            return DataLoader(
+                    TrainingDatasetLDM(
+                        split="train", 
+                        transforms=transforms, 
+                        target=target),
+                    batch_size=experiment["batch_size"],
+                    shuffle=True,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False,
+                )
+        if split == "val":
+            return DataLoader(
+                    TrainingDatasetLDM(
+                        split="valid", 
+                        transforms=transforms, 
+                        target=target),
+                    batch_size=experiment["batch_size"],
+                    shuffle=False,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False,
+                )
+    if split == "test":
+        return [
+            (
+                g,
+                DataLoader(
+                    EvaluationDataset(g, transforms=transforms),
+                    batch_size=(
+                        experiment["batch_size"]
+                        if experiment["training_set"] == "progan"
+                        else 16
+                    ),
+                    shuffle=False,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False,
                 ),
-                shuffle=False,
-                num_workers=workers,
-                pin_memory=True,
-                drop_last=False,
-            ),
-        )
-        for g in generators
-    ]
+            )
+            for g in generators
+        ]
+    else:
+        raise ValueError("split must be one of train, val, test")
+    
+def get_loaders(
+    experiment, transforms_train, transforms_val, transforms_test, workers, ds_frac=None, target="both"
+):
+    train = get_loader(
+        experiment,
+        split="train",
+        transforms=transforms_train,
+        workers=workers,
+        ds_frac=ds_frac,
+        target=target
+    )
+    val = get_loader(
+        experiment,
+        split="val",
+        transforms=transforms_val,
+        workers=workers,
+        ds_frac=ds_frac,
+        target=target
+    )
+    test = get_loader(
+        experiment,
+        split="test",
+        transforms=transforms_test,
+        workers=workers,
+        ds_frac=ds_frac,
+        target=target
+    )
     return train, val, test
-
 
 def train_one_experiment(
     experiment,
@@ -614,31 +664,6 @@ class SupConLoss(nn.Module):
 SID Codebase
 """
 
-def load_split(experiment, split="train", ds_frac=0.1, target="both"):
-    """
-    Load the dataset split (train, val, test) and apply transformations.
-    """
-    transforms_train, transform_val, transforms_test = get_transforms()
-
-    # Get a batch of images and labels
-    train, val, test = get_loaders(
-        experiment=experiment,
-        transforms_train=transforms_train,
-        transforms_test=transforms_test,
-        transforms_val=transform_val,
-        ds_frac=ds_frac,
-        workers=12,
-        target=target
-    )
-    if split == "train":
-        return train
-    elif split == "val":
-        return val
-    elif split == "test":
-        return test
-    else:
-        raise ValueError("split must be one of train, val, test")
-
 def extract_clip_features(
         experiment,
         split="train",
@@ -646,6 +671,7 @@ def extract_clip_features(
         device=None,
         target="both",
         save=False,
+        workers=12,
 ):
     # Get the CLIP model and preprocess function
     model = clip.load(experiment["backbone"][0], device=device)[0]
@@ -653,7 +679,15 @@ def extract_clip_features(
     model.eval()    
 
     # Dataloader
-    dl = load_split(experiment, split=split, ds_frac=ds_frac, target=target)
+    transforms = get_transform(split)
+    dl = get_loader(
+        experiment=experiment,
+        split=split,
+        transforms=transforms,
+        workers=workers,
+        ds_frac=ds_frac,
+        target=target
+    )
     
     features = []
     labels = []
@@ -676,7 +710,7 @@ def extract_clip_features(
     return features, labels
 
 def get_clip_features(
-        mode="train",
+        mode="extract",
         experiment=None,
         split="train",
         ds_frac=0.1,
@@ -687,7 +721,7 @@ def get_clip_features(
     """
     Get the CLIP features for the dataset.
     """
-    if mode == "train":
+    if mode == "extract":
         return extract_clip_features(
             experiment=experiment,
             split=split,
@@ -720,4 +754,5 @@ def train_flow_experiment(
 ):
     seed_everything(0)
 
-    # TODO: Implement the function to train the flow experiment
+    
+    

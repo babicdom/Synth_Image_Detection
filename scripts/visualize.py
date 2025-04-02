@@ -33,7 +33,7 @@ def visualize_features_tsne(experiment, mode="load", split="train", ds_frac=0.1,
     print("Real features shape:", real_features.shape)
     print("Fake features shape:", fake_features.shape)
     # Get the t-SNE representation
-    tsne = TSNE(n_components=2).fit(real_features)
+    tsne = TSNE(n_components=2, verbose=1).fit(real_features)
     real_images = tsne.transform(real_features)
     fake_images = tsne.transform(fake_features)
 
