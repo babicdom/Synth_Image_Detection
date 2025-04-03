@@ -221,9 +221,9 @@ class EvaluationDataset(Dataset):
         return [image, target]
 
 
-FEAT_DIR = "~/SID/results/features"
+FEAT_DIR = "/home/babicdom/SID/results/features"
 
-class TrainFeatureDataset(Dataset):
+class FeatureDataset(Dataset):
     def __init__(self, split, classes=None, ds_frac=None, target="both"):
         self.real = [(x, 0) for x in torch.cat(
             [

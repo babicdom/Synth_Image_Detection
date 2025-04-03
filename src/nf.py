@@ -273,6 +273,7 @@ class MiniGlow(nn.Module):
         for m in self.transforms[1:]:
             z, ld_layer = m(z)
             log_abs_det += ld_layer
+
         log_pz = self.z_dist().log_prob(z).sum(-1)
         log_px = (log_pz + log_abs_det) / self.input_dim
         return log_px
@@ -304,12 +305,10 @@ if __name__ == '__main__':
     prelogits = torch.randn(1000, 256)
     # z = nf(prelogits)
     ln_px = nf.log_prob(prelogits)
-    print(- ln_px)
+    print(- ln_px.mean())
     print(nf.sample(2).shape)
 
     x = torch.randn(1000, 256) * 100
     z = nf.forward(x)
     x_ = nf.inverse(z)
     print((x - x_).abs().max())
-    
-

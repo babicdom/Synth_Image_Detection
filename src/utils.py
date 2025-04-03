@@ -20,9 +20,12 @@ from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
 from sklearn.metrics import accuracy_score, average_precision_score
 
-from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
+from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, FeatureDataset
 from src.models import Model
 from src.ablations import ModelAblations
+from src.nf import MiniGlow, NormalizingFlow
+
+import matplotlib.pyplot as plt
 
 def get_transform(split="train"):
     if split == "train":
@@ -715,20 +718,131 @@ def extract_clip_features(
 
     return features, labels
 
+def get_feature_loader(
+        experiment, split, workers, ds_frac=None, target="both"
+):
+    classes = experiment["classes"] if split not in "test" else get_generators(experiment["training_set"])
+    return DataLoader(
+            FeatureDataset(
+                split=split,
+                classes=classes,
+                ds_frac=ds_frac,
+                target=target
+            ),
+            batch_size=experiment["batch_size"],
+            shuffle=True,
+            num_workers=workers,
+            pin_memory=True,
+            drop_last=False
+        )
+
 def train_flow_experiment(
     experiment,
     epochss,
     epochs_reduce_lr,
-    transforms_train,
-    transforms_val,
-    transforms_test,
     workers,
     device,
-    without=None,  # None, contrastive, alpha, intermediate
     store=False,
     ds_frac=None,
 ):
     seed_everything(0)
 
+    train = get_feature_loader(experiment=experiment, split="train", workers=workers, ds_frac=ds_frac, target="real")
+    val = get_feature_loader(experiment=experiment, split="val", workers=workers, ds_frac=ds_frac, target="both")
+    test = get_feature_loader(experiment=experiment, split="test", workers=workers, ds_frac=ds_frac, target="both")
+    input_dim = len(train.dataset.features[0][0])
+
+    if experiment["flow"] in "nf":
+        model = NormalizingFlow(
+            input_dim=input_dim,
+            num_steps=experiment["num_steps"]
+        )
+    elif experiment["flow"] in "glow":
+        model = MiniGlow(
+            input_dim=input_dim,
+            num_steps=experiment["num_steps"]
+        )
+    else:
+        raise ValueError("Flow type not supported")
+    model.to(device)
+
+    optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
     
-    
+    print(json.dumps(experiment, indent=2))
+    results = {"val_loss": [], "val_acc": [], "test": {}}
+
+    train_loss = []
+    rlr = 0
+    for epoch in range(max(epochss)):
+        if epoch + 1 in epochs_reduce_lr:
+            rlr += 1
+            optimizer.param_groups[0]["lr"] = experiment["lr"] / 10**rlr
+        
+        model.train()
+
+        with tqdm.tqdm(
+                total=len(train),
+                desc=f"Epoch {epoch + 1}/{max(epochss)}",
+                unit="batch",
+                ncols=100,
+            ) as pbar:
+            pbar.set_postfix({
+                "loss": torch.inf
+            })
+            for data in train:
+                features, _ = data
+                features = features.float().to(device)
+                loss = - model.log_prob(features).mean(axis=0)
+                train_loss.append(loss.item())
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+                pbar.set_postfix({
+                    "loss": loss.item()
+                })
+                pbar.update(1)
+            pbar.close()
+        
+        # Validation
+        model.eval()
+        y_true = []
+        y_score = []
+        val_loss = 0
+
+        with torch.no_grad():
+            with tqdm.tqdm(
+                total=len(val),
+                desc="Validation",
+                unit="batch",
+                ncols=100
+            ) as pbar:
+                for data in val:
+                    features, labels = data
+                    features, labels = features.float().to(device), labels.to(device)
+                    log_probs = model.log_prob(features)
+                    y_pred = torch.exp(log_probs) < 0.005
+                    val_loss -= log_probs.mean().item()
+                    y_true.extend(labels.cpu().numpy().tolist())
+                    y_score.extend(y_pred.cpu().numpy().tolist())
+                    pbar.update(1)
+                    pbar.set_postfix({
+                        "loss": np.mean(val_loss)
+                    })
+                pbar.close()
+
+        val_acc = accuracy_score(np.array(y_true), np.array(y_score))
+        results["val_loss"].append(val_loss / len(val))
+        results["val_acc"].append(val_acc)
+        print(f"val_loss: {val_loss / len(val):1.4f}, val_acc: {val_acc:1.4f}")
+
+    os.makedirs(f"{experiment['savpath']}", exist_ok=True)
+    plt.plot(
+        range(len(train_loss)),
+        train_loss,
+        label="Train Loss",
+    )
+    plt.xlabel("Iterations")
+    plt.ylabel("Loss")
+    plt.title("Training Loss")
+    plt.legend()
+    plt.savefig(f"{experiment['savpath']}/train_loss.png")

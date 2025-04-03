@@ -5,3 +5,5 @@
 /results/features/*
 *.sh
 *.batch
+/batch_scripts/*
+*.out
