@@ -10,8 +10,8 @@ experiment = {
     "batch_size": 32,
     "classes": os.listdir(f"{MAIN_DIR}/train"), # ["horse"], # 
     "lr": 1e-4,
-    "epochss": [3],
-    "epochs_reduce_lr": [6, 11],
+    "epochss": [1, 5, 10],
+    "epochs_reduce_lr": [6],
     "savpath": "results/flow",
 }
 

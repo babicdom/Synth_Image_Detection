@@ -18,7 +18,7 @@ import cv2
 import numpy as np
 from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
-from sklearn.metrics import accuracy_score, average_precision_score
+from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score
 
 from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, FeatureDataset
 from src.models import Model
@@ -724,20 +724,36 @@ def extract_clip_features(
 def get_feature_loader(
         experiment, split, workers, ds_frac=None, target="both"
 ):
-    classes = experiment["classes"] if split not in "test" else get_generators(experiment["training_set"])
-    return DataLoader(
-            FeatureDataset(
+    if split in "test":
+        return [
+            (g, DataLoader(
+                FeatureDataset(
                 split=split,
-                classes=classes,
+                classes=[g],
                 ds_frac=ds_frac,
                 target=target
-            ),
-            batch_size=experiment["batch_size"],
-            shuffle=True,
-            num_workers=workers,
-            pin_memory=True,
-            drop_last=False
-        )
+                ),
+                batch_size=experiment["batch_size"],
+                shuffle=True,
+                num_workers=workers,
+                pin_memory=True,
+                drop_last=False
+            )) for g in get_generators(experiment["training_set"])
+        ]
+    else:
+        return DataLoader(
+                FeatureDataset(
+                    split=split,
+                    classes=experiment["classes"],
+                    ds_frac=ds_frac,
+                    target=target
+                ),
+                batch_size=experiment["batch_size"],
+                shuffle=True,
+                num_workers=workers,
+                pin_memory=True,
+                drop_last=False
+            )
 
 def train_flow_experiment(
     experiment,
@@ -772,7 +788,7 @@ def train_flow_experiment(
     optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
     
     print(json.dumps(experiment, indent=2))
-    results = {"val_loss": [], "val_acc": [], "test": {}}
+    results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
 
     train_loss = []
     rlr = 0
@@ -823,29 +839,67 @@ def train_flow_experiment(
                     features, labels = data
                     features, labels = features.float().to(device), labels.to(device)
                     log_probs = model.log_prob(features)
-                    y_pred = log_probs < np.log(0.0001)
+                    scores = 1 - torch.exp(log_probs)
                     val_loss -= log_probs.mean().item()
                     y_true.extend(labels.cpu().numpy().tolist())
-                    y_score.extend(y_pred.cpu().numpy().tolist())
+                    y_score.extend(scores.cpu().numpy().tolist())
                     pbar.update(1)
                     pbar.set_postfix({
                         "loss": np.mean(val_loss)
                     })
                 pbar.close()
 
-        val_acc = accuracy_score(np.array(y_true), np.array(y_score))
+        val_ap = average_precision_score(y_true, y_score)
+        val_auc = roc_auc_score(y_true, y_score)
         results["val_loss"].append(val_loss / len(val))
-        results["val_acc"].append(val_acc)
-        print(f"val_loss: {val_loss / len(val):1.4f}, val_acc: {val_acc:1.4f}")
+        results["val_ap"].append(val_ap)
+        results["val_auc"].append(val_auc)
+        print(f"val_loss: {val_loss / len(val):1.4f}, val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
 
-    os.makedirs(f"{experiment['savpath']}", exist_ok=True)
-    plt.plot(
-        range(len(train_loss)),
-        train_loss,
-        label="Train Loss",
-    )
-    plt.xlabel("Iterations")
-    plt.ylabel("Loss")
-    plt.title("Training Loss")
-    plt.legend()
-    plt.savefig(f"{experiment['savpath']}/train_loss.png")
+        if epoch + 1 in epochss:
+            aps = []
+            aucs = []
+
+            print("Testing - generator: AP / AUC")
+            for g, dl in test:
+                model.eval()
+                y_true = []
+                y_score = []
+
+                with torch.no_grad():
+                    for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
+                        features, labels = data
+                        features, labels = features.float().to(device), labels.to(device)
+                        log_probs = model.log_prob(features)
+                        scores = 1 - torch.exp(log_probs)
+                        y_true.extend(labels.cpu().numpy().tolist())
+                        y_score.extend(scores.cpu().numpy().tolist())
+
+                test_ap = average_precision_score(y_true, y_score)
+                test_auc = roc_auc_score(y_true, y_score)
+                aps.append(test_ap)
+                aucs.append(test_auc)
+
+                results["test"][g] = {
+                    "ap": test_ap,
+                    "auroc": test_auc,
+                }
+                print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+
+            print(
+                f"Mean: {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
+            )
+
+            if store:
+                ckpt_name = f"ckpt/model_{experiment['num_steps']}step_{experiment["flow"]}.pth"
+                print(f"Saving {ckpt_name} ...")
+                torch.save(model, ckpt_name)
+            else:
+                log = {
+                    "epochs": epoch + 1,
+                    "config": experiment,
+                    "results": copy.deepcopy(results),
+                }
+                filename = f"results/flow/ncls_{len(experiment['classes'])}.pickle"
+                with open(filename, "wb") as h:
+                    pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
