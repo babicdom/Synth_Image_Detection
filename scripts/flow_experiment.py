@@ -2,15 +2,15 @@ from src.utils import train_flow_experiment
 import torch
 import os
 
-MAIN_DIR = "/home/babicdom/SID/results/features/"
+MAIN_DIR = "/home/babicdom/SID/results/features"
 experiment = {
     "flow": "glow",
-    "num_steps": 2,
+    "num_steps": 8,
     "training_set": "progan",
     "batch_size": 32,
     "classes": os.listdir(f"{MAIN_DIR}/train"), # ["horse"], # 
-    "lr": 1e-3,
-    "epochss": [1],
+    "lr": 1e-4,
+    "epochss": [3],
     "epochs_reduce_lr": [6, 11],
     "savpath": "results/flow",
 }

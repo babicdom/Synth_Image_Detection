@@ -678,6 +678,7 @@ def extract_clip_features(
         target="both",
         save=False,
         workers=12,
+        use_transform=True,
 ):
     """
     Extract CLIP features for the dataset.
@@ -689,34 +690,36 @@ def extract_clip_features(
 
     # Dataloader
     if dl is None:
+        if use_transform:
+            transforms_ = get_transform(split)
+        else:
+            transforms_ = preprocess
+        # Get the dataloader
         dl = get_loader(
             experiment=experiment,
             split=split,
-            transforms=preprocess,
+            transforms=transforms_,
             workers=workers,
             ds_frac=ds_frac,
             target=target
         )
     
     features = []
-    labels = []
     # Get the features
     with torch.no_grad():
         for data in tqdm.tqdm(dl, desc="Extracting features"):
-            images, label = data
+            images, _ = data
             images = images.to(device)
             feature = model.encode_image(images)
             features.append(feature.to(device))
-            labels.append(label.to(device))
         features = torch.cat(features, dim=0).cpu()
-        labels = torch.cat(labels, dim=0).cpu()
 
     if save:
         os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}", exist_ok=True)
         torch.save(features, f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
         print("Saved features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
 
-    return features, labels
+    return features
 
 def get_feature_loader(
         experiment, split, workers, ds_frac=None, target="both"
@@ -820,7 +823,7 @@ def train_flow_experiment(
                     features, labels = data
                     features, labels = features.float().to(device), labels.to(device)
                     log_probs = model.log_prob(features)
-                    y_pred = torch.exp(log_probs) < 0.005
+                    y_pred = log_probs < np.log(0.0001)
                     val_loss -= log_probs.mean().item()
                     y_true.extend(labels.cpu().numpy().tolist())
                     y_score.extend(y_pred.cpu().numpy().tolist())

@@ -4,12 +4,14 @@ import torch
 import clip
 
 MAIN_DIR = "/mnt/personal/babicdom"
+FEAT_PATH = f"results/transform_features"
 
 splits = ["train", "val"]
 device = "cuda:0" if torch.cuda.is_available() else "cpu"
 model, preprocess = clip.load('ViT-L/14', device=device)
 workers = 12
 ds_frac = 1
+use_transform = True
 
 for split in splits:
     all_classes = os.listdir(f"{MAIN_DIR}/data/{split}/")
@@ -19,7 +21,7 @@ for split in splits:
                 "training_set": "progan",
                 "classes": [cls],
                 "batch_size": 32,
-                "featpath": "results/features",
+                "featpath": FEAT_PATH,
         }
         print(f"\tExtracting features for {experiment['classes']}")
         
@@ -32,19 +34,30 @@ for split in splits:
                 ds_frac=ds_frac,
                 device=device,
                 target=target,
-                save=True
+                save=True,
+                use_transform=use_transform,
             )
 
 for target in ["real", "fake"]:
     experiment = {
                 "training_set": "progan",
                 "batch_size": 32,
-                "featpath": "results/features",
+                "featpath": FEAT_PATH,
         }
+    if use_transform:
+        transforms = get_transform(
+            experiment=experiment,
+            split="test",
+            ds_frac=ds_frac,
+            target=target,
+            use_transform=True
+        )
+    else:
+        transforms = preprocess
     test_loader = get_loader(
             experiment=experiment,
             split="test",
-            transforms=preprocess,
+            transforms=transforms,
             workers=workers,
             ds_frac=ds_frac,
             target=target

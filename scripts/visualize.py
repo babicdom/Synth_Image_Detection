@@ -29,15 +29,12 @@ def visualize_features_tsne(experiment, split="train"):
     print("Fake features shape:", fake_features.shape)
     # Concatenate the features
     combined_features = torch.cat((real_features, fake_features), dim=0)
-    scaler = StandardScaler()
-    combined_features = scaler.fit_transform(combined_features)
-    print("Scaled combined features shape:", combined_features.shape)
 
     # Apply PCA
     pca_features = PCA(n_components=50).fit_transform(combined_features)
     print("PCA features shape:", pca_features.shape)
     # Apply t-SNE
-    tsne = TSNE(n_components=2, perplexity=30, random_state=42, verbose=3)
+    tsne = TSNE(n_components=2, perplexity=30, max_iter=300, random_state=42, verbose=3)
     tsne_results = tsne.fit_transform(combined_features)
 
     # Plot the t-SNE representation
@@ -61,7 +58,7 @@ if __name__ == "__main__":
     experiment = {
         "classes": os.listdir(f"{MAIN_DIR}/data/train/"),
         "savpath": "results/visualize/tsne",
-        "featpath": "results/features",
+        "featpath": "results/old_features",
     }
     visualize_features_tsne(
         experiment=experiment,
