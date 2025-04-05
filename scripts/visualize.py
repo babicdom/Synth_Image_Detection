@@ -47,18 +47,22 @@ def visualize_features_tsne(experiment, split="train"):
     plt.ylabel("t-SNE component 2")
     
     # Saving plots and features
-    os.makedirs(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}", exist_ok=True)
+    if len(experiment['classes']) == 20:
+        ext = "all_classes"
+    else:
+        ext = {'_'.join(experiment['classes'])}
+    os.makedirs(f"{experiment['savpath']}_{ext}", exist_ok=True)
   
     # Save the t-SNE plot
-    plt.savefig(f"{experiment['savpath']}_{'_'.join(experiment['classes'])}/tsne.png")    
+    plt.savefig(f"{experiment['savpath']}_{ext}/tsne_transform.png")    
     plt.close()
-    print("Saved t-SNE plot to", f"{experiment['savpath']}_{'_'.join(experiment['classes'])}/tsne.png")
+    print("Saved t-SNE plot to", f"{experiment['savpath']}_{ext}/tsne_transform.png")
 
 if __name__ == "__main__":
     experiment = {
         "classes": os.listdir(f"{MAIN_DIR}/data/train/"),
-        "savpath": "results/visualize/tsne",
-        "featpath": "results/old_features",
+        "savpath": "results/visualize/tsne_transform",
+        "featpath": "results/transform_features",
     }
     visualize_features_tsne(
         experiment=experiment,

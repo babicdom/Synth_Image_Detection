@@ -8,7 +8,7 @@ experiment = {
     "num_steps": 8,
     "training_set": "progan",
     "batch_size": 32,
-    "classes": os.listdir(f"{MAIN_DIR}/train"), # ["horse"], # 
+    "classes": ["horse"], # os.listdir(f"{MAIN_DIR}/train"), # 
     "lr": 1e-4,
     "epochss": [1, 5, 10],
     "epochs_reduce_lr": [6],
@@ -21,5 +21,5 @@ train_flow_experiment(
     epochs_reduce_lr=experiment["epochs_reduce_lr"],
     workers=12,
     device=torch.device("cuda:0"),
-    store=False,
+    store=True,
 )
