@@ -759,8 +759,7 @@ def get_feature_loader(
 
 def train_flow_experiment(
     experiment,
-    epochss,
-    epochs_reduce_lr,
+    epochs,
     workers,
     device,
     store=False,
@@ -788,22 +787,22 @@ def train_flow_experiment(
     model.to(device)
 
     optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
+    scheduler = torch.optim.lr_scheduler.StepLR(
+        optimizer,
+        step_size=experiment["lr_step"],
+        gamma=experiment["lr_gamma"],
+    )
     
     print(json.dumps(experiment, indent=2))
     results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
 
     train_loss = []
-    rlr = 0
-    for epoch in range(max(epochss)):
-        if epoch + 1 in epochs_reduce_lr:
-            rlr += 1
-            optimizer.param_groups[0]["lr"] = experiment["lr"] / 10**rlr
-        
+    for epoch in range(epochs):
         model.train()
 
         with tqdm.tqdm(
                 total=len(train),
-                desc=f"Epoch {epoch + 1}/{max(epochss)}",
+                desc=f"Epoch {epoch + 1}/{epochs}",
                 unit="batch",
                 ncols=100,
             ) as pbar:
@@ -858,53 +857,55 @@ def train_flow_experiment(
         results["val_auc"].append(val_auc)
         print(f"val_loss: {val_loss / len(val):1.4f}, val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
 
-        if epoch + 1 in epochss:
-            aps = []
-            aucs = []
+        scheduler.step()
 
-            print("Testing - generator: AP / AUC")
-            for g, dl in test:
-                model.eval()
-                y_true = []
-                y_score = []
+    # Testing
+    aps = []
+    aucs = []
 
-                with torch.no_grad():
-                    for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
-                        features, labels = data
-                        features, labels = features.float().to(device), labels.to(device)
-                        log_probs = model.log_prob(features)
-                        scores = 1 - torch.exp(log_probs)
-                        y_true.extend(labels.cpu().numpy().tolist())
-                        y_score.extend(scores.cpu().numpy().tolist())
+    print("Testing - generator: AP / AUC")
+    for g, dl in test:
+        model.eval()
+        y_true = []
+        y_score = []
 
-                test_ap = average_precision_score(y_true, y_score)
-                test_auc = roc_auc_score(y_true, y_score)
-                aps.append(test_ap)
-                aucs.append(test_auc)
+        with torch.no_grad():
+            for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
+                features, labels = data
+                features, labels = features.float().to(device), labels.to(device)
+                log_probs = model.log_prob(features)
+                scores = 1 - torch.exp(log_probs)
+                y_true.extend(labels.cpu().numpy().tolist())
+                y_score.extend(scores.cpu().numpy().tolist())
 
-                results["test"][g] = {
-                    "ap": test_ap,
-                    "auroc": test_auc,
-                }
-                print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+        test_ap = average_precision_score(y_true, y_score)
+        test_auc = roc_auc_score(y_true, y_score)
+        aps.append(test_ap)
+        aucs.append(test_auc)
 
-            print(
-                f"Mean: {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
-            )
+        results["test"][g] = {
+            "ap": test_ap,
+            "auroc": test_auc,
+        }
+        print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
 
-            if store:
-                ckpt_name = f"ckpt/model_{len(experiment["classes"])}_{experiment['num_steps']}step_{experiment["flow"]}.pth"
-                print(f"Saving {ckpt_name} ...")
-                torch.save(model, ckpt_name)
-            else:
-                log = {
-                    "epochs": epoch + 1,
-                    "config": experiment,
-                    "results": copy.deepcopy(results),
-                }
-                filename = f"results/flow/ncls_{len(experiment['classes'])}.pickle"
-                with open(filename, "wb") as h:
-                    pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+    print(
+        f"Mean: {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
+    )
+
+    if store:
+        ckpt_name = f"ckpt/model_{len(experiment["classes"])}_{experiment['num_steps']}step_{experiment["flow"]}.pth"
+        print(f"Saving {ckpt_name} ...")
+        torch.save(model, ckpt_name)
+
+    log = {
+        "epochs": epoch + 1,
+        "config": experiment,
+        "results": copy.deepcopy(results),
+    }
+    filename = f"results/flow/ncls_{len(experiment['classes'])}_{experiment['num_steps']}step_{experiment["flow"]}.pickle"
+    with open(filename, "wb") as h:
+        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 def eval_model(experiment, ncls=20, num_steps=8, flow="glow", device="cuda:0", workers=12, ds_frac=1):

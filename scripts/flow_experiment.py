@@ -2,23 +2,25 @@ from src.utils import train_flow_experiment
 import torch
 import os
 
-MAIN_DIR = "/home/babicdom/SID/results/features"
+MAIN_DIR = "/home/babicdom/Synth_Image_Detection/results/transform_features"
+
 experiment = {
     "flow": "glow",
-    "num_steps": 8,
+    "num_steps": 10,
     "training_set": "progan",
     "batch_size": 32,
-    "classes": ["horse"], # os.listdir(f"{MAIN_DIR}/train"), # 
+    "classes": os.listdir(f"{MAIN_DIR}/train"), # ["horse"], # 
     "lr": 1e-4,
-    "epochss": [1, 5, 10],
-    "epochs_reduce_lr": [6],
+    "lr_step": 5,
+    "lr_gamma": 0.5,
+    "epochs": 15,
+    "epochs_reduce_lr": [6, 11],
     "savpath": "results/flow",
 }
 
 train_flow_experiment(
     experiment=experiment,
-    epochss=experiment["epochss"],
-    epochs_reduce_lr=experiment["epochs_reduce_lr"],
+    epochs=experiment["epochs"],
     workers=12,
     device=torch.device("cuda:0"),
     store=True,
