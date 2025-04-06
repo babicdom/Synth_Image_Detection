@@ -3,6 +3,7 @@
 **/*.pyo
 **/*.pyd
 /results/features/*
+/results/transform_features/*
 *.sh
 *.batch
 /batch_scripts/*
