@@ -1,8 +1,9 @@
 # Setup
 Clone the repository:
 ```
-git clone https://github.com/babicdom/SID.git
-cd SID
+git clone https://github.com/babicdom/Synth_Image_Detection.git
+```
+cd Synth_Image_Detection
 ```
 Create the environment:
 ```
