@@ -341,7 +341,7 @@ def plot_hyperparams_vs_model_size():
 
 
 class WangModelFeatures(nn.Module):
-    def __init__(self):
+    def __init__(self, device="cuda:0"):
         super().__init__()
         self.model = resnet50(num_classes=1)
         model_path = "competitive/wang_blur_jpg_prob0.1.pth"
@@ -359,15 +359,16 @@ class WangModelFeatures(nn.Module):
 
 
 def get_trained_model(name, device):
-    if name == "ours":
+    if name == "rine":
         model = get_our_trained_model(ncls=4, device=device)
     elif name == "wang":
         model = WangModelFeatures()
     elif name == "ufd":
-        model = CLIPModel()
-        model_path = "competitive/fc_weights.pth"
-        state_dict = torch.load(model_path, map_location=device)
-        model.fc.load_state_dict(state_dict)
+        pass
+        # model = CLIPModel()
+        # model_path = "competitive/fc_weights.pth"
+        # state_dict = torch.load(model_path, map_location=device)
+        # model.fc.load_state_dict(state_dict)
     model.to(device)
     return model
 

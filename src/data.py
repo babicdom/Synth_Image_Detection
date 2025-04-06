@@ -221,7 +221,7 @@ class EvaluationDataset(Dataset):
         return [image, target]
 
 
-FEAT_DIR = "/home/babicdom/SID/results/features"
+FEAT_DIR = "/home/babicdom/Synth_Image_Detection/results/transform_features"
 
 class FeatureDataset(Dataset):
     def __init__(self, split, classes=None, ds_frac=None, target="both"):
