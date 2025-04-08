@@ -219,16 +219,17 @@ def resnet152(pretrained=False, **kwargs):
 
 
 class CLIPModel(nn.Module):
-    def __init__(self):
+    def __init__(self, fc=False):
         super(CLIPModel, self).__init__()
 
         self.model, self.preprocess = clip.load(
-            "ViT-L/14", device="cpu"
+            "ViT-L/14", device="cuda:0"
         )  # self.preprecess will not be used during training, which is handled in Dataset class
-        self.fc = nn.Linear(768, 1)
+        self.fc = nn.Linear(768, 1) if fc else None
 
-    def forward(self, x, return_feature=False):
+    def forward(self, x):
         features = self.model.encode_image(x)
-        if return_feature:
-            return features
-        return self.fc(features)
+
+        if self.fc:
+            features = self.fc(features)
+        return features

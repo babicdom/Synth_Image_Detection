@@ -255,8 +255,8 @@ class MiniGlow(nn.Module):
             self.transforms.append(ActNorm(input_dim))
             self.transforms.append(Conv1x1(input_dim))
             self.transforms.append(AffineCouplingLayer(SimpleTransform(input_dim//2, 2)))
-            # if i != num_steps-1:
-            #     self.transforms.append(SwitchSides())
+            if i != num_steps-1:
+                self.transforms.append(SwitchSides())
 
         self.transforms = nn.Sequential(*self.transforms)
 

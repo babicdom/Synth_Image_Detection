@@ -60,7 +60,7 @@ def visualize_features_tsne(experiment, split="train"):
 
 if __name__ == "__main__":
     experiment = {
-        "classes": os.listdir(f"{MAIN_DIR}/data/train/"),
+        "classes": ["horse"], # os.listdir(f"{MAIN_DIR}/data/train/"),
         "savpath": "results/visualize/tsne_transform",
         "featpath": "results/transform_features",
     }

@@ -988,3 +988,155 @@ def eval_model(experiment, ncls=20, num_steps=8, flow="glow", device="cuda:0", w
     filename = f"results/flow/eval_{num_steps}step_ncls_{len(experiment['classes'])}.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+
+
+def train_flow_model(
+        experiment,
+    epochs,
+    workers,
+    device,
+    store=False,
+    ds_frac=None,
+):
+    # TODO: fix
+    seed_everything(0)
+
+    train = get_feature_loader(experiment=experiment, split="train", workers=workers, ds_frac=ds_frac, target="real")
+    val = get_feature_loader(experiment=experiment, split="val", workers=workers, ds_frac=ds_frac, target="both")
+    test = get_feature_loader(experiment=experiment, split="test", workers=workers, ds_frac=ds_frac, target="both")
+    input_dim = len(train.dataset.features[0][0])
+
+    if experiment["flow"] in "nf":
+        model = NormalizingFlow(
+            input_dim=input_dim,
+            num_steps=experiment["num_steps"]
+        )
+    elif experiment["flow"] in "glow":
+        model = MiniGlow(
+            input_dim=input_dim,
+            num_steps=experiment["num_steps"]
+        )
+    else:
+        raise ValueError("Flow type not supported")
+    model.to(device)
+
+    optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
+    scheduler = torch.optim.lr_scheduler.StepLR(
+        optimizer,
+        step_size=experiment["lr_step"],
+        gamma=experiment["lr_gamma"],
+    )
+    
+    print(json.dumps(experiment, indent=2))
+    results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
+
+    train_loss = []
+    for epoch in range(epochs):
+        model.train()
+
+        with tqdm.tqdm(
+                total=len(train),
+                desc=f"Epoch {epoch + 1}/{epochs}",
+                unit="batch",
+                ncols=100,
+            ) as pbar:
+            pbar.set_postfix({
+                "loss": torch.inf
+            })
+            for data in train:
+                features, _ = data
+                features = features.float().to(device)
+                loss = - model.log_prob(features).mean(axis=0)
+                train_loss.append(loss.item())
+                optimizer.zero_grad()
+                loss.backward()
+                optimizer.step()
+                pbar.set_postfix({
+                    "loss": loss.item()
+                })
+                pbar.update(1)
+            pbar.close()
+        
+        # Validation
+        model.eval()
+        y_true = []
+        y_score = []
+        val_loss = 0
+
+        with torch.no_grad():
+            with tqdm.tqdm(
+                total=len(val),
+                desc="Validation",
+                unit="batch",
+                ncols=100
+            ) as pbar:
+                for data in val:
+                    features, labels = data
+                    features, labels = features.float().to(device), labels.to(device)
+                    log_probs = model.log_prob(features)
+                    scores = 1 - torch.exp(log_probs)
+                    val_loss -= log_probs.mean().item()
+                    y_true.extend(labels.cpu().numpy().tolist())
+                    y_score.extend(scores.cpu().numpy().tolist())
+                    pbar.update(1)
+                    pbar.set_postfix({
+                        "loss": np.mean(val_loss)
+                    })
+                pbar.close()
+
+        val_ap = average_precision_score(y_true, y_score)
+        val_auc = roc_auc_score(y_true, y_score)
+        results["val_loss"].append(val_loss / len(val))
+        results["val_ap"].append(val_ap)
+        results["val_auc"].append(val_auc)
+        print(f"val_loss: {val_loss / len(val):1.4f}, val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
+
+        scheduler.step()
+
+    # Testing
+    aps = []
+    aucs = []
+
+    print("Testing - generator: AP / AUC")
+    for g, dl in test:
+        model.eval()
+        y_true = []
+        y_score = []
+
+        with torch.no_grad():
+            for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
+                features, labels = data
+                features, labels = features.float().to(device), labels.to(device)
+                log_probs = model.log_prob(features)
+                scores = 1 - torch.exp(log_probs)
+                y_true.extend(labels.cpu().numpy().tolist())
+                y_score.extend(scores.cpu().numpy().tolist())
+
+        test_ap = average_precision_score(y_true, y_score)
+        test_auc = roc_auc_score(y_true, y_score)
+        aps.append(test_ap)
+        aucs.append(test_auc)
+
+        results["test"][g] = {
+            "ap": test_ap,
+            "auroc": test_auc,
+        }
+        print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+
+    print(
+        f"Mean: {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
+    )
+
+    if store:
+        ckpt_name = f"ckpt/model_{len(experiment["classes"])}_{experiment['num_steps']}step_{experiment["flow"]}.pth"
+        print(f"Saving {ckpt_name} ...")
+        torch.save(model, ckpt_name)
+
+    log = {
+        "epochs": epoch + 1,
+        "config": experiment,
+        "results": copy.deepcopy(results),
+    }
+    filename = f"results/flow/ncls_{len(experiment['classes'])}_{experiment['num_steps']}step_{experiment["flow"]}.pickle"
+    with open(filename, "wb") as h:
+        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)

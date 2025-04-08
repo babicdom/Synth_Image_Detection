@@ -17,6 +17,8 @@ from src.data import TrainingDataset, EvaluationDataset
 from src.models import Hook
 from src.extras import resnet50, CLIPModel
 
+import tqdm
+
 
 def get_hyperparam_results(ncls, flag):
     hp = {"backbone": {}, "factor": {}, "nproj": {}, "proj_dim": {}}
@@ -364,11 +366,9 @@ def get_trained_model(name, device):
     elif name == "wang":
         model = WangModelFeatures()
     elif name == "ufd":
-        pass
-        # model = CLIPModel()
-        # model_path = "competitive/fc_weights.pth"
-        # state_dict = torch.load(model_path, map_location=device)
-        # model.fc.load_state_dict(state_dict)
+        model = CLIPModel(fc=False)
+    elif name == "dino":
+        model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14')
     model.to(device)
     return model
 
@@ -421,14 +421,18 @@ def get_feaure_space(model, batch_size, max_samples_per_gen, device, name):
     for g, loader in test:
         model.eval()
         with torch.no_grad():
-            for i, data in enumerate(loader):
+            for i, data in tqdm.tqdm(
+                enumerate(loader), desc=f"Processing {g}", total=len(loader)
+            ):
                 images, labels = data
                 if name == "ufd":
-                    outputs = model(images.to(device), return_feature=True)
-                elif name == "ours":
+                    outputs = model(images.to(device))
+                elif name == "rine":
                     outputs = model(images.to(device))[1]
                 elif name == "wang":
                     outputs = model(images.to(device)).squeeze()
+                elif name == "dino":
+                    outputs = model(images.to(device))
                 DATA.append(outputs.cpu().numpy())
                 LABELS.extend(labels.numpy().tolist())
                 GENS.extend([g] * labels.shape[0])

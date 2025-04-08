@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     # t-SNE feature spaces
     device = "cuda:0"
-    for name in ["ufd", "rine"]:
+    for name in ["ufd", "rine", "dino"]:
         print(f"t-SNE feature space for {name}")
         if os.path.exists(f"results/figs/data_2d_{name}.pickle"):
             with open(f"results/figs/data_2d_{name}.pickle", "rb") as h:
