@@ -2,7 +2,6 @@
 Clone the repository:
 ```
 git clone https://github.com/babicdom/Synth_Image_Detection.git
-```
 cd Synth_Image_Detection
 ```
 Create the environment:
@@ -20,6 +19,7 @@ Store the datasets in `data/`:
 * Download the ``MSCOCO`` dataset https://cocodataset.org/#home
 
 The `data/` directory should look like:
+
 ```
 data
 └── coco
