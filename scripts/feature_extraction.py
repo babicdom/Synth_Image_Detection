@@ -3,7 +3,6 @@ import os
 import torch
 import clip
 
-MAIN_DIR = "/mnt/personal/babicdom"
 FEAT_PATH = f"results/features"
 
 splits = ["train", "val"]
@@ -14,7 +13,7 @@ ds_frac = 1
 use_transform = False
 
 for split in splits:
-    all_classes = os.listdir(f"{MAIN_DIR}/data/{split}/")
+    all_classes = os.listdir(f"data/{split}/")
     print(f"Classes in {split}: {all_classes}")
     for cls in all_classes:
         experiment = {

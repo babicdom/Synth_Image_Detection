@@ -2,14 +2,12 @@ from src.utils import train_flow_experiment
 import torch
 import os
 
-MAIN_DIR = "/home/babicdom/Synth_Image_Detection/results/transform_features"
-
 experiment = {
     "flow": "glow",
     "num_steps": 10,
     "training_set": "progan",
     "batch_size": 32,
-    "classes": os.listdir(f"{MAIN_DIR}/train"), # ["horse"], # 
+    "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,

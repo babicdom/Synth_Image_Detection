@@ -6,19 +6,17 @@ import pandas as pd
 import random
 from src.perturbation import perturbation
 
-MAIN_DIR = "/mnt/personal/babicdom"
-
 class TrainingDataset(Dataset):
     def __init__(self, split, classes=None, transforms=None, ds_frac=None, target="both"):
         self.real = [
-            (f"{MAIN_DIR}/data/{split}/{y}/0_real/{x}", 0)
+            (f"data/{split}/{y}/0_real/{x}", 0)
             for y in classes
-            for x in os.listdir(f"{MAIN_DIR}/data/{split}/{y}/0_real")
+            for x in os.listdir(f"data/{split}/{y}/0_real")
         ]
         self.fake = [
-            (f"{MAIN_DIR}/data/{split}/{y}/1_fake/{x}", 1)
+            (f"data/{split}/{y}/1_fake/{x}", 1)
             for y in classes
-            for x in os.listdir(f"{MAIN_DIR}/data/{split}/{y}/1_fake")
+            for x in os.listdir(f"data/{split}/{y}/1_fake")
         ]
 
         if target == "both":
@@ -53,9 +51,9 @@ class TrainingDataset(Dataset):
 class TrainingDatasetLDM(Dataset):
     def __init__(self, split, transforms=None, target="both"):
         self.real = [
-            (f"{MAIN_DIR}/data/train/{x.split('_')[0]}/0_real/{x.split('_')[1]}", 0)
+            (f"data/train/{x.split('_')[0]}/0_real/{x.split('_')[1]}", 0)
             for x in pd.read_csv(
-                f"{MAIN_DIR}/data/latent_diffusion_trainingset/{split}/real_lsun.txt",
+                f"data/latent_diffusion_trainingset/{split}/real_lsun.txt",
                 header=None,
             )
             .values.reshape(-1)
@@ -63,19 +61,19 @@ class TrainingDatasetLDM(Dataset):
         ] + [
             (
                 (
-                    f"{MAIN_DIR}/data/coco/train2014/COCO_train2014_{x}"
-                    if os.path.exists(f"{MAIN_DIR}/data/coco/train2014/COCO_train2014_{x}")
-                    else f"{MAIN_DIR}/data/coco/val2014/COCO_val2014_{x}"
+                    f"data/coco/train2014/COCO_train2014_{x}"
+                    if os.path.exists(f"data/coco/train2014/COCO_train2014_{x}")
+                    else f"data/coco/val2014/COCO_val2014_{x}"
                 ),
                 0,
             )
             for x in pd.read_csv(
-                f"{MAIN_DIR}/data/latent_diffusion_trainingset/{split}/real_coco.txt", header=None
+                f"data/latent_diffusion_trainingset/{split}/real_coco.txt", header=None
             )
             .values.reshape(-1)
             .tolist()
         ]
-        fake_dir = f"{MAIN_DIR}/data/latent_diffusion_trainingset/"
+        fake_dir = f"data/latent_diffusion_trainingset/"
         self.fake = [
             (f"{fake_dir}{split}/{x}/{y}", 1)
             for x in os.listdir(f"{fake_dir}{split}")
@@ -112,23 +110,23 @@ class EvaluationDataset(Dataset):
     def __init__(self, generator, transforms=None, perturb=None, target="both"):
         if generator in ["cyclegan", "progan", "stylegan", "stylegan2"]:
             self.real = [
-                (f"{MAIN_DIR}/data/test/{generator}/{y}/0_real/{x}", 0)
-                for y in os.listdir(f"{MAIN_DIR}/data/test/{generator}")
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/{y}/0_real")
+                (f"data/test/{generator}/{y}/0_real/{x}", 0)
+                for y in os.listdir(f"data/test/{generator}")
+                for x in os.listdir(f"data/test/{generator}/{y}/0_real")
             ]
             self.fake = [
-                (f"{MAIN_DIR}/data/test/{generator}/{y}/1_fake/{x}", 1)
-                for y in os.listdir(f"{MAIN_DIR}/data/test/{generator}")
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/{y}/1_fake")
+                (f"data/test/{generator}/{y}/1_fake/{x}", 1)
+                for y in os.listdir(f"data/test/{generator}")
+                for x in os.listdir(f"data/test/{generator}/{y}/1_fake")
             ]
         elif "diffusion_datasets/guided" in generator:
             self.real = [
-                (f"{MAIN_DIR}/data/test/diffusion_datasets/imagenet/0_real/{x}", 0)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/diffusion_datasets/imagenet/0_real")
+                (f"data/test/diffusion_datasets/imagenet/0_real/{x}", 0)
+                for x in os.listdir(f"data/test/diffusion_datasets/imagenet/0_real")
             ]
             self.fake = [
-                (f"{MAIN_DIR}/data/test/{generator}/1_fake/{x}", 1)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/1_fake")
+                (f"data/test/{generator}/1_fake/{x}", 1)
+                for x in os.listdir(f"data/test/{generator}/1_fake")
             ]
         elif (
             "diffusion_datasets/ldm" in generator
@@ -136,12 +134,12 @@ class EvaluationDataset(Dataset):
             or "diffusion_datasets/dalle" in generator
         ):
             self.real = [
-                (f"{MAIN_DIR}/data/test/diffusion_datasets/laion/0_real/{x}", 0)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/diffusion_datasets/laion/0_real")
+                (f"data/test/diffusion_datasets/laion/0_real/{x}", 0)
+                for x in os.listdir(f"data/test/diffusion_datasets/laion/0_real")
             ]
             self.fake = [
-                (f"{MAIN_DIR}/data/test/{generator}/1_fake/{x}", 1)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/1_fake")
+                (f"data/test/{generator}/1_fake/{x}", 1)
+                for x in os.listdir(f"data/test/{generator}/1_fake")
             ]
         elif any(
             [
@@ -159,12 +157,12 @@ class EvaluationDataset(Dataset):
             ]
         ):
             self.real = [
-                (f"{MAIN_DIR}/data/test/{generator}/0_real/{x}", 0)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/0_real")
+                (f"data/test/{generator}/0_real/{x}", 0)
+                for x in os.listdir(f"data/test/{generator}/0_real")
             ]
             self.fake = [
-                (f"{MAIN_DIR}/data/test/{generator}/1_fake/{x}", 1)
-                for x in os.listdir(f"{MAIN_DIR}/data/test/{generator}/1_fake")
+                (f"data/test/{generator}/1_fake/{x}", 1)
+                for x in os.listdir(f"data/test/{generator}/1_fake")
             ]
         elif any(
             [
@@ -182,7 +180,7 @@ class EvaluationDataset(Dataset):
                 ]
             ]
         ):
-            self.real = [(f"{MAIN_DIR}/data/RAISEpng/{x}", 0) for x in os.listdir("data/RAISEpng")]
+            self.real = [(f"data/RAISEpng/{x}", 0) for x in os.listdir("data/RAISEpng")]
             self.fake = [
                 (f"data/synthbuster/{generator}/{x}", 1)
                 for x in os.listdir(f"data/synthbuster/{generator}")

@@ -5,8 +5,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 
-MAIN_DIR = "/mnt/personal/babicdom"
-
 def visualize_features_tsne(experiment, split="train"):
     """
     Visualize the features of the dataset using the CLIP model.
@@ -60,7 +58,7 @@ def visualize_features_tsne(experiment, split="train"):
 
 if __name__ == "__main__":
     experiment = {
-        "classes": ["horse"], # os.listdir(f"{MAIN_DIR}/data/train/"),
+        "classes": ["horse"], # os.listdir(f"data/train/"),
         "savpath": "results/visualize/tsne_transform",
         "featpath": "results/transform_features",
     }
