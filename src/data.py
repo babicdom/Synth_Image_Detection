@@ -182,13 +182,12 @@ class EvaluationDataset(Dataset):
                 ]
             ]
         ):
-            pass
-            # self.real = [(f"{MAIN_DIR}/data/RAISEpng/{x}", 0) for x in os.listdir("data/RAISEpng")]
-            # self.fake = [
-            #     (f"data/synthbuster/{generator}/{x}", 1)
-            #     for x in os.listdir(f"data/synthbuster/{generator}")
-            #     if all([y not in x for y in [".txt", ".py"]])
-            # ]
+            self.real = [(f"{MAIN_DIR}/data/RAISEpng/{x}", 0) for x in os.listdir("data/RAISEpng")]
+            self.fake = [
+                (f"data/synthbuster/{generator}/{x}", 1)
+                for x in os.listdir(f"data/synthbuster/{generator}")
+                if all([y not in x for y in [".txt", ".py"]])
+            ]
 
         if target == "both":
             self.images = self.real + self.fake
