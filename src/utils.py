@@ -128,7 +128,7 @@ def get_loader(
         if split == "val":
             return DataLoader(
                     TrainingDatasetLDM(
-                        split="valid", 
+                        split="val", 
                         transforms=transforms, 
                         target=target),
                     batch_size=experiment["batch_size"],
@@ -294,7 +294,8 @@ def train_one_experiment(
             # Testing
             accs = []
             aps = []
-            print("generator: ACC / AP")
+            aucs = []
+            print("generator: AUC / ACC / AP")
             for g, loader in test:
                 model.eval()
                 y_true = []
@@ -327,18 +328,21 @@ def train_one_experiment(
 
                 test_acc = accuracy_score(np.array(y_true), np.array(y_score) > 0.5)
                 test_ap = average_precision_score(y_true, y_score)
+                test_auc = roc_auc_score(y_true, y_score)
                 accs.append(test_acc)
                 aps.append(test_ap)
+                aucs.append(test_auc)
 
                 results["test"][g] = {
                     "acc": test_acc,
                     "ap": test_ap,
+                    "auroc": test_auc,
                 }
 
-                print(f"{g}: {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
+                print(f"{g}: {100 * test_auc:1.1f} / {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
 
             print(
-                f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
+                f"Mean: {100 * sum(aucs) / len(aucs):1.1f} / {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
             )
 
             if store:
@@ -379,11 +383,11 @@ def train_one_experiment(
 
 def get_our_trained_model(ncls, device):
     if ncls == 1:
-        nproj = 4
-        proj_dim = 1024
+        nproj = 1
+        proj_dim = 256
     elif ncls == 2:
         nproj = 4
-        proj_dim = 128
+        proj_dim = 512
     elif ncls == 4:
         nproj = 2
         proj_dim = 1024
@@ -460,6 +464,7 @@ def seed_everything(TORCH_SEED):
 def evaluation(model, test, device, training="progan", ours=False, filename=None):
     accs = []
     aps = []
+    aucs = []
     log = {}
     for g, loader in test:
         model.eval()
@@ -490,15 +495,18 @@ def evaluation(model, test, device, training="progan", ours=False, filename=None
 
         test_acc = accuracy_score(np.array(y_true), np.array(y_score) > 0.5)
         test_ap = average_precision_score(y_true, y_score)
+        test_auc = roc_auc_score(y_true, y_score)
         accs.append(test_acc)
         aps.append(test_ap)
+        aucs.append(test_auc)
         log[g] = {
             "acc": test_acc,
             "ap": test_ap,
+            "auroc": test_auc,
         }
-        print(f"{g}: {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
+        print(f"{g} AUC/ACC/AP: {100 * test_auc:1.1f} / {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
     print(
-        f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
+        f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
     )
     if filename is not None:
         with open(filename, "wb") as h:

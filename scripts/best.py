@@ -3,7 +3,7 @@ from results import best_configs
 
 device = "cuda:0"
 workers = 12
-ncls_list = [1, 2, 4]
+ncls_list = ["ldm"] # [1, 2, 4]
 epochs_reduce_lr = [6, 11]
 transforms_train, transforms_val, _ = get_transforms()
 
