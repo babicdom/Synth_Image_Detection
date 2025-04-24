@@ -11,7 +11,7 @@ from src.utils import (
 
 device = "cuda:0"
 generators = get_generators()
-_, transforms, _ = get_transforms()
+_, _, transforms = get_transforms()
 
 test = [
     (
@@ -28,26 +28,8 @@ test = [
     for g in generators
 ]
 
-generators = get_generators(data="synthbuster")
-_, _, transforms = get_transforms()
-test_ldm = [
-    (
-        g,
-        DataLoader(
-            EvaluationDataset(g, transforms=transforms),
-            batch_size=16,
-            shuffle=False,
-            num_workers=12,
-            pin_memory=True,
-            drop_last=False,
-        ),
-    )
-    for g in generators
-]
-
 for ncls in [1, 2, 4, "ldm"]:
     print(f"\n{ncls}-class")
     model = get_our_trained_model(ncls=ncls, device=device)
     model.to(device)
-    evaluation(model, test, device, ours=True)
-    evaluation(model, test_ldm, device, training="ldm", ours=True)
+    evaluation(model, test, device, training="ldm", ours=True)

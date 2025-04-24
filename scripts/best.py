@@ -5,7 +5,7 @@ device = "cuda:0"
 workers = 12
 ncls_list = ["ldm"] # [1, 2, 4]
 epochs_reduce_lr = [6, 11]
-transforms_train, transforms_val, _ = get_transforms()
+transforms_train, transforms_val, transforms_test = get_transforms()
 
 for ncls in ncls_list:
     experiment = best_configs(ncls=ncls, nbest=1, nepochs=None, showtxt=False)[0]
@@ -16,7 +16,7 @@ for ncls in ncls_list:
         epochs_reduce_lr=epochs_reduce_lr,
         transforms_train=transforms_train,
         transforms_val=transforms_val,
-        transforms_test=transforms_val,
+        transforms_test=transforms_test if ncls == "ldm" else transforms_val,
         workers=workers,
         device=device,
         without=None,

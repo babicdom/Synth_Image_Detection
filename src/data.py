@@ -168,22 +168,22 @@ class EvaluationDataset(Dataset):
             [
                 x in generator
                 for x in [
-                    "dalle2",
-                    "dalle3",
-                    "stable-diffusion-1-3",
-                    "stable-diffusion-1-4",
-                    "stable-diffusion-2",
-                    "stable-diffusion-xl",
-                    "glide",
-                    "firefly",
-                    "midjourney-v5",
+                    "synthbuster/dalle2",
+                    "synthbuster/dalle3",
+                    "synthbuster/stable-diffusion-1-3",
+                    "synthbuster/stable-diffusion-1-4",
+                    "synthbuster/stable-diffusion-2",
+                    "synthbuster/stable-diffusion-xl",
+                    "synthbuster/glide",
+                    "synthbuster/firefly",
+                    "synthbuster/midjourney-v5",
                 ]
             ]
         ):
-            self.real = [(f"data/RAISEpng/{x}", 0) for x in os.listdir("data/RAISEpng")]
+            self.real = [(f"data/synthbuster/raise/{x}", 0) for x in os.listdir("data/synthbuster/raise")]
             self.fake = [
-                (f"data/synthbuster/{generator}/{x}", 1)
-                for x in os.listdir(f"data/synthbuster/{generator}")
+                (f"data/test/{generator}/{x}", 1)
+                for x in os.listdir(f"data/test/{generator}")
                 if all([y not in x for y in [".txt", ".py"]])
             ]
 

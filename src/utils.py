@@ -81,7 +81,6 @@ def get_loader(
     experiment, split, transforms, workers, ds_frac=None, target="both"
 ):
     if experiment["training_set"] == "progan":
-        generators = get_generators()
         if split == "train":
             return DataLoader(
                     TrainingDataset(
@@ -112,7 +111,6 @@ def get_loader(
                     drop_last=False,
                 )
     elif experiment["training_set"] == "ldm":
-        generators = get_generators("synthbuster")
         if split == "train":
             return DataLoader(
                     TrainingDatasetLDM(
@@ -154,7 +152,7 @@ def get_loader(
                     drop_last=False,
                 ),
             )
-            for g in generators
+            for g in get_generators()
         ]
     else:
         raise ValueError("split must be one of train, val, test")
@@ -411,42 +409,39 @@ def get_our_trained_model(ncls, device):
     return model
 
 
-def get_generators(data="progan"):
-    if data == "progan":
-        return [
-            "progan",
-            "stylegan",
-            "stylegan2",
-            "biggan",
-            "cyclegan",
-            "stargan",
-            "gaugan",
-            "deepfake",
-            "seeingdark",
-            "san",
-            "crn",
-            "imle",
-            "diffusion_datasets/guided",
-            "diffusion_datasets/ldm_200",
-            "diffusion_datasets/ldm_200_cfg",
-            "diffusion_datasets/ldm_100",
-            "diffusion_datasets/glide_100_27",
-            "diffusion_datasets/glide_50_27",
-            "diffusion_datasets/glide_100_10",
-            "diffusion_datasets/dalle",
-        ]
-    elif data == "synthbuster":
-        return [
-            "dalle2",
-            "dalle3",
-            "stable-diffusion-1-3",
-            "stable-diffusion-1-4",
-            "stable-diffusion-2",
-            "stable-diffusion-xl",
-            "glide",
-            "firefly",
-            "midjourney-v5",
-        ]
+def get_generators():
+    return [
+        "progan",
+        "stylegan",
+        "stylegan2",
+        "biggan",
+        "cyclegan",
+        "stargan",
+        "gaugan",
+        "deepfake",
+        "seeingdark",
+        "san",
+        "crn",
+        "imle",
+        "diffusion_datasets/guided",
+        "diffusion_datasets/ldm_200",
+        "diffusion_datasets/ldm_200_cfg",
+        "diffusion_datasets/ldm_100",
+        "diffusion_datasets/glide_100_27",
+        "diffusion_datasets/glide_50_27",
+        "diffusion_datasets/glide_100_10",
+        "diffusion_datasets/dalle",
+        "synthbuster/dalle2",
+        "synthbuster/dalle3",
+        "synthbuster/stable-diffusion-1-3",
+        "synthbuster/stable-diffusion-1-4",
+        "synthbuster/stable-diffusion-2",
+        "synthbuster/stable-diffusion-xl",
+        "synthbuster/glide",
+        "synthbuster/firefly",
+        "synthbuster/midjourney-v5",
+        "flux",
+    ]
 
 
 # this function guarantees reproductivity
