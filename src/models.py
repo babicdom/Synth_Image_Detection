@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import clip
 from src.nf import NormalizingFlow, MiniGlow
+from src.vision_transformer import Encoder
 
 class Hook:
     def __init__(self, name, module):
@@ -22,6 +23,8 @@ class Model(nn.Module):
         backbone,
         nproj,
         proj_dim,
+        image_size,
+        patch_size,
         device,
     ):
         super().__init__()
@@ -34,45 +37,14 @@ class Model(nn.Module):
             param.requires_grad = False
 
         # Register hooks to get intermediate layer outputs
-        self.hooks = [
-            Hook(name, module)
-            for name, module in self.clip.visual.named_modules()
-            if "ln_2" in name
-        ]
+        name, module = list(self.clip.visual.named_modules())[-1]
+        self.hook = Hook(name, module)
 
-        # Initialize the trainable part of the model
-        self.alpha = nn.Parameter(torch.randn([1, len(self.hooks), proj_dim]))
-        proj1_layers = [nn.Dropout()]
-        for i in range(nproj):
-            proj1_layers.extend(
-                [
-                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
-                    nn.ReLU(),
-                    nn.Dropout(),
-                ]
-            )
-        self.proj1 = nn.Sequential(*proj1_layers)
-        proj2_layers = [nn.Dropout()]
-        for _ in range(nproj):
-            proj2_layers.extend(
-                [
-                    nn.Linear(proj_dim, proj_dim),
-                    nn.ReLU(),
-                    nn.Dropout(),
-                ]
-            )
-        self.proj2 = nn.Sequential(*proj2_layers)
-        self.head = nn.Sequential(
-            *[
-                nn.Linear(proj_dim, proj_dim),
-                nn.ReLU(),
-                nn.Dropout(),
-                nn.Linear(proj_dim, proj_dim),
-                nn.ReLU(),
-                nn.Dropout(),
-                nn.Linear(proj_dim, 1),
-            ]
+
+        self.encoder = Encoder(
+            seq_length=257
         )
+        
 
     def forward(self, x):
         with torch.no_grad():
@@ -95,6 +67,7 @@ class FlowModel(nn.Module):
         backbone,
         flow,
         n_steps,
+        n_proj,
         proj_dim,
         device,
     ):
@@ -115,7 +88,7 @@ class FlowModel(nn.Module):
         ]
 
         proj1_layers = [nn.Dropout()]
-        for i in range(nproj):
+        for i in range(n_proj):
             proj1_layers.extend(
                 [
                     nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
@@ -126,7 +99,7 @@ class FlowModel(nn.Module):
         self.proj1 = nn.Sequential(*proj1_layers).to(device)
 
         # Initialize the trainable part of the model
-        self.flow = MiniGlow(input_dim=proj_dim, num_steps=n_steps) if flow in "glow" else NormalizingFlow(input_dim=backbone[1], num_steps=n_steps)
+        self.flow = MiniGlow(input_dim=proj_dim, num_steps=n_steps) if flow in "glow" else NormalizingFlow(input_dim=proj_dim, num_steps=n_steps)
         self.flow.to(device)
 
 
@@ -134,7 +107,7 @@ class FlowModel(nn.Module):
         with torch.no_grad():
             self.clip.encode_image(x)
             g = torch.stack([h.output for h in self.hooks], dim=2)[0, :, :, :]
-        g = self.proj1(g.float()).sum(axis=1)
+        g = self.proj1(g.float()).mean(axis=1)
         p = self.flow.log_prob(g)
         return p
     
@@ -143,11 +116,12 @@ if __name__ == "__main__":
     backbone = ("ViT-L/14", 1024)
     nproj = 2
     proj_dim = 512
-    device = "cuda:0"
+    device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-    flow_model = FlowModel(backbone, "glow", 4, 512, device)
+    flow_model = FlowModel(backbone=backbone, flow="glow", n_steps=4, nproj=2, proj_dim=512, device=device)
 
     # Example input
-    x = torch.randn(1, 3, 224, 224).to(device)
-    output = flow_model(x)
+    x = torch.randn(16, 3, 224, 224).to(device)
+    with torch.no_grad():
+        output = flow_model(x)
     print("Output shape:", output.shape)

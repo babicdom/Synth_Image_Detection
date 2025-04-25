@@ -21,9 +21,6 @@ from scipy.ndimage.filters import gaussian_filter
 from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score
 
 from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, FeatureDataset
-from src.models import Model
-from src.ablations import ModelAblations
-from src.nf import MiniGlow, NormalizingFlow
 
 import matplotlib.pyplot as plt
 
@@ -78,7 +75,7 @@ def get_transforms():
     return transforms_train, transforms_val, transforms_test
 
 def get_loader(
-    experiment, split, transforms, workers, ds_frac=None, target="both"
+    experiment, split, transforms, workers, target="both"
 ):
     if experiment["training_set"] == "progan":
         if split == "train":
@@ -87,7 +84,7 @@ def get_loader(
                         split="train",
                         classes=experiment["classes"],
                         transforms=transforms,
-                        ds_frac=ds_frac,
+                        ds_frac=experiment.get("ds_frac", None),
                         target=target
                     ),
                     batch_size=experiment["batch_size"],
@@ -158,14 +155,13 @@ def get_loader(
         raise ValueError("split must be one of train, val, test")
     
 def get_loaders(
-    experiment, transforms_train, transforms_val, transforms_test, workers, ds_frac=None, target="both"
+    experiment, transforms_train, transforms_val, transforms_test, workers, target="both"
 ):
     train = get_loader(
         experiment,
         split="train",
         transforms=transforms_train,
         workers=workers,
-        ds_frac=ds_frac,
         target=target
     )
     val = get_loader(
@@ -173,7 +169,6 @@ def get_loaders(
         split="val",
         transforms=transforms_val,
         workers=workers,
-        ds_frac=ds_frac,
         target=target
     )
     test = get_loader(
@@ -181,232 +176,9 @@ def get_loaders(
         split="test",
         transforms=transforms_test,
         workers=workers,
-        ds_frac=ds_frac,
         target=target
     )
     return train, val, test
-
-def train_one_experiment(
-    experiment,
-    epochss,
-    epochs_reduce_lr,
-    transforms_train,
-    transforms_val,
-    transforms_test,
-    workers,
-    device,
-    without=None,  # None, contrastive, alpha, intermediate
-    store=False,
-    ds_frac=None,
-):
-    seed_everything(0)
-
-    train, val, test = get_loaders(
-        experiment=experiment,
-        transforms_train=transforms_train,
-        transforms_val=transforms_val,
-        transforms_test=transforms_test,
-        workers=workers,
-        ds_frac=ds_frac,
-    )
-    if without is not None and without in ["alpha", "intermediate"]:
-        model = ModelAblations(
-            backbone=experiment["backbone"],
-            nproj=experiment["nproj"],
-            proj_dim=experiment["proj_dim"],
-            without=without,
-            device=device,
-        )
-    else:
-        model = Model(
-            backbone=experiment["backbone"],
-            nproj=experiment["nproj"],
-            proj_dim=experiment["proj_dim"],
-            device=device,
-        )
-    model.to(device)
-
-    optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
-    bce = nn.BCEWithLogitsLoss(reduction="sum")
-    if without is None or without != "contrastive":
-        supcon = SupConLoss()
-
-    print(json.dumps(experiment, indent=2))
-    results = {"val_loss": [], "val_acc": [], "test": {}}
-    rlr = 0
-    training_time = 0
-    for epoch in range(max(epochss)):
-        training_epoch_start = time.time()
-        # Reduce learning rate
-        if epoch + 1 in epochs_reduce_lr:
-            rlr += 1
-            optimizer.param_groups[0]["lr"] = experiment["lr"] / 10**rlr
-
-        # Training
-        model.train()
-        for i, data in enumerate(train):
-            images, labels = data
-            images, labels = images.to(device), labels.to(device)
-            outputs = model(images)
-            optimizer.zero_grad()
-            loss_ = bce(outputs[0], labels.float().view(-1, 1))
-            if without is None or without != "contrastive":
-                loss_ += experiment["factor"] * supcon(
-                    F.normalize(outputs[1]).unsqueeze(1), labels
-                )
-            loss_.backward()
-            optimizer.step()
-            print(
-                f"\r[Epoch {epoch + 1:02d}/{max(epochss):02d} | Batch {i + 1:04d}/{len(train):04d} | Time {training_time + time.time() - training_epoch_start:1.1f}s] loss: {loss_.item():1.4f}",
-                end="",
-            )
-        training_time += time.time() - training_epoch_start
-
-        # Validation
-        model.eval()
-        y_true = []
-        y_score = []
-        val_loss = 0
-        with torch.no_grad():
-            for data in val:
-                images, labels = data
-                images, labels = images.to(device), labels.to(device)
-                outputs = model(images)
-                loss_ = bce(outputs[0], labels.float().view(-1, 1))
-                if without is None or without != "contrastive":
-                    loss_ += experiment["factor"] * supcon(
-                        F.normalize(outputs[1]).unsqueeze(1), labels
-                    )
-                val_loss += loss_.item()
-                y_true.extend(labels.cpu().numpy().tolist())
-                y_score.extend(
-                    torch.sigmoid(outputs[0]).squeeze().cpu().numpy().tolist()
-                )
-
-        val_acc = accuracy_score(np.array(y_true), np.array(y_score) > 0.5)
-        results["val_loss"].append(val_loss / len(val))
-        results["val_acc"].append(val_acc)
-        print(f", val_loss: {val_loss / len(val):1.4f}, val_acc: {val_acc:1.4f}")
-
-        if epoch + 1 in epochss:
-            # Testing
-            accs = []
-            aps = []
-            aucs = []
-            print("generator: AUC / ACC / AP")
-            for g, loader in test:
-                model.eval()
-                y_true = []
-                y_score = []
-                with torch.no_grad():
-                    for data in loader:
-                        images, labels = data
-                        images, labels = images.to(device), labels.to(device)
-                        outputs = model(
-                            images
-                            if experiment["training_set"] == "progan"
-                            else images.view(-1, 3, 224, 224)
-                        )
-                        y_true.extend(labels.cpu().numpy().tolist())
-                        if experiment["training_set"] == "progan":
-                            y_score.extend(
-                                torch.sigmoid(outputs[0]).cpu().numpy().tolist()
-                            )
-                        else:
-                            y_score.extend(
-                                torch.sigmoid(
-                                    outputs[0]
-                                    .view(images.shape[0], images.shape[1])
-                                    .mean(1)
-                                )
-                                .cpu()
-                                .numpy()
-                                .tolist()
-                            )
-
-                test_acc = accuracy_score(np.array(y_true), np.array(y_score) > 0.5)
-                test_ap = average_precision_score(y_true, y_score)
-                test_auc = roc_auc_score(y_true, y_score)
-                accs.append(test_acc)
-                aps.append(test_ap)
-                aucs.append(test_auc)
-
-                results["test"][g] = {
-                    "acc": test_acc,
-                    "ap": test_ap,
-                    "auroc": test_auc,
-                }
-
-                print(f"{g}: {100 * test_auc:1.1f} / {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
-
-            print(
-                f"Mean: {100 * sum(aucs) / len(aucs):1.1f} / {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
-            )
-
-            if store:
-                ckpt_name = (
-                    f"ckpt/model_{len(experiment['classes'])}class_trainable.pth"
-                    if experiment["training_set"] == "progan"
-                    else f"ckpt/model_ldm_trainable.pth"
-                )
-                print(f"Saving {ckpt_name} ...")
-                torch.save(
-                    {
-                        k: model.state_dict()[k]
-                        for k in model.state_dict()
-                        if "clip" not in k
-                    },
-                    ckpt_name,
-                )
-            else:
-                log = {
-                    "epochs": epoch + 1,
-                    "config": experiment,
-                    "results": copy.deepcopy(results),
-                }
-                if without is None:
-                    if experiment["training_set"] == "ldm":
-                        filename = f'{experiment["savpath"]}_{epoch+1}.pickle'
-                    elif epoch:
-                        filename = f'{experiment["savpath"].replace("grid", "epochs")}_{epoch+1}.pickle'
-                    elif ds_frac is not None:
-                        filename = f'{experiment["savpath"].replace("grid", "dataset_size")}_{epoch+1}_{ds_frac}.pickle'
-                    else:
-                        filename = f'{experiment["savpath"]}_{epoch+1}.pickle'
-                else:
-                    filename = f"results/ablations/ncls_{len(experiment['classes'])}_{without}.pickle"
-                with open(filename, "wb") as h:
-                    pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
-
-
-def get_our_trained_model(ncls, device):
-    if ncls == 1:
-        nproj = 1
-        proj_dim = 256
-    elif ncls == 2:
-        nproj = 4
-        proj_dim = 512
-    elif ncls == 4:
-        nproj = 2
-        proj_dim = 1024
-    elif ncls == "ldm":
-        nproj = 4
-        proj_dim = 1024
-
-    model = Model(
-        backbone=("ViT-L/14", 1024),
-        nproj=nproj,
-        proj_dim=proj_dim,
-        device=device,
-    )
-    setting = "ldm" if ncls == "ldm" else f"{ncls}class"
-    ckpt_path = f"ckpt/model_{setting}_trainable.pth"
-    state_dict = torch.load(ckpt_path, map_location=device)
-    for name in state_dict:
-        exec(
-            f'model.{name.replace(".", "[", 1).replace(".", "].", 1)} = torch.nn.Parameter(state_dict["{name}"])'
-        )
-    return model
 
 
 def get_generators():
@@ -423,6 +195,7 @@ def get_generators():
         "san",
         "crn",
         "imle",
+        "whichfaceisreal",
         "diffusion_datasets/guided",
         "diffusion_datasets/ldm_200",
         "diffusion_datasets/ldm_200_cfg",
@@ -441,6 +214,10 @@ def get_generators():
         "synthbuster/firefly",
         "synthbuster/midjourney-v5",
         "flux",
+        "gigagan",
+        "midjourney-v6.1",
+        "stable-diffusion-3",
+
     ]
 
 
@@ -454,58 +231,6 @@ def seed_everything(TORCH_SEED):
     torch.cuda.manual_seed_all(TORCH_SEED)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
-
-
-def evaluation(model, test, device, training="progan", ours=False, filename=None):
-    accs = []
-    aps = []
-    aucs = []
-    log = {}
-    for g, loader in test:
-        model.eval()
-        y_true = []
-        y_score = []
-        with torch.no_grad():
-            for data in loader:
-                images, labels = data
-                images, labels = images.to(device), labels.to(device)
-                if ours:
-                    outputs = model(
-                        images if training == "progan" else images.view(-1, 3, 224, 224)
-                    )[0]
-                else:
-                    outputs = model(images)
-                y_true.extend(labels.cpu().numpy().tolist())
-                if training == "progan":
-                    y_score.extend(torch.sigmoid(outputs).cpu().numpy().tolist())
-                else:
-                    y_score.extend(
-                        torch.sigmoid(
-                            outputs.view(images.shape[0], images.shape[1]).mean(1)
-                        )
-                        .cpu()
-                        .numpy()
-                        .tolist()
-                    )
-
-        test_acc = accuracy_score(np.array(y_true), np.array(y_score) > 0.5)
-        test_ap = average_precision_score(y_true, y_score)
-        test_auc = roc_auc_score(y_true, y_score)
-        accs.append(test_acc)
-        aps.append(test_ap)
-        aucs.append(test_auc)
-        log[g] = {
-            "acc": test_acc,
-            "ap": test_ap,
-            "auroc": test_auc,
-        }
-        print(f"{g} AUC/ACC/AP: {100 * test_auc:1.1f} / {100 * test_acc:1.1f} / {100 * test_ap:1.1f}")
-    print(
-        f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f}"
-    )
-    if filename is not None:
-        with open(filename, "wb") as h:
-            pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 def data_augment(img):
@@ -760,41 +485,46 @@ def get_feature_loader(
                 drop_last=False
             )
 
-def train_flow_experiment(
+def train(
     experiment,
-    epochs,
-    workers,
-    device,
+    model,
+    data=None,
+    loss_fn=None,
+    optimizer=None,
+    scheduler=None,
+    epochs=10,
+    workers=12,
+    device="cpu",
+    score_fn=lambda x:x,
     store=False,
-    ds_frac=None,
 ):
     seed_everything(0)
 
-    train = get_feature_loader(experiment=experiment, split="train", workers=workers, ds_frac=ds_frac, target="real")
-    val = get_feature_loader(experiment=experiment, split="val", workers=workers, ds_frac=ds_frac, target="both")
-    test = get_feature_loader(experiment=experiment, split="test", workers=workers, ds_frac=ds_frac, target="both")
-    input_dim = len(train.dataset.features[0][0])
-
-    if experiment["flow"] in "nf":
-        model = NormalizingFlow(
-            input_dim=input_dim,
-            num_steps=experiment["num_steps"]
-        )
-    elif experiment["flow"] in "glow":
-        model = MiniGlow(
-            input_dim=input_dim,
-            num_steps=experiment["num_steps"]
+    if data is None:
+        transforms_train, transforms_val, transforms_test = get_transforms()
+        train, val, test = get_loaders(
+            experiment=experiment,
+            transforms_train=transforms_train,
+            transforms_val=transforms_val,
+            transforms_test=transforms_test,
+            workers=workers,
         )
     else:
-        raise ValueError("Flow type not supported")
+        train, val, test = data
     model.to(device)
 
-    optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
-    scheduler = torch.optim.lr_scheduler.StepLR(
-        optimizer,
-        step_size=experiment["lr_step"],
-        gamma=experiment["lr_gamma"],
-    )
+    if optimizer is None:
+        optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
+    if scheduler is None:
+        scheduler = torch.optim.lr_scheduler.StepLR(
+            optimizer,
+            step_size=experiment["lr_step"],
+            gamma=experiment["lr_gamma"],
+        )
+    if loss_fn is None:
+        raise ValueError("Define a loss function.")
+    if score_fn is None:
+        score_fn = lambda x: x
     
     print(json.dumps(experiment, indent=2))
     results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
@@ -813,9 +543,9 @@ def train_flow_experiment(
                 "loss": torch.inf
             })
             for data in train:
-                features, _ = data
-                features = features.float().to(device)
-                loss = - model.log_prob(features).mean(axis=0)
+                images, labels = data
+                images, labels = images.float().to(device), labels.float().to(device)
+                loss = loss_fn(model(images), labels)
                 train_loss.append(loss.item())
                 optimizer.zero_grad()
                 loss.backward()
@@ -840,11 +570,11 @@ def train_flow_experiment(
                 ncols=100
             ) as pbar:
                 for data in val:
-                    features, labels = data
-                    features, labels = features.float().to(device), labels.to(device)
-                    log_probs = model.log_prob(features)
-                    scores = 1 - torch.exp(log_probs)
-                    val_loss -= log_probs.mean().item()
+                    images, labels = data
+                    images, labels = images.float().to(device), labels.to(device)
+                    output = model(images)
+                    val_loss = loss_fn(output, labels)
+                    scores = score_fn(output)
                     y_true.extend(labels.cpu().numpy().tolist())
                     y_score.extend(scores.cpu().numpy().tolist())
                     pbar.update(1)
@@ -875,10 +605,10 @@ def train_flow_experiment(
 
         with torch.no_grad():
             for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
-                features, labels = data
-                features, labels = features.float().to(device), labels.to(device)
-                log_probs = model.log_prob(features)
-                scores = 1 - torch.exp(log_probs)
+                images, labels = data
+                images, labels = images.float().to(device), labels.to(device)
+                output = model(images)
+                scores = score_fn(output)
                 y_true.extend(labels.cpu().numpy().tolist())
                 y_score.extend(scores.cpu().numpy().tolist())
 
@@ -901,7 +631,7 @@ def train_flow_experiment(
     )
 
     if store:
-        ckpt_name = f"ckpt/model_{len(experiment["classes"])}_{experiment['num_steps']}step_{experiment["flow"]}.pth"
+        ckpt_name = f"ckpt/{experiment["save_path"]}.pickle"
         print(f"Saving {ckpt_name} ...")
         torch.save(model, ckpt_name)
 
@@ -910,7 +640,7 @@ def train_flow_experiment(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/flow/ncls_{len(experiment['classes'])}_{experiment['num_steps']}step_{experiment["flow"]}.pickle"
+    filename = f"results/{experiment["log_path"]}.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 

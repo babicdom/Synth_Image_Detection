@@ -153,6 +153,7 @@ class EvaluationDataset(Dataset):
                     "san",
                     "crn",
                     "imle",
+                    "whichfaceisreal"
                 ]
             ]
         ):
@@ -168,23 +169,38 @@ class EvaluationDataset(Dataset):
             [
                 x in generator
                 for x in [
-                    "synthbuster/dalle2",
-                    "synthbuster/dalle3",
-                    "synthbuster/stable-diffusion-1-3",
-                    "synthbuster/stable-diffusion-1-4",
-                    "synthbuster/stable-diffusion-2",
-                    "synthbuster/stable-diffusion-xl",
+                    "synthbuster/dalle",
+                    "synthbuster/stable-diffusion",
                     "synthbuster/glide",
                     "synthbuster/firefly",
                     "synthbuster/midjourney-v5",
                 ]
             ]
         ):
-            self.real = [(f"data/synthbuster/raise/{x}", 0) for x in os.listdir("data/synthbuster/raise")]
+            self.real = [(f"data/test/synthbuster/raise/0_real/{x}", 0) for x in os.listdir("data/test/synthbuster/raise/0_real")]
             self.fake = [
-                (f"data/test/{generator}/{x}", 1)
-                for x in os.listdir(f"data/test/{generator}")
+                (f"data/test/{generator}/1_fake/{x}", 1)
+                for x in os.listdir(f"data/test/{generator}/1_fake")
                 if all([y not in x for y in [".txt", ".py"]])
+            ]
+        elif any(
+            [
+                x in generator
+                for x in [
+                    "flux",
+                    "gigagan",
+                    "midjourney-v6.1",
+                    "stable-diffusion-3",
+                ]
+            ]
+        ):
+            self.real = [
+                (f"data/test/diffusion_datasets/laion/0_real/{x}", 0)
+                for x in os.listdir(f"data/test/diffusion_datasets/laion/0_real")
+            ]
+            self.fake = [
+                (f"data/test/spai/{generator}/1_fake/{x}", 1)
+                for x in os.listdir(f"data/test/spai/{generator}/1_fake")
             ]
 
         if target == "both":
