@@ -722,6 +722,6 @@ def eval_model(experiment, ncls=20, num_steps=8, flow="glow", device="cuda:0", w
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/flow/eval_{num_steps}step_ncls_{len(experiment['classes'])}.pickle"
+    filename = f"results/{experiment["log_path"]}/eval.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
