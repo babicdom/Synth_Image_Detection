@@ -1,4 +1,4 @@
-from src.utils import train
+from src.utils import train, get_loaders, get_transforms
 from src.models import FlowModel
 import torch
 import os
@@ -19,9 +19,9 @@ experiment = {
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
-    "epochs": 2,
-    "log_path": "FlowModel/Intermediate_10step_all_classes",
-    "save_path": "FlowModel/10step_all_classes",
+    "epochs": 4,
+    "log_path": "FlowModel/Intermediate_6step_all_classes",
+    "save_path": "FlowModel/6step_all_classes",
 }
 model = FlowModel(
     backbone=experiment["backbone"],
@@ -31,16 +31,38 @@ model = FlowModel(
     proj_dim=experiment["proj_dim"],
     device='cuda:0' if torch.cuda.is_available() else 'cpu'
 )
+tr_train, tr_val, tr_test = get_transforms()
+data = get_loaders(
+    experiment=experiment,
+    transforms_train=tr_train,
+    transforms_test=tr_test,
+    transforms_val=tr_val,
+    target="real",
+    workers=12,
+)
 
-def loss_fn(log_probs, labels=None):
+def loss_fn(log_probs, labels):
     return - log_probs.mean(axis=0)
 
 def score_fn(log_probs):
     return 1 - torch.exp(log_probs)
 
+def nan_hook(module, input, output):
+    if isinstance(output, tuple):
+        output = output[0]
+    if torch.isnan(output).any():
+        print(f"NaN in {module.__class__.__name__}")
+        for i in module.named_parameters():
+            print(i)
+        raise ValueError
+
+for layer in model.flow.modules():
+    layer.register_forward_hook(nan_hook)
+
 train(
     experiment=experiment,
     model=model,
+    data=data,
     loss_fn=loss_fn,
     epochs=experiment["epochs"],
     workers=12,

@@ -1,8 +1,13 @@
+from functools import partial
+from typing import Callable
 import torch
 import torch.nn as nn
 import clip
 from src.nf import NormalizingFlow, MiniGlow
 from src.vision_transformer import Encoder
+from einops import rearrange
+
+CLIP_SEQ_LENGTH=256
 
 class Hook:
     def __init__(self, name, module):
@@ -16,16 +21,64 @@ class Hook:
     def close(self):
         self.hook.remove()
 
+class PatchAttention(nn.Module):
+    def __init__(
+            self, 
+            att_dim: int,
+            n_heads: int,
+            dropout: int,
+            hidden_dim: int,
+        ):
+        super().__init__()
+        dim_head: int = att_dim // n_heads
+        self.heads = n_heads
+        self.scale = dim_head ** -0.5
+        self.attend = nn.Softmax(dim=-1)
+        self.dropout = nn.Dropout(dropout)
+        self.kv = nn.Linear(hidden_dim, att_dim*2, bias=False)
+        self.patch_aggregator = nn.Parameter(torch.zeros((n_heads, 1, att_dim//n_heads)))
+        nn.init.trunc_normal_(self.patch_aggregator, std=.02)
+        self.o = nn.Sequential(
+            nn.Linear(att_dim, hidden_dim, bias=False),
+            nn.Dropout(dropout)
+        )
+
+    def forward(
+            self, 
+            x: torch.Tensor,
+            return_attn: bool = False,
+    ):
+        aggregator: torch.Tensor = self.patch_aggregator.expand(x.size(0), -1, -1, -1)
+        kv = self.kv(x).chunk(2, dim=-1)
+        k, v = map(lambda t: rearrange(t, 'b n (h d) -> b h n d', h=self.heads), kv)
+        dots = torch.matmul(aggregator, k.transpose(-1, -2)) * self.scale
+        attn = self.attend(dots)
+        attn = self.dropout(attn)
+        x = torch.matmul(attn, v)
+        x = rearrange(x, 'b h n d -> b n (h d)')
+        x = self.o(x)
+        x = x.squeeze(dim=1)
+        if return_attn:
+            return x, attn
+        else:
+            return x
+
 
 class Model(nn.Module):
     def __init__(
         self,
         backbone,
-        nproj,
-        proj_dim,
-        image_size,
-        patch_size,
         device,
+        n_layers: int,
+        n_heads: int,
+        mlp_dim: int,
+        att_dim: int,
+        num_classes: int = 1,
+        cls_ration: int = 1,
+        cls_dropout: float = 0.5,
+        dropout: float = 0.0,
+        attention_dropout: float = 0.0,
+        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
     ):
         super().__init__()
 
@@ -36,30 +89,56 @@ class Model(nn.Module):
         for name, param in self.clip.named_parameters():
             param.requires_grad = False
 
-        # Register hooks to get intermediate layer outputs
-        name, module = list(self.clip.visual.named_modules())[-1]
-        self.hook = Hook(name, module)
+        # Register hook to get the last layer tokens
+        self.hook = Hook("transformer.resblocks.23.ln_2", self.clip.visual.transformer.resblocks[-1].ln_2)
 
-
+        # Extension
+        hidden_dim = backbone[1]
         self.encoder = Encoder(
-            seq_length=257
+            seq_length=CLIP_SEQ_LENGTH,
+            num_layers=n_layers,
+            num_heads=n_heads,
+            hidden_dim=hidden_dim,
+            mlp_dim=mlp_dim,
+            dropout=dropout,
+            attention_dropout=attention_dropout,
+            norm_layer=norm_layer,
         )
-        
 
-    def forward(self, x):
+        # Patch Attention Aggregation
+        self.patch_attention = PatchAttention(
+            att_dim=att_dim,
+            n_heads=n_heads,
+            dropout=dropout,
+            hidden_dim=hidden_dim,
+        )
+
+        # Classification head
+        self.cls = nn.Sequential(
+            nn.LayerNorm(hidden_dim),
+            nn.Linear(hidden_dim, hidden_dim*cls_ration),
+            nn.GELU(),
+            nn.Dropout(cls_dropout),
+            nn.Linear(hidden_dim*cls_ration, hidden_dim*cls_ration),
+            nn.GELU(),
+            nn.Dropout(cls_dropout),
+            nn.Linear(hidden_dim*cls_ration, num_classes)
+        )
+        self.to(device)
+        
+    def forward(
+            self, 
+            x: torch.Tensor
+    ):
         with torch.no_grad():
             self.clip.encode_image(x)
-            g_ = torch.stack([h.output for h in self.hooks], dim=2)[0, :, :, :]
-        g = self.proj1(g_.float())
-
-        z = torch.softmax(self.alpha, dim=1) * g
-        z = torch.sum(z, dim=1)
-        z = self.proj2(z)
-
-        p = self.head(z)
-
-        return p, g_.sum(dim=1)
-
+            g = self.hook.output[1:, :, :]
+        g = g.permute(1, 0, 2)
+        g = self.encoder(g)
+        g = self.patch_attention(g)
+        o = self.cls(g).squeeze(-1)
+        return o, g
+        
 
 class FlowModel(nn.Module):
     def __init__(
@@ -97,18 +176,31 @@ class FlowModel(nn.Module):
                 ]
             )
         self.proj1 = nn.Sequential(*proj1_layers).to(device)
-
+        self.alpha = nn.Parameter(torch.randn([1, len(self.hooks), proj_dim]))
+        proj2_layers = [nn.Dropout()]
+        for _ in range(n_proj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        
         # Initialize the trainable part of the model
         self.flow = MiniGlow(input_dim=proj_dim, num_steps=n_steps) if flow in "glow" else NormalizingFlow(input_dim=proj_dim, num_steps=n_steps)
-        self.flow.to(device)
-
+        self.to(device)
 
     def forward(self, x):
         with torch.no_grad():
             self.clip.encode_image(x)
             g = torch.stack([h.output for h in self.hooks], dim=2)[0, :, :, :]
-        g = self.proj1(g.float()).mean(axis=1)
-        p = self.flow.log_prob(g)
+        g = self.proj1(g.float())
+        z = torch.softmax(self.alpha, dim=1) * g
+        z = torch.sum(z, dim=1)
+        z = self.proj2(z)
+        p = self.flow.log_prob(z)
         return p
     
 if __name__ == "__main__":
@@ -118,10 +210,18 @@ if __name__ == "__main__":
     proj_dim = 512
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
-    flow_model = FlowModel(backbone=backbone, flow="glow", n_steps=4, nproj=2, proj_dim=512, device=device)
+    # model = FlowModel(backbone=backbone, flow="glow", n_steps=4, n_proj=2, proj_dim=512, device=device)
+    model = Model(
+        backbone=backbone,
+        device=device,
+        n_layers=4,
+        n_heads=8,
+        mlp_dim=1024,
+        att_dim=512,
+    )
 
     # Example input
     x = torch.randn(16, 3, 224, 224).to(device)
     with torch.no_grad():
-        output = flow_model(x)
+        output = model(x)
     print("Output shape:", output.shape)

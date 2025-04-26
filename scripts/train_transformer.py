@@ -1,4 +1,7 @@
-from src.utils import eval_model
+from src.utils import train, transformer_train_loss
+from src.models import Model
+import torch
+import os
 
 experiment = {
     # Model based
@@ -9,7 +12,16 @@ experiment = {
     "att_dim": 512,
 
     # Training based
-    "training_set": None,
+    "training_set": "progan",
+    "contrastive": True,
+    "batch_size": 64,
+    "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
+    "ds_frac": 0.5,
+    "lr": 1e-4,
+    "lr_step": 5,
+    "lr_gamma": 0.5,
+    "epochs": 4,
+    "factor": 0.2,
     "log_path": "Model/4layers_8heads_all_classes",
     "save_path": "Model/4layers_8heads_all_classes",
 }
@@ -21,10 +33,14 @@ model = Model(
     mlp_dim=experiment["mlp_dim"],
     att_dim=experiment["att_dim"],
 )
-model.load_state_dict(torch.load(f"ckpt/{experiment['log_path']}.pth"))
 
-eval_model(
+train(
     experiment=experiment,
     model=model,
+    loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"]),
     score_fn=lambda x:torch.sigmoid(x[0]).squeeze(),
+    epochs=experiment["epochs"],
+    workers=12,
+    device=torch.device("cuda:0"),
+    store=True,
 )

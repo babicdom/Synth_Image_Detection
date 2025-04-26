@@ -13,12 +13,13 @@ import copy
 import json
 import random
 import time
+from einops import rearrange
 
 import cv2
 import numpy as np
 from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
-from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score
+from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score, confusion_matrix
 
 from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, FeatureDataset
 
@@ -169,14 +170,12 @@ def get_loaders(
         split="val",
         transforms=transforms_val,
         workers=workers,
-        target=target
     )
     test = get_loader(
         experiment,
         split="test",
         transforms=transforms_test,
         workers=workers,
-        target=target
     )
     return train, val, test
 
@@ -457,18 +456,18 @@ def get_feature_loader(
     if split in "test":
         return [
             (g, DataLoader(
-                FeatureDataset(
-                split=split,
-                classes=[g],
-                ds_frac=ds_frac,
-                target=target
-                ),
-                batch_size=experiment["batch_size"],
-                shuffle=True,
-                num_workers=workers,
-                pin_memory=True,
-                drop_last=False
-            )) for g in get_generators(experiment["training_set"])
+                    FeatureDataset(
+                    split=split,
+                    classes=[g],
+                    ds_frac=ds_frac,
+                    target=target
+                    ),
+                    batch_size=experiment["batch_size"],
+                    shuffle=True,
+                    num_workers=workers,
+                    pin_memory=True,
+                    drop_last=False
+                )) for g in get_generators(experiment["training_set"])
         ]
     else:
         return DataLoader(
@@ -485,17 +484,60 @@ def get_feature_loader(
                 drop_last=False
             )
 
+def find_best_acc_threshold(y_true, y_pred):
+    thresholds = np.linspace(0, 1, 100)
+    best_accuracy = 0
+    best_threshold = 0
+
+    for threshold in thresholds:
+        accuracy = accuracy_score(y_true, y_pred > threshold)
+        if accuracy > best_accuracy:
+            best_accuracy = accuracy
+            best_threshold = threshold
+
+    return best_threshold
+
+def calculate_for_threshold(y_true, y_pred, threshold):
+    r_acc = accuracy_score(y_true[y_true==0], y_pred[y_true==0] > threshold)
+    f_acc = accuracy_score(y_true[y_true==1], y_pred[y_true==1] > threshold)
+    acc = accuracy_score(y_true, y_pred > threshold)
+
+    tn, fp, fn, tp = confusion_matrix(y_true, y_pred > threshold).ravel()
+
+    ppv = tp / (tp + fp) if (tp + fp) != 0 else 0  # Positive Predictive Value
+    npv = tn / (tn + fn) if (tn + fn) != 0 else 0  # Negative Predictive Value
+    tpr = tp / (tp + fn) if (tp + fn) != 0 else 0  # Recall (True Positive Rate)
+    tnr = tn / (fp + tn) if (fp + tn) != 0 else 0  # True Negative Rate
+
+    return { 
+        'r_acc': r_acc, 'f_acc': f_acc, 'acc': acc, 
+        'tn': tn, 'fp': fp, 'fn': fn, 'tp': tp, 
+        'ppv': ppv, 'npv': npv, 'tpr': tpr, 'tnr': tnr 
+    }  
+
+bce = nn.BCEWithLogitsLoss(reduction="sum")
+supcon = SupConLoss()
+def transformer_train_loss(factor, contrastive):
+    def _transformer_train_loss(output, labels):
+        loss_ = bce(output[0], labels.float()).view(-1, 1)
+        if contrastive:
+            loss_ += factor * supcon(
+                F.normalize(output[1]).unsqueeze(1), labels
+            )
+        return loss_
+    return _transformer_train_loss
+
 def train(
     experiment,
     model,
     data=None,
-    loss_fn=None,
+    loss_fn=nn.BCEWithLogitsLoss(reduction="sum"),
     optimizer=None,
     scheduler=None,
     epochs=10,
     workers=12,
     device="cpu",
-    score_fn=lambda x:x,
+    score_fn=lambda x:torch.sigmoid(x).squeeze(),
     store=False,
 ):
     seed_everything(0)
@@ -506,7 +548,7 @@ def train(
             experiment=experiment,
             transforms_train=transforms_train,
             transforms_val=transforms_val,
-            transforms_test=transforms_test,
+            transforms_test=transforms_val, # transforms_test,
             workers=workers,
         )
     else:
@@ -521,10 +563,6 @@ def train(
             step_size=experiment["lr_step"],
             gamma=experiment["lr_gamma"],
         )
-    if loss_fn is None:
-        raise ValueError("Define a loss function.")
-    if score_fn is None:
-        score_fn = lambda x: x
     
     print(json.dumps(experiment, indent=2))
     results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
@@ -549,6 +587,7 @@ def train(
                 train_loss.append(loss.item())
                 optimizer.zero_grad()
                 loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
                 optimizer.step()
                 pbar.set_postfix({
                     "loss": loss.item()
@@ -561,7 +600,7 @@ def train(
         y_true = []
         y_score = []
         val_loss = 0
-
+        
         with torch.no_grad():
             with tqdm.tqdm(
                 total=len(val),
@@ -579,23 +618,54 @@ def train(
                     y_score.extend(scores.cpu().numpy().tolist())
                     pbar.update(1)
                     pbar.set_postfix({
-                        "loss": np.mean(val_loss)
+                        "loss": val_loss.item()
                     })
                 pbar.close()
-
+    
         val_ap = average_precision_score(y_true, y_score)
         val_auc = roc_auc_score(y_true, y_score)
-        results["val_loss"].append(val_loss / len(val))
         results["val_ap"].append(val_ap)
         results["val_auc"].append(val_auc)
-        print(f"val_loss: {val_loss / len(val):1.4f}, val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
-
+        print(f"val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
         scheduler.step()
 
+    if store:
+        ckpt_name = f"ckpt/{experiment["save_path"]}/train.pth"
+        print(f"Saving {ckpt_name} ...")
+        torch.save(model, ckpt_name)
+
+    log = {
+        "epochs": epoch + 1,
+        "config": experiment,
+        "results": copy.deepcopy(results),
+    }
+    os.makedirs(f"results/{experiment["log_path"]}/", exist_ok=True)
+    filename = f"results/{experiment["log_path"]}/train.pickle"
+    with open(filename, "wb") as h:
+        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+
     # Testing
+    eval_model(
+        experiment=experiment,
+        model=model,
+        test=test,
+        score_fn=score_fn,
+        device=device
+        )
+
+def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
+    results = {}
     aps = []
     aucs = []
     accs = []
+
+    if test is None:
+        transform = get_transform("val")
+        test = get_loader(
+            experiment=experiment,
+            split="test",
+            transforms=transform,
+        )
 
     print("Testing - generator: ACC / AP / AUC")
     for g, dl in test:
@@ -614,108 +684,24 @@ def train(
 
         test_ap = average_precision_score(y_true, y_score)
         test_auc = roc_auc_score(y_true, y_score)
-        test_acc = accuracy_score(np.array(y_true), np.array(y_score) <= 0.05)
+        threshold = find_best_acc_threshold(np.array(y_true), np.array(y_score))
+        threshold_accs = calculate_for_threshold(np.array(y_true), np.array(y_score), threshold)
+
         aps.append(test_ap)
         aucs.append(test_auc)
-        accs.append(test_acc)
+        accs.append(threshold_accs["acc"])
 
-        results["test"][g] = {
+        results[g] = {
             "ap": test_ap,
             "auroc": test_auc,
-            "acc": test_acc,
+            "acc": threshold_accs["acc"],
+            "tpr": threshold_accs["tpr"],
+            "tnr": threshold_accs["tnr"],
         }
-        print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+        print(f"{g}: {100 * threshold["acc"]:1.1f} / {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
 
     print(
         f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
-    )
-
-    if store:
-        ckpt_name = f"ckpt/{experiment["save_path"]}.pickle"
-        print(f"Saving {ckpt_name} ...")
-        torch.save(model, ckpt_name)
-
-    log = {
-        "epochs": epoch + 1,
-        "config": experiment,
-        "results": copy.deepcopy(results),
-    }
-    filename = f"results/{experiment["log_path"]}.pickle"
-    with open(filename, "wb") as h:
-        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
-
-
-def eval_model(experiment, ncls=20, num_steps=8, flow="glow", device="cuda:0", workers=12, ds_frac=1):
-    ckpt_path = f"ckpt/model_{ncls}_{num_steps}step_{flow}.pth"
-    model = torch.load(ckpt_path, map_location=device)
-    val = get_feature_loader(experiment=experiment, split="val", workers=workers, ds_frac=ds_frac, target="both")
-    test = get_feature_loader(experiment=experiment, split="test", workers=workers, ds_frac=ds_frac, target="both")
-
-    results = {"val_ap": [], "val_auc": [], "test": {}}
-
-    model.eval()
-    y_true = []
-    y_score = []
-
-    with torch.no_grad():
-        with tqdm.tqdm(
-            total=len(val),
-            desc="Validation",
-            unit="batch",
-            ncols=100
-        ) as pbar:
-            for data in val:
-                features, labels = data
-                features, labels = features.float().to(device), labels.to(device)
-                log_probs = model.log_prob(features)
-                scores = 1 - torch.exp(log_probs)
-                val_loss -= log_probs.mean().item()
-                y_true.extend(labels.cpu().numpy().tolist())
-                y_score.extend(scores.cpu().numpy().tolist())
-                pbar.update(1)
-                pbar.set_postfix({
-                    "loss": np.mean(val_loss)
-                })
-            pbar.close()
-
-    val_ap = average_precision_score(y_true, y_score)
-    val_auc = roc_auc_score(y_true, y_score)
-    results["val_loss"].append(val_loss / len(val))
-    results["val_ap"].append(val_ap)
-    results["val_auc"].append(val_auc)
-    print(f"val_loss: {val_loss / len(val):1.4f}, val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
-
-    aps = []
-    aucs = []
-
-    print("Testing - generator: AP / AUC")
-    for g, dl in test:
-        model.eval()
-        y_true = []
-        y_score = []
-
-        with torch.no_grad():
-            for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
-                features, labels = data
-                features, labels = features.float().to(device), labels.to(device)
-                log_probs = model.log_prob(features)
-                scores = 1 - torch.exp(log_probs)
-                y_true.extend(labels.cpu().numpy().tolist())
-                y_score.extend(scores.cpu().numpy().tolist())
-
-        test_ap = average_precision_score(y_true, y_score)
-        test_auc = roc_auc_score(y_true, y_score)
-        aps.append(test_ap)
-        aucs.append(test_auc)
-
-        results["test"][g] = {
-            "ap": test_ap,
-            "auroc": test_auc,
-        }
-        print(f"{g}: {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
-
-    print(
-        f"Mean: {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
     )
 
     log = {
