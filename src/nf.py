@@ -300,7 +300,6 @@ if __name__ == '__main__':
 
     # nf = NormalizingFlow(304, num_steps=2)
     nf = MiniGlow(512, num_steps=6)
-
     prelogits = torch.randn(1000, 512)
     # z = nf(prelogits)
     ln_px = nf.log_prob(prelogits)

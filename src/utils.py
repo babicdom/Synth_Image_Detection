@@ -531,7 +531,7 @@ def train(
     experiment,
     model,
     data=None,
-    loss_fn=nn.BCEWithLogitsLoss(reduction="sum"),
+    loss_fn=bce,
     optimizer=None,
     scheduler=None,
     epochs=10,
@@ -581,9 +581,14 @@ def train(
                 "loss": torch.inf
             })
             for data in train:
+                prev_model = model.flow.copy()
                 images, labels = data
                 images, labels = images.float().to(device), labels.float().to(device)
-                loss = loss_fn(model(images), labels)
+                try:
+                    loss = loss_fn(model(images), labels)
+                except Exception as e:
+                    for layer in model.flow.named_parameters():
+                        print(layer)
                 train_loss.append(loss.item())
                 optimizer.zero_grad()
                 loss.backward()
@@ -632,7 +637,12 @@ def train(
     if store:
         ckpt_name = f"ckpt/{experiment["save_path"]}/train.pth"
         print(f"Saving {ckpt_name} ...")
-        torch.save(model, ckpt_name)
+        torch.save(model.state_dict(), ckpt_name)
+        pickle.dump(
+            experiment,
+            open(f"ckpt/{experiment["save_path"]}/experiment.pickle", "wb"),
+            protocol=pickle.HIGHEST_PROTOCOL,
+        )
 
     log = {
         "epochs": epoch + 1,
@@ -665,6 +675,7 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
             experiment=experiment,
             split="test",
             transforms=transform,
+            workers=12,
         )
 
     print("Testing - generator: ACC / AP / AUC")
@@ -685,20 +696,20 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
         test_ap = average_precision_score(y_true, y_score)
         test_auc = roc_auc_score(y_true, y_score)
         threshold = find_best_acc_threshold(np.array(y_true), np.array(y_score))
-        threshold_accs = calculate_for_threshold(np.array(y_true), np.array(y_score), threshold)
+        threshold_acc = calculate_for_threshold(np.array(y_true), np.array(y_score), threshold)
 
         aps.append(test_ap)
         aucs.append(test_auc)
-        accs.append(threshold_accs["acc"])
+        accs.append(threshold_acc["acc"])
 
         results[g] = {
             "ap": test_ap,
             "auroc": test_auc,
-            "acc": threshold_accs["acc"],
-            "tpr": threshold_accs["tpr"],
-            "tnr": threshold_accs["tnr"],
+            "acc": threshold_acc["acc"],
+            "tpr": threshold_acc["tpr"],
+            "tnr": threshold_acc["tnr"],
         }
-        print(f"{g}: {100 * threshold["acc"]:1.1f} / {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+        print(f"{g}: {100 * threshold_acc["acc"]:1.1f} / {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
 
     print(
         f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"

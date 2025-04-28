@@ -105,6 +105,75 @@ class Model(nn.Module):
             norm_layer=norm_layer,
         )
 
+        # Classification head
+        self.cls = nn.Sequential(
+            nn.LayerNorm(hidden_dim),
+            nn.Linear(hidden_dim, hidden_dim*cls_ration),
+            nn.GELU(),
+            nn.Dropout(cls_dropout),
+            nn.Linear(hidden_dim*cls_ration, hidden_dim*cls_ration),
+            nn.GELU(),
+            nn.Dropout(cls_dropout),
+            nn.Linear(hidden_dim*cls_ration, num_classes)
+        )
+        self.to(device)
+        
+    def forward(
+            self, 
+            x: torch.Tensor
+    ):
+        with torch.no_grad():
+            self.clip.encode_image(x)
+            g = self.hook.output[1:, :, :]
+        g = g.permute(1, 0, 2)
+        g = self.encoder(g)
+        
+        # out = torch.zeros((x.size(0), 
+        # for i in range(CLIP_SEQ_LENGTH):
+        #     out
+        return o, g
+        
+class CLIPformer(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        device,
+        n_layers: int,
+        n_heads: int,
+        mlp_dim: int,
+        att_dim: int,
+        num_classes: int = 1,
+        cls_ration: int = 1,
+        cls_dropout: float = 0.5,
+        dropout: float = 0.0,
+        attention_dropout: float = 0.0,
+        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
+    ):
+        super().__init__()
+
+        self.device = device
+
+        # Load and freeze CLIP
+        self.clip, self.preprocess = clip.load(backbone[0], device=device)
+        for name, param in self.clip.named_parameters():
+            param.requires_grad = False
+
+        # Register hook to get the last layer tokens
+        self.hook = Hook("transformer.resblocks.23.ln_2", self.clip.visual.transformer.resblocks[-1].ln_2)
+
+        # Extension
+        hidden_dim = backbone[1]
+        self.encoder = Encoder(
+            seq_length=CLIP_SEQ_LENGTH,
+            num_layers=n_layers,
+            num_heads=n_heads,
+            hidden_dim=hidden_dim,
+            mlp_dim=mlp_dim,
+            dropout=dropout,
+            attention_dropout=attention_dropout,
+            norm_layer=norm_layer,
+        )
+
         # Patch Attention Aggregation
         self.patch_attention = PatchAttention(
             att_dim=att_dim,
@@ -138,7 +207,6 @@ class Model(nn.Module):
         g = self.patch_attention(g)
         o = self.cls(g).squeeze(-1)
         return o, g
-        
 
 class FlowModel(nn.Module):
     def __init__(
@@ -211,7 +279,7 @@ if __name__ == "__main__":
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
 
     # model = FlowModel(backbone=backbone, flow="glow", n_steps=4, n_proj=2, proj_dim=512, device=device)
-    model = Model(
+    model = CLIPformer(
         backbone=backbone,
         device=device,
         n_layers=4,

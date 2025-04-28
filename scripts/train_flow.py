@@ -52,8 +52,6 @@ def nan_hook(module, input, output):
         output = output[0]
     if torch.isnan(output).any():
         print(f"NaN in {module.__class__.__name__}")
-        for i in module.named_parameters():
-            print(i)
         raise ValueError
 
 for layer in model.flow.modules():
