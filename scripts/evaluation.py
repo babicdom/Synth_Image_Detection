@@ -6,7 +6,7 @@ import os
 
 
 experiment = pickle.load(
-    open(f"ckpt/Model/4layers_8heads_all_classes/experiment.pickle", "rb")
+    open(f"ckpt/PerPatchModel/4layers_8heads_all_classes/experiment.pickle", "rb")
 )
 model = Model(
     backbone=experiment["backbone"],
@@ -17,11 +17,11 @@ model = Model(
     att_dim=experiment["att_dim"],
 )
 model.load_state_dict(
-    torch.load(f"ckpt/Model/4layers_8heads_all_classes/train.pth", map_location="cuda:0")
+    torch.load(f"ckpt/PerPatchModel/4layers_8heads_all_classes/train.pth", map_location="cuda:0")
 )
 
 eval_model(
     experiment=experiment,
     model=model,
-    score_fn=lambda x:torch.sigmoid(x[0]).squeeze(),
+    score_fn=lambda x:torch.sigmoid(x[0]).mean(-1).squeeze(),
 )

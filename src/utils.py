@@ -618,7 +618,7 @@ def train(
             ) as pbar:
                 for data in val:
                     images, labels = data
-                    images, labels = images.float().to(device), labels.to(device)
+                    images, labels = images.float().to(device), labels.float().to(device)
                     output = model(images)
                     val_loss = loss_fn(output, labels)
                     scores = score_fn(output)
@@ -638,6 +638,7 @@ def train(
         scheduler.step()
 
     if store:
+        os.makedirs(f"ckpt/{experiment["save_path"]}/", exist_ok=True)
         ckpt_name = f"ckpt/{experiment["save_path"]}/train.pth"
         print(f"Saving {ckpt_name} ...")
         torch.save(model.state_dict(), ckpt_name)
@@ -652,8 +653,8 @@ def train(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    os.makedirs(f"results/{experiment["log_path"]}/", exist_ok=True)
-    filename = f"results/{experiment["log_path"]}/train.pickle"
+    os.makedirs(f"results/{experiment["save_path"]}/", exist_ok=True)
+    filename = f"results/{experiment["save_path"]}/train.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -687,6 +688,7 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
         y_true = []
         y_score = []
 
+        print(f'Fake: {len(dl.dataset.fake)}, Real: {len(dl.dataset.real)}, Total: {len(dl.dataset.images)}')
         with torch.no_grad():
             for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
                 images, labels = data
@@ -712,16 +714,16 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
             "tpr": threshold_acc["tpr"],
             "tnr": threshold_acc["tnr"],
         }
-        print(f"{g}: {100 * threshold_acc["acc"]:1.1f} / {100 * test_ap:1.1f} / {100 * test_auc:1.1f}")
+        print(f"{g}: {100 * threshold_acc["acc"]:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
 
     print(
-        f"Mean: {100 * sum(accs) / len(accs):1.1f} / {100 * sum(aps) / len(aps):1.1f} / {100 * sum(aucs) / len(aucs):1.1f}"
+        f"Mean: {100 * sum(accs) / len(accs):1.2f} / {100 * sum(aps) / len(aps):1.2f} / {100 * sum(aucs) / len(aucs):1.2f}"
     )
 
     log = {
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/{experiment["log_path"]}/eval.pickle"
+    filename = f"results/{experiment["save_path"]}/eval.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)

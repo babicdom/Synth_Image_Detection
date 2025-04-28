@@ -16,13 +16,12 @@ experiment = {
     "contrastive": False,
     "batch_size": 64,
     "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
-    "ds_frac": 0.05,
+    "ds_frac": 0.01,
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
     "epochs": 1,
     "factor": 0.2,
-    "log_path": "PerPatchModel/4layers_8heads_all_classes",
     "save_path": "PerPatchModel/4layers_8heads_all_classes",
 }
 model = Model(
@@ -38,7 +37,7 @@ train(
     experiment=experiment,
     model=model,
     loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"], unsqueeze=True),
-    score_fn=lambda x:torch.sigmoid(x[0]).squeeze(),
+    score_fn=lambda x:torch.sigmoid(x[0]).mean(-1).squeeze(),
     epochs=experiment["epochs"],
     workers=12,
     device=torch.device("cuda:0"),
