@@ -21,7 +21,7 @@ class Hook:
     def close(self):
         self.hook.remove()
 
-class PatchAttention(nn.Module):
+class PatchAttentionPool(nn.Module):
     def __init__(
             self, 
             att_dim: int,
@@ -62,7 +62,35 @@ class PatchAttention(nn.Module):
             return x, attn
         else:
             return x
+        
+class PatchAttention(nn.Module):
+    def __init__(
+            self, 
+            att_dim: int,
+            n_heads: int,
+            dropout: int,
+            hidden_dim: int,
+        ):
+        super().__init__()
+        dim_head: int = att_dim // n_heads
+        self.heads = n_heads
+        self.scale = dim_head ** -0.5
+        self.attend = nn.Softmax(dim=-1)
+        self.dropout = nn.Dropout(dropout)
+        self.k = nn.Linear(hidden_dim, att_dim, bias=False)
+        self.patch_aggregator = nn.Parameter(torch.zeros((n_heads, 1, att_dim//n_heads)))
+        nn.init.trunc_normal_(self.patch_aggregator, std=.02)
 
+    def forward(
+            self, 
+            x: torch.Tensor,
+    ):
+        aggregator: torch.Tensor = self.patch_aggregator.expand(x.size(0), -1, -1, -1)
+        k = self.k(x)
+        dots = torch.matmul(aggregator, k.transpose(-1, -2)) * self.scale
+        attn = self.attend(dots)
+        attn = self.dropout(attn)
+        return attn
 
 class Model(nn.Module):
     def __init__(
@@ -74,7 +102,7 @@ class Model(nn.Module):
         mlp_dim: int,
         att_dim: int,
         num_classes: int = 1,
-        cls_ration: int = 1,
+        cls_ratio: int = 1,
         cls_dropout: float = 0.5,
         dropout: float = 0.0,
         attention_dropout: float = 0.0,
@@ -105,16 +133,25 @@ class Model(nn.Module):
             norm_layer=norm_layer,
         )
 
+        # Patch Attention
+        self.patch_attention = PatchAttentionPool(
+            att_dim=att_dim,
+            n_heads=n_heads,
+            dropout=dropout,
+            hidden_dim=hidden_dim,
+        )
+
         # Classification head
+        self.num_classes = num_classes
         self.cls = nn.Sequential(
             nn.LayerNorm(hidden_dim),
-            nn.Linear(hidden_dim, hidden_dim*cls_ration),
+            nn.Linear(hidden_dim, hidden_dim*cls_ratio),
             nn.GELU(),
             nn.Dropout(cls_dropout),
-            nn.Linear(hidden_dim*cls_ration, hidden_dim*cls_ration),
+            nn.Linear(hidden_dim*cls_ratio, hidden_dim*cls_ratio),
             nn.GELU(),
             nn.Dropout(cls_dropout),
-            nn.Linear(hidden_dim*cls_ration, num_classes)
+            nn.Linear(hidden_dim*cls_ratio, num_classes)
         )
         self.to(device)
         
@@ -127,11 +164,18 @@ class Model(nn.Module):
             g = self.hook.output[1:, :, :]
         g = g.permute(1, 0, 2)
         g = self.encoder(g)
+        attn = self.patch_attention(g)
+
+        batch_size, num_patches, embedding_dim = g.shape
+        g_reshaped = g.reshape(-1, embedding_dim).float()
+        out_flat = self.cls(g_reshaped)
         
-        # out = torch.zeros((x.size(0), 
-        # for i in range(CLIP_SEQ_LENGTH):
-        #     out
-        return o, g
+        if self.num_classes == 1:
+            out = out_flat.reshape(batch_size, num_patches)
+        else:
+            out = out_flat.reshape(batch_size, num_patches, self.num_classes) 
+        
+        return out, attn, g
         
 class CLIPformer(nn.Module):
     def __init__(
@@ -174,8 +218,8 @@ class CLIPformer(nn.Module):
             norm_layer=norm_layer,
         )
 
-        # Patch Attention Aggregation
-        self.patch_attention = PatchAttention(
+        # Patch Attention Pooling
+        self.patch_attention_pool = PatchAttentionPool(
             att_dim=att_dim,
             n_heads=n_heads,
             dropout=dropout,
@@ -204,7 +248,7 @@ class CLIPformer(nn.Module):
             g = self.hook.output[1:, :, :]
         g = g.permute(1, 0, 2)
         g = self.encoder(g)
-        g = self.patch_attention(g)
+        g = self.patch_attention_pool(g)
         o = self.cls(g).squeeze(-1)
         return o, g
 

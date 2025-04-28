@@ -517,12 +517,15 @@ def calculate_for_threshold(y_true, y_pred, threshold):
 
 bce = nn.BCEWithLogitsLoss(reduction="sum")
 supcon = SupConLoss()
-def transformer_train_loss(factor, contrastive):
+def transformer_train_loss(factor, contrastive, unsqueeze=False):
     def _transformer_train_loss(output, labels):
-        loss_ = bce(output[0], labels.float()).view(-1, 1)
+        if unsqueeze:
+            loss_ = bce(output[0], labels.unsqueeze(1).repeat(1, output[0].shape[1]))
+        else:
+            loss_ = bce(output[0], labels.float())
         if contrastive:
             loss_ += factor * supcon(
-                F.normalize(output[1]).unsqueeze(1), labels
+                F.normalize(output[-1]).unsqueeze(1), labels
             )
         return loss_
     return _transformer_train_loss
@@ -581,14 +584,14 @@ def train(
                 "loss": torch.inf
             })
             for data in train:
-                prev_model = model.flow.copy()
+                # prev_model = model.copy()
                 images, labels = data
                 images, labels = images.float().to(device), labels.float().to(device)
-                try:
-                    loss = loss_fn(model(images), labels)
-                except Exception as e:
-                    for layer in model.flow.named_parameters():
-                        print(layer)
+                # try:
+                loss = loss_fn(model(images), labels)
+                #except Exception as e:
+                    # for layer in prev_model.flow.named_parameters():
+                    #     print(layer)
                 train_loss.append(loss.item())
                 optimizer.zero_grad()
                 loss.backward()

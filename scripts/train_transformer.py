@@ -1,4 +1,4 @@
-from src.utils import train, transformer_train_loss
+from src.utils import train, transformer_train_loss, bce, supcon
 from src.models import Model
 import torch
 import os
@@ -13,17 +13,17 @@ experiment = {
 
     # Training based
     "training_set": "progan",
-    "contrastive": True,
+    "contrastive": False,
     "batch_size": 64,
     "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
-    "ds_frac": 0.5,
+    "ds_frac": 0.05,
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
-    "epochs": 4,
+    "epochs": 1,
     "factor": 0.2,
-    "log_path": "Model/4layers_8heads_all_classes",
-    "save_path": "Model/4layers_8heads_all_classes",
+    "log_path": "PerPatchModel/4layers_8heads_all_classes",
+    "save_path": "PerPatchModel/4layers_8heads_all_classes",
 }
 model = Model(
     backbone=experiment["backbone"],
@@ -37,7 +37,7 @@ model = Model(
 train(
     experiment=experiment,
     model=model,
-    loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"]),
+    loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"], unsqueeze=True),
     score_fn=lambda x:torch.sigmoid(x[0]).squeeze(),
     epochs=experiment["epochs"],
     workers=12,
