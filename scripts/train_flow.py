@@ -14,13 +14,12 @@ experiment = {
     # Training based
     "training_set": "progan",
     "batch_size": 32,
-    "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
-    "ds_frac": 0.5,
+    "classes": os.listdir(f"data/train"), # ["horse"], # 
+    "ds_frac": 0.2,
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
-    "epochs": 4,
-    "log_path": "FlowModel/Intermediate_6step_all_classes",
+    "epochs": 2,
     "save_path": "FlowModel/6step_all_classes",
 }
 model = FlowModel(
@@ -43,9 +42,6 @@ data = get_loaders(
 
 def loss_fn(log_probs, labels):
     return - log_probs.mean(axis=0)
-
-def score_fn(log_probs):
-    return 1 - torch.exp(log_probs)
 
 def nan_hook(module, input, output):
     if isinstance(output, tuple):

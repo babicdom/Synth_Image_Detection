@@ -1,45 +1,42 @@
-from src.utils import train, transformer_train_loss, bce, supcon
-from src.models import Model
+from src.utils import train, transformer_train_loss
+from src.models import CLIPformer, Model
 import torch
 import os
+import datetime
 
 experiment = {
     # Model based
     "backbone": ('ViT-L/14', 1024),
-    "n_layers": 4,
-    "n_heads": 8,
-    "mlp_dim": 1024,
-    "att_dim": 512,
+    "nproj": 3,
+    "proj_dim": 512,
 
     # Training based
     "training_set": "progan",
     "contrastive": False,
     "batch_size": 64,
-    "classes": os.listdir(f"results/transform_features/train"), # ["horse"], # 
-    "ds_frac": 0.01,
+    "classes": os.listdir(f"data/train"), # ["horse"], # 
+    "ds_frac": 0.2,
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
-    "epochs": 1,
+    "epochs": 2,
     "factor": 0.2,
-    "save_path": "PerPatchModel/4layers_8heads_all_classes",
+    "save_path": "IntermediatePatch/3_nproj_512_proj_dim",
 }
 model = Model(
     backbone=experiment["backbone"],
-    device='cuda:0' if torch.cuda.is_available() else 'cpu',
-    n_layers=experiment["n_layers"],
-    n_heads=experiment["n_heads"],
-    mlp_dim=experiment["mlp_dim"],
-    att_dim=experiment["att_dim"],
+    nproj=experiment["nproj"],
+    proj_dim=experiment["proj_dim"],
+    device=torch.device("cuda:0"),
 )
-
+print(datetime.datetime.now())
 train(
     experiment=experiment,
     model=model,
     loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"], unsqueeze=True),
-    score_fn=lambda x:torch.sigmoid(x[0]).mean(-1).squeeze(),
     epochs=experiment["epochs"],
     workers=12,
     device=torch.device("cuda:0"),
     store=True,
+    method="mean"
 )

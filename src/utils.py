@@ -3,6 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import transforms
+from torchvision.utils import save_image
 import clip
 import tqdm
 
@@ -42,6 +43,7 @@ def get_transform(split="train"):
     elif split == "val":
         return transforms.Compose(
             [
+                transforms.Resize((256, 256)),
                 transforms.CenterCrop(224),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -66,8 +68,19 @@ def get_transform(split="train"):
                 ),
             ]
         )
+    elif split=="other":
+        return transforms.Compose(
+            [
+                transforms.CenterCrop(224),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
     else:
-        raise ValueError("split must be one of train, val, test")
+        raise ValueError("split must be one of train, val, test or other")
     
 def get_transforms():
     transforms_train = get_transform("train")
@@ -90,7 +103,7 @@ def get_loader(
                     ),
                     batch_size=experiment["batch_size"],
                     shuffle=True,
-                    num_workers=workers,
+                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
                 )
@@ -104,7 +117,7 @@ def get_loader(
                     ),
                     batch_size=experiment["batch_size"],
                     shuffle=False,
-                    num_workers=workers,
+                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
                 )
@@ -117,7 +130,7 @@ def get_loader(
                         target=target),
                     batch_size=experiment["batch_size"],
                     shuffle=True,
-                    num_workers=workers,
+                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
                 )
@@ -129,7 +142,7 @@ def get_loader(
                         target=target),
                     batch_size=experiment["batch_size"],
                     shuffle=False,
-                    num_workers=workers,
+                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
                 )
@@ -145,7 +158,7 @@ def get_loader(
                         else 16
                     ),
                     shuffle=False,
-                    num_workers=workers,
+                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
                 ),
@@ -182,41 +195,40 @@ def get_loaders(
 
 def get_generators():
     return [
-        "progan",
-        "stylegan",
-        "stylegan2",
         "biggan",
         "cyclegan",
-        "stargan",
         "gaugan",
+        "progan",
+        "stargan",
+        "stylegan",
+        "stylegan2",
         "deepfake",
-        "seeingdark",
-        "san",
         "crn",
         "imle",
+        "san",
+        "seeingdark",
         "whichfaceisreal",
-        "diffusion_datasets/guided",
-        "diffusion_datasets/ldm_200",
-        "diffusion_datasets/ldm_200_cfg",
-        "diffusion_datasets/ldm_100",
+        "diffusion_datasets/dalle",
+        "diffusion_datasets/glide_100_10",
         "diffusion_datasets/glide_100_27",
         "diffusion_datasets/glide_50_27",
-        "diffusion_datasets/glide_100_10",
-        "diffusion_datasets/dalle",
+        "diffusion_datasets/guided",
+        "diffusion_datasets/ldm_100",
+        "diffusion_datasets/ldm_200",
+        "diffusion_datasets/ldm_200_cfg",
+        "synthbuster/glide",
         "synthbuster/dalle2",
-        "synthbuster/dalle3",
         "synthbuster/stable-diffusion-1-3",
         "synthbuster/stable-diffusion-1-4",
+        "synthbuster/midjourney-v5",
+        "synthbuster/dalle3",
         "synthbuster/stable-diffusion-2",
         "synthbuster/stable-diffusion-xl",
-        "synthbuster/glide",
         "synthbuster/firefly",
-        "synthbuster/midjourney-v5",
         "flux",
         "gigagan",
         "midjourney-v6.1",
         "stable-diffusion-3",
-
     ]
 
 
@@ -515,14 +527,15 @@ def calculate_for_threshold(y_true, y_pred, threshold):
         'ppv': ppv, 'npv': npv, 'tpr': tpr, 'tnr': tnr 
     }  
 
-bce = nn.BCEWithLogitsLoss(reduction="sum")
+bce_sum = nn.BCEWithLogitsLoss(reduction="sum")
+bce_mean = nn.BCEWithLogitsLoss(reduction="mean")
 supcon = SupConLoss()
 def transformer_train_loss(factor, contrastive, unsqueeze=False):
     def _transformer_train_loss(output, labels):
         if unsqueeze:
-            loss_ = bce(output[0], labels.unsqueeze(1).repeat(1, output[0].shape[1]))
+            loss_ = bce_mean(output[0], labels.unsqueeze(1).repeat(1, output[0].shape[1]))
         else:
-            loss_ = bce(output[0], labels.float())
+            loss_ = bce_sum(output[0], labels.float())
         if contrastive:
             loss_ += factor * supcon(
                 F.normalize(output[-1]).unsqueeze(1), labels
@@ -534,14 +547,14 @@ def train(
     experiment,
     model,
     data=None,
-    loss_fn=bce,
+    loss_fn=bce_sum,
     optimizer=None,
     scheduler=None,
     epochs=10,
     workers=12,
     device="cpu",
-    score_fn=lambda x:torch.sigmoid(x).squeeze(),
     store=False,
+    **kwargs
 ):
     seed_everything(0)
 
@@ -568,6 +581,7 @@ def train(
         )
     
     print(json.dumps(experiment, indent=2))
+    print(kwargs)
     results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
 
     train_loss = []
@@ -607,7 +621,6 @@ def train(
         model.eval()
         y_true = []
         y_score = []
-        val_loss = 0
         
         with torch.no_grad():
             with tqdm.tqdm(
@@ -619,15 +632,10 @@ def train(
                 for data in val:
                     images, labels = data
                     images, labels = images.float().to(device), labels.float().to(device)
-                    output = model(images)
-                    val_loss = loss_fn(output, labels)
-                    scores = score_fn(output)
+                    scores = model.predict(images, **kwargs)
                     y_true.extend(labels.cpu().numpy().tolist())
-                    y_score.extend(scores.cpu().numpy().tolist())
-                    pbar.update(1)
-                    pbar.set_postfix({
-                        "loss": val_loss.item()
-                    })
+                    y_score.extend(scores.tolist())
+                    pbar.update(1)  
                 pbar.close()
     
         val_ap = average_precision_score(y_true, y_score)
@@ -663,11 +671,17 @@ def train(
         experiment=experiment,
         model=model,
         test=test,
-        score_fn=score_fn,
-        device=device
+        device=device,
+        **kwargs
         )
 
-def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
+def eval_model(
+        experiment, 
+        model, 
+        test=None, 
+        device="cuda:0",
+        **kwargs
+    ):
     results = {}
     aps = []
     aucs = []
@@ -691,12 +705,11 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
         print(f'Fake: {len(dl.dataset.fake)}, Real: {len(dl.dataset.real)}, Total: {len(dl.dataset.images)}')
         with torch.no_grad():
             for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
-                images, labels = data
+                images, labels, _ = data
                 images, labels = images.float().to(device), labels.to(device)
-                output = model(images)
-                scores = score_fn(output)
+                output = model.predict(images, **kwargs)
                 y_true.extend(labels.cpu().numpy().tolist())
-                y_score.extend(scores.cpu().numpy().tolist())
+                y_score.extend(output.tolist())
 
         test_ap = average_precision_score(y_true, y_score)
         test_auc = roc_auc_score(y_true, y_score)
@@ -727,3 +740,40 @@ def eval_model(experiment, model, score_fn, test=None, device="cuda:0"):
     filename = f"results/{experiment["save_path"]}/eval.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+
+def save_worst_predictions(
+        experiment,
+        model,
+        gen_name,
+        dl,
+        threshold,
+        device,
+        max_n=10,
+        **kwargs
+    ):
+    model.eval()
+    false_positives = []
+    false_negatives = []
+    for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
+        images, labels, img_paths = data
+        images, labels = images.float().to(device), labels.to(device)
+        output = model.predict(images, **kwargs)
+        
+        for i in range(len(labels)):
+            if labels[i] == 0 and output[i] > threshold:
+                false_positives.append((img_paths[i], output[i]))
+            elif labels[i] == 1 and output[i] < threshold:
+                false_negatives.append((img_paths[i], output[i]))
+    print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
+
+    os.makedirs(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/", exist_ok=True)
+    with open(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
+        for i in range(min(max_n, len(false_positives))):
+            img_path, score = false_positives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
+    
+    with open(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
+        for i in range(min(max_n, len(false_negatives))):
+            img_path, score = false_negatives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
+    print(f"Saved worst predictions to results/{experiment["save_path"]}/worst_predictions/{gen_name}/")

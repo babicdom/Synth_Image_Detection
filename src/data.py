@@ -231,7 +231,7 @@ class EvaluationDataset(Dataset):
                 image = perturbation(self.perturb)(image)
             else:
                 image = self.transforms(image)
-        return [image, target]
+        return [image, target, image_path]
 
 
 FEAT_DIR = "/home/babicdom/Synth_Image_Detection/results/transform_features"

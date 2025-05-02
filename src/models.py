@@ -21,6 +21,90 @@ class Hook:
     def close(self):
         self.hook.remove()
 
+
+class Model(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        nproj,
+        proj_dim,
+        device,
+    ):
+        super().__init__()
+
+        self.device = device
+
+        # Load and freeze CLIP
+        self.clip, self.preprocess = clip.load(backbone[0], device=device)
+        for name, param in self.clip.named_parameters():
+            param.requires_grad = False
+
+        # Register hooks to get intermediate layer outputs
+        self.hooks = [
+            Hook(name, module)
+            for name, module in self.clip.visual.named_modules()
+            if "ln_2" in name
+        ]
+
+        # Initialize the trainable part of the model
+        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim]))
+        proj1_layers = [nn.Dropout()]
+        for i in range(nproj):
+            proj1_layers.extend(
+                [
+                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj1 = nn.Sequential(*proj1_layers)
+        proj2_layers = [nn.Dropout()]
+        for _ in range(nproj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        self.head = nn.Sequential(
+            *[
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, 1),
+            ]
+        )
+
+    def forward(self, x):
+        with torch.no_grad():
+            self.clip.encode_image(x)
+            g = torch.stack([h.output for h in self.hooks], dim=2)[1:, :, :, :]
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=2) * g
+        z = torch.sum(z, dim=2)
+        z = self.proj2(z)
+
+        p = self.head(z).squeeze().permute(1, 0)
+        return p, z
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            if kwargs["method"] == "mean":
+                return o.sigmoid().mean(-1).flatten().cpu().numpy()
+            elif kwargs["method"] == "max":
+                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+
 class PatchAttentionPool(nn.Module):
     def __init__(
             self, 
@@ -68,7 +152,6 @@ class PatchAttention(nn.Module):
             self, 
             att_dim: int,
             n_heads: int,
-            dropout: int,
             hidden_dim: int,
         ):
         super().__init__()
@@ -76,7 +159,6 @@ class PatchAttention(nn.Module):
         self.heads = n_heads
         self.scale = dim_head ** -0.5
         self.attend = nn.Softmax(dim=-1)
-        self.dropout = nn.Dropout(dropout)
         self.k = nn.Linear(hidden_dim, att_dim, bias=False)
         self.patch_aggregator = nn.Parameter(torch.zeros((n_heads, 1, att_dim//n_heads)))
         nn.init.trunc_normal_(self.patch_aggregator, std=.02)
@@ -89,10 +171,9 @@ class PatchAttention(nn.Module):
         k = self.k(x)
         dots = torch.matmul(aggregator, k.transpose(-1, -2)) * self.scale
         attn = self.attend(dots)
-        attn = self.dropout(attn)
         return attn
 
-class Model(nn.Module):
+class CLIPatch(nn.Module):
     def __init__(
         self,
         backbone,
@@ -100,7 +181,6 @@ class Model(nn.Module):
         n_layers: int,
         n_heads: int,
         mlp_dim: int,
-        att_dim: int,
         num_classes: int = 1,
         cls_ratio: int = 1,
         cls_dropout: float = 0.5,
@@ -133,14 +213,6 @@ class Model(nn.Module):
             norm_layer=norm_layer,
         )
 
-        # Patch Attention
-        self.patch_attention = PatchAttentionPool(
-            att_dim=att_dim,
-            n_heads=n_heads,
-            dropout=dropout,
-            hidden_dim=hidden_dim,
-        )
-
         # Classification head
         self.num_classes = num_classes
         self.cls = nn.Sequential(
@@ -164,7 +236,6 @@ class Model(nn.Module):
             g = self.hook.output[1:, :, :]
         g = g.permute(1, 0, 2)
         g = self.encoder(g)
-        attn = self.patch_attention(g)
 
         batch_size, num_patches, embedding_dim = g.shape
         g_reshaped = g.reshape(-1, embedding_dim).float()
@@ -175,8 +246,89 @@ class Model(nn.Module):
         else:
             out = out_flat.reshape(batch_size, num_patches, self.num_classes) 
         
-        return out, attn, g
+        return out, g
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            if kwargs["method"] == "mean":
+                return o.sigmoid().mean(-1).flatten().cpu().numpy()
+            elif kwargs["method"] == "max":
+                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
         
+class CLIPatchAttention(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        device,
+        n_layers: int,
+        n_heads: int,
+        mlp_dim: int,
+        att_dim: int,
+        num_classes: int = 1,
+        cls_ratio: int = 1,
+        cls_dropout: float = 0.5,
+        dropout: float = 0.0,
+        attention_dropout: float = 0.0,
+        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
+    ):
+        super().__init__()
+
+        self.device = device
+        self.clipatch = CLIPatch(
+            backbone=backbone,
+            device=device,
+            n_layers=n_layers,
+            n_heads=n_heads,
+            mlp_dim=mlp_dim,
+            num_classes=num_classes,
+            cls_ratio=cls_ratio,
+            cls_dropout=cls_dropout,
+            dropout=dropout,
+            attention_dropout=attention_dropout,
+            norm_layer=norm_layer
+        )
+
+        # Patch attention
+        self.patch_attention = PatchAttention(
+            att_dim=att_dim,
+            n_heads=n_heads,
+            hidden_dim=backbone[1]
+        )
+        
+    def forward(
+            self, 
+            x: torch.Tensor
+    ):
+        x, g = self.clipatch(x)
+        attn = self.patch_attention(g)
+        x = x * attn
+        batch_size, num_patches, _ = g.shape
+        
+        if self.num_classes == 1:
+            x = x.reshape(batch_size, num_patches)
+        else:
+            x = x.reshape(batch_size, num_patches, self.num_classes) 
+        
+        return x, attn
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            if kwargs["method"] == "mean":
+                return o.sigmoid().mean(-1).flatten().cpu().numpy()
+            elif kwargs["method"] == "max":
+                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+
+
 class CLIPformer(nn.Module):
     def __init__(
         self,
@@ -252,6 +404,15 @@ class CLIPformer(nn.Module):
         o = self.cls(g).squeeze(-1)
         return o, g
 
+    def predict(
+            self,
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            return o.sigmoid().flatten().cpu().numpy()
+
 class FlowModel(nn.Module):
     def __init__(
         self,
@@ -314,6 +475,14 @@ class FlowModel(nn.Module):
         z = self.proj2(z)
         p = self.flow.log_prob(z)
         return p
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            return 1 - torch.exp(self.forward(x))
     
 if __name__ == "__main__":
     # Example usage
