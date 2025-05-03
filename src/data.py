@@ -234,42 +234,40 @@ class EvaluationDataset(Dataset):
         return [image, target, image_path]
 
 
-FEAT_DIR = "/home/babicdom/Synth_Image_Detection/results/transform_features"
-
-class FeatureDataset(Dataset):
-    def __init__(self, split, classes=None, ds_frac=None, target="both"):
-        self.real = [(x, 0) for x in torch.cat(
-            [
-                torch.load(f"{FEAT_DIR}/{split}/{y}/real/features.pt")
-                for y in classes
-            ]
-        )]
-
-        self.fake = [(x, 1) for x in torch.cat(
-            [
-                torch.load(f"{FEAT_DIR}/{split}/{y}/fake/features.pt")
-                for y in classes
-            ]
-        )]
-
-        if target == "both":
-            self.features = self.real + self.fake
-        elif target == "real":
-            self.features = self.real
-        elif target == "fake":
-            self.features = self.fake
-        else:
-            raise TypeError('Specify the target data.')
+class TrainingDatasetFreq(Dataset):
+    def __init__(self, split, classes=None, transforms=None, ds_frac=None):
+        self.images = [
+            (f"data/{split}/{y}/0_real/{x}", 0)
+            for y in classes
+            for x in os.listdir(f"data/{split}/{y}/0_real")
+        ]
         
-        random.shuffle(self.features)
+        random.shuffle(self.images)
         if ds_frac is not None:
-            self.features = self.features[: int(len(self.features) * ds_frac)]
+            self.images = self.images[: int(len(self.images) * ds_frac)]
+
+        self.target = torch.random.randint(0, 2, len(self.images)).tolist()
+        self.transforms = transforms
 
     def __len__(self):
-        return len(self.features)
+        return len(self.images)
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
             idx = idx.tolist()
 
-        return self.features[idx]
+        image_path = self.images[idx]
+        target = self.target[idx]
+        image = Image.open(image_path).convert("RGB")
+
+        if self.transforms is not None:
+            image = self.transforms(image)
+
+        if target == 1:
+            freq = torch.fft.fft2(image)
+            freq = torch.fft.fftshift(freq)
+            noise = torch.randn_like(freq) * 0.5
+            image = torch.fft.ifft2(freq + noise)
+            image = torch.fft.ifftshift(image)
+            image = torch.abs(image)
+        return [image, target]

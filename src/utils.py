@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision import transforms
-from torchvision.utils import save_image
 import clip
 import tqdm
 
@@ -22,7 +21,7 @@ from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
 from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score, confusion_matrix
 
-from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, FeatureDataset
+from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
 
 import matplotlib.pyplot as plt
 
