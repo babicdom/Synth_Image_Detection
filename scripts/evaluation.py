@@ -22,5 +22,6 @@ print(datetime.datetime.now())
 eval_model(
     experiment=experiment,
     model=model,
-    method="max"
+    method="max",
+    device=torch.device("cuda:0"),
 )

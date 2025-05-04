@@ -79,6 +79,7 @@ class Model(nn.Module):
                 nn.Linear(proj_dim, 1),
             ]
         )
+        self.to(device)
 
     def forward(self, x):
         with torch.no_grad():
@@ -244,8 +245,7 @@ class CLIPatch(nn.Module):
         if self.num_classes == 1:
             out = out_flat.reshape(batch_size, num_patches)
         else:
-            out = out_flat.reshape(batch_size, num_patches, self.num_classes) 
-        
+            out = out_flat.reshape(batch_size, num_patches, self.num_classes)    
         return out, g
     
     def predict(

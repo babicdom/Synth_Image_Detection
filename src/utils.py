@@ -78,6 +78,18 @@ def get_transform(split="train"):
                 ),
             ]
         )
+    elif split == "spec":
+        return transforms.Compose(
+            [
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.CenterCrop(224),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
     else:
         raise ValueError("split must be one of train, val, test or other")
     
@@ -242,6 +254,32 @@ def seed_everything(TORCH_SEED):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
+def add_spectral_fragments(image, alpha=1e-3, min=0, max=255):
+    """Add spectral fragments to the image."""
+    image = np.array(image)
+    if len(image.shape) == 2:  # Grayscale
+        height, width = image.shape
+        channels = 1
+        image = image.reshape((height, width, 1))
+    else:
+        height, width, channels = image.shape
+
+    fragment = np.zeros((height, width))
+    slices = [
+        (5, 6, 5, 6),
+        (2, 3, 2, 3),
+        (5, 6, 2, 3),
+        (2, 3, 5, 6),
+    ]
+    for r_start, r_end, c_start, c_end in slices:
+        fragment[r_start*height//8 : r_end*height//8, c_start*width//8 : c_end*width//8] = 1
+
+    result = np.zeros((height, width, channels))
+    for c in range(channels):
+        noise = np.real(np.fft.ifft2(fragment)) * (height * width)
+        result[:, :, c] = image[:, :, c] + alpha * noise
+        result[:, :, c] = (result[:, :, c] - result[:, :, c].min()) / (result[:, :, c].max() - result[:, :, c].min()) * (max - min) + min
+    return Image.fromarray(result.astype(np.uint8))
 
 def data_augment(img):
     img = np.array(img)
