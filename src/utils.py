@@ -42,7 +42,7 @@ def get_transform(split="train"):
     elif split == "val":
         return transforms.Compose(
             [
-                transforms.Resize((256, 256)),
+                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(224),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -81,12 +81,52 @@ def get_transform(split="train"):
     elif split == "spec":
         return transforms.Compose(
             [
-                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(224),
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
                 transforms.Normalize(
                     mean=(0.48145466, 0.4578275, 0.40821073),
                     std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "spec_siglip":
+        return transforms.Compose(
+            [
+                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(256),
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "spec_dinov2":
+        return transforms.Compose(
+            [
+                transforms.Resize(size=(518, 518), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(518),
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.4850, 0.4560, 0.4060), 
+                    std=(0.2290, 0.2240, 0.2250)
+                ),
+            ]
+        )
+    elif split == "spec_convnextv2":
+        return transforms.Compose(
+            [
+                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(224),
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.4850, 0.4560, 0.4060), 
+                    std=(0.2290, 0.2240, 0.2250)
                 ),
             ]
         )
@@ -254,7 +294,7 @@ def seed_everything(TORCH_SEED):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-def add_spectral_fragments(image, alpha=1e-3, min=0, max=255):
+def add_spectral_fragments(image, min=0, max=255):
     """Add spectral fragments to the image."""
     image = np.array(image)
     if len(image.shape) == 2:  # Grayscale
@@ -263,7 +303,7 @@ def add_spectral_fragments(image, alpha=1e-3, min=0, max=255):
         image = image.reshape((height, width, 1))
     else:
         height, width, channels = image.shape
-
+    alpha = 1 / (0.25 * (height * width) ** 0.5)
     fragment = np.zeros((height, width))
     slices = [
         (5, 6, 5, 6),
