@@ -25,12 +25,36 @@ from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
 
 import matplotlib.pyplot as plt
 
-def get_transform(split="train"):
+class PadIfNeeded:
+    def __init__(self, min_height, min_width, fill=0, padding_mode='constant'):
+        self.min_height = min_height
+        self.min_width = min_width
+        self.fill = fill
+        self.padding_mode = padding_mode
+
+    def __call__(self, img):
+        # img can be PIL Image or Tensor
+        if isinstance(img, Image.Image):
+            width, height = img.size
+        else:
+            # Tensor shape: C x H x W
+            height, width = img.shape[-2:]
+        pad_top = max((self.min_height - height) // 2, 0)
+        pad_bottom = max(self.min_height - height - pad_top, 0)
+        pad_left = max((self.min_width - width) // 2, 0)
+        pad_right = max(self.min_width - width - pad_left, 0)
+        if pad_top > 0 or pad_bottom > 0 or pad_left > 0 or pad_right > 0:
+            padding = (pad_left, pad_top, pad_right, pad_bottom)
+            return transforms.functional.pad(img, padding, fill=self.fill, padding_mode=self.padding_mode)
+        return img
+
+def get_transform(split="train", crop=224, resize=256):
     if split == "train":
         return transforms.Compose(
             [
+                PadIfNeeded(resize, resize),
                 transforms.Lambda(lambda img: data_augment(img)),
-                transforms.RandomCrop(224),
+                transforms.RandomCrop(crop),
                 transforms.RandomHorizontalFlip(p=0.5),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -42,8 +66,8 @@ def get_transform(split="train"):
     elif split == "val":
         return transforms.Compose(
             [
-                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
-                transforms.CenterCrop(224),
+                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(crop),
                 transforms.ToTensor(),
                 transforms.Normalize(
                     mean=(0.48145466, 0.4578275, 0.40821073),
@@ -54,7 +78,7 @@ def get_transform(split="train"):
     elif split == "test":
         return transforms.Compose(
             [
-                transforms.TenCrop(224),
+                transforms.TenCrop(crop),
                 transforms.Lambda(
                     lambda crops: torch.stack(
                         [transforms.PILToTensor()(crop) for crop in crops]
@@ -70,7 +94,7 @@ def get_transform(split="train"):
     elif split=="other":
         return transforms.Compose(
             [
-                transforms.CenterCrop(224),
+                transforms.CenterCrop(crop),
                 transforms.ToTensor(),
                 transforms.Normalize(
                     mean=(0.48145466, 0.4578275, 0.40821073),
@@ -81,8 +105,8 @@ def get_transform(split="train"):
     elif split == "spec":
         return transforms.Compose(
             [
-                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
-                transforms.CenterCrop(224),
+                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -91,37 +115,11 @@ def get_transform(split="train"):
                 ),
             ]
         )
-    elif split == "spec_siglip":
+    elif any([split == "spec_dinov2", split == "spec_convnextv2"]):
         return transforms.Compose(
             [
-                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
-                transforms.CenterCrop(256),
-                transforms.Lambda(lambda img: add_spectral_fragments(img)),
-                transforms.ToTensor(),
-                transforms.Normalize(
-                    mean=(0.48145466, 0.4578275, 0.40821073),
-                    std=(0.26862954, 0.26130258, 0.27577711),
-                ),
-            ]
-        )
-    elif split == "spec_dinov2":
-        return transforms.Compose(
-            [
-                transforms.Resize(size=(518, 518), interpolation=Image.BICUBIC, max_size=None, antialias=True),
-                transforms.CenterCrop(518),
-                transforms.Lambda(lambda img: add_spectral_fragments(img)),
-                transforms.ToTensor(),
-                transforms.Normalize(
-                    mean=(0.4850, 0.4560, 0.4060), 
-                    std=(0.2290, 0.2240, 0.2250)
-                ),
-            ]
-        )
-    elif split == "spec_convnextv2":
-        return transforms.Compose(
-            [
-                transforms.Resize(size=(256, 256), interpolation=Image.BICUBIC, max_size=None, antialias=True),
-                transforms.CenterCrop(224),
+                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -133,10 +131,12 @@ def get_transform(split="train"):
     else:
         raise ValueError("split must be one of train, val, test or other")
     
-def get_transforms():
-    transforms_train = get_transform("train")
-    transforms_val = get_transform("val")
-    transforms_test = get_transform("test")
+def get_transforms(experiment):
+    crop = experiment.get("crop", 224)
+    resize = experiment.get("resize", 256)
+    transforms_train = get_transform("train", crop=crop, resize=resize)
+    transforms_val = get_transform("val", crop=crop, resize=resize)
+    transforms_test = get_transform("test", crop=crop, resize=resize)
     return transforms_train, transforms_val, transforms_test
 
 def get_loader(
@@ -539,40 +539,6 @@ def extract_clip_features(
 
     return features
 
-def get_feature_loader(
-        experiment, split, workers, ds_frac=None, target="both"
-):
-    if split in "test":
-        return [
-            (g, DataLoader(
-                    FeatureDataset(
-                    split=split,
-                    classes=[g],
-                    ds_frac=ds_frac,
-                    target=target
-                    ),
-                    batch_size=experiment["batch_size"],
-                    shuffle=True,
-                    num_workers=workers,
-                    pin_memory=True,
-                    drop_last=False
-                )) for g in get_generators(experiment["training_set"])
-        ]
-    else:
-        return DataLoader(
-                FeatureDataset(
-                    split=split,
-                    classes=experiment["classes"],
-                    ds_frac=ds_frac,
-                    target=target
-                ),
-                batch_size=experiment["batch_size"],
-                shuffle=True,
-                num_workers=workers,
-                pin_memory=True,
-                drop_last=False
-            )
-
 def find_best_acc_threshold(y_true, y_pred):
     thresholds = np.linspace(0, 1, 100)
     best_accuracy = 0
@@ -636,7 +602,7 @@ def train(
     seed_everything(0)
 
     if data is None:
-        transforms_train, transforms_val, transforms_test = get_transforms()
+        transforms_train, transforms_val, transforms_test = get_transforms(experiment)
         train, val, test = get_loaders(
             experiment=experiment,
             transforms_train=transforms_train,

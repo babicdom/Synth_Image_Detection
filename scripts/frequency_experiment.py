@@ -15,7 +15,7 @@ import numpy as np
 
 def get_model(model_name="ViT-L/14", device="cuda:0"):
     if model_name == "CLIP":
-        model, preprocess = clip.load("ViT-L/14", device=device)
+        model, _ = clip.load("ViT-L/14", device=device)
         tr_other = get_transform("val")
         tr_spec = get_transform("spec")
     elif model_name == "DinoV2":

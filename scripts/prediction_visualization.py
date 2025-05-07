@@ -27,7 +27,7 @@ model = CLIPformer(
     mlp_dim=experiment["mlp_dim"],
 )
 model.load_state_dict(
-    torch.load(f"ckpt/Model/4layers_8heads_all_classes/train.pth", map_location="cuda:0")
+    torch.load(f"ckpt/PerPatchModel/4layers_8heads_all_classes/train.pth", map_location="cuda:0")
 )
 
 transform = get_transform("val")

@@ -1,14 +1,16 @@
 from src.utils import train, transformer_train_loss
-from src.models import CLIPformer, Model
+from src.models import Model
 import torch
 import os
 import datetime
 
 experiment = {
     # Model based
-    "backbone": ('ViT-L/14', 1024),
+    "backbone": ('hf-hub:timm/ViT-L-16-SigLIP2-256', 1024),
     "nproj": 3,
     "proj_dim": 512,
+    "crop": 256,
+    "resize": 256,
 
     # Training based
     "training_set": "progan",
@@ -21,7 +23,7 @@ experiment = {
     "lr_gamma": 0.5,
     "epochs": 2,
     "factor": 0.2,
-    "save_path": "IntermediatePatch/3_nproj_512_proj_dim",
+    "save_path": "IntermediatePatchSigLIP/3_nproj_512_proj_dim",
 }
 model = Model(
     backbone=experiment["backbone"],
