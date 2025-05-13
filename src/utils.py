@@ -48,11 +48,11 @@ class PadIfNeeded:
             return transforms.functional.pad(img, padding, fill=self.fill, padding_mode=self.padding_mode)
         return img
 
-def get_transform(split="train", crop=224, resize=256):
+def get_transform(split="train", crop=224, imgsize=256):
     if split == "train":
         return transforms.Compose(
             [
-                PadIfNeeded(resize, resize),
+                PadIfNeeded(imgsize, imgsize),
                 transforms.Lambda(lambda img: data_augment(img)),
                 transforms.RandomCrop(crop),
                 transforms.RandomHorizontalFlip(p=0.5),
@@ -66,7 +66,8 @@ def get_transform(split="train", crop=224, resize=256):
     elif split == "val":
         return transforms.Compose(
             [
-                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                PadIfNeeded(imgsize, imgsize),
+                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True), Maybe exclude this?!
                 transforms.CenterCrop(crop),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -78,6 +79,7 @@ def get_transform(split="train", crop=224, resize=256):
     elif split == "test":
         return transforms.Compose(
             [
+                PadIfNeeded(imgsize, imgsize),
                 transforms.TenCrop(crop),
                 transforms.Lambda(
                     lambda crops: torch.stack(
@@ -94,6 +96,7 @@ def get_transform(split="train", crop=224, resize=256):
     elif split=="other":
         return transforms.Compose(
             [
+                PadIfNeeded(imgsize, imgsize),
                 transforms.CenterCrop(crop),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -105,7 +108,8 @@ def get_transform(split="train", crop=224, resize=256):
     elif split == "spec":
         return transforms.Compose(
             [
-                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                PadIfNeeded(imgsize, imgsize),
+                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
@@ -118,7 +122,8 @@ def get_transform(split="train", crop=224, resize=256):
     elif any([split == "spec_dinov2", split == "spec_convnextv2"]):
         return transforms.Compose(
             [
-                transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
+                PadIfNeeded(imgsize, imgsize),
+                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
@@ -133,14 +138,14 @@ def get_transform(split="train", crop=224, resize=256):
     
 def get_transforms(experiment):
     crop = experiment.get("crop", 224)
-    resize = experiment.get("resize", 256)
-    transforms_train = get_transform("train", crop=crop, resize=resize)
-    transforms_val = get_transform("val", crop=crop, resize=resize)
-    transforms_test = get_transform("test", crop=crop, resize=resize)
+    imgsize = experiment.get("imgsize", 256)
+    transforms_train = get_transform("train", crop=crop, imgsize=imgsize)
+    transforms_val = get_transform("val", crop=crop, imgsize=imgsize)
+    transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
     return transforms_train, transforms_val, transforms_test
 
 def get_loader(
-    experiment, split, transforms, workers, target="both"
+    experiment, split, transforms, workers=4, target="both"
 ):
     if experiment["training_set"] == "progan":
         if split == "train":
@@ -154,9 +159,9 @@ def get_loader(
                     ),
                     batch_size=experiment["batch_size"],
                     shuffle=True,
-                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
+                    num_workers=workers,
                 )
         if split == "val":
             return DataLoader(
@@ -168,9 +173,9 @@ def get_loader(
                     ),
                     batch_size=experiment["batch_size"],
                     shuffle=False,
-                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
+                    num_workers=workers,
                 )
     elif experiment["training_set"] == "ldm":
         if split == "train":
@@ -181,9 +186,9 @@ def get_loader(
                         target=target),
                     batch_size=experiment["batch_size"],
                     shuffle=True,
-                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
+                    num_workers=workers,
                 )
         if split == "val":
             return DataLoader(
@@ -193,9 +198,9 @@ def get_loader(
                         target=target),
                     batch_size=experiment["batch_size"],
                     shuffle=False,
-                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
+                    num_workers=workers,
                 )
     if split == "test":
         return [
@@ -209,9 +214,9 @@ def get_loader(
                         else 16
                     ),
                     shuffle=False,
-                    # num_workers=workers,
                     pin_memory=True,
                     drop_last=False,
+                    num_workers=workers,
                 ),
             )
             for g in get_generators()
@@ -689,13 +694,13 @@ def train(
         scheduler.step()
 
     if store:
-        os.makedirs(f"ckpt/{experiment["save_path"]}/", exist_ok=True)
-        ckpt_name = f"ckpt/{experiment["save_path"]}/train.pth"
+        os.makedirs(f"ckpt/{experiment['save_path']}/", exist_ok=True)
+        ckpt_name = f"ckpt/{experiment['save_path']}/train.pth"
         print(f"Saving {ckpt_name} ...")
         torch.save(model.state_dict(), ckpt_name)
         pickle.dump(
             experiment,
-            open(f"ckpt/{experiment["save_path"]}/experiment.pickle", "wb"),
+            open(f"ckpt/{experiment['save_path']}/experiment.pickle", "wb"),
             protocol=pickle.HIGHEST_PROTOCOL,
         )
 
@@ -704,8 +709,8 @@ def train(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    os.makedirs(f"results/{experiment["save_path"]}/", exist_ok=True)
-    filename = f"results/{experiment["save_path"]}/train.pickle"
+    os.makedirs(f"results/{experiment['save_path']}/", exist_ok=True)
+    filename = f"results/{experiment['save_path']}/train.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -770,7 +775,7 @@ def eval_model(
             "tpr": threshold_acc["tpr"],
             "tnr": threshold_acc["tnr"],
         }
-        print(f"{g}: {100 * threshold_acc["acc"]:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
+        print(f"{g}: {100 * threshold_acc['acc']:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
 
     print(
         f"Mean: {100 * sum(accs) / len(accs):1.2f} / {100 * sum(aps) / len(aps):1.2f} / {100 * sum(aucs) / len(aucs):1.2f}"
@@ -780,7 +785,7 @@ def eval_model(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/{experiment["save_path"]}/eval.pickle"
+    filename = f"results/{experiment['save_path']}/eval.pickle"
     with open(filename, "wb") as h:
         pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
 
@@ -809,14 +814,14 @@ def save_worst_predictions(
                 false_negatives.append((img_paths[i], output[i]))
     print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
 
-    os.makedirs(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/", exist_ok=True)
-    with open(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
+    os.makedirs(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/", exist_ok=True)
+    with open(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
         for i in range(min(max_n, len(false_positives))):
             img_path, score = false_positives[i]
             f.write(f"{img_path} {score:2.1f}\n")
     
-    with open(f"results/{experiment["save_path"]}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
+    with open(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
         for i in range(min(max_n, len(false_negatives))):
             img_path, score = false_negatives[i]
             f.write(f"{img_path} {score:2.1f}\n")
-    print(f"Saved worst predictions to results/{experiment["save_path"]}/worst_predictions/{gen_name}/")
+    print(f"Saved worst predictions to results/{experiment['save_path']}/worst_predictions/{gen_name}/")
