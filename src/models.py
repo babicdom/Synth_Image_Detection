@@ -7,6 +7,7 @@ from src.nf import NormalizingFlow, MiniGlow
 from open_clip import create_model_from_pretrained
 from src.vision_transformer import Encoder
 from einops import rearrange
+import pickle
 
 CLIP_SEQ_LENGTH=256
 
@@ -22,79 +23,51 @@ class Hook:
     def close(self):
         self.hook.remove()
 
-
-class Model(nn.Module):
+class WindowedIntermediatePatch(nn.Module):
     def __init__(
         self,
         backbone,
         nproj,
         proj_dim,
+        hidden_dim,
         device,
     ):
         super().__init__()
 
         self.device = device
 
-        # Load and freeze CLIP
-        self.siglip, self.preprocess = create_model_from_pretrained(backbone[0], device=device) # 'hf-hub:timm/ViT-L-16-SigLIP2-256', device=device)
-        for name, param in self.siglip.named_parameters():
+        experiment = pickle.load(
+            open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
+        )
+        self.intermediate_patch = IntermediatePatch(
+            backbone=experiment["backbone"],
+            n_layers=experiment["n_layers"],
+            n_heads=experiment["n_heads"],
+            mlp_dim=experiment["mlp_dim"],
+            device=torch.device("cuda:0"),
+        )
+        self.intermediate_patch.load_state_dict(
+            torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
+        )
+
+        for name, param in self.intermediate_patch.named_parameters():
             param.requires_grad = False
 
-        # Register hooks to get intermediate layer outputs
-        self.hooks = [
-            Hook(name, module)
-            for name, module in self.siglip.visual.named_modules()
-            if "ls2" in name
-        ]
-
-        # Initialize the trainable part of the model
-        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim]))
-        proj1_layers = [nn.Dropout()]
-        for i in range(nproj):
-            proj1_layers.extend(
-                [
-                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
-                    nn.ReLU(),
-                    nn.Dropout(),
-                ]
-            )
-        self.proj1 = nn.Sequential(*proj1_layers)
-        proj2_layers = [nn.Dropout()]
-        for _ in range(nproj):
-            proj2_layers.extend(
-                [
-                    nn.Linear(proj_dim, proj_dim),
-                    nn.ReLU(),
-                    nn.Dropout(),
-                ]
-            )
-        self.proj2 = nn.Sequential(*proj2_layers)
-        self.head = nn.Sequential(
-            *[
-                nn.Linear(proj_dim, proj_dim),
-                nn.ReLU(),
-                nn.Dropout(),
-                nn.Linear(proj_dim, proj_dim),
-                nn.ReLU(),
-                nn.Dropout(),
-                nn.Linear(proj_dim, 1),
-            ]
+        self.window_attention = PatchAttention(
+            att_dim=proj_dim,
+            n_heads=1,
+            hidden_dim=hidden_dim,
         )
+        
         self.to(device)
 
     def forward(self, x):
         with torch.no_grad():
-            self.siglip.encode_image(x)
-            g = torch.stack([h.output for h in self.hooks], dim=2)
-        g = g.permute(1, 0, 2, 3)
-        g = self.proj1(g.float())
-
-        z = torch.softmax(self.alpha, dim=2) * g
-        z = torch.sum(z, dim=2)
-        z = self.proj2(z)
-
-        p = self.head(z).squeeze().permute(1, 0)
-        return p, z
+            p, z = self.intermediate_patch(x)
+        g = self.window_attention(z)
+        p = p * g
+        p = p.sum(dim=1)
+        return p, g
     
     def predict(
             self, 
@@ -103,10 +76,7 @@ class Model(nn.Module):
     ):
         with torch.no_grad():
             o, _ = self.forward(x)
-            if kwargs["method"] == "mean":
-                return o.sigmoid().mean(-1).flatten().cpu().numpy()
-            elif kwargs["method"] == "max":
-                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+            return o.sigmoid().flatten().cpu().numpy()
 
 class IntermediatePatch(nn.Module):
     def __init__(
@@ -244,6 +214,7 @@ class PatchAttention(nn.Module):
             att_dim: int,
             n_heads: int,
             hidden_dim: int,
+            dropout: int = 0.2,
         ):
         super().__init__()
         dim_head: int = att_dim // n_heads
@@ -252,6 +223,7 @@ class PatchAttention(nn.Module):
         self.attend = nn.Softmax(dim=-1)
         self.k = nn.Linear(hidden_dim, att_dim, bias=False)
         self.patch_aggregator = nn.Parameter(torch.zeros((n_heads, 1, att_dim//n_heads)))
+        self.dropout = nn.Dropout(dropout)
         nn.init.trunc_normal_(self.patch_aggregator, std=.02)
 
     def forward(
@@ -260,8 +232,14 @@ class PatchAttention(nn.Module):
     ):
         aggregator: torch.Tensor = self.patch_aggregator.expand(x.size(0), -1, -1, -1)
         k = self.k(x)
+        k = rearrange(k, 'b n (h d) -> b h n d', h=self.heads)
         dots = torch.matmul(aggregator, k.transpose(-1, -2)) * self.scale
         attn = self.attend(dots)
+        attn = self.dropout(attn)
+
+        if self.heads > 1:
+            attn = attn.mean(dim=1)
+        attn = attn.squeeze()
         return attn
 
 class CLIPatch(nn.Module):
@@ -349,62 +327,79 @@ class CLIPatch(nn.Module):
                 return o.sigmoid().mean(-1).flatten().cpu().numpy()
             elif kwargs["method"] == "max":
                 return o.sigmoid().max(-1).values.flatten().cpu().numpy()
-        
-class CLIPatchAttention(nn.Module):
+            
+class SigLIPatch(nn.Module):
     def __init__(
         self,
         backbone,
+        nproj,
+        proj_dim,
         device,
-        n_layers: int,
-        n_heads: int,
-        mlp_dim: int,
-        att_dim: int,
-        num_classes: int = 1,
-        cls_ratio: int = 1,
-        cls_dropout: float = 0.5,
-        dropout: float = 0.0,
-        attention_dropout: float = 0.0,
-        norm_layer: Callable[..., torch.nn.Module] = partial(nn.LayerNorm, eps=1e-6),
     ):
         super().__init__()
 
         self.device = device
-        self.clipatch = CLIPatch(
-            backbone=backbone,
-            device=device,
-            n_layers=n_layers,
-            n_heads=n_heads,
-            mlp_dim=mlp_dim,
-            num_classes=num_classes,
-            cls_ratio=cls_ratio,
-            cls_dropout=cls_dropout,
-            dropout=dropout,
-            attention_dropout=attention_dropout,
-            norm_layer=norm_layer
-        )
 
-        # Patch attention
-        self.patch_attention = PatchAttention(
-            att_dim=att_dim,
-            n_heads=n_heads,
-            hidden_dim=backbone[1]
+        # Load and freeze CLIP
+        self.siglip, self.preprocess = create_model_from_pretrained(backbone[0], device=device) # 'hf-hub:timm/ViT-L-16-SigLIP2-256', device=device)
+        for name, param in self.siglip.named_parameters():
+            param.requires_grad = False
+
+        # Register hooks to get intermediate layer outputs
+        self.hooks = [
+            Hook(name, module)
+            for name, module in self.siglip.visual.named_modules()
+            if "ls2" in name
+        ]
+
+        # Initialize the trainable part of the model
+        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim]))
+        proj1_layers = [nn.Dropout()]
+        for i in range(nproj):
+            proj1_layers.extend(
+                [
+                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj1 = nn.Sequential(*proj1_layers)
+        proj2_layers = [nn.Dropout()]
+        for _ in range(nproj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        self.head = nn.Sequential(
+            *[
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, 1),
+            ]
         )
-        
-    def forward(
-            self, 
-            x: torch.Tensor
-    ):
-        x, g = self.clipatch(x)
-        attn = self.patch_attention(g)
-        x = x * attn
-        batch_size, num_patches, _ = g.shape
-        
-        if self.num_classes == 1:
-            x = x.reshape(batch_size, num_patches)
-        else:
-            x = x.reshape(batch_size, num_patches, self.num_classes) 
-        
-        return x, attn
+        self.to(device)
+
+    def forward(self, x):
+        with torch.no_grad():
+            self.siglip.encode_image(x)
+            g = torch.stack([h.output for h in self.hooks], dim=2)
+        g = g.permute(1, 0, 2, 3)
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=2) * g
+        z = torch.sum(z, dim=2)
+        z = self.proj2(z)
+
+        p = self.head(z).squeeze().permute(1, 0)
+        return p, z
     
     def predict(
             self, 

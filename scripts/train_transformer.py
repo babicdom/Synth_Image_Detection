@@ -22,7 +22,7 @@ experiment = {
     "lr_step": 5,
     "lr_gamma": 0.5,
     "epochs": 2,
-    "factor": 0.1,
+    "factor": 0.3,
     "save_path": "IntermediatePatchLDM_2/3_nproj_512_proj_dim",
 }
 model = IntermediatePatch(
@@ -37,7 +37,7 @@ train(
     model=model,
     loss_fn=transformer_train_loss(experiment["factor"], experiment["contrastive"], unsqueeze=True),
     epochs=experiment["epochs"],
-    workers=12,
+    workers=2,
     device=torch.device("cuda:0"),
     store=True,
     method="mean"
