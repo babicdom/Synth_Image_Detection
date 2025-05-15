@@ -133,7 +133,7 @@ class IntermediatePatch(nn.Module):
         ]
 
         # Initialize the trainable part of the model
-        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim]))
+        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim])) # first dim is number of tokens, second is batch size, third is number of layers, last is projection dim
         proj1_layers = [nn.Dropout()]
         for i in range(nproj):
             proj1_layers.extend(
@@ -191,6 +191,10 @@ class IntermediatePatch(nn.Module):
                 return o.sigmoid().mean(-1).flatten().cpu().numpy()
             elif kwargs["method"] == "max":
                 return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+            elif kwargs["method"] == "patchify":
+                pass
+            else:
+                raise ValueError("Method not supported")
 
 class PatchAttentionPool(nn.Module):
     def __init__(

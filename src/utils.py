@@ -145,7 +145,7 @@ def get_transforms(experiment):
     return transforms_train, transforms_val, transforms_test
 
 def get_loader(
-    experiment, split, transforms, workers=4, target="both"
+    experiment, split, transforms, workers=2, target="both"
 ):
     if experiment["training_set"] == "progan":
         if split == "train":
@@ -582,12 +582,18 @@ def transformer_train_loss(factor, contrastive, unsqueeze=False):
     def _transformer_train_loss(output, labels):
         if unsqueeze:
             loss_ = bce_mean(output[0], labels.unsqueeze(1).repeat(1, output[0].shape[1]))
+            if contrastive:
+                loss_ += factor * supcon(
+                    F.normalize(
+                        output[-1].reshape(-1, output[-1].shape[-1])).unsqueeze(1), 
+                        labels.unsqueeze(1).repeat(1, output[-1].shape[0]).reshape(-1, 1)
+                )
         else:
             loss_ = bce_sum(output[0], labels.float())
-        if contrastive:
-            loss_ += factor * supcon(
-                F.normalize(output[-1]).unsqueeze(1), labels
-            )
+            if contrastive:
+                loss_ += factor * supcon(
+                    F.normalize(output[-1]).unsqueeze(1), labels
+                )
         return loss_
     return _transformer_train_loss
 
@@ -599,7 +605,7 @@ def train(
     optimizer=None,
     scheduler=None,
     epochs=10,
-    workers=12,
+    workers=2,
     device="cpu",
     store=False,
     **kwargs
@@ -734,6 +740,7 @@ def eval_model(
     aps = []
     aucs = []
     accs = []
+    best_accs = []
 
     if test is None:
         transform = get_transform("val")
@@ -741,10 +748,9 @@ def eval_model(
             experiment=experiment,
             split="test",
             transforms=transform,
-            workers=12,
         )
 
-    print("Testing - generator: ACC / AP / AUC")
+    print("Testing - generator: best ACC / ACC@0.5 / AP / AUC")
     for g, dl in test:
         model.eval()
         y_true = []
@@ -761,24 +767,28 @@ def eval_model(
 
         test_ap = average_precision_score(y_true, y_score)
         test_auc = roc_auc_score(y_true, y_score)
+        test_acc = calculate_for_threshold(np.array(y_true), np.array(y_score), 0.5)
         threshold = find_best_acc_threshold(np.array(y_true), np.array(y_score))
         threshold_acc = calculate_for_threshold(np.array(y_true), np.array(y_score), threshold)
 
         aps.append(test_ap)
         aucs.append(test_auc)
-        accs.append(threshold_acc["acc"])
+        accs.append(test_acc["acc"])
+        best_accs.append(threshold_acc["acc"])
 
         results[g] = {
             "ap": test_ap,
             "auroc": test_auc,
-            "acc": threshold_acc["acc"],
+            "acc": test_acc["acc"],
+            "threshold": threshold,
+            "best_acc": threshold_acc["acc"],
             "tpr": threshold_acc["tpr"],
             "tnr": threshold_acc["tnr"],
         }
-        print(f"{g}: {100 * threshold_acc['acc']:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
+        print(f"{g}: {100 * threshold_acc['acc']:1.2f} / {100 * test_acc["acc"]:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
 
     print(
-        f"Mean: {100 * sum(accs) / len(accs):1.2f} / {100 * sum(aps) / len(aps):1.2f} / {100 * sum(aucs) / len(aucs):1.2f}"
+        f"Mean: {100 * sum(best_accs) / len(best_accs):1.2f} / {100 * sum(accs) / len(accs):1.2f} / {100 * sum(aps) / len(aps):1.2f} / {100 * sum(aucs) / len(aucs):1.2f}"
     )
 
     log = {

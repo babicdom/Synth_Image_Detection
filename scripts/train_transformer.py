@@ -13,17 +13,17 @@ experiment = {
     "imgsize": 256,
 
     # Training based
-    "training_set": "ldm",
-    "contrastive": False,
+    "training_set": "progan",
+    "contrastive": True,
     "batch_size": 64,
-    # "classes": os.listdir(f"data/train"), # ["horse"], # 
-    # "ds_frac": 0.2,
+    "classes": os.listdir(f"data/train"), # ["horse"], # 
+    "ds_frac": 0.2,
     "lr": 1e-4,
     "lr_step": 5,
     "lr_gamma": 0.5,
     "epochs": 2,
-    "factor": 0.2,
-    "save_path": "IntermediatePatchLDM/3_nproj_512_proj_dim",
+    "factor": 0.1,
+    "save_path": "IntermediatePatchLDM_2/3_nproj_512_proj_dim",
 }
 model = IntermediatePatch(
     backbone=experiment["backbone"],

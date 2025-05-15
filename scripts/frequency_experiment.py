@@ -37,7 +37,7 @@ def get_model(model_name="ViT-L/14", device="cuda:0"):
     model.to(device)
     return model, tr_other, tr_spec
 
-def main():
+def train_knn():
     device = "cuda:0" if torch.cuda.is_available() else "cpu"
     results = {}
     for model_name in ["CLIP", "DinoV2", "SigLIP", "ConvNextV2"]:
@@ -96,4 +96,4 @@ def main():
     plt.legend()
     plt.savefig("results/frequency/knn_accuracy.png")
 
-main()
+train_knn()
