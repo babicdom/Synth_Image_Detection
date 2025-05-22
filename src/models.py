@@ -4,10 +4,12 @@ import torch
 import torch.nn as nn
 import clip
 from src.nf import NormalizingFlow, MiniGlow
+from src.utils import patchify_image
 from open_clip import create_model_from_pretrained
 from src.vision_transformer import Encoder
 from einops import rearrange
 import pickle
+import timm
 
 CLIP_SEQ_LENGTH=256
 
@@ -26,37 +28,136 @@ class Hook:
 class WindowedIntermediatePatch(nn.Module):
     def __init__(
         self,
-        backbone,
-        nproj,
-        proj_dim,
-        hidden_dim,
+        att_dim,
+        n_heads,
         device,
+        patch_size: tuple = (224, 224),
+        stride: tuple = (16, 16),
+        pooling = "max",
     ):
         super().__init__()
 
         self.device = device
+        self.patch_size = patch_size
+        self.stride = stride
 
-        experiment = pickle.load(
+        opt = pickle.load(
             open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
         )
         self.intermediate_patch = IntermediatePatch(
-            backbone=experiment["backbone"],
-            n_layers=experiment["n_layers"],
-            n_heads=experiment["n_heads"],
-            mlp_dim=experiment["mlp_dim"],
+            backbone=opt["backbone"],
+            nproj=opt["nproj"],
+            proj_dim=opt["proj_dim"],
             device=torch.device("cuda:0"),
         )
         self.intermediate_patch.load_state_dict(
             torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
         )
 
+        for param in self.intermediate_patch.parameters():
+            param.requires_grad = False
+
+        self.pooling = pooling
+
+        self.window_attention = PatchAttention(
+            att_dim=att_dim,
+            n_heads=n_heads,
+            hidden_dim=opt["proj_dim"],
+        )
+        
+        self.to(device)
+
+    def forward(self, x):
+        if isinstance(x, torch.Tensor):
+            out = self.forward_batch(x)
+        elif isinstance(x, list):
+            out = self.forward_list(x)
+        else:
+            raise ValueError("Input must be a tensor or a list of tensors")
+        return out
+            
+
+    def forward_batch(self, x):
+        x = patchify_image(x, self.patch_size, self.stride)
+
+        with torch.no_grad():
+            p, z = self.intermediate_patch(x)
+            if self.pooling == "max":
+                values, indices = p.max(dim=1)
+                p = values
+                z = z.gather(1, indices.unsqueeze(-1).expand(-1, -1, z.size(-1)))
+            elif self.pooling == "mean":
+                p = p.mean(dim=1)
+                z = z.mean(dim=1)
+            else:
+                raise ValueError("Pooling method not supported")
+
+        g = self.window_attention(z.permute(1, 0, 2))
+        p = p * g
+        p = p.sum(dim=1)
+        return p, g
+    
+    def forward_list(self, x):
+        x = [patchify_image(xi, self.patch_size, self.stride) for xi in x]
+        patch_num = x[0].shape[1]
+
+        with torch.no_grad():
+            p, z = self.intermediate_patch(x)
+            if self.pooling == "max":
+                values, indices = p.max(dim=1)
+                p = values
+                z = z.gather(1, indices.unsqueeze(-1).expand(-1, -1, z.size(-1)))
+            elif self.pooling == "mean":
+                p = p.mean(dim=1)
+                z = z.mean(dim=1)
+            else:
+                raise ValueError("Pooling method not supported")
+
+        g = self.window_attention(z.permute(1, 0, 2))
+        p = p * g
+        p = p.sum(dim=1)
+        return p, g
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            return o.sigmoid().flatten().cpu().numpy()
+
+class AttentionIntermediatePatch(nn.Module):
+    def __init__(
+        self,
+        att_dim,
+        n_heads,
+        device,
+    ):
+        super().__init__()
+
+        self.device = device
+
+        opt = pickle.load(
+            open(f"ckpt/IntermediatePatchLDM_SupConLoss/3_nproj_512_proj_dim/experiment.pickle", "rb")
+        )
+        self.intermediate_patch = IntermediatePatch(
+            backbone=opt["backbone"],
+            nproj=opt["nproj"],
+            proj_dim=opt["proj_dim"],
+            device=torch.device("cuda:0"),
+        )
+        self.intermediate_patch.load_state_dict(
+            torch.load(f"ckpt/IntermediatePatchLDM_SupConLoss/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
+        )
+
         for name, param in self.intermediate_patch.named_parameters():
             param.requires_grad = False
 
         self.window_attention = PatchAttention(
-            att_dim=proj_dim,
-            n_heads=1,
-            hidden_dim=hidden_dim,
+            att_dim=att_dim,
+            n_heads=n_heads,
+            hidden_dim=opt["proj_dim"],
         )
         
         self.to(device)
@@ -64,7 +165,7 @@ class WindowedIntermediatePatch(nn.Module):
     def forward(self, x):
         with torch.no_grad():
             p, z = self.intermediate_patch(x)
-        g = self.window_attention(z)
+        g = self.window_attention(z.permute(1, 0, 2))
         p = p * g
         p = p.sum(dim=1)
         return p, g
@@ -92,8 +193,8 @@ class IntermediatePatch(nn.Module):
 
         # Load and freeze CLIP
         self.clip, self.preprocess = clip.load(backbone[0], device=device)
-        for name, param in self.clip.named_parameters():
-            param.requires_grad = False
+        # for name, param in self.clip.named_parameters():
+        #     param.requires_grad = False
 
         # Register hooks to get intermediate layer outputs
         self.hooks = [
@@ -147,7 +248,23 @@ class IntermediatePatch(nn.Module):
         z = torch.sum(z, dim=2)
         z = self.proj2(z)
 
-        p = self.head(z).squeeze().permute(1, 0)
+        p = self.head(z).squeeze()
+        if p.dim() == 2:
+            p = p.permute(1, 0)
+        return p, z
+    
+    def forward_with_grad(self, x):
+        self.clip.encode_image(x)
+        g = torch.stack([h.output for h in self.hooks], dim=2)[1:, :, :, :]
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=2) * g
+        z = torch.sum(z, dim=2)
+        z = self.proj2(z)
+
+        p = self.head(z).squeeze()
+        if p.dim() == 2:
+            p = p.permute(1, 0)
         return p, z
     
     def predict(
@@ -214,7 +331,7 @@ class PatchAttention(nn.Module):
             att_dim: int,
             n_heads: int,
             hidden_dim: int,
-            dropout: int = 0.2,
+            dropout: int = 0.0,
         ):
         super().__init__()
         dim_head: int = att_dim // n_heads
@@ -241,6 +358,9 @@ class PatchAttention(nn.Module):
             attn = attn.mean(dim=1)
         attn = attn.squeeze()
         return attn
+
+
+### Less important models
 
 class CLIPatch(nn.Module):
     def __init__(
@@ -328,7 +448,7 @@ class CLIPatch(nn.Module):
             elif kwargs["method"] == "max":
                 return o.sigmoid().max(-1).values.flatten().cpu().numpy()
             
-class SigLIPatch(nn.Module):
+class SigLIPIntermediate(nn.Module):
     def __init__(
         self,
         backbone,
@@ -398,6 +518,94 @@ class SigLIPatch(nn.Module):
         z = torch.sum(z, dim=2)
         z = self.proj2(z)
 
+        p = self.head(z).squeeze()
+        if p.dim() == 2:
+            p = p.permute(1, 0)
+        return p, z
+    
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            if kwargs["method"] == "mean":
+                return o.sigmoid().mean(-1).flatten().cpu().numpy()
+            elif kwargs["method"] == "max":
+                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+            
+
+class ConvNextV2Intermediate(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        nproj,
+        proj_dim,
+        device,
+    ):
+        super().__init__()
+
+        self.device = device
+
+        # Load and freeze convnext
+        self.convnext = timm.create_model('convnextv2_base.fcmae', pretrained=True, num_classes=0)
+        for name, param in self.convnext.named_parameters():
+            param.requires_grad = False
+
+        # Register hooks to get intermediate layer outputs
+        self.hooks = [
+            Hook("", block)
+            for st in self.convnext.stages
+            for block in st.blocks
+        ]
+
+        # Initialize the trainable part of the model
+        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim]))
+        proj1_layers = [nn.Dropout()]
+        for i in range(nproj):
+            proj1_layers.extend(
+                [
+                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj1 = nn.Sequential(*proj1_layers)
+        proj2_layers = [nn.Dropout()]
+        for _ in range(nproj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        self.head = nn.Sequential(
+            *[
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, 1),
+            ]
+        )
+        self.to(device)
+
+    def forward(self, x):
+        with torch.no_grad():
+            self.siglip.encode_image(x)
+            g = torch.stack([h.output for h in self.hooks], dim=2)
+        g = g.permute(1, 0, 2, 3)
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=2) * g
+        z = torch.sum(z, dim=2)
+        z = self.proj2(z)
+
         p = self.head(z).squeeze().permute(1, 0)
         return p, z
     
@@ -412,7 +620,6 @@ class SigLIPatch(nn.Module):
                 return o.sigmoid().mean(-1).flatten().cpu().numpy()
             elif kwargs["method"] == "max":
                 return o.sigmoid().max(-1).values.flatten().cpu().numpy()
-
 
 class CLIPformer(nn.Module):
     def __init__(

@@ -234,20 +234,22 @@ class EvaluationDataset(Dataset):
         return [image, target, image_path]
 
 
-class TrainingDatasetFreq(Dataset):
-    def __init__(self, split, classes=None, transforms=None, ds_frac=None):
-        self.images = [
-            f"data/{split}/{y}/0_real/{x}"
-            for y in classes
-            for x in os.listdir(f"data/{split}/{y}/0_real")
-        ]
-        
-        random.shuffle(self.images)
-        if ds_frac is not None:
-            self.images = self.images[: int(len(self.images) * ds_frac)]
 
-        self.target = torch.randint(0, 2, (len(self.images), )).tolist()
+class TestDataset(Dataset):
+    def __init__(self, data_paths, transforms=None, perturb=None, target="both"):
+        self.real, self.fake = self.read_paths(data_paths)
+
+        if target == "both":
+            self.images = self.real + self.fake
+        elif target == "real":
+            self.images = self.real
+        elif target == "fake":
+            self.images = self.fake
+        else:
+            raise TypeError('Specify the target data.')
+
         self.transforms = transforms
+        self.perturb = perturb
 
     def __len__(self):
         return len(self.images)
@@ -256,11 +258,39 @@ class TrainingDatasetFreq(Dataset):
         if torch.is_tensor(idx):
             idx = idx.tolist()
 
-        image_path = self.images[idx]
-        target = self.target[idx]
+        image_path, target = self.images[idx]
         image = Image.open(image_path).convert("RGB")
+        if self.transforms is not None and self.perturb is None:
+            image = self.transforms(image)
+        elif self.transforms is not None and self.perturb is not None:
+            if random.random() < 0.5:
+                image = perturbation(self.perturb)(image)
+            else:
+                image = self.transforms(image)
+        return [image, target, image_path]
+    
+    def read_paths(self, data_paths):
+        real_list = []
+        fake_list = []
+        for path in set(data_paths):
+            real_list += self.get_list(path, must_contain='0_real')
+            fake_list += self.get_list(path, must_contain='1_fake')
+        real_list = [(x, 0) for x in real_list]
+        fake_list = [(x, 1) for x in fake_list]
+        return real_list, fake_list
+    
+    def get_list(self, path, must_contain='', exts=["png", "jpg", "JPEG", "jpeg", "bmp", "tif", "webp"]):
+        image_list = [] 
+        for r, _, f in os.walk(path):
+            for file in f:
+                if (file.split('.')[1] in exts) and (must_contain in os.path.join(r, file)):
+                    image_list.append(os.path.join(r, file))
 
-        if self.transforms is not None:
-            image = self.transforms[target](image)
-
-        return [image, target]
+        return image_list
+    
+if __name__ == "__main__":
+    # Example usage
+    dataset = TestDataset(
+        data_paths=["data/test/synthbuster/raise/0_real", "data/test/synthbuster/dalle2/1_fake"],
+    )
+    print(len(dataset))

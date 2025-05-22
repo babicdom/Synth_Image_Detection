@@ -67,7 +67,6 @@ def get_transform(split="train", crop=224, imgsize=256):
         return transforms.Compose(
             [
                 PadIfNeeded(imgsize, imgsize),
-                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True), Maybe exclude this?!
                 transforms.CenterCrop(crop),
                 transforms.ToTensor(),
                 transforms.Normalize(
@@ -93,23 +92,10 @@ def get_transform(split="train", crop=224, imgsize=256):
                 ),
             ]
         )
-    elif split=="other":
-        return transforms.Compose(
-            [
-                PadIfNeeded(imgsize, imgsize),
-                transforms.CenterCrop(crop),
-                transforms.ToTensor(),
-                transforms.Normalize(
-                    mean=(0.48145466, 0.4578275, 0.40821073),
-                    std=(0.26862954, 0.26130258, 0.27577711),
-                ),
-            ]
-        )
     elif split == "spec":
         return transforms.Compose(
             [
                 PadIfNeeded(imgsize, imgsize),
-                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
@@ -123,7 +109,6 @@ def get_transform(split="train", crop=224, imgsize=256):
         return transforms.Compose(
             [
                 PadIfNeeded(imgsize, imgsize),
-                # transforms.Resize(size=(resize, resize), interpolation=Image.BICUBIC, max_size=None, antialias=True),
                 transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
@@ -220,6 +205,17 @@ def get_loader(
                 ),
             )
             for g in get_generators()
+        ]
+    elif split == "test_all":
+        return [
+            ("All Generators", DataLoader(
+                EvaluationDataset("data/test", transforms=transforms, target=target),
+                batch_size=experiment["batch_size"],
+                shuffle=False,
+                pin_memory=True,
+                drop_last=False,
+                num_workers=workers,
+            ))
         ]
     else:
         raise ValueError("split must be one of train, val, test")
