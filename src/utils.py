@@ -8,9 +8,8 @@ import tqdm
 
 import os
 from io import BytesIO
-import pickle
-import copy
 import json
+import copy
 import random
 import time
 from einops import rearrange
@@ -19,7 +18,7 @@ import cv2
 import numpy as np
 from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
-from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score, confusion_matrix
+from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score, confusion_matrix, RocCurveDisplay, PrecisionRecallDisplay
 
 from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
 
@@ -700,11 +699,8 @@ def train(
         ckpt_name = f"ckpt/{experiment['save_path']}/train.pth"
         print(f"Saving {ckpt_name} ...")
         torch.save(model.state_dict(), ckpt_name)
-        pickle.dump(
-            experiment,
-            open(f"ckpt/{experiment['save_path']}/experiment.pickle", "wb"),
-            protocol=pickle.HIGHEST_PROTOCOL,
-        )
+        with open(f"ckpt/{experiment['save_path']}/experiment.json", "w") as f:
+            json.dump(experiment, f, indent=2)
 
     log = {
         "epochs": epoch + 1,
@@ -712,9 +708,9 @@ def train(
         "results": copy.deepcopy(results),
     }
     os.makedirs(f"results/{experiment['save_path']}/", exist_ok=True)
-    filename = f"results/{experiment['save_path']}/train.pickle"
-    with open(filename, "wb") as h:
-        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+    filename = f"results/{experiment['save_path']}/train.json"
+    with open(filename, "w") as h:
+        json.dump(log, h, indent=2)
 
     # Testing
     eval_model(
@@ -772,6 +768,29 @@ def eval_model(
         accs.append(test_acc["acc"])
         best_accs.append(threshold_acc["acc"])
 
+        roc_curve = RocCurveDisplay.from_predictions(
+            np.array(y_true),
+            np.array(y_score),
+            name=g,
+            color="blue",
+            alpha=0.5,
+        )
+        roc_curve.plot()
+        plt.title(f"ROC Curve - {g}")
+        plt.savefig(f"results/{experiment['save_path']}/roc_curve_{g}.png")
+        plt.close()
+        pr_curve = PrecisionRecallDisplay.from_predictions(
+            np.array(y_true),
+            np.array(y_score),
+            name=g,
+            color="blue",
+            alpha=0.5,
+        )
+        pr_curve.plot()
+        plt.title(f"Precision-Recall Curve - {g}")
+        plt.savefig(f"results/{experiment['save_path']}/pr_curve_{g}.png")
+        plt.close()
+
         results[g] = {
             "ap": test_ap,
             "auroc": test_auc,
@@ -781,7 +800,7 @@ def eval_model(
             "tpr": threshold_acc["tpr"],
             "tnr": threshold_acc["tnr"],
         }
-        print(f"{g}: {100 * threshold_acc['acc']:1.2f} / {100 * test_acc["acc"]:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
+        print(f"{g}: {100 * threshold_acc['acc']:1.2f} / {100 * test_acc['acc']:1.2f} / {100 * test_ap:1.2f} / {100 * test_auc:1.2f}")
 
     print(
         f"Mean: {100 * sum(best_accs) / len(best_accs):1.2f} / {100 * sum(accs) / len(accs):1.2f} / {100 * sum(aps) / len(aps):1.2f} / {100 * sum(aucs) / len(aucs):1.2f}"
@@ -791,9 +810,10 @@ def eval_model(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/{experiment['save_path']}/eval.pickle"
-    with open(filename, "wb") as h:
-        pickle.dump(log, h, protocol=pickle.HIGHEST_PROTOCOL)
+    filename = f"results/{experiment['save_path']}/eval.json"
+    with open(filename, "w") as h:
+        json.dump(log, h, indent=2)
+    print(f"Saved results to {filename}")
 
 def save_worst_predictions(
         experiment,
