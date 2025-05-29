@@ -10,17 +10,17 @@ import pickle
 from src.models import IntermediatePatch
 from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, auc, average_precision_score
 import tqdm
+from torch.utils.data import DataLoader
+from math import floor
 
 def visualize_prediction_distribution(
         data,
         model,
         device: torch.device,
-):
+        model_name="IntermediatePatch",
+    ):
     """
     Visualizes the prediction distribution of the model.
-
-    :param img: Input image of size (C, H, W).
-    :param model: Model to be used for prediction.
     """
     for generator, dl in data:
         generator = generator.split("/")[-1]
@@ -98,7 +98,7 @@ def visualize_prediction_distribution(
         reals = torch.tensor(reals)
         fakes = torch.tensor(fakes)
     
-        os.makedirs(f"results/visualizations/{generator}", exist_ok=True)
+        os.makedirs(f"results/visualizations/{model_name}/{generator}", exist_ok=True)
         plt.figure(figsize=(14, 6))
         roc_curve_display = RocCurveDisplay(
             fpr=roc_curve_max[0],
@@ -159,7 +159,7 @@ def visualize_prediction_distribution(
         precision_recall_display.plot(ax=plt.subplot(2, 4, 8))
         plt.subplot(2, 4, 8).set_title(f"PR Curve 1-Mean (AP = {ap_mean_reverse:.4f})")
         plt.tight_layout()
-        plt.savefig(os.path.join("results", "visualizations", generator, f"roc_pr_curves.png"))
+        plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves.png"))
         plt.close()
 
         plt.figure(figsize=(16, 4))
@@ -200,20 +200,29 @@ def visualize_prediction_distribution(
         plt.ylabel("Frequency")
         plt.legend()
         plt.tight_layout()
-        plt.savefig(os.path.join("results", "visualizations", generator, f"prediction_distribution.png"))
+        plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"prediction_distribution.png"))
         plt.close()
 
-def visualize_patchify(image, patch_size=(224, 224), stride=(16, 16)):
+def visualize_patchify(
+        image, 
+        patch_size=(224, 224), 
+        stride=(16, 16)
+    ):
     """
     Visualize the patchified image.
     """
     patches = patchify_image(image, patch_size, stride)
+
+    h_stride, w_stride = stride
+    h_crop, w_crop = patch_size
+    batch_size, _, h_img, w_img = image.shape
     
     num_patches = patches.shape[1]
     print(f"Original image shape: {image.shape}")
     print(f"Patchified image shape: {patches.shape}")
-    num_patches_h = int(np.sqrt(num_patches))
-    num_patches_w = int(np.ceil(num_patches / num_patches_h))
+    num_patches_h = floor(max(h_img - h_crop, 0) / h_stride + 1)
+    num_patches_w = floor(max(w_img - w_crop, 0) / w_stride + 1)
+    print(f"num_patches_h: {num_patches_h}, num_patches_w: {num_patches_w}")
     loss_h = image.shape[2] - (num_patches_h - 1) * stride[0] - patch_size[0]
     loss_w = image.shape[3] - (num_patches_w - 1) * stride[1] - patch_size[1]
     print(f"Pixels lost: {(loss_h * image.shape[3] + loss_w * image.shape[2] - loss_h * loss_w) / (image.shape[2] * image.shape[3]) * 100:.2f}%")
@@ -234,6 +243,81 @@ def visualize_patchify(image, patch_size=(224, 224), stride=(16, 16)):
     plt.tight_layout()
     os.makedirs("results/visualizations", exist_ok=True)
     plt.savefig(os.path.join("results", "visualizations", "patchified_image.png"))
+    plt.close()
+
+    h_grids = max(h_img - h_crop + h_stride - 1, 0) // h_stride + 1
+    w_grids = max(w_img - w_crop + w_stride - 1, 0) // w_stride + 1
+    fig, axes = plt.subplots(
+        nrows=h_grids,
+        ncols=w_grids,
+        figsize=(w_grids * 2, h_grids * 2),
+    )
+    print(f"Number of new patches: {h_grids * w_grids}")
+    print(f"h_grids: {h_grids}, w_grids: {w_grids}")
+    for h_idx in range(h_grids):
+        for w_idx in range(w_grids):
+            y1 = h_idx * h_stride
+            x1 = w_idx * w_stride
+            y2 = min(y1 + h_crop, h_img)
+            x2 = min(x1 + w_crop, w_img)
+            y1 = max(y2 - h_crop, 0)
+            x1 = max(x2 - w_crop, 0)
+            im = transforms.ToPILImage()(image[:, :, y1:y2, x1:x2].squeeze(0))
+            axes[h_idx, w_idx].imshow(im)
+            axes[h_idx, w_idx].set_title(f"Patch {h_idx * w_grids + w_idx + 1}")
+            axes[h_idx, w_idx].axis('off')
+    plt.tight_layout()
+    os.makedirs("results/visualizations", exist_ok=True)
+    plt.savefig(os.path.join("results", "visualizations", "patchified_image_new.png"))
+    plt.close()
+
+def visualize_patch_impact(
+        image: Image.Image,
+        transform,
+        model,
+    ):
+    """
+    Visualizes the impact of each patch on the model's output.
+    """
+    crop = transforms.RandomCrop(224)(image)
+    img = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize(
+            mean=(0.48145466, 0.4578275, 0.40821073),
+            std=(0.26862954, 0.26130258, 0.27577711),
+        ),
+    ])(crop)
+    # img = transform(image)
+
+    if img.dim() == 3:
+        img = img.unsqueeze(0).to("cuda:0")
+    
+    with torch.no_grad():   
+        output = model(img)[0]
+
+    plt.figure(figsize=(12, 7))
+    plt.subplot(1, 2, 1)
+    plt.imshow(image)
+    plt.axis("off")
+    plt.title("Input Image")
+    plt.subplot(1, 2, 2)
+    # plt.imshow(img.squeeze(0).permute(1, 2, 0).detach().cpu().numpy())
+    plt.imshow(crop)
+    plt.axis("off")
+    plt.title("Transformed Image")
+    output = output.sigmoid().squeeze(0)
+    hotspot_image = np.zeros((224, 224), dtype=np.float32)
+    for i in range(16):
+        for j in range(16):
+            k = i * 16 + j
+            patch = output[k].expand(14, 14)
+            hotspot_image[i * 14:(i + 1) * 14, j * 14:(j + 1) * 14] = patch.cpu().numpy()
+    plt.imshow(hotspot_image, cmap="plasma", alpha=0.5)
+    plt.colorbar(label="Patch Impact")
+    plt.axis("off")
+    plt.title("Model Output")
+    plt.tight_layout()
+    plt.savefig("results/visualizations/patch_impact_sd3.png")
 
 def visualize_image_impact(
         img: torch.Tensor,
@@ -242,9 +326,6 @@ def visualize_image_impact(
     ) -> None:
     """
     Visualizes the impact of each pixel on the model's output.
-
-    :param img: Input image of size (C, H, W).
-    :param model: Model to be used for prediction.
     """
     # Ensure the image is in the correct format
     if img.dim() == 3:
@@ -263,38 +344,89 @@ def visualize_image_impact(
     plt.axis("off")
     plt.title("Input Image")
     plt.subplot(1, 2, 2)
-    plt.imshow(gradients[0].detach().cpu().numpy(), cmap="hot")
+    plt.imshow(gradients[0].detach().cpu().numpy(), cmap="viridis", alpha=0.5)
     plt.axis("off")
     plt.title("Gradient Impact")
     plt.savefig(f"gradients.png")
 
-def visualize_patches(
-        img: torch.Tensor,
+def save_worst_predictions(
+        experiment,
         model,
-        patch_size: tuple[int, int],
-        stride: tuple[int, int],
+        gen_name,
+        dl,
+        threshold,
+        device,
+        max_n=10,
         **kwargs
-    ) -> None:
-    """
-    Visualizes the patches of an image.
+    ):
+    model.eval()
+    false_positives = []
+    false_negatives = []
+    for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
+        images, labels, img_paths = data
+        images, labels = images.float().to(device), labels.to(device)
+        output = model.predict(images, **kwargs)
+        
+        for i in range(len(labels)):
+            if labels[i] == 0 and output[i] > threshold:
+                false_positives.append((img_paths[i], output[i]))
+            elif labels[i] == 1 and output[i] < threshold:
+                false_negatives.append((img_paths[i], output[i]))
+    print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
 
-    :param img: Input image of size (C, H, W).
-    :param model: Model to be used for prediction.
-    """
-    # Ensure the image is in the correct format
-    if img.dim() == 3:
-        img = img.unsqueeze(0)  # Add batch dimension
-    img = patchify_image(img, patch_size, stride)
+    os.makedirs(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/", exist_ok=True)
+    with open(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
+        for i in range(min(max_n, len(false_positives))):
+            img_path, score = false_positives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
     
-    plt.imshow(img[0].permute(1, 2, 0).detach().cpu().numpy())
-    plt.axis("off")
-    plt.title("Patches")
-    plt.savefig(f"patches.png")
-    plt.show()
+    with open(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
+        for i in range(min(max_n, len(false_negatives))):
+            img_path, score = false_negatives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
+    print(f"Saved worst predictions to results/train/{experiment['save_path']}/worst_predictions/{gen_name}/")
+
+def save_best_predictions(
+        experiment,
+        model,
+        gen_name,
+        dl,
+        threshold,
+        device,
+        max_n=10,
+        **kwargs
+    ):
+    model.eval()
+    true_positives = []
+    true_negatives = []
+    for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
+        images, labels, img_paths = data
+        images, labels = images.float().to(device), labels.to(device)
+        output = model.predict(images, **kwargs)
+        
+        for i in range(len(labels)):
+            if labels[i] == 0 and output[i] < threshold:
+                true_positives.append((img_paths[i], output[i]))
+            elif labels[i] == 1 and output[i] > threshold:
+                true_negatives.append((img_paths[i], output[i]))
+    print(f"True positives: {len(true_positives)}, True negatives: {len(true_negatives)}")
+
+    os.makedirs(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/", exist_ok=True)
+    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_positives.txt", "w") as f:
+        for i in range(min(max_n, len(true_positives))):
+            img_path, score = true_positives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
+    
+    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt", "w") as f:
+        for i in range(min(max_n, len(true_negatives))):
+            img_path, score = true_negatives[i]
+            f.write(f"{img_path} {score:2.1f}\n")
+    print(f"Saved best predictions to results/train/{experiment['save_path']}/best_predictions/{gen_name}/")
+
 
 if __name__ == "__main__":
     # Load a sample image
-    # image_path = os.path.join("data", "test", "synthbuster", "dalle3", "1_fake", "r12d4cabat.png")
+    # image_path = os.path.join("data", "test", "progan", "airplane", "1_fake", "00069.png")
     # image = Image.open(image_path).convert("RGB")
 
     # image = transforms.ToTensor()(image)  # Convert to tensor
@@ -303,8 +435,10 @@ if __name__ == "__main__":
     # print("Patchified image saved to results/visualizations/patchified_image.png")
 
     # img = Image.open("data/test/diffusion_datasets/dalle/1_fake/efgchmasis.png")
-    # img = img.convert("RGB")
-    # tr = get_transform("val")
+    img = Image.open("data/test/spai/stable-diffusion-3/1_fake/000006315_7.webp")
+    # img = Image.open("data/test/diffusion_datasets/laion/0_real/uyfkdpzowl.jpg")
+    img = img.convert("RGB")
+    tr = get_transform("random_crop")
 
     experiment = pickle.load(
         open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
@@ -319,12 +453,17 @@ if __name__ == "__main__":
         torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
     )
 
+    visualize_patch_impact(
+        image=img,
+        transform=tr,
+        model=model,
+    )
+
     # visualize_image_impact(
     #     img=tr(img).unsqueeze(0).to("cuda:0"),
     #     model=model,
     # )
 
-    tr = get_transform("val")
     # generator = "progan"
     # dl = torch.utils.data.DataLoader(
     #     dataset=EvaluationDataset(
@@ -336,14 +475,44 @@ if __name__ == "__main__":
     #     num_workers=2,
     # )
 
-    test = get_loader(
-            experiment=experiment,
-            split="test",
-            transforms=tr,
-        )
-    visualize_prediction_distribution(
-        data=test,
-        model=model,
-        device=torch.device("cuda:0"),
-    )
+    # test = get_loader(
+    #         experiment=experiment,
+    #         split="test",
+    #         transforms=tr,
+    #     )
+    # visualize_prediction_distribution(
+    #     data=test,
+    #     model=model,
+    #     device=torch.device("cuda:0"),
+    # )
 
+    # device = "cuda:0"
+    # transform = get_transform("val")
+    # g = "stable-diffusion-3"
+    # loader = DataLoader(
+    #                     EvaluationDataset(g, transforms=transform, target="both"),
+    #                     batch_size=16,
+    #                     shuffle=False,
+    #                     pin_memory=True,
+    #                     drop_last=False,
+    #                 )
+
+    # save_worst_predictions(
+    #     experiment=experiment,
+    #     model=model,
+    #     gen_name=g,
+    #     dl=loader,
+    #     device=device,
+    #     threshold=0.5,
+    #     method="max",
+    # )
+
+    # save_best_predictions(
+    #     experiment=experiment,
+    #     model=model,
+    #     gen_name=g,
+    #     dl=loader,
+    #     device=device,
+    #     threshold=0.5,
+    #     method="max",
+    # )

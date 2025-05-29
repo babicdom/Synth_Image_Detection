@@ -3,13 +3,17 @@ from typing import Callable
 import torch
 import torch.nn as nn
 import clip
+import numpy as np
 from src.nf import NormalizingFlow, MiniGlow
 from src.utils import patchify_image
 from open_clip import create_model_from_pretrained
 from src.vision_transformer import Encoder
+from torchvision.transforms.functional import five_crop
 from einops import rearrange
 import pickle
+from typing import Union
 import timm
+from torchvision import transforms
 
 CLIP_SEQ_LENGTH=256
 
@@ -33,7 +37,7 @@ class WindowedIntermediatePatch(nn.Module):
         device,
         patch_size: tuple = (224, 224),
         stride: tuple = (16, 16),
-        pooling = "max",
+        pooling = "mean",
     ):
         super().__init__()
 
@@ -193,8 +197,8 @@ class IntermediatePatch(nn.Module):
 
         # Load and freeze CLIP
         self.clip, self.preprocess = clip.load(backbone[0], device=device)
-        # for name, param in self.clip.named_parameters():
-        #     param.requires_grad = False
+        for param in self.clip.parameters():
+            param.requires_grad = False
 
         # Register hooks to get intermediate layer outputs
         self.hooks = [
@@ -204,7 +208,7 @@ class IntermediatePatch(nn.Module):
         ]
 
         # Initialize the trainable part of the model
-        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim])) # first dim is number of tokens, second is batch size, third is number of layers, last is projection dim
+        self.alpha = nn.Parameter(torch.randn([256, 1, len(self.hooks), proj_dim])) # L_i x B x N x D_i
         proj1_layers = [nn.Dropout()]
         for i in range(nproj):
             proj1_layers.extend(
@@ -254,6 +258,8 @@ class IntermediatePatch(nn.Module):
         return p, z
     
     def forward_with_grad(self, x):
+        for param in self.clip.parameters():
+            param.requires_grad = True
         self.clip.encode_image(x)
         g = torch.stack([h.output for h in self.hooks], dim=2)[1:, :, :, :]
         g = self.proj1(g.float())
@@ -267,21 +273,90 @@ class IntermediatePatch(nn.Module):
             p = p.permute(1, 0)
         return p, z
     
+    def forward_slide(self, img, stride=112, crop_size=224, patch_size=14, reshape=True):
+        """Inference by sliding-window with overlap.
+        If h_crop > h_img or w_crop > w_img, the small patch will be used to
+        decode without padding.
+        """
+        if type(img) == list:
+            img = img[0].unsqueeze(0)
+        if type(stride) == int:
+            stride = (stride, stride)
+        if type(crop_size) == int:
+            crop_size = (crop_size, crop_size)
+
+        h_stride, w_stride = stride
+        h_crop, w_crop = crop_size
+        batch_size, _, h_img, w_img = img.shape
+        n_h, n_w = h_img // patch_size, w_img // patch_size
+        s_h, s_w = h_stride // patch_size, w_stride // patch_size
+        h_img, w_img = n_h * patch_size, n_w * patch_size
+        h_w, w_w = h_crop // patch_size, w_crop // patch_size
+
+        h_grids = max(h_img - h_crop + h_stride - 1, 0) // h_stride + 1
+        w_grids = max(w_img - w_crop + w_stride - 1, 0) // w_stride + 1
+
+        preds = img.new_zeros((batch_size, n_h, n_w))
+        count_mat = img.new_zeros((batch_size, n_h, n_w))
+        for h_idx in range(h_grids):
+            for w_idx in range(w_grids):
+                y1 = h_idx * h_stride
+                x1 = w_idx * w_stride
+                y2 = min(y1 + h_crop, h_img)
+                x2 = min(x1 + w_crop, w_img)
+                y1 = max(y2 - h_crop, 0)
+                x1 = max(x2 - w_crop, 0)
+
+                h_1, w_1 = h_idx * s_h, w_idx * s_w
+                h_2, w_2 = min(h_1 + h_w, n_h), min(w_1 + w_w, n_w)
+                h_1, w_1 = max(h_2 - h_w, 0), max(w_2 - w_w, 0)
+
+                crop_img = img[:, :, y1:y2, x1:x2]
+                crop_img = transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                )(crop_img)
+                crop_seg_logit, _ = self.forward(crop_img)
+                crop_seg_logit = crop_seg_logit.reshape(-1, h_w, w_w)
+
+                preds += nn.functional.pad(crop_seg_logit,
+                               (int(w_1), int(preds.shape[2] - w_2), int(h_1),
+                                int(preds.shape[1] - h_2)))
+
+                count_mat[:, h_1:h_2, w_1:w_2] += 1
+        assert (count_mat == 0).sum() == 0
+
+        preds = preds / count_mat
+
+        if reshape:
+            return preds.reshape(batch_size, -1)
+        else:
+            return preds
+        
     def predict(
             self, 
-            x: torch.Tensor,
+            x: Union[torch.Tensor, list[torch.Tensor]],
             **kwargs
     ):
         with torch.no_grad():
-            o, _ = self.forward(x)
-            if kwargs["method"] == "mean":
-                return o.sigmoid().mean(-1).flatten().cpu().numpy()
-            elif kwargs["method"] == "max":
-                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
-            elif kwargs["method"] == "patchify":
-                pass
+            stride = kwargs.get("stride", 112)
+            if isinstance(x, list):
+                o = []
+                for xi in x: 
+                    o_i = self.forward_slide([xi], stride=stride)
+                    if kwargs["method"] == "mean":
+                        o.append(o_i.sigmoid().mean(-1).flatten().cpu().numpy())
+                    elif kwargs["method"] == "max":
+                        o.append(o_i.sigmoid().max(-1).values.flatten().cpu().numpy())
+                return np.array(o).squeeze()
             else:
-                raise ValueError("Method not supported")
+                o = self.forward_slide(x, stride=stride)
+                if kwargs["method"] == "mean":
+                    return o.sigmoid().mean(-1).flatten().cpu().numpy()
+                elif kwargs["method"] == "max":
+                    return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+                else:
+                    raise ValueError("Method not supported")
 
 class PatchAttentionPool(nn.Module):
     def __init__(

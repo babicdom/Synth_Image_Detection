@@ -22,10 +22,10 @@ def get_model(model_name="ViT-L/14", device="cuda:0"):
         model = timm.create_model("vit_base_patch14_dinov2.lvd142m", pretrained=True, num_classes=0)
         data_config = timm.data.resolve_model_data_config(model)
         tr_other = timm.data.create_transform(**data_config, is_training=False)
-        tr_spec = get_transform("spec_dinov2")
+        tr_spec = get_transform("spec_dinov2", crop=518, imgsize=518)
     elif model_name == "SigLIP":
         model, pr = create_model_from_pretrained('hf-hub:timm/ViT-L-16-SigLIP2-256', device=device)
-        tr_spec = get_transform("spec_siglip")
+        tr_spec = get_transform("spec_siglip", crop=256)
         tr_other = pr
     elif model_name == "ConvNextV2":
         model = timm.create_model('convnextv2_base.fcmae', pretrained=True, num_classes=0)
@@ -68,7 +68,7 @@ def train_knn():
                 y.extend(label.cpu().numpy().tolist())
 
         acc = []
-        for k in [1, 5, 10, 20, 50, 100]:
+        for k in [3, 5, 10, 20, 50, 100]:
             print(f"n_neighbors: {k}")
             knn = KNeighborsClassifier(
                 n_neighbors=k

@@ -288,6 +288,37 @@ class TestDataset(Dataset):
 
         return image_list
     
+class TrainingDatasetFreq(Dataset):
+    def __init__(self, split, classes=None, transforms=None, ds_frac=None):
+        self.images = [
+            f"data/{split}/{y}/0_real/{x}"
+            for y in classes
+            for x in os.listdir(f"data/{split}/{y}/0_real")
+        ]
+        
+        random.shuffle(self.images)
+        if ds_frac is not None:
+            self.images = self.images[: int(len(self.images) * ds_frac)]
+
+        self.target = torch.randint(0, 2, (len(self.images), )).tolist()
+        self.transforms = transforms
+
+    def __len__(self):
+        return len(self.images)
+
+    def __getitem__(self, idx):
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+
+        image_path = self.images[idx]
+        target = self.target[idx]
+        image = Image.open(image_path).convert("RGB")
+    
+        if self.transforms is not None:
+            image = self.transforms[target](image)
+
+        return [image, target]
+
 if __name__ == "__main__":
     # Example usage
     dataset = TestDataset(

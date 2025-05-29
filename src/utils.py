@@ -62,6 +62,20 @@ def get_transform(split="train", crop=224, imgsize=256):
                 ),
             ]
         )
+    elif split == "train_siglip":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.Lambda(lambda img: data_augment(img)),
+                transforms.RandomCrop(crop),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.5, 0.5, 0.5),
+                    std=(0.5, 0.5, 0.5),
+                ),
+            ]
+        )
     elif split == "val":
         return transforms.Compose(
             [
@@ -71,6 +85,18 @@ def get_transform(split="train", crop=224, imgsize=256):
                 transforms.Normalize(
                     mean=(0.48145466, 0.4578275, 0.40821073),
                     std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "val_siglip":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.CenterCrop(crop),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.5, 0.5, 0.5),
+                    std=(0.5, 0.5, 0.5),
                 ),
             ]
         )
@@ -104,10 +130,23 @@ def get_transform(split="train", crop=224, imgsize=256):
                 ),
             ]
         )
-    elif any([split == "spec_dinov2", split == "spec_convnextv2"]):
+    elif split == "spec_siglip":
         return transforms.Compose(
             [
                 PadIfNeeded(imgsize, imgsize),
+                transforms.CenterCrop(crop),
+                transforms.Lambda(lambda img: add_spectral_fragments(img)),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.5, 0.5, 0.5),
+                    std=(0.5, 0.5, 0.5),
+                ),
+            ]
+        )
+    elif any([split == "spec_dinov2", split == "spec_convnextv2"]):
+        return transforms.Compose(
+            [
+                transforms.Resize(imgsize),
                 transforms.CenterCrop(crop),
                 transforms.Lambda(lambda img: add_spectral_fragments(img)),
                 transforms.ToTensor(),
@@ -117,15 +156,51 @@ def get_transform(split="train", crop=224, imgsize=256):
                 ),
             ]
         )
+    elif split == "no_crop":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
+    elif split == "no_crop_no_norm":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.ToTensor(),
+            ]
+        )
+    elif split == "random_crop":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.RandomCrop(crop),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=(0.48145466, 0.4578275, 0.40821073),
+                    std=(0.26862954, 0.26130258, 0.27577711),
+                ),
+            ]
+        )
     else:
         raise ValueError("split must be one of train, val, test or other")
     
 def get_transforms(experiment):
     crop = experiment.get("crop", 224)
     imgsize = experiment.get("imgsize", 256)
-    transforms_train = get_transform("train", crop=crop, imgsize=imgsize)
-    transforms_val = get_transform("val", crop=crop, imgsize=imgsize)
-    transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
+    model_name = experiment.get("model", None)
+    if model_name is None:
+        transforms_train = get_transform("train", crop=crop, imgsize=imgsize)
+        transforms_val = get_transform("val", crop=crop, imgsize=imgsize)
+        transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
+    elif model_name == "siglip":
+        transforms_train = get_transform("train_siglip", crop=crop, imgsize=imgsize)
+        transforms_val = get_transform("val_siglip", crop=crop, imgsize=imgsize)
+        transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
     return transforms_train, transforms_val, transforms_test
 
 def get_loader(
@@ -609,7 +684,7 @@ def train(
 
     if data is None:
         transforms_train, transforms_val, transforms_test = get_transforms(experiment)
-        train, val, test = get_loaders(
+        train_, val, test = get_loaders(
             experiment=experiment,
             transforms_train=transforms_train,
             transforms_val=transforms_val,
@@ -617,7 +692,7 @@ def train(
             workers=workers,
         )
     else:
-        train, val, test = data
+        train_, val, test = data
     model.to(device)
 
     if optimizer is None:
@@ -638,7 +713,7 @@ def train(
         model.train()
 
         with tqdm.tqdm(
-                total=len(train),
+                total=len(train_),
                 desc=f"Epoch {epoch + 1}/{epochs}",
                 unit="batch",
                 ncols=100,
@@ -646,7 +721,7 @@ def train(
             pbar.set_postfix({
                 "loss": torch.inf
             })
-            for data in train:
+            for data in train_:
                 # prev_model = model.copy()
                 images, labels = data
                 images, labels = images.float().to(device), labels.float().to(device)
@@ -707,8 +782,8 @@ def train(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    os.makedirs(f"results/{experiment['save_path']}/", exist_ok=True)
-    filename = f"results/{experiment['save_path']}/train.json"
+    os.makedirs(f"results/train/{experiment['save_path']}/", exist_ok=True)
+    filename = f"results/train/{experiment['save_path']}/train.json"
     with open(filename, "w") as h:
         json.dump(log, h, indent=2)
 
@@ -735,7 +810,11 @@ def eval_model(
     best_accs = []
 
     if test is None:
-        transform = get_transform("val")
+        model_name = experiment.get("model", None)
+        if model_name is None:
+            transform = get_transform("val")
+        else:
+            transform = get_transform("val_siglip", crop=256)
         test = get_loader(
             experiment=experiment,
             split="test",
@@ -768,29 +847,6 @@ def eval_model(
         accs.append(test_acc["acc"])
         best_accs.append(threshold_acc["acc"])
 
-        roc_curve = RocCurveDisplay.from_predictions(
-            np.array(y_true),
-            np.array(y_score),
-            name=g,
-            color="blue",
-            alpha=0.5,
-        )
-        roc_curve.plot()
-        plt.title(f"ROC Curve - {g}")
-        plt.savefig(f"results/{experiment['save_path']}/roc_curve_{g}.png")
-        plt.close()
-        pr_curve = PrecisionRecallDisplay.from_predictions(
-            np.array(y_true),
-            np.array(y_score),
-            name=g,
-            color="blue",
-            alpha=0.5,
-        )
-        pr_curve.plot()
-        plt.title(f"Precision-Recall Curve - {g}")
-        plt.savefig(f"results/{experiment['save_path']}/pr_curve_{g}.png")
-        plt.close()
-
         results[g] = {
             "ap": test_ap,
             "auroc": test_auc,
@@ -810,47 +866,10 @@ def eval_model(
         "config": experiment,
         "results": copy.deepcopy(results),
     }
-    filename = f"results/{experiment['save_path']}/eval.json"
+    filename = f"results/train/{experiment['save_path']}/eval.json"
     with open(filename, "w") as h:
         json.dump(log, h, indent=2)
     print(f"Saved results to {filename}")
-
-def save_worst_predictions(
-        experiment,
-        model,
-        gen_name,
-        dl,
-        threshold,
-        device,
-        max_n=10,
-        **kwargs
-    ):
-    model.eval()
-    false_positives = []
-    false_negatives = []
-    for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
-        images, labels, img_paths = data
-        images, labels = images.float().to(device), labels.to(device)
-        output = model.predict(images, **kwargs)
-        
-        for i in range(len(labels)):
-            if labels[i] == 0 and output[i] > threshold:
-                false_positives.append((img_paths[i], output[i]))
-            elif labels[i] == 1 and output[i] < threshold:
-                false_negatives.append((img_paths[i], output[i]))
-    print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
-
-    os.makedirs(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/", exist_ok=True)
-    with open(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
-        for i in range(min(max_n, len(false_positives))):
-            img_path, score = false_positives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-    
-    with open(f"results/{experiment['save_path']}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
-        for i in range(min(max_n, len(false_negatives))):
-            img_path, score = false_negatives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-    print(f"Saved worst predictions to results/{experiment['save_path']}/worst_predictions/{gen_name}/")
 
 def patchify_image(
     img: torch.Tensor,
