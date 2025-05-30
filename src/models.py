@@ -278,6 +278,7 @@ class IntermediatePatch(nn.Module):
         If h_crop > h_img or w_crop > w_img, the small patch will be used to
         decode without padding.
         """
+        assert stride % patch_size == 0, f"Stride muste be divisible by patch size ({patch_size})"
         if type(img) == list:
             img = img[0].unsqueeze(0)
         if type(stride) == int:
@@ -343,7 +344,7 @@ class IntermediatePatch(nn.Module):
             if isinstance(x, list):
                 o = []
                 for xi in x: 
-                    o_i = self.forward_slide([xi], stride=stride)
+                    o_i = self.forward_slide(xi, stride=stride)
                     if kwargs["method"] == "mean":
                         o.append(o_i.sigmoid().mean(-1).flatten().cpu().numpy())
                     elif kwargs["method"] == "max":
@@ -355,8 +356,26 @@ class IntermediatePatch(nn.Module):
                     return o.sigmoid().mean(-1).flatten().cpu().numpy()
                 elif kwargs["method"] == "max":
                     return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+                elif kwargs["method"] == "both":
+                    return [o.sigmoid().mean(-1).flatten().cpu().numpy(), o.sigmoid().max(-1).values.flatten().cpu().numpy()]
                 else:
                     raise ValueError("Method not supported")
+                
+    def predict_no_window(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            if kwargs["method"] == "mean":
+                return o.sigmoid().mean(-1).flatten().cpu().numpy()
+            elif kwargs["method"] == "max":
+                return o.sigmoid().max(-1).values.flatten().cpu().numpy()
+            elif kwargs["method"] == "both":
+                return [o.sigmoid().mean(-1).flatten().cpu().numpy(), o.sigmoid().max(-1).values.flatten().cpu().numpy()]
+            else:
+                raise ValueError("Method not supported")
 
 class PatchAttentionPool(nn.Module):
     def __init__(

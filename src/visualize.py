@@ -3,7 +3,7 @@ import torch
 import numpy as np
 from torchvision import transforms
 import matplotlib.pyplot as plt
-from src.utils import patchify_image, get_transform, get_loader
+from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn
 from src.data import EvaluationDataset
 from PIL import Image
 import pickle
@@ -273,81 +273,50 @@ def visualize_patchify(
 
 def visualize_patch_impact(
         image: Image.Image,
-        transform,
         model,
+        stride,
+        gen_name,
+        fake,
+        num=None
     ):
     """
     Visualizes the impact of each patch on the model's output.
     """
-    crop = transforms.RandomCrop(224)(image)
-    img = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Normalize(
-            mean=(0.48145466, 0.4578275, 0.40821073),
-            std=(0.26862954, 0.26130258, 0.27577711),
-        ),
-    ])(crop)
-    # img = transform(image)
+    model.eval()
+    img = transforms.ToTensor()(image)
+    patch_size = 14
 
     if img.dim() == 3:
         img = img.unsqueeze(0).to("cuda:0")
     
+    _, _, h, w = img.shape
+    n_h, n_w = h // patch_size, w // patch_size
+    h_img, w_img = n_h * patch_size, n_w * patch_size
+    img = img[:, :, :h_img, :w_img]
     with torch.no_grad():   
-        output = model(img)[0]
+        output = model.forward_slide(img, reshape=False, stride=stride)
+        predict_mean, predict_max = model.predict(img, method="both")
 
     plt.figure(figsize=(12, 7))
     plt.subplot(1, 2, 1)
     plt.imshow(image)
     plt.axis("off")
-    plt.title("Input Image")
+    plt.title(f"Input {'Fake' if fake else 'Real'} Image")
     plt.subplot(1, 2, 2)
-    # plt.imshow(img.squeeze(0).permute(1, 2, 0).detach().cpu().numpy())
-    plt.imshow(crop)
+    plt.imshow(img.squeeze(0).permute(1, 2, 0).cpu().numpy())
     plt.axis("off")
-    plt.title("Transformed Image")
     output = output.sigmoid().squeeze(0)
-    hotspot_image = np.zeros((224, 224), dtype=np.float32)
-    for i in range(16):
-        for j in range(16):
-            k = i * 16 + j
-            patch = output[k].expand(14, 14)
-            hotspot_image[i * 14:(i + 1) * 14, j * 14:(j + 1) * 14] = patch.cpu().numpy()
+    hotspot_image = np.zeros((h_img, w_img), dtype=np.float32)
+    for i in range(output.shape[0]):
+        for j in range(output.shape[1]):
+            patch = output[i, j].expand(patch_size, patch_size)
+            hotspot_image[i * patch_size:(i + 1) * patch_size, j * patch_size:(j + 1) * patch_size] = patch.cpu().numpy()
     plt.imshow(hotspot_image, cmap="plasma", alpha=0.5)
     plt.colorbar(label="Patch Impact")
     plt.axis("off")
-    plt.title("Model Output")
+    plt.title(f"Model Output, Max={predict_max[0]:1.2f}, Mean={predict_mean[0]:1.2f}")
     plt.tight_layout()
-    plt.savefig("results/visualizations/patch_impact_sd3.png")
-
-def visualize_image_impact(
-        img: torch.Tensor,
-        model,
-        **kwargs
-    ) -> None:
-    """
-    Visualizes the impact of each pixel on the model's output.
-    """
-    # Ensure the image is in the correct format
-    if img.dim() == 3:
-        img = img.unsqueeze(0)  # Add batch dimension
-    img.requires_grad = True
-
-    output = model.forward_with_grad(img)[0].mean()
-    output.backward()
-    gradients = img.grad
-
-    gradients = gradients.view(gradients.size(0), -1, img.size(2), img.size(3))
-    gradients = gradients.permute(0, 2, 3, 1)
-
-    plt.subplot(1, 2, 1)
-    plt.imshow(img[0].permute(1, 2, 0).detach().cpu().numpy())
-    plt.axis("off")
-    plt.title("Input Image")
-    plt.subplot(1, 2, 2)
-    plt.imshow(gradients[0].detach().cpu().numpy(), cmap="viridis", alpha=0.5)
-    plt.axis("off")
-    plt.title("Gradient Impact")
-    plt.savefig(f"gradients.png")
+    plt.savefig(f"results/visualizations/patch_impact/pi_stride_{stride}_{gen_name}_{'fake' if fake else 'real'}_{num}.png")
 
 def save_worst_predictions(
         experiment,
@@ -364,8 +333,12 @@ def save_worst_predictions(
     false_negatives = []
     for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
         images, labels, img_paths = data
-        images, labels = images.float().to(device), labels.to(device)
-        output = model.predict(images, **kwargs)
+        if isinstance(images, list):
+            images = [im.float().to(device) for im in images]
+        else:
+            images = images.float().to(device)
+            labels = labels.numpy().tolist()
+        output = model.predict_no_window(images, **kwargs)
         
         for i in range(len(labels)):
             if labels[i] == 0 and output[i] > threshold:
@@ -406,9 +379,9 @@ def save_best_predictions(
         
         for i in range(len(labels)):
             if labels[i] == 0 and output[i] < threshold:
-                true_positives.append((img_paths[i], output[i]))
-            elif labels[i] == 1 and output[i] > threshold:
                 true_negatives.append((img_paths[i], output[i]))
+            elif labels[i] == 1 and output[i] > threshold:
+                true_positives.append((img_paths[i], output[i]))
     print(f"True positives: {len(true_positives)}, True negatives: {len(true_negatives)}")
 
     os.makedirs(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/", exist_ok=True)
@@ -435,10 +408,9 @@ if __name__ == "__main__":
     # print("Patchified image saved to results/visualizations/patchified_image.png")
 
     # img = Image.open("data/test/diffusion_datasets/dalle/1_fake/efgchmasis.png")
-    img = Image.open("data/test/spai/stable-diffusion-3/1_fake/000006315_7.webp")
-    # img = Image.open("data/test/diffusion_datasets/laion/0_real/uyfkdpzowl.jpg")
-    img = img.convert("RGB")
-    tr = get_transform("random_crop")
+    # img = Image.open("data/test/spai/stable-diffusion-3/1_fake/000000014_1.webp")
+    
+    gen_name = "synthbuster/midjourney-v5"
 
     experiment = pickle.load(
         open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
@@ -452,12 +424,25 @@ if __name__ == "__main__":
     model.load_state_dict(
         torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
     )
+    tr = transforms.Resize(512)
 
-    visualize_patch_impact(
-        image=img,
-        transform=tr,
-        model=model,
-    )
+    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt") as f:
+        lines = f.readlines()
+
+        for n, l in enumerate(lines):
+            img_path, _ = l.split(" ")
+            img = Image.open(img_path)
+            img = img.convert("RGB")
+            img = tr(img)
+
+            visualize_patch_impact(
+                image=img,
+                model=model,
+                stride=112,
+                gen_name=gen_name.split("/")[-1],
+                fake=False,
+                num=n
+            )
 
     # visualize_image_impact(
     #     img=tr(img).unsqueeze(0).to("cuda:0"),
@@ -488,13 +473,14 @@ if __name__ == "__main__":
 
     # device = "cuda:0"
     # transform = get_transform("val")
-    # g = "stable-diffusion-3"
+
     # loader = DataLoader(
     #                     EvaluationDataset(g, transforms=transform, target="both"),
-    #                     batch_size=16,
+    #                     batch_size=8,
     #                     shuffle=False,
     #                     pin_memory=True,
     #                     drop_last=False,
+    #                     # collate_fn=image_enlisting_collate_fn
     #                 )
 
     # save_worst_predictions(

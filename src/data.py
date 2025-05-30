@@ -214,6 +214,8 @@ class EvaluationDataset(Dataset):
 
         self.transforms = transforms
         self.perturb = perturb
+        self.real_size = set()
+        self.fake_size = set()
 
     def __len__(self):
         return len(self.images)
@@ -224,6 +226,12 @@ class EvaluationDataset(Dataset):
 
         image_path, target = self.images[idx]
         image = Image.open(image_path).convert("RGB")
+        
+        if target == 1:
+            self.fake_size.add(image.size)
+        else:
+            self.real_size.add(image.size)
+
         if self.transforms is not None and self.perturb is None:
             image = self.transforms(image)
         elif self.transforms is not None and self.perturb is not None:

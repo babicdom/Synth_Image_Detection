@@ -1,7 +1,9 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import torch.utils
 from torch.utils.data import DataLoader
+import torch.utils.data
 from torchvision import transforms
 import clip
 import tqdm
@@ -203,8 +205,18 @@ def get_transforms(experiment):
         transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
     return transforms_train, transforms_val, transforms_test
 
+def image_enlisting_collate_fn(
+    batch
+) -> tuple[list[torch.Tensor], torch.Tensor, torch.Tensor]:
+    """Collate function that enlists its entries."""
+    return (
+        [torch.utils.data.default_collate([s[0]]) for s in batch],
+        torch.utils.data.default_collate([s[1] for s in batch]),
+        [s[2] for s in batch]
+    )
+
 def get_loader(
-    experiment, split, transforms, workers=2, target="both"
+    experiment, split, transforms, workers=2, target="both", collate_fn=None
 ):
     if experiment["training_set"] == "progan":
         if split == "train":
@@ -276,6 +288,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
+                    collate_fn=collate_fn if any([x in g for x in ["stylegan", "deepfake", "crn", "imle", "san", "seeingdark", "whichfaceisreal", "diffusion_datasets/guided", "synthbuster/glide", "synthbuster/dalle2", "synthbuster/stable-diffusion-1-3", "synthbuster/stable-diffusion-1-4", "synthbuster/midjourney-v5", "synthbuster/dalle3", "synthbuster/stable-diffusion-2", "synthbuster/stable-diffusion-xl", "synthbuster/firefly", "flux", "gigagan", "midjourney-v6.1", "stable-diffusion-3",]]) else None
                 ),
             )
             for g in get_generators()
@@ -289,6 +302,7 @@ def get_loader(
                 pin_memory=True,
                 drop_last=False,
                 num_workers=workers,
+                collate_fn=collate_fn
             ))
         ]
     else:
@@ -321,11 +335,11 @@ def get_loaders(
 
 def get_generators():
     return [
-        "biggan",
-        "cyclegan",
-        "gaugan",
-        "progan",
-        "stargan",
+        # "biggan",
+        # "cyclegan",
+        # "gaugan",
+        # "progan",
+        # "stargan",
         "stylegan",
         "stylegan2",
         "deepfake",
@@ -334,10 +348,10 @@ def get_generators():
         "san",
         "seeingdark",
         "whichfaceisreal",
-        "diffusion_datasets/dalle",
-        "diffusion_datasets/glide_100_10",
-        "diffusion_datasets/glide_100_27",
-        "diffusion_datasets/glide_50_27",
+        # "diffusion_datasets/dalle",
+        # "diffusion_datasets/glide_100_10",
+        # "diffusion_datasets/glide_100_27",
+        # "diffusion_datasets/glide_50_27",
         "diffusion_datasets/guided",
         "diffusion_datasets/ldm_100",
         "diffusion_datasets/ldm_200",
@@ -831,9 +845,13 @@ def eval_model(
         with torch.no_grad():
             for data in tqdm.tqdm(dl, desc=f"Testing on generator {g}", unit="batch"):
                 images, labels, _ = data
-                images, labels = images.float().to(device), labels.to(device)
+                if isinstance(images, list):
+                    images = [im.float().to(device) for im in images]
+                else:
+                    images = images.float().to(device)
+                    labels = labels.numpy().tolist()
                 output = model.predict(images, **kwargs)
-                y_true.extend(labels.cpu().numpy().tolist())
+                y_true.extend(labels)
                 y_score.extend(output.tolist())
 
         test_ap = average_precision_score(y_true, y_score)

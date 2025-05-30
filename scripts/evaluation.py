@@ -1,4 +1,4 @@
-from src.utils import eval_model, get_loader, get_transform
+from src.utils import eval_model, get_loader, get_transform, image_enlisting_collate_fn
 from src.models import CLIPatch, CLIPformer, IntermediatePatch, SigLIPIntermediate
 import torch
 import pickle
@@ -9,6 +9,7 @@ import json
 experiment = pickle.load(
     open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
 )
+experiment["batch_size"] = 8
 model = IntermediatePatch(
     backbone=experiment["backbone"],
     nproj=experiment["nproj"],
@@ -24,7 +25,9 @@ test = get_loader(
     experiment=experiment,
     split="test",
     transforms=transform,
+    collate_fn=image_enlisting_collate_fn
 )
+
 # ----------------------------------------------------
 
 # experiment = pickle.load(
