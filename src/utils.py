@@ -22,7 +22,7 @@ from PIL import Image
 from scipy.ndimage.filters import gaussian_filter
 from sklearn.metrics import accuracy_score, average_precision_score, roc_auc_score, confusion_matrix, RocCurveDisplay, PrecisionRecallDisplay
 
-from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset
+from src.data import TrainingDataset, TrainingDatasetLDM, EvaluationDataset, TestDataset
 
 import matplotlib.pyplot as plt
 
@@ -279,24 +279,71 @@ def get_loader(
                 g,
                 DataLoader(
                     EvaluationDataset(g, transforms=transforms, target=target),
-                    batch_size=(
-                        experiment["batch_size"]
-                        if experiment["training_set"] == "progan"
-                        else 16
-                    ),
+                    batch_size=experiment["batch_size"],
                     shuffle=False,
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
-                    collate_fn=collate_fn if any([x in g for x in ["stylegan", "deepfake", "crn", "imle", "san", "seeingdark", "whichfaceisreal", "diffusion_datasets/guided", "synthbuster/glide", "synthbuster/dalle2", "synthbuster/stable-diffusion-1-3", "synthbuster/stable-diffusion-1-4", "synthbuster/midjourney-v5", "synthbuster/dalle3", "synthbuster/stable-diffusion-2", "synthbuster/stable-diffusion-xl", "synthbuster/firefly", "flux", "gigagan", "midjourney-v6.1", "stable-diffusion-3",]]) else None
+                    collate_fn=None # collate_fn if any([x in g for x in ["stylegan", "deepfake", "crn", "imle", "san", "seeingdark", "whichfaceisreal", "diffusion_datasets/guided", "synthbuster/glide", "synthbuster/dalle2", "synthbuster/stable-diffusion-1-3", "synthbuster/stable-diffusion-1-4", "synthbuster/midjourney-v5", "synthbuster/dalle3", "synthbuster/stable-diffusion-2", "synthbuster/stable-diffusion-xl", "synthbuster/firefly", "flux", "gigagan", "midjourney-v6.1", "stable-diffusion-3",]]) else None
                 ),
             )
             for g in get_generators()
         ]
     elif split == "test_all":
-        return [
-            ("All Generators", DataLoader(
-                EvaluationDataset("data/test", transforms=transforms, target=target),
+        name = "All Generators"
+        data_paths = ["data/test"]
+    elif split == "test_ldm":
+        name = "GAN-based Generators"
+        data_paths = [
+            'data/test/biggan/',
+            'data/test/cyclegan',
+            'data/test/gaugan',
+            'data/test/progan',
+            'data/test/stargan',
+            'data/test/stylegan',
+            'data/test/stylegan2',
+            'data/test/deepfake',
+            'data/test/crn',
+            'data/test/imle',
+            'data/test/san',
+            'data/test/seeingdark',
+            'data/test/whichfaceisreal',
+            'data/test/diffusion_datasets/dalle',
+            'data/test/diffusion_datasets/laion',
+            'data/test/synthbuster/dalle3/',
+            'data/test/synthbuster/dalle2/',
+            'data/test/spai/gigagan/',
+        ]
+    elif split == "test_gan":
+        name = "Diffusion-based Generators"
+        data_paths = [
+            'data/test/diffusion_datasets/laion',
+            'data/test/diffusion_datasets/glide_100_10',
+            'data/test/diffusion_datasets/glide_100_27',
+            'data/test/diffusion_datasets/glide_50_27',
+            'data/test/diffusion_datasets/guided',
+            'data/test/diffusion_datasets/imagenet',
+            'data/test/diffusion_datasets/ldm_100',
+            'data/test/diffusion_datasets/ldm_200',
+            'data/test/diffusion_datasets/ldm_200_cfg',
+            'data/test/synthbuster/glide/',
+            'data/test/synthbuster/raise',
+            'data/test/synthbuster/dalle2/',
+            'data/test/synthbuster/stable-diffusion-1-3/',
+            'data/test/synthbuster/stable-diffusion-1-4/',
+            'data/test/synthbuster/midjourney-v5/',
+            'data/test/synthbuster/dalle3/',
+            'data/test/synthbuster/stable-diffusion-2/',
+            'data/test/synthbuster/stable-diffusion-xl/',
+            'data/test/synthbuster/firefly/',
+            'data/test/spai/flux/',
+            'data/test/spai/midjourney-v6.1/',
+            'data/test/spai/stable-diffusion-3/', 
+        ]
+    
+    return [
+            (name, DataLoader(
+                TestDataset(data_paths, transforms=transforms, target=target),
                 batch_size=experiment["batch_size"],
                 shuffle=False,
                 pin_memory=True,
@@ -305,8 +352,6 @@ def get_loader(
                 collate_fn=collate_fn
             ))
         ]
-    else:
-        raise ValueError("split must be one of train, val, test")
     
 def get_loaders(
     experiment, transforms_train, transforms_val, transforms_test, workers, target="both"
@@ -335,41 +380,41 @@ def get_loaders(
 
 def get_generators():
     return [
-        # "biggan",
-        # "cyclegan",
-        # "gaugan",
-        # "progan",
-        # "stargan",
-        "stylegan",
-        "stylegan2",
-        "deepfake",
-        "crn",
-        "imle",
-        "san",
-        "seeingdark",
-        "whichfaceisreal",
-        # "diffusion_datasets/dalle",
-        # "diffusion_datasets/glide_100_10",
-        # "diffusion_datasets/glide_100_27",
-        # "diffusion_datasets/glide_50_27",
-        "diffusion_datasets/guided",
-        "diffusion_datasets/ldm_100",
-        "diffusion_datasets/ldm_200",
-        "diffusion_datasets/ldm_200_cfg",
-        "synthbuster/glide",
-        "synthbuster/dalle2",
-        "synthbuster/stable-diffusion-1-3",
-        "synthbuster/stable-diffusion-1-4",
-        "synthbuster/midjourney-v5",
-        "synthbuster/dalle3",
-        "synthbuster/stable-diffusion-2",
-        "synthbuster/stable-diffusion-xl",
-        "synthbuster/firefly",
-        "flux",
-        "gigagan",
-        "midjourney-v6.1",
-        "stable-diffusion-3",
-    ]
+            "biggan",
+            "cyclegan",
+            "gaugan",
+            "progan",
+            "stargan",
+            "stylegan",
+            "stylegan2",
+            "deepfake",
+            "crn",
+            "imle",
+            "san",
+            "seeingdark",
+            "whichfaceisreal",
+            "diffusion_datasets/dalle",
+            "diffusion_datasets/glide_100_10",
+            "diffusion_datasets/glide_100_27",
+            "diffusion_datasets/glide_50_27",
+            "diffusion_datasets/guided",
+            "diffusion_datasets/ldm_100",
+            "diffusion_datasets/ldm_200",
+            "diffusion_datasets/ldm_200_cfg",
+            "synthbuster/glide",
+            "synthbuster/dalle2",
+            "synthbuster/stable-diffusion-1-3",
+            "synthbuster/stable-diffusion-1-4",
+            "synthbuster/midjourney-v5",
+            "synthbuster/dalle3",
+            "synthbuster/stable-diffusion-2",
+            "synthbuster/stable-diffusion-xl",
+            "synthbuster/firefly",
+            "flux",
+            "gigagan",
+            "midjourney-v6.1",
+            "stable-diffusion-3",
+        ]
 
 
 # this function guarantees reproductivity

@@ -12,9 +12,10 @@ test = get_loader(
     transforms=tr,
 )
 
-for g, dataset in test:
+for g, dl in test:
     print(f"Dataset {g} -")
-    for _, _, _ in dataset:
-        continue
-
-    print(f"Real size: {dataset.dataset.real_size}\nFake size: {dataset.dataset.fake_size}")
+    dl.dataset.get_sizes()
+    if dl.dataset.real_size == dl.dataset.fake_size:
+        print(f"Same sizes!")
+    else:
+        print(f"Real size: {dl.dataset.real_size}\nFake size: {dl.dataset.fake_size}")

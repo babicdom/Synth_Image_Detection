@@ -5,13 +5,17 @@ from torchvision import transforms
 import matplotlib.pyplot as plt
 from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn
 from src.data import EvaluationDataset
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 import pickle
-from src.models import IntermediatePatch
-from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, auc, average_precision_score
+from src.models import IntermediatePatch, SigLIPIntermediate
+from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, roc_auc_score, average_precision_score
 import tqdm
+import json
 from torch.utils.data import DataLoader
 from math import floor
+
+def plot_roc_pr(labels, output):
+    pass
 
 def visualize_prediction_distribution(
         data,
@@ -22,22 +26,24 @@ def visualize_prediction_distribution(
     """
     Visualizes the prediction distribution of the model.
     """
+    model.eval()
+
     for generator, dl in data:
         generator = generator.split("/")[-1]
         real_mean_pred = []
         real_max_pred = []
         fake_mean_pred = []
         fake_max_pred = []
-        real_pred_product = []
-        fake_pred_product = []
+        real_pred_g_mean_3 = []
+        fake_pred_g_mean_3 = []
+        real_pred_g_mean_15 = []
+        fake_pred_g_mean_15 = []
         max_pred_reverse = []
         reals = []
         fakes = []
         labels_ = []
         output_mean =[]
         output_max = []
-        real_diffs = []
-        fake_diffs = []
 
         print(f'Fake: {len(dl.dataset.fake)}, Real: {len(dl.dataset.real)}, Total: {len(dl.dataset.images)}')
         with torch.no_grad():
@@ -57,26 +63,27 @@ def visualize_prediction_distribution(
                 real_max_pred.extend(output_real.max(-1).values.flatten().cpu().numpy())
                 fake_mean_pred.extend(output_fake.mean(-1).flatten().cpu().numpy())
                 fake_max_pred.extend(output_fake.max(-1).values.flatten().cpu().numpy())
-                real_pred_product.extend(output_real.prod(-1).flatten().cpu().numpy())
-                fake_pred_product.extend(output_fake.prod(-1).flatten().cpu().numpy())
+                real_pred_g_mean_3.extend(output_real.pow(3).mean(-1).pow(1/3).flatten().cpu().numpy())
+                fake_pred_g_mean_3.extend(output_fake.pow(3).mean(-1).pow(1/3).flatten().cpu().numpy())
+                real_pred_g_mean_15.extend(output_real.pow(15).mean(-1).pow(1/15).flatten().cpu().numpy())
+                fake_pred_g_mean_15.extend(output_fake.pow(15).mean(-1).pow(1/15).flatten().cpu().numpy())
 
                 max_pred_reverse.extend((1 - output).max(-1).values.flatten().cpu().numpy())
-                real_diffs.extend((output_real.max(-1).values - output_real.min(-1).values).flatten().cpu().numpy())
-                fake_diffs.extend((output_fake.max(-1).values - output_fake.min(-1).values).flatten().cpu().numpy())
+
                 reals.extend(output_real.flatten())
                 fakes.extend(output_fake.flatten())
 
         roc_curve_max = roc_curve(labels_, output_max)
-        auc_max = auc(roc_curve_max[0], roc_curve_max[1])
+        auc_max = roc_auc_score(labels_, output_max)
 
         roc_curve_max_reverse = roc_curve(labels_, max_pred_reverse)
-        auc_max_reverse = auc(roc_curve_max_reverse[0], roc_curve_max_reverse[1])
+        auc_max_reverse = roc_auc_score(labels_, max_pred_reverse)
 
         roc_curve_mean = roc_curve(labels_, output_mean)
-        auc_mean = auc(roc_curve_mean[0], roc_curve_mean[1])
+        auc_mean = roc_auc_score(labels_, output_mean)
 
         roc_curve_mean_reverse = roc_curve(labels_, 1 - torch.tensor(output_mean))
-        auc_mean_reverse = auc(roc_curve_mean_reverse[0], roc_curve_mean_reverse[1])
+        auc_mean_reverse = roc_auc_score(labels_, 1 - torch.tensor(output_mean))
 
         precision_recall_curve_max = precision_recall_curve(labels_, output_max)
         ap_max = average_precision_score(labels_, output_max)
@@ -93,73 +100,76 @@ def visualize_prediction_distribution(
         real_max_pred = torch.tensor(real_max_pred)
         fake_mean_pred = torch.tensor(fake_mean_pred)
         fake_max_pred = torch.tensor(fake_max_pred)
-        real_diffs = torch.tensor(real_diffs)
-        fake_diffs = torch.tensor(fake_diffs)
         reals = torch.tensor(reals)
         fakes = torch.tensor(fakes)
     
         os.makedirs(f"results/visualizations/{model_name}/{generator}", exist_ok=True)
-        plt.figure(figsize=(14, 6))
+        plt.figure(figsize=(8, 8))
         roc_curve_display = RocCurveDisplay(
             fpr=roc_curve_max[0],
             tpr=roc_curve_max[1],
-            roc_auc=auc_max,
+            roc_auc=auc_max*100,
             estimator_name="Max",
         )
-        roc_curve_display.plot(ax=plt.subplot(2, 4, 1))
-        plt.subplot(2, 4, 1).set_title(f"ROC Curve Max (AUC = {auc_max:.4f})")
+        roc_curve_display.plot(ax=plt.subplot(2, 2, 1))
+        plt.subplot(2, 2, 1).set_title(f"ROC Curve Max (AUC = {auc_max*100:.2f})")
         roc_curve_display = RocCurveDisplay(
             fpr=roc_curve_mean[0],
             tpr=roc_curve_mean[1],
-            roc_auc=auc_mean,
+            roc_auc=auc_mean*100,
         )
-        roc_curve_display.plot(ax=plt.subplot(2, 4, 2))
-        plt.subplot(2, 4, 2).set_title(f"ROC Curve Mean (AUC = {auc_mean:.4f})")
+        roc_curve_display.plot(ax=plt.subplot(2, 2, 2))
+        plt.subplot(2, 2, 2).set_title(f"ROC Curve Mean (AUC = {auc_mean*100:.2f})")
         precision_recall_display = PrecisionRecallDisplay(
             precision=precision_recall_curve_max[0],
             recall=precision_recall_curve_max[1],
-            average_precision=ap_max,
+            average_precision=ap_max*100,
         )
-        precision_recall_display.plot(ax=plt.subplot(2, 4, 3))
-        plt.subplot(2, 4, 3).set_title(f"PR Curve Max (AP = {ap_max:.4f})")
+        precision_recall_display.plot(ax=plt.subplot(2, 2, 3))
+        plt.subplot(2, 2, 3).set_title(f"PR Curve Max (AP = {ap_max*100:.2f})")
         precision_recall_display = PrecisionRecallDisplay(
             precision=precision_recall_curve_mean[0],
             recall=precision_recall_curve_mean[1],
-            average_precision=ap_mean,
+            average_precision=ap_mean*100,
         )
-        precision_recall_display.plot(ax=plt.subplot(2, 4, 4))
-        plt.subplot(2, 4, 4).set_title(f"PR Curve Mean (AP = {ap_mean:.4f})")
+        precision_recall_display.plot(ax=plt.subplot(2, 2, 4))
+        plt.subplot(2, 2, 4).set_title(f"PR Curve Mean (AP = {ap_mean*100:.2f})")
 
         roc_curve_display = RocCurveDisplay(
             fpr=roc_curve_max_reverse[0],
             tpr=roc_curve_max_reverse[1],
-            roc_auc=auc_max_reverse,
+            roc_auc=auc_max_reverse*100,
         )
-        roc_curve_display.plot(ax=plt.subplot(2, 4, 5))
-        plt.subplot(2, 4, 5).set_title(f"ROC Curve Max(1-y) (AUC = {auc_max_reverse:.4f})")
+        plt.tight_layout()
+        plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves.png"))
+        plt.close()
+
+        plt.figure(figsize=(8, 8))
+        roc_curve_display.plot(ax=plt.subplot(2, 2, 1))
+        plt.subplot(2, 2, 1).set_title(f"ROC Curve Max(1-y) (AUC = {auc_max_reverse*100:.2f})")
         roc_curve_display = RocCurveDisplay(
             fpr=roc_curve_mean_reverse[0],
             tpr=roc_curve_mean_reverse[1],
-            roc_auc=auc_mean_reverse,
+            roc_auc=auc_mean_reverse*100,
         )
-        roc_curve_display.plot(ax=plt.subplot(2, 4, 6))
-        plt.subplot(2, 4, 6).set_title(f"ROC Curve 1-Mean (AUC = {auc_mean_reverse:.4f})")
+        roc_curve_display.plot(ax=plt.subplot(2, 2, 2))
+        plt.subplot(2, 2, 2).set_title(f"ROC Curve 1-Mean (AUC = {auc_mean_reverse*100:.2f})")
         precision_recall_display = PrecisionRecallDisplay(
             precision=precision_recall_curve_max_reverse[0],
             recall=precision_recall_curve_max_reverse[1],
-            average_precision=ap_max_reverse,
+            average_precision=ap_max_reverse*100,
         )
-        precision_recall_display.plot(ax=plt.subplot(2, 4, 7))
-        plt.subplot(2, 4, 7).set_title(f"PR Curve Max(1-y) (AP = {ap_max_reverse:.4f})")
+        precision_recall_display.plot(ax=plt.subplot(2, 2, 3))
+        plt.subplot(2, 2, 3).set_title(f"PR Curve Max(1-y) (AP = {ap_max_reverse*100:.2f})")
         precision_recall_display = PrecisionRecallDisplay(
             precision=precision_recall_curve_mean_reverse[0],
             recall=precision_recall_curve_mean_reverse[1],
-            average_precision=ap_mean_reverse,
+            average_precision=ap_mean_reverse*100,
         )
-        precision_recall_display.plot(ax=plt.subplot(2, 4, 8))
-        plt.subplot(2, 4, 8).set_title(f"PR Curve 1-Mean (AP = {ap_mean_reverse:.4f})")
+        precision_recall_display.plot(ax=plt.subplot(2, 2, 4))
+        plt.subplot(2, 2, 4).set_title(f"PR Curve 1-Mean (AP = {ap_mean_reverse*100:.2f})")
         plt.tight_layout()
-        plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves.png"))
+        plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves_reverse.png"))
         plt.close()
 
         plt.figure(figsize=(16, 4))
@@ -168,7 +178,7 @@ def visualize_prediction_distribution(
         plt.hist(fake_mean_pred, bins=50, alpha=0.5, label="Fake Mean")
         plt.axvline(real_mean_pred.mean(), color='blue', linestyle='dashed', linewidth=1, label='Real Mean Mean')
         plt.axvline(fake_mean_pred.mean(), color='red', linestyle='dashed', linewidth=1, label='Fake Mean Mean')
-        plt.title("Prediction Distribution")
+        plt.title("Mean Prediction Distribution")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
         plt.legend()
@@ -177,31 +187,110 @@ def visualize_prediction_distribution(
         plt.hist(fake_max_pred, bins=50, alpha=0.5, label="Fake Max")
         plt.axvline(real_max_pred.mean(), color='blue', linestyle='dashed', linewidth=1, label='Real Max Mean')
         plt.axvline(fake_max_pred.mean(), color='red', linestyle='dashed', linewidth=1, label='Fake Max Mean')
-        plt.title("Prediction Distribution")
+        plt.title("Maximum Prediction Distribution")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
         plt.legend()
         plt.subplot(1, 4, 3)
-        plt.hist(real_pred_product, bins=50, alpha=0.5, label="Real Product")
-        plt.hist(fake_pred_product, bins=50, alpha=0.5, label="Fake Product")
-        plt.axvline(np.mean(real_pred_product), color='blue', linestyle='dashed', linewidth=1, label='Real Product Mean')
-        plt.axvline(np.mean(fake_pred_product), color='red', linestyle='dashed', linewidth=1, label='Fake Product Mean')
-        plt.title("Prediction Product Distribution")
+        plt.hist(real_pred_g_mean_3, bins=50, alpha=0.5, label="Real Generalized mean")
+        plt.hist(fake_pred_g_mean_3, bins=50, alpha=0.5, label="Fake Generalized mean")
+        plt.axvline(np.mean(real_pred_g_mean_3), color='blue', linestyle='dashed', linewidth=1, label='Real Product Mean')
+        plt.axvline(np.mean(fake_pred_g_mean_3), color='red', linestyle='dashed', linewidth=1, label='Fake Product Mean')
+        plt.title("Generalized mean distribution, p=3")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
         plt.legend()
         plt.subplot(1, 4, 4)
-        plt.hist(real_diffs, bins=50, alpha=0.5, label="Real Diff")
-        plt.hist(fake_diffs, bins=50, alpha=0.5, label="Fake Diff")
-        plt.axvline(real_diffs.mean(), color='blue', linestyle='dashed', linewidth=1, label='Real Mean Diff Mean')
-        plt.axvline(fake_diffs.mean(), color='red', linestyle='dashed', linewidth=1, label='Fake Mean Diff Mean')
-        plt.title("Prediction difference (Max - Min)")
+        plt.hist(real_pred_g_mean_15, bins=50, alpha=0.5, label="Real Generalized mean")
+        plt.hist(fake_pred_g_mean_15, bins=50, alpha=0.5, label="Fake Generalized mean")
+        plt.axvline(np.mean(real_pred_g_mean_15), color='blue', linestyle='dashed', linewidth=1, label='Real Mean Diff Mean')
+        plt.axvline(np.mean(fake_pred_g_mean_15), color='red', linestyle='dashed', linewidth=1, label='Fake Mean Diff Mean')
+        plt.title("Generalized mean distribution, p=15")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
         plt.legend()
         plt.tight_layout()
         plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"prediction_distribution.png"))
         plt.close()
+
+def make_contact_sheet(imagelist, ncolrow, textlist = None, textlist2 = None, labels = None, imsize = 100, mar = (5,5,5,5), padding = 5):
+    """\
+    Make a contact sheet from a list of filenames or images:
+
+    imagelist    A list of filenames or images
+    textlist     List of strings or numbers to be printing at the top part     
+    textlist2     List of strings or numbers to be printing at the bottom part     
+    labels       list of integers [0,16] defining the color of the border
+    ncolrow      Number of columns and rows in the contact sheet
+    imsize       Resize images to imsize x imsize
+    mar          The left, top, right, bottom margin in pixels
+    padding      The padding between images in pixels
+
+    returns a PIL image object.
+    """
+    (marl,mart,marr,marb) = mar
+    (ncols,nrows) = ncolrow
+
+    # Read in all images and resize appropriately
+    if isinstance(imagelist[0],str):
+        imgs = [Image.open(fn).resize((imsize,imsize)) for fn in imagelist]
+    else:
+        imgs = imagelist
+        
+    if textlist is not None:
+        fnt = ImageFont.truetype('/usr/share/fonts/truetype/freefont/FreeMonoBold.ttf', 20)
+        for i in range(len(imgs)):  
+            # pdb.set_trace()
+            # cur_im = imgs[i].convert('RGB')
+            # pdb.set_trace()
+            # d = ImageDraw.Draw(imgs[i].convert('RGB'))
+            d = ImageDraw.Draw(imgs[i])
+            try:
+                d.text((5,5), str("%.4f" % textlist[i]), font=fnt, fill=(25, 255, 10))
+            except:
+                d.text((5,5), str("%.4f" % textlist[i]), font=fnt, fill=(255))
+
+    if textlist2 is not None:
+        fnt = ImageFont.truetype('/usr/share/fonts/truetype/freefont/FreeMonoBold.ttf', 20)
+        for i in range(len(imgs)):    
+            d = ImageDraw.Draw(imgs[i])
+            d.text((5,imsize-25), str(textlist2[i]), font=fnt, fill=(25, 255, 10))
+
+    bordersize = 0
+    if labels is not None:
+        bordersize = 5
+        colors = ['red', 'green', 'blue', 'yellow', 'magenta', 'brown', 'cyan', 'orange', 'purple', 'brown', 'lime', 'teal', 'navy', 'wheat', 'silver', 'dimgray', 'black']
+        for i in range(len(imgs)):    
+            imgs[i] = ImageOps.expand(imgs[i], border = bordersize, fill = colors[labels[i]])
+
+    # Calculate the size of the output image, based on the
+    #  photo thumb sizes, margins, and padding
+    marw = marl+marr
+    marh = mart+ marb
+
+    padw = (ncols-1)*padding
+    padh = (nrows-1)*padding
+    imsize += 2*bordersize 
+    isize = (ncols*imsize+marw+padw,nrows*imsize+marh+padh)
+
+    # Create the new image. The background doesn't have to be white
+    white = (255,255,255)
+    inew = Image.new('RGB',isize,white)
+
+    # Insert each thumb:
+    for irow in range(nrows):
+        for icol in range(ncols):
+            left = marl + icol*(imsize+padding)
+            right = left + imsize
+            upper = mart + irow*(imsize+padding)
+            lower = upper + imsize
+            bbox = (left,upper,right,lower)
+            try:
+                img = imgs.pop(0)
+            except:
+                break
+            inew.paste(img,bbox)
+    return inew
 
 def visualize_patchify(
         image, 
@@ -275,6 +364,7 @@ def visualize_patch_impact(
         image: Image.Image,
         model,
         stride,
+        patch_size,
         gen_name,
         fake,
         num=None
@@ -284,7 +374,6 @@ def visualize_patch_impact(
     """
     model.eval()
     img = transforms.ToTensor()(image)
-    patch_size = 14
 
     if img.dim() == 3:
         img = img.unsqueeze(0).to("cuda:0")
@@ -318,7 +407,7 @@ def visualize_patch_impact(
     plt.tight_layout()
     plt.savefig(f"results/visualizations/patch_impact/pi_stride_{stride}_{gen_name}_{'fake' if fake else 'real'}_{num}.png")
 
-def save_worst_predictions(
+def save_worst_and_best_predictions(
         experiment,
         model,
         gen_name,
@@ -331,6 +420,8 @@ def save_worst_predictions(
     model.eval()
     false_positives = []
     false_negatives = []
+    true_positives = []
+    true_negatives = []
     for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
         images, labels, img_paths = data
         if isinstance(images, list):
@@ -345,6 +436,10 @@ def save_worst_predictions(
                 false_positives.append((img_paths[i], output[i]))
             elif labels[i] == 1 and output[i] < threshold:
                 false_negatives.append((img_paths[i], output[i]))
+            elif labels[i] == 0 and output[i] < threshold:
+                true_negatives.append((img_paths[i], output[i]))
+            elif labels[i] == 1 and output[i] > threshold:
+                true_positives.append((img_paths[i], output[i]))
     print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
 
     os.makedirs(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/", exist_ok=True)
@@ -357,32 +452,6 @@ def save_worst_predictions(
         for i in range(min(max_n, len(false_negatives))):
             img_path, score = false_negatives[i]
             f.write(f"{img_path} {score:2.1f}\n")
-    print(f"Saved worst predictions to results/train/{experiment['save_path']}/worst_predictions/{gen_name}/")
-
-def save_best_predictions(
-        experiment,
-        model,
-        gen_name,
-        dl,
-        threshold,
-        device,
-        max_n=10,
-        **kwargs
-    ):
-    model.eval()
-    true_positives = []
-    true_negatives = []
-    for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
-        images, labels, img_paths = data
-        images, labels = images.float().to(device), labels.to(device)
-        output = model.predict(images, **kwargs)
-        
-        for i in range(len(labels)):
-            if labels[i] == 0 and output[i] < threshold:
-                true_negatives.append((img_paths[i], output[i]))
-            elif labels[i] == 1 and output[i] > threshold:
-                true_positives.append((img_paths[i], output[i]))
-    print(f"True positives: {len(true_positives)}, True negatives: {len(true_negatives)}")
 
     os.makedirs(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/", exist_ok=True)
     with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_positives.txt", "w") as f:
@@ -394,8 +463,7 @@ def save_best_predictions(
         for i in range(min(max_n, len(true_negatives))):
             img_path, score = true_negatives[i]
             f.write(f"{img_path} {score:2.1f}\n")
-    print(f"Saved best predictions to results/train/{experiment['save_path']}/best_predictions/{gen_name}/")
-
+    print(f"Saved worst and best predictions to results/train/{experiment['save_path']}")
 
 if __name__ == "__main__":
     # Load a sample image
@@ -424,25 +492,61 @@ if __name__ == "__main__":
     model.load_state_dict(
         torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
     )
-    tr = transforms.Resize(512)
 
-    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt") as f:
-        lines = f.readlines()
+    # experiment = json.load(
+    #     open(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/experiment.json", "rb")
+    # )
+    # model = SigLIPIntermediate(
+    #     backbone=experiment["backbone"],
+    #     nproj=experiment["nproj"],
+    #     proj_dim=experiment["proj_dim"],
+    #     device=torch.device("cuda:0"),
+    # )
+    # model.load_state_dict(
+    #     torch.load(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
+    # )
+    # stride = 128
+    # patch_size = 16
+    # tr = transforms.Resize(256)
+    # tr = lambda x: x
 
-        for n, l in enumerate(lines):
-            img_path, _ = l.split(" ")
-            img = Image.open(img_path)
-            img = img.convert("RGB")
-            img = tr(img)
+    # with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt") as f:
+    #     lines = f.readlines()
 
-            visualize_patch_impact(
-                image=img,
-                model=model,
-                stride=112,
-                gen_name=gen_name.split("/")[-1],
-                fake=False,
-                num=n
-            )
+    #     for n, l in enumerate(lines):
+    #         img_path, _ = l.split(" ")
+    #         img = Image.open(img_path)
+    #         img = img.convert("RGB")
+    #         img = tr(img)
+
+    #         visualize_patch_impact(
+    #             image=img,
+    #             model=model,
+    #             stride=stride,
+    #             patch_size=patch_size,
+    #             gen_name=gen_name.split("/")[-1],
+    #             fake=False,
+    #             num=n
+    #         )
+    
+    # with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_positives.txt") as f:
+    #     lines = f.readlines()
+
+    #     for n, l in enumerate(lines):
+    #         img_path, _ = l.split(" ")
+    #         img = Image.open(img_path)
+    #         img = img.convert("RGB")
+    #         img = tr(img)
+
+    #         visualize_patch_impact(
+    #             image=img,
+    #             model=model,
+    #             stride=stride,
+    #             patch_size=patch_size,
+    #             gen_name=gen_name.split("/")[-1],
+    #             fake=True,
+    #             num=n
+    #         )
 
     # visualize_image_impact(
     #     img=tr(img).unsqueeze(0).to("cuda:0"),
@@ -460,22 +564,23 @@ if __name__ == "__main__":
     #     num_workers=2,
     # )
 
-    # test = get_loader(
-    #         experiment=experiment,
-    #         split="test",
-    #         transforms=tr,
-    #     )
-    # visualize_prediction_distribution(
-    #     data=test,
-    #     model=model,
-    #     device=torch.device("cuda:0"),
-    # )
+    tr = get_transform("val")
+    test = get_loader(
+            experiment=experiment,
+            split="test",
+            transforms=tr,
+        )
+    visualize_prediction_distribution(
+        data=test,
+        model=model,
+        device=torch.device("cuda:0"),
+    )
 
     # device = "cuda:0"
-    # transform = get_transform("val")
+    # transform = get_transform("val_siglip", crop=256)
 
     # loader = DataLoader(
-    #                     EvaluationDataset(g, transforms=transform, target="both"),
+    #                     EvaluationDataset(gen_name, transforms=transform, target="both"),
     #                     batch_size=8,
     #                     shuffle=False,
     #                     pin_memory=True,
@@ -483,22 +588,12 @@ if __name__ == "__main__":
     #                     # collate_fn=image_enlisting_collate_fn
     #                 )
 
-    # save_worst_predictions(
+    # save_worst_and_best_predictions(
     #     experiment=experiment,
     #     model=model,
-    #     gen_name=g,
+    #     gen_name=gen_name,
     #     dl=loader,
-    #     device=device,
-    #     threshold=0.5,
-    #     method="max",
-    # )
-
-    # save_best_predictions(
-    #     experiment=experiment,
-    #     model=model,
-    #     gen_name=g,
-    #     dl=loader,
-    #     device=device,
+    #     device="cuda:0",
     #     threshold=0.5,
     #     method="max",
     # )
