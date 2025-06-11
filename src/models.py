@@ -233,41 +233,36 @@ class IntermediatePatch(nn.Module):
             return preds
         
     def predict(
-            self, 
-            x: Union[torch.Tensor, list[torch.Tensor]],
-            **kwargs
+        self, 
+        x: Union[torch.Tensor, list[torch.Tensor]],
+        **kwargs
     ):
         with torch.no_grad():
+            p = kwargs.get("p", 1)
+            method = kwargs.get("method", "mean")
             if kwargs.get("window_slide", False):
                 stride = kwargs.get("stride", 112)
                 if isinstance(x, list):
                     o = []
                     for xi in x: 
                         o_i = self.forward_slide(xi, stride=stride)
-                        if kwargs["method"] == "mean":
-                            p = kwargs.get("p", 1)
+                        if method == "mean":
                             o.append(o_i.sigmoid().pow(p).mean(-1).pow(1/p).flatten().cpu().numpy())
-                        elif kwargs["method"] == "max":
+                        elif method == "max":
                             o.append(o_i.sigmoid().max(-1).values.flatten().cpu().numpy())
                     return np.array(o).squeeze()
                 else:
                     o = self.forward_slide(x, stride=stride)
-                    if kwargs["method"] == "mean":
-                        p = kwargs.get("p", 1)
+                    if method == "mean":
                         return o.sigmoid().pow(p).mean(-1).pow(1/p).flatten().cpu().numpy()
-                    elif kwargs["method"] == "max":
+                    elif method == "max":
                         return o.sigmoid().max(-1).values.flatten().cpu().numpy()
-                    else:
-                        raise ValueError("Method not supported")
             else:
                 o, _ = self.forward(x)
-                if kwargs["method"] == "mean":
-                    p = kwargs.get("p", 1)
+                if method == "mean":
                     return o.sigmoid().pow(p).mean(-1).pow(1/p).flatten().cpu().numpy()
-                elif kwargs["method"] == "max":
+                elif method == "max":
                     return o.sigmoid().max(-1).values.flatten().cpu().numpy()
-                else:
-                    raise ValueError("Method not supported")
 
 class SigLIPIntermediate(nn.Module):
     def __init__(

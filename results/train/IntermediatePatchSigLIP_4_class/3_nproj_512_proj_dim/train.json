@@ -1,0 +1,42 @@
+{
+  "epochs": 2,
+  "config": {
+    "backbone": [
+      "hf-hub:timm/ViT-L-16-SigLIP2-256",
+      1024
+    ],
+    "nproj": 3,
+    "proj_dim": 512,
+    "model": "siglip",
+    "crop": 256,
+    "imgsize": 256,
+    "training_set": "progan",
+    "contrastive": true,
+    "batch_size": 64,
+    "classes": [
+      "horse",
+      "chair",
+      "car",
+      "cat"
+    ],
+    "ds_frac": 0.2,
+    "lr": 0.0001,
+    "lr_step": 5,
+    "lr_gamma": 0.5,
+    "epochs": 2,
+    "factor": 0.2,
+    "save_path": "IntermediatePatchSigLIP_4_class/3_nproj_512_proj_dim"
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.9993273613805345,
+      0.9997847229709578
+    ],
+    "val_auc": [
+      0.9993421874999999,
+      0.999790625
+    ],
+    "test": {}
+  }
+}

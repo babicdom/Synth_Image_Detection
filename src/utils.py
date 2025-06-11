@@ -686,6 +686,18 @@ def find_best_acc_threshold(y_true, y_pred):
 
     return best_threshold
 
+def find_threshold_for_real_acc(y_true, y_pred, acc):
+    thresholds = np.linspace(0.05, 0.95, 100)
+    best_thresholds = []
+    y_pred_real = y_pred[y_true == 0]
+
+    for threshold in thresholds:
+        accuracy = accuracy_score(np.zeros_like(y_pred_real), y_pred_real > threshold)
+        if accuracy > acc:
+            best_thresholds.append(threshold)
+
+    return min(best_thresholds)
+
 def calculate_for_threshold(y_true, y_pred, threshold):
     r_acc = accuracy_score(y_true[y_true==0], y_pred[y_true==0] > threshold)
     f_acc = accuracy_score(y_true[y_true==1], y_pred[y_true==1] > threshold)

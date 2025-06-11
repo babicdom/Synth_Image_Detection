@@ -8,14 +8,98 @@ from src.data import EvaluationDataset
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import pickle
 from src.models import IntermediatePatch, SigLIPIntermediate
-from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, roc_auc_score, average_precision_score
+from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, roc_auc_score, average_precision_score, auc
 import tqdm
 import json
 from torch.utils.data import DataLoader
 from math import floor
 
-def plot_roc_pr(labels, output):
-    pass
+def plot_pr(labels, output, ax, name=""):
+    pr_curve = precision_recall_curve(labels, output)
+    ap = average_precision_score(labels, output)
+    
+    precision_recall_display = PrecisionRecallDisplay(
+        precision=pr_curve[0],
+        recall=pr_curve[1],
+        average_precision=ap*100,
+    )
+    precision_recall_display.plot(ax=ax)
+    ax.set_title(f"PR Curve {name} (AP = {ap*100:.2f})")
+
+def plot_auc_roc(labels, output, ax, name=""):
+    auc_roc_curve = roc_curve(labels, output)
+    auc_roc = roc_auc_score(labels, output)
+    
+    roc_curve_display = RocCurveDisplay(
+        fpr=auc_roc_curve[0],
+        tpr=auc_roc_curve[1],
+        roc_auc=auc_roc*100,
+        estimator_name=name,
+    )
+    roc_curve_display.plot(ax=ax)
+    ax.set_title(f"ROC Curve {name} (AUC = {auc_roc*100:.2f})")
+
+def visualize_detection_curves(model_names, base_path="results/curves"):
+    """Visualizes detection performance curves with proper sklearn-style formatting.
+    
+    Args:
+        model_names (list): List of model names to visualize
+        base_path (str): Path containing the curve JSON files
+    """
+    plt.style.use('seaborn-v0_8')
+    fig, axs = plt.subplots(3, 2, figsize=(10, 12))
+    suffixes = ['all', 'ldm', 'gan']
+
+    for row_idx, suffix in enumerate(suffixes):
+        # Initialize common variables for architecture type
+        arch_title = suffix.upper() + ' Models'
+        
+        for model in model_names:
+            file_path = os.path.join(base_path, f"{model}_{suffix}_curves.json")
+            if not os.path.exists(file_path):
+                continue
+
+            # Load curve data
+            with open(file_path, 'r') as f:
+                curve_data = json.load(f)[0]  # Access first (only) list element
+
+            # ROC Curve (Left Column)
+            roc = curve_data['roc_curve']
+            roc_auc = auc(roc[0], roc[1])
+            axs[row_idx, 0].plot(
+                roc[0], roc[1],
+                lw=2,
+                label=f"{model} (AUC = {roc_auc:.2f})"
+            )
+            
+            # Precision-Recall Curve (Right Column)
+            precision, recall, _ = curve_data['precision_recall_curve']
+            average_precision = auc(recall, precision)
+            axs[row_idx, 1].plot(
+                recall, precision,
+                lw=2,
+                label=f"{model} (AP = {average_precision:.2f})"
+            )
+
+        # Format ROC subplot
+        axs[row_idx, 0].set_title(f'ROC Curves - {arch_title}', fontsize=14)
+        axs[row_idx, 0].set_xlabel('False Positive Rate', fontsize=12)
+        axs[row_idx, 0].set_ylabel('True Positive Rate', fontsize=12)
+        axs[row_idx, 0].plot([0, 1], [0, 1], 'k--', lw=1)  # Diagonal line
+        axs[row_idx, 0].grid(True)
+        axs[row_idx, 0].legend(loc='lower right', fontsize=10)
+
+        # Format Precision-Recall subplot
+        axs[row_idx, 1].set_title(f'Precision-Recall Curves - {arch_title}', fontsize=14)
+        axs[row_idx, 1].set_xlabel('Recall', fontsize=12)
+        axs[row_idx, 1].set_ylabel('Precision', fontsize=12)
+        axs[row_idx, 1].set_ylim([0.0, 1.05])
+        axs[row_idx, 1].grid(True)
+        axs[row_idx, 1].legend(loc='lower left', fontsize=10)
+
+    plt.tight_layout(pad=3.0)
+    os.makedirs(f"results/visualizations/comparison", exist_ok=True)
+    plt.savefig(os.path.join("results", "visualizations", 'comparison', f"comparison.png"))
 
 def visualize_prediction_distribution(
         data,
@@ -39,11 +123,13 @@ def visualize_prediction_distribution(
         real_pred_g_mean_15 = []
         fake_pred_g_mean_15 = []
         max_pred_reverse = []
+        g_mean_pred_reverse = []
         reals = []
         fakes = []
         labels_ = []
         output_mean =[]
         output_max = []
+        output_g_mean_3 = []
 
         print(f'Fake: {len(dl.dataset.fake)}, Real: {len(dl.dataset.real)}, Total: {len(dl.dataset.images)}')
         with torch.no_grad():
@@ -55,6 +141,7 @@ def visualize_prediction_distribution(
 
                 output_mean.extend(output.mean(-1).flatten().cpu().numpy())
                 output_max.extend(output.max(-1).values.flatten().cpu().numpy())
+                output_g_mean_3.extend(output.pow(3).mean(-1).pow(1/3).flatten().cpu().numpy())
                 labels_.extend(labels.cpu().numpy())
 
                 output_fake = output[labels == 1]
@@ -69,31 +156,10 @@ def visualize_prediction_distribution(
                 fake_pred_g_mean_15.extend(output_fake.pow(15).mean(-1).pow(1/15).flatten().cpu().numpy())
 
                 max_pred_reverse.extend((1 - output).max(-1).values.flatten().cpu().numpy())
+                g_mean_pred_reverse.extend((1 - output).pow(3).mean(-1).pow(1/3).flatten().cpu().numpy())
 
                 reals.extend(output_real.flatten())
                 fakes.extend(output_fake.flatten())
-
-        roc_curve_max = roc_curve(labels_, output_max)
-        auc_max = roc_auc_score(labels_, output_max)
-
-        roc_curve_max_reverse = roc_curve(labels_, max_pred_reverse)
-        auc_max_reverse = roc_auc_score(labels_, max_pred_reverse)
-
-        roc_curve_mean = roc_curve(labels_, output_mean)
-        auc_mean = roc_auc_score(labels_, output_mean)
-
-        roc_curve_mean_reverse = roc_curve(labels_, 1 - torch.tensor(output_mean))
-        auc_mean_reverse = roc_auc_score(labels_, 1 - torch.tensor(output_mean))
-
-        precision_recall_curve_max = precision_recall_curve(labels_, output_max)
-        ap_max = average_precision_score(labels_, output_max)
-        precision_recall_curve_max_reverse = precision_recall_curve(labels_, max_pred_reverse)
-        ap_max_reverse = average_precision_score(labels_, max_pred_reverse)
-
-        precision_recall_curve_mean = precision_recall_curve(labels_, output_mean)
-        ap_mean = average_precision_score(labels_, output_mean)
-        precision_recall_curve_mean_reverse = precision_recall_curve(labels_, 1 - torch.tensor(output_mean))
-        ap_mean_reverse = average_precision_score(labels_, 1 - torch.tensor(output_mean))
 
         labels = torch.tensor(labels_)
         real_mean_pred = torch.tensor(real_mean_pred)
@@ -103,75 +169,33 @@ def visualize_prediction_distribution(
         reals = torch.tensor(reals)
         fakes = torch.tensor(fakes)
     
+        # Plot PR and AUC ROC
         os.makedirs(f"results/visualizations/{model_name}/{generator}", exist_ok=True)
-        plt.figure(figsize=(8, 8))
-        roc_curve_display = RocCurveDisplay(
-            fpr=roc_curve_max[0],
-            tpr=roc_curve_max[1],
-            roc_auc=auc_max*100,
-            estimator_name="Max",
-        )
-        roc_curve_display.plot(ax=plt.subplot(2, 2, 1))
-        plt.subplot(2, 2, 1).set_title(f"ROC Curve Max (AUC = {auc_max*100:.2f})")
-        roc_curve_display = RocCurveDisplay(
-            fpr=roc_curve_mean[0],
-            tpr=roc_curve_mean[1],
-            roc_auc=auc_mean*100,
-        )
-        roc_curve_display.plot(ax=plt.subplot(2, 2, 2))
-        plt.subplot(2, 2, 2).set_title(f"ROC Curve Mean (AUC = {auc_mean*100:.2f})")
-        precision_recall_display = PrecisionRecallDisplay(
-            precision=precision_recall_curve_max[0],
-            recall=precision_recall_curve_max[1],
-            average_precision=ap_max*100,
-        )
-        precision_recall_display.plot(ax=plt.subplot(2, 2, 3))
-        plt.subplot(2, 2, 3).set_title(f"PR Curve Max (AP = {ap_max*100:.2f})")
-        precision_recall_display = PrecisionRecallDisplay(
-            precision=precision_recall_curve_mean[0],
-            recall=precision_recall_curve_mean[1],
-            average_precision=ap_mean*100,
-        )
-        precision_recall_display.plot(ax=plt.subplot(2, 2, 4))
-        plt.subplot(2, 2, 4).set_title(f"PR Curve Mean (AP = {ap_mean*100:.2f})")
-
-        roc_curve_display = RocCurveDisplay(
-            fpr=roc_curve_max_reverse[0],
-            tpr=roc_curve_max_reverse[1],
-            roc_auc=auc_max_reverse*100,
-        )
+        plot_auc_roc(labels_, output_max, plt.subplot(2, 3, 1), "Max")
+        plot_auc_roc(labels_, output_mean, plt.subplot(2, 3, 2), "Mean")
+        plot_auc_roc(labels_, output_g_mean_3, plt.subplot(2, 3, 3), "GeM, p=3")
+        
+        plot_pr(labels_, output_max, plt.subplot(2, 3, 4), "Max")
+        plot_pr(labels_, output_mean, plt.subplot(2, 3, 5), "Mean")
+        plot_pr(labels_, output_g_mean_3, plt.subplot(2, 3, 6), "GeM, p=3")
         plt.tight_layout()
         plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves.png"))
         plt.close()
 
+        # Plot PR and AUC ROC reverse
         plt.figure(figsize=(8, 8))
-        roc_curve_display.plot(ax=plt.subplot(2, 2, 1))
-        plt.subplot(2, 2, 1).set_title(f"ROC Curve Max(1-y) (AUC = {auc_max_reverse*100:.2f})")
-        roc_curve_display = RocCurveDisplay(
-            fpr=roc_curve_mean_reverse[0],
-            tpr=roc_curve_mean_reverse[1],
-            roc_auc=auc_mean_reverse*100,
-        )
-        roc_curve_display.plot(ax=plt.subplot(2, 2, 2))
-        plt.subplot(2, 2, 2).set_title(f"ROC Curve 1-Mean (AUC = {auc_mean_reverse*100:.2f})")
-        precision_recall_display = PrecisionRecallDisplay(
-            precision=precision_recall_curve_max_reverse[0],
-            recall=precision_recall_curve_max_reverse[1],
-            average_precision=ap_max_reverse*100,
-        )
-        precision_recall_display.plot(ax=plt.subplot(2, 2, 3))
-        plt.subplot(2, 2, 3).set_title(f"PR Curve Max(1-y) (AP = {ap_max_reverse*100:.2f})")
-        precision_recall_display = PrecisionRecallDisplay(
-            precision=precision_recall_curve_mean_reverse[0],
-            recall=precision_recall_curve_mean_reverse[1],
-            average_precision=ap_mean_reverse*100,
-        )
-        precision_recall_display.plot(ax=plt.subplot(2, 2, 4))
-        plt.subplot(2, 2, 4).set_title(f"PR Curve 1-Mean (AP = {ap_mean_reverse*100:.2f})")
+        plot_auc_roc(labels_, max_pred_reverse, plt.subplot(2, 3, 1), "Max(1-y)")
+        plot_auc_roc(labels_, 1 - torch.tensor(output_mean), plt.subplot(2, 3, 2), "1-Mean")
+        plot_auc_roc(labels_, g_mean_pred_reverse, plt.subplot(2, 3, 3), "GeM(1-y), p=3")
+        
+        plot_pr(labels_, max_pred_reverse, plt.subplot(2, 3, 4), "Max(1-y)")
+        plot_pr(labels_, 1 - torch.tensor(output_mean), plt.subplot(2, 3, 5), "1-Mean")
+        plot_pr(labels_, g_mean_pred_reverse, plt.subplot(2, 3, 6), "GeM(1-y), p=3")
         plt.tight_layout()
         plt.savefig(os.path.join("results", "visualizations", model_name, generator, f"roc_pr_curves_reverse.png"))
         plt.close()
 
+        # Plot Prediction distribution
         plt.figure(figsize=(16, 4))
         plt.subplot(1, 4, 1)
         plt.hist(real_mean_pred, bins=50, alpha=0.5, label="Real Mean")
@@ -194,8 +218,8 @@ def visualize_prediction_distribution(
         plt.subplot(1, 4, 3)
         plt.hist(real_pred_g_mean_3, bins=50, alpha=0.5, label="Real Generalized mean")
         plt.hist(fake_pred_g_mean_3, bins=50, alpha=0.5, label="Fake Generalized mean")
-        plt.axvline(np.mean(real_pred_g_mean_3), color='blue', linestyle='dashed', linewidth=1, label='Real Product Mean')
-        plt.axvline(np.mean(fake_pred_g_mean_3), color='red', linestyle='dashed', linewidth=1, label='Fake Product Mean')
+        plt.axvline(np.mean(real_pred_g_mean_3), color='blue', linestyle='dashed', linewidth=1, label='Real Generalized Mean (p=3) average')
+        plt.axvline(np.mean(fake_pred_g_mean_3), color='red', linestyle='dashed', linewidth=1, label='Fake Generalized Mean (p=3) average')
         plt.title("Generalized mean distribution, p=3")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
@@ -203,8 +227,8 @@ def visualize_prediction_distribution(
         plt.subplot(1, 4, 4)
         plt.hist(real_pred_g_mean_15, bins=50, alpha=0.5, label="Real Generalized mean")
         plt.hist(fake_pred_g_mean_15, bins=50, alpha=0.5, label="Fake Generalized mean")
-        plt.axvline(np.mean(real_pred_g_mean_15), color='blue', linestyle='dashed', linewidth=1, label='Real Mean Diff Mean')
-        plt.axvline(np.mean(fake_pred_g_mean_15), color='red', linestyle='dashed', linewidth=1, label='Fake Mean Diff Mean')
+        plt.axvline(np.mean(real_pred_g_mean_15), color='blue', linestyle='dashed', linewidth=1, label='Real Generalized Mean (p=15) average')
+        plt.axvline(np.mean(fake_pred_g_mean_15), color='red', linestyle='dashed', linewidth=1, label='Fake Generalized Mean (p=15) average')
         plt.title("Generalized mean distribution, p=15")
         plt.xlabel("Prediction Value")
         plt.ylabel("Frequency")
@@ -466,32 +490,22 @@ def save_worst_and_best_predictions(
     print(f"Saved worst and best predictions to results/train/{experiment['save_path']}")
 
 if __name__ == "__main__":
-    # Load a sample image
-    # image_path = os.path.join("data", "test", "progan", "airplane", "1_fake", "00069.png")
-    # image = Image.open(image_path).convert("RGB")
-
-    # image = transforms.ToTensor()(image)  # Convert to tensor
-    # image = image.unsqueeze(0)  # Add batch dimension
-    # visualize_patchify(image, patch_size=(224, 224), stride=(112, 112))
-    # print("Patchified image saved to results/visualizations/patchified_image.png")
-
-    # img = Image.open("data/test/diffusion_datasets/dalle/1_fake/efgchmasis.png")
-    # img = Image.open("data/test/spai/stable-diffusion-3/1_fake/000000014_1.webp")
+    visualize_detection_curves(['IntermediatePatch', 'Rine_1_class', 'Rine_latent_diffusion'])
     
-    gen_name = "synthbuster/midjourney-v5"
+    # # gen_name = "synthbuster/midjourney-v5"
 
-    experiment = pickle.load(
-        open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
-    )
-    model = IntermediatePatch(
-        backbone=experiment["backbone"],
-        nproj=experiment["nproj"],
-        proj_dim=experiment["proj_dim"],
-        device=torch.device("cuda:0"),
-    )
-    model.load_state_dict(
-        torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
-    )
+    # # experiment = pickle.load(
+    # #     open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
+    # # )
+    # # model = IntermediatePatch(
+    # #     backbone=experiment["backbone"],
+    # #     nproj=experiment["nproj"],
+    # #     proj_dim=experiment["proj_dim"],
+    # #     device=torch.device("cuda:0"),
+    # # )
+    # # model.load_state_dict(
+    # #     torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
+    # # )
 
     # experiment = json.load(
     #     open(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/experiment.json", "rb")
@@ -564,17 +578,17 @@ if __name__ == "__main__":
     #     num_workers=2,
     # )
 
-    tr = get_transform("val")
-    test = get_loader(
-            experiment=experiment,
-            split="test",
-            transforms=tr,
-        )
-    visualize_prediction_distribution(
-        data=test,
-        model=model,
-        device=torch.device("cuda:0"),
-    )
+    # # tr = get_transform("val")
+    # # test = get_loader(
+    # #         experiment=experiment,
+    # #         split="test",
+    # #         transforms=tr,
+    # #     )
+    # # visualize_prediction_distribution(
+    # #     data=test,
+    # #     model=model,
+    # #     device=torch.device("cuda:0"),
+    # # )
 
     # device = "cuda:0"
     # transform = get_transform("val_siglip", crop=256)
