@@ -1,0 +1,92 @@
+{
+  "epochs": 8,
+  "config": {
+    "crop": 224,
+    "imgsize": 256,
+    "training_set": "progan",
+    "contrastive": true,
+    "batch_size": 64,
+    "classes": [
+      "sofa",
+      "chair",
+      "cat",
+      "tvmonitor",
+      "train",
+      "person",
+      "pottedplant",
+      "airplane",
+      "dog",
+      "bird",
+      "bus",
+      "diningtable",
+      "bottle",
+      "cow",
+      "horse",
+      "sheep",
+      "motorbike",
+      "car",
+      "bicycle",
+      "boat"
+    ],
+    "save_path": "SPAI",
+    "window_slide": true,
+    "train": {
+      "START_EPOCH": 0,
+      "EPOCHS": 35,
+      "WARMUP_EPOCHS": 5,
+      "WEIGHT_DECAY": 0.05,
+      "BASE_LR": 0.0005,
+      "WARMUP_LR": 2.5e-07,
+      "MIN_LR": 2.5e-07,
+      "CLIP_GRAD": null,
+      "AUTO_RESUME": true,
+      "ACCUMULATION_STEPS": 1,
+      "USE_CHECKPOINT": false,
+      "MODE": "supervised",
+      "LR_SCHEDULER": {
+        "NAME": "cosine",
+        "DECAY_EPOCHS": 30,
+        "DECAY_RATE": 0.1,
+        "GAMMA": 0.1,
+        "MULTISTEPS": []
+      },
+      "SCALE_LR": false,
+      "OPTIMIZER": {
+        "NAME": "adamw",
+        "EPS": 1e-08,
+        "BETAS": [
+          0.9,
+          0.999
+        ],
+        "MOMENTUM": 0.9
+      },
+      "LOSS": "bce",
+      "TRIPLET_LOSS_MARGIN": 0.5,
+      "LAYER_DECAY": 0.8
+    }
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.5086939073141177,
+      0.5287926076340872,
+      0.5184727645904113,
+      0.5100826126573239,
+      0.5073068674917692,
+      0.5050626364626942,
+      0.4992053037776027,
+      0.5050054412869094
+    ],
+    "val_auc": [
+      0.5102609375,
+      0.53480459375,
+      0.52139653125,
+      0.51002409375,
+      0.5077365625,
+      0.5083805312499999,
+      0.5004010937500001,
+      0.50651328125
+    ],
+    "test": {}
+  }
+}

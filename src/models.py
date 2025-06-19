@@ -841,7 +841,166 @@ class FlowModel(nn.Module):
     ):
         with torch.no_grad():
             return 1 - torch.exp(self.forward(x))
+
+class RINE(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        nproj,
+        proj_dim,
+        device,
+    ):
+        super().__init__()
+
+        self.device = device
+
+        # Load and freeze CLIP
+        self.clip, self.preprocess = clip.load(backbone[0], device=device)
+        for name, param in self.clip.named_parameters():
+            param.requires_grad = False
+
+        # Register hooks to get intermediate layer outputs
+        self.hooks = [
+            Hook(name, module)
+            for name, module in self.clip.visual.named_modules()
+            if "ln_2" in name
+        ]
+
+        # Initialize the trainable part of the model
+        self.alpha = nn.Parameter(torch.randn([1, len(self.hooks), proj_dim]))
+        proj1_layers = [nn.Dropout()]
+        for i in range(nproj):
+            proj1_layers.extend(
+                [
+                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj1 = nn.Sequential(*proj1_layers)
+        proj2_layers = [nn.Dropout()]
+        for _ in range(nproj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        self.head = nn.Sequential(
+            *[
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, 1),
+            ]
+        )
+
+    def forward(self, x):
+        with torch.no_grad():
+            self.clip.encode_image(x)
+            g = torch.stack([h.output for h in self.hooks], dim=2)[0, :, :, :]
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=1) * g
+        z = torch.sum(z, dim=1)
+        z = self.proj2(z)
+
+        p = self.head(z).squeeze()
+
+        return p, z
     
+    def predict(
+            self, 
+            x: torch.Tensor,
+            **kwargs
+    ):
+        with torch.no_grad():
+            o, _ = self.forward(x)
+            return o.sigmoid().flatten().cpu().numpy()
+
+class RINE_SigLIP(nn.Module):
+    def __init__(
+        self,
+        backbone,
+        nproj,
+        proj_dim,
+        device,
+    ):
+        super().__init__()
+
+        self.device = device
+
+        # Load and freeze SigLIP
+        self.siglip, self.preprocess = create_model_from_pretrained(backbone[0], device=device)
+        for name, param in self.siglip.named_parameters():
+            param.requires_grad = False
+
+        # Register hooks to get intermediate layer outputs
+        self.hooks = [
+            Hook(name, module)
+            for name, module in self.siglip.visual.named_modules()
+            if "ls2" in name
+        ]
+
+        self.attention_pool = self.siglip.visual.attn_pool
+        self.attention_pool.to(device)
+
+        # Initialize the trainable part of the model
+        self.alpha = nn.Parameter(torch.randn([1, len(self.hooks), proj_dim]))
+        proj1_layers = [nn.Dropout()]
+        for i in range(nproj):
+            proj1_layers.extend(
+                [
+                    nn.Linear(backbone[1] if i == 0 else proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj1 = nn.Sequential(*proj1_layers)
+        proj2_layers = [nn.Dropout()]
+        for _ in range(nproj):
+            proj2_layers.extend(
+                [
+                    nn.Linear(proj_dim, proj_dim),
+                    nn.ReLU(),
+                    nn.Dropout(),
+                ]
+            )
+        self.proj2 = nn.Sequential(*proj2_layers)
+        self.head = nn.Sequential(
+            *[
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, proj_dim),
+                nn.ReLU(),
+                nn.Dropout(),
+                nn.Linear(proj_dim, 1),
+            ]
+        )
+
+    def forward(self, x):
+        with torch.no_grad():
+            self.siglip.encode_image(x)
+            g = torch.stack([h.output for h in self.hooks], dim=2)
+            g = self.attention_pool(g)
+            print(g.shape)
+        g = g.permute(1, 0, 2)
+        g = self.proj1(g.float())
+
+        z = torch.softmax(self.alpha, dim=1) * g
+        z = torch.sum(z, dim=1)
+        z = self.proj2(z)
+
+        p = self.head(z).squeeze()
+
+        return p, z
+
 if __name__ == "__main__":
     # Example usage
     backbone = ("ViT-L/14", 1024)

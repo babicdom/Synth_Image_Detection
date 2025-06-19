@@ -176,6 +176,31 @@ def get_transform(split="train", crop=224, imgsize=256):
                 transforms.ToTensor(),
             ]
         )
+    elif split == "train_spai":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.Lambda(lambda img: data_augment(img)),
+                transforms.RandomCrop(crop),
+                transforms.RandomHorizontalFlip(p=0.5),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=0.,
+                    std=1.,
+                ),
+            ]
+        )
+    elif split == "no_crop_spai":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.ToTensor(),
+                transforms.Normalize(
+                    mean=0.,
+                    std=1.,
+                ),
+            ]
+        )
     elif split == "random_crop":
         return transforms.Compose(
             [
@@ -188,8 +213,6 @@ def get_transform(split="train", crop=224, imgsize=256):
                 ),
             ]
         )
-    else:
-        raise ValueError("split must be one of train, val, test or other")
     
 def get_transforms(experiment):
     crop = experiment.get("crop", 224)
@@ -274,6 +297,7 @@ def get_loader(
                     num_workers=workers,
                 )
     if split == "test":
+        col = collate_fn if experiment["window_slide"] else None
         return [
             (
                 g,
@@ -284,7 +308,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
-                    collate_fn=None # collate_fn if any([x in g for x in ["stylegan", "deepfake", "crn", "imle", "san", "seeingdark", "whichfaceisreal", "diffusion_datasets/guided", "synthbuster/glide", "synthbuster/dalle2", "synthbuster/stable-diffusion-1-3", "synthbuster/stable-diffusion-1-4", "synthbuster/midjourney-v5", "synthbuster/dalle3", "synthbuster/stable-diffusion-2", "synthbuster/stable-diffusion-xl", "synthbuster/firefly", "flux", "gigagan", "midjourney-v6.1", "stable-diffusion-3",]]) else None
+                    collate_fn=col if any([x in g for x in ["stylegan", "deepfake", "crn", "imle", "san", "seeingdark", "whichfaceisreal", "diffusion_datasets/guided", "synthbuster/glide", "synthbuster/dalle2", "synthbuster/stable-diffusion-1-3", "synthbuster/stable-diffusion-1-4", "synthbuster/midjourney-v5", "synthbuster/dalle3", "synthbuster/stable-diffusion-2", "synthbuster/stable-diffusion-xl", "synthbuster/firefly", "flux", "gigagan", "midjourney-v6.1", "stable-diffusion-3",]]) else None
                 ),
             )
             for g in get_generators()
@@ -777,6 +801,7 @@ def train(
     
     print(json.dumps(experiment, indent=2))
     print(kwargs)
+    print(f"Training on {train_.dataset.len_real()} real and {train_.dataset.len_fake()} fake images.")
     results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
 
     train_loss = []
@@ -793,14 +818,9 @@ def train(
                 "loss": torch.inf
             })
             for data in train_:
-                # prev_model = model.copy()
                 images, labels = data
                 images, labels = images.float().to(device), labels.float().to(device)
-                # try:
                 loss = loss_fn(model(images), labels)
-                #except Exception as e:
-                    # for layer in prev_model.flow.named_parameters():
-                    #     print(layer)
                 train_loss.append(loss.item())
                 optimizer.zero_grad()
                 loss.backward()
@@ -966,3 +986,127 @@ def patchify_image(
     img = img.contiguous()
     img = img.view(img.size(0), -1, img.size(3), kh, kw)
     return img
+
+def train_spai(
+    experiment,
+    model,
+    data=None,
+    loss_fn=bce_sum,
+    optimizer=None,
+    scheduler=None,
+    epochs=10,
+    workers=2,
+    device="cpu",
+    store=False,
+    **kwargs
+):
+    seed_everything(0)
+
+    if data is None:
+        transforms_train, transforms_val, transforms_test = get_transforms(experiment)
+        train_, val, test = get_loaders(
+            experiment=experiment,
+            transforms_train=transforms_train,
+            transforms_val=transforms_val,
+            transforms_test=transforms_val, # transforms_test,
+            workers=workers,
+        )
+    else:
+        train_, val, test = data
+    model.to(device)
+
+    if optimizer is None:
+        optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
+    if scheduler is None:
+        scheduler = torch.optim.lr_scheduler.StepLR(
+            optimizer,
+            step_size=experiment["lr_step"],
+            gamma=experiment["lr_gamma"],
+        )
+    
+    print(json.dumps(experiment, indent=2))
+    print(kwargs)
+    results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
+
+    train_loss = []
+    for epoch in range(epochs):
+        model.train()
+
+        with tqdm.tqdm(
+                total=len(train_),
+                desc=f"Epoch {epoch + 1}/{epochs}",
+                unit="batch",
+                ncols=100,
+            ) as pbar:
+            pbar.set_postfix({
+                "loss": torch.inf
+            })
+            for data in train_:
+                images, labels = data
+                images, labels = images.float().to(device), labels.float().to(device)
+                loss = loss_fn(model(images), labels)
+                train_loss.append(loss.item())
+                optimizer.zero_grad()
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                optimizer.step()
+                pbar.set_postfix({
+                    "loss": loss.item()
+                })
+                pbar.update(1)
+            pbar.close()
+        
+        # Validation
+        model.eval()
+        y_true = []
+        y_score = []
+        
+        with torch.no_grad():
+            with tqdm.tqdm(
+                total=len(val),
+                desc="Validation",
+                unit="batch",
+                ncols=100
+            ) as pbar:
+                for data in val:
+                    images, labels = data
+                    images, labels = images.float().to(device), labels.float().to(device)
+                    scores = model.predict(images, **kwargs)
+                    y_true.extend(labels.cpu().numpy().tolist())
+                    y_score.extend(scores.tolist())
+                    pbar.update(1)  
+                pbar.close()
+    
+        val_ap = average_precision_score(y_true, y_score)
+        val_auc = roc_auc_score(y_true, y_score)
+        results["val_ap"].append(val_ap)
+        results["val_auc"].append(val_auc)
+        print(f"val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
+        scheduler.step()
+
+    if store:
+        os.makedirs(f"ckpt/{experiment['save_path']}/", exist_ok=True)
+        ckpt_name = f"ckpt/{experiment['save_path']}/train.pth"
+        print(f"Saving {ckpt_name} ...")
+        torch.save(model.state_dict(), ckpt_name)
+        with open(f"ckpt/{experiment['save_path']}/experiment.json", "w") as f:
+            json.dump(experiment, f, indent=2)
+
+    log = {
+        "epochs": epoch + 1,
+        "config": experiment,
+        "results": copy.deepcopy(results),
+    }
+    os.makedirs(f"results/train/{experiment['save_path']}/", exist_ok=True)
+    filename = f"results/train/{experiment['save_path']}/train.json"
+    with open(filename, "w") as h:
+        json.dump(log, h, indent=2)
+
+    # Testing
+    eval_model(
+        experiment=experiment,
+        model=model,
+        test=test,
+        device=device,
+        **kwargs
+        )

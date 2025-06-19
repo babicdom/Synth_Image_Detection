@@ -47,37 +47,40 @@ def visualize_detection_curves(model_names, base_path="results/curves"):
         base_path (str): Path containing the curve JSON files
     """
     plt.style.use('seaborn-v0_8')
-    fig, axs = plt.subplots(3, 2, figsize=(10, 12))
+    fig, axs = plt.subplots(3, 2, figsize=(15, 20))
     suffixes = ['all', 'ldm', 'gan']
 
     for row_idx, suffix in enumerate(suffixes):
-        # Initialize common variables for architecture type
         arch_title = suffix.upper() + ' Models'
-        
-        for model in model_names:
+        for idx, model in enumerate(model_names):
             file_path = os.path.join(base_path, f"{model}_{suffix}_curves.json")
             if not os.path.exists(file_path):
                 continue
 
-            # Load curve data
             with open(file_path, 'r') as f:
-                curve_data = json.load(f)[0]  # Access first (only) list element
+                curve_data = json.load(f)[0]
 
-            # ROC Curve (Left Column)
+            # Highlight first model, dim others
+            if idx == 0:
+                lw, alpha, zorder = 3, 1.0, 3
+            else:
+                lw, alpha, zorder = 1.5, 0.3, 1
+
+            # ROC Curve
             roc = curve_data['roc_curve']
             roc_auc = auc(roc[0], roc[1])
             axs[row_idx, 0].plot(
                 roc[0], roc[1],
-                lw=2,
+                lw=lw, alpha=alpha, zorder=zorder,
                 label=f"{model} (AUC = {roc_auc:.2f})"
             )
-            
-            # Precision-Recall Curve (Right Column)
+
+            # Precision-Recall Curve
             precision, recall, _ = curve_data['precision_recall_curve']
             average_precision = auc(recall, precision)
             axs[row_idx, 1].plot(
                 recall, precision,
-                lw=2,
+                lw=lw, alpha=alpha, zorder=zorder,
                 label=f"{model} (AP = {average_precision:.2f})"
             )
 
@@ -85,7 +88,7 @@ def visualize_detection_curves(model_names, base_path="results/curves"):
         axs[row_idx, 0].set_title(f'ROC Curves - {arch_title}', fontsize=14)
         axs[row_idx, 0].set_xlabel('False Positive Rate', fontsize=12)
         axs[row_idx, 0].set_ylabel('True Positive Rate', fontsize=12)
-        axs[row_idx, 0].plot([0, 1], [0, 1], 'k--', lw=1)  # Diagonal line
+        axs[row_idx, 0].plot([0, 1], [0, 1], 'k--', lw=1)
         axs[row_idx, 0].grid(True)
         axs[row_idx, 0].legend(loc='lower right', fontsize=10)
 
@@ -385,19 +388,16 @@ def visualize_patchify(
     plt.close()
 
 def visualize_patch_impact(
-        image: Image.Image,
+        img,
         model,
         stride,
         patch_size,
-        gen_name,
-        fake,
-        num=None
+        ax,
     ):
     """
     Visualizes the impact of each patch on the model's output.
     """
     model.eval()
-    img = transforms.ToTensor()(image)
 
     if img.dim() == 3:
         img = img.unsqueeze(0).to("cuda:0")
@@ -407,45 +407,127 @@ def visualize_patch_impact(
     h_img, w_img = n_h * patch_size, n_w * patch_size
     img = img[:, :, :h_img, :w_img]
     with torch.no_grad():   
-        output = model.forward_slide(img, reshape=False, stride=stride)
-        predict_mean, predict_max = model.predict(img, method="both")
-
-    plt.figure(figsize=(12, 7))
-    plt.subplot(1, 2, 1)
-    plt.imshow(image)
-    plt.axis("off")
-    plt.title(f"Input {'Fake' if fake else 'Real'} Image")
-    plt.subplot(1, 2, 2)
-    plt.imshow(img.squeeze(0).permute(1, 2, 0).cpu().numpy())
-    plt.axis("off")
-    output = output.sigmoid().squeeze(0)
+        output = model.forward_slide(img, reshape=False, stride=stride).sigmoid().squeeze(0)
+        
     hotspot_image = np.zeros((h_img, w_img), dtype=np.float32)
     for i in range(output.shape[0]):
         for j in range(output.shape[1]):
             patch = output[i, j].expand(patch_size, patch_size)
             hotspot_image[i * patch_size:(i + 1) * patch_size, j * patch_size:(j + 1) * patch_size] = patch.cpu().numpy()
-    plt.imshow(hotspot_image, cmap="plasma", alpha=0.5)
-    plt.colorbar(label="Patch Impact")
-    plt.axis("off")
-    plt.title(f"Model Output, Max={predict_max[0]:1.2f}, Mean={predict_mean[0]:1.2f}")
-    plt.tight_layout()
-    plt.savefig(f"results/visualizations/patch_impact/pi_stride_{stride}_{gen_name}_{'fake' if fake else 'real'}_{num}.png")
+    ax.imshow(hotspot_image, cmap="plasma", alpha=0.5)
+    ax.axis("off")
 
-def save_worst_and_best_predictions(
+def plot_image_prediction(
+        json_path,
+        model,
+        transform,
+        device: torch.device,
+        gen_name="default",
+        patch_size=14,
+        stride=112,
+        ncols=6,
+        nrows=4,
+    ):
+    plt.style.use('seaborn-v0_8')
+    with open(json_path, "rb") as f:
+        data = json.load(f)
+    images = data["images"]
+
+    checks = [False] * 6
+    # Increased figure size and reduced spacing
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols * 4, nrows * 3.5))
+    
+    # Reduce spacing between subplots
+    plt.subplots_adjust(left=0.05, bottom=0.05, right=0.95, top=0.92, wspace=0.15, hspace=0.25)    
+    
+    # Store selected images for each confidence level
+    selected_images = [None] * 6
+    
+    # Find one image for each confidence level
+    for im in images:
+        img_path = im["path"]
+        label = im["label"]
+        output = im["output"]
+        
+        if all(checks):
+            break
+
+        if output < 0.1 and not checks[0]:
+            checks[0] = True
+            selected_images[0] = (img_path, label, output, "Very Low Confidence Prediction")
+        elif output < 0.25 and output > 0.1 and not checks[1]:
+            checks[1] = True
+            selected_images[1] = (img_path, label, output, "Low Confidence Prediction")
+        elif 0.25 <= output < 0.5 and not checks[2]:
+            checks[2] = True
+            selected_images[2] = (img_path, label, output, "Medium Confidence Prediction")
+        elif 0.5 <= output < 0.75 and not checks[3]:
+            checks[3] = True
+            selected_images[3] = (img_path, label, output, "High Confidence Prediction")
+        elif 0.75 <= output < 0.9 and not checks[4]:
+            checks[4] = True
+            selected_images[4] = (img_path, label, output, "Very High Confidence Prediction")
+        elif output >= 0.9 and not checks[5]:
+            checks[5] = True
+            selected_images[5] = (img_path, label, output, "Extreme Confidence Prediction")
+
+    # Plot for each selected image
+    for col, image_data in enumerate(selected_images):
+        print(f"Processing image {col + 1}/{ncols} for generator {gen_name}...")
+        if image_data is None:
+            continue
+            
+        img_path, label, output, title = image_data
+        img = Image.open(img_path).convert("RGB")
+        img_256 = transforms.Resize(256)(img)
+        img_512 = transforms.Resize(512)(img)
+        
+        axes[0, col].imshow(img)
+        axes[0, col].set_title(title, fontsize=11, pad=5)
+        axes[0, col].axis('off')
+        axes[0, col].text(0.5, -0.1, f"Label: {label}, Output: {output:.4f}",
+                          ha='center', va='top', transform=axes[0, col].transAxes,
+                          fontsize=9, bbox=dict(facecolor='white', alpha=0.5, edgecolor='none'))
+        
+        for i, (im, name) in enumerate(zip([img, img_512, img_256], ["Original", "512x512", "256x256"])):
+            axes[i + 1, col].imshow(im)
+            axes[i + 1, col].set_title(f"{name}", fontsize=9, pad=3)
+            im = transform(im)
+
+            visualize_patch_impact(
+                img=im,
+                model=model,
+                stride=stride,
+                patch_size=patch_size,
+                ax=axes[i + 1, col],
+            )
+
+    # Hide unused subplots
+    for col in range(ncols):
+        if selected_images[col] is None:
+            for row in range(nrows):
+                axes[row, col].axis('off')
+
+    os.makedirs("results/visualizations/patch_impact", exist_ok=True)
+    plt.tight_layout(pad=1.0)
+    plt.savefig(os.path.join("results", "visualizations", "patch_impact", f"image_prediction_{gen_name}.png"))
+    print(f"Saved patch impact visualization to results/visualizations/patch_impact/image_prediction_{gen_name}.png")
+
+def save_predictions(
         experiment,
         model,
         gen_name,
         dl,
-        threshold,
         device,
-        max_n=10,
         **kwargs
     ):
     model.eval()
-    false_positives = []
-    false_negatives = []
-    true_positives = []
-    true_negatives = []
+    gen_name = gen_name.split("/")[-1]
+    print(f"Saving worst and best predictions for {gen_name}...")
+    examples = {
+        "images": [],
+    }
+
     for data in tqdm.tqdm(dl, desc=f"Testing on generator {gen_name}", unit="batch"):
         images, labels, img_paths = data
         if isinstance(images, list):
@@ -453,59 +535,38 @@ def save_worst_and_best_predictions(
         else:
             images = images.float().to(device)
             labels = labels.numpy().tolist()
-        output = model.predict_no_window(images, **kwargs)
+        output = model.predict(images, **kwargs)
         
         for i in range(len(labels)):
-            if labels[i] == 0 and output[i] > threshold:
-                false_positives.append((img_paths[i], output[i]))
-            elif labels[i] == 1 and output[i] < threshold:
-                false_negatives.append((img_paths[i], output[i]))
-            elif labels[i] == 0 and output[i] < threshold:
-                true_negatives.append((img_paths[i], output[i]))
-            elif labels[i] == 1 and output[i] > threshold:
-                true_positives.append((img_paths[i], output[i]))
-    print(f"False positives: {len(false_positives)}, False negatives: {len(false_negatives)}")
+            examples["images"].append({
+                "path": img_paths[i],
+                "label": labels[i].item() if isinstance(labels[i], torch.Tensor) else labels[i],
+                "output": output[i].item(),
+            })
+    examples["images"].sort(key=lambda x: x["output"], reverse=True)
+    os.makedirs(f"results/predictions/{experiment['save_path']}", exist_ok=True)
 
-    os.makedirs(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/", exist_ok=True)
-    with open(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/false_positives.txt", "w") as f:
-        for i in range(min(max_n, len(false_positives))):
-            img_path, score = false_positives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-    
-    with open(f"results/train/{experiment['save_path']}/worst_predictions/{gen_name}/false_negatives.txt", "w") as f:
-        for i in range(min(max_n, len(false_negatives))):
-            img_path, score = false_negatives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-
-    os.makedirs(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/", exist_ok=True)
-    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_positives.txt", "w") as f:
-        for i in range(min(max_n, len(true_positives))):
-            img_path, score = true_positives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-    
-    with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt", "w") as f:
-        for i in range(min(max_n, len(true_negatives))):
-            img_path, score = true_negatives[i]
-            f.write(f"{img_path} {score:2.1f}\n")
-    print(f"Saved worst and best predictions to results/train/{experiment['save_path']}")
+    with open(f"results/predictions/{experiment['save_path']}/predictions_{gen_name}.json", "w") as f:
+        json.dump(examples, f, indent=4)
+    print(f"Saved worst and best predictions to results/predictions/{experiment['save_path']}")
 
 if __name__ == "__main__":
-    visualize_detection_curves(['IntermediatePatch', 'Rine_1_class', 'Rine_latent_diffusion'])
+    # visualize_detection_curves(['IntermediatePatch', 'Rine_4_class', 'Rine_latent_diffusion', 'SPAI'])
     
-    # # gen_name = "synthbuster/midjourney-v5"
+    gen_name = "synthbuster/midjourney-v5"
 
-    # # experiment = pickle.load(
-    # #     open(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/experiment.pickle", "rb")
-    # # )
-    # # model = IntermediatePatch(
-    # #     backbone=experiment["backbone"],
-    # #     nproj=experiment["nproj"],
-    # #     proj_dim=experiment["proj_dim"],
-    # #     device=torch.device("cuda:0"),
-    # # )
-    # # model.load_state_dict(
-    # #     torch.load(f"ckpt/IntermediatePatch/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
-    # # )
+    experiment = json.load(
+        open(f"ckpt/IntermediatePatch/2_nproj_1024_proj_dim/experiment.json", "rb")
+    )
+    model = IntermediatePatch(
+        backbone=experiment["backbone"],
+        nproj=experiment["nproj"],
+        proj_dim=experiment["proj_dim"],
+        device=torch.device("cuda:0"),
+    )
+    model.load_state_dict(
+        torch.load(f"ckpt/IntermediatePatch/2_nproj_1024_proj_dim/train.pth", map_location="cuda:0")
+    )
 
     # experiment = json.load(
     #     open(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/experiment.json", "rb")
@@ -523,44 +584,6 @@ if __name__ == "__main__":
     # patch_size = 16
     # tr = transforms.Resize(256)
     # tr = lambda x: x
-
-    # with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_negatives.txt") as f:
-    #     lines = f.readlines()
-
-    #     for n, l in enumerate(lines):
-    #         img_path, _ = l.split(" ")
-    #         img = Image.open(img_path)
-    #         img = img.convert("RGB")
-    #         img = tr(img)
-
-    #         visualize_patch_impact(
-    #             image=img,
-    #             model=model,
-    #             stride=stride,
-    #             patch_size=patch_size,
-    #             gen_name=gen_name.split("/")[-1],
-    #             fake=False,
-    #             num=n
-    #         )
-    
-    # with open(f"results/train/{experiment['save_path']}/best_predictions/{gen_name}/true_positives.txt") as f:
-    #     lines = f.readlines()
-
-    #     for n, l in enumerate(lines):
-    #         img_path, _ = l.split(" ")
-    #         img = Image.open(img_path)
-    #         img = img.convert("RGB")
-    #         img = tr(img)
-
-    #         visualize_patch_impact(
-    #             image=img,
-    #             model=model,
-    #             stride=stride,
-    #             patch_size=patch_size,
-    #             gen_name=gen_name.split("/")[-1],
-    #             fake=True,
-    #             num=n
-    #         )
 
     # visualize_image_impact(
     #     img=tr(img).unsqueeze(0).to("cuda:0"),
@@ -590,24 +613,34 @@ if __name__ == "__main__":
     # #     device=torch.device("cuda:0"),
     # # )
 
-    # device = "cuda:0"
-    # transform = get_transform("val_siglip", crop=256)
+    device = "cuda:0"
+    transform = get_transform("no_crop_no_norm")
+
+    plot_image_prediction(
+        json_path=f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json",
+        model=model,
+        transform=transform,
+        device=device,
+        gen_name=gen_name.split("/")[-1],
+        patch_size=14,
+        stride=112,
+    )
 
     # loader = DataLoader(
-    #                     EvaluationDataset(gen_name, transforms=transform, target="both"),
+    #                     EvaluationDataset(gen_name, transforms=transform, target="fake"),
     #                     batch_size=8,
     #                     shuffle=False,
     #                     pin_memory=True,
     #                     drop_last=False,
-    #                     # collate_fn=image_enlisting_collate_fn
+    #                     collate_fn=image_enlisting_collate_fn
     #                 )
 
-    # save_worst_and_best_predictions(
+    # save_predictions(
     #     experiment=experiment,
     #     model=model,
     #     gen_name=gen_name,
     #     dl=loader,
     #     device="cuda:0",
-    #     threshold=0.5,
-    #     method="max",
+    #     method="mean",
+    #     window_slide=True
     # )

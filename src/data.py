@@ -36,6 +36,12 @@ class TrainingDataset(Dataset):
 
     def __len__(self):
         return len(self.images)
+    
+    def len_real(self):
+        return len(list(filter(lambda x: x[1] == 0, self.images)))
+
+    def len_fake(self):
+        return len(list(filter(lambda x: x[1] == 1, self.images)))
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
@@ -94,6 +100,12 @@ class TrainingDatasetLDM(Dataset):
 
     def __len__(self):
         return len(self.images)
+    
+    def len_real(self):
+        return len(list(filter(lambda x: x[1] == 0, self.images)))
+
+    def len_fake(self):
+        return len(list(filter(lambda x: x[1] == 1, self.images)))
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
