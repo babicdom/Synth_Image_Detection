@@ -1,0 +1,59 @@
+{
+  "epochs": 2,
+  "config": {
+    "backbone": [
+      "hf-hub:timm/ViT-L-16-SigLIP2-256",
+      1024
+    ],
+    "nproj": 2,
+    "proj_dim": 1024,
+    "model": "siglip",
+    "crop": 256,
+    "imgsize": 256,
+    "training_set": "progan",
+    "contrastive": true,
+    "batch_size": 64,
+    "classes": [
+      "sofa",
+      "chair",
+      "cat",
+      "tvmonitor",
+      "train",
+      "person",
+      "pottedplant",
+      "airplane",
+      "dog",
+      "bird",
+      "bus",
+      "diningtable",
+      "bottle",
+      "cow",
+      "horse",
+      "sheep",
+      "motorbike",
+      "car",
+      "bicycle",
+      "boat"
+    ],
+    "ds_frac": 0.2,
+    "lr": 0.0001,
+    "lr_step": 5,
+    "lr_gamma": 0.5,
+    "epochs": 2,
+    "factor": 0.2,
+    "window_slide": false,
+    "save_path": "SigLIPIntermediatePatch/2_nproj_1024_proj_dim"
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.9999863280409738,
+      0.9999986867486074
+    ],
+    "val_auc": [
+      0.999986375,
+      0.9999986875
+    ],
+    "test": {}
+  }
+}

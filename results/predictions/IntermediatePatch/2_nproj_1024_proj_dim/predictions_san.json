@@ -1,0 +1,1099 @@
+{
+    "images": [
+        {
+            "path": "data/test/san/1_fake/baboon_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.9806587100028992
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_023_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.9618661999702454
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_096_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.9603208303451538
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_089_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.9310644268989563
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_091_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.9124881029129028
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_051_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.8806294202804565
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_060_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.8203404545783997
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_030_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.8128068447113037
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_077_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.8082990050315857
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_027_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.804202675819397
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_046_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.8015621900558472
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_098_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7949349880218506
+        },
+        {
+            "path": "data/test/san/1_fake/flowers_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7872693538665771
+        },
+        {
+            "path": "data/test/san/1_fake/lenna_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7623990774154663
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_032_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7609837651252747
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_020_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.754851222038269
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_053_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7526211142539978
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_057_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.749983012676239
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_062_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7464710474014282
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_073_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7453479170799255
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_005_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.737912118434906
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_077_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7348310351371765
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_070_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7303940653800964
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_071_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7297616004943848
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_038_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.724147379398346
+        },
+        {
+            "path": "data/test/san/1_fake/man_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7208388447761536
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_013_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7204335331916809
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_088_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7159326076507568
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_012_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7158694267272949
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_054_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.7090555429458618
+        },
+        {
+            "path": "data/test/san/1_fake/bridge_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.707146942615509
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_024_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6963064670562744
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_008_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.693403959274292
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_029_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6893764138221741
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_049_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.688266932964325
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_052_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6847749948501587
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_051_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6842684745788574
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_085_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6809207797050476
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_061_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6734994649887085
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_043_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6731343269348145
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_019_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6682202219963074
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_097_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6645644903182983
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_029_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6574590802192688
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_018_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6560083031654358
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_066_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6493619084358215
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_037_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6416401267051697
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_015_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6415178775787354
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_017_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6406555771827698
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_058_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6378423571586609
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_083_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6351900696754456
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_056_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6317077875137329
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_012_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6298955678939819
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_034_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6251010298728943
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_031_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6235942244529724
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_068_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6224734783172607
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_100_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6209158897399902
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_059_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6174691319465637
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_026_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6158925890922546
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_076_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6082152128219604
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_093_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.6024150252342224
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_073_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5984339118003845
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_006_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5966909527778625
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_095_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5953202247619629
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_004_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5915390253067017
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_021_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5843920707702637
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_041_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5814250111579895
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_002_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5797489285469055
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_079_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5746104121208191
+        },
+        {
+            "path": "data/test/san/1_fake/pepper_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5660950541496277
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_020_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5510377287864685
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_069_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5491611361503601
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_056_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5468903183937073
+        },
+        {
+            "path": "data/test/san/1_fake/zebra_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5429915189743042
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_003_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.541935920715332
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_065_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5365116596221924
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_007_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5307711958885193
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_086_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5288857221603394
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_022_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5263004302978516
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_064_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5242314338684082
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_018_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.522308349609375
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_078_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5207584500312805
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_026_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5158575773239136
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_011_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5145184397697449
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_055_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5120683312416077
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_004_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5101253986358643
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_027_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.507481575012207
+        },
+        {
+            "path": "data/test/san/1_fake/comic_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5072677731513977
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_092_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5066511034965515
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_047_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.5052388906478882
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_087_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.499722421169281
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_001_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4941255450248718
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_030_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.49394673109054565
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_069_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4924696683883667
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_089_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.49049949645996094
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_075_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.48830607533454895
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_084_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4839860200881958
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_099_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4838574230670929
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_076_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.48319846391677856
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_070_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.47611215710639954
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_092_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4756985008716583
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_039_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4746428430080414
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_003_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4696854054927826
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_019_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.46515196561813354
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_011_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4616858959197998
+        },
+        {
+            "path": "data/test/san/1_fake/face_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4612090587615967
+        },
+        {
+            "path": "data/test/san/1_fake/barbara_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4596017599105835
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_062_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.45514780282974243
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_016_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4544341564178467
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_008_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4541856348514557
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_059_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4489355683326721
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_064_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4462365210056305
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_028_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4423730969429016
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_047_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.43519702553749084
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_022_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.43239742517471313
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_040_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4305262565612793
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_010_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.42609134316444397
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_009_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4257648289203644
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_031_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4247192144393921
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_067_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4234236776828766
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_094_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4220723807811737
+        },
+        {
+            "path": "data/test/san/1_fake/head_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4198351204395294
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_094_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.41701027750968933
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_037_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.41656461358070374
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_078_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4062849283218384
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_053_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.4039372503757477
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_085_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.39748314023017883
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_097_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3941836953163147
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_074_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.39223167300224304
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_050_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.39022308588027954
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_083_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.38659611344337463
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_034_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.38086608052253723
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_013_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.37769147753715515
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_016_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3765178620815277
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_038_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3754267692565918
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_061_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3622039556503296
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_065_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.35905319452285767
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_063_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3531196713447571
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_006_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.35042938590049744
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_072_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.34966179728507996
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_033_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3449018895626068
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_044_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3432192802429199
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_014_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3261599540710449
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_045_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3248114287853241
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_002_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.32352495193481445
+        },
+        {
+            "path": "data/test/san/1_fake/ppt3_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3177778422832489
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_072_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3170900046825409
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_023_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3148787021636963
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_080_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.3140944838523865
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_057_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.30831360816955566
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_100_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.304873526096344
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_032_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.29935961961746216
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_096_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2989116609096527
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_036_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.29833218455314636
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_082_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.29686030745506287
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_041_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.29508817195892334
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_081_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.292474627494812
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_039_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.291566401720047
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_067_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2873390316963196
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_033_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2856955826282501
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_007_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.28540942072868347
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_049_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.27859872579574585
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_035_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2776510417461395
+        },
+        {
+            "path": "data/test/san/1_fake/coastguard_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.27575787901878357
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_010_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.27488139271736145
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_084_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2734857499599457
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_052_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.26378002762794495
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_082_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.26029887795448303
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_046_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2496866136789322
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_079_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2471482902765274
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_080_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.24675744771957397
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_048_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.245916485786438
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_009_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.23808619379997253
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_058_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.23746977746486664
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_098_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.23380443453788757
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_099_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.22797322273254395
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_045_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.22571128606796265
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_028_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.22213618457317352
+        },
+        {
+            "path": "data/test/san/1_fake/monarch_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2220243513584137
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_075_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.22032807767391205
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_087_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2200244516134262
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_066_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.21610192954540253
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_060_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2141139805316925
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_090_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.2138582170009613
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_048_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.1864786595106125
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_024_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.1720411628484726
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_086_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.16054649651050568
+        },
+        {
+            "path": "data/test/san/1_fake/baby_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.15941031277179718
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_081_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.15841074287891388
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_093_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.15496490895748138
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_088_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.15330518782138824
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_001_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.1509992778301239
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_021_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14399835467338562
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_036_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14381663501262665
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_050_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14217139780521393
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_040_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14071962237358093
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_035_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14048832654953003
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_017_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.14019833505153656
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_005_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.13142414391040802
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_090_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.13049177825450897
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_042_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12749506533145905
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_043_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12580637633800507
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_063_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.1256372332572937
+        },
+        {
+            "path": "data/test/san/1_fake/bird_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12394242733716965
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_025_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12345098704099655
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_054_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12160851061344147
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_091_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.12029531598091125
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_071_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.11650021374225616
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_042_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.10739416629076004
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_015_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.09926270693540573
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_014_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.0946221873164177
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_055_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.09460095316171646
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_074_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.07979384809732437
+        },
+        {
+            "path": "data/test/san/1_fake/butterfly_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.07548917829990387
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_044_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.051055219024419785
+        },
+        {
+            "path": "data/test/san/1_fake/foreman_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.04744844511151314
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_025_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.04550507292151451
+        },
+        {
+            "path": "data/test/san/1_fake/BSD100_095_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.04347589984536171
+        },
+        {
+            "path": "data/test/san/1_fake/woman_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.023649031296372414
+        },
+        {
+            "path": "data/test/san/1_fake/Urban100_068_BIX4_G20R10P48_11_6_SR_x4.png",
+            "label": 1,
+            "output": 0.0022320039570331573
+        }
+    ]
+}

@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10353_.png",
+            "label": 1,
+            "output": 0.8498693108558655
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11794_.png",
+            "label": 1,
+            "output": 0.7930677533149719
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09080_.png",
+            "label": 1,
+            "output": 0.7141250371932983
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09869_.png",
+            "label": 1,
+            "output": 0.6751223802566528
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09913_.png",
+            "label": 1,
+            "output": 0.6639453768730164
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13201_.png",
+            "label": 1,
+            "output": 0.626880407333374
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13335_.png",
+            "label": 1,
+            "output": 0.5900090932846069
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07875_.png",
+            "label": 1,
+            "output": 0.5514770150184631
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12015_.png",
+            "label": 1,
+            "output": 0.5376652479171753
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09427_.png",
+            "label": 1,
+            "output": 0.5249466300010681
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12757_.png",
+            "label": 1,
+            "output": 0.5235027074813843
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11638_.png",
+            "label": 1,
+            "output": 0.5175361633300781
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09963_.png",
+            "label": 1,
+            "output": 0.5124611854553223
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11464_.png",
+            "label": 1,
+            "output": 0.510309636592865
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13309_.png",
+            "label": 1,
+            "output": 0.4951843023300171
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12651_.png",
+            "label": 1,
+            "output": 0.49121055006980896
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11436_.png",
+            "label": 1,
+            "output": 0.4838237762451172
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11350_.png",
+            "label": 1,
+            "output": 0.48163557052612305
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11443_.png",
+            "label": 1,
+            "output": 0.47849932312965393
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08512_.png",
+            "label": 1,
+            "output": 0.4764804244041443
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08163_.png",
+            "label": 1,
+            "output": 0.4704877734184265
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11083_.png",
+            "label": 1,
+            "output": 0.4643707871437073
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08690_.png",
+            "label": 1,
+            "output": 0.4601276218891144
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10986_.png",
+            "label": 1,
+            "output": 0.4595612585544586
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08628_.png",
+            "label": 1,
+            "output": 0.45189589262008667
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11149_.png",
+            "label": 1,
+            "output": 0.4510406255722046
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09268_.png",
+            "label": 1,
+            "output": 0.4442940056324005
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09215_.png",
+            "label": 1,
+            "output": 0.4437028169631958
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12865_.png",
+            "label": 1,
+            "output": 0.44345399737358093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12315_.png",
+            "label": 1,
+            "output": 0.4411875009536743
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12338_.png",
+            "label": 1,
+            "output": 0.4396241009235382
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13441_.png",
+            "label": 1,
+            "output": 0.4389841556549072
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13089_.png",
+            "label": 1,
+            "output": 0.4332784414291382
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09591_.png",
+            "label": 1,
+            "output": 0.4290877878665924
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11404_.png",
+            "label": 1,
+            "output": 0.4222261309623718
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09426_.png",
+            "label": 1,
+            "output": 0.4166036546230316
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12717_.png",
+            "label": 1,
+            "output": 0.41302549839019775
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09533_.png",
+            "label": 1,
+            "output": 0.41269972920417786
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08729_.png",
+            "label": 1,
+            "output": 0.4126213788986206
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11758_.png",
+            "label": 1,
+            "output": 0.4065060615539551
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12142_.png",
+            "label": 1,
+            "output": 0.4008818566799164
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09027_.png",
+            "label": 1,
+            "output": 0.4004449248313904
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08459_.png",
+            "label": 1,
+            "output": 0.39913448691368103
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11570_.png",
+            "label": 1,
+            "output": 0.39807307720184326
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11190_.png",
+            "label": 1,
+            "output": 0.39565667510032654
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13281_.png",
+            "label": 1,
+            "output": 0.3949964940547943
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08734_.png",
+            "label": 1,
+            "output": 0.39275187253952026
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11512_.png",
+            "label": 1,
+            "output": 0.3902929127216339
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08974_.png",
+            "label": 1,
+            "output": 0.3847198486328125
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11933_.png",
+            "label": 1,
+            "output": 0.38388964533805847
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12071_.png",
+            "label": 1,
+            "output": 0.38257837295532227
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07569_.png",
+            "label": 1,
+            "output": 0.3819529712200165
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09485_.png",
+            "label": 1,
+            "output": 0.3770444691181183
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11697_.png",
+            "label": 1,
+            "output": 0.37612730264663696
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09343_.png",
+            "label": 1,
+            "output": 0.37568211555480957
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12271_.png",
+            "label": 1,
+            "output": 0.3751451075077057
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11327_.png",
+            "label": 1,
+            "output": 0.37448784708976746
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12087_.png",
+            "label": 1,
+            "output": 0.3743627667427063
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13630_.png",
+            "label": 1,
+            "output": 0.37273943424224854
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10828_.png",
+            "label": 1,
+            "output": 0.3707800805568695
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13274_.png",
+            "label": 1,
+            "output": 0.36684897541999817
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13277_.png",
+            "label": 1,
+            "output": 0.3583419919013977
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10897_.png",
+            "label": 1,
+            "output": 0.35813018679618835
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09366_.png",
+            "label": 1,
+            "output": 0.3573731780052185
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13154_.png",
+            "label": 1,
+            "output": 0.35579705238342285
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09177_.png",
+            "label": 1,
+            "output": 0.35533416271209717
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11963_.png",
+            "label": 1,
+            "output": 0.3540254533290863
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11050_.png",
+            "label": 1,
+            "output": 0.3538699448108673
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12442_.png",
+            "label": 1,
+            "output": 0.3526207506656647
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08935_.png",
+            "label": 1,
+            "output": 0.3508308231830597
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12714_.png",
+            "label": 1,
+            "output": 0.3459279239177704
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11470_.png",
+            "label": 1,
+            "output": 0.345258504152298
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12944_.png",
+            "label": 1,
+            "output": 0.3448490798473358
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09271_.png",
+            "label": 1,
+            "output": 0.34244343638420105
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11912_.png",
+            "label": 1,
+            "output": 0.34225255250930786
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09999_.png",
+            "label": 1,
+            "output": 0.3417663872241974
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09372_.png",
+            "label": 1,
+            "output": 0.3400602638721466
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10360_.png",
+            "label": 1,
+            "output": 0.33969369530677795
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13327_.png",
+            "label": 1,
+            "output": 0.3396111726760864
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09036_.png",
+            "label": 1,
+            "output": 0.3386581540107727
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12871_.png",
+            "label": 1,
+            "output": 0.3360808789730072
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09631_.png",
+            "label": 1,
+            "output": 0.33315545320510864
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09377_.png",
+            "label": 1,
+            "output": 0.33067911863327026
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12405_.png",
+            "label": 1,
+            "output": 0.3254067301750183
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13097_.png",
+            "label": 1,
+            "output": 0.32472726702690125
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09708_.png",
+            "label": 1,
+            "output": 0.3235609233379364
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10732_.png",
+            "label": 1,
+            "output": 0.3234666585922241
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10650_.png",
+            "label": 1,
+            "output": 0.3222538232803345
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13213_.png",
+            "label": 1,
+            "output": 0.31969285011291504
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08813_.png",
+            "label": 1,
+            "output": 0.31915125250816345
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10505_.png",
+            "label": 1,
+            "output": 0.3162384629249573
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09442_.png",
+            "label": 1,
+            "output": 0.31359991431236267
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13367_.png",
+            "label": 1,
+            "output": 0.31343960762023926
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07547_.png",
+            "label": 1,
+            "output": 0.3112342655658722
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12883_.png",
+            "label": 1,
+            "output": 0.31066766381263733
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10297_.png",
+            "label": 1,
+            "output": 0.3101901412010193
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09084_.png",
+            "label": 1,
+            "output": 0.3100333511829376
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12465_.png",
+            "label": 1,
+            "output": 0.3098819851875305
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08849_.png",
+            "label": 1,
+            "output": 0.30986011028289795
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08659_.png",
+            "label": 1,
+            "output": 0.3088550865650177
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09698_.png",
+            "label": 1,
+            "output": 0.30882522463798523
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07553_.png",
+            "label": 1,
+            "output": 0.3060216009616852
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12785_.png",
+            "label": 1,
+            "output": 0.30405837297439575
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08885_.png",
+            "label": 1,
+            "output": 0.30378514528274536
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10478_.png",
+            "label": 1,
+            "output": 0.3013826012611389
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10903_.png",
+            "label": 1,
+            "output": 0.3005423843860626
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09190_.png",
+            "label": 1,
+            "output": 0.3000969886779785
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11096_.png",
+            "label": 1,
+            "output": 0.30004724860191345
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07643_.png",
+            "label": 1,
+            "output": 0.29949888586997986
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12420_.png",
+            "label": 1,
+            "output": 0.298828125
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12657_.png",
+            "label": 1,
+            "output": 0.29787614941596985
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08943_.png",
+            "label": 1,
+            "output": 0.2977047264575958
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11760_.png",
+            "label": 1,
+            "output": 0.297514945268631
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13042_.png",
+            "label": 1,
+            "output": 0.2973928451538086
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13373_.png",
+            "label": 1,
+            "output": 0.29702121019363403
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09489_.png",
+            "label": 1,
+            "output": 0.29673248529434204
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09805_.png",
+            "label": 1,
+            "output": 0.2966232895851135
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07801_.png",
+            "label": 1,
+            "output": 0.29543864727020264
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11132_.png",
+            "label": 1,
+            "output": 0.2942977547645569
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12207_.png",
+            "label": 1,
+            "output": 0.2927497327327728
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11721_.png",
+            "label": 1,
+            "output": 0.2916659414768219
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09000_.png",
+            "label": 1,
+            "output": 0.29117143154144287
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10540_.png",
+            "label": 1,
+            "output": 0.29113590717315674
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10580_.png",
+            "label": 1,
+            "output": 0.290915846824646
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12435_.png",
+            "label": 1,
+            "output": 0.28814271092414856
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13640_.png",
+            "label": 1,
+            "output": 0.28790006041526794
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09475_.png",
+            "label": 1,
+            "output": 0.2865336835384369
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12872_.png",
+            "label": 1,
+            "output": 0.28582319617271423
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08976_.png",
+            "label": 1,
+            "output": 0.28554290533065796
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09581_.png",
+            "label": 1,
+            "output": 0.28497520089149475
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11729_.png",
+            "label": 1,
+            "output": 0.2845335006713867
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09478_.png",
+            "label": 1,
+            "output": 0.2836920917034149
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11941_.png",
+            "label": 1,
+            "output": 0.2815094590187073
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12219_.png",
+            "label": 1,
+            "output": 0.2812540531158447
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11174_.png",
+            "label": 1,
+            "output": 0.2792907953262329
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11388_.png",
+            "label": 1,
+            "output": 0.27720019221305847
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09068_.png",
+            "label": 1,
+            "output": 0.2771243751049042
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12100_.png",
+            "label": 1,
+            "output": 0.27438655495643616
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08127_.png",
+            "label": 1,
+            "output": 0.2739923596382141
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13523_.png",
+            "label": 1,
+            "output": 0.27293747663497925
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07999_.png",
+            "label": 1,
+            "output": 0.2724235951900482
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11999_.png",
+            "label": 1,
+            "output": 0.27230170369148254
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10545_.png",
+            "label": 1,
+            "output": 0.2714892625808716
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11416_.png",
+            "label": 1,
+            "output": 0.2702313959598541
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12398_.png",
+            "label": 1,
+            "output": 0.26876378059387207
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08896_.png",
+            "label": 1,
+            "output": 0.26853474974632263
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07520_.png",
+            "label": 1,
+            "output": 0.26709794998168945
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11331_.png",
+            "label": 1,
+            "output": 0.26652926206588745
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12659_.png",
+            "label": 1,
+            "output": 0.26529648900032043
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10345_.png",
+            "label": 1,
+            "output": 0.2638949453830719
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08694_.png",
+            "label": 1,
+            "output": 0.2636931836605072
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08656_.png",
+            "label": 1,
+            "output": 0.2633233964443207
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08353_.png",
+            "label": 1,
+            "output": 0.26288822293281555
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12498_.png",
+            "label": 1,
+            "output": 0.26227831840515137
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12834_.png",
+            "label": 1,
+            "output": 0.2611768841743469
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10821_.png",
+            "label": 1,
+            "output": 0.2601849138736725
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10311_.png",
+            "label": 1,
+            "output": 0.2600152790546417
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11422_.png",
+            "label": 1,
+            "output": 0.25987449288368225
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11991_.png",
+            "label": 1,
+            "output": 0.2595486640930176
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10963_.png",
+            "label": 1,
+            "output": 0.2581440508365631
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13145_.png",
+            "label": 1,
+            "output": 0.2575809955596924
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10958_.png",
+            "label": 1,
+            "output": 0.25724291801452637
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07598_.png",
+            "label": 1,
+            "output": 0.2569897770881653
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11835_.png",
+            "label": 1,
+            "output": 0.25670623779296875
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13181_.png",
+            "label": 1,
+            "output": 0.25505807995796204
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10820_.png",
+            "label": 1,
+            "output": 0.2549239993095398
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07574_.png",
+            "label": 1,
+            "output": 0.25431397557258606
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11953_.png",
+            "label": 1,
+            "output": 0.25405117869377136
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13239_.png",
+            "label": 1,
+            "output": 0.25340166687965393
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12000_.png",
+            "label": 1,
+            "output": 0.2532416582107544
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12796_.png",
+            "label": 1,
+            "output": 0.2529802918434143
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10368_.png",
+            "label": 1,
+            "output": 0.25208571553230286
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09535_.png",
+            "label": 1,
+            "output": 0.2519579529762268
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09206_.png",
+            "label": 1,
+            "output": 0.2514001131057739
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09697_.png",
+            "label": 1,
+            "output": 0.25132450461387634
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13688_.png",
+            "label": 1,
+            "output": 0.2488623708486557
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09530_.png",
+            "label": 1,
+            "output": 0.24873659014701843
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08738_.png",
+            "label": 1,
+            "output": 0.2481822967529297
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12057_.png",
+            "label": 1,
+            "output": 0.24629512429237366
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13719_.png",
+            "label": 1,
+            "output": 0.24510370194911957
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13704_.png",
+            "label": 1,
+            "output": 0.2436671257019043
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09792_.png",
+            "label": 1,
+            "output": 0.24366219341754913
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11394_.png",
+            "label": 1,
+            "output": 0.24256116151809692
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12730_.png",
+            "label": 1,
+            "output": 0.24195091426372528
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08919_.png",
+            "label": 1,
+            "output": 0.241338849067688
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11253_.png",
+            "label": 1,
+            "output": 0.24085140228271484
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12671_.png",
+            "label": 1,
+            "output": 0.24068711698055267
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10552_.png",
+            "label": 1,
+            "output": 0.24058207869529724
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09493_.png",
+            "label": 1,
+            "output": 0.2404751181602478
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13047_.png",
+            "label": 1,
+            "output": 0.24015450477600098
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09404_.png",
+            "label": 1,
+            "output": 0.23939326405525208
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12193_.png",
+            "label": 1,
+            "output": 0.23812748491764069
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07835_.png",
+            "label": 1,
+            "output": 0.23781201243400574
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10004_.png",
+            "label": 1,
+            "output": 0.23771832883358002
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11244_.png",
+            "label": 1,
+            "output": 0.2371281087398529
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11849_.png",
+            "label": 1,
+            "output": 0.23663024604320526
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07671_.png",
+            "label": 1,
+            "output": 0.2365223467350006
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10710_.png",
+            "label": 1,
+            "output": 0.23557157814502716
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12637_.png",
+            "label": 1,
+            "output": 0.23479875922203064
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11252_.png",
+            "label": 1,
+            "output": 0.23239083588123322
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08774_.png",
+            "label": 1,
+            "output": 0.2319185435771942
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12652_.png",
+            "label": 1,
+            "output": 0.23158548772335052
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08593_.png",
+            "label": 1,
+            "output": 0.23130500316619873
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11205_.png",
+            "label": 1,
+            "output": 0.23027312755584717
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09804_.png",
+            "label": 1,
+            "output": 0.22981421649456024
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12983_.png",
+            "label": 1,
+            "output": 0.22977088391780853
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08221_.png",
+            "label": 1,
+            "output": 0.22697363793849945
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13627_.png",
+            "label": 1,
+            "output": 0.22546137869358063
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13487_.png",
+            "label": 1,
+            "output": 0.22522510588169098
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13692_.png",
+            "label": 1,
+            "output": 0.22497062385082245
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13557_.png",
+            "label": 1,
+            "output": 0.22478671371936798
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13413_.png",
+            "label": 1,
+            "output": 0.22416952252388
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10880_.png",
+            "label": 1,
+            "output": 0.22367258369922638
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08076_.png",
+            "label": 1,
+            "output": 0.2228398621082306
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08299_.png",
+            "label": 1,
+            "output": 0.22244875133037567
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08123_.png",
+            "label": 1,
+            "output": 0.22125189006328583
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11178_.png",
+            "label": 1,
+            "output": 0.22111696004867554
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12763_.png",
+            "label": 1,
+            "output": 0.220614954829216
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12670_.png",
+            "label": 1,
+            "output": 0.22031176090240479
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13266_.png",
+            "label": 1,
+            "output": 0.21945878863334656
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13755_.png",
+            "label": 1,
+            "output": 0.21909935772418976
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08091_.png",
+            "label": 1,
+            "output": 0.21890507638454437
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10902_.png",
+            "label": 1,
+            "output": 0.21883313357830048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11102_.png",
+            "label": 1,
+            "output": 0.2178509682416916
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10500_.png",
+            "label": 1,
+            "output": 0.21721571683883667
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13292_.png",
+            "label": 1,
+            "output": 0.21620900928974152
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13286_.png",
+            "label": 1,
+            "output": 0.2159940004348755
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13190_.png",
+            "label": 1,
+            "output": 0.21541737020015717
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13186_.png",
+            "label": 1,
+            "output": 0.2151269167661667
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13115_.png",
+            "label": 1,
+            "output": 0.2145552635192871
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11045_.png",
+            "label": 1,
+            "output": 0.21291473507881165
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10831_.png",
+            "label": 1,
+            "output": 0.21239307522773743
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08808_.png",
+            "label": 1,
+            "output": 0.21211311221122742
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12473_.png",
+            "label": 1,
+            "output": 0.21150484681129456
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08419_.png",
+            "label": 1,
+            "output": 0.21148847043514252
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07723_.png",
+            "label": 1,
+            "output": 0.21062548458576202
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08315_.png",
+            "label": 1,
+            "output": 0.20967262983322144
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08906_.png",
+            "label": 1,
+            "output": 0.20889393985271454
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10988_.png",
+            "label": 1,
+            "output": 0.20874422788619995
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10392_.png",
+            "label": 1,
+            "output": 0.20690685510635376
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12833_.png",
+            "label": 1,
+            "output": 0.20688845217227936
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12906_.png",
+            "label": 1,
+            "output": 0.2060905396938324
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09075_.png",
+            "label": 1,
+            "output": 0.20597484707832336
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10581_.png",
+            "label": 1,
+            "output": 0.20433393120765686
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09499_.png",
+            "label": 1,
+            "output": 0.2033950835466385
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09552_.png",
+            "label": 1,
+            "output": 0.20321184396743774
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10440_.png",
+            "label": 1,
+            "output": 0.20250798761844635
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10912_.png",
+            "label": 1,
+            "output": 0.20207816362380981
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11095_.png",
+            "label": 1,
+            "output": 0.20055712759494781
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11911_.png",
+            "label": 1,
+            "output": 0.20010285079479218
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07568_.png",
+            "label": 1,
+            "output": 0.19997507333755493
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12688_.png",
+            "label": 1,
+            "output": 0.19968156516551971
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08806_.png",
+            "label": 1,
+            "output": 0.19937095046043396
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11254_.png",
+            "label": 1,
+            "output": 0.19901666045188904
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10665_.png",
+            "label": 1,
+            "output": 0.19891691207885742
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13653_.png",
+            "label": 1,
+            "output": 0.19850845634937286
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07703_.png",
+            "label": 1,
+            "output": 0.19820037484169006
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07510_.png",
+            "label": 1,
+            "output": 0.19816312193870544
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12882_.png",
+            "label": 1,
+            "output": 0.1970970183610916
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08882_.png",
+            "label": 1,
+            "output": 0.19618822634220123
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07954_.png",
+            "label": 1,
+            "output": 0.19567294418811798
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09714_.png",
+            "label": 1,
+            "output": 0.19499416649341583
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10930_.png",
+            "label": 1,
+            "output": 0.19406074285507202
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13451_.png",
+            "label": 1,
+            "output": 0.19391079246997833
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09576_.png",
+            "label": 1,
+            "output": 0.19364680349826813
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11621_.png",
+            "label": 1,
+            "output": 0.19315080344676971
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10380_.png",
+            "label": 1,
+            "output": 0.1925359070301056
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09513_.png",
+            "label": 1,
+            "output": 0.1922563761472702
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11276_.png",
+            "label": 1,
+            "output": 0.19149133563041687
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11357_.png",
+            "label": 1,
+            "output": 0.1914784014225006
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09935_.png",
+            "label": 1,
+            "output": 0.1913895606994629
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10614_.png",
+            "label": 1,
+            "output": 0.19038082659244537
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09977_.png",
+            "label": 1,
+            "output": 0.18999551236629486
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11080_.png",
+            "label": 1,
+            "output": 0.18945716321468353
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11633_.png",
+            "label": 1,
+            "output": 0.18749485909938812
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12363_.png",
+            "label": 1,
+            "output": 0.18689580261707306
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11079_.png",
+            "label": 1,
+            "output": 0.18655814230442047
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10347_.png",
+            "label": 1,
+            "output": 0.18630646169185638
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11107_.png",
+            "label": 1,
+            "output": 0.1858619898557663
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13675_.png",
+            "label": 1,
+            "output": 0.18486244976520538
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12696_.png",
+            "label": 1,
+            "output": 0.18411661684513092
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11090_.png",
+            "label": 1,
+            "output": 0.18365074694156647
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09595_.png",
+            "label": 1,
+            "output": 0.18295656144618988
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10022_.png",
+            "label": 1,
+            "output": 0.18237747251987457
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11703_.png",
+            "label": 1,
+            "output": 0.1823723018169403
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07947_.png",
+            "label": 1,
+            "output": 0.18233686685562134
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10016_.png",
+            "label": 1,
+            "output": 0.1816609501838684
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12292_.png",
+            "label": 1,
+            "output": 0.1816181093454361
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09922_.png",
+            "label": 1,
+            "output": 0.18130162358283997
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11195_.png",
+            "label": 1,
+            "output": 0.18059982359409332
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09995_.png",
+            "label": 1,
+            "output": 0.17955437302589417
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10643_.png",
+            "label": 1,
+            "output": 0.1793593168258667
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09286_.png",
+            "label": 1,
+            "output": 0.17925436794757843
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07713_.png",
+            "label": 1,
+            "output": 0.1778450459241867
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08692_.png",
+            "label": 1,
+            "output": 0.1762748509645462
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10658_.png",
+            "label": 1,
+            "output": 0.17603278160095215
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12174_.png",
+            "label": 1,
+            "output": 0.17600399255752563
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11854_.png",
+            "label": 1,
+            "output": 0.17559246718883514
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09918_.png",
+            "label": 1,
+            "output": 0.17524570226669312
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12537_.png",
+            "label": 1,
+            "output": 0.17517700791358948
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08349_.png",
+            "label": 1,
+            "output": 0.17494533956050873
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07699_.png",
+            "label": 1,
+            "output": 0.17429248988628387
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13160_.png",
+            "label": 1,
+            "output": 0.17359602451324463
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09336_.png",
+            "label": 1,
+            "output": 0.17328055202960968
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11668_.png",
+            "label": 1,
+            "output": 0.17259804904460907
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07822_.png",
+            "label": 1,
+            "output": 0.17204394936561584
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12530_.png",
+            "label": 1,
+            "output": 0.1720116138458252
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11706_.png",
+            "label": 1,
+            "output": 0.17194510996341705
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11798_.png",
+            "label": 1,
+            "output": 0.171810120344162
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13556_.png",
+            "label": 1,
+            "output": 0.1717522144317627
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13184_.png",
+            "label": 1,
+            "output": 0.17170269787311554
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12516_.png",
+            "label": 1,
+            "output": 0.1713716685771942
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08855_.png",
+            "label": 1,
+            "output": 0.17127537727355957
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07976_.png",
+            "label": 1,
+            "output": 0.17115139961242676
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07888_.png",
+            "label": 1,
+            "output": 0.17094342410564423
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09436_.png",
+            "label": 1,
+            "output": 0.1700950711965561
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11109_.png",
+            "label": 1,
+            "output": 0.17005206644535065
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11296_.png",
+            "label": 1,
+            "output": 0.1696346551179886
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07725_.png",
+            "label": 1,
+            "output": 0.16932787001132965
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12312_.png",
+            "label": 1,
+            "output": 0.16873474419116974
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13225_.png",
+            "label": 1,
+            "output": 0.1686953753232956
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12329_.png",
+            "label": 1,
+            "output": 0.16777753829956055
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13070_.png",
+            "label": 1,
+            "output": 0.16640645265579224
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11830_.png",
+            "label": 1,
+            "output": 0.1663820445537567
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08805_.png",
+            "label": 1,
+            "output": 0.16618065536022186
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13066_.png",
+            "label": 1,
+            "output": 0.16560816764831543
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10873_.png",
+            "label": 1,
+            "output": 0.16548673808574677
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09822_.png",
+            "label": 1,
+            "output": 0.16492527723312378
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12747_.png",
+            "label": 1,
+            "output": 0.16483959555625916
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13033_.png",
+            "label": 1,
+            "output": 0.1646100878715515
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08251_.png",
+            "label": 1,
+            "output": 0.1645757108926773
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10970_.png",
+            "label": 1,
+            "output": 0.1638912558555603
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09573_.png",
+            "label": 1,
+            "output": 0.1637738198041916
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13488_.png",
+            "label": 1,
+            "output": 0.163557767868042
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10755_.png",
+            "label": 1,
+            "output": 0.16347160935401917
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11227_.png",
+            "label": 1,
+            "output": 0.1632719188928604
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13741_.png",
+            "label": 1,
+            "output": 0.1632688194513321
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10032_.png",
+            "label": 1,
+            "output": 0.16310445964336395
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11788_.png",
+            "label": 1,
+            "output": 0.16238053143024445
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12270_.png",
+            "label": 1,
+            "output": 0.16189363598823547
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09784_.png",
+            "label": 1,
+            "output": 0.161168172955513
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10418_.png",
+            "label": 1,
+            "output": 0.16103968024253845
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07545_.png",
+            "label": 1,
+            "output": 0.16078251600265503
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08625_.png",
+            "label": 1,
+            "output": 0.15919241309165955
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09616_.png",
+            "label": 1,
+            "output": 0.1577008068561554
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11956_.png",
+            "label": 1,
+            "output": 0.15768493711948395
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08563_.png",
+            "label": 1,
+            "output": 0.15763546526432037
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13580_.png",
+            "label": 1,
+            "output": 0.15738670527935028
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12849_.png",
+            "label": 1,
+            "output": 0.1568024754524231
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08464_.png",
+            "label": 1,
+            "output": 0.15667419135570526
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11630_.png",
+            "label": 1,
+            "output": 0.15622571110725403
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12513_.png",
+            "label": 1,
+            "output": 0.15621300041675568
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07872_.png",
+            "label": 1,
+            "output": 0.15611761808395386
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08870_.png",
+            "label": 1,
+            "output": 0.15608066320419312
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08135_.png",
+            "label": 1,
+            "output": 0.15597963333129883
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08679_.png",
+            "label": 1,
+            "output": 0.15543997287750244
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11000_.png",
+            "label": 1,
+            "output": 0.15500304102897644
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09750_.png",
+            "label": 1,
+            "output": 0.15462180972099304
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12945_.png",
+            "label": 1,
+            "output": 0.15430931746959686
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12440_.png",
+            "label": 1,
+            "output": 0.15404239296913147
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10382_.png",
+            "label": 1,
+            "output": 0.15309765934944153
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08108_.png",
+            "label": 1,
+            "output": 0.1530257612466812
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10900_.png",
+            "label": 1,
+            "output": 0.15221013128757477
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08417_.png",
+            "label": 1,
+            "output": 0.15207523107528687
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08386_.png",
+            "label": 1,
+            "output": 0.15206758677959442
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08255_.png",
+            "label": 1,
+            "output": 0.15132300555706024
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12686_.png",
+            "label": 1,
+            "output": 0.15123099088668823
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13012_.png",
+            "label": 1,
+            "output": 0.15089640021324158
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11290_.png",
+            "label": 1,
+            "output": 0.15041014552116394
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08254_.png",
+            "label": 1,
+            "output": 0.15010085701942444
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09941_.png",
+            "label": 1,
+            "output": 0.14995211362838745
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12937_.png",
+            "label": 1,
+            "output": 0.14979690313339233
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11750_.png",
+            "label": 1,
+            "output": 0.14968471229076385
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11528_.png",
+            "label": 1,
+            "output": 0.14947468042373657
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08260_.png",
+            "label": 1,
+            "output": 0.14877381920814514
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07575_.png",
+            "label": 1,
+            "output": 0.14820310473442078
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09281_.png",
+            "label": 1,
+            "output": 0.1479381024837494
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09217_.png",
+            "label": 1,
+            "output": 0.14782506227493286
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11869_.png",
+            "label": 1,
+            "output": 0.14717604219913483
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12755_.png",
+            "label": 1,
+            "output": 0.147070974111557
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11712_.png",
+            "label": 1,
+            "output": 0.14622698724269867
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10604_.png",
+            "label": 1,
+            "output": 0.14604340493679047
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11756_.png",
+            "label": 1,
+            "output": 0.1460125595331192
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09501_.png",
+            "label": 1,
+            "output": 0.1448063850402832
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08362_.png",
+            "label": 1,
+            "output": 0.14445994794368744
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08510_.png",
+            "label": 1,
+            "output": 0.1441206932067871
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09932_.png",
+            "label": 1,
+            "output": 0.1438947468996048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12870_.png",
+            "label": 1,
+            "output": 0.14384278655052185
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12429_.png",
+            "label": 1,
+            "output": 0.14321011304855347
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12951_.png",
+            "label": 1,
+            "output": 0.1422552764415741
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08608_.png",
+            "label": 1,
+            "output": 0.1418645828962326
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09788_.png",
+            "label": 1,
+            "output": 0.14147450029850006
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08671_.png",
+            "label": 1,
+            "output": 0.14117398858070374
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11611_.png",
+            "label": 1,
+            "output": 0.1402924358844757
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10693_.png",
+            "label": 1,
+            "output": 0.13896775245666504
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12521_.png",
+            "label": 1,
+            "output": 0.1380065679550171
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07612_.png",
+            "label": 1,
+            "output": 0.13773080706596375
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12750_.png",
+            "label": 1,
+            "output": 0.1376330554485321
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11246_.png",
+            "label": 1,
+            "output": 0.13651107251644135
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08592_.png",
+            "label": 1,
+            "output": 0.13643674552440643
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09424_.png",
+            "label": 1,
+            "output": 0.13634280860424042
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09018_.png",
+            "label": 1,
+            "output": 0.13631147146224976
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13592_.png",
+            "label": 1,
+            "output": 0.13521146774291992
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10375_.png",
+            "label": 1,
+            "output": 0.13512399792671204
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11939_.png",
+            "label": 1,
+            "output": 0.1351197212934494
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10901_.png",
+            "label": 1,
+            "output": 0.13506224751472473
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12269_.png",
+            "label": 1,
+            "output": 0.13498693704605103
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12328_.png",
+            "label": 1,
+            "output": 0.13494940102100372
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13025_.png",
+            "label": 1,
+            "output": 0.13477723300457
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13589_.png",
+            "label": 1,
+            "output": 0.13470366597175598
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10898_.png",
+            "label": 1,
+            "output": 0.13442684710025787
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12391_.png",
+            "label": 1,
+            "output": 0.13439197838306427
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12372_.png",
+            "label": 1,
+            "output": 0.13425947725772858
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10878_.png",
+            "label": 1,
+            "output": 0.1334470957517624
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09486_.png",
+            "label": 1,
+            "output": 0.13329441845417023
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09060_.png",
+            "label": 1,
+            "output": 0.13322685658931732
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12749_.png",
+            "label": 1,
+            "output": 0.13309504091739655
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08059_.png",
+            "label": 1,
+            "output": 0.13305120170116425
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12493_.png",
+            "label": 1,
+            "output": 0.13098403811454773
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12990_.png",
+            "label": 1,
+            "output": 0.13091954588890076
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10327_.png",
+            "label": 1,
+            "output": 0.13090969622135162
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10893_.png",
+            "label": 1,
+            "output": 0.13069824874401093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12518_.png",
+            "label": 1,
+            "output": 0.12998534739017487
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09536_.png",
+            "label": 1,
+            "output": 0.12996050715446472
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13481_.png",
+            "label": 1,
+            "output": 0.1297878921031952
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11454_.png",
+            "label": 1,
+            "output": 0.12955081462860107
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12133_.png",
+            "label": 1,
+            "output": 0.12873563170433044
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10031_.png",
+            "label": 1,
+            "output": 0.12867972254753113
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10947_.png",
+            "label": 1,
+            "output": 0.12792551517486572
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13304_.png",
+            "label": 1,
+            "output": 0.12636341154575348
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07730_.png",
+            "label": 1,
+            "output": 0.12629692256450653
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08287_.png",
+            "label": 1,
+            "output": 0.12619620561599731
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11192_.png",
+            "label": 1,
+            "output": 0.1255735158920288
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11274_.png",
+            "label": 1,
+            "output": 0.12547388672828674
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10438_.png",
+            "label": 1,
+            "output": 0.12539063394069672
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13643_.png",
+            "label": 1,
+            "output": 0.1250767558813095
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08682_.png",
+            "label": 1,
+            "output": 0.12411492317914963
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07710_.png",
+            "label": 1,
+            "output": 0.12409649789333344
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08150_.png",
+            "label": 1,
+            "output": 0.12290646880865097
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09976_.png",
+            "label": 1,
+            "output": 0.12236727029085159
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07909_.png",
+            "label": 1,
+            "output": 0.12185519933700562
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13235_.png",
+            "label": 1,
+            "output": 0.12181224673986435
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08577_.png",
+            "label": 1,
+            "output": 0.12134656310081482
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09139_.png",
+            "label": 1,
+            "output": 0.1211208775639534
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11728_.png",
+            "label": 1,
+            "output": 0.12079357355833054
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11146_.png",
+            "label": 1,
+            "output": 0.12056105583906174
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07814_.png",
+            "label": 1,
+            "output": 0.12051080167293549
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13234_.png",
+            "label": 1,
+            "output": 0.12032698094844818
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10362_.png",
+            "label": 1,
+            "output": 0.1198844388127327
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10904_.png",
+            "label": 1,
+            "output": 0.11975981295108795
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12121_.png",
+            "label": 1,
+            "output": 0.11975013464689255
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08006_.png",
+            "label": 1,
+            "output": 0.11945801228284836
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12699_.png",
+            "label": 1,
+            "output": 0.11923719197511673
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13540_.png",
+            "label": 1,
+            "output": 0.11882403492927551
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10640_.png",
+            "label": 1,
+            "output": 0.11864787340164185
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11814_.png",
+            "label": 1,
+            "output": 0.1185070052742958
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09580_.png",
+            "label": 1,
+            "output": 0.11820364743471146
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11047_.png",
+            "label": 1,
+            "output": 0.11722447723150253
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10460_.png",
+            "label": 1,
+            "output": 0.11713230609893799
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08809_.png",
+            "label": 1,
+            "output": 0.11705091595649719
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10469_.png",
+            "label": 1,
+            "output": 0.11690988391637802
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11950_.png",
+            "label": 1,
+            "output": 0.11633797734975815
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12814_.png",
+            "label": 1,
+            "output": 0.11629818379878998
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12890_.png",
+            "label": 1,
+            "output": 0.11602064222097397
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12273_.png",
+            "label": 1,
+            "output": 0.1159256249666214
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08352_.png",
+            "label": 1,
+            "output": 0.11568798869848251
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11847_.png",
+            "label": 1,
+            "output": 0.11551602929830551
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09699_.png",
+            "label": 1,
+            "output": 0.11536698788404465
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11651_.png",
+            "label": 1,
+            "output": 0.11473014205694199
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11463_.png",
+            "label": 1,
+            "output": 0.11458007991313934
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11138_.png",
+            "label": 1,
+            "output": 0.11445401608943939
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12049_.png",
+            "label": 1,
+            "output": 0.11441198736429214
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08531_.png",
+            "label": 1,
+            "output": 0.11394902318716049
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07776_.png",
+            "label": 1,
+            "output": 0.11305858939886093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09915_.png",
+            "label": 1,
+            "output": 0.11276216804981232
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11501_.png",
+            "label": 1,
+            "output": 0.11275941133499146
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07512_.png",
+            "label": 1,
+            "output": 0.11273515224456787
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09612_.png",
+            "label": 1,
+            "output": 0.1122027263045311
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12191_.png",
+            "label": 1,
+            "output": 0.11163778603076935
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10484_.png",
+            "label": 1,
+            "output": 0.11120733618736267
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08793_.png",
+            "label": 1,
+            "output": 0.11105547100305557
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07791_.png",
+            "label": 1,
+            "output": 0.1100144311785698
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08721_.png",
+            "label": 1,
+            "output": 0.10922259837388992
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09492_.png",
+            "label": 1,
+            "output": 0.10881462693214417
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08568_.png",
+            "label": 1,
+            "output": 0.10879488289356232
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10504_.png",
+            "label": 1,
+            "output": 0.10879024118185043
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11631_.png",
+            "label": 1,
+            "output": 0.10873933136463165
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09107_.png",
+            "label": 1,
+            "output": 0.10848874598741531
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11966_.png",
+            "label": 1,
+            "output": 0.1084660068154335
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12781_.png",
+            "label": 1,
+            "output": 0.10820704698562622
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11173_.png",
+            "label": 1,
+            "output": 0.1081780269742012
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10756_.png",
+            "label": 1,
+            "output": 0.10791186988353729
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10600_.png",
+            "label": 1,
+            "output": 0.10782469063997269
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11730_.png",
+            "label": 1,
+            "output": 0.1068960502743721
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07488_.png",
+            "label": 1,
+            "output": 0.10674888640642166
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11800_.png",
+            "label": 1,
+            "output": 0.10634931176900864
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10833_.png",
+            "label": 1,
+            "output": 0.10626339912414551
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12213_.png",
+            "label": 1,
+            "output": 0.1062297597527504
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12752_.png",
+            "label": 1,
+            "output": 0.10618634521961212
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12721_.png",
+            "label": 1,
+            "output": 0.10566987842321396
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10258_.png",
+            "label": 1,
+            "output": 0.10541975498199463
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08632_.png",
+            "label": 1,
+            "output": 0.10513762384653091
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13660_.png",
+            "label": 1,
+            "output": 0.10487239062786102
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08496_.png",
+            "label": 1,
+            "output": 0.10472030192613602
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12923_.png",
+            "label": 1,
+            "output": 0.10467200726270676
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07526_.png",
+            "label": 1,
+            "output": 0.10459606349468231
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10270_.png",
+            "label": 1,
+            "output": 0.10402771830558777
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10960_.png",
+            "label": 1,
+            "output": 0.10338810086250305
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08609_.png",
+            "label": 1,
+            "output": 0.10330190509557724
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13185_.png",
+            "label": 1,
+            "output": 0.10261926800012589
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10666_.png",
+            "label": 1,
+            "output": 0.10235542804002762
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07838_.png",
+            "label": 1,
+            "output": 0.10235143452882767
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08259_.png",
+            "label": 1,
+            "output": 0.10233253985643387
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08379_.png",
+            "label": 1,
+            "output": 0.1021096408367157
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09671_.png",
+            "label": 1,
+            "output": 0.10175999999046326
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10834_.png",
+            "label": 1,
+            "output": 0.10160425305366516
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11030_.png",
+            "label": 1,
+            "output": 0.10154709964990616
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13499_.png",
+            "label": 1,
+            "output": 0.10139121115207672
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08171_.png",
+            "label": 1,
+            "output": 0.10109809041023254
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11663_.png",
+            "label": 1,
+            "output": 0.10108324885368347
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10703_.png",
+            "label": 1,
+            "output": 0.10105407983064651
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09134_.png",
+            "label": 1,
+            "output": 0.10097399353981018
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09538_.png",
+            "label": 1,
+            "output": 0.10085446387529373
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09919_.png",
+            "label": 1,
+            "output": 0.10057782381772995
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07738_.png",
+            "label": 1,
+            "output": 0.10039093345403671
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09705_.png",
+            "label": 1,
+            "output": 0.1001812219619751
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07561_.png",
+            "label": 1,
+            "output": 0.09972457587718964
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10443_.png",
+            "label": 1,
+            "output": 0.09952890872955322
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13644_.png",
+            "label": 1,
+            "output": 0.09946590662002563
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13505_.png",
+            "label": 1,
+            "output": 0.09935575723648071
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10765_.png",
+            "label": 1,
+            "output": 0.09894709289073944
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09726_.png",
+            "label": 1,
+            "output": 0.09870046377182007
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08630_.png",
+            "label": 1,
+            "output": 0.09857416152954102
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08501_.png",
+            "label": 1,
+            "output": 0.09838029742240906
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09048_.png",
+            "label": 1,
+            "output": 0.09827228635549545
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10397_.png",
+            "label": 1,
+            "output": 0.09827154874801636
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12395_.png",
+            "label": 1,
+            "output": 0.09816980361938477
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11449_.png",
+            "label": 1,
+            "output": 0.09795510768890381
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11435_.png",
+            "label": 1,
+            "output": 0.09789246320724487
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09983_.png",
+            "label": 1,
+            "output": 0.09776748716831207
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08626_.png",
+            "label": 1,
+            "output": 0.0974636897444725
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13013_.png",
+            "label": 1,
+            "output": 0.09719828516244888
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09646_.png",
+            "label": 1,
+            "output": 0.09628987312316895
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07684_.png",
+            "label": 1,
+            "output": 0.09625740349292755
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13513_.png",
+            "label": 1,
+            "output": 0.09588394314050674
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13674_.png",
+            "label": 1,
+            "output": 0.09585713595151901
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09390_.png",
+            "label": 1,
+            "output": 0.0948958471417427
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10330_.png",
+            "label": 1,
+            "output": 0.09436266124248505
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09202_.png",
+            "label": 1,
+            "output": 0.09412530064582825
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13635_.png",
+            "label": 1,
+            "output": 0.09397448599338531
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09243_.png",
+            "label": 1,
+            "output": 0.09388720244169235
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09034_.png",
+            "label": 1,
+            "output": 0.09388533979654312
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13646_.png",
+            "label": 1,
+            "output": 0.09380680322647095
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08899_.png",
+            "label": 1,
+            "output": 0.09367752820253372
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11078_.png",
+            "label": 1,
+            "output": 0.09318336844444275
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07985_.png",
+            "label": 1,
+            "output": 0.092958003282547
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11089_.png",
+            "label": 1,
+            "output": 0.09260759502649307
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11832_.png",
+            "label": 1,
+            "output": 0.09221182763576508
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07515_.png",
+            "label": 1,
+            "output": 0.09216373413801193
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10551_.png",
+            "label": 1,
+            "output": 0.09198477864265442
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10738_.png",
+            "label": 1,
+            "output": 0.09149453043937683
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12107_.png",
+            "label": 1,
+            "output": 0.09141954779624939
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07621_.png",
+            "label": 1,
+            "output": 0.09129609912633896
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08602_.png",
+            "label": 1,
+            "output": 0.09122107923030853
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13537_.png",
+            "label": 1,
+            "output": 0.0909821167588234
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09203_.png",
+            "label": 1,
+            "output": 0.09092861413955688
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08699_.png",
+            "label": 1,
+            "output": 0.0908929854631424
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13205_.png",
+            "label": 1,
+            "output": 0.0908236876130104
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07995_.png",
+            "label": 1,
+            "output": 0.09076937288045883
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09720_.png",
+            "label": 1,
+            "output": 0.09063407778739929
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08172_.png",
+            "label": 1,
+            "output": 0.09060787409543991
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08387_.png",
+            "label": 1,
+            "output": 0.09001897275447845
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08714_.png",
+            "label": 1,
+            "output": 0.09001576900482178
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09584_.png",
+            "label": 1,
+            "output": 0.08992999792098999
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08482_.png",
+            "label": 1,
+            "output": 0.08985576033592224
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09582_.png",
+            "label": 1,
+            "output": 0.08934511989355087
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13721_.png",
+            "label": 1,
+            "output": 0.08913104981184006
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09189_.png",
+            "label": 1,
+            "output": 0.08872600644826889
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08520_.png",
+            "label": 1,
+            "output": 0.08858075737953186
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09180_.png",
+            "label": 1,
+            "output": 0.08842204511165619
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12227_.png",
+            "label": 1,
+            "output": 0.08819907903671265
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08915_.png",
+            "label": 1,
+            "output": 0.0878155305981636
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12564_.png",
+            "label": 1,
+            "output": 0.08770183473825455
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10768_.png",
+            "label": 1,
+            "output": 0.08758946508169174
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10278_.png",
+            "label": 1,
+            "output": 0.08758596330881119
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09733_.png",
+            "label": 1,
+            "output": 0.08710732311010361
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08826_.png",
+            "label": 1,
+            "output": 0.0868041142821312
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08252_.png",
+            "label": 1,
+            "output": 0.08655770123004913
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13228_.png",
+            "label": 1,
+            "output": 0.0862785205245018
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09095_.png",
+            "label": 1,
+            "output": 0.08541013300418854
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08611_.png",
+            "label": 1,
+            "output": 0.08529748022556305
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08138_.png",
+            "label": 1,
+            "output": 0.08529017865657806
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08122_.png",
+            "label": 1,
+            "output": 0.08527185767889023
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11738_.png",
+            "label": 1,
+            "output": 0.08512378484010696
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08278_.png",
+            "label": 1,
+            "output": 0.08506828546524048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12797_.png",
+            "label": 1,
+            "output": 0.08494619280099869
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08333_.png",
+            "label": 1,
+            "output": 0.08462217450141907
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08423_.png",
+            "label": 1,
+            "output": 0.08447007089853287
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11448_.png",
+            "label": 1,
+            "output": 0.08441547304391861
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11916_.png",
+            "label": 1,
+            "output": 0.0843084380030632
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13329_.png",
+            "label": 1,
+            "output": 0.0839906707406044
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13260_.png",
+            "label": 1,
+            "output": 0.08396794646978378
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08950_.png",
+            "label": 1,
+            "output": 0.08354761451482773
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08857_.png",
+            "label": 1,
+            "output": 0.0833011120557785
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11116_.png",
+            "label": 1,
+            "output": 0.08282283693552017
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07527_.png",
+            "label": 1,
+            "output": 0.08210045844316483
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13689_.png",
+            "label": 1,
+            "output": 0.08206139504909515
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09249_.png",
+            "label": 1,
+            "output": 0.08177126944065094
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09661_.png",
+            "label": 1,
+            "output": 0.08171878010034561
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09815_.png",
+            "label": 1,
+            "output": 0.08170758187770844
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07962_.png",
+            "label": 1,
+            "output": 0.0815766453742981
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13536_.png",
+            "label": 1,
+            "output": 0.08075737208127975
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08023_.png",
+            "label": 1,
+            "output": 0.08030910789966583
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13418_.png",
+            "label": 1,
+            "output": 0.08014519512653351
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11037_.png",
+            "label": 1,
+            "output": 0.08007411658763885
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11824_.png",
+            "label": 1,
+            "output": 0.07939430326223373
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09567_.png",
+            "label": 1,
+            "output": 0.07892920821905136
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13081_.png",
+            "label": 1,
+            "output": 0.078837551176548
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10875_.png",
+            "label": 1,
+            "output": 0.0786827877163887
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11841_.png",
+            "label": 1,
+            "output": 0.07827071845531464
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12082_.png",
+            "label": 1,
+            "output": 0.07824883610010147
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13575_.png",
+            "label": 1,
+            "output": 0.07817748188972473
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11688_.png",
+            "label": 1,
+            "output": 0.07817090302705765
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10997_.png",
+            "label": 1,
+            "output": 0.0781698077917099
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10702_.png",
+            "label": 1,
+            "output": 0.07801315933465958
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07855_.png",
+            "label": 1,
+            "output": 0.07763219624757767
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13271_.png",
+            "label": 1,
+            "output": 0.07727330178022385
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09256_.png",
+            "label": 1,
+            "output": 0.07689644396305084
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10623_.png",
+            "label": 1,
+            "output": 0.07645358890295029
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09703_.png",
+            "label": 1,
+            "output": 0.07621040940284729
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08120_.png",
+            "label": 1,
+            "output": 0.07608368247747421
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08860_.png",
+            "label": 1,
+            "output": 0.07569237053394318
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12571_.png",
+            "label": 1,
+            "output": 0.07565213739871979
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10844_.png",
+            "label": 1,
+            "output": 0.07546751946210861
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11775_.png",
+            "label": 1,
+            "output": 0.07522983849048615
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07639_.png",
+            "label": 1,
+            "output": 0.07485809177160263
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08944_.png",
+            "label": 1,
+            "output": 0.0748063176870346
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11002_.png",
+            "label": 1,
+            "output": 0.07454660534858704
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13712_.png",
+            "label": 1,
+            "output": 0.07391396909952164
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09069_.png",
+            "label": 1,
+            "output": 0.07385309785604477
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08275_.png",
+            "label": 1,
+            "output": 0.073446124792099
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07910_.png",
+            "label": 1,
+            "output": 0.0731872022151947
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10465_.png",
+            "label": 1,
+            "output": 0.07300183176994324
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09768_.png",
+            "label": 1,
+            "output": 0.07241637259721756
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10542_.png",
+            "label": 1,
+            "output": 0.07238609343767166
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11900_.png",
+            "label": 1,
+            "output": 0.0723641887307167
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09468_.png",
+            "label": 1,
+            "output": 0.07218053936958313
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12606_.png",
+            "label": 1,
+            "output": 0.07199320197105408
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09840_.png",
+            "label": 1,
+            "output": 0.07146637886762619
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10937_.png",
+            "label": 1,
+            "output": 0.07143963873386383
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08157_.png",
+            "label": 1,
+            "output": 0.0709853395819664
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10376_.png",
+            "label": 1,
+            "output": 0.0708489939570427
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09667_.png",
+            "label": 1,
+            "output": 0.07084178179502487
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10262_.png",
+            "label": 1,
+            "output": 0.07076117396354675
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07803_.png",
+            "label": 1,
+            "output": 0.07059834897518158
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11439_.png",
+            "label": 1,
+            "output": 0.07052981108427048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09071_.png",
+            "label": 1,
+            "output": 0.07044457644224167
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11248_.png",
+            "label": 1,
+            "output": 0.07004867494106293
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09761_.png",
+            "label": 1,
+            "output": 0.06918984651565552
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12558_.png",
+            "label": 1,
+            "output": 0.06871666759252548
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13558_.png",
+            "label": 1,
+            "output": 0.06865095347166061
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10012_.png",
+            "label": 1,
+            "output": 0.06796124577522278
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07565_.png",
+            "label": 1,
+            "output": 0.06757594645023346
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11587_.png",
+            "label": 1,
+            "output": 0.06732765585184097
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10810_.png",
+            "label": 1,
+            "output": 0.06696085631847382
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09823_.png",
+            "label": 1,
+            "output": 0.06691896915435791
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08099_.png",
+            "label": 1,
+            "output": 0.06670323759317398
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10424_.png",
+            "label": 1,
+            "output": 0.06608901917934418
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07755_.png",
+            "label": 1,
+            "output": 0.0657409280538559
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08432_.png",
+            "label": 1,
+            "output": 0.06559320539236069
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07880_.png",
+            "label": 1,
+            "output": 0.0654662549495697
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09029_.png",
+            "label": 1,
+            "output": 0.06531712412834167
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12261_.png",
+            "label": 1,
+            "output": 0.0650225505232811
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07847_.png",
+            "label": 1,
+            "output": 0.06480854004621506
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09982_.png",
+            "label": 1,
+            "output": 0.06465006619691849
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12855_.png",
+            "label": 1,
+            "output": 0.06442445516586304
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13621_.png",
+            "label": 1,
+            "output": 0.06434013694524765
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10751_.png",
+            "label": 1,
+            "output": 0.06420823931694031
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08134_.png",
+            "label": 1,
+            "output": 0.06405388563871384
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11586_.png",
+            "label": 1,
+            "output": 0.0637434646487236
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11250_.png",
+            "label": 1,
+            "output": 0.06357263028621674
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12075_.png",
+            "label": 1,
+            "output": 0.0635061264038086
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10462_.png",
+            "label": 1,
+            "output": 0.06313414871692657
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13565_.png",
+            "label": 1,
+            "output": 0.06311244517564774
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10520_.png",
+            "label": 1,
+            "output": 0.06309178471565247
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13197_.png",
+            "label": 1,
+            "output": 0.0630214735865593
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11539_.png",
+            "label": 1,
+            "output": 0.06281004846096039
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08555_.png",
+            "label": 1,
+            "output": 0.06237922981381416
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08479_.png",
+            "label": 1,
+            "output": 0.06226731091737747
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09825_.png",
+            "label": 1,
+            "output": 0.06206384301185608
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12187_.png",
+            "label": 1,
+            "output": 0.06177845597267151
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12350_.png",
+            "label": 1,
+            "output": 0.061754439026117325
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09577_.png",
+            "label": 1,
+            "output": 0.06175248697400093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08224_.png",
+            "label": 1,
+            "output": 0.061547666788101196
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11304_.png",
+            "label": 1,
+            "output": 0.0614069364964962
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12611_.png",
+            "label": 1,
+            "output": 0.06130615621805191
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07764_.png",
+            "label": 1,
+            "output": 0.06124507635831833
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11876_.png",
+            "label": 1,
+            "output": 0.06121566519141197
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08973_.png",
+            "label": 1,
+            "output": 0.06069052219390869
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10737_.png",
+            "label": 1,
+            "output": 0.06052551418542862
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08484_.png",
+            "label": 1,
+            "output": 0.06027670577168465
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08190_.png",
+            "label": 1,
+            "output": 0.06018826737999916
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11725_.png",
+            "label": 1,
+            "output": 0.060140881687402725
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13720_.png",
+            "label": 1,
+            "output": 0.05991382524371147
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10734_.png",
+            "label": 1,
+            "output": 0.059852126985788345
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12476_.png",
+            "label": 1,
+            "output": 0.059817928820848465
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09461_.png",
+            "label": 1,
+            "output": 0.05955298990011215
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08979_.png",
+            "label": 1,
+            "output": 0.0594780333340168
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07926_.png",
+            "label": 1,
+            "output": 0.059374935925006866
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08263_.png",
+            "label": 1,
+            "output": 0.05926449969410896
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10367_.png",
+            "label": 1,
+            "output": 0.05913064628839493
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10826_.png",
+            "label": 1,
+            "output": 0.05888218805193901
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07994_.png",
+            "label": 1,
+            "output": 0.058539777994155884
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10000_.png",
+            "label": 1,
+            "output": 0.05837640166282654
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10316_.png",
+            "label": 1,
+            "output": 0.05807717144489288
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09451_.png",
+            "label": 1,
+            "output": 0.05800212547183037
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11147_.png",
+            "label": 1,
+            "output": 0.05793571472167969
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10592_.png",
+            "label": 1,
+            "output": 0.057737477123737335
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13034_.png",
+            "label": 1,
+            "output": 0.057586126029491425
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08165_.png",
+            "label": 1,
+            "output": 0.05713682249188423
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08323_.png",
+            "label": 1,
+            "output": 0.05712356045842171
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09283_.png",
+            "label": 1,
+            "output": 0.05688603222370148
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12413_.png",
+            "label": 1,
+            "output": 0.056571561843156815
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13011_.png",
+            "label": 1,
+            "output": 0.05655326694250107
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11949_.png",
+            "label": 1,
+            "output": 0.056391313672065735
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10358_.png",
+            "label": 1,
+            "output": 0.0562826469540596
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12302_.png",
+            "label": 1,
+            "output": 0.055873285979032516
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11694_.png",
+            "label": 1,
+            "output": 0.05571603775024414
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08710_.png",
+            "label": 1,
+            "output": 0.055641718208789825
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12929_.png",
+            "label": 1,
+            "output": 0.05555474013090134
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07709_.png",
+            "label": 1,
+            "output": 0.05527831241488457
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13311_.png",
+            "label": 1,
+            "output": 0.05493682622909546
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13400_.png",
+            "label": 1,
+            "output": 0.0541524812579155
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12674_.png",
+            "label": 1,
+            "output": 0.05412009730935097
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09892_.png",
+            "label": 1,
+            "output": 0.053975291550159454
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09561_.png",
+            "label": 1,
+            "output": 0.05395565181970596
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10700_.png",
+            "label": 1,
+            "output": 0.053889211267232895
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09874_.png",
+            "label": 1,
+            "output": 0.05385837331414223
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10273_.png",
+            "label": 1,
+            "output": 0.05375652015209198
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12804_.png",
+            "label": 1,
+            "output": 0.05358409881591797
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12968_.png",
+            "label": 1,
+            "output": 0.05353963002562523
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11973_.png",
+            "label": 1,
+            "output": 0.05244564265012741
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09749_.png",
+            "label": 1,
+            "output": 0.05221652612090111
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13078_.png",
+            "label": 1,
+            "output": 0.05207768827676773
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11563_.png",
+            "label": 1,
+            "output": 0.051800090819597244
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12694_.png",
+            "label": 1,
+            "output": 0.051666583865880966
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11042_.png",
+            "label": 1,
+            "output": 0.05134327709674835
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13465_.png",
+            "label": 1,
+            "output": 0.05122988298535347
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09952_.png",
+            "label": 1,
+            "output": 0.050619665533304214
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12325_.png",
+            "label": 1,
+            "output": 0.05058448761701584
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08561_.png",
+            "label": 1,
+            "output": 0.05054756626486778
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10619_.png",
+            "label": 1,
+            "output": 0.05050388723611832
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10390_.png",
+            "label": 1,
+            "output": 0.050413575023412704
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09650_.png",
+            "label": 1,
+            "output": 0.0503019355237484
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10419_.png",
+            "label": 1,
+            "output": 0.05020129308104515
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11257_.png",
+            "label": 1,
+            "output": 0.05011158064007759
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09198_.png",
+            "label": 1,
+            "output": 0.04996342957019806
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09004_.png",
+            "label": 1,
+            "output": 0.04916489124298096
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09738_.png",
+            "label": 1,
+            "output": 0.04906102269887924
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11249_.png",
+            "label": 1,
+            "output": 0.048890065401792526
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08129_.png",
+            "label": 1,
+            "output": 0.0483371876180172
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13392_.png",
+            "label": 1,
+            "output": 0.04824952781200409
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07919_.png",
+            "label": 1,
+            "output": 0.04816794767975807
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08604_.png",
+            "label": 1,
+            "output": 0.04796180874109268
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09460_.png",
+            "label": 1,
+            "output": 0.0473773218691349
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11535_.png",
+            "label": 1,
+            "output": 0.04727185517549515
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11724_.png",
+            "label": 1,
+            "output": 0.046991415321826935
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08902_.png",
+            "label": 1,
+            "output": 0.04664312303066254
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08092_.png",
+            "label": 1,
+            "output": 0.04657655581831932
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08523_.png",
+            "label": 1,
+            "output": 0.04636912792921066
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11926_.png",
+            "label": 1,
+            "output": 0.04626770690083504
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11242_.png",
+            "label": 1,
+            "output": 0.046031221747398376
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09807_.png",
+            "label": 1,
+            "output": 0.04567526653409004
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12196_.png",
+            "label": 1,
+            "output": 0.0455445796251297
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12507_.png",
+            "label": 1,
+            "output": 0.045279864221811295
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10394_.png",
+            "label": 1,
+            "output": 0.045021481812000275
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13669_.png",
+            "label": 1,
+            "output": 0.044982004910707474
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07767_.png",
+            "label": 1,
+            "output": 0.04484220966696739
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09153_.png",
+            "label": 1,
+            "output": 0.04467128589749336
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08711_.png",
+            "label": 1,
+            "output": 0.04465888813138008
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13396_.png",
+            "label": 1,
+            "output": 0.04426709935069084
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07795_.png",
+            "label": 1,
+            "output": 0.044220104813575745
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12572_.png",
+            "label": 1,
+            "output": 0.04415799304842949
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12245_.png",
+            "label": 1,
+            "output": 0.04413025826215744
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11658_.png",
+            "label": 1,
+            "output": 0.04399175941944122
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13446_.png",
+            "label": 1,
+            "output": 0.043820299208164215
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10597_.png",
+            "label": 1,
+            "output": 0.04327800124883652
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10555_.png",
+            "label": 1,
+            "output": 0.04310590773820877
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07653_.png",
+            "label": 1,
+            "output": 0.043100666254758835
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08388_.png",
+            "label": 1,
+            "output": 0.042895108461380005
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11934_.png",
+            "label": 1,
+            "output": 0.042845506221055984
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07487_.png",
+            "label": 1,
+            "output": 0.04267950356006622
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13459_.png",
+            "label": 1,
+            "output": 0.04257940873503685
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13172_.png",
+            "label": 1,
+            "output": 0.04246902838349342
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11013_.png",
+            "label": 1,
+            "output": 0.042463917285203934
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08558_.png",
+            "label": 1,
+            "output": 0.0422043539583683
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07492_.png",
+            "label": 1,
+            "output": 0.042199283838272095
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08785_.png",
+            "label": 1,
+            "output": 0.04203740507364273
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12311_.png",
+            "label": 1,
+            "output": 0.04201353341341019
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09500_.png",
+            "label": 1,
+            "output": 0.04187724366784096
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09641_.png",
+            "label": 1,
+            "output": 0.04105594754219055
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10803_.png",
+            "label": 1,
+            "output": 0.04100821539759636
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08036_.png",
+            "label": 1,
+            "output": 0.04096042737364769
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12678_.png",
+            "label": 1,
+            "output": 0.04071362316608429
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11763_.png",
+            "label": 1,
+            "output": 0.04032428562641144
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08048_.png",
+            "label": 1,
+            "output": 0.04028299078345299
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12262_.png",
+            "label": 1,
+            "output": 0.0402134507894516
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11375_.png",
+            "label": 1,
+            "output": 0.03986918926239014
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13016_.png",
+            "label": 1,
+            "output": 0.03956407308578491
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09397_.png",
+            "label": 1,
+            "output": 0.03915399685502052
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13609_.png",
+            "label": 1,
+            "output": 0.03909052535891533
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08075_.png",
+            "label": 1,
+            "output": 0.03908345103263855
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13633_.png",
+            "label": 1,
+            "output": 0.038961488753557205
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10843_.png",
+            "label": 1,
+            "output": 0.038657672703266144
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10333_.png",
+            "label": 1,
+            "output": 0.038217805325984955
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12934_.png",
+            "label": 1,
+            "output": 0.038155440241098404
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13715_.png",
+            "label": 1,
+            "output": 0.03791859373450279
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08660_.png",
+            "label": 1,
+            "output": 0.03764401748776436
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12630_.png",
+            "label": 1,
+            "output": 0.03746619448065758
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08777_.png",
+            "label": 1,
+            "output": 0.03702746704220772
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08801_.png",
+            "label": 1,
+            "output": 0.03697006776928902
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08015_.png",
+            "label": 1,
+            "output": 0.036928460001945496
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08455_.png",
+            "label": 1,
+            "output": 0.03684348240494728
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11609_.png",
+            "label": 1,
+            "output": 0.036821138113737106
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11989_.png",
+            "label": 1,
+            "output": 0.03680460900068283
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12496_.png",
+            "label": 1,
+            "output": 0.03675787150859833
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08177_.png",
+            "label": 1,
+            "output": 0.03633391484618187
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12745_.png",
+            "label": 1,
+            "output": 0.0362362377345562
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10269_.png",
+            "label": 1,
+            "output": 0.03600156679749489
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12899_.png",
+            "label": 1,
+            "output": 0.03587467223405838
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13507_.png",
+            "label": 1,
+            "output": 0.03574492409825325
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11444_.png",
+            "label": 1,
+            "output": 0.03571121022105217
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10506_.png",
+            "label": 1,
+            "output": 0.03560372442007065
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08355_.png",
+            "label": 1,
+            "output": 0.03538225218653679
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09873_.png",
+            "label": 1,
+            "output": 0.03523966297507286
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12022_.png",
+            "label": 1,
+            "output": 0.0351540707051754
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12993_.png",
+            "label": 1,
+            "output": 0.03504972159862518
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07618_.png",
+            "label": 1,
+            "output": 0.03467077389359474
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12645_.png",
+            "label": 1,
+            "output": 0.03456008806824684
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09282_.png",
+            "label": 1,
+            "output": 0.034310806542634964
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13501_.png",
+            "label": 1,
+            "output": 0.03426848351955414
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12036_.png",
+            "label": 1,
+            "output": 0.03405314311385155
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08115_.png",
+            "label": 1,
+            "output": 0.034053001552820206
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08982_.png",
+            "label": 1,
+            "output": 0.0339202806353569
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10909_.png",
+            "label": 1,
+            "output": 0.03352704644203186
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11636_.png",
+            "label": 1,
+            "output": 0.033519573509693146
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11992_.png",
+            "label": 1,
+            "output": 0.03350209817290306
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13135_.png",
+            "label": 1,
+            "output": 0.03343725576996803
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13137_.png",
+            "label": 1,
+            "output": 0.03336696699261665
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09742_.png",
+            "label": 1,
+            "output": 0.033253565430641174
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13662_.png",
+            "label": 1,
+            "output": 0.033192675560712814
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07630_.png",
+            "label": 1,
+            "output": 0.033073313534259796
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10399_.png",
+            "label": 1,
+            "output": 0.03275201842188835
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09455_.png",
+            "label": 1,
+            "output": 0.03264337033033371
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11866_.png",
+            "label": 1,
+            "output": 0.03255726397037506
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12354_.png",
+            "label": 1,
+            "output": 0.03253298997879028
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09947_.png",
+            "label": 1,
+            "output": 0.03247816488146782
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08080_.png",
+            "label": 1,
+            "output": 0.03247766196727753
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08430_.png",
+            "label": 1,
+            "output": 0.03201299160718918
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08332_.png",
+            "label": 1,
+            "output": 0.03180120512843132
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13377_.png",
+            "label": 1,
+            "output": 0.03156489133834839
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09149_.png",
+            "label": 1,
+            "output": 0.03154199570417404
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09470_.png",
+            "label": 1,
+            "output": 0.031237859278917313
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08307_.png",
+            "label": 1,
+            "output": 0.031117308884859085
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11562_.png",
+            "label": 1,
+            "output": 0.030983859673142433
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11976_.png",
+            "label": 1,
+            "output": 0.03088662214577198
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10992_.png",
+            "label": 1,
+            "output": 0.03084353171288967
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07830_.png",
+            "label": 1,
+            "output": 0.030789848417043686
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12930_.png",
+            "label": 1,
+            "output": 0.030431989580392838
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08864_.png",
+            "label": 1,
+            "output": 0.030422912910580635
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13259_.png",
+            "label": 1,
+            "output": 0.030324500054121017
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09718_.png",
+            "label": 1,
+            "output": 0.030321456491947174
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08269_.png",
+            "label": 1,
+            "output": 0.030159739777445793
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08988_.png",
+            "label": 1,
+            "output": 0.02981455624103546
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13566_.png",
+            "label": 1,
+            "output": 0.02970597706735134
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08236_.png",
+            "label": 1,
+            "output": 0.02954474464058876
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09791_.png",
+            "label": 1,
+            "output": 0.029479384422302246
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12818_.png",
+            "label": 1,
+            "output": 0.029424600303173065
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11378_.png",
+            "label": 1,
+            "output": 0.029322298243641853
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12701_.png",
+            "label": 1,
+            "output": 0.0291181318461895
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09877_.png",
+            "label": 1,
+            "output": 0.028710555285215378
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11541_.png",
+            "label": 1,
+            "output": 0.028554419055581093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10566_.png",
+            "label": 1,
+            "output": 0.028346538543701172
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12161_.png",
+            "label": 1,
+            "output": 0.028279513120651245
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12285_.png",
+            "label": 1,
+            "output": 0.027681924402713776
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11690_.png",
+            "label": 1,
+            "output": 0.027148207649588585
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09506_.png",
+            "label": 1,
+            "output": 0.026979655027389526
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07810_.png",
+            "label": 1,
+            "output": 0.02695699967443943
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12252_.png",
+            "label": 1,
+            "output": 0.02644309401512146
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11978_.png",
+            "label": 1,
+            "output": 0.02605602703988552
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09989_.png",
+            "label": 1,
+            "output": 0.02603873796761036
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12803_.png",
+            "label": 1,
+            "output": 0.025926467031240463
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07750_.png",
+            "label": 1,
+            "output": 0.025473766028881073
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13471_.png",
+            "label": 1,
+            "output": 0.02537023462355137
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07505_.png",
+            "label": 1,
+            "output": 0.025295061990618706
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11818_.png",
+            "label": 1,
+            "output": 0.0252852663397789
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07606_.png",
+            "label": 1,
+            "output": 0.025122836232185364
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11391_.png",
+            "label": 1,
+            "output": 0.024984102696180344
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13613_.png",
+            "label": 1,
+            "output": 0.02473006211221218
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09040_.png",
+            "label": 1,
+            "output": 0.02471066452562809
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08409_.png",
+            "label": 1,
+            "output": 0.024687910452485085
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13597_.png",
+            "label": 1,
+            "output": 0.024676840752363205
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09172_.png",
+            "label": 1,
+            "output": 0.024601072072982788
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11905_.png",
+            "label": 1,
+            "output": 0.024482103064656258
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13599_.png",
+            "label": 1,
+            "output": 0.02425491251051426
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08880_.png",
+            "label": 1,
+            "output": 0.02387090027332306
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08093_.png",
+            "label": 1,
+            "output": 0.02380479872226715
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09583_.png",
+            "label": 1,
+            "output": 0.023741425946354866
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09928_.png",
+            "label": 1,
+            "output": 0.02346901409327984
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07557_.png",
+            "label": 1,
+            "output": 0.02330951765179634
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12921_.png",
+            "label": 1,
+            "output": 0.02320181205868721
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07665_.png",
+            "label": 1,
+            "output": 0.022915998473763466
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09417_.png",
+            "label": 1,
+            "output": 0.022723395377397537
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12110_.png",
+            "label": 1,
+            "output": 0.02271111123263836
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09434_.png",
+            "label": 1,
+            "output": 0.02260301634669304
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08301_.png",
+            "label": 1,
+            "output": 0.022586150094866753
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08192_.png",
+            "label": 1,
+            "output": 0.021941056475043297
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08289_.png",
+            "label": 1,
+            "output": 0.021827377378940582
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09614_.png",
+            "label": 1,
+            "output": 0.02166764624416828
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11031_.png",
+            "label": 1,
+            "output": 0.021602841094136238
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11352_.png",
+            "label": 1,
+            "output": 0.02144787274301052
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08952_.png",
+            "label": 1,
+            "output": 0.021187799051404
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07757_.png",
+            "label": 1,
+            "output": 0.02107665315270424
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09005_.png",
+            "label": 1,
+            "output": 0.021049819886684418
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08613_.png",
+            "label": 1,
+            "output": 0.020704643800854683
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12799_.png",
+            "label": 1,
+            "output": 0.020333461463451385
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09388_.png",
+            "label": 1,
+            "output": 0.02033022977411747
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09509_.png",
+            "label": 1,
+            "output": 0.02027071826159954
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08347_.png",
+            "label": 1,
+            "output": 0.019794650375843048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13167_.png",
+            "label": 1,
+            "output": 0.019531136378645897
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12165_.png",
+            "label": 1,
+            "output": 0.01943814381957054
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11605_.png",
+            "label": 1,
+            "output": 0.019250720739364624
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12497_.png",
+            "label": 1,
+            "output": 0.01918429508805275
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10851_.png",
+            "label": 1,
+            "output": 0.019114648923277855
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11764_.png",
+            "label": 1,
+            "output": 0.01903984323143959
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11256_.png",
+            "label": 1,
+            "output": 0.01895364560186863
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11329_.png",
+            "label": 1,
+            "output": 0.0188323762267828
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13055_.png",
+            "label": 1,
+            "output": 0.018826093524694443
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08818_.png",
+            "label": 1,
+            "output": 0.018777865916490555
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12790_.png",
+            "label": 1,
+            "output": 0.01860412210226059
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09432_.png",
+            "label": 1,
+            "output": 0.018454238772392273
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07960_.png",
+            "label": 1,
+            "output": 0.01841007173061371
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13503_.png",
+            "label": 1,
+            "output": 0.018374299630522728
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10288_.png",
+            "label": 1,
+            "output": 0.018356528133153915
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11585_.png",
+            "label": 1,
+            "output": 0.01828799769282341
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11627_.png",
+            "label": 1,
+            "output": 0.018218092620372772
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09835_.png",
+            "label": 1,
+            "output": 0.01810990460216999
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11594_.png",
+            "label": 1,
+            "output": 0.017999155446887016
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10761_.png",
+            "label": 1,
+            "output": 0.017301732674241066
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08237_.png",
+            "label": 1,
+            "output": 0.017251310870051384
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09985_.png",
+            "label": 1,
+            "output": 0.017018254846334457
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13223_.png",
+            "label": 1,
+            "output": 0.017002051696181297
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11301_.png",
+            "label": 1,
+            "output": 0.016648970544338226
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09291_.png",
+            "label": 1,
+            "output": 0.016549991443753242
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08819_.png",
+            "label": 1,
+            "output": 0.016472388058900833
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10354_.png",
+            "label": 1,
+            "output": 0.01598440855741501
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13113_.png",
+            "label": 1,
+            "output": 0.015736794099211693
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12144_.png",
+            "label": 1,
+            "output": 0.015554017387330532
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11893_.png",
+            "label": 1,
+            "output": 0.015341772697865963
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11811_.png",
+            "label": 1,
+            "output": 0.014925616793334484
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07785_.png",
+            "label": 1,
+            "output": 0.014678149484097958
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12067_.png",
+            "label": 1,
+            "output": 0.01449735276401043
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10729_.png",
+            "label": 1,
+            "output": 0.014395876787602901
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09389_.png",
+            "label": 1,
+            "output": 0.014217739924788475
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12287_.png",
+            "label": 1,
+            "output": 0.014071312732994556
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08170_.png",
+            "label": 1,
+            "output": 0.013815559446811676
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13694_.png",
+            "label": 1,
+            "output": 0.013699723407626152
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07627_.png",
+            "label": 1,
+            "output": 0.01344984583556652
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10867_.png",
+            "label": 1,
+            "output": 0.0132928267121315
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11565_.png",
+            "label": 1,
+            "output": 0.013235930353403091
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08106_.png",
+            "label": 1,
+            "output": 0.01301480457186699
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08300_.png",
+            "label": 1,
+            "output": 0.01293005608022213
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12787_.png",
+            "label": 1,
+            "output": 0.01281832531094551
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12491_.png",
+            "label": 1,
+            "output": 0.01251019537448883
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08753_.png",
+            "label": 1,
+            "output": 0.01227029599249363
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10011_.png",
+            "label": 1,
+            "output": 0.012239698320627213
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12627_.png",
+            "label": 1,
+            "output": 0.011687356047332287
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08917_.png",
+            "label": 1,
+            "output": 0.011620363220572472
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11353_.png",
+            "label": 1,
+            "output": 0.011594771407544613
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13361_.png",
+            "label": 1,
+            "output": 0.011342491954565048
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08990_.png",
+            "label": 1,
+            "output": 0.011027120053768158
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11659_.png",
+            "label": 1,
+            "output": 0.010800893418490887
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_13447_.png",
+            "label": 1,
+            "output": 0.010265637189149857
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10318_.png",
+            "label": 1,
+            "output": 0.010152431204915047
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07811_.png",
+            "label": 1,
+            "output": 0.010022822767496109
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11200_.png",
+            "label": 1,
+            "output": 0.009966963902115822
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08752_.png",
+            "label": 1,
+            "output": 0.009463390335440636
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09043_.png",
+            "label": 1,
+            "output": 0.009118198417127132
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09938_.png",
+            "label": 1,
+            "output": 0.009115170687437057
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08702_.png",
+            "label": 1,
+            "output": 0.009045311249792576
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11343_.png",
+            "label": 1,
+            "output": 0.009019927121698856
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10492_.png",
+            "label": 1,
+            "output": 0.008813826367259026
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_07812_.png",
+            "label": 1,
+            "output": 0.008644858375191689
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12584_.png",
+            "label": 1,
+            "output": 0.008587407879531384
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_09619_.png",
+            "label": 1,
+            "output": 0.00847900751978159
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10480_.png",
+            "label": 1,
+            "output": 0.008370301686227322
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_08617_.png",
+            "label": 1,
+            "output": 0.007846721448004246
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_11111_.png",
+            "label": 1,
+            "output": 0.0071645136922597885
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_12199_.png",
+            "label": 1,
+            "output": 0.005967445205897093
+        },
+        {
+            "path": "data/test/spai/flux/1_fake/ComfyUI_10495_.png",
+            "label": 1,
+            "output": 0.004923723172396421
+        }
+    ]
+}

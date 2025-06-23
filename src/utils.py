@@ -49,7 +49,7 @@ class PadIfNeeded:
             return transforms.functional.pad(img, padding, fill=self.fill, padding_mode=self.padding_mode)
         return img
 
-def get_transform(split="train", crop=224, imgsize=256):
+def get_transform(split="train", crop=224, imgsize=224):
     if split == "train":
         return transforms.Compose(
             [
@@ -62,6 +62,21 @@ def get_transform(split="train", crop=224, imgsize=256):
                     mean=(0.48145466, 0.4578275, 0.40821073),
                     std=(0.26862954, 0.26130258, 0.27577711),
                 ),
+            ]
+        )
+    elif split == "train_gl":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
+                transforms.Lambda(lambda img: data_augment(img)),
+                transforms.RandomCrop(crop),
+                transforms.RandomHorizontalFlip(p=0.5),
+            ]
+        )
+    elif split == "val_gl":
+        return transforms.Compose(
+            [
+                PadIfNeeded(imgsize, imgsize),
             ]
         )
     elif split == "train_siglip":
@@ -226,6 +241,10 @@ def get_transforms(experiment):
         transforms_train = get_transform("train_siglip", crop=crop, imgsize=imgsize)
         transforms_val = get_transform("val_siglip", crop=crop, imgsize=imgsize)
         transforms_test = get_transform("test", crop=crop, imgsize=imgsize)
+    elif model_name == "global":
+        transforms_train = get_transform("train_gl", crop=crop, imgsize=imgsize)
+        transforms_val = get_transform("val_gl", crop=crop, imgsize=imgsize)
+        transforms_test = None
     return transforms_train, transforms_val, transforms_test
 
 def image_enlisting_collate_fn(
@@ -256,6 +275,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
+                    collate_fn=collate_fn if experiment.get("window_slide", False) else None,
                 )
         if split == "val":
             return DataLoader(
@@ -270,6 +290,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
+                    collate_fn=collate_fn if experiment.get("window_slide", False) else None,
                 )
     elif experiment["training_set"] == "ldm":
         if split == "train":
@@ -283,6 +304,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
+                    collate_fn=collate_fn if experiment.get("window_slide", False) else None,
                 )
         if split == "val":
             return DataLoader(
@@ -295,6 +317,7 @@ def get_loader(
                     pin_memory=True,
                     drop_last=False,
                     num_workers=workers,
+                    collate_fn=collate_fn if experiment.get("window_slide", False) else None,
                 )
     if split == "test":
         col = collate_fn if experiment["window_slide"] else None
@@ -378,32 +401,77 @@ def get_loader(
         ]
     
 def get_loaders(
-    experiment, transforms_train, transforms_val, transforms_test, workers, target="both"
+    experiment, transforms_train, transforms_val, transforms_test, workers, target="both", collate_fn=None
 ):
     train = get_loader(
         experiment,
         split="train",
         transforms=transforms_train,
         workers=workers,
-        target=target
+        target=target,
+        collate_fn=collate_fn
     )
     val = get_loader(
         experiment,
         split="val",
         transforms=transforms_val,
         workers=workers,
+        target=target,
+        collate_fn=collate_fn
     )
     test = get_loader(
         experiment,
         split="test",
         transforms=transforms_test,
         workers=workers,
+        target=target,
+        collate_fn=collate_fn
     )
     return train, val, test
 
-
-def get_generators():
+def get_real_images():
     return [
+        'data/test/biggan',
+        'data/test/cyclegan',
+        'data/test/gaugan',
+        'data/test/progan',
+        'data/test/biggan',
+        'data/test/stargan',
+        'data/test/stylegan',
+        'data/test/stylegan2',
+        'data/test/deepfake',
+        'data/test/crn',
+        'data/test/imle',
+        'data/test/san',
+        'data/test/seeingdark',
+        'data/test/whichfakeisreal',
+        'data/test/diffusion_datasets/laion',
+        'data/test/diffusion_datasets/imagenet',
+        'data/test/synthbuster/raise',
+    ]
+
+def get_generators(pair=False):
+    if pair:
+        return [
+            ("biggan", "biggan"),
+            ("cyclegan", "cyclegan"),
+            ("gaugan", "gaugan"),
+            ("progan", "progan"),
+            ("stargan", "stargan"),
+            ("stylegan", "stylegan"),
+            ("stylegan2", "stylegan2"),
+            ("deepfake", "deepfake"),
+            ("crn", "crn"),
+            ("imle", "imle"),
+            ("san", "san"),
+            ("seeingdark", "seeingdark"),
+            ("whichfaceisreal", "whichfaceisreal"),
+            ("diffusion_datasets/guided", "imagenet"),
+            ("diffusion_datasets/glide_100_10", "laion"),
+            ("synthbuster/firefly", "laion"),
+        ]
+    else:
+        return [
             "biggan",
             "cyclegan",
             "gaugan",
@@ -488,7 +556,7 @@ def data_augment(img):
 
     if random.random() < 0.5:
         method = sample_discrete(["cv2", "pil"])
-        qual = sample_discrete([30, 100])
+        qual = sample_discrete([30, 60, 100])
         img = jpeg_from_key(img, qual, method)
 
     return Image.fromarray(img)
@@ -641,62 +709,6 @@ class SupConLoss(nn.Module):
 SID Codebase
 """
 
-def extract_clip_features(
-        experiment,
-        dl=None,
-        model=None,
-        preprocess=None,
-        split="train",
-        ds_frac=0.1,
-        device=None,
-        target="both",
-        save=False,
-        workers=12,
-        use_transform=True,
-):
-    """
-    Extract CLIP features for the dataset.
-    """
-    if model is None:
-        model, preprocess = clip.load(experiment["backbone"][0], device=device)
-    model.to(device)
-    model.eval()    
-
-    # Dataloader
-    if dl is None:
-        if use_transform:
-            transforms_ = get_transform(split)
-        else:
-            transforms_ = preprocess
-        # Get the dataloader
-        dl = get_loader(
-            experiment=experiment,
-            split=split,
-            transforms=transforms_,
-            workers=workers,
-            ds_frac=ds_frac,
-            target=target
-        )
-    
-    features = []
-    # Get the features
-    with torch.no_grad():
-        for data in tqdm.tqdm(dl, desc="Extracting features"):
-            images, _ = data
-            images = images.to(device)
-            if split == "test":
-                images = images.view(-1, 3, 224, 224)
-            feature = model.encode_image(images)
-            features.append(feature.to(device))
-        features = torch.cat(features, dim=0).cpu()
-
-    if save:
-        os.makedirs(f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}", exist_ok=True)
-        torch.save(features, f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
-        print("Saved features to", f"{experiment['featpath']}/{split}/{'_'.join(experiment['classes'])}/{target}/features.pt")
-
-    return features
-
 def find_best_acc_threshold(y_true, y_pred):
     thresholds = np.linspace(0, 1, 100)
     best_accuracy = 0
@@ -773,9 +785,10 @@ def train(
     workers=2,
     device="cpu",
     store=False,
+    seed=0,
     **kwargs
 ):
-    seed_everything(0)
+    seed_everything(seed)
 
     if data is None:
         transforms_train, transforms_val, transforms_test = get_transforms(experiment)
@@ -785,6 +798,7 @@ def train(
             transforms_val=transforms_val,
             transforms_test=transforms_val, # transforms_test,
             workers=workers,
+            collate_fn=image_enlisting_collate_fn if experiment.get("window_slide", False) else None,
         )
     else:
         train_, val, test = data
@@ -986,127 +1000,3 @@ def patchify_image(
     img = img.contiguous()
     img = img.view(img.size(0), -1, img.size(3), kh, kw)
     return img
-
-def train_spai(
-    experiment,
-    model,
-    data=None,
-    loss_fn=bce_sum,
-    optimizer=None,
-    scheduler=None,
-    epochs=10,
-    workers=2,
-    device="cpu",
-    store=False,
-    **kwargs
-):
-    seed_everything(0)
-
-    if data is None:
-        transforms_train, transforms_val, transforms_test = get_transforms(experiment)
-        train_, val, test = get_loaders(
-            experiment=experiment,
-            transforms_train=transforms_train,
-            transforms_val=transforms_val,
-            transforms_test=transforms_val, # transforms_test,
-            workers=workers,
-        )
-    else:
-        train_, val, test = data
-    model.to(device)
-
-    if optimizer is None:
-        optimizer = torch.optim.Adam(model.parameters(), lr=experiment["lr"])
-    if scheduler is None:
-        scheduler = torch.optim.lr_scheduler.StepLR(
-            optimizer,
-            step_size=experiment["lr_step"],
-            gamma=experiment["lr_gamma"],
-        )
-    
-    print(json.dumps(experiment, indent=2))
-    print(kwargs)
-    results = {"val_loss": [], "val_ap": [], "val_auc": [], "test": {}}
-
-    train_loss = []
-    for epoch in range(epochs):
-        model.train()
-
-        with tqdm.tqdm(
-                total=len(train_),
-                desc=f"Epoch {epoch + 1}/{epochs}",
-                unit="batch",
-                ncols=100,
-            ) as pbar:
-            pbar.set_postfix({
-                "loss": torch.inf
-            })
-            for data in train_:
-                images, labels = data
-                images, labels = images.float().to(device), labels.float().to(device)
-                loss = loss_fn(model(images), labels)
-                train_loss.append(loss.item())
-                optimizer.zero_grad()
-                loss.backward()
-                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                optimizer.step()
-                pbar.set_postfix({
-                    "loss": loss.item()
-                })
-                pbar.update(1)
-            pbar.close()
-        
-        # Validation
-        model.eval()
-        y_true = []
-        y_score = []
-        
-        with torch.no_grad():
-            with tqdm.tqdm(
-                total=len(val),
-                desc="Validation",
-                unit="batch",
-                ncols=100
-            ) as pbar:
-                for data in val:
-                    images, labels = data
-                    images, labels = images.float().to(device), labels.float().to(device)
-                    scores = model.predict(images, **kwargs)
-                    y_true.extend(labels.cpu().numpy().tolist())
-                    y_score.extend(scores.tolist())
-                    pbar.update(1)  
-                pbar.close()
-    
-        val_ap = average_precision_score(y_true, y_score)
-        val_auc = roc_auc_score(y_true, y_score)
-        results["val_ap"].append(val_ap)
-        results["val_auc"].append(val_auc)
-        print(f"val_ap: {val_ap:1.4f}, val_auc: {val_auc:1.4f}")
-        scheduler.step()
-
-    if store:
-        os.makedirs(f"ckpt/{experiment['save_path']}/", exist_ok=True)
-        ckpt_name = f"ckpt/{experiment['save_path']}/train.pth"
-        print(f"Saving {ckpt_name} ...")
-        torch.save(model.state_dict(), ckpt_name)
-        with open(f"ckpt/{experiment['save_path']}/experiment.json", "w") as f:
-            json.dump(experiment, f, indent=2)
-
-    log = {
-        "epochs": epoch + 1,
-        "config": experiment,
-        "results": copy.deepcopy(results),
-    }
-    os.makedirs(f"results/train/{experiment['save_path']}/", exist_ok=True)
-    filename = f"results/train/{experiment['save_path']}/train.json"
-    with open(filename, "w") as h:
-        json.dump(log, h, indent=2)
-
-    # Testing
-    eval_model(
-        experiment=experiment,
-        model=model,
-        test=test,
-        device=device,
-        **kwargs
-        )

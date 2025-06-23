@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zkioiunenq.png",
+            "label": 1,
+            "output": 0.9998051524162292
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tnxiofobrb.png",
+            "label": 1,
+            "output": 0.9997967481613159
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/owavsapwhv.png",
+            "label": 1,
+            "output": 0.9997706413269043
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gtqyrcambg.png",
+            "label": 1,
+            "output": 0.9997668862342834
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mocygqjmlh.png",
+            "label": 1,
+            "output": 0.9997581243515015
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ztytemyoxv.png",
+            "label": 1,
+            "output": 0.9997518062591553
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/toteczliil.png",
+            "label": 1,
+            "output": 0.9997155666351318
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qlqolbjcgb.png",
+            "label": 1,
+            "output": 0.9996078014373779
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fwqtzyeait.png",
+            "label": 1,
+            "output": 0.9995812177658081
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tycynadkoj.png",
+            "label": 1,
+            "output": 0.9995607733726501
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hrdlxdegxy.png",
+            "label": 1,
+            "output": 0.9995439648628235
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jecdlrpjba.png",
+            "label": 1,
+            "output": 0.9994916915893555
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nrqrcqxudf.png",
+            "label": 1,
+            "output": 0.999485433101654
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bsoomuiluf.png",
+            "label": 1,
+            "output": 0.9994798898696899
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ajdylzvnwn.png",
+            "label": 1,
+            "output": 0.9994356036186218
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/shyyqqechu.png",
+            "label": 1,
+            "output": 0.9993987083435059
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qbhxmjxsev.png",
+            "label": 1,
+            "output": 0.9993839859962463
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eecrzmaxjv.png",
+            "label": 1,
+            "output": 0.9993758797645569
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/irwxnqcndk.png",
+            "label": 1,
+            "output": 0.9993749856948853
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kpzyfbuxhi.png",
+            "label": 1,
+            "output": 0.9992884993553162
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qjrpujocxn.png",
+            "label": 1,
+            "output": 0.9992628693580627
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hnzpgeledt.png",
+            "label": 1,
+            "output": 0.9992112517356873
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/voafpawbtb.png",
+            "label": 1,
+            "output": 0.9990444779396057
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kjacqcuxqc.png",
+            "label": 1,
+            "output": 0.9990339875221252
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hwfugtliat.png",
+            "label": 1,
+            "output": 0.9989730715751648
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nhlzsfyryf.png",
+            "label": 1,
+            "output": 0.998968243598938
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vtswogmbhi.png",
+            "label": 1,
+            "output": 0.9989568591117859
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rgnjmqxait.png",
+            "label": 1,
+            "output": 0.9986849427223206
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/snkshpixle.png",
+            "label": 1,
+            "output": 0.9985660314559937
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vuvkrfmrfw.png",
+            "label": 1,
+            "output": 0.9984771609306335
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ducatuyxdz.png",
+            "label": 1,
+            "output": 0.9984205365180969
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/buiozdnamh.png",
+            "label": 1,
+            "output": 0.9983921647071838
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/leadpebgwn.png",
+            "label": 1,
+            "output": 0.9983775019645691
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sneggiimdk.png",
+            "label": 1,
+            "output": 0.9983315467834473
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cnthnmxcwh.png",
+            "label": 1,
+            "output": 0.9982889294624329
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kyrjicorfj.png",
+            "label": 1,
+            "output": 0.9982729554176331
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lpofppxlqt.png",
+            "label": 1,
+            "output": 0.9981400370597839
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sndlxnwwey.png",
+            "label": 1,
+            "output": 0.9980986714363098
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bobirihsmf.png",
+            "label": 1,
+            "output": 0.9980692267417908
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hajmuavfdr.png",
+            "label": 1,
+            "output": 0.9980261325836182
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/joshvzhgck.png",
+            "label": 1,
+            "output": 0.9978562593460083
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/opipzckzef.png",
+            "label": 1,
+            "output": 0.9978455305099487
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nardlyjuyu.png",
+            "label": 1,
+            "output": 0.9978189468383789
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mzuykzukvb.png",
+            "label": 1,
+            "output": 0.9977254867553711
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ovebmmaneb.png",
+            "label": 1,
+            "output": 0.9977186322212219
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ncyvrxsbym.png",
+            "label": 1,
+            "output": 0.9976709485054016
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/umhgkshvea.png",
+            "label": 1,
+            "output": 0.9976686239242554
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bdwbeyarpc.png",
+            "label": 1,
+            "output": 0.9975926876068115
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oegsdqwgax.png",
+            "label": 1,
+            "output": 0.9975118041038513
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xqyjzhnfqu.png",
+            "label": 1,
+            "output": 0.9974297285079956
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xtupempfsd.png",
+            "label": 1,
+            "output": 0.997310221195221
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hgcafbxres.png",
+            "label": 1,
+            "output": 0.9972222447395325
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/llaiteusmv.png",
+            "label": 1,
+            "output": 0.9972027540206909
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/snjzonvpow.png",
+            "label": 1,
+            "output": 0.9970911145210266
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jbteyioohc.png",
+            "label": 1,
+            "output": 0.9970178604125977
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oaepibbwpe.png",
+            "label": 1,
+            "output": 0.9970055222511292
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kxwkjgbtdq.png",
+            "label": 1,
+            "output": 0.9969867467880249
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cqxwvqbknx.png",
+            "label": 1,
+            "output": 0.9969559907913208
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bzuoezatge.png",
+            "label": 1,
+            "output": 0.9969084858894348
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uqiwgwkalw.png",
+            "label": 1,
+            "output": 0.9968792796134949
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wgrmpdejfv.png",
+            "label": 1,
+            "output": 0.9968576431274414
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pfvgbusewt.png",
+            "label": 1,
+            "output": 0.9967212677001953
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/whqsatsqum.png",
+            "label": 1,
+            "output": 0.9965817332267761
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hpmppyffov.png",
+            "label": 1,
+            "output": 0.9965304136276245
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/amcjhcqbxr.png",
+            "label": 1,
+            "output": 0.9964820146560669
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yfxdzkbfpk.png",
+            "label": 1,
+            "output": 0.9964584708213806
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/texcjvnjug.png",
+            "label": 1,
+            "output": 0.9963229894638062
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pcaodmknyo.png",
+            "label": 1,
+            "output": 0.9962034225463867
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qkkcelqgiq.png",
+            "label": 1,
+            "output": 0.9961336851119995
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qieisvwywb.png",
+            "label": 1,
+            "output": 0.9961021542549133
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hnsubaglth.png",
+            "label": 1,
+            "output": 0.9960173964500427
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jjmznfxyeg.png",
+            "label": 1,
+            "output": 0.9958207011222839
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mrdnzxhmlr.png",
+            "label": 1,
+            "output": 0.9957931041717529
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cmuzaenxtt.png",
+            "label": 1,
+            "output": 0.9956704378128052
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/slecdbiljb.png",
+            "label": 1,
+            "output": 0.9954676032066345
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kiimhjeatg.png",
+            "label": 1,
+            "output": 0.9954279065132141
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ftobdflmuz.png",
+            "label": 1,
+            "output": 0.9954007863998413
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vipmyyceny.png",
+            "label": 1,
+            "output": 0.995252251625061
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/njrelhtzux.png",
+            "label": 1,
+            "output": 0.9951621890068054
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bqeilhkbun.png",
+            "label": 1,
+            "output": 0.995008111000061
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jefxajnwbk.png",
+            "label": 1,
+            "output": 0.9949975609779358
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uzjbonpwla.png",
+            "label": 1,
+            "output": 0.994968831539154
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oulguvnvpq.png",
+            "label": 1,
+            "output": 0.9948986768722534
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/echehlitmr.png",
+            "label": 1,
+            "output": 0.9948254227638245
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yfbwcnyvch.png",
+            "label": 1,
+            "output": 0.9946761727333069
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jqnuoffbtb.png",
+            "label": 1,
+            "output": 0.9945537447929382
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tecfsxrdsg.png",
+            "label": 1,
+            "output": 0.994457483291626
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fiejjmdcwg.png",
+            "label": 1,
+            "output": 0.9941129684448242
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nwpodhovep.png",
+            "label": 1,
+            "output": 0.9939628839492798
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lfpytrxtnd.png",
+            "label": 1,
+            "output": 0.9939062595367432
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/owwrkfwvmg.png",
+            "label": 1,
+            "output": 0.9938539266586304
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/olxtdigiux.png",
+            "label": 1,
+            "output": 0.9935386776924133
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rtbrwgwkho.png",
+            "label": 1,
+            "output": 0.9933468699455261
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dojapmtjlo.png",
+            "label": 1,
+            "output": 0.993333637714386
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eufbtfldxd.png",
+            "label": 1,
+            "output": 0.9933311343193054
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/viwuulrpyk.png",
+            "label": 1,
+            "output": 0.9933064579963684
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gwfboomsuw.png",
+            "label": 1,
+            "output": 0.9932740926742554
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ygsthmtuoh.png",
+            "label": 1,
+            "output": 0.9931231141090393
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gbzvqfsaud.png",
+            "label": 1,
+            "output": 0.9931197166442871
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zniuujlsax.png",
+            "label": 1,
+            "output": 0.9930198788642883
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/panagqebev.png",
+            "label": 1,
+            "output": 0.9928885698318481
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qqdphhznqg.png",
+            "label": 1,
+            "output": 0.9927924871444702
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ddeuvxknie.png",
+            "label": 1,
+            "output": 0.9924996495246887
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikelctrgra.png",
+            "label": 1,
+            "output": 0.9924569129943848
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zchftlmgnh.png",
+            "label": 1,
+            "output": 0.9923616647720337
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lcaexbqxar.png",
+            "label": 1,
+            "output": 0.9923355579376221
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vazvwojjfh.png",
+            "label": 1,
+            "output": 0.9923127889633179
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/obmkmjnvet.png",
+            "label": 1,
+            "output": 0.9922854900360107
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gmjuidkgzm.png",
+            "label": 1,
+            "output": 0.9922122955322266
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vmjmkqeggv.png",
+            "label": 1,
+            "output": 0.9920920133590698
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dxvmhjeycz.png",
+            "label": 1,
+            "output": 0.9920288920402527
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mtclcgxdyh.png",
+            "label": 1,
+            "output": 0.9919559955596924
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yqqmbglayb.png",
+            "label": 1,
+            "output": 0.9918689727783203
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gropzgdcno.png",
+            "label": 1,
+            "output": 0.9917623400688171
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mpozbazafp.png",
+            "label": 1,
+            "output": 0.9917325973510742
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/flislizwvd.png",
+            "label": 1,
+            "output": 0.9916914105415344
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/suxizjuvkp.png",
+            "label": 1,
+            "output": 0.9916459321975708
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/njfscemusa.png",
+            "label": 1,
+            "output": 0.9916396737098694
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ugrxyyeknx.png",
+            "label": 1,
+            "output": 0.9915156364440918
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wxhrxapobk.png",
+            "label": 1,
+            "output": 0.9914678931236267
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xnyhohvpna.png",
+            "label": 1,
+            "output": 0.99128657579422
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oqgbxaotgn.png",
+            "label": 1,
+            "output": 0.9912493824958801
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/frrzmsczog.png",
+            "label": 1,
+            "output": 0.991222620010376
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ndjgpgfppo.png",
+            "label": 1,
+            "output": 0.9911787509918213
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gdnoweboab.png",
+            "label": 1,
+            "output": 0.9910851120948792
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vmrobijbmc.png",
+            "label": 1,
+            "output": 0.9908997416496277
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rsekavebcp.png",
+            "label": 1,
+            "output": 0.9907510876655579
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/timdfnwgho.png",
+            "label": 1,
+            "output": 0.990318238735199
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bucfscjvsb.png",
+            "label": 1,
+            "output": 0.9902374148368835
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hxyxqnzbzd.png",
+            "label": 1,
+            "output": 0.9902001023292542
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ttfwqkviia.png",
+            "label": 1,
+            "output": 0.990197479724884
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bqmyueubdu.png",
+            "label": 1,
+            "output": 0.9899951219558716
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/myypljgqkg.png",
+            "label": 1,
+            "output": 0.9898651838302612
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oqargxuywp.png",
+            "label": 1,
+            "output": 0.989709198474884
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vrffpjmuir.png",
+            "label": 1,
+            "output": 0.9894614815711975
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vlwnndwtuh.png",
+            "label": 1,
+            "output": 0.9893936514854431
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wsbyyiugsn.png",
+            "label": 1,
+            "output": 0.9893898963928223
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jvfamsvrme.png",
+            "label": 1,
+            "output": 0.9893648028373718
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gwwimiekeh.png",
+            "label": 1,
+            "output": 0.9893562197685242
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gudkwzmgfo.png",
+            "label": 1,
+            "output": 0.9892665147781372
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rhwouyajcq.png",
+            "label": 1,
+            "output": 0.9892436861991882
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hsvrfsodig.png",
+            "label": 1,
+            "output": 0.9889740943908691
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pbdegkyycl.png",
+            "label": 1,
+            "output": 0.9888917207717896
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ywjlbpxbjz.png",
+            "label": 1,
+            "output": 0.9887765049934387
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/envczpiyds.png",
+            "label": 1,
+            "output": 0.9887241125106812
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/llmwutwhbl.png",
+            "label": 1,
+            "output": 0.9887229800224304
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cmjapngcpn.png",
+            "label": 1,
+            "output": 0.9886154532432556
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yecvsijdsn.png",
+            "label": 1,
+            "output": 0.988494336605072
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qyaknxvzwp.png",
+            "label": 1,
+            "output": 0.9883309602737427
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vcbnrxukwp.png",
+            "label": 1,
+            "output": 0.988153338432312
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/alzrdyourf.png",
+            "label": 1,
+            "output": 0.9881335496902466
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xvulqfblsf.png",
+            "label": 1,
+            "output": 0.987747848033905
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bxfbgvlfqu.png",
+            "label": 1,
+            "output": 0.9873871803283691
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vsocilgayn.png",
+            "label": 1,
+            "output": 0.987368106842041
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/usrafpawra.png",
+            "label": 1,
+            "output": 0.9872936010360718
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kqmbpossfq.png",
+            "label": 1,
+            "output": 0.9872891306877136
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gqpoiykvcs.png",
+            "label": 1,
+            "output": 0.987230658531189
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/idrkdekvux.png",
+            "label": 1,
+            "output": 0.9870748519897461
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ivvevnakub.png",
+            "label": 1,
+            "output": 0.9867938160896301
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fzkskaljde.png",
+            "label": 1,
+            "output": 0.9867885112762451
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/slrtleyncm.png",
+            "label": 1,
+            "output": 0.9862984418869019
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wrmxjiicmz.png",
+            "label": 1,
+            "output": 0.9862203598022461
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ypdjyjlopx.png",
+            "label": 1,
+            "output": 0.9862170815467834
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/psosqfwlqc.png",
+            "label": 1,
+            "output": 0.9862036108970642
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wbcncldemw.png",
+            "label": 1,
+            "output": 0.9861956834793091
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iwkrlrqsbn.png",
+            "label": 1,
+            "output": 0.9861651659011841
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rzrzcujvqg.png",
+            "label": 1,
+            "output": 0.9859625101089478
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/viedszojsm.png",
+            "label": 1,
+            "output": 0.985917866230011
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mnbrpiakwa.png",
+            "label": 1,
+            "output": 0.9857596158981323
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kzflnrbcwz.png",
+            "label": 1,
+            "output": 0.9857496023178101
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/newahshtuc.png",
+            "label": 1,
+            "output": 0.9856367707252502
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rdudakwwfl.png",
+            "label": 1,
+            "output": 0.9853142499923706
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/odyhbcgchi.png",
+            "label": 1,
+            "output": 0.9852888584136963
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/izuqfuuvtc.png",
+            "label": 1,
+            "output": 0.9852563142776489
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/utlevcsfzc.png",
+            "label": 1,
+            "output": 0.9846817851066589
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/swhkqaywlh.png",
+            "label": 1,
+            "output": 0.9846606850624084
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ajldduomvc.png",
+            "label": 1,
+            "output": 0.9846289157867432
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uesrfqrmys.png",
+            "label": 1,
+            "output": 0.9844874739646912
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vumdsauhht.png",
+            "label": 1,
+            "output": 0.9844501614570618
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vmouwpueqp.png",
+            "label": 1,
+            "output": 0.9844092726707458
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iojhamvzyv.png",
+            "label": 1,
+            "output": 0.9843502640724182
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gaezkwugoh.png",
+            "label": 1,
+            "output": 0.9842185378074646
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/apfyxprqpm.png",
+            "label": 1,
+            "output": 0.984178364276886
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mykongsfgc.png",
+            "label": 1,
+            "output": 0.9841544032096863
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fuqmkbouip.png",
+            "label": 1,
+            "output": 0.9841521382331848
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cdjghtyvsn.png",
+            "label": 1,
+            "output": 0.9841444492340088
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikptlvvios.png",
+            "label": 1,
+            "output": 0.9837787747383118
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vpwnxqxbks.png",
+            "label": 1,
+            "output": 0.9836888313293457
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lsdusudljb.png",
+            "label": 1,
+            "output": 0.9836184978485107
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ruyafogtjk.png",
+            "label": 1,
+            "output": 0.9835839867591858
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uvwnmuvfio.png",
+            "label": 1,
+            "output": 0.9835317134857178
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dawfktkzad.png",
+            "label": 1,
+            "output": 0.9834285974502563
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yyfgzdkznw.png",
+            "label": 1,
+            "output": 0.9833599925041199
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cjmyrxrisl.png",
+            "label": 1,
+            "output": 0.9832652807235718
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/crwemtqnoq.png",
+            "label": 1,
+            "output": 0.9831125736236572
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wxulzwiqwm.png",
+            "label": 1,
+            "output": 0.9830589890480042
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/clnogwmxno.png",
+            "label": 1,
+            "output": 0.9830073714256287
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/irplnnyutq.png",
+            "label": 1,
+            "output": 0.9829956889152527
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bbsnktsonl.png",
+            "label": 1,
+            "output": 0.9827601909637451
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qbannzwxnv.png",
+            "label": 1,
+            "output": 0.9827383756637573
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/blaonzaskp.png",
+            "label": 1,
+            "output": 0.9825980067253113
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cubclpdlyb.png",
+            "label": 1,
+            "output": 0.9825149178504944
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fmlqvsmgwg.png",
+            "label": 1,
+            "output": 0.9824503064155579
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kwqbkshqjn.png",
+            "label": 1,
+            "output": 0.9822254776954651
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tigzfxjaeg.png",
+            "label": 1,
+            "output": 0.982184886932373
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aahxgrlfqt.png",
+            "label": 1,
+            "output": 0.9821289777755737
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bbupregfhp.png",
+            "label": 1,
+            "output": 0.9818469285964966
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/raxqxyzhrc.png",
+            "label": 1,
+            "output": 0.9815487265586853
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xucelwnaqz.png",
+            "label": 1,
+            "output": 0.9815451502799988
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ueehiquixb.png",
+            "label": 1,
+            "output": 0.981539249420166
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ficowhhyiy.png",
+            "label": 1,
+            "output": 0.9814157485961914
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qgkzujpyka.png",
+            "label": 1,
+            "output": 0.9811844229698181
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ixyzaufrnr.png",
+            "label": 1,
+            "output": 0.9811679124832153
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oyxvwvxuzr.png",
+            "label": 1,
+            "output": 0.9809741973876953
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tfubqflahj.png",
+            "label": 1,
+            "output": 0.9807707071304321
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/szocurmzdp.png",
+            "label": 1,
+            "output": 0.9806870818138123
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aieykhstre.png",
+            "label": 1,
+            "output": 0.9806548953056335
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/abaxzegfoi.png",
+            "label": 1,
+            "output": 0.9804951548576355
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fihznganle.png",
+            "label": 1,
+            "output": 0.9803640246391296
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hptzommwzk.png",
+            "label": 1,
+            "output": 0.980216920375824
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gllomgthtj.png",
+            "label": 1,
+            "output": 0.9800817966461182
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/htpewtqebr.png",
+            "label": 1,
+            "output": 0.9800578951835632
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tgzykjsqqa.png",
+            "label": 1,
+            "output": 0.9799543023109436
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mltvjsqnjm.png",
+            "label": 1,
+            "output": 0.9798631072044373
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bjipeebzgu.png",
+            "label": 1,
+            "output": 0.9798100590705872
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mubozyqcgp.png",
+            "label": 1,
+            "output": 0.9797617793083191
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hcyfeanpao.png",
+            "label": 1,
+            "output": 0.9797410368919373
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gtjyzhcqoi.png",
+            "label": 1,
+            "output": 0.9794972538948059
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aociqzuesd.png",
+            "label": 1,
+            "output": 0.9794936776161194
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aaksjqrtil.png",
+            "label": 1,
+            "output": 0.9793212413787842
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gudshwhvvv.png",
+            "label": 1,
+            "output": 0.9788572788238525
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tgkezflbjz.png",
+            "label": 1,
+            "output": 0.9788287281990051
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iedkqtkbtj.png",
+            "label": 1,
+            "output": 0.9786553978919983
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bcdxmvfonp.png",
+            "label": 1,
+            "output": 0.9783273339271545
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pieahxylhf.png",
+            "label": 1,
+            "output": 0.9783087968826294
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/djumibnmaq.png",
+            "label": 1,
+            "output": 0.9780513048171997
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tfdqevjhtk.png",
+            "label": 1,
+            "output": 0.9777737855911255
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ascyfbgfmn.png",
+            "label": 1,
+            "output": 0.9777362942695618
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ffduxyansq.png",
+            "label": 1,
+            "output": 0.977181077003479
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/owymrcrmoo.png",
+            "label": 1,
+            "output": 0.9770689010620117
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tibxcunvom.png",
+            "label": 1,
+            "output": 0.9770373106002808
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ucxiudybpx.png",
+            "label": 1,
+            "output": 0.9769611954689026
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qdnqcoyzar.png",
+            "label": 1,
+            "output": 0.9769484996795654
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nyrfgpglht.png",
+            "label": 1,
+            "output": 0.9767403602600098
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/awjhtixyqd.png",
+            "label": 1,
+            "output": 0.9766782522201538
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/asxtxajrfc.png",
+            "label": 1,
+            "output": 0.976614773273468
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rjddhlzmqd.png",
+            "label": 1,
+            "output": 0.9765958786010742
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sinwhncecv.png",
+            "label": 1,
+            "output": 0.9764807224273682
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bolqiuvdbo.png",
+            "label": 1,
+            "output": 0.9762433767318726
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lvsgpxrabw.png",
+            "label": 1,
+            "output": 0.9761212468147278
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fjjzjquuqt.png",
+            "label": 1,
+            "output": 0.97597336769104
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vblsrmonrr.png",
+            "label": 1,
+            "output": 0.9757763743400574
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gtidkpfxcc.png",
+            "label": 1,
+            "output": 0.9757214188575745
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bkyusgjzud.png",
+            "label": 1,
+            "output": 0.9753235578536987
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gpwdhgxzbq.png",
+            "label": 1,
+            "output": 0.9752948880195618
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wyyltkwttn.png",
+            "label": 1,
+            "output": 0.9751661419868469
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ulpnibnvvc.png",
+            "label": 1,
+            "output": 0.9749794602394104
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xvrgnnvmdu.png",
+            "label": 1,
+            "output": 0.97487473487854
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rpggiliowp.png",
+            "label": 1,
+            "output": 0.9748679995536804
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rpeighzltg.png",
+            "label": 1,
+            "output": 0.9747195839881897
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/itvslvcuiy.png",
+            "label": 1,
+            "output": 0.9747136235237122
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yxyqoryjpu.png",
+            "label": 1,
+            "output": 0.9745471477508545
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/arnnhazyia.png",
+            "label": 1,
+            "output": 0.9742644429206848
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yytnnkmkun.png",
+            "label": 1,
+            "output": 0.9741297960281372
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/usxygmfmlb.png",
+            "label": 1,
+            "output": 0.973873496055603
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jezlovnknx.png",
+            "label": 1,
+            "output": 0.9737101793289185
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/msccvtyrqo.png",
+            "label": 1,
+            "output": 0.9735909700393677
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tuptxvyplv.png",
+            "label": 1,
+            "output": 0.9733079671859741
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hnfbzeaoqb.png",
+            "label": 1,
+            "output": 0.973197877407074
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mbtqfbwlry.png",
+            "label": 1,
+            "output": 0.97292160987854
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tunmixwvbf.png",
+            "label": 1,
+            "output": 0.9727374315261841
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ixykpgtooh.png",
+            "label": 1,
+            "output": 0.9725823402404785
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/myekqhvgnw.png",
+            "label": 1,
+            "output": 0.9725294709205627
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikidgqmbia.png",
+            "label": 1,
+            "output": 0.9724616408348083
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dwgrruvbsz.png",
+            "label": 1,
+            "output": 0.9724481105804443
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vqrdytkinp.png",
+            "label": 1,
+            "output": 0.9724140167236328
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sqtxlhaqbh.png",
+            "label": 1,
+            "output": 0.9723828434944153
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikesdclcne.png",
+            "label": 1,
+            "output": 0.9722405076026917
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nhmoimaaqz.png",
+            "label": 1,
+            "output": 0.9720560908317566
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kkamuhddsi.png",
+            "label": 1,
+            "output": 0.9714728593826294
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ahbiztymlj.png",
+            "label": 1,
+            "output": 0.971460223197937
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/efykeyysvi.png",
+            "label": 1,
+            "output": 0.971435546875
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pcuxcikgcq.png",
+            "label": 1,
+            "output": 0.9712551832199097
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nvwywbybsj.png",
+            "label": 1,
+            "output": 0.9709886908531189
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bpadvommfd.png",
+            "label": 1,
+            "output": 0.9709206819534302
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/myjibkfcjw.png",
+            "label": 1,
+            "output": 0.9706940650939941
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/crzzjqmtan.png",
+            "label": 1,
+            "output": 0.9706513285636902
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kgwpuybmdo.png",
+            "label": 1,
+            "output": 0.9701417684555054
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wotrziuyhj.png",
+            "label": 1,
+            "output": 0.9699499011039734
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jhcimomcij.png",
+            "label": 1,
+            "output": 0.9695879220962524
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sswokizojd.png",
+            "label": 1,
+            "output": 0.9692775011062622
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qvxgfrmtjl.png",
+            "label": 1,
+            "output": 0.9688951373100281
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hrayggkgxb.png",
+            "label": 1,
+            "output": 0.9687342047691345
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/onojezltok.png",
+            "label": 1,
+            "output": 0.9686787724494934
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sdpkvjboba.png",
+            "label": 1,
+            "output": 0.9684495329856873
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jkepwzmrqu.png",
+            "label": 1,
+            "output": 0.9681269526481628
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/owbarkgfyc.png",
+            "label": 1,
+            "output": 0.9680805206298828
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mrxqbknovu.png",
+            "label": 1,
+            "output": 0.9680555462837219
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kbpanibqgu.png",
+            "label": 1,
+            "output": 0.9679297804832458
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikpmthprsw.png",
+            "label": 1,
+            "output": 0.9678521752357483
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sjigynomsm.png",
+            "label": 1,
+            "output": 0.9678182601928711
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tzirqivkgc.png",
+            "label": 1,
+            "output": 0.9676257371902466
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vyjvqkrjmv.png",
+            "label": 1,
+            "output": 0.9675016403198242
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kkqnltzvmr.png",
+            "label": 1,
+            "output": 0.9674064517021179
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/spnummyudf.png",
+            "label": 1,
+            "output": 0.9673733115196228
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zhkybzbekn.png",
+            "label": 1,
+            "output": 0.967248260974884
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gxvvzagtkn.png",
+            "label": 1,
+            "output": 0.9670346975326538
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/shkxdbeqpn.png",
+            "label": 1,
+            "output": 0.9669424295425415
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hiqkigzfrk.png",
+            "label": 1,
+            "output": 0.9666715860366821
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yjjufldsnq.png",
+            "label": 1,
+            "output": 0.9665650129318237
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qvldneoiwj.png",
+            "label": 1,
+            "output": 0.9665110111236572
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/slmgcnpjiz.png",
+            "label": 1,
+            "output": 0.9663593769073486
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xqlumlknls.png",
+            "label": 1,
+            "output": 0.9659558534622192
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uyfkdpzowl.png",
+            "label": 1,
+            "output": 0.9656584858894348
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/flcafzqbyt.png",
+            "label": 1,
+            "output": 0.9653898477554321
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lvndezxcir.png",
+            "label": 1,
+            "output": 0.9653648138046265
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jdoqiuxxvj.png",
+            "label": 1,
+            "output": 0.9650224447250366
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nipnhttkcg.png",
+            "label": 1,
+            "output": 0.964972972869873
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zcsnybxdqj.png",
+            "label": 1,
+            "output": 0.9642685651779175
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kobditubhr.png",
+            "label": 1,
+            "output": 0.9642382860183716
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ftmhbluvwz.png",
+            "label": 1,
+            "output": 0.9639108777046204
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iuwybjqiha.png",
+            "label": 1,
+            "output": 0.9637722373008728
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tgihtkfpyi.png",
+            "label": 1,
+            "output": 0.9636961221694946
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cspmbvyjpm.png",
+            "label": 1,
+            "output": 0.9635819792747498
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kzaxlmhpyk.png",
+            "label": 1,
+            "output": 0.9635336399078369
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lmbvfedfye.png",
+            "label": 1,
+            "output": 0.9634822607040405
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wgmfkffpbs.png",
+            "label": 1,
+            "output": 0.9631912708282471
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mzhrvznlhw.png",
+            "label": 1,
+            "output": 0.9630820155143738
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cvohxivzjd.png",
+            "label": 1,
+            "output": 0.9627339243888855
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xnesojheqr.png",
+            "label": 1,
+            "output": 0.962695837020874
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/olxhrrlaut.png",
+            "label": 1,
+            "output": 0.9626818895339966
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oqlgvyltdu.png",
+            "label": 1,
+            "output": 0.9621266722679138
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mqbzprykrc.png",
+            "label": 1,
+            "output": 0.9613549709320068
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zrifjlbkwb.png",
+            "label": 1,
+            "output": 0.961321234703064
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wfyfdsoqjb.png",
+            "label": 1,
+            "output": 0.9612345695495605
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ykyioyylud.png",
+            "label": 1,
+            "output": 0.961116373538971
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pwvremoaiz.png",
+            "label": 1,
+            "output": 0.9608238339424133
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ondtlaugas.png",
+            "label": 1,
+            "output": 0.9600557684898376
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xsmkmdlmux.png",
+            "label": 1,
+            "output": 0.9599621891975403
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/exlwmokuxv.png",
+            "label": 1,
+            "output": 0.9598844647407532
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tqgzodmdpm.png",
+            "label": 1,
+            "output": 0.9594997763633728
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hsweljupee.png",
+            "label": 1,
+            "output": 0.95836341381073
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bulfplvjow.png",
+            "label": 1,
+            "output": 0.95798259973526
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/marjmzmnja.png",
+            "label": 1,
+            "output": 0.9577944874763489
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/trssloofom.png",
+            "label": 1,
+            "output": 0.9574362635612488
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yptdaozbuw.png",
+            "label": 1,
+            "output": 0.9572449922561646
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nypkpjmzri.png",
+            "label": 1,
+            "output": 0.957048773765564
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/exoglvpvei.png",
+            "label": 1,
+            "output": 0.9570214748382568
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pekxwkfhua.png",
+            "label": 1,
+            "output": 0.9570212960243225
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jsozceeudr.png",
+            "label": 1,
+            "output": 0.9564561247825623
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mcsihazpje.png",
+            "label": 1,
+            "output": 0.9563277363777161
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rlzfziqqrd.png",
+            "label": 1,
+            "output": 0.9561463594436646
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lizvdcrrbp.png",
+            "label": 1,
+            "output": 0.9561328887939453
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/elpsbyigve.png",
+            "label": 1,
+            "output": 0.9558005928993225
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dhjedfczru.png",
+            "label": 1,
+            "output": 0.9555848836898804
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ajaqvfgsih.png",
+            "label": 1,
+            "output": 0.9549084305763245
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tvhyjyjvbi.png",
+            "label": 1,
+            "output": 0.9543914198875427
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nmdxktenko.png",
+            "label": 1,
+            "output": 0.9541667699813843
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rzvoxvfpaz.png",
+            "label": 1,
+            "output": 0.9533493518829346
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/njslnjximf.png",
+            "label": 1,
+            "output": 0.9532902240753174
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ettedwuoqe.png",
+            "label": 1,
+            "output": 0.9532327651977539
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/arfbiucpar.png",
+            "label": 1,
+            "output": 0.9531248211860657
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hzsujxzlcn.png",
+            "label": 1,
+            "output": 0.9529511332511902
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ahnijblsap.png",
+            "label": 1,
+            "output": 0.9527446627616882
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zynieagnms.png",
+            "label": 1,
+            "output": 0.951988160610199
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/stnicrfcsk.png",
+            "label": 1,
+            "output": 0.951818585395813
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ezfvndjxht.png",
+            "label": 1,
+            "output": 0.9515817761421204
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lqrkxsvuvt.png",
+            "label": 1,
+            "output": 0.9513811469078064
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/llbqajpkux.png",
+            "label": 1,
+            "output": 0.9510456919670105
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/imcwvnqwdv.png",
+            "label": 1,
+            "output": 0.950091540813446
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/isrzfmrbjo.png",
+            "label": 1,
+            "output": 0.9500269889831543
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mhaimbeqgl.png",
+            "label": 1,
+            "output": 0.9493992328643799
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oocykwkype.png",
+            "label": 1,
+            "output": 0.9493951797485352
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rsiiuivgsv.png",
+            "label": 1,
+            "output": 0.949267566204071
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lxdnodpvuz.png",
+            "label": 1,
+            "output": 0.9489981532096863
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jgmtkjqepx.png",
+            "label": 1,
+            "output": 0.9489231705665588
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/auannvrmrm.png",
+            "label": 1,
+            "output": 0.9487131237983704
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fjyemnydtk.png",
+            "label": 1,
+            "output": 0.9484543800354004
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eoacigirrk.png",
+            "label": 1,
+            "output": 0.9481587409973145
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wkkhoodytf.png",
+            "label": 1,
+            "output": 0.9481263160705566
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jabklaioxf.png",
+            "label": 1,
+            "output": 0.9481090307235718
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dimuqznulw.png",
+            "label": 1,
+            "output": 0.9470435976982117
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/klcsuijwqh.png",
+            "label": 1,
+            "output": 0.9465312361717224
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wdxoxbbogy.png",
+            "label": 1,
+            "output": 0.9460613131523132
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hcnhiyscgm.png",
+            "label": 1,
+            "output": 0.9460463523864746
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iwsairnpes.png",
+            "label": 1,
+            "output": 0.9453331232070923
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bvbspxdfxz.png",
+            "label": 1,
+            "output": 0.9449605941772461
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kgmqyotoqo.png",
+            "label": 1,
+            "output": 0.9447929263114929
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/irrlegedjp.png",
+            "label": 1,
+            "output": 0.944250226020813
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oertmmpfuq.png",
+            "label": 1,
+            "output": 0.9442359209060669
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eltlpjgnai.png",
+            "label": 1,
+            "output": 0.9442293047904968
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/devyzpyxmr.png",
+            "label": 1,
+            "output": 0.9441275000572205
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jhnbcswvmq.png",
+            "label": 1,
+            "output": 0.9439247846603394
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vocoamkcza.png",
+            "label": 1,
+            "output": 0.9432665109634399
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mbkwfjqeay.png",
+            "label": 1,
+            "output": 0.9431624412536621
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tptqwsoovh.png",
+            "label": 1,
+            "output": 0.9428921937942505
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vwrsjumkmz.png",
+            "label": 1,
+            "output": 0.9424066543579102
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nvglpmddru.png",
+            "label": 1,
+            "output": 0.9423967599868774
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vftoepxxkj.png",
+            "label": 1,
+            "output": 0.9423786997795105
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vispixnoqk.png",
+            "label": 1,
+            "output": 0.9422688484191895
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sjezxhpiwr.png",
+            "label": 1,
+            "output": 0.9413917660713196
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ntpnrhhljv.png",
+            "label": 1,
+            "output": 0.9412286877632141
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bcqofpsyca.png",
+            "label": 1,
+            "output": 0.9409857988357544
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/flzalpsilp.png",
+            "label": 1,
+            "output": 0.9408903121948242
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ttxhncprvt.png",
+            "label": 1,
+            "output": 0.9407746195793152
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/smdvfqmevj.png",
+            "label": 1,
+            "output": 0.9407069683074951
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fuahrcqbgk.png",
+            "label": 1,
+            "output": 0.9402986764907837
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xahepmkkki.png",
+            "label": 1,
+            "output": 0.9401064515113831
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vueczavslq.png",
+            "label": 1,
+            "output": 0.940091073513031
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oegbyamziq.png",
+            "label": 1,
+            "output": 0.9397339820861816
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gacytxnrbg.png",
+            "label": 1,
+            "output": 0.9393956065177917
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ircqbpmpmn.png",
+            "label": 1,
+            "output": 0.9393065571784973
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/segiubdggo.png",
+            "label": 1,
+            "output": 0.9392649531364441
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ukcwfevbtz.png",
+            "label": 1,
+            "output": 0.9392625093460083
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rbihqctsdb.png",
+            "label": 1,
+            "output": 0.9387161731719971
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mcrhlmdumo.png",
+            "label": 1,
+            "output": 0.9385283589363098
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sgggkqzghg.png",
+            "label": 1,
+            "output": 0.9381623268127441
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ftampoyprn.png",
+            "label": 1,
+            "output": 0.9380427002906799
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lgpvmdfncv.png",
+            "label": 1,
+            "output": 0.9377328157424927
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gwwprxqtre.png",
+            "label": 1,
+            "output": 0.9372021555900574
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nzfqdevtuu.png",
+            "label": 1,
+            "output": 0.9371302127838135
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/imkvcjrnck.png",
+            "label": 1,
+            "output": 0.936717689037323
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nkdchwutlw.png",
+            "label": 1,
+            "output": 0.9358035326004028
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zatnelrcct.png",
+            "label": 1,
+            "output": 0.9348121285438538
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bxoicyhddk.png",
+            "label": 1,
+            "output": 0.9347010254859924
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zzrnxnjzyx.png",
+            "label": 1,
+            "output": 0.9345687031745911
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ajwadbiyry.png",
+            "label": 1,
+            "output": 0.9345255494117737
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gbkfcdebke.png",
+            "label": 1,
+            "output": 0.9343534708023071
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wxmydpmpup.png",
+            "label": 1,
+            "output": 0.9340901374816895
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wnjjxqinho.png",
+            "label": 1,
+            "output": 0.9338604807853699
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/olecerouzv.png",
+            "label": 1,
+            "output": 0.9338312745094299
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/albdpubxka.png",
+            "label": 1,
+            "output": 0.9335017204284668
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/efgchmasis.png",
+            "label": 1,
+            "output": 0.9327484965324402
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xdpqtpwyiz.png",
+            "label": 1,
+            "output": 0.9327148795127869
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lkbpelvrth.png",
+            "label": 1,
+            "output": 0.9325242042541504
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gczswsnqpp.png",
+            "label": 1,
+            "output": 0.9310845136642456
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ltwpiurdob.png",
+            "label": 1,
+            "output": 0.9308596849441528
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rdtvftkyww.png",
+            "label": 1,
+            "output": 0.9308129549026489
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/abzfomfxjd.png",
+            "label": 1,
+            "output": 0.9303454160690308
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/etawvbajib.png",
+            "label": 1,
+            "output": 0.9302155375480652
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/enmfgbxzpf.png",
+            "label": 1,
+            "output": 0.9299944639205933
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/evwfvofdll.png",
+            "label": 1,
+            "output": 0.929904043674469
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hbdtraluzp.png",
+            "label": 1,
+            "output": 0.9296640753746033
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yoqkeajskn.png",
+            "label": 1,
+            "output": 0.9294363856315613
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uxbuickkha.png",
+            "label": 1,
+            "output": 0.9282938838005066
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jykjuscrhb.png",
+            "label": 1,
+            "output": 0.9281792640686035
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ueoeojrsyj.png",
+            "label": 1,
+            "output": 0.928068220615387
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wedprdqjkr.png",
+            "label": 1,
+            "output": 0.9280434250831604
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uprjbmydux.png",
+            "label": 1,
+            "output": 0.9280003905296326
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bebadtkmes.png",
+            "label": 1,
+            "output": 0.9278031587600708
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dtvfjwtgbk.png",
+            "label": 1,
+            "output": 0.9275000095367432
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/figfzyfhkt.png",
+            "label": 1,
+            "output": 0.9274493455886841
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xdudczawtx.png",
+            "label": 1,
+            "output": 0.9272967576980591
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qtwdrpnjgz.png",
+            "label": 1,
+            "output": 0.9264954328536987
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hectwezedz.png",
+            "label": 1,
+            "output": 0.9262096285820007
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/msujwlrujo.png",
+            "label": 1,
+            "output": 0.9260777831077576
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pcwvbmjrea.png",
+            "label": 1,
+            "output": 0.9260390400886536
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pptvyzosrk.png",
+            "label": 1,
+            "output": 0.9247893691062927
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tflsufulfn.png",
+            "label": 1,
+            "output": 0.9246616363525391
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/niehixqsig.png",
+            "label": 1,
+            "output": 0.923622727394104
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cubsnkbrrm.png",
+            "label": 1,
+            "output": 0.9225718379020691
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gsjragxgrg.png",
+            "label": 1,
+            "output": 0.9222186207771301
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ahwxcijnxm.png",
+            "label": 1,
+            "output": 0.9221814274787903
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ybksklcxnr.png",
+            "label": 1,
+            "output": 0.9217472672462463
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hjovhnpjdf.png",
+            "label": 1,
+            "output": 0.9211239218711853
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zxaydtvcbx.png",
+            "label": 1,
+            "output": 0.9208931922912598
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/svpwqjhjbu.png",
+            "label": 1,
+            "output": 0.9202306270599365
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/splerbaidx.png",
+            "label": 1,
+            "output": 0.9201763868331909
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hjshyxnjca.png",
+            "label": 1,
+            "output": 0.9193076491355896
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/znxaufdjpv.png",
+            "label": 1,
+            "output": 0.919199526309967
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lakovwneny.png",
+            "label": 1,
+            "output": 0.9190089702606201
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jnrpfsvjdm.png",
+            "label": 1,
+            "output": 0.9187794327735901
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yfnrrhachx.png",
+            "label": 1,
+            "output": 0.9184409976005554
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qsndeimedb.png",
+            "label": 1,
+            "output": 0.9183255434036255
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mpzjrdeutv.png",
+            "label": 1,
+            "output": 0.9178800582885742
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fizdknwdwf.png",
+            "label": 1,
+            "output": 0.9171943068504333
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/crqwxhlcfy.png",
+            "label": 1,
+            "output": 0.9170728325843811
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oxkzwdrxay.png",
+            "label": 1,
+            "output": 0.9166704416275024
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jgyprvacek.png",
+            "label": 1,
+            "output": 0.9162091016769409
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/czkhjnfjgr.png",
+            "label": 1,
+            "output": 0.916208803653717
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lzgwytfbdh.png",
+            "label": 1,
+            "output": 0.9162022471427917
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hdtfurantf.png",
+            "label": 1,
+            "output": 0.9160385131835938
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mijuwhirnm.png",
+            "label": 1,
+            "output": 0.915287435054779
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ivswfntzwh.png",
+            "label": 1,
+            "output": 0.9151804447174072
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uzgkdnsvbt.png",
+            "label": 1,
+            "output": 0.9146038889884949
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jcbooxfwcy.png",
+            "label": 1,
+            "output": 0.9142322540283203
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mtuopsldka.png",
+            "label": 1,
+            "output": 0.9141122102737427
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yatxnhyhyw.png",
+            "label": 1,
+            "output": 0.9125837087631226
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/idxzmkymeu.png",
+            "label": 1,
+            "output": 0.9113573431968689
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vrwfguctin.png",
+            "label": 1,
+            "output": 0.9113367199897766
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qvizqxsbvw.png",
+            "label": 1,
+            "output": 0.9110273122787476
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jrdflpqmct.png",
+            "label": 1,
+            "output": 0.9104263782501221
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ujtxojadtt.png",
+            "label": 1,
+            "output": 0.9103204011917114
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xvpiclvxzd.png",
+            "label": 1,
+            "output": 0.9103128910064697
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jezexlfhiq.png",
+            "label": 1,
+            "output": 0.9096293449401855
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gzzhkwcczo.png",
+            "label": 1,
+            "output": 0.9094379544258118
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xyhvtzywzh.png",
+            "label": 1,
+            "output": 0.9093766212463379
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wsbgevekgf.png",
+            "label": 1,
+            "output": 0.9092938303947449
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dbcoycuiyt.png",
+            "label": 1,
+            "output": 0.9084790945053101
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ppufoaihkk.png",
+            "label": 1,
+            "output": 0.9083113670349121
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mfzrfiyjrf.png",
+            "label": 1,
+            "output": 0.9073633551597595
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fvbwueqmmc.png",
+            "label": 1,
+            "output": 0.9070293307304382
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ywhajfzors.png",
+            "label": 1,
+            "output": 0.9068489670753479
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jgcuwqiqsa.png",
+            "label": 1,
+            "output": 0.9067810773849487
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fwnswugajt.png",
+            "label": 1,
+            "output": 0.9067650437355042
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/otvbonovtr.png",
+            "label": 1,
+            "output": 0.9065030217170715
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/opljqzrrmw.png",
+            "label": 1,
+            "output": 0.9060506820678711
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/psvhorutyv.png",
+            "label": 1,
+            "output": 0.9059561491012573
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kjkmmniwcv.png",
+            "label": 1,
+            "output": 0.9055605530738831
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/drnfeijjlp.png",
+            "label": 1,
+            "output": 0.9044690728187561
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bghliglwng.png",
+            "label": 1,
+            "output": 0.9038271307945251
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tzgkmgcgjt.png",
+            "label": 1,
+            "output": 0.9038230776786804
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uwzfugbfno.png",
+            "label": 1,
+            "output": 0.9031046032905579
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cbmykoukdb.png",
+            "label": 1,
+            "output": 0.9024575352668762
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qyjvmgdrmq.png",
+            "label": 1,
+            "output": 0.9018867611885071
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kysxvylzkk.png",
+            "label": 1,
+            "output": 0.9016481637954712
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bxmsmmxizq.png",
+            "label": 1,
+            "output": 0.9015072584152222
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lqdjvtnjqn.png",
+            "label": 1,
+            "output": 0.9015043377876282
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lvtmqaadzz.png",
+            "label": 1,
+            "output": 0.8998665809631348
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hvuyhhryut.png",
+            "label": 1,
+            "output": 0.8995416164398193
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/likeehktbp.png",
+            "label": 1,
+            "output": 0.8994249701499939
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jhcbtfuziq.png",
+            "label": 1,
+            "output": 0.8992292881011963
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gcenmxpfnz.png",
+            "label": 1,
+            "output": 0.8989202380180359
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nhcqvlreou.png",
+            "label": 1,
+            "output": 0.8989101648330688
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tjonndufse.png",
+            "label": 1,
+            "output": 0.8988756537437439
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pbblbgdzjz.png",
+            "label": 1,
+            "output": 0.8988193273544312
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dexhjtncni.png",
+            "label": 1,
+            "output": 0.8984163403511047
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aqfnjpltvb.png",
+            "label": 1,
+            "output": 0.8980953097343445
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/khmsldutff.png",
+            "label": 1,
+            "output": 0.8979061841964722
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zoxknkpgoh.png",
+            "label": 1,
+            "output": 0.8978370428085327
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wpptcqobpu.png",
+            "label": 1,
+            "output": 0.8976787328720093
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cmgdpkxuef.png",
+            "label": 1,
+            "output": 0.8972153067588806
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mkigwustvn.png",
+            "label": 1,
+            "output": 0.897023618221283
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/olxnaenbde.png",
+            "label": 1,
+            "output": 0.8968870639801025
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tvdnjojlmh.png",
+            "label": 1,
+            "output": 0.8966333866119385
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/txviitvyvk.png",
+            "label": 1,
+            "output": 0.8964065909385681
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ayibbogxvl.png",
+            "label": 1,
+            "output": 0.8962825536727905
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/amthaokcfg.png",
+            "label": 1,
+            "output": 0.8956818580627441
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ybbbdeihcf.png",
+            "label": 1,
+            "output": 0.8953816890716553
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vcuznpgkuo.png",
+            "label": 1,
+            "output": 0.8952190279960632
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hzfxwrmqch.png",
+            "label": 1,
+            "output": 0.8941394090652466
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/csvtttfwut.png",
+            "label": 1,
+            "output": 0.8940126299858093
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xfblvcbesb.png",
+            "label": 1,
+            "output": 0.8924093246459961
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ceyagwkqcf.png",
+            "label": 1,
+            "output": 0.8921964764595032
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xvwgzjvahe.png",
+            "label": 1,
+            "output": 0.8921653628349304
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uzunqwixgv.png",
+            "label": 1,
+            "output": 0.8921642899513245
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ovjpkblzon.png",
+            "label": 1,
+            "output": 0.891606867313385
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nmgqcqjyhs.png",
+            "label": 1,
+            "output": 0.8915608525276184
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nrglavnpuu.png",
+            "label": 1,
+            "output": 0.8910959362983704
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dtoeuxdocm.png",
+            "label": 1,
+            "output": 0.8910413384437561
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ocmzcjegeg.png",
+            "label": 1,
+            "output": 0.8897149562835693
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hxkeijjlvb.png",
+            "label": 1,
+            "output": 0.8890877366065979
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pksmcsxxra.png",
+            "label": 1,
+            "output": 0.8888397216796875
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ughldndbio.png",
+            "label": 1,
+            "output": 0.8884843587875366
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hkhpikinqs.png",
+            "label": 1,
+            "output": 0.8882667422294617
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/npfhwxylge.png",
+            "label": 1,
+            "output": 0.8881468772888184
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vpruwhsipu.png",
+            "label": 1,
+            "output": 0.8874912858009338
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rrcbbbylog.png",
+            "label": 1,
+            "output": 0.8873876929283142
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/stzvgskice.png",
+            "label": 1,
+            "output": 0.8873512148857117
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ycojahdoqs.png",
+            "label": 1,
+            "output": 0.8872946500778198
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/attqnlwqgz.png",
+            "label": 1,
+            "output": 0.8872753381729126
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ttwsrquzox.png",
+            "label": 1,
+            "output": 0.8864388465881348
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bthfwgfwqz.png",
+            "label": 1,
+            "output": 0.8863855004310608
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lxjrxqzveb.png",
+            "label": 1,
+            "output": 0.8863813877105713
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mlxvdfndsh.png",
+            "label": 1,
+            "output": 0.885444164276123
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/acpwmtyztu.png",
+            "label": 1,
+            "output": 0.8848114013671875
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bfuqjvwwlk.png",
+            "label": 1,
+            "output": 0.8844287395477295
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ciwgbjibcd.png",
+            "label": 1,
+            "output": 0.883799135684967
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/werhusireg.png",
+            "label": 1,
+            "output": 0.8830920457839966
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cxjsjqusph.png",
+            "label": 1,
+            "output": 0.8828638195991516
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pcvfvfsxek.png",
+            "label": 1,
+            "output": 0.8826199769973755
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jsytpmwrvb.png",
+            "label": 1,
+            "output": 0.8823214173316956
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jrkctxyekx.png",
+            "label": 1,
+            "output": 0.8820058703422546
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fegqolkrls.png",
+            "label": 1,
+            "output": 0.8811241388320923
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lqsafjohri.png",
+            "label": 1,
+            "output": 0.8809637427330017
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nnuuhindgj.png",
+            "label": 1,
+            "output": 0.8807827234268188
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uqyyhogjkx.png",
+            "label": 1,
+            "output": 0.8807241320610046
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wynbrdoyde.png",
+            "label": 1,
+            "output": 0.8803593516349792
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lsmostdlua.png",
+            "label": 1,
+            "output": 0.8799727559089661
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aoyyeorqer.png",
+            "label": 1,
+            "output": 0.8791442513465881
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xfhgbduucl.png",
+            "label": 1,
+            "output": 0.8788720369338989
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sxbfuikltb.png",
+            "label": 1,
+            "output": 0.8787468075752258
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qhuylytsyy.png",
+            "label": 1,
+            "output": 0.8785390853881836
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hisyohahzi.png",
+            "label": 1,
+            "output": 0.8782781958580017
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vitzpaholy.png",
+            "label": 1,
+            "output": 0.8780197501182556
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jlmbbubxmr.png",
+            "label": 1,
+            "output": 0.8762602806091309
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/arjjdokwee.png",
+            "label": 1,
+            "output": 0.8762255907058716
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rxrwofckks.png",
+            "label": 1,
+            "output": 0.8758218884468079
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rxsgddveyy.png",
+            "label": 1,
+            "output": 0.8757923245429993
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yeysnhxrmp.png",
+            "label": 1,
+            "output": 0.8755553364753723
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kqhrtvmeux.png",
+            "label": 1,
+            "output": 0.8746398091316223
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/annkzxvqsz.png",
+            "label": 1,
+            "output": 0.8742771744728088
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ifqwneltpg.png",
+            "label": 1,
+            "output": 0.8738184571266174
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bicflvshvw.png",
+            "label": 1,
+            "output": 0.8727381229400635
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gfdekurnbz.png",
+            "label": 1,
+            "output": 0.8719094395637512
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/plszaygqda.png",
+            "label": 1,
+            "output": 0.8710538148880005
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qafswzymfy.png",
+            "label": 1,
+            "output": 0.8700011372566223
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zwkapmobkx.png",
+            "label": 1,
+            "output": 0.8694766759872437
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ovuipynpix.png",
+            "label": 1,
+            "output": 0.8694349527359009
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uyrgewsxvy.png",
+            "label": 1,
+            "output": 0.8690310716629028
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fpjptmloys.png",
+            "label": 1,
+            "output": 0.8685334920883179
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sevosnzutr.png",
+            "label": 1,
+            "output": 0.8681812286376953
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pyydtwntke.png",
+            "label": 1,
+            "output": 0.8670795559883118
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fjxuybiebs.png",
+            "label": 1,
+            "output": 0.8668261766433716
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eelzocmtws.png",
+            "label": 1,
+            "output": 0.866809606552124
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pzvgfnoiln.png",
+            "label": 1,
+            "output": 0.8661817312240601
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/glmtywqxhj.png",
+            "label": 1,
+            "output": 0.8658588528633118
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fxxzogdrnu.png",
+            "label": 1,
+            "output": 0.865802526473999
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bbqlufpjnl.png",
+            "label": 1,
+            "output": 0.8654749393463135
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/smmiazxocc.png",
+            "label": 1,
+            "output": 0.8653258681297302
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xaetznfnpu.png",
+            "label": 1,
+            "output": 0.8652183413505554
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/smlabsrifo.png",
+            "label": 1,
+            "output": 0.8648679852485657
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wiweponjic.png",
+            "label": 1,
+            "output": 0.8648308515548706
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tnsrlfrflx.png",
+            "label": 1,
+            "output": 0.8646916747093201
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ygqiosrden.png",
+            "label": 1,
+            "output": 0.8645472526550293
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gchslncruv.png",
+            "label": 1,
+            "output": 0.8642387986183167
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pwhjtzqmis.png",
+            "label": 1,
+            "output": 0.8641901612281799
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ouirlfwsyx.png",
+            "label": 1,
+            "output": 0.864163339138031
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/apwufqzgrg.png",
+            "label": 1,
+            "output": 0.8640025854110718
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gnjefwyemy.png",
+            "label": 1,
+            "output": 0.8638541102409363
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qaafihkbbk.png",
+            "label": 1,
+            "output": 0.86318039894104
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/orebaohval.png",
+            "label": 1,
+            "output": 0.8625888824462891
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hhmqvefsdm.png",
+            "label": 1,
+            "output": 0.8618981838226318
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hkjmvhgmso.png",
+            "label": 1,
+            "output": 0.8617258667945862
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zcaqqmomfv.png",
+            "label": 1,
+            "output": 0.8612302541732788
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hwfnoawnsx.png",
+            "label": 1,
+            "output": 0.8610628843307495
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rjdnzhbvwc.png",
+            "label": 1,
+            "output": 0.859423816204071
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tknxjephgy.png",
+            "label": 1,
+            "output": 0.8591154217720032
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gaephzrdih.png",
+            "label": 1,
+            "output": 0.8586996793746948
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nhmcszkgcq.png",
+            "label": 1,
+            "output": 0.8586898446083069
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fnjmysjhqo.png",
+            "label": 1,
+            "output": 0.8569436073303223
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rtkpyywobl.png",
+            "label": 1,
+            "output": 0.8565976023674011
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kguycdreay.png",
+            "label": 1,
+            "output": 0.8565577864646912
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aksszgcpfr.png",
+            "label": 1,
+            "output": 0.8562961220741272
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qtpttlawjz.png",
+            "label": 1,
+            "output": 0.8549278974533081
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jjplgayvlc.png",
+            "label": 1,
+            "output": 0.8546848893165588
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xiubxgyhcs.png",
+            "label": 1,
+            "output": 0.854375958442688
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/spuypppvyh.png",
+            "label": 1,
+            "output": 0.8528291583061218
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nfysclasrr.png",
+            "label": 1,
+            "output": 0.8520666360855103
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dhepjncjkt.png",
+            "label": 1,
+            "output": 0.8510439991950989
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dsxuevcdxk.png",
+            "label": 1,
+            "output": 0.8492898941040039
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dncoarxujc.png",
+            "label": 1,
+            "output": 0.8488954305648804
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wdjkwiwroa.png",
+            "label": 1,
+            "output": 0.8485608696937561
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lxlphyyeaw.png",
+            "label": 1,
+            "output": 0.8482705354690552
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rlarzjlvnd.png",
+            "label": 1,
+            "output": 0.8476749062538147
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jopvgvsrel.png",
+            "label": 1,
+            "output": 0.8475073575973511
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cswedhbgpd.png",
+            "label": 1,
+            "output": 0.8471378087997437
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kxyebvmqsl.png",
+            "label": 1,
+            "output": 0.8461649417877197
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gliascthpi.png",
+            "label": 1,
+            "output": 0.8443711996078491
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qhnjseyjbw.png",
+            "label": 1,
+            "output": 0.8443216681480408
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fgkquzymgd.png",
+            "label": 1,
+            "output": 0.8438501954078674
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sssvouruij.png",
+            "label": 1,
+            "output": 0.8435925245285034
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/orgclftabd.png",
+            "label": 1,
+            "output": 0.8427859544754028
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qpjsgmteke.png",
+            "label": 1,
+            "output": 0.8427318334579468
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ffuzczfqav.png",
+            "label": 1,
+            "output": 0.8426903486251831
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ikiqryhfmf.png",
+            "label": 1,
+            "output": 0.8391334414482117
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pjvqcnpfqy.png",
+            "label": 1,
+            "output": 0.8376144766807556
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kkxuptmzof.png",
+            "label": 1,
+            "output": 0.8373664617538452
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/clutkoqhvu.png",
+            "label": 1,
+            "output": 0.8368659615516663
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wqvahtytps.png",
+            "label": 1,
+            "output": 0.836603045463562
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/krqkilakxw.png",
+            "label": 1,
+            "output": 0.8355623483657837
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wipphellrw.png",
+            "label": 1,
+            "output": 0.8350489139556885
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kpmxquicco.png",
+            "label": 1,
+            "output": 0.8347254395484924
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/picuojlsec.png",
+            "label": 1,
+            "output": 0.8327597379684448
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xbftnrscst.png",
+            "label": 1,
+            "output": 0.8309061527252197
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zzrybysskm.png",
+            "label": 1,
+            "output": 0.8297982215881348
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ponotiiits.png",
+            "label": 1,
+            "output": 0.8290075659751892
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/utfokfmmbf.png",
+            "label": 1,
+            "output": 0.8279480934143066
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iqijagswok.png",
+            "label": 1,
+            "output": 0.827839732170105
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/suhpchcpza.png",
+            "label": 1,
+            "output": 0.8273201584815979
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oovxyyombs.png",
+            "label": 1,
+            "output": 0.8249529600143433
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ccatehwpeu.png",
+            "label": 1,
+            "output": 0.8226858973503113
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pirwlvliku.png",
+            "label": 1,
+            "output": 0.8217197060585022
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/agjsmczzat.png",
+            "label": 1,
+            "output": 0.8211727142333984
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xjsfnrjtst.png",
+            "label": 1,
+            "output": 0.8209325671195984
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jckrxjozhx.png",
+            "label": 1,
+            "output": 0.820787250995636
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xbgkvftfss.png",
+            "label": 1,
+            "output": 0.818641185760498
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qofcjlhwbv.png",
+            "label": 1,
+            "output": 0.8179165124893188
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qitcgxcdmj.png",
+            "label": 1,
+            "output": 0.8175374865531921
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xpdelxvksw.png",
+            "label": 1,
+            "output": 0.8169960975646973
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gwhfxugran.png",
+            "label": 1,
+            "output": 0.8169678449630737
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fwhacyybom.png",
+            "label": 1,
+            "output": 0.8144766688346863
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/odhzcmznnr.png",
+            "label": 1,
+            "output": 0.8132960796356201
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dexbjiwpmb.png",
+            "label": 1,
+            "output": 0.8130770325660706
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/omsyxrsufp.png",
+            "label": 1,
+            "output": 0.8127205967903137
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/igjyxqgebm.png",
+            "label": 1,
+            "output": 0.8126183152198792
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fdetgrcfyf.png",
+            "label": 1,
+            "output": 0.81243896484375
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yrantjwhqk.png",
+            "label": 1,
+            "output": 0.8116763830184937
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ljluvxkeau.png",
+            "label": 1,
+            "output": 0.8114670515060425
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sltdkynkrd.png",
+            "label": 1,
+            "output": 0.8104241490364075
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pepkgtkonx.png",
+            "label": 1,
+            "output": 0.8100318312644958
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fdklbxclqv.png",
+            "label": 1,
+            "output": 0.8099793791770935
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/osigoexsbv.png",
+            "label": 1,
+            "output": 0.809020459651947
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mizxozzqsb.png",
+            "label": 1,
+            "output": 0.8088302612304688
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/drpsdefmzh.png",
+            "label": 1,
+            "output": 0.8085548281669617
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ohycivlfdy.png",
+            "label": 1,
+            "output": 0.8084971308708191
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gswbqatuhn.png",
+            "label": 1,
+            "output": 0.8081468343734741
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rigaxqbjbr.png",
+            "label": 1,
+            "output": 0.8077786564826965
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qmqkkwwggi.png",
+            "label": 1,
+            "output": 0.8058273792266846
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iqruwytkxd.png",
+            "label": 1,
+            "output": 0.805659830570221
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iqiospmdok.png",
+            "label": 1,
+            "output": 0.8049747943878174
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ypvdkreobg.png",
+            "label": 1,
+            "output": 0.8042568564414978
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/njnnphhwll.png",
+            "label": 1,
+            "output": 0.8019358515739441
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mobwrxioai.png",
+            "label": 1,
+            "output": 0.8018277287483215
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ntwekxxoly.png",
+            "label": 1,
+            "output": 0.8010414242744446
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rgiwpyxekm.png",
+            "label": 1,
+            "output": 0.8007044792175293
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uqgovdwcrr.png",
+            "label": 1,
+            "output": 0.800422191619873
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yxdmgabgrh.png",
+            "label": 1,
+            "output": 0.7997105121612549
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jhnzthaool.png",
+            "label": 1,
+            "output": 0.7989068627357483
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/htqmkwgkwb.png",
+            "label": 1,
+            "output": 0.7987962961196899
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rzkutenljp.png",
+            "label": 1,
+            "output": 0.797737717628479
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gzmbdszeyt.png",
+            "label": 1,
+            "output": 0.7974710464477539
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gkbjdvwiuz.png",
+            "label": 1,
+            "output": 0.7974143624305725
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wmgazqjjux.png",
+            "label": 1,
+            "output": 0.7970724105834961
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/guljtnkdnj.png",
+            "label": 1,
+            "output": 0.7958986163139343
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uvweqxeurs.png",
+            "label": 1,
+            "output": 0.7956898808479309
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tbganwxklb.png",
+            "label": 1,
+            "output": 0.7954685688018799
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oucmaedfum.png",
+            "label": 1,
+            "output": 0.7948958873748779
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zaqfmruinv.png",
+            "label": 1,
+            "output": 0.794505774974823
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iwbpqeobxw.png",
+            "label": 1,
+            "output": 0.7940132021903992
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/muszivpifs.png",
+            "label": 1,
+            "output": 0.7937272787094116
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cciqgyfbnw.png",
+            "label": 1,
+            "output": 0.7931872606277466
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yimxruvwud.png",
+            "label": 1,
+            "output": 0.7901098728179932
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zdqmadvhbl.png",
+            "label": 1,
+            "output": 0.7897883057594299
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yaaqlxnzhi.png",
+            "label": 1,
+            "output": 0.7890655398368835
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/paozbcurkw.png",
+            "label": 1,
+            "output": 0.7876967787742615
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cyencgbdne.png",
+            "label": 1,
+            "output": 0.7869513630867004
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sxbarbxbis.png",
+            "label": 1,
+            "output": 0.7865649461746216
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pccthywpgs.png",
+            "label": 1,
+            "output": 0.7851238250732422
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fvfgzexjcm.png",
+            "label": 1,
+            "output": 0.7846648693084717
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ktsfcdbxkp.png",
+            "label": 1,
+            "output": 0.7838695049285889
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ujqqamorwl.png",
+            "label": 1,
+            "output": 0.782650351524353
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aofcqpcyfk.png",
+            "label": 1,
+            "output": 0.7809174060821533
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/osrdcrocjh.png",
+            "label": 1,
+            "output": 0.7802731394767761
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dpsfehmqme.png",
+            "label": 1,
+            "output": 0.7796039581298828
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wrplkwvjrk.png",
+            "label": 1,
+            "output": 0.7795951962471008
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jbsbxfrewb.png",
+            "label": 1,
+            "output": 0.7792155146598816
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wekyyrslyw.png",
+            "label": 1,
+            "output": 0.7784099578857422
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ynescstwdk.png",
+            "label": 1,
+            "output": 0.7779663801193237
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gufjiiwgrf.png",
+            "label": 1,
+            "output": 0.7778763175010681
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jtprghimeh.png",
+            "label": 1,
+            "output": 0.7776837944984436
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vutxbsgjsz.png",
+            "label": 1,
+            "output": 0.7772355079650879
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xmppkkdynh.png",
+            "label": 1,
+            "output": 0.7768785953521729
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eolimvhygz.png",
+            "label": 1,
+            "output": 0.7765366435050964
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sgnnltafbd.png",
+            "label": 1,
+            "output": 0.7757226228713989
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gxkmzinhug.png",
+            "label": 1,
+            "output": 0.7755265235900879
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jxacexpmcn.png",
+            "label": 1,
+            "output": 0.7751555442810059
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gckzbyionz.png",
+            "label": 1,
+            "output": 0.7750594615936279
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iqjkwjvday.png",
+            "label": 1,
+            "output": 0.7744832038879395
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jfqdxkbnuz.png",
+            "label": 1,
+            "output": 0.7732863426208496
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lzletadhdl.png",
+            "label": 1,
+            "output": 0.7731696963310242
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jfmstwhypd.png",
+            "label": 1,
+            "output": 0.77012038230896
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vkjmgldjai.png",
+            "label": 1,
+            "output": 0.7690128087997437
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jrzuxwwxsh.png",
+            "label": 1,
+            "output": 0.7686866521835327
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kqtezbdvua.png",
+            "label": 1,
+            "output": 0.7681317329406738
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jgvhyrcgyx.png",
+            "label": 1,
+            "output": 0.768084704875946
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/huksdpnufs.png",
+            "label": 1,
+            "output": 0.7678107619285583
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jvctzionai.png",
+            "label": 1,
+            "output": 0.7676513195037842
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yvwtaordyd.png",
+            "label": 1,
+            "output": 0.766679584980011
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gxexzzlcld.png",
+            "label": 1,
+            "output": 0.7657644748687744
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eowkckioii.png",
+            "label": 1,
+            "output": 0.763918399810791
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mszjipjvvf.png",
+            "label": 1,
+            "output": 0.7630528807640076
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xoxubdjnhe.png",
+            "label": 1,
+            "output": 0.7614080309867859
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mfcceezfwn.png",
+            "label": 1,
+            "output": 0.7607141137123108
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jkdydiqkym.png",
+            "label": 1,
+            "output": 0.7605084180831909
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aqawlsbyzw.png",
+            "label": 1,
+            "output": 0.758084774017334
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tbxpyvxjym.png",
+            "label": 1,
+            "output": 0.7573474645614624
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vsivgpmche.png",
+            "label": 1,
+            "output": 0.7572067975997925
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ayzndlluru.png",
+            "label": 1,
+            "output": 0.756622314453125
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bqcltegxdf.png",
+            "label": 1,
+            "output": 0.7547365427017212
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zacjdmmloj.png",
+            "label": 1,
+            "output": 0.7461214065551758
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fgizsruyxb.png",
+            "label": 1,
+            "output": 0.7458077669143677
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uvsazktssr.png",
+            "label": 1,
+            "output": 0.7453578114509583
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gvvfxpftgt.png",
+            "label": 1,
+            "output": 0.7452824115753174
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fzzunuvfgl.png",
+            "label": 1,
+            "output": 0.7448163628578186
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lmrswyanpv.png",
+            "label": 1,
+            "output": 0.7444990277290344
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ybihqfczqf.png",
+            "label": 1,
+            "output": 0.7437364459037781
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fneghrqtsf.png",
+            "label": 1,
+            "output": 0.7435556054115295
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rakzbwxeme.png",
+            "label": 1,
+            "output": 0.7419368624687195
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jpkbhfmhql.png",
+            "label": 1,
+            "output": 0.7418820261955261
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aujwkgbadp.png",
+            "label": 1,
+            "output": 0.7374791502952576
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mfmhhrlxuy.png",
+            "label": 1,
+            "output": 0.7359655499458313
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gjpzqplype.png",
+            "label": 1,
+            "output": 0.7349951267242432
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nrzbgujfll.png",
+            "label": 1,
+            "output": 0.7346479892730713
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aowpbzokmp.png",
+            "label": 1,
+            "output": 0.7345695495605469
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vwsjebonhl.png",
+            "label": 1,
+            "output": 0.7336077094078064
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fcgojsqxhw.png",
+            "label": 1,
+            "output": 0.7319108843803406
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zmqpqnavds.png",
+            "label": 1,
+            "output": 0.7309884428977966
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cddswasamx.png",
+            "label": 1,
+            "output": 0.7280784249305725
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wsreukpzwe.png",
+            "label": 1,
+            "output": 0.727669358253479
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tmuzzrstsf.png",
+            "label": 1,
+            "output": 0.7260487675666809
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nhlvajciai.png",
+            "label": 1,
+            "output": 0.7254101634025574
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gmeufzjqxw.png",
+            "label": 1,
+            "output": 0.7203274369239807
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vthfgmonzr.png",
+            "label": 1,
+            "output": 0.7195571064949036
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kszghluqlw.png",
+            "label": 1,
+            "output": 0.719024121761322
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uxbgzfafqm.png",
+            "label": 1,
+            "output": 0.7147635817527771
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fgbgiwekim.png",
+            "label": 1,
+            "output": 0.7130908966064453
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/szebyvzlqt.png",
+            "label": 1,
+            "output": 0.7106313109397888
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/opueqmfkcd.png",
+            "label": 1,
+            "output": 0.7088118195533752
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nnylgyqsxs.png",
+            "label": 1,
+            "output": 0.7061313390731812
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yyrtmboyuo.png",
+            "label": 1,
+            "output": 0.705022394657135
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ffubnjdhop.png",
+            "label": 1,
+            "output": 0.7036533355712891
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bfczagsxfw.png",
+            "label": 1,
+            "output": 0.7021642327308655
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bfiknazsha.png",
+            "label": 1,
+            "output": 0.7010691165924072
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yzkphttipt.png",
+            "label": 1,
+            "output": 0.700178861618042
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/orgateeurw.png",
+            "label": 1,
+            "output": 0.699446976184845
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aesvfgnjye.png",
+            "label": 1,
+            "output": 0.6981313228607178
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mgeezotzdw.png",
+            "label": 1,
+            "output": 0.6975855827331543
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kvomczokut.png",
+            "label": 1,
+            "output": 0.6962877511978149
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/medbpbsmum.png",
+            "label": 1,
+            "output": 0.6951737403869629
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ofgvdkgdnd.png",
+            "label": 1,
+            "output": 0.6942734718322754
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/okuolqaypa.png",
+            "label": 1,
+            "output": 0.6931331157684326
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yhwhnweccm.png",
+            "label": 1,
+            "output": 0.6930712461471558
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/onkjvikzsj.png",
+            "label": 1,
+            "output": 0.6924178004264832
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ygbcaqrvep.png",
+            "label": 1,
+            "output": 0.6909616589546204
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yutcusvily.png",
+            "label": 1,
+            "output": 0.6901697516441345
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rtiaijvnif.png",
+            "label": 1,
+            "output": 0.6901364922523499
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qgxnqynxwh.png",
+            "label": 1,
+            "output": 0.6899604797363281
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vfjqbhhdhb.png",
+            "label": 1,
+            "output": 0.6897387504577637
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vpokhpnoyy.png",
+            "label": 1,
+            "output": 0.6887161135673523
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/touiowfclv.png",
+            "label": 1,
+            "output": 0.6847205758094788
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/izrfhzbwzc.png",
+            "label": 1,
+            "output": 0.6845548748970032
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mtftroydhh.png",
+            "label": 1,
+            "output": 0.6838034987449646
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/siheeokstl.png",
+            "label": 1,
+            "output": 0.683651328086853
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lnavxqqxfa.png",
+            "label": 1,
+            "output": 0.682957112789154
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/czqsnkbvng.png",
+            "label": 1,
+            "output": 0.6816623210906982
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fnqlfrabai.png",
+            "label": 1,
+            "output": 0.681358277797699
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pvrfveosdy.png",
+            "label": 1,
+            "output": 0.6795665621757507
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yinujujzud.png",
+            "label": 1,
+            "output": 0.6788773536682129
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qhhsiahqdz.png",
+            "label": 1,
+            "output": 0.6771915555000305
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fzmzemtxkr.png",
+            "label": 1,
+            "output": 0.6761638522148132
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xctsfejxfy.png",
+            "label": 1,
+            "output": 0.6759243011474609
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/truenadnmf.png",
+            "label": 1,
+            "output": 0.6753951907157898
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hhlwjuqsbz.png",
+            "label": 1,
+            "output": 0.6739824414253235
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eqndltlggi.png",
+            "label": 1,
+            "output": 0.6735727787017822
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/idvfzzxvyh.png",
+            "label": 1,
+            "output": 0.6733326315879822
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qlhvuhhqol.png",
+            "label": 1,
+            "output": 0.6711786389350891
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/titltoewou.png",
+            "label": 1,
+            "output": 0.6677512526512146
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jmqnijkden.png",
+            "label": 1,
+            "output": 0.6637768745422363
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uydofqnwdz.png",
+            "label": 1,
+            "output": 0.6615889072418213
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oftwvuyony.png",
+            "label": 1,
+            "output": 0.6595669984817505
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/djfymdweky.png",
+            "label": 1,
+            "output": 0.6574180722236633
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jroisduzzw.png",
+            "label": 1,
+            "output": 0.6561774611473083
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/szkmirkryb.png",
+            "label": 1,
+            "output": 0.6558767557144165
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vcsznknzhw.png",
+            "label": 1,
+            "output": 0.6554851531982422
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/phqxvaxgfc.png",
+            "label": 1,
+            "output": 0.6512176394462585
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/djtbqkzsak.png",
+            "label": 1,
+            "output": 0.6509225964546204
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sepihwqglu.png",
+            "label": 1,
+            "output": 0.6491511464118958
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jhuyduptth.png",
+            "label": 1,
+            "output": 0.6490918397903442
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qwawgjhkcz.png",
+            "label": 1,
+            "output": 0.6467149257659912
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lsvzbqhxgl.png",
+            "label": 1,
+            "output": 0.6450928449630737
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/npgjxoaxcz.png",
+            "label": 1,
+            "output": 0.6448764801025391
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rprdsmygod.png",
+            "label": 1,
+            "output": 0.6441490054130554
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sbuowwvzjw.png",
+            "label": 1,
+            "output": 0.6433724761009216
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vfhdjmajxv.png",
+            "label": 1,
+            "output": 0.6429505348205566
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/usipjcyjoy.png",
+            "label": 1,
+            "output": 0.6427037715911865
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/cpyrataump.png",
+            "label": 1,
+            "output": 0.6407633423805237
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jzpjgkemjx.png",
+            "label": 1,
+            "output": 0.6402028203010559
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dldztvvwrt.png",
+            "label": 1,
+            "output": 0.6397281289100647
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qngsmynlht.png",
+            "label": 1,
+            "output": 0.639297366142273
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wzdhwjmvgy.png",
+            "label": 1,
+            "output": 0.6332640051841736
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wrxxltdsxi.png",
+            "label": 1,
+            "output": 0.6321799159049988
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nuhcuxjnpx.png",
+            "label": 1,
+            "output": 0.6321735978126526
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jqihknjmkf.png",
+            "label": 1,
+            "output": 0.6290239691734314
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/edqamoutbf.png",
+            "label": 1,
+            "output": 0.6267260313034058
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fksurkvzeg.png",
+            "label": 1,
+            "output": 0.6253362894058228
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xmyblzhwwh.png",
+            "label": 1,
+            "output": 0.6204621195793152
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ybpkzmxsoj.png",
+            "label": 1,
+            "output": 0.6169406175613403
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ewspkgvjkv.png",
+            "label": 1,
+            "output": 0.6159964799880981
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vsoitgrurd.png",
+            "label": 1,
+            "output": 0.6146588325500488
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bljmtryslc.png",
+            "label": 1,
+            "output": 0.6052860021591187
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aqdcxmcowi.png",
+            "label": 1,
+            "output": 0.6021137833595276
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qejahcqthz.png",
+            "label": 1,
+            "output": 0.5993700623512268
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wketmynlnj.png",
+            "label": 1,
+            "output": 0.5973278284072876
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bbdiioaqyn.png",
+            "label": 1,
+            "output": 0.5954297184944153
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/uzslfnchhd.png",
+            "label": 1,
+            "output": 0.5935522317886353
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eayzvzrytx.png",
+            "label": 1,
+            "output": 0.5934977531433105
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vofhkesmtv.png",
+            "label": 1,
+            "output": 0.5877500772476196
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/msdsnlzcre.png",
+            "label": 1,
+            "output": 0.5866889953613281
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vapzubzcvf.png",
+            "label": 1,
+            "output": 0.5832809805870056
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ommdrgxtbr.png",
+            "label": 1,
+            "output": 0.5800872445106506
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bnhkqppcfl.png",
+            "label": 1,
+            "output": 0.5768614411354065
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ogjsxmnkxw.png",
+            "label": 1,
+            "output": 0.5724455118179321
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dbmufhmuzs.png",
+            "label": 1,
+            "output": 0.5715985894203186
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ydufoinjbm.png",
+            "label": 1,
+            "output": 0.5711230039596558
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xxxlutdoia.png",
+            "label": 1,
+            "output": 0.5688203573226929
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mbanczcffd.png",
+            "label": 1,
+            "output": 0.5676146745681763
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vlnusbscnx.png",
+            "label": 1,
+            "output": 0.5662398338317871
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/heasqjcmsg.png",
+            "label": 1,
+            "output": 0.5658679008483887
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/znwafizosm.png",
+            "label": 1,
+            "output": 0.5604830384254456
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gdomuubpmo.png",
+            "label": 1,
+            "output": 0.5599710941314697
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pxefeippis.png",
+            "label": 1,
+            "output": 0.5562797784805298
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xrkvaduave.png",
+            "label": 1,
+            "output": 0.5558305978775024
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mfoxhwrofa.png",
+            "label": 1,
+            "output": 0.5537436604499817
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lttnaabznd.png",
+            "label": 1,
+            "output": 0.553202211856842
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sdbpzpettf.png",
+            "label": 1,
+            "output": 0.553041398525238
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/surgjkswmj.png",
+            "label": 1,
+            "output": 0.5528337359428406
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zdteumqsqf.png",
+            "label": 1,
+            "output": 0.5512023568153381
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vvdfxbwxxd.png",
+            "label": 1,
+            "output": 0.5490802526473999
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hnihvkmnje.png",
+            "label": 1,
+            "output": 0.5419371724128723
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eqtzpzsbnp.png",
+            "label": 1,
+            "output": 0.5412291884422302
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lavlfbgnkn.png",
+            "label": 1,
+            "output": 0.5350002646446228
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bwvinmojcw.png",
+            "label": 1,
+            "output": 0.5338131785392761
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xlwfiidgib.png",
+            "label": 1,
+            "output": 0.5294917821884155
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pcudblgobu.png",
+            "label": 1,
+            "output": 0.526913046836853
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/effiwpkvcy.png",
+            "label": 1,
+            "output": 0.5227152705192566
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wtzwjbopzy.png",
+            "label": 1,
+            "output": 0.5120564699172974
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qnqvwdpmam.png",
+            "label": 1,
+            "output": 0.5117393136024475
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xuzzmcdpux.png",
+            "label": 1,
+            "output": 0.5082395672798157
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jqcakwrejy.png",
+            "label": 1,
+            "output": 0.5044415593147278
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/iibymqusjk.png",
+            "label": 1,
+            "output": 0.5021877288818359
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ybpiflwjwj.png",
+            "label": 1,
+            "output": 0.5021197199821472
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hhhwzgcieg.png",
+            "label": 1,
+            "output": 0.4915856420993805
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qtlexhtorg.png",
+            "label": 1,
+            "output": 0.4869270920753479
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ranqpkoerl.png",
+            "label": 1,
+            "output": 0.4841550588607788
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aynkpajrmy.png",
+            "label": 1,
+            "output": 0.48333683609962463
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hypftiguck.png",
+            "label": 1,
+            "output": 0.4799366593360901
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ntbjfhgaww.png",
+            "label": 1,
+            "output": 0.4768241047859192
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zxnpcvwbfb.png",
+            "label": 1,
+            "output": 0.4736568331718445
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/etiolecymt.png",
+            "label": 1,
+            "output": 0.47360968589782715
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tivixbdipm.png",
+            "label": 1,
+            "output": 0.4722610414028168
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ykhbfkbqqc.png",
+            "label": 1,
+            "output": 0.4721677303314209
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mqzlaxdcyf.png",
+            "label": 1,
+            "output": 0.47051605582237244
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yhxjifarjw.png",
+            "label": 1,
+            "output": 0.4672219455242157
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/kvaphythne.png",
+            "label": 1,
+            "output": 0.46235355734825134
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gbmtgdhzrx.png",
+            "label": 1,
+            "output": 0.46234244108200073
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hzrxscnjew.png",
+            "label": 1,
+            "output": 0.4616323411464691
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bbmeviacjm.png",
+            "label": 1,
+            "output": 0.4612072706222534
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xphjlaxygh.png",
+            "label": 1,
+            "output": 0.45908215641975403
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tefyzlckhu.png",
+            "label": 1,
+            "output": 0.45849326252937317
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vmlzuywhlr.png",
+            "label": 1,
+            "output": 0.4582267105579376
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/skkprfujmw.png",
+            "label": 1,
+            "output": 0.4567776024341583
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ogdtdsagel.png",
+            "label": 1,
+            "output": 0.4541384279727936
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nvsdiqcxdc.png",
+            "label": 1,
+            "output": 0.4480688273906708
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/adizyjvxam.png",
+            "label": 1,
+            "output": 0.44734930992126465
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/oddyrvltgg.png",
+            "label": 1,
+            "output": 0.4444088935852051
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jgaqinqawj.png",
+            "label": 1,
+            "output": 0.4414821267127991
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hxayxhqfnz.png",
+            "label": 1,
+            "output": 0.43795403838157654
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/danyxpbnqf.png",
+            "label": 1,
+            "output": 0.4325607717037201
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/yldbjbxfzj.png",
+            "label": 1,
+            "output": 0.42680439352989197
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hxfciehznr.png",
+            "label": 1,
+            "output": 0.42350876331329346
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mzwodmlccu.png",
+            "label": 1,
+            "output": 0.42055192589759827
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/bhlyixirpi.png",
+            "label": 1,
+            "output": 0.4155827760696411
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/izmzwnwzxb.png",
+            "label": 1,
+            "output": 0.4078139364719391
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/temvvnfwvq.png",
+            "label": 1,
+            "output": 0.4033711850643158
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/eaesoxacae.png",
+            "label": 1,
+            "output": 0.40194171667099
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nytqcbcfth.png",
+            "label": 1,
+            "output": 0.3956403434276581
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aadlygmazf.png",
+            "label": 1,
+            "output": 0.3943875730037689
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vwklacfxmw.png",
+            "label": 1,
+            "output": 0.39232513308525085
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qsuodtmksx.png",
+            "label": 1,
+            "output": 0.38021519780158997
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zhkktdnkhl.png",
+            "label": 1,
+            "output": 0.36822745203971863
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/zbnbosutcn.png",
+            "label": 1,
+            "output": 0.3592528998851776
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/psvmrypqai.png",
+            "label": 1,
+            "output": 0.35823991894721985
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gayjhkcdkw.png",
+            "label": 1,
+            "output": 0.35660892724990845
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/apdgetedbs.png",
+            "label": 1,
+            "output": 0.35364392399787903
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/aakydlwfer.png",
+            "label": 1,
+            "output": 0.3489626348018646
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ewldxwaqfh.png",
+            "label": 1,
+            "output": 0.34362149238586426
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lcyxnaodgl.png",
+            "label": 1,
+            "output": 0.3426281809806824
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ccbrpvitlb.png",
+            "label": 1,
+            "output": 0.34180310368537903
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vwkbynfcdl.png",
+            "label": 1,
+            "output": 0.33564823865890503
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hmasnickhh.png",
+            "label": 1,
+            "output": 0.3302857577800751
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xhhbffrquk.png",
+            "label": 1,
+            "output": 0.3260606527328491
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qgdbbafuhn.png",
+            "label": 1,
+            "output": 0.3234596848487854
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dsxzmqgrfv.png",
+            "label": 1,
+            "output": 0.32291799783706665
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ukoxsbspvb.png",
+            "label": 1,
+            "output": 0.32261213660240173
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wcuupgwotu.png",
+            "label": 1,
+            "output": 0.3219451904296875
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jzcptodnmr.png",
+            "label": 1,
+            "output": 0.318195641040802
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ijeyjgrtgr.png",
+            "label": 1,
+            "output": 0.3155752718448639
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/pukjffussu.png",
+            "label": 1,
+            "output": 0.3087320625782013
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/adkpoxtrlp.png",
+            "label": 1,
+            "output": 0.30571314692497253
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/nejpnuzhor.png",
+            "label": 1,
+            "output": 0.3036845326423645
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xnidvmnavp.png",
+            "label": 1,
+            "output": 0.3017391860485077
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/umnlmiykjp.png",
+            "label": 1,
+            "output": 0.2948352098464966
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/wjvuvyodzv.png",
+            "label": 1,
+            "output": 0.2871531844139099
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xjokdvoxpk.png",
+            "label": 1,
+            "output": 0.27618202567100525
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/qxiyuhxevk.png",
+            "label": 1,
+            "output": 0.274491548538208
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rdhrjwoyvx.png",
+            "label": 1,
+            "output": 0.27331608533859253
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/afwwethmvf.png",
+            "label": 1,
+            "output": 0.26418331265449524
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lpvhehbmzv.png",
+            "label": 1,
+            "output": 0.262245774269104
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lkwvbsljma.png",
+            "label": 1,
+            "output": 0.2534210681915283
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/enrmnsxepz.png",
+            "label": 1,
+            "output": 0.24677135050296783
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/fzrimmsozw.png",
+            "label": 1,
+            "output": 0.24224458634853363
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/lkealtdsyd.png",
+            "label": 1,
+            "output": 0.22121024131774902
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hlwefvuprq.png",
+            "label": 1,
+            "output": 0.21994611620903015
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jirfxpsjiz.png",
+            "label": 1,
+            "output": 0.20936167240142822
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ilaptngbkl.png",
+            "label": 1,
+            "output": 0.19909334182739258
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/gyzuhrjhfj.png",
+            "label": 1,
+            "output": 0.19226594269275665
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ajefhvvxek.png",
+            "label": 1,
+            "output": 0.1831311732530594
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/rpwhvvwxag.png",
+            "label": 1,
+            "output": 0.17433378100395203
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/sxwaupvkta.png",
+            "label": 1,
+            "output": 0.1696206033229828
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/dbifuulczh.png",
+            "label": 1,
+            "output": 0.15778766572475433
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tinlvxgqxw.png",
+            "label": 1,
+            "output": 0.14877182245254517
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/xbwwtavscv.png",
+            "label": 1,
+            "output": 0.14356401562690735
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/hdcbgrxqza.png",
+            "label": 1,
+            "output": 0.10935754328966141
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jnifdomopt.png",
+            "label": 1,
+            "output": 0.0943889170885086
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/ftojusbwcq.png",
+            "label": 1,
+            "output": 0.08708824217319489
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/tdegwqcdxk.png",
+            "label": 1,
+            "output": 0.051055990159511566
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/mkkaiicgks.png",
+            "label": 1,
+            "output": 0.022574735805392265
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/jeyotfdecp.png",
+            "label": 1,
+            "output": 0.01749506965279579
+        },
+        {
+            "path": "data/test/diffusion_datasets/glide_100_10/1_fake/vjkzbfozoo.png",
+            "label": 1,
+            "output": 0.015745438635349274
+        }
+    ]
+}

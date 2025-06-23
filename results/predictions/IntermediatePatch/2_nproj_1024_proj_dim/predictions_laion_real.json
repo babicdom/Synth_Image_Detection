@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/itvslvcuiy.jpg",
+            "label": 0,
+            "output": 0.8692771792411804
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rtbrwgwkho.jpg",
+            "label": 0,
+            "output": 0.7370367050170898
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ltwpiurdob.jpg",
+            "label": 0,
+            "output": 0.7232925891876221
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xvrgnnvmdu.jpg",
+            "label": 0,
+            "output": 0.7118387818336487
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pzvgfnoiln.jpg",
+            "label": 0,
+            "output": 0.6190909743309021
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kjkmmniwcv.jpg",
+            "label": 0,
+            "output": 0.6178765892982483
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xnesojheqr.jpg",
+            "label": 0,
+            "output": 0.5897709727287292
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mgeezotzdw.jpg",
+            "label": 0,
+            "output": 0.5879029035568237
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xuzzmcdpux.jpg",
+            "label": 0,
+            "output": 0.5816982388496399
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ovebmmaneb.jpg",
+            "label": 0,
+            "output": 0.5778039693832397
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eayzvzrytx.jpg",
+            "label": 0,
+            "output": 0.5749796628952026
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cswedhbgpd.jpg",
+            "label": 0,
+            "output": 0.5730795860290527
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hjshyxnjca.jpg",
+            "label": 0,
+            "output": 0.5572008490562439
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vfjqbhhdhb.jpg",
+            "label": 0,
+            "output": 0.5566995739936829
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zdqmadvhbl.jpg",
+            "label": 0,
+            "output": 0.5561414361000061
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yytnnkmkun.jpg",
+            "label": 0,
+            "output": 0.5442672371864319
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lxdnodpvuz.jpg",
+            "label": 0,
+            "output": 0.5176351070404053
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fizdknwdwf.jpg",
+            "label": 0,
+            "output": 0.5168349742889404
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gudkwzmgfo.jpg",
+            "label": 0,
+            "output": 0.5058214068412781
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rtkpyywobl.jpg",
+            "label": 0,
+            "output": 0.4761723279953003
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jhnbcswvmq.jpg",
+            "label": 0,
+            "output": 0.45578229427337646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dimuqznulw.jpg",
+            "label": 0,
+            "output": 0.44830119609832764
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ktsfcdbxkp.jpg",
+            "label": 0,
+            "output": 0.4394929111003876
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qjrpujocxn.jpg",
+            "label": 0,
+            "output": 0.42212408781051636
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yeysnhxrmp.jpg",
+            "label": 0,
+            "output": 0.41457197070121765
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tnsrlfrflx.jpg",
+            "label": 0,
+            "output": 0.41389238834381104
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aksszgcpfr.jpg",
+            "label": 0,
+            "output": 0.4061598777770996
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qmqkkwwggi.jpg",
+            "label": 0,
+            "output": 0.39931347966194153
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ascyfbgfmn.jpg",
+            "label": 0,
+            "output": 0.3926880657672882
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aujwkgbadp.jpg",
+            "label": 0,
+            "output": 0.38882625102996826
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/smmiazxocc.jpg",
+            "label": 0,
+            "output": 0.3796207904815674
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vqrdytkinp.jpg",
+            "label": 0,
+            "output": 0.3787159323692322
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kszghluqlw.jpg",
+            "label": 0,
+            "output": 0.37539106607437134
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vwkbynfcdl.jpg",
+            "label": 0,
+            "output": 0.37171071767807007
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/izrfhzbwzc.jpg",
+            "label": 0,
+            "output": 0.3666299283504486
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qyjvmgdrmq.jpg",
+            "label": 0,
+            "output": 0.3660430908203125
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ccbrpvitlb.jpg",
+            "label": 0,
+            "output": 0.3652357757091522
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ttfwqkviia.jpg",
+            "label": 0,
+            "output": 0.3641083836555481
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zatnelrcct.jpg",
+            "label": 0,
+            "output": 0.35296210646629333
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikelctrgra.jpg",
+            "label": 0,
+            "output": 0.3498808443546295
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nyrfgpglht.jpg",
+            "label": 0,
+            "output": 0.349839985370636
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/msujwlrujo.jpg",
+            "label": 0,
+            "output": 0.349153071641922
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/klcsuijwqh.jpg",
+            "label": 0,
+            "output": 0.3451947867870331
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yfxdzkbfpk.jpg",
+            "label": 0,
+            "output": 0.34200718998908997
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/llmwutwhbl.jpg",
+            "label": 0,
+            "output": 0.33867350220680237
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jxacexpmcn.jpg",
+            "label": 0,
+            "output": 0.33701273798942566
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vsocilgayn.jpg",
+            "label": 0,
+            "output": 0.3366667330265045
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/flcafzqbyt.jpg",
+            "label": 0,
+            "output": 0.3344050943851471
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eecrzmaxjv.jpg",
+            "label": 0,
+            "output": 0.32900017499923706
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pbdegkyycl.jpg",
+            "label": 0,
+            "output": 0.32389798760414124
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dncoarxujc.jpg",
+            "label": 0,
+            "output": 0.3117673099040985
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ftampoyprn.jpg",
+            "label": 0,
+            "output": 0.3046872913837433
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rzvoxvfpaz.jpg",
+            "label": 0,
+            "output": 0.30002814531326294
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zbnbosutcn.jpg",
+            "label": 0,
+            "output": 0.29947200417518616
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xiubxgyhcs.jpg",
+            "label": 0,
+            "output": 0.2958565354347229
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yhxjifarjw.jpg",
+            "label": 0,
+            "output": 0.2833097577095032
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/onkjvikzsj.jpg",
+            "label": 0,
+            "output": 0.28327807784080505
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ttwsrquzox.jpg",
+            "label": 0,
+            "output": 0.2817322015762329
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kzaxlmhpyk.jpg",
+            "label": 0,
+            "output": 0.28157520294189453
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bxoicyhddk.jpg",
+            "label": 0,
+            "output": 0.2769990563392639
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gmeufzjqxw.jpg",
+            "label": 0,
+            "output": 0.27278468012809753
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mykongsfgc.jpg",
+            "label": 0,
+            "output": 0.27254191040992737
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eowkckioii.jpg",
+            "label": 0,
+            "output": 0.2697748839855194
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tvhyjyjvbi.jpg",
+            "label": 0,
+            "output": 0.2692892849445343
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/asxtxajrfc.jpg",
+            "label": 0,
+            "output": 0.26721397042274475
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wbcncldemw.jpg",
+            "label": 0,
+            "output": 0.2663329541683197
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lgpvmdfncv.jpg",
+            "label": 0,
+            "output": 0.2651778757572174
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nuhcuxjnpx.jpg",
+            "label": 0,
+            "output": 0.26127418875694275
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kvomczokut.jpg",
+            "label": 0,
+            "output": 0.25486716628074646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/djfymdweky.jpg",
+            "label": 0,
+            "output": 0.24854356050491333
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bljmtryslc.jpg",
+            "label": 0,
+            "output": 0.24498878419399261
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kgmqyotoqo.jpg",
+            "label": 0,
+            "output": 0.24481765925884247
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xucelwnaqz.jpg",
+            "label": 0,
+            "output": 0.2441900223493576
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/onojezltok.jpg",
+            "label": 0,
+            "output": 0.24238306283950806
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ducatuyxdz.jpg",
+            "label": 0,
+            "output": 0.23936283588409424
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/izmzwnwzxb.jpg",
+            "label": 0,
+            "output": 0.23649056255817413
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uzunqwixgv.jpg",
+            "label": 0,
+            "output": 0.23303166031837463
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mrdnzxhmlr.jpg",
+            "label": 0,
+            "output": 0.23069071769714355
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bucfscjvsb.jpg",
+            "label": 0,
+            "output": 0.23061366379261017
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vcsznknzhw.jpg",
+            "label": 0,
+            "output": 0.23040179908275604
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nhmcszkgcq.jpg",
+            "label": 0,
+            "output": 0.21960319578647614
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mltvjsqnjm.jpg",
+            "label": 0,
+            "output": 0.21818658709526062
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/paozbcurkw.jpg",
+            "label": 0,
+            "output": 0.21781697869300842
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/suxizjuvkp.jpg",
+            "label": 0,
+            "output": 0.2177489995956421
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/idvfzzxvyh.jpg",
+            "label": 0,
+            "output": 0.21653969585895538
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bpadvommfd.jpg",
+            "label": 0,
+            "output": 0.21545453369617462
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bzuoezatge.jpg",
+            "label": 0,
+            "output": 0.2130548506975174
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qyaknxvzwp.jpg",
+            "label": 0,
+            "output": 0.21215975284576416
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ixykpgtooh.jpg",
+            "label": 0,
+            "output": 0.21084082126617432
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hkhpikinqs.jpg",
+            "label": 0,
+            "output": 0.20809099078178406
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bbsnktsonl.jpg",
+            "label": 0,
+            "output": 0.20474594831466675
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vrffpjmuir.jpg",
+            "label": 0,
+            "output": 0.20355667173862457
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tnxiofobrb.jpg",
+            "label": 0,
+            "output": 0.20130059123039246
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gropzgdcno.jpg",
+            "label": 0,
+            "output": 0.20067360997200012
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sxbarbxbis.jpg",
+            "label": 0,
+            "output": 0.2006502002477646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qvizqxsbvw.jpg",
+            "label": 0,
+            "output": 0.19958549737930298
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wiweponjic.jpg",
+            "label": 0,
+            "output": 0.19949376583099365
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hhlwjuqsbz.jpg",
+            "label": 0,
+            "output": 0.1990102380514145
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lcyxnaodgl.jpg",
+            "label": 0,
+            "output": 0.19775478541851044
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uyfkdpzowl.jpg",
+            "label": 0,
+            "output": 0.19736254215240479
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cmuzaenxtt.jpg",
+            "label": 0,
+            "output": 0.19516421854496002
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gxvvzagtkn.jpg",
+            "label": 0,
+            "output": 0.19451206922531128
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/marjmzmnja.jpg",
+            "label": 0,
+            "output": 0.19322197139263153
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/snkshpixle.jpg",
+            "label": 0,
+            "output": 0.1926119476556778
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mcsihazpje.jpg",
+            "label": 0,
+            "output": 0.18950283527374268
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dtvfjwtgbk.jpg",
+            "label": 0,
+            "output": 0.18886418640613556
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bghliglwng.jpg",
+            "label": 0,
+            "output": 0.18843895196914673
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vfhdjmajxv.jpg",
+            "label": 0,
+            "output": 0.18827994167804718
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qitcgxcdmj.jpg",
+            "label": 0,
+            "output": 0.18606364727020264
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ybpkzmxsoj.jpg",
+            "label": 0,
+            "output": 0.18574677407741547
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ondtlaugas.jpg",
+            "label": 0,
+            "output": 0.18319733440876007
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jvctzionai.jpg",
+            "label": 0,
+            "output": 0.18092544376850128
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hhmqvefsdm.jpg",
+            "label": 0,
+            "output": 0.18029938638210297
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xphjlaxygh.jpg",
+            "label": 0,
+            "output": 0.179016575217247
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lpvhehbmzv.jpg",
+            "label": 0,
+            "output": 0.1777219921350479
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/shyyqqechu.jpg",
+            "label": 0,
+            "output": 0.17719724774360657
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tzgkmgcgjt.jpg",
+            "label": 0,
+            "output": 0.17688289284706116
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uesrfqrmys.jpg",
+            "label": 0,
+            "output": 0.1757725179195404
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ewldxwaqfh.jpg",
+            "label": 0,
+            "output": 0.1741459220647812
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gufjiiwgrf.jpg",
+            "label": 0,
+            "output": 0.1739986538887024
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fpjptmloys.jpg",
+            "label": 0,
+            "output": 0.17372620105743408
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lttnaabznd.jpg",
+            "label": 0,
+            "output": 0.17310094833374023
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ayzndlluru.jpg",
+            "label": 0,
+            "output": 0.17194634675979614
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sssvouruij.jpg",
+            "label": 0,
+            "output": 0.1715705543756485
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sgnnltafbd.jpg",
+            "label": 0,
+            "output": 0.17135295271873474
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/muszivpifs.jpg",
+            "label": 0,
+            "output": 0.17049959301948547
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mocygqjmlh.jpg",
+            "label": 0,
+            "output": 0.1691475659608841
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cvohxivzjd.jpg",
+            "label": 0,
+            "output": 0.16900520026683807
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kkamuhddsi.jpg",
+            "label": 0,
+            "output": 0.16765733063220978
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rxsgddveyy.jpg",
+            "label": 0,
+            "output": 0.16738153994083405
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iwsairnpes.jpg",
+            "label": 0,
+            "output": 0.16635245084762573
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jbteyioohc.jpg",
+            "label": 0,
+            "output": 0.16559459269046783
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/myjibkfcjw.jpg",
+            "label": 0,
+            "output": 0.16469573974609375
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/etiolecymt.jpg",
+            "label": 0,
+            "output": 0.1642812341451645
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ynescstwdk.jpg",
+            "label": 0,
+            "output": 0.163528174161911
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hxayxhqfnz.jpg",
+            "label": 0,
+            "output": 0.16314741969108582
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hwfnoawnsx.jpg",
+            "label": 0,
+            "output": 0.16241244971752167
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/olxnaenbde.jpg",
+            "label": 0,
+            "output": 0.16168151795864105
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/idxzmkymeu.jpg",
+            "label": 0,
+            "output": 0.16089822351932526
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cmgdpkxuef.jpg",
+            "label": 0,
+            "output": 0.15988636016845703
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aqfnjpltvb.jpg",
+            "label": 0,
+            "output": 0.15948307514190674
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lmrswyanpv.jpg",
+            "label": 0,
+            "output": 0.1590690165758133
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/clutkoqhvu.jpg",
+            "label": 0,
+            "output": 0.15885968506336212
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mbtqfbwlry.jpg",
+            "label": 0,
+            "output": 0.15871062874794006
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lsvzbqhxgl.jpg",
+            "label": 0,
+            "output": 0.1585591584444046
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nzfqdevtuu.jpg",
+            "label": 0,
+            "output": 0.1583278924226761
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ybbbdeihcf.jpg",
+            "label": 0,
+            "output": 0.1576908379793167
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/msccvtyrqo.jpg",
+            "label": 0,
+            "output": 0.15607741475105286
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dexhjtncni.jpg",
+            "label": 0,
+            "output": 0.15565280616283417
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jqnuoffbtb.jpg",
+            "label": 0,
+            "output": 0.1549062430858612
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/edqamoutbf.jpg",
+            "label": 0,
+            "output": 0.15389272570610046
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ovuipynpix.jpg",
+            "label": 0,
+            "output": 0.15316496789455414
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ponotiiits.jpg",
+            "label": 0,
+            "output": 0.152157261967659
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sjezxhpiwr.jpg",
+            "label": 0,
+            "output": 0.15214850008487701
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/joshvzhgck.jpg",
+            "label": 0,
+            "output": 0.15155752003192902
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gczswsnqpp.jpg",
+            "label": 0,
+            "output": 0.1507519632577896
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ueoeojrsyj.jpg",
+            "label": 0,
+            "output": 0.15053977072238922
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/werhusireg.jpg",
+            "label": 0,
+            "output": 0.15023714303970337
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jecdlrpjba.jpg",
+            "label": 0,
+            "output": 0.14641840755939484
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xctsfejxfy.jpg",
+            "label": 0,
+            "output": 0.1454738825559616
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vpokhpnoyy.jpg",
+            "label": 0,
+            "output": 0.14433713257312775
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bnhkqppcfl.jpg",
+            "label": 0,
+            "output": 0.14399932324886322
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bqeilhkbun.jpg",
+            "label": 0,
+            "output": 0.14169727265834808
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pukjffussu.jpg",
+            "label": 0,
+            "output": 0.14070838689804077
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/whqsatsqum.jpg",
+            "label": 0,
+            "output": 0.13883081078529358
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sepihwqglu.jpg",
+            "label": 0,
+            "output": 0.1387401819229126
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xaetznfnpu.jpg",
+            "label": 0,
+            "output": 0.13849306106567383
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gzzhkwcczo.jpg",
+            "label": 0,
+            "output": 0.13846811652183533
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gliascthpi.jpg",
+            "label": 0,
+            "output": 0.13752281665802002
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ffuzczfqav.jpg",
+            "label": 0,
+            "output": 0.1367444545030594
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cspmbvyjpm.jpg",
+            "label": 0,
+            "output": 0.13651201128959656
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/flzalpsilp.jpg",
+            "label": 0,
+            "output": 0.13498875498771667
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hnihvkmnje.jpg",
+            "label": 0,
+            "output": 0.13430310785770416
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/znxaufdjpv.jpg",
+            "label": 0,
+            "output": 0.13352257013320923
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ftojusbwcq.jpg",
+            "label": 0,
+            "output": 0.13320207595825195
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yinujujzud.jpg",
+            "label": 0,
+            "output": 0.13292329013347626
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cqxwvqbknx.jpg",
+            "label": 0,
+            "output": 0.13286973536014557
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/irrlegedjp.jpg",
+            "label": 0,
+            "output": 0.13278678059577942
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qtpttlawjz.jpg",
+            "label": 0,
+            "output": 0.13248831033706665
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xdudczawtx.jpg",
+            "label": 0,
+            "output": 0.13179704546928406
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fihznganle.jpg",
+            "label": 0,
+            "output": 0.13170020282268524
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yecvsijdsn.jpg",
+            "label": 0,
+            "output": 0.13168029487133026
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nmgqcqjyhs.jpg",
+            "label": 0,
+            "output": 0.13148784637451172
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yyrtmboyuo.jpg",
+            "label": 0,
+            "output": 0.13091370463371277
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/czkhjnfjgr.jpg",
+            "label": 0,
+            "output": 0.13081124424934387
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fnqlfrabai.jpg",
+            "label": 0,
+            "output": 0.13079850375652313
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mtclcgxdyh.jpg",
+            "label": 0,
+            "output": 0.13038234412670135
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mkigwustvn.jpg",
+            "label": 0,
+            "output": 0.12956583499908447
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hajmuavfdr.jpg",
+            "label": 0,
+            "output": 0.12926438450813293
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/llaiteusmv.jpg",
+            "label": 0,
+            "output": 0.1283458173274994
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zaqfmruinv.jpg",
+            "label": 0,
+            "output": 0.12795861065387726
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gsjragxgrg.jpg",
+            "label": 0,
+            "output": 0.12718041241168976
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wdjkwiwroa.jpg",
+            "label": 0,
+            "output": 0.12669193744659424
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qqdphhznqg.jpg",
+            "label": 0,
+            "output": 0.12643525004386902
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ofgvdkgdnd.jpg",
+            "label": 0,
+            "output": 0.12519192695617676
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tfdqevjhtk.jpg",
+            "label": 0,
+            "output": 0.12440478801727295
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tptqwsoovh.jpg",
+            "label": 0,
+            "output": 0.12303159385919571
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/blaonzaskp.jpg",
+            "label": 0,
+            "output": 0.12284700572490692
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ouirlfwsyx.jpg",
+            "label": 0,
+            "output": 0.1226578950881958
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/umhgkshvea.jpg",
+            "label": 0,
+            "output": 0.12119165062904358
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/titltoewou.jpg",
+            "label": 0,
+            "output": 0.11891435831785202
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pyydtwntke.jpg",
+            "label": 0,
+            "output": 0.11839313060045242
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wpptcqobpu.jpg",
+            "label": 0,
+            "output": 0.11795315146446228
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pcaodmknyo.jpg",
+            "label": 0,
+            "output": 0.11784517019987106
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/imcwvnqwdv.jpg",
+            "label": 0,
+            "output": 0.11618098616600037
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hsweljupee.jpg",
+            "label": 0,
+            "output": 0.11547712981700897
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xrkvaduave.jpg",
+            "label": 0,
+            "output": 0.11503081768751144
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aqawlsbyzw.jpg",
+            "label": 0,
+            "output": 0.11435788124799728
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cpyrataump.jpg",
+            "label": 0,
+            "output": 0.11313507705926895
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jrkctxyekx.jpg",
+            "label": 0,
+            "output": 0.1116020455956459
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jcbooxfwcy.jpg",
+            "label": 0,
+            "output": 0.11149976402521133
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lakovwneny.jpg",
+            "label": 0,
+            "output": 0.11131779104471207
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hnfbzeaoqb.jpg",
+            "label": 0,
+            "output": 0.11027079820632935
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xfhgbduucl.jpg",
+            "label": 0,
+            "output": 0.11026471853256226
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dsxzmqgrfv.jpg",
+            "label": 0,
+            "output": 0.10998173803091049
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ovjpkblzon.jpg",
+            "label": 0,
+            "output": 0.10997471958398819
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tivixbdipm.jpg",
+            "label": 0,
+            "output": 0.10876484960317612
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vueczavslq.jpg",
+            "label": 0,
+            "output": 0.10858529806137085
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/efgchmasis.jpg",
+            "label": 0,
+            "output": 0.10834886133670807
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/igjyxqgebm.jpg",
+            "label": 0,
+            "output": 0.10735941678285599
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nrglavnpuu.jpg",
+            "label": 0,
+            "output": 0.10648591816425323
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jkdydiqkym.jpg",
+            "label": 0,
+            "output": 0.10626212507486343
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/stzvgskice.jpg",
+            "label": 0,
+            "output": 0.10602177679538727
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vitzpaholy.jpg",
+            "label": 0,
+            "output": 0.10445910692214966
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wzdhwjmvgy.jpg",
+            "label": 0,
+            "output": 0.10442380607128143
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jnifdomopt.jpg",
+            "label": 0,
+            "output": 0.10314742475748062
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hypftiguck.jpg",
+            "label": 0,
+            "output": 0.10304401814937592
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ucxiudybpx.jpg",
+            "label": 0,
+            "output": 0.10291259735822678
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikptlvvios.jpg",
+            "label": 0,
+            "output": 0.10275517404079437
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/truenadnmf.jpg",
+            "label": 0,
+            "output": 0.10258916020393372
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mbanczcffd.jpg",
+            "label": 0,
+            "output": 0.10251770913600922
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/omsyxrsufp.jpg",
+            "label": 0,
+            "output": 0.10208533704280853
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/idrkdekvux.jpg",
+            "label": 0,
+            "output": 0.10173378884792328
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mizxozzqsb.jpg",
+            "label": 0,
+            "output": 0.10149143636226654
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/otvbonovtr.jpg",
+            "label": 0,
+            "output": 0.10137654840946198
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tbxpyvxjym.jpg",
+            "label": 0,
+            "output": 0.10077457875013351
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rbihqctsdb.jpg",
+            "label": 0,
+            "output": 0.10076338052749634
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rpwhvvwxag.jpg",
+            "label": 0,
+            "output": 0.10036633163690567
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bbupregfhp.jpg",
+            "label": 0,
+            "output": 0.10027299076318741
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nvwywbybsj.jpg",
+            "label": 0,
+            "output": 0.09728814661502838
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gtqyrcambg.jpg",
+            "label": 0,
+            "output": 0.09597189724445343
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wrmxjiicmz.jpg",
+            "label": 0,
+            "output": 0.09595943987369537
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ayibbogxvl.jpg",
+            "label": 0,
+            "output": 0.09590163081884384
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kysxvylzkk.jpg",
+            "label": 0,
+            "output": 0.09503324329853058
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hcnhiyscgm.jpg",
+            "label": 0,
+            "output": 0.09455632418394089
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/voafpawbtb.jpg",
+            "label": 0,
+            "output": 0.09424445033073425
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ogdtdsagel.jpg",
+            "label": 0,
+            "output": 0.09417406469583511
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vmjmkqeggv.jpg",
+            "label": 0,
+            "output": 0.09407199174165726
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wgmfkffpbs.jpg",
+            "label": 0,
+            "output": 0.09376280754804611
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lvtmqaadzz.jpg",
+            "label": 0,
+            "output": 0.09318327903747559
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jckrxjozhx.jpg",
+            "label": 0,
+            "output": 0.09274344146251678
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rrcbbbylog.jpg",
+            "label": 0,
+            "output": 0.09256384521722794
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gswbqatuhn.jpg",
+            "label": 0,
+            "output": 0.09203192591667175
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gaezkwugoh.jpg",
+            "label": 0,
+            "output": 0.09141720086336136
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lsmostdlua.jpg",
+            "label": 0,
+            "output": 0.0913173034787178
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iuwybjqiha.jpg",
+            "label": 0,
+            "output": 0.09131164103746414
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oovxyyombs.jpg",
+            "label": 0,
+            "output": 0.09111588448286057
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hhhwzgcieg.jpg",
+            "label": 0,
+            "output": 0.0908852368593216
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mfoxhwrofa.jpg",
+            "label": 0,
+            "output": 0.09065431356430054
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xqlumlknls.jpg",
+            "label": 0,
+            "output": 0.09049175679683685
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bqmyueubdu.jpg",
+            "label": 0,
+            "output": 0.08982697129249573
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bdwbeyarpc.jpg",
+            "label": 0,
+            "output": 0.08914410322904587
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gqpoiykvcs.jpg",
+            "label": 0,
+            "output": 0.08902464061975479
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mzuykzukvb.jpg",
+            "label": 0,
+            "output": 0.08883325010538101
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vlnusbscnx.jpg",
+            "label": 0,
+            "output": 0.08836102485656738
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gdnoweboab.jpg",
+            "label": 0,
+            "output": 0.08803241699934006
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pwvremoaiz.jpg",
+            "label": 0,
+            "output": 0.08780695497989655
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jezexlfhiq.jpg",
+            "label": 0,
+            "output": 0.08770869672298431
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qbannzwxnv.jpg",
+            "label": 0,
+            "output": 0.08744730800390244
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aadlygmazf.jpg",
+            "label": 0,
+            "output": 0.08713430166244507
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/llbqajpkux.jpg",
+            "label": 0,
+            "output": 0.08677453547716141
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jzpjgkemjx.jpg",
+            "label": 0,
+            "output": 0.08673790097236633
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/figfzyfhkt.jpg",
+            "label": 0,
+            "output": 0.0863790363073349
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jsozceeudr.jpg",
+            "label": 0,
+            "output": 0.08637335151433945
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mfzrfiyjrf.jpg",
+            "label": 0,
+            "output": 0.08614891022443771
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/afwwethmvf.jpg",
+            "label": 0,
+            "output": 0.08591177314519882
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tycynadkoj.jpg",
+            "label": 0,
+            "output": 0.0853353887796402
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bulfplvjow.jpg",
+            "label": 0,
+            "output": 0.08454188704490662
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yutcusvily.jpg",
+            "label": 0,
+            "output": 0.08408074080944061
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yvwtaordyd.jpg",
+            "label": 0,
+            "output": 0.08192801475524902
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yrantjwhqk.jpg",
+            "label": 0,
+            "output": 0.0816345140337944
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bwvinmojcw.jpg",
+            "label": 0,
+            "output": 0.08107098937034607
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ahbiztymlj.jpg",
+            "label": 0,
+            "output": 0.08103644102811813
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jroisduzzw.jpg",
+            "label": 0,
+            "output": 0.08100192993879318
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ftobdflmuz.jpg",
+            "label": 0,
+            "output": 0.08048804104328156
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ijeyjgrtgr.jpg",
+            "label": 0,
+            "output": 0.08039908856153488
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/raxqxyzhrc.jpg",
+            "label": 0,
+            "output": 0.07995343208312988
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fzkskaljde.jpg",
+            "label": 0,
+            "output": 0.07934191077947617
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fneghrqtsf.jpg",
+            "label": 0,
+            "output": 0.07894747704267502
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ceyagwkqcf.jpg",
+            "label": 0,
+            "output": 0.07853033393621445
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sxbfuikltb.jpg",
+            "label": 0,
+            "output": 0.07816904783248901
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qsuodtmksx.jpg",
+            "label": 0,
+            "output": 0.07815414667129517
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xpdelxvksw.jpg",
+            "label": 0,
+            "output": 0.07804196327924728
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vvdfxbwxxd.jpg",
+            "label": 0,
+            "output": 0.07718521356582642
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ypdjyjlopx.jpg",
+            "label": 0,
+            "output": 0.07677942514419556
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iwkrlrqsbn.jpg",
+            "label": 0,
+            "output": 0.07666056603193283
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xvpiclvxzd.jpg",
+            "label": 0,
+            "output": 0.07480648159980774
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vipmyyceny.jpg",
+            "label": 0,
+            "output": 0.07461249828338623
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vtswogmbhi.jpg",
+            "label": 0,
+            "output": 0.07285089790821075
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gayjhkcdkw.jpg",
+            "label": 0,
+            "output": 0.07238215953111649
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nardlyjuyu.jpg",
+            "label": 0,
+            "output": 0.0722828358411789
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/timdfnwgho.jpg",
+            "label": 0,
+            "output": 0.07129226624965668
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ilaptngbkl.jpg",
+            "label": 0,
+            "output": 0.07096824049949646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bcqofpsyca.jpg",
+            "label": 0,
+            "output": 0.07035993784666061
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lfpytrxtnd.jpg",
+            "label": 0,
+            "output": 0.06983302533626556
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oucmaedfum.jpg",
+            "label": 0,
+            "output": 0.06942775845527649
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ezfvndjxht.jpg",
+            "label": 0,
+            "output": 0.06934484839439392
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zhkybzbekn.jpg",
+            "label": 0,
+            "output": 0.06914559006690979
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikpmthprsw.jpg",
+            "label": 0,
+            "output": 0.06903661042451859
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iqjkwjvday.jpg",
+            "label": 0,
+            "output": 0.06894763559103012
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jykjuscrhb.jpg",
+            "label": 0,
+            "output": 0.06887811422348022
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nhcqvlreou.jpg",
+            "label": 0,
+            "output": 0.06830685585737228
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tknxjephgy.jpg",
+            "label": 0,
+            "output": 0.06810764968395233
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/awjhtixyqd.jpg",
+            "label": 0,
+            "output": 0.06762532889842987
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wipphellrw.jpg",
+            "label": 0,
+            "output": 0.06747157871723175
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ukoxsbspvb.jpg",
+            "label": 0,
+            "output": 0.06743393838405609
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ahnijblsap.jpg",
+            "label": 0,
+            "output": 0.06738398224115372
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bhlyixirpi.jpg",
+            "label": 0,
+            "output": 0.06735578179359436
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kpzyfbuxhi.jpg",
+            "label": 0,
+            "output": 0.06685623526573181
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kgwpuybmdo.jpg",
+            "label": 0,
+            "output": 0.06669988483190536
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qnqvwdpmam.jpg",
+            "label": 0,
+            "output": 0.06642495840787888
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cciqgyfbnw.jpg",
+            "label": 0,
+            "output": 0.06642085313796997
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/suhpchcpza.jpg",
+            "label": 0,
+            "output": 0.06631213426589966
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pptvyzosrk.jpg",
+            "label": 0,
+            "output": 0.06607262045145035
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yptdaozbuw.jpg",
+            "label": 0,
+            "output": 0.06564787030220032
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/myypljgqkg.jpg",
+            "label": 0,
+            "output": 0.06552136689424515
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aakydlwfer.jpg",
+            "label": 0,
+            "output": 0.06449955701828003
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eltlpjgnai.jpg",
+            "label": 0,
+            "output": 0.0644901916384697
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gxexzzlcld.jpg",
+            "label": 0,
+            "output": 0.06420344859361649
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jeyotfdecp.jpg",
+            "label": 0,
+            "output": 0.06308750808238983
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ueehiquixb.jpg",
+            "label": 0,
+            "output": 0.0628289207816124
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hsvrfsodig.jpg",
+            "label": 0,
+            "output": 0.0628143846988678
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qgdbbafuhn.jpg",
+            "label": 0,
+            "output": 0.06268395483493805
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kqtezbdvua.jpg",
+            "label": 0,
+            "output": 0.0626550018787384
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gmjuidkgzm.jpg",
+            "label": 0,
+            "output": 0.06213308125734329
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jopvgvsrel.jpg",
+            "label": 0,
+            "output": 0.06205344572663307
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wyyltkwttn.jpg",
+            "label": 0,
+            "output": 0.062013737857341766
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ntwekxxoly.jpg",
+            "label": 0,
+            "output": 0.06175699457526207
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/orebaohval.jpg",
+            "label": 0,
+            "output": 0.06134101375937462
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rxrwofckks.jpg",
+            "label": 0,
+            "output": 0.06119634956121445
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yaaqlxnzhi.jpg",
+            "label": 0,
+            "output": 0.0610954724252224
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cddswasamx.jpg",
+            "label": 0,
+            "output": 0.061057209968566895
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vcuznpgkuo.jpg",
+            "label": 0,
+            "output": 0.06064383685588837
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xvwgzjvahe.jpg",
+            "label": 0,
+            "output": 0.06060180440545082
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/splerbaidx.jpg",
+            "label": 0,
+            "output": 0.05983575060963631
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/orgateeurw.jpg",
+            "label": 0,
+            "output": 0.05950889363884926
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qpjsgmteke.jpg",
+            "label": 0,
+            "output": 0.05941484123468399
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oftwvuyony.jpg",
+            "label": 0,
+            "output": 0.05935007333755493
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hzrxscnjew.jpg",
+            "label": 0,
+            "output": 0.0590607225894928
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wketmynlnj.jpg",
+            "label": 0,
+            "output": 0.05886290594935417
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rjdnzhbvwc.jpg",
+            "label": 0,
+            "output": 0.05866100266575813
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fdklbxclqv.jpg",
+            "label": 0,
+            "output": 0.05779452994465828
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jvfamsvrme.jpg",
+            "label": 0,
+            "output": 0.05750719830393791
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aieykhstre.jpg",
+            "label": 0,
+            "output": 0.05743514373898506
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vapzubzcvf.jpg",
+            "label": 0,
+            "output": 0.05732450261712074
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wsbyyiugsn.jpg",
+            "label": 0,
+            "output": 0.056913141161203384
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kkqnltzvmr.jpg",
+            "label": 0,
+            "output": 0.05643705651164055
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ahwxcijnxm.jpg",
+            "label": 0,
+            "output": 0.05642455816268921
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ffubnjdhop.jpg",
+            "label": 0,
+            "output": 0.05625617131590843
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/medbpbsmum.jpg",
+            "label": 0,
+            "output": 0.056207749992609024
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/likeehktbp.jpg",
+            "label": 0,
+            "output": 0.05612928047776222
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/htqmkwgkwb.jpg",
+            "label": 0,
+            "output": 0.055913519114255905
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bcdxmvfonp.jpg",
+            "label": 0,
+            "output": 0.05561288073658943
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jzcptodnmr.jpg",
+            "label": 0,
+            "output": 0.05548375844955444
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vpruwhsipu.jpg",
+            "label": 0,
+            "output": 0.05530479922890663
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cubsnkbrrm.jpg",
+            "label": 0,
+            "output": 0.05492439493536949
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jezlovnknx.jpg",
+            "label": 0,
+            "output": 0.054811038076877594
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uzslfnchhd.jpg",
+            "label": 0,
+            "output": 0.05456658452749252
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fgkquzymgd.jpg",
+            "label": 0,
+            "output": 0.05454307049512863
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kyrjicorfj.jpg",
+            "label": 0,
+            "output": 0.05450667813420296
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aowpbzokmp.jpg",
+            "label": 0,
+            "output": 0.0544198714196682
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jsytpmwrvb.jpg",
+            "label": 0,
+            "output": 0.054282646626234055
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wsreukpzwe.jpg",
+            "label": 0,
+            "output": 0.05407077819108963
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gchslncruv.jpg",
+            "label": 0,
+            "output": 0.0536230243742466
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ztytemyoxv.jpg",
+            "label": 0,
+            "output": 0.05351248383522034
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/exlwmokuxv.jpg",
+            "label": 0,
+            "output": 0.05350947007536888
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mqbzprykrc.jpg",
+            "label": 0,
+            "output": 0.053453102707862854
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hzfxwrmqch.jpg",
+            "label": 0,
+            "output": 0.05258381366729736
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iqijagswok.jpg",
+            "label": 0,
+            "output": 0.05251988023519516
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qlhvuhhqol.jpg",
+            "label": 0,
+            "output": 0.05222589522600174
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rigaxqbjbr.jpg",
+            "label": 0,
+            "output": 0.051854170858860016
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hvuyhhryut.jpg",
+            "label": 0,
+            "output": 0.05149385705590248
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pksmcsxxra.jpg",
+            "label": 0,
+            "output": 0.05138717591762543
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vjkzbfozoo.jpg",
+            "label": 0,
+            "output": 0.05096583440899849
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lqsafjohri.jpg",
+            "label": 0,
+            "output": 0.05089062824845314
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hxkeijjlvb.jpg",
+            "label": 0,
+            "output": 0.050292279571294785
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/exoglvpvei.jpg",
+            "label": 0,
+            "output": 0.05022132396697998
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ciwgbjibcd.jpg",
+            "label": 0,
+            "output": 0.049968618899583817
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cnthnmxcwh.jpg",
+            "label": 0,
+            "output": 0.04992930591106415
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/krqkilakxw.jpg",
+            "label": 0,
+            "output": 0.04973633959889412
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/slrtleyncm.jpg",
+            "label": 0,
+            "output": 0.04971279948949814
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ugrxyyeknx.jpg",
+            "label": 0,
+            "output": 0.04956056922674179
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qieisvwywb.jpg",
+            "label": 0,
+            "output": 0.04936198145151138
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nnylgyqsxs.jpg",
+            "label": 0,
+            "output": 0.04902324080467224
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fiejjmdcwg.jpg",
+            "label": 0,
+            "output": 0.048878446221351624
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/njslnjximf.jpg",
+            "label": 0,
+            "output": 0.0486481711268425
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wgrmpdejfv.jpg",
+            "label": 0,
+            "output": 0.048490237444639206
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/arfbiucpar.jpg",
+            "label": 0,
+            "output": 0.04830961674451828
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/znwafizosm.jpg",
+            "label": 0,
+            "output": 0.04809282347559929
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/amcjhcqbxr.jpg",
+            "label": 0,
+            "output": 0.04797697812318802
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ocmzcjegeg.jpg",
+            "label": 0,
+            "output": 0.04793228209018707
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vyjvqkrjmv.jpg",
+            "label": 0,
+            "output": 0.047808483242988586
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uwzfugbfno.jpg",
+            "label": 0,
+            "output": 0.04762479290366173
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hrayggkgxb.jpg",
+            "label": 0,
+            "output": 0.04756678640842438
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cjmyrxrisl.jpg",
+            "label": 0,
+            "output": 0.04748391732573509
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/szkmirkryb.jpg",
+            "label": 0,
+            "output": 0.047218143939971924
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gckzbyionz.jpg",
+            "label": 0,
+            "output": 0.04713821038603783
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pccthywpgs.jpg",
+            "label": 0,
+            "output": 0.04711521044373512
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iibymqusjk.jpg",
+            "label": 0,
+            "output": 0.04707619547843933
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rgnjmqxait.jpg",
+            "label": 0,
+            "output": 0.04698549956083298
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/czqsnkbvng.jpg",
+            "label": 0,
+            "output": 0.04697253555059433
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uzgkdnsvbt.jpg",
+            "label": 0,
+            "output": 0.04661407321691513
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wqvahtytps.jpg",
+            "label": 0,
+            "output": 0.046499110758304596
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wrxxltdsxi.jpg",
+            "label": 0,
+            "output": 0.0464140921831131
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ajdylzvnwn.jpg",
+            "label": 0,
+            "output": 0.04629761353135109
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zoxknkpgoh.jpg",
+            "label": 0,
+            "output": 0.046284958720207214
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bsoomuiluf.jpg",
+            "label": 0,
+            "output": 0.04615957289934158
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yldbjbxfzj.jpg",
+            "label": 0,
+            "output": 0.0460285022854805
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qlqolbjcgb.jpg",
+            "label": 0,
+            "output": 0.045884959399700165
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vsivgpmche.jpg",
+            "label": 0,
+            "output": 0.04585474357008934
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ujtxojadtt.jpg",
+            "label": 0,
+            "output": 0.045563243329524994
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jpkbhfmhql.jpg",
+            "label": 0,
+            "output": 0.04545949772000313
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mpzjrdeutv.jpg",
+            "label": 0,
+            "output": 0.04544685035943985
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iqruwytkxd.jpg",
+            "label": 0,
+            "output": 0.04518482834100723
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gzmbdszeyt.jpg",
+            "label": 0,
+            "output": 0.04503617063164711
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sneggiimdk.jpg",
+            "label": 0,
+            "output": 0.044953882694244385
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/newahshtuc.jpg",
+            "label": 0,
+            "output": 0.04441246762871742
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/adizyjvxam.jpg",
+            "label": 0,
+            "output": 0.04428582265973091
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kjacqcuxqc.jpg",
+            "label": 0,
+            "output": 0.044276244938373566
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rzkutenljp.jpg",
+            "label": 0,
+            "output": 0.044187020510435104
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ykyioyylud.jpg",
+            "label": 0,
+            "output": 0.044004783034324646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ypvdkreobg.jpg",
+            "label": 0,
+            "output": 0.04366481676697731
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vsoitgrurd.jpg",
+            "label": 0,
+            "output": 0.04365679621696472
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iqiospmdok.jpg",
+            "label": 0,
+            "output": 0.04355316609144211
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aesvfgnjye.jpg",
+            "label": 0,
+            "output": 0.04339708387851715
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/spuypppvyh.jpg",
+            "label": 0,
+            "output": 0.04339377582073212
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/psvhorutyv.jpg",
+            "label": 0,
+            "output": 0.0433538518846035
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xmppkkdynh.jpg",
+            "label": 0,
+            "output": 0.04332086071372032
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eufbtfldxd.jpg",
+            "label": 0,
+            "output": 0.04307638481259346
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/owavsapwhv.jpg",
+            "label": 0,
+            "output": 0.0429505817592144
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hbdtraluzp.jpg",
+            "label": 0,
+            "output": 0.04292367026209831
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qxiyuhxevk.jpg",
+            "label": 0,
+            "output": 0.04276618734002113
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jgyprvacek.jpg",
+            "label": 0,
+            "output": 0.0425134114921093
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vumdsauhht.jpg",
+            "label": 0,
+            "output": 0.04247284680604935
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/glmtywqxhj.jpg",
+            "label": 0,
+            "output": 0.04242286458611488
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ajaqvfgsih.jpg",
+            "label": 0,
+            "output": 0.042091429233551025
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ruyafogtjk.jpg",
+            "label": 0,
+            "output": 0.042034924030303955
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eoacigirrk.jpg",
+            "label": 0,
+            "output": 0.042028822004795074
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lkwvbsljma.jpg",
+            "label": 0,
+            "output": 0.04167328029870987
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fzmzemtxkr.jpg",
+            "label": 0,
+            "output": 0.041475165635347366
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/spnummyudf.jpg",
+            "label": 0,
+            "output": 0.04142334312200546
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uvwnmuvfio.jpg",
+            "label": 0,
+            "output": 0.04142200946807861
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qtlexhtorg.jpg",
+            "label": 0,
+            "output": 0.04083038866519928
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bfiknazsha.jpg",
+            "label": 0,
+            "output": 0.0405866913497448
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bthfwgfwqz.jpg",
+            "label": 0,
+            "output": 0.04052430018782616
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/arjjdokwee.jpg",
+            "label": 0,
+            "output": 0.04016673564910889
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oqgbxaotgn.jpg",
+            "label": 0,
+            "output": 0.03996392711997032
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/myekqhvgnw.jpg",
+            "label": 0,
+            "output": 0.03983116149902344
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/olxhrrlaut.jpg",
+            "label": 0,
+            "output": 0.039618413895368576
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikidgqmbia.jpg",
+            "label": 0,
+            "output": 0.039560046046972275
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lzgwytfbdh.jpg",
+            "label": 0,
+            "output": 0.03954479470849037
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/apwufqzgrg.jpg",
+            "label": 0,
+            "output": 0.039260659366846085
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/khmsldutff.jpg",
+            "label": 0,
+            "output": 0.03925861790776253
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ygbcaqrvep.jpg",
+            "label": 0,
+            "output": 0.03921234980225563
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/arnnhazyia.jpg",
+            "label": 0,
+            "output": 0.03896772861480713
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lmbvfedfye.jpg",
+            "label": 0,
+            "output": 0.03868873789906502
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jefxajnwbk.jpg",
+            "label": 0,
+            "output": 0.038596075028181076
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vblsrmonrr.jpg",
+            "label": 0,
+            "output": 0.038492005318403244
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lvsgpxrabw.jpg",
+            "label": 0,
+            "output": 0.03830552473664284
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wtzwjbopzy.jpg",
+            "label": 0,
+            "output": 0.038298796862363815
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wxhrxapobk.jpg",
+            "label": 0,
+            "output": 0.038233838975429535
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xxxlutdoia.jpg",
+            "label": 0,
+            "output": 0.038049399852752686
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tqgzodmdpm.jpg",
+            "label": 0,
+            "output": 0.03778217360377312
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fuahrcqbgk.jpg",
+            "label": 0,
+            "output": 0.037772513926029205
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xmyblzhwwh.jpg",
+            "label": 0,
+            "output": 0.037720322608947754
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hgcafbxres.jpg",
+            "label": 0,
+            "output": 0.03771239146590233
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zniuujlsax.jpg",
+            "label": 0,
+            "output": 0.03762546926736832
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nvglpmddru.jpg",
+            "label": 0,
+            "output": 0.03683329373598099
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tgzykjsqqa.jpg",
+            "label": 0,
+            "output": 0.03680385649204254
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ppufoaihkk.jpg",
+            "label": 0,
+            "output": 0.03680073097348213
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gyzuhrjhfj.jpg",
+            "label": 0,
+            "output": 0.03677259758114815
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mtftroydhh.jpg",
+            "label": 0,
+            "output": 0.03666660562157631
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fksurkvzeg.jpg",
+            "label": 0,
+            "output": 0.036661773920059204
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/npfhwxylge.jpg",
+            "label": 0,
+            "output": 0.036196932196617126
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/txviitvyvk.jpg",
+            "label": 0,
+            "output": 0.036094728857278824
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/viedszojsm.jpg",
+            "label": 0,
+            "output": 0.03533666580915451
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/crzzjqmtan.jpg",
+            "label": 0,
+            "output": 0.03458426147699356
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aqdcxmcowi.jpg",
+            "label": 0,
+            "output": 0.03451385349035263
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tzirqivkgc.jpg",
+            "label": 0,
+            "output": 0.034470394253730774
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mzhrvznlhw.jpg",
+            "label": 0,
+            "output": 0.034444622695446014
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gkbjdvwiuz.jpg",
+            "label": 0,
+            "output": 0.03433292359113693
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sndlxnwwey.jpg",
+            "label": 0,
+            "output": 0.03427201882004738
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iedkqtkbtj.jpg",
+            "label": 0,
+            "output": 0.03426072373986244
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gpwdhgxzbq.jpg",
+            "label": 0,
+            "output": 0.03419363871216774
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/niehixqsig.jpg",
+            "label": 0,
+            "output": 0.03408430144190788
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fdetgrcfyf.jpg",
+            "label": 0,
+            "output": 0.034037310630083084
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/umnlmiykjp.jpg",
+            "label": 0,
+            "output": 0.033978287130594254
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qwawgjhkcz.jpg",
+            "label": 0,
+            "output": 0.033831145614385605
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ybihqfczqf.jpg",
+            "label": 0,
+            "output": 0.03364357724785805
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bxmsmmxizq.jpg",
+            "label": 0,
+            "output": 0.033627141267061234
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oegbyamziq.jpg",
+            "label": 0,
+            "output": 0.033524636179208755
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tunmixwvbf.jpg",
+            "label": 0,
+            "output": 0.03326552361249924
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jjplgayvlc.jpg",
+            "label": 0,
+            "output": 0.0332019068300724
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rakzbwxeme.jpg",
+            "label": 0,
+            "output": 0.033167243003845215
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/smlabsrifo.jpg",
+            "label": 0,
+            "output": 0.03270915150642395
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oqargxuywp.jpg",
+            "label": 0,
+            "output": 0.032697588205337524
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xvulqfblsf.jpg",
+            "label": 0,
+            "output": 0.03258175402879715
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pjvqcnpfqy.jpg",
+            "label": 0,
+            "output": 0.03232133015990257
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/envczpiyds.jpg",
+            "label": 0,
+            "output": 0.032303132116794586
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mnbrpiakwa.jpg",
+            "label": 0,
+            "output": 0.0321672298014164
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mhaimbeqgl.jpg",
+            "label": 0,
+            "output": 0.03207705542445183
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ybpiflwjwj.jpg",
+            "label": 0,
+            "output": 0.032036956399679184
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/odyhbcgchi.jpg",
+            "label": 0,
+            "output": 0.03203627094626427
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vwsjebonhl.jpg",
+            "label": 0,
+            "output": 0.03137773275375366
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nytqcbcfth.jpg",
+            "label": 0,
+            "output": 0.03120475448668003
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kzflnrbcwz.jpg",
+            "label": 0,
+            "output": 0.031194109469652176
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ywjlbpxbjz.jpg",
+            "label": 0,
+            "output": 0.031108921393752098
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/touiowfclv.jpg",
+            "label": 0,
+            "output": 0.03108680061995983
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jtprghimeh.jpg",
+            "label": 0,
+            "output": 0.030950190499424934
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vftoepxxkj.jpg",
+            "label": 0,
+            "output": 0.030779564753174782
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nejpnuzhor.jpg",
+            "label": 0,
+            "output": 0.0306116733700037
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/snjzonvpow.jpg",
+            "label": 0,
+            "output": 0.03049694560468197
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oertmmpfuq.jpg",
+            "label": 0,
+            "output": 0.02993055060505867
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/izuqfuuvtc.jpg",
+            "label": 0,
+            "output": 0.029913682490587234
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gaephzrdih.jpg",
+            "label": 0,
+            "output": 0.02977052703499794
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rlarzjlvnd.jpg",
+            "label": 0,
+            "output": 0.029333848506212234
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oqlgvyltdu.jpg",
+            "label": 0,
+            "output": 0.029265526682138443
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zzrybysskm.jpg",
+            "label": 0,
+            "output": 0.029252832755446434
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/efykeyysvi.jpg",
+            "label": 0,
+            "output": 0.02917555905878544
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hjovhnpjdf.jpg",
+            "label": 0,
+            "output": 0.028968358412384987
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gbkfcdebke.jpg",
+            "label": 0,
+            "output": 0.028818216174840927
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/irplnnyutq.jpg",
+            "label": 0,
+            "output": 0.028705332428216934
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sxwaupvkta.jpg",
+            "label": 0,
+            "output": 0.02864208072423935
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vcbnrxukwp.jpg",
+            "label": 0,
+            "output": 0.028446979820728302
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/stnicrfcsk.jpg",
+            "label": 0,
+            "output": 0.02837393619120121
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pvrfveosdy.jpg",
+            "label": 0,
+            "output": 0.028147708624601364
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/slmgcnpjiz.jpg",
+            "label": 0,
+            "output": 0.028134960681200027
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qbhxmjxsev.jpg",
+            "label": 0,
+            "output": 0.028098607435822487
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pcuxcikgcq.jpg",
+            "label": 0,
+            "output": 0.027948517352342606
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gacytxnrbg.jpg",
+            "label": 0,
+            "output": 0.02789168618619442
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tfubqflahj.jpg",
+            "label": 0,
+            "output": 0.027842259034514427
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/enrmnsxepz.jpg",
+            "label": 0,
+            "output": 0.027758805081248283
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gcenmxpfnz.jpg",
+            "label": 0,
+            "output": 0.027744049206376076
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wrplkwvjrk.jpg",
+            "label": 0,
+            "output": 0.02768145129084587
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lqdjvtnjqn.jpg",
+            "label": 0,
+            "output": 0.027631238102912903
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kxyebvmqsl.jpg",
+            "label": 0,
+            "output": 0.027302274480462074
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gjpzqplype.jpg",
+            "label": 0,
+            "output": 0.027120208367705345
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/crwemtqnoq.jpg",
+            "label": 0,
+            "output": 0.027119595557451248
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vofhkesmtv.jpg",
+            "label": 0,
+            "output": 0.027119360864162445
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jfqdxkbnuz.jpg",
+            "label": 0,
+            "output": 0.027108831331133842
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/clnogwmxno.jpg",
+            "label": 0,
+            "output": 0.027067488059401512
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/acpwmtyztu.jpg",
+            "label": 0,
+            "output": 0.027052391320466995
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oxkzwdrxay.jpg",
+            "label": 0,
+            "output": 0.026869645342230797
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gbzvqfsaud.jpg",
+            "label": 0,
+            "output": 0.02675701677799225
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hkjmvhgmso.jpg",
+            "label": 0,
+            "output": 0.026607615873217583
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hectwezedz.jpg",
+            "label": 0,
+            "output": 0.026587223634123802
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yjjufldsnq.jpg",
+            "label": 0,
+            "output": 0.026516664773225784
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mqzlaxdcyf.jpg",
+            "label": 0,
+            "output": 0.02624301053583622
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vmrobijbmc.jpg",
+            "label": 0,
+            "output": 0.02624218910932541
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ykhbfkbqqc.jpg",
+            "label": 0,
+            "output": 0.026142150163650513
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hrdlxdegxy.jpg",
+            "label": 0,
+            "output": 0.026134222745895386
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jjmznfxyeg.jpg",
+            "label": 0,
+            "output": 0.026125913485884666
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ajldduomvc.jpg",
+            "label": 0,
+            "output": 0.025978082790970802
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lzletadhdl.jpg",
+            "label": 0,
+            "output": 0.025932541117072105
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/viwuulrpyk.jpg",
+            "label": 0,
+            "output": 0.025775665417313576
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dxvmhjeycz.jpg",
+            "label": 0,
+            "output": 0.025745656341314316
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nipnhttkcg.jpg",
+            "label": 0,
+            "output": 0.025740481913089752
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tflsufulfn.jpg",
+            "label": 0,
+            "output": 0.02561013586819172
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/npgjxoaxcz.jpg",
+            "label": 0,
+            "output": 0.02556883916258812
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aociqzuesd.jpg",
+            "label": 0,
+            "output": 0.025268131867051125
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jdoqiuxxvj.jpg",
+            "label": 0,
+            "output": 0.02526608295738697
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bkyusgjzud.jpg",
+            "label": 0,
+            "output": 0.025176336988806725
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mkkaiicgks.jpg",
+            "label": 0,
+            "output": 0.02507437951862812
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/smdvfqmevj.jpg",
+            "label": 0,
+            "output": 0.025008318945765495
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wxulzwiqwm.jpg",
+            "label": 0,
+            "output": 0.024974025785923004
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rdudakwwfl.jpg",
+            "label": 0,
+            "output": 0.02477891370654106
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jgaqinqawj.jpg",
+            "label": 0,
+            "output": 0.0247421246021986
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jqihknjmkf.jpg",
+            "label": 0,
+            "output": 0.02438260056078434
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ohycivlfdy.jpg",
+            "label": 0,
+            "output": 0.024367719888687134
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lizvdcrrbp.jpg",
+            "label": 0,
+            "output": 0.024355841800570488
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/heasqjcmsg.jpg",
+            "label": 0,
+            "output": 0.024336429312825203
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/phqxvaxgfc.jpg",
+            "label": 0,
+            "output": 0.02432176098227501
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/buiozdnamh.jpg",
+            "label": 0,
+            "output": 0.024206874892115593
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikesdclcne.jpg",
+            "label": 0,
+            "output": 0.02417929656803608
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vwrsjumkmz.jpg",
+            "label": 0,
+            "output": 0.024159599095582962
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/texcjvnjug.jpg",
+            "label": 0,
+            "output": 0.024135811254382133
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/djtbqkzsak.jpg",
+            "label": 0,
+            "output": 0.024021027609705925
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fwhacyybom.jpg",
+            "label": 0,
+            "output": 0.023826872929930687
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qvxgfrmtjl.jpg",
+            "label": 0,
+            "output": 0.023692483082413673
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/szebyvzlqt.jpg",
+            "label": 0,
+            "output": 0.02365954779088497
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ranqpkoerl.jpg",
+            "label": 0,
+            "output": 0.023605046793818474
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nhlzsfyryf.jpg",
+            "label": 0,
+            "output": 0.02352781966328621
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nvsdiqcxdc.jpg",
+            "label": 0,
+            "output": 0.02352585271000862
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hwfugtliat.jpg",
+            "label": 0,
+            "output": 0.023202167823910713
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bicflvshvw.jpg",
+            "label": 0,
+            "output": 0.023098019883036613
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/olxtdigiux.jpg",
+            "label": 0,
+            "output": 0.022981122136116028
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/elpsbyigve.jpg",
+            "label": 0,
+            "output": 0.022702351212501526
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rpeighzltg.jpg",
+            "label": 0,
+            "output": 0.022593950852751732
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pepkgtkonx.jpg",
+            "label": 0,
+            "output": 0.022548027336597443
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ixyzaufrnr.jpg",
+            "label": 0,
+            "output": 0.02254362404346466
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zacjdmmloj.jpg",
+            "label": 0,
+            "output": 0.022472666576504707
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hxfciehznr.jpg",
+            "label": 0,
+            "output": 0.022462991997599602
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/opipzckzef.jpg",
+            "label": 0,
+            "output": 0.022368749603629112
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jhcbtfuziq.jpg",
+            "label": 0,
+            "output": 0.022351980209350586
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zkioiunenq.jpg",
+            "label": 0,
+            "output": 0.022341564297676086
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sgggkqzghg.jpg",
+            "label": 0,
+            "output": 0.02229616418480873
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wkkhoodytf.jpg",
+            "label": 0,
+            "output": 0.0221599992364645
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cubclpdlyb.jpg",
+            "label": 0,
+            "output": 0.021952025592327118
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dbcoycuiyt.jpg",
+            "label": 0,
+            "output": 0.021884556859731674
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rsiiuivgsv.jpg",
+            "label": 0,
+            "output": 0.021845247596502304
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yfbwcnyvch.jpg",
+            "label": 0,
+            "output": 0.021790796890854836
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tuptxvyplv.jpg",
+            "label": 0,
+            "output": 0.021784182637929916
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yoqkeajskn.jpg",
+            "label": 0,
+            "output": 0.021729186177253723
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ommdrgxtbr.jpg",
+            "label": 0,
+            "output": 0.021655043587088585
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yyfgzdkznw.jpg",
+            "label": 0,
+            "output": 0.021224573254585266
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fzzunuvfgl.jpg",
+            "label": 0,
+            "output": 0.021153604611754417
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vwklacfxmw.jpg",
+            "label": 0,
+            "output": 0.021066153421998024
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jnrpfsvjdm.jpg",
+            "label": 0,
+            "output": 0.02103956788778305
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ccatehwpeu.jpg",
+            "label": 0,
+            "output": 0.02094918116927147
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aaksjqrtil.jpg",
+            "label": 0,
+            "output": 0.020893724635243416
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pekxwkfhua.jpg",
+            "label": 0,
+            "output": 0.02068624645471573
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lqrkxsvuvt.jpg",
+            "label": 0,
+            "output": 0.020615018904209137
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/htpewtqebr.jpg",
+            "label": 0,
+            "output": 0.020367814227938652
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pcwvbmjrea.jpg",
+            "label": 0,
+            "output": 0.020340101793408394
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ygsthmtuoh.jpg",
+            "label": 0,
+            "output": 0.020306862890720367
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bfczagsxfw.jpg",
+            "label": 0,
+            "output": 0.020291700959205627
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/evwfvofdll.jpg",
+            "label": 0,
+            "output": 0.020235838368535042
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bvbspxdfxz.jpg",
+            "label": 0,
+            "output": 0.020138781517744064
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kqmbpossfq.jpg",
+            "label": 0,
+            "output": 0.020108070224523544
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jgcuwqiqsa.jpg",
+            "label": 0,
+            "output": 0.020105376839637756
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cbmykoukdb.jpg",
+            "label": 0,
+            "output": 0.019971530884504318
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hpmppyffov.jpg",
+            "label": 0,
+            "output": 0.0199170783162117
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lxlphyyeaw.jpg",
+            "label": 0,
+            "output": 0.01985817961394787
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dbifuulczh.jpg",
+            "label": 0,
+            "output": 0.019571421667933464
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fxxzogdrnu.jpg",
+            "label": 0,
+            "output": 0.019363896921277046
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/trssloofom.jpg",
+            "label": 0,
+            "output": 0.01932361349463463
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vkjmgldjai.jpg",
+            "label": 0,
+            "output": 0.01931118592619896
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bbqlufpjnl.jpg",
+            "label": 0,
+            "output": 0.019171234220266342
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uprjbmydux.jpg",
+            "label": 0,
+            "output": 0.019101938232779503
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zmqpqnavds.jpg",
+            "label": 0,
+            "output": 0.01906285434961319
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mijuwhirnm.jpg",
+            "label": 0,
+            "output": 0.019026368856430054
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eelzocmtws.jpg",
+            "label": 0,
+            "output": 0.019002771005034447
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tibxcunvom.jpg",
+            "label": 0,
+            "output": 0.018887732177972794
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/usrafpawra.jpg",
+            "label": 0,
+            "output": 0.018834073096513748
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rtiaijvnif.jpg",
+            "label": 0,
+            "output": 0.018748098984360695
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qvldneoiwj.jpg",
+            "label": 0,
+            "output": 0.018690461292862892
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hlwefvuprq.jpg",
+            "label": 0,
+            "output": 0.018683018162846565
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dtoeuxdocm.jpg",
+            "label": 0,
+            "output": 0.018641037866473198
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/abaxzegfoi.jpg",
+            "label": 0,
+            "output": 0.018523825332522392
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/siheeokstl.jpg",
+            "label": 0,
+            "output": 0.018489785492420197
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kkxuptmzof.jpg",
+            "label": 0,
+            "output": 0.018451470881700516
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/isrzfmrbjo.jpg",
+            "label": 0,
+            "output": 0.018418624997138977
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qafswzymfy.jpg",
+            "label": 0,
+            "output": 0.018322976306080818
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kqhrtvmeux.jpg",
+            "label": 0,
+            "output": 0.01832040399312973
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kwqbkshqjn.jpg",
+            "label": 0,
+            "output": 0.0182422436773777
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xdpqtpwyiz.jpg",
+            "label": 0,
+            "output": 0.018183249980211258
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jmqnijkden.jpg",
+            "label": 0,
+            "output": 0.01813884824514389
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ivvevnakub.jpg",
+            "label": 0,
+            "output": 0.018122809007763863
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/picuojlsec.jpg",
+            "label": 0,
+            "output": 0.017875108867883682
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gwwimiekeh.jpg",
+            "label": 0,
+            "output": 0.017804890871047974
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/okuolqaypa.jpg",
+            "label": 0,
+            "output": 0.017649557441473007
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zxnpcvwbfb.jpg",
+            "label": 0,
+            "output": 0.017626864835619926
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xtupempfsd.jpg",
+            "label": 0,
+            "output": 0.01744282990694046
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gudshwhvvv.jpg",
+            "label": 0,
+            "output": 0.01744217984378338
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ftmhbluvwz.jpg",
+            "label": 0,
+            "output": 0.017326338216662407
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/segiubdggo.jpg",
+            "label": 0,
+            "output": 0.0172041617333889
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ywhajfzors.jpg",
+            "label": 0,
+            "output": 0.017197953537106514
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vlwnndwtuh.jpg",
+            "label": 0,
+            "output": 0.017123589292168617
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/panagqebev.jpg",
+            "label": 0,
+            "output": 0.017011085525155067
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pxefeippis.jpg",
+            "label": 0,
+            "output": 0.017004186287522316
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hnzpgeledt.jpg",
+            "label": 0,
+            "output": 0.016980666667222977
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/huksdpnufs.jpg",
+            "label": 0,
+            "output": 0.016858870163559914
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mszjipjvvf.jpg",
+            "label": 0,
+            "output": 0.016833387315273285
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rgiwpyxekm.jpg",
+            "label": 0,
+            "output": 0.01667703501880169
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sjigynomsm.jpg",
+            "label": 0,
+            "output": 0.016671570017933846
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mbkwfjqeay.jpg",
+            "label": 0,
+            "output": 0.016668975353240967
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wfyfdsoqjb.jpg",
+            "label": 0,
+            "output": 0.01664145104587078
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/danyxpbnqf.jpg",
+            "label": 0,
+            "output": 0.016605665907263756
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ettedwuoqe.jpg",
+            "label": 0,
+            "output": 0.016561368480324745
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vuvkrfmrfw.jpg",
+            "label": 0,
+            "output": 0.01626085676252842
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tinlvxgqxw.jpg",
+            "label": 0,
+            "output": 0.016220448538661003
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yxdmgabgrh.jpg",
+            "label": 0,
+            "output": 0.016127003356814384
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mubozyqcgp.jpg",
+            "label": 0,
+            "output": 0.016031619161367416
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/njrelhtzux.jpg",
+            "label": 0,
+            "output": 0.015894746407866478
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aofcqpcyfk.jpg",
+            "label": 0,
+            "output": 0.015875503420829773
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tjonndufse.jpg",
+            "label": 0,
+            "output": 0.015859270468354225
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vutxbsgjsz.jpg",
+            "label": 0,
+            "output": 0.01582992449402809
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ljluvxkeau.jpg",
+            "label": 0,
+            "output": 0.015819001942873
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tgihtkfpyi.jpg",
+            "label": 0,
+            "output": 0.015805913135409355
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fvfgzexjcm.jpg",
+            "label": 0,
+            "output": 0.01575331762433052
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yfnrrhachx.jpg",
+            "label": 0,
+            "output": 0.015717728063464165
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cmjapngcpn.jpg",
+            "label": 0,
+            "output": 0.015692440792918205
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/orgclftabd.jpg",
+            "label": 0,
+            "output": 0.015634624287486076
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xbwwtavscv.jpg",
+            "label": 0,
+            "output": 0.015471483580768108
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wcuupgwotu.jpg",
+            "label": 0,
+            "output": 0.015422468073666096
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ivswfntzwh.jpg",
+            "label": 0,
+            "output": 0.015229047276079655
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xfblvcbesb.jpg",
+            "label": 0,
+            "output": 0.015042665414512157
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iojhamvzyv.jpg",
+            "label": 0,
+            "output": 0.014999248087406158
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tdegwqcdxk.jpg",
+            "label": 0,
+            "output": 0.014995562843978405
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gvvfxpftgt.jpg",
+            "label": 0,
+            "output": 0.014905206859111786
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gfdekurnbz.jpg",
+            "label": 0,
+            "output": 0.014899512752890587
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hmasnickhh.jpg",
+            "label": 0,
+            "output": 0.014845596626400948
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qngsmynlht.jpg",
+            "label": 0,
+            "output": 0.014796115458011627
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/usxygmfmlb.jpg",
+            "label": 0,
+            "output": 0.014725228771567345
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/apdgetedbs.jpg",
+            "label": 0,
+            "output": 0.014575718902051449
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/toteczliil.jpg",
+            "label": 0,
+            "output": 0.014466100372374058
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vazvwojjfh.jpg",
+            "label": 0,
+            "output": 0.014400267042219639
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qdnqcoyzar.jpg",
+            "label": 0,
+            "output": 0.014352377504110336
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jgvhyrcgyx.jpg",
+            "label": 0,
+            "output": 0.014332740567624569
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/frrzmsczog.jpg",
+            "label": 0,
+            "output": 0.014207401312887669
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fvbwueqmmc.jpg",
+            "label": 0,
+            "output": 0.014182724989950657
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pcvfvfsxek.jpg",
+            "label": 0,
+            "output": 0.014083370566368103
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oegsdqwgax.jpg",
+            "label": 0,
+            "output": 0.013865899294614792
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/owwrkfwvmg.jpg",
+            "label": 0,
+            "output": 0.013836176134645939
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cyencgbdne.jpg",
+            "label": 0,
+            "output": 0.013615421019494534
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vpwnxqxbks.jpg",
+            "label": 0,
+            "output": 0.01339029986411333
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vthfgmonzr.jpg",
+            "label": 0,
+            "output": 0.013270527124404907
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zcsnybxdqj.jpg",
+            "label": 0,
+            "output": 0.013045166619122028
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jbsbxfrewb.jpg",
+            "label": 0,
+            "output": 0.01302124559879303
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xahepmkkki.jpg",
+            "label": 0,
+            "output": 0.012890495359897614
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rsekavebcp.jpg",
+            "label": 0,
+            "output": 0.012870744802057743
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hcyfeanpao.jpg",
+            "label": 0,
+            "output": 0.01267280150204897
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fcgojsqxhw.jpg",
+            "label": 0,
+            "output": 0.01257595606148243
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/albdpubxka.jpg",
+            "label": 0,
+            "output": 0.012512941844761372
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/attqnlwqgz.jpg",
+            "label": 0,
+            "output": 0.012441735714673996
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wekyyrslyw.jpg",
+            "label": 0,
+            "output": 0.012421303428709507
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/devyzpyxmr.jpg",
+            "label": 0,
+            "output": 0.012393761426210403
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qsndeimedb.jpg",
+            "label": 0,
+            "output": 0.012359167449176311
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dexbjiwpmb.jpg",
+            "label": 0,
+            "output": 0.012289750389754772
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/swhkqaywlh.jpg",
+            "label": 0,
+            "output": 0.012263194657862186
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fjjzjquuqt.jpg",
+            "label": 0,
+            "output": 0.012159429490566254
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bbdiioaqyn.jpg",
+            "label": 0,
+            "output": 0.012150292284786701
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/djumibnmaq.jpg",
+            "label": 0,
+            "output": 0.012130781076848507
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xnyhohvpna.jpg",
+            "label": 0,
+            "output": 0.012088489718735218
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nhmoimaaqz.jpg",
+            "label": 0,
+            "output": 0.012077366933226585
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/amthaokcfg.jpg",
+            "label": 0,
+            "output": 0.012042662128806114
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xjsfnrjtst.jpg",
+            "label": 0,
+            "output": 0.012029601261019707
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gwhfxugran.jpg",
+            "label": 0,
+            "output": 0.011908329091966152
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uxbgzfafqm.jpg",
+            "label": 0,
+            "output": 0.01188668329268694
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lkbpelvrth.jpg",
+            "label": 0,
+            "output": 0.011840850114822388
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/psosqfwlqc.jpg",
+            "label": 0,
+            "output": 0.011840645223855972
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bfuqjvwwlk.jpg",
+            "label": 0,
+            "output": 0.011785250157117844
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/adkpoxtrlp.jpg",
+            "label": 0,
+            "output": 0.011656150221824646
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ifqwneltpg.jpg",
+            "label": 0,
+            "output": 0.011653854511678219
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xlwfiidgib.jpg",
+            "label": 0,
+            "output": 0.011632922105491161
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uyrgewsxvy.jpg",
+            "label": 0,
+            "output": 0.011631641536951065
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lxjrxqzveb.jpg",
+            "label": 0,
+            "output": 0.01157866045832634
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wmgazqjjux.jpg",
+            "label": 0,
+            "output": 0.011544636450707912
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ikiqryhfmf.jpg",
+            "label": 0,
+            "output": 0.011456770822405815
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jkepwzmrqu.jpg",
+            "label": 0,
+            "output": 0.01144956424832344
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jabklaioxf.jpg",
+            "label": 0,
+            "output": 0.011370056308805943
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/abzfomfxjd.jpg",
+            "label": 0,
+            "output": 0.011368408799171448
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fzrimmsozw.jpg",
+            "label": 0,
+            "output": 0.011357487179338932
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/leadpebgwn.jpg",
+            "label": 0,
+            "output": 0.011319671757519245
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rdhrjwoyvx.jpg",
+            "label": 0,
+            "output": 0.011299433186650276
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aynkpajrmy.jpg",
+            "label": 0,
+            "output": 0.011246057227253914
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/alzrdyourf.jpg",
+            "label": 0,
+            "output": 0.01115142460912466
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wedprdqjkr.jpg",
+            "label": 0,
+            "output": 0.011051444336771965
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bjipeebzgu.jpg",
+            "label": 0,
+            "output": 0.011028462089598179
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gwwprxqtre.jpg",
+            "label": 0,
+            "output": 0.010990106500685215
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vmlzuywhlr.jpg",
+            "label": 0,
+            "output": 0.010978642851114273
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vocoamkcza.jpg",
+            "label": 0,
+            "output": 0.010921221226453781
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ncyvrxsbym.jpg",
+            "label": 0,
+            "output": 0.01088052336126566
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wjvuvyodzv.jpg",
+            "label": 0,
+            "output": 0.010796771384775639
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fwnswugajt.jpg",
+            "label": 0,
+            "output": 0.010744508355855942
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xoxubdjnhe.jpg",
+            "label": 0,
+            "output": 0.01067277230322361
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kpmxquicco.jpg",
+            "label": 0,
+            "output": 0.010608487762510777
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vmouwpueqp.jpg",
+            "label": 0,
+            "output": 0.010568651370704174
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fwqtzyeait.jpg",
+            "label": 0,
+            "output": 0.010436007753014565
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jgmtkjqepx.jpg",
+            "label": 0,
+            "output": 0.010403736494481564
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/njfscemusa.jpg",
+            "label": 0,
+            "output": 0.010307757183909416
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zwkapmobkx.jpg",
+            "label": 0,
+            "output": 0.010248989798128605
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/guljtnkdnj.jpg",
+            "label": 0,
+            "output": 0.010227713733911514
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uqiwgwkalw.jpg",
+            "label": 0,
+            "output": 0.01019803062081337
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dbmufhmuzs.jpg",
+            "label": 0,
+            "output": 0.010147327557206154
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hptzommwzk.jpg",
+            "label": 0,
+            "output": 0.01014036126434803
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ndjgpgfppo.jpg",
+            "label": 0,
+            "output": 0.01002667099237442
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xqyjzhnfqu.jpg",
+            "label": 0,
+            "output": 0.009881824254989624
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ffduxyansq.jpg",
+            "label": 0,
+            "output": 0.009835085831582546
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bolqiuvdbo.jpg",
+            "label": 0,
+            "output": 0.009769388474524021
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/obmkmjnvet.jpg",
+            "label": 0,
+            "output": 0.009621347300708294
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sqtxlhaqbh.jpg",
+            "label": 0,
+            "output": 0.009595350362360477
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wnjjxqinho.jpg",
+            "label": 0,
+            "output": 0.009559478610754013
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aahxgrlfqt.jpg",
+            "label": 0,
+            "output": 0.009429249912500381
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ulpnibnvvc.jpg",
+            "label": 0,
+            "output": 0.0094169145449996
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fnjmysjhqo.jpg",
+            "label": 0,
+            "output": 0.00940293725579977
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mfmhhrlxuy.jpg",
+            "label": 0,
+            "output": 0.0094007458537817
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zcaqqmomfv.jpg",
+            "label": 0,
+            "output": 0.00939059816300869
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tefyzlckhu.jpg",
+            "label": 0,
+            "output": 0.009297491982579231
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bbmeviacjm.jpg",
+            "label": 0,
+            "output": 0.00928779412060976
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ybksklcxnr.jpg",
+            "label": 0,
+            "output": 0.009240031242370605
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tigzfxjaeg.jpg",
+            "label": 0,
+            "output": 0.009235577657818794
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gxkmzinhug.jpg",
+            "label": 0,
+            "output": 0.009146114811301231
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xbftnrscst.jpg",
+            "label": 0,
+            "output": 0.009063302539288998
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sdbpzpettf.jpg",
+            "label": 0,
+            "output": 0.008930442854762077
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/usipjcyjoy.jpg",
+            "label": 0,
+            "output": 0.008929409086704254
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wsbgevekgf.jpg",
+            "label": 0,
+            "output": 0.008910293690860271
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uqyyhogjkx.jpg",
+            "label": 0,
+            "output": 0.008859292604029179
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oaepibbwpe.jpg",
+            "label": 0,
+            "output": 0.0088380491361022
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fjxuybiebs.jpg",
+            "label": 0,
+            "output": 0.0086573027074337
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zhkktdnkhl.jpg",
+            "label": 0,
+            "output": 0.008594036102294922
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wynbrdoyde.jpg",
+            "label": 0,
+            "output": 0.008563725277781487
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xjokdvoxpk.jpg",
+            "label": 0,
+            "output": 0.008520076051354408
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/etawvbajib.jpg",
+            "label": 0,
+            "output": 0.008508698083460331
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/drpsdefmzh.jpg",
+            "label": 0,
+            "output": 0.008385027758777142
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dhepjncjkt.jpg",
+            "label": 0,
+            "output": 0.00821374449878931
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gwfboomsuw.jpg",
+            "label": 0,
+            "output": 0.008134596049785614
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lkealtdsyd.jpg",
+            "label": 0,
+            "output": 0.008128411136567593
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jhnzthaool.jpg",
+            "label": 0,
+            "output": 0.008084255270659924
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jhuyduptth.jpg",
+            "label": 0,
+            "output": 0.008050349541008472
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bobirihsmf.jpg",
+            "label": 0,
+            "output": 0.007993917912244797
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ycojahdoqs.jpg",
+            "label": 0,
+            "output": 0.007982028648257256
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dhjedfczru.jpg",
+            "label": 0,
+            "output": 0.007873249240219593
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xnidvmnavp.jpg",
+            "label": 0,
+            "output": 0.007768548093736172
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mzwodmlccu.jpg",
+            "label": 0,
+            "output": 0.007635825779289007
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bxfbgvlfqu.jpg",
+            "label": 0,
+            "output": 0.007628045976161957
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/plszaygqda.jpg",
+            "label": 0,
+            "output": 0.007471343502402306
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sbuowwvzjw.jpg",
+            "label": 0,
+            "output": 0.007442743517458439
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jirfxpsjiz.jpg",
+            "label": 0,
+            "output": 0.007381299510598183
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/owymrcrmoo.jpg",
+            "label": 0,
+            "output": 0.007285334635525942
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jqcakwrejy.jpg",
+            "label": 0,
+            "output": 0.007282954175025225
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hdcbgrxqza.jpg",
+            "label": 0,
+            "output": 0.007235624361783266
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ajefhvvxek.jpg",
+            "label": 0,
+            "output": 0.007183417212218046
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ewspkgvjkv.jpg",
+            "label": 0,
+            "output": 0.0071067470125854015
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sltdkynkrd.jpg",
+            "label": 0,
+            "output": 0.0070983110927045345
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nypkpjmzri.jpg",
+            "label": 0,
+            "output": 0.007016491610556841
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zrifjlbkwb.jpg",
+            "label": 0,
+            "output": 0.007013130467385054
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/osrdcrocjh.jpg",
+            "label": 0,
+            "output": 0.006959729827940464
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sswokizojd.jpg",
+            "label": 0,
+            "output": 0.006954788696020842
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/skkprfujmw.jpg",
+            "label": 0,
+            "output": 0.006939562037587166
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mfcceezfwn.jpg",
+            "label": 0,
+            "output": 0.006934736855328083
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nrzbgujfll.jpg",
+            "label": 0,
+            "output": 0.006907419767230749
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qhnjseyjbw.jpg",
+            "label": 0,
+            "output": 0.006727487780153751
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xyhvtzywzh.jpg",
+            "label": 0,
+            "output": 0.006659738719463348
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qhuylytsyy.jpg",
+            "label": 0,
+            "output": 0.006615241523832083
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/slecdbiljb.jpg",
+            "label": 0,
+            "output": 0.006597763393074274
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lpofppxlqt.jpg",
+            "label": 0,
+            "output": 0.00654644425958395
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nnuuhindgj.jpg",
+            "label": 0,
+            "output": 0.006528341677039862
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ntpnrhhljv.jpg",
+            "label": 0,
+            "output": 0.006479197181761265
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eaesoxacae.jpg",
+            "label": 0,
+            "output": 0.006452513393014669
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/njnnphhwll.jpg",
+            "label": 0,
+            "output": 0.006421789061278105
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sevosnzutr.jpg",
+            "label": 0,
+            "output": 0.006398273166269064
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/echehlitmr.jpg",
+            "label": 0,
+            "output": 0.006383190862834454
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/apfyxprqpm.jpg",
+            "label": 0,
+            "output": 0.006281119771301746
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qofcjlhwbv.jpg",
+            "label": 0,
+            "output": 0.006279390770941973
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/shkxdbeqpn.jpg",
+            "label": 0,
+            "output": 0.0062485006637871265
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vispixnoqk.jpg",
+            "label": 0,
+            "output": 0.006242325529456139
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nfysclasrr.jpg",
+            "label": 0,
+            "output": 0.006127597764134407
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lavlfbgnkn.jpg",
+            "label": 0,
+            "output": 0.0061155869625508785
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ficowhhyiy.jpg",
+            "label": 0,
+            "output": 0.006115487311035395
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tmuzzrstsf.jpg",
+            "label": 0,
+            "output": 0.00606370996683836
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lsdusudljb.jpg",
+            "label": 0,
+            "output": 0.006062294822186232
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oddyrvltgg.jpg",
+            "label": 0,
+            "output": 0.0060462444089353085
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dpsfehmqme.jpg",
+            "label": 0,
+            "output": 0.0060416837222874165
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tbganwxklb.jpg",
+            "label": 0,
+            "output": 0.006028548814356327
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/iwbpqeobxw.jpg",
+            "label": 0,
+            "output": 0.006016617175191641
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/imkvcjrnck.jpg",
+            "label": 0,
+            "output": 0.005986414849758148
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eolimvhygz.jpg",
+            "label": 0,
+            "output": 0.005970820784568787
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rprdsmygod.jpg",
+            "label": 0,
+            "output": 0.005964592099189758
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zchftlmgnh.jpg",
+            "label": 0,
+            "output": 0.005962925963103771
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jhcimomcij.jpg",
+            "label": 0,
+            "output": 0.005886404775083065
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pwhjtzqmis.jpg",
+            "label": 0,
+            "output": 0.005878231953829527
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qejahcqthz.jpg",
+            "label": 0,
+            "output": 0.005838243756443262
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dldztvvwrt.jpg",
+            "label": 0,
+            "output": 0.005758581683039665
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rzrzcujvqg.jpg",
+            "label": 0,
+            "output": 0.005736259743571281
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dawfktkzad.jpg",
+            "label": 0,
+            "output": 0.005707650911062956
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/effiwpkvcy.jpg",
+            "label": 0,
+            "output": 0.005585485603660345
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pfvgbusewt.jpg",
+            "label": 0,
+            "output": 0.005573948845267296
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mlxvdfndsh.jpg",
+            "label": 0,
+            "output": 0.00548552256077528
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fmlqvsmgwg.jpg",
+            "label": 0,
+            "output": 0.005482757464051247
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hisyohahzi.jpg",
+            "label": 0,
+            "output": 0.005412213504314423
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gbmtgdhzrx.jpg",
+            "label": 0,
+            "output": 0.0053003812208771706
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kbpanibqgu.jpg",
+            "label": 0,
+            "output": 0.005248806439340115
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rjddhlzmqd.jpg",
+            "label": 0,
+            "output": 0.005247349385172129
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jlmbbubxmr.jpg",
+            "label": 0,
+            "output": 0.005242884159088135
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hdtfurantf.jpg",
+            "label": 0,
+            "output": 0.0051829698495566845
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uvweqxeurs.jpg",
+            "label": 0,
+            "output": 0.005022094585001469
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ukcwfevbtz.jpg",
+            "label": 0,
+            "output": 0.00497818598523736
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oocykwkype.jpg",
+            "label": 0,
+            "output": 0.004965293686836958
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zynieagnms.jpg",
+            "label": 0,
+            "output": 0.004964848514646292
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/aoyyeorqer.jpg",
+            "label": 0,
+            "output": 0.004953107796609402
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/msdsnlzcre.jpg",
+            "label": 0,
+            "output": 0.004922425374388695
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tgkezflbjz.jpg",
+            "label": 0,
+            "output": 0.004895390477031469
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sdpkvjboba.jpg",
+            "label": 0,
+            "output": 0.004676432348787785
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xsmkmdlmux.jpg",
+            "label": 0,
+            "output": 0.004675669129937887
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oulguvnvpq.jpg",
+            "label": 0,
+            "output": 0.00463524367660284
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ajwadbiyry.jpg",
+            "label": 0,
+            "output": 0.004611976444721222
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/psvmrypqai.jpg",
+            "label": 0,
+            "output": 0.004522437695413828
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nmdxktenko.jpg",
+            "label": 0,
+            "output": 0.004364223685115576
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qaafihkbbk.jpg",
+            "label": 0,
+            "output": 0.004326310008764267
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pbblbgdzjz.jpg",
+            "label": 0,
+            "output": 0.0042215208522975445
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fgbgiwekim.jpg",
+            "label": 0,
+            "output": 0.004192661959677935
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hiqkigzfrk.jpg",
+            "label": 0,
+            "output": 0.004169628955423832
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yimxruvwud.jpg",
+            "label": 0,
+            "output": 0.00414676871150732
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qtwdrpnjgz.jpg",
+            "label": 0,
+            "output": 0.004110126756131649
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/drnfeijjlp.jpg",
+            "label": 0,
+            "output": 0.004093044437468052
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eqndltlggi.jpg",
+            "label": 0,
+            "output": 0.004032865632325411
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lcaexbqxar.jpg",
+            "label": 0,
+            "output": 0.004014694597572088
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bebadtkmes.jpg",
+            "label": 0,
+            "output": 0.0040135919116437435
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gtidkpfxcc.jpg",
+            "label": 0,
+            "output": 0.003997463267296553
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hzsujxzlcn.jpg",
+            "label": 0,
+            "output": 0.003969768062233925
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yxyqoryjpu.jpg",
+            "label": 0,
+            "output": 0.003960425034165382
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/flislizwvd.jpg",
+            "label": 0,
+            "output": 0.003946810495108366
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fuqmkbouip.jpg",
+            "label": 0,
+            "output": 0.003887972328811884
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/agjsmczzat.jpg",
+            "label": 0,
+            "output": 0.003824335988610983
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jrdflpqmct.jpg",
+            "label": 0,
+            "output": 0.003805960528552532
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pieahxylhf.jpg",
+            "label": 0,
+            "output": 0.003764196764677763
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hnsubaglth.jpg",
+            "label": 0,
+            "output": 0.003730881493538618
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zzrnxnjzyx.jpg",
+            "label": 0,
+            "output": 0.003686717711389065
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pirwlvliku.jpg",
+            "label": 0,
+            "output": 0.0036805227864533663
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dojapmtjlo.jpg",
+            "label": 0,
+            "output": 0.0036674959119409323
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uydofqnwdz.jpg",
+            "label": 0,
+            "output": 0.0036543619353324175
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lvndezxcir.jpg",
+            "label": 0,
+            "output": 0.0036188503727316856
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rhwouyajcq.jpg",
+            "label": 0,
+            "output": 0.0035207050386816263
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cxjsjqusph.jpg",
+            "label": 0,
+            "output": 0.003506117034703493
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/irwxnqcndk.jpg",
+            "label": 0,
+            "output": 0.0034926547668874264
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/opljqzrrmw.jpg",
+            "label": 0,
+            "output": 0.003479225328192115
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ygqiosrden.jpg",
+            "label": 0,
+            "output": 0.003477854421362281
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/utfokfmmbf.jpg",
+            "label": 0,
+            "output": 0.00347159244120121
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nhlvajciai.jpg",
+            "label": 0,
+            "output": 0.0034697726368904114
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/odhzcmznnr.jpg",
+            "label": 0,
+            "output": 0.003398606553673744
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/utlevcsfzc.jpg",
+            "label": 0,
+            "output": 0.003398528788238764
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qgkzujpyka.jpg",
+            "label": 0,
+            "output": 0.003294668160378933
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rdtvftkyww.jpg",
+            "label": 0,
+            "output": 0.003259556135162711
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yatxnhyhyw.jpg",
+            "label": 0,
+            "output": 0.003199752187356353
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kvaphythne.jpg",
+            "label": 0,
+            "output": 0.0030736790504306555
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nrqrcqxudf.jpg",
+            "label": 0,
+            "output": 0.0030371258035302162
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rlzfziqqrd.jpg",
+            "label": 0,
+            "output": 0.0030318477656692266
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wxmydpmpup.jpg",
+            "label": 0,
+            "output": 0.0030306323897093534
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mpozbazafp.jpg",
+            "label": 0,
+            "output": 0.0030141810420900583
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/opueqmfkcd.jpg",
+            "label": 0,
+            "output": 0.003005525330081582
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jrzuxwwxsh.jpg",
+            "label": 0,
+            "output": 0.0029986363369971514
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dwgrruvbsz.jpg",
+            "label": 0,
+            "output": 0.0029425499960780144
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fgizsruyxb.jpg",
+            "label": 0,
+            "output": 0.0027486570179462433
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/csvtttfwut.jpg",
+            "label": 0,
+            "output": 0.0027184535283595324
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/sinwhncecv.jpg",
+            "label": 0,
+            "output": 0.0026513037737458944
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/svpwqjhjbu.jpg",
+            "label": 0,
+            "output": 0.0026355087757110596
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wotrziuyhj.jpg",
+            "label": 0,
+            "output": 0.0025544273667037487
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/olecerouzv.jpg",
+            "label": 0,
+            "output": 0.0025417411234229803
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yhwhnweccm.jpg",
+            "label": 0,
+            "output": 0.0024857756216078997
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kiimhjeatg.jpg",
+            "label": 0,
+            "output": 0.0024217371828854084
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gnjefwyemy.jpg",
+            "label": 0,
+            "output": 0.0024141124449670315
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gdomuubpmo.jpg",
+            "label": 0,
+            "output": 0.002398907672613859
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/hxyxqnzbzd.jpg",
+            "label": 0,
+            "output": 0.0023972836788743734
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/crqwxhlcfy.jpg",
+            "label": 0,
+            "output": 0.0023899965453892946
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uxbuickkha.jpg",
+            "label": 0,
+            "output": 0.0023841671645641327
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xhhbffrquk.jpg",
+            "label": 0,
+            "output": 0.002332458971068263
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/surgjkswmj.jpg",
+            "label": 0,
+            "output": 0.0023204677272588015
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/oyxvwvxuzr.jpg",
+            "label": 0,
+            "output": 0.002273840131238103
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/vrwfguctin.jpg",
+            "label": 0,
+            "output": 0.0022605827543884516
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mcrhlmdumo.jpg",
+            "label": 0,
+            "output": 0.0022504348307847977
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uvsazktssr.jpg",
+            "label": 0,
+            "output": 0.0022054060827940702
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kobditubhr.jpg",
+            "label": 0,
+            "output": 0.0021251083817332983
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kxwkjgbtdq.jpg",
+            "label": 0,
+            "output": 0.002123434329405427
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nwpodhovep.jpg",
+            "label": 0,
+            "output": 0.0021013193763792515
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/lnavxqqxfa.jpg",
+            "label": 0,
+            "output": 0.0020853986497968435
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yzkphttipt.jpg",
+            "label": 0,
+            "output": 0.0020531772170215845
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/osigoexsbv.jpg",
+            "label": 0,
+            "output": 0.0019456534646451473
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/wdxoxbbogy.jpg",
+            "label": 0,
+            "output": 0.0019388416549190879
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ntbjfhgaww.jpg",
+            "label": 0,
+            "output": 0.0018418981926515698
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ddeuvxknie.jpg",
+            "label": 0,
+            "output": 0.00182483927346766
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tecfsxrdsg.jpg",
+            "label": 0,
+            "output": 0.0018184117507189512
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zxaydtvcbx.jpg",
+            "label": 0,
+            "output": 0.001794537529349327
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mobwrxioai.jpg",
+            "label": 0,
+            "output": 0.0017937344964593649
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uqgovdwcrr.jpg",
+            "label": 0,
+            "output": 0.0017531407065689564
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/temvvnfwvq.jpg",
+            "label": 0,
+            "output": 0.0017014110926538706
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/cdjghtyvsn.jpg",
+            "label": 0,
+            "output": 0.0016112610464915633
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gllomgthtj.jpg",
+            "label": 0,
+            "output": 0.001600216026417911
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qkkcelqgiq.jpg",
+            "label": 0,
+            "output": 0.001552586443722248
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ttxhncprvt.jpg",
+            "label": 0,
+            "output": 0.0015279437648132443
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ogjsxmnkxw.jpg",
+            "label": 0,
+            "output": 0.0015197672182694077
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/annkzxvqsz.jpg",
+            "label": 0,
+            "output": 0.0014584868913516402
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qgxnqynxwh.jpg",
+            "label": 0,
+            "output": 0.001429930911399424
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/enmfgbxzpf.jpg",
+            "label": 0,
+            "output": 0.001403433969244361
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/dsxuevcdxk.jpg",
+            "label": 0,
+            "output": 0.0012874880339950323
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ughldndbio.jpg",
+            "label": 0,
+            "output": 0.0012748951558023691
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/jfmstwhypd.jpg",
+            "label": 0,
+            "output": 0.0012624746887013316
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/auannvrmrm.jpg",
+            "label": 0,
+            "output": 0.00123776204418391
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mtuopsldka.jpg",
+            "label": 0,
+            "output": 0.0012172744609415531
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/pcudblgobu.jpg",
+            "label": 0,
+            "output": 0.0012159018078818917
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/szocurmzdp.jpg",
+            "label": 0,
+            "output": 0.001190822571516037
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ujqqamorwl.jpg",
+            "label": 0,
+            "output": 0.001146496506407857
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/qhhsiahqdz.jpg",
+            "label": 0,
+            "output": 0.0011196217965334654
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/yqqmbglayb.jpg",
+            "label": 0,
+            "output": 0.0011176931438967586
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fegqolkrls.jpg",
+            "label": 0,
+            "output": 0.0010296384571120143
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/bqcltegxdf.jpg",
+            "label": 0,
+            "output": 0.0010048263939097524
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/nkdchwutlw.jpg",
+            "label": 0,
+            "output": 0.0009693186148069799
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/uzjbonpwla.jpg",
+            "label": 0,
+            "output": 0.000905014923773706
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/xbgkvftfss.jpg",
+            "label": 0,
+            "output": 0.0008883505943231285
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/tvdnjojlmh.jpg",
+            "label": 0,
+            "output": 0.0007633209461346269
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/gtjyzhcqoi.jpg",
+            "label": 0,
+            "output": 0.0007499236380681396
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ircqbpmpmn.jpg",
+            "label": 0,
+            "output": 0.000628731504548341
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/mrxqbknovu.jpg",
+            "label": 0,
+            "output": 0.0006173368310555816
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/rpggiliowp.jpg",
+            "label": 0,
+            "output": 0.0005405814736150205
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/zdteumqsqf.jpg",
+            "label": 0,
+            "output": 0.000502369599416852
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/eqtzpzsbnp.jpg",
+            "label": 0,
+            "output": 0.0004804532218258828
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/owbarkgfyc.jpg",
+            "label": 0,
+            "output": 0.00043458346044644713
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/fjyemnydtk.jpg",
+            "label": 0,
+            "output": 0.000405243830755353
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/ydufoinjbm.jpg",
+            "label": 0,
+            "output": 0.0003870931686833501
+        },
+        {
+            "path": "data/test/diffusion_datasets/laion/0_real/kguycdreay.jpg",
+            "label": 0,
+            "output": 0.00030932898516766727
+        }
+    ]
+}

@@ -294,7 +294,7 @@ class TestDataset(Dataset):
         image_list = [] 
         for r, _, f in os.walk(path):
             for file in f:
-                if (file.split('.')[1] in exts) and (must_contain in os.path.join(r, file)):
+                if (file.split('.')[-1] in exts) and (must_contain in os.path.join(r, file)):
                     image_list.append(os.path.join(r, file))
 
         return image_list

@@ -1,0 +1,36 @@
+{
+  "epochs": 2,
+  "config": {
+    "backbone": [
+      "hf-hub:timm/ViT-L-16-SigLIP2-256",
+      1024
+    ],
+    "nproj": 3,
+    "proj_dim": 512,
+    "model": "siglip",
+    "crop": 256,
+    "imgsize": 256,
+    "training_set": "ldm",
+    "contrastive": true,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "lr_step": 5,
+    "lr_gamma": 0.5,
+    "epochs": 2,
+    "factor": 0.2,
+    "window_slide": false,
+    "save_path": "SigLIPIntermediatePatch_ldm/3_nproj_512_proj_dim"
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.9996465825514342,
+      0.9998865087410982
+    ],
+    "val_auc": [
+      0.9996401675000001,
+      0.9998860599999999
+    ],
+    "test": {}
+  }
+}

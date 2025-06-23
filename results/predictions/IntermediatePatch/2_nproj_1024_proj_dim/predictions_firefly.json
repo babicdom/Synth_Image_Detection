@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04395e54t.png",
+            "label": 1,
+            "output": 0.9996091723442078
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ead3024t.png",
+            "label": 1,
+            "output": 0.9995867609977722
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14586c63t.png",
+            "label": 1,
+            "output": 0.9995545148849487
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00869422t.png",
+            "label": 1,
+            "output": 0.9993757009506226
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b177fe1t.png",
+            "label": 1,
+            "output": 0.999259889125824
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r008a2095t.png",
+            "label": 1,
+            "output": 0.9991614818572998
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a485a99t.png",
+            "label": 1,
+            "output": 0.9991411566734314
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05f3bc6ct.png",
+            "label": 1,
+            "output": 0.9991287589073181
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05772356t.png",
+            "label": 1,
+            "output": 0.999085009098053
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0708431at.png",
+            "label": 1,
+            "output": 0.9990535378456116
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15eef8b9t.png",
+            "label": 1,
+            "output": 0.9990501403808594
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07c47354t.png",
+            "label": 1,
+            "output": 0.9990409016609192
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15dcfacct.png",
+            "label": 1,
+            "output": 0.9990241527557373
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0897d8aat.png",
+            "label": 1,
+            "output": 0.999016284942627
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a5d7cb6t.png",
+            "label": 1,
+            "output": 0.9988319873809814
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14ca1259t.png",
+            "label": 1,
+            "output": 0.9987619519233704
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04b4d5aft.png",
+            "label": 1,
+            "output": 0.9986229538917542
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14289905t.png",
+            "label": 1,
+            "output": 0.9986002445220947
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13f26c35t.png",
+            "label": 1,
+            "output": 0.9985950589179993
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bc7d0eet.png",
+            "label": 1,
+            "output": 0.9985617399215698
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r195a5f44t.png",
+            "label": 1,
+            "output": 0.9984844326972961
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04160d64t.png",
+            "label": 1,
+            "output": 0.9984843134880066
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13a9002bt.png",
+            "label": 1,
+            "output": 0.9983950257301331
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0108c383t.png",
+            "label": 1,
+            "output": 0.998375654220581
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16698b6et.png",
+            "label": 1,
+            "output": 0.9982202649116516
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r048c50d0t.png",
+            "label": 1,
+            "output": 0.9980759620666504
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r101eab0dt.png",
+            "label": 1,
+            "output": 0.9979396462440491
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f137652t.png",
+            "label": 1,
+            "output": 0.9978622198104858
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b4d8af5t.png",
+            "label": 1,
+            "output": 0.99782395362854
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ebb0bb4t.png",
+            "label": 1,
+            "output": 0.9976803660392761
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07e242b7t.png",
+            "label": 1,
+            "output": 0.9976602792739868
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05243256t.png",
+            "label": 1,
+            "output": 0.9975941777229309
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02e1abe2t.png",
+            "label": 1,
+            "output": 0.9975718259811401
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r141e4467t.png",
+            "label": 1,
+            "output": 0.9974349737167358
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16ea6386t.png",
+            "label": 1,
+            "output": 0.9973216652870178
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r028896d3t.png",
+            "label": 1,
+            "output": 0.9971450567245483
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05bf2f53t.png",
+            "label": 1,
+            "output": 0.9970918893814087
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12f02af5t.png",
+            "label": 1,
+            "output": 0.9969980120658875
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09245347t.png",
+            "label": 1,
+            "output": 0.99690181016922
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dd9d6bft.png",
+            "label": 1,
+            "output": 0.9968450665473938
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r116fa8b7t.png",
+            "label": 1,
+            "output": 0.9966936111450195
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cad9823t.png",
+            "label": 1,
+            "output": 0.996614396572113
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1645a09ct.png",
+            "label": 1,
+            "output": 0.9963810443878174
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bc1a779t.png",
+            "label": 1,
+            "output": 0.996326744556427
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08d2b4dat.png",
+            "label": 1,
+            "output": 0.9962096214294434
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa4db16t.png",
+            "label": 1,
+            "output": 0.9961828589439392
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fef53bft.png",
+            "label": 1,
+            "output": 0.9961383938789368
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r006b0e4bt.png",
+            "label": 1,
+            "output": 0.995672881603241
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r181768b7t.png",
+            "label": 1,
+            "output": 0.9955431818962097
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r115e2464t.png",
+            "label": 1,
+            "output": 0.9955040812492371
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14bfe6f4t.png",
+            "label": 1,
+            "output": 0.995474636554718
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01b3f004t.png",
+            "label": 1,
+            "output": 0.9954562783241272
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ddc0c98t.png",
+            "label": 1,
+            "output": 0.995448112487793
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f24ca4dt.png",
+            "label": 1,
+            "output": 0.995445191860199
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0288b58ct.png",
+            "label": 1,
+            "output": 0.9952914118766785
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a72568ct.png",
+            "label": 1,
+            "output": 0.995280921459198
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r150b1b51t.png",
+            "label": 1,
+            "output": 0.9952306151390076
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0dd60980t.png",
+            "label": 1,
+            "output": 0.9951593279838562
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0355b2d5t.png",
+            "label": 1,
+            "output": 0.9951580166816711
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a54ed98t.png",
+            "label": 1,
+            "output": 0.9951525330543518
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01d0b83bt.png",
+            "label": 1,
+            "output": 0.9951449632644653
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07f22efdt.png",
+            "label": 1,
+            "output": 0.9949238300323486
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r177dd68et.png",
+            "label": 1,
+            "output": 0.9947765469551086
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r031917act.png",
+            "label": 1,
+            "output": 0.9947021007537842
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f8a1531t.png",
+            "label": 1,
+            "output": 0.9945564866065979
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0670f47ft.png",
+            "label": 1,
+            "output": 0.9943561553955078
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07dba73ft.png",
+            "label": 1,
+            "output": 0.994219958782196
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r108301e3t.png",
+            "label": 1,
+            "output": 0.9941821098327637
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b07b945t.png",
+            "label": 1,
+            "output": 0.9941108822822571
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0225b88bt.png",
+            "label": 1,
+            "output": 0.9940893054008484
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r045be2act.png",
+            "label": 1,
+            "output": 0.9940875768661499
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ed019a4t.png",
+            "label": 1,
+            "output": 0.9939214587211609
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cb7084et.png",
+            "label": 1,
+            "output": 0.993847131729126
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eb8dfb5t.png",
+            "label": 1,
+            "output": 0.993807852268219
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dd998dft.png",
+            "label": 1,
+            "output": 0.9937179088592529
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b547547t.png",
+            "label": 1,
+            "output": 0.9933904409408569
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07ece355t.png",
+            "label": 1,
+            "output": 0.9933802485466003
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10893508t.png",
+            "label": 1,
+            "output": 0.9933621287345886
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r138ceafbt.png",
+            "label": 1,
+            "output": 0.9933342933654785
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r177fb9f1t.png",
+            "label": 1,
+            "output": 0.9932605028152466
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1580c37ft.png",
+            "label": 1,
+            "output": 0.9930930733680725
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13c19caft.png",
+            "label": 1,
+            "output": 0.9930883646011353
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1069cdabt.png",
+            "label": 1,
+            "output": 0.9930795431137085
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13073518t.png",
+            "label": 1,
+            "output": 0.9929513335227966
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r137bcd7at.png",
+            "label": 1,
+            "output": 0.9929454326629639
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04eb0d0ft.png",
+            "label": 1,
+            "output": 0.992906391620636
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r145221d9t.png",
+            "label": 1,
+            "output": 0.9928426742553711
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r082626aft.png",
+            "label": 1,
+            "output": 0.9928296804428101
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0589558at.png",
+            "label": 1,
+            "output": 0.9928044080734253
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16113cc8t.png",
+            "label": 1,
+            "output": 0.9926532506942749
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ed844b5t.png",
+            "label": 1,
+            "output": 0.9926225543022156
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ceba29dt.png",
+            "label": 1,
+            "output": 0.9925810098648071
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r047aa954t.png",
+            "label": 1,
+            "output": 0.9925547242164612
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0809811bt.png",
+            "label": 1,
+            "output": 0.9924907684326172
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ca5a385t.png",
+            "label": 1,
+            "output": 0.9924505949020386
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13a16a0at.png",
+            "label": 1,
+            "output": 0.992289662361145
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r005f3e70t.png",
+            "label": 1,
+            "output": 0.992202877998352
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09d50960t.png",
+            "label": 1,
+            "output": 0.9921062588691711
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a10fe29t.png",
+            "label": 1,
+            "output": 0.9919178485870361
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1138e1aft.png",
+            "label": 1,
+            "output": 0.9918336272239685
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ad3fa6dt.png",
+            "label": 1,
+            "output": 0.9916664958000183
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13dab3c7t.png",
+            "label": 1,
+            "output": 0.9916510581970215
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0438eb97t.png",
+            "label": 1,
+            "output": 0.9915847182273865
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ad2de34t.png",
+            "label": 1,
+            "output": 0.9915178418159485
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fa077bet.png",
+            "label": 1,
+            "output": 0.9914718866348267
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06888d38t.png",
+            "label": 1,
+            "output": 0.9914586544036865
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ebee709t.png",
+            "label": 1,
+            "output": 0.9909847974777222
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c32591dt.png",
+            "label": 1,
+            "output": 0.9908801317214966
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06c4bcb9t.png",
+            "label": 1,
+            "output": 0.9908638000488281
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r180bcbd7t.png",
+            "label": 1,
+            "output": 0.9908146858215332
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fc39b66t.png",
+            "label": 1,
+            "output": 0.9907742142677307
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d280006t.png",
+            "label": 1,
+            "output": 0.9907140135765076
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f2c63d2t.png",
+            "label": 1,
+            "output": 0.9906606078147888
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e3b4cdft.png",
+            "label": 1,
+            "output": 0.9905456304550171
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02a21f6ct.png",
+            "label": 1,
+            "output": 0.9903964400291443
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ba4c4c0t.png",
+            "label": 1,
+            "output": 0.9903784990310669
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bdb6385t.png",
+            "label": 1,
+            "output": 0.9902834892272949
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0383e9c3t.png",
+            "label": 1,
+            "output": 0.9901183247566223
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14902ba4t.png",
+            "label": 1,
+            "output": 0.9900873303413391
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r072d955bt.png",
+            "label": 1,
+            "output": 0.9900692105293274
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f4f8a51t.png",
+            "label": 1,
+            "output": 0.9900050759315491
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07e35007t.png",
+            "label": 1,
+            "output": 0.9898452162742615
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f446078t.png",
+            "label": 1,
+            "output": 0.9897858500480652
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0372042dt.png",
+            "label": 1,
+            "output": 0.9897646903991699
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ac70243t.png",
+            "label": 1,
+            "output": 0.989723801612854
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0141f0c9t.png",
+            "label": 1,
+            "output": 0.9896741509437561
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a31a2cct.png",
+            "label": 1,
+            "output": 0.9896734356880188
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0417f5e3t.png",
+            "label": 1,
+            "output": 0.9896567463874817
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b106abdt.png",
+            "label": 1,
+            "output": 0.9895831346511841
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r137f062ft.png",
+            "label": 1,
+            "output": 0.9895737171173096
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r085bdbe2t.png",
+            "label": 1,
+            "output": 0.9895578622817993
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r195f12adt.png",
+            "label": 1,
+            "output": 0.9894298315048218
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1293f8ect.png",
+            "label": 1,
+            "output": 0.9893308281898499
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ab0bb20t.png",
+            "label": 1,
+            "output": 0.9891363382339478
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e9b0485t.png",
+            "label": 1,
+            "output": 0.9890542030334473
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0342f22ct.png",
+            "label": 1,
+            "output": 0.9887810349464417
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15199ae3t.png",
+            "label": 1,
+            "output": 0.9886835217475891
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01a31693t.png",
+            "label": 1,
+            "output": 0.988639771938324
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r145215fft.png",
+            "label": 1,
+            "output": 0.9886306524276733
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r185929e9t.png",
+            "label": 1,
+            "output": 0.9885233640670776
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r084a4ccet.png",
+            "label": 1,
+            "output": 0.98850417137146
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a966704t.png",
+            "label": 1,
+            "output": 0.9884890913963318
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0191aaf4t.png",
+            "label": 1,
+            "output": 0.9884258508682251
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r138ad247t.png",
+            "label": 1,
+            "output": 0.9883785247802734
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e56884ft.png",
+            "label": 1,
+            "output": 0.9883617162704468
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00444b95t.png",
+            "label": 1,
+            "output": 0.9880086183547974
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e9082f9t.png",
+            "label": 1,
+            "output": 0.9879734516143799
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a1d7e72t.png",
+            "label": 1,
+            "output": 0.9878517985343933
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07f99a1at.png",
+            "label": 1,
+            "output": 0.9877538084983826
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0287344at.png",
+            "label": 1,
+            "output": 0.9874938130378723
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02508493t.png",
+            "label": 1,
+            "output": 0.987217366695404
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r134ba6abt.png",
+            "label": 1,
+            "output": 0.987153947353363
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r089cae91t.png",
+            "label": 1,
+            "output": 0.9871065020561218
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e965ba7t.png",
+            "label": 1,
+            "output": 0.9869588613510132
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1328ee94t.png",
+            "label": 1,
+            "output": 0.9868284463882446
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ea13eb4t.png",
+            "label": 1,
+            "output": 0.9867625832557678
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1de76a54t.png",
+            "label": 1,
+            "output": 0.9867449998855591
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c31a90bt.png",
+            "label": 1,
+            "output": 0.9867438077926636
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b165d45t.png",
+            "label": 1,
+            "output": 0.9867438077926636
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06d3ac60t.png",
+            "label": 1,
+            "output": 0.9865836501121521
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08307e1at.png",
+            "label": 1,
+            "output": 0.9863728880882263
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0dd6e8f4t.png",
+            "label": 1,
+            "output": 0.9861912131309509
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r123ca9b3t.png",
+            "label": 1,
+            "output": 0.986187756061554
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11e26097t.png",
+            "label": 1,
+            "output": 0.9860883951187134
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0deb6dadt.png",
+            "label": 1,
+            "output": 0.9860092401504517
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1828d94at.png",
+            "label": 1,
+            "output": 0.9859926700592041
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00c4a543t.png",
+            "label": 1,
+            "output": 0.9858843088150024
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12d4cabat.png",
+            "label": 1,
+            "output": 0.9857082366943359
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0777fea4t.png",
+            "label": 1,
+            "output": 0.9855156540870667
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b09da9ct.png",
+            "label": 1,
+            "output": 0.9854962229728699
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e9ae164t.png",
+            "label": 1,
+            "output": 0.9854709506034851
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1db5be20t.png",
+            "label": 1,
+            "output": 0.9851912260055542
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02354285t.png",
+            "label": 1,
+            "output": 0.9851890802383423
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04cfa379t.png",
+            "label": 1,
+            "output": 0.9851762652397156
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b57dbb2t.png",
+            "label": 1,
+            "output": 0.9851539134979248
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07c51648t.png",
+            "label": 1,
+            "output": 0.9848735928535461
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1644d874t.png",
+            "label": 1,
+            "output": 0.9846057295799255
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b0e2ba5t.png",
+            "label": 1,
+            "output": 0.9845216870307922
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02513d19t.png",
+            "label": 1,
+            "output": 0.9844387173652649
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e7b407bt.png",
+            "label": 1,
+            "output": 0.9840636253356934
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f1a3f00t.png",
+            "label": 1,
+            "output": 0.9839800596237183
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03389e9bt.png",
+            "label": 1,
+            "output": 0.9838190674781799
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r125f6e84t.png",
+            "label": 1,
+            "output": 0.9836298823356628
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r141669e5t.png",
+            "label": 1,
+            "output": 0.9834231734275818
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r097088c1t.png",
+            "label": 1,
+            "output": 0.9832029938697815
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d79b6e7t.png",
+            "label": 1,
+            "output": 0.9831002950668335
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ef8b85ft.png",
+            "label": 1,
+            "output": 0.9828604459762573
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0db6cc31t.png",
+            "label": 1,
+            "output": 0.982819139957428
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01559391t.png",
+            "label": 1,
+            "output": 0.9827240109443665
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r094ced7bt.png",
+            "label": 1,
+            "output": 0.9823580980300903
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a19cb85t.png",
+            "label": 1,
+            "output": 0.9820610284805298
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f6250d2t.png",
+            "label": 1,
+            "output": 0.9819420576095581
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r036e2a9at.png",
+            "label": 1,
+            "output": 0.9818688631057739
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0de97473t.png",
+            "label": 1,
+            "output": 0.9818434715270996
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r007f5116t.png",
+            "label": 1,
+            "output": 0.9818418025970459
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b591bc3t.png",
+            "label": 1,
+            "output": 0.9817303419113159
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d99d1f3t.png",
+            "label": 1,
+            "output": 0.9816474914550781
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02a0839et.png",
+            "label": 1,
+            "output": 0.9815407395362854
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08b05c94t.png",
+            "label": 1,
+            "output": 0.9813384413719177
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r173ee7e8t.png",
+            "label": 1,
+            "output": 0.9810444712638855
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b61c7b1t.png",
+            "label": 1,
+            "output": 0.9810221195220947
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fbd0c71t.png",
+            "label": 1,
+            "output": 0.9808911085128784
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01c95f68t.png",
+            "label": 1,
+            "output": 0.9806948304176331
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03bf5648t.png",
+            "label": 1,
+            "output": 0.9806702733039856
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12f3bbfat.png",
+            "label": 1,
+            "output": 0.9806581735610962
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bbd0b0et.png",
+            "label": 1,
+            "output": 0.9806249141693115
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13b5b161t.png",
+            "label": 1,
+            "output": 0.9805300235748291
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04e19833t.png",
+            "label": 1,
+            "output": 0.9804877042770386
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r110b4219t.png",
+            "label": 1,
+            "output": 0.98048335313797
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a9de6e9t.png",
+            "label": 1,
+            "output": 0.9803959727287292
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16192cf0t.png",
+            "label": 1,
+            "output": 0.9799272418022156
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18393aeet.png",
+            "label": 1,
+            "output": 0.9796867966651917
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0314c3f9t.png",
+            "label": 1,
+            "output": 0.9795470237731934
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f16e2abt.png",
+            "label": 1,
+            "output": 0.9793791770935059
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18d9feeat.png",
+            "label": 1,
+            "output": 0.979099690914154
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1df374c1t.png",
+            "label": 1,
+            "output": 0.9789592623710632
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r144f25eet.png",
+            "label": 1,
+            "output": 0.9789378046989441
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f2e6baft.png",
+            "label": 1,
+            "output": 0.9787596464157104
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bf7f938t.png",
+            "label": 1,
+            "output": 0.9786897301673889
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bf1bbect.png",
+            "label": 1,
+            "output": 0.978633463382721
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12c5f70bt.png",
+            "label": 1,
+            "output": 0.9784867167472839
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r127608abt.png",
+            "label": 1,
+            "output": 0.9784103035926819
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1866b73at.png",
+            "label": 1,
+            "output": 0.9784085750579834
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0279b17bt.png",
+            "label": 1,
+            "output": 0.978334367275238
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0985dc6ct.png",
+            "label": 1,
+            "output": 0.9782465100288391
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02d732f8t.png",
+            "label": 1,
+            "output": 0.978234052658081
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1810ba7at.png",
+            "label": 1,
+            "output": 0.9782307147979736
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07d5eb94t.png",
+            "label": 1,
+            "output": 0.9779132604598999
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06cad2d6t.png",
+            "label": 1,
+            "output": 0.9778953790664673
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r057282fet.png",
+            "label": 1,
+            "output": 0.977764368057251
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12133015t.png",
+            "label": 1,
+            "output": 0.9776538610458374
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cfedd72t.png",
+            "label": 1,
+            "output": 0.9775908589363098
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r135df877t.png",
+            "label": 1,
+            "output": 0.9775464534759521
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c146589t.png",
+            "label": 1,
+            "output": 0.9774870872497559
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r127d47e0t.png",
+            "label": 1,
+            "output": 0.9774772524833679
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0428df0ct.png",
+            "label": 1,
+            "output": 0.9774582982063293
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17d11b3at.png",
+            "label": 1,
+            "output": 0.9774248600006104
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16422663t.png",
+            "label": 1,
+            "output": 0.976894736289978
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r026b5360t.png",
+            "label": 1,
+            "output": 0.976813554763794
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r197770adt.png",
+            "label": 1,
+            "output": 0.976692259311676
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ae12b3ft.png",
+            "label": 1,
+            "output": 0.9765968918800354
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b99ac3ct.png",
+            "label": 1,
+            "output": 0.9764238595962524
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13907965t.png",
+            "label": 1,
+            "output": 0.9760385751724243
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fbf62f8t.png",
+            "label": 1,
+            "output": 0.9759392738342285
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0341853dt.png",
+            "label": 1,
+            "output": 0.9756181836128235
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r040bf4a5t.png",
+            "label": 1,
+            "output": 0.9754605889320374
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d47bfc2t.png",
+            "label": 1,
+            "output": 0.9747346639633179
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dbe1b11t.png",
+            "label": 1,
+            "output": 0.9746415019035339
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09a79474t.png",
+            "label": 1,
+            "output": 0.9745944738388062
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06a52b7bt.png",
+            "label": 1,
+            "output": 0.9745619893074036
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a18e454t.png",
+            "label": 1,
+            "output": 0.9745188355445862
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08788547t.png",
+            "label": 1,
+            "output": 0.9743849039077759
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a845144t.png",
+            "label": 1,
+            "output": 0.9743768572807312
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r170632f5t.png",
+            "label": 1,
+            "output": 0.9743592143058777
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11a7deb7t.png",
+            "label": 1,
+            "output": 0.9742357134819031
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02f9f53et.png",
+            "label": 1,
+            "output": 0.9741683602333069
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1da851e4t.png",
+            "label": 1,
+            "output": 0.9741175770759583
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c028de8t.png",
+            "label": 1,
+            "output": 0.9739972949028015
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1267fa5bt.png",
+            "label": 1,
+            "output": 0.9738941192626953
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eb07be3t.png",
+            "label": 1,
+            "output": 0.9738385081291199
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17228bbdt.png",
+            "label": 1,
+            "output": 0.9737153053283691
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13c85634t.png",
+            "label": 1,
+            "output": 0.9734883904457092
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0149a21ct.png",
+            "label": 1,
+            "output": 0.9733960032463074
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r062b9259t.png",
+            "label": 1,
+            "output": 0.9731987118721008
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04c11390t.png",
+            "label": 1,
+            "output": 0.973065197467804
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1db61cf8t.png",
+            "label": 1,
+            "output": 0.9727209806442261
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c717a46t.png",
+            "label": 1,
+            "output": 0.9726498126983643
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bddecd6t.png",
+            "label": 1,
+            "output": 0.972603440284729
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10f888c2t.png",
+            "label": 1,
+            "output": 0.9726007580757141
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ea0825ft.png",
+            "label": 1,
+            "output": 0.9724254608154297
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04c566a0t.png",
+            "label": 1,
+            "output": 0.9724214673042297
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01511e3et.png",
+            "label": 1,
+            "output": 0.9724140167236328
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b50b69ct.png",
+            "label": 1,
+            "output": 0.9723662734031677
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r132d538et.png",
+            "label": 1,
+            "output": 0.9723081588745117
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a42c0f6t.png",
+            "label": 1,
+            "output": 0.9721004366874695
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01b6aed6t.png",
+            "label": 1,
+            "output": 0.9720081090927124
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15919202t.png",
+            "label": 1,
+            "output": 0.9719087481498718
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05ac4560t.png",
+            "label": 1,
+            "output": 0.9718583822250366
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0527f7e6t.png",
+            "label": 1,
+            "output": 0.9718144536018372
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c4deb71t.png",
+            "label": 1,
+            "output": 0.9717041254043579
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08276bf9t.png",
+            "label": 1,
+            "output": 0.9716665148735046
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d9a31fct.png",
+            "label": 1,
+            "output": 0.9715421199798584
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1eaa5d42t.png",
+            "label": 1,
+            "output": 0.9714742302894592
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15f07f9dt.png",
+            "label": 1,
+            "output": 0.9714708924293518
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05db7e7ft.png",
+            "label": 1,
+            "output": 0.9711031913757324
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19d47beft.png",
+            "label": 1,
+            "output": 0.9710060358047485
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09b86185t.png",
+            "label": 1,
+            "output": 0.9710056781768799
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r050e1024t.png",
+            "label": 1,
+            "output": 0.9709652066230774
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0603031et.png",
+            "label": 1,
+            "output": 0.9709463715553284
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d1d501et.png",
+            "label": 1,
+            "output": 0.9707742929458618
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b76b82ft.png",
+            "label": 1,
+            "output": 0.9704470634460449
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0dff226et.png",
+            "label": 1,
+            "output": 0.9701946377754211
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17afaaa1t.png",
+            "label": 1,
+            "output": 0.9701656103134155
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03b0c944t.png",
+            "label": 1,
+            "output": 0.9700276255607605
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1148801et.png",
+            "label": 1,
+            "output": 0.9698490500450134
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bd70210t.png",
+            "label": 1,
+            "output": 0.9695601463317871
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1eff17eft.png",
+            "label": 1,
+            "output": 0.9695360064506531
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a9acd94t.png",
+            "label": 1,
+            "output": 0.9693253040313721
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01ef1b4at.png",
+            "label": 1,
+            "output": 0.9692700505256653
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f5475b5t.png",
+            "label": 1,
+            "output": 0.9692069888114929
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11aa1ee3t.png",
+            "label": 1,
+            "output": 0.9688998460769653
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a9384b1t.png",
+            "label": 1,
+            "output": 0.9687343239784241
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1126b615t.png",
+            "label": 1,
+            "output": 0.968726396560669
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dc4077at.png",
+            "label": 1,
+            "output": 0.9686996936798096
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r094cf3c6t.png",
+            "label": 1,
+            "output": 0.9686630368232727
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1986e42bt.png",
+            "label": 1,
+            "output": 0.9685697555541992
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r179ec4e8t.png",
+            "label": 1,
+            "output": 0.9685584306716919
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a94587ft.png",
+            "label": 1,
+            "output": 0.9685240387916565
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b755540t.png",
+            "label": 1,
+            "output": 0.9685205221176147
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ab7202ft.png",
+            "label": 1,
+            "output": 0.9683692455291748
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r063d8a61t.png",
+            "label": 1,
+            "output": 0.9682589173316956
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17b2f789t.png",
+            "label": 1,
+            "output": 0.9680249094963074
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r171eeaf8t.png",
+            "label": 1,
+            "output": 0.9680159687995911
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0249f733t.png",
+            "label": 1,
+            "output": 0.9674646258354187
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0adac68bt.png",
+            "label": 1,
+            "output": 0.9673408269882202
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c1de5e1t.png",
+            "label": 1,
+            "output": 0.9673358201980591
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09d7cd4et.png",
+            "label": 1,
+            "output": 0.9671710729598999
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0edb165ft.png",
+            "label": 1,
+            "output": 0.9671477675437927
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b985828t.png",
+            "label": 1,
+            "output": 0.9667879343032837
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r155fe1fat.png",
+            "label": 1,
+            "output": 0.9667647480964661
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c4e6a62t.png",
+            "label": 1,
+            "output": 0.9666224718093872
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r010cb248t.png",
+            "label": 1,
+            "output": 0.9661185145378113
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1594b4b3t.png",
+            "label": 1,
+            "output": 0.9658766984939575
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13a5bb6bt.png",
+            "label": 1,
+            "output": 0.9657867550849915
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c6cf00bt.png",
+            "label": 1,
+            "output": 0.9656707644462585
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05f3f6a5t.png",
+            "label": 1,
+            "output": 0.9653055667877197
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09670876t.png",
+            "label": 1,
+            "output": 0.9652724266052246
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00de2590t.png",
+            "label": 1,
+            "output": 0.9651657938957214
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r097555c4t.png",
+            "label": 1,
+            "output": 0.9651308655738831
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15885978t.png",
+            "label": 1,
+            "output": 0.965029239654541
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1db1c478t.png",
+            "label": 1,
+            "output": 0.9647285342216492
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0941aa38t.png",
+            "label": 1,
+            "output": 0.9647048115730286
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r165fbf4ft.png",
+            "label": 1,
+            "output": 0.9645739197731018
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c9fc42at.png",
+            "label": 1,
+            "output": 0.9640891551971436
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cc5a33ct.png",
+            "label": 1,
+            "output": 0.9640570282936096
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r052df821t.png",
+            "label": 1,
+            "output": 0.9637773633003235
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11c4de0et.png",
+            "label": 1,
+            "output": 0.9637632369995117
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c2ac865t.png",
+            "label": 1,
+            "output": 0.9637616276741028
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r101af5b4t.png",
+            "label": 1,
+            "output": 0.9630638360977173
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15a0b476t.png",
+            "label": 1,
+            "output": 0.9628182053565979
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b2765ebt.png",
+            "label": 1,
+            "output": 0.9626769423484802
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04b8473dt.png",
+            "label": 1,
+            "output": 0.9622228145599365
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a11b3c0t.png",
+            "label": 1,
+            "output": 0.9621272683143616
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06691aa5t.png",
+            "label": 1,
+            "output": 0.9617784023284912
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a4651edt.png",
+            "label": 1,
+            "output": 0.9615848660469055
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0200a7a6t.png",
+            "label": 1,
+            "output": 0.9615064859390259
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d61db4ct.png",
+            "label": 1,
+            "output": 0.9613637924194336
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eab8214t.png",
+            "label": 1,
+            "output": 0.9613549113273621
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d0ff4c2t.png",
+            "label": 1,
+            "output": 0.9613156914710999
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e5b5159t.png",
+            "label": 1,
+            "output": 0.9612205028533936
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r113402d4t.png",
+            "label": 1,
+            "output": 0.9610868692398071
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03cef811t.png",
+            "label": 1,
+            "output": 0.9607313871383667
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10ab8058t.png",
+            "label": 1,
+            "output": 0.9603461027145386
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04108c64t.png",
+            "label": 1,
+            "output": 0.9603368043899536
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e04cc91t.png",
+            "label": 1,
+            "output": 0.9598644971847534
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c070921t.png",
+            "label": 1,
+            "output": 0.9597813487052917
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0465565ct.png",
+            "label": 1,
+            "output": 0.9597533941268921
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12638c95t.png",
+            "label": 1,
+            "output": 0.9592178463935852
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c2fb2a1t.png",
+            "label": 1,
+            "output": 0.9591801166534424
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0dd7b354t.png",
+            "label": 1,
+            "output": 0.959132969379425
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r027a692ft.png",
+            "label": 1,
+            "output": 0.9587934613227844
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cfc8ddat.png",
+            "label": 1,
+            "output": 0.9587350487709045
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12ed2816t.png",
+            "label": 1,
+            "output": 0.958679735660553
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16d6c35dt.png",
+            "label": 1,
+            "output": 0.9586492776870728
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16144fa2t.png",
+            "label": 1,
+            "output": 0.9586453437805176
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1800ab47t.png",
+            "label": 1,
+            "output": 0.9584830403327942
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d93553ct.png",
+            "label": 1,
+            "output": 0.9582201242446899
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f91c753t.png",
+            "label": 1,
+            "output": 0.9580450654029846
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r077507cat.png",
+            "label": 1,
+            "output": 0.9580351114273071
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18d72ab2t.png",
+            "label": 1,
+            "output": 0.9580113887786865
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f22c43ct.png",
+            "label": 1,
+            "output": 0.9578821659088135
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r039a5ef5t.png",
+            "label": 1,
+            "output": 0.9577664136886597
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a8e5f8at.png",
+            "label": 1,
+            "output": 0.9576437473297119
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f11809bt.png",
+            "label": 1,
+            "output": 0.957633376121521
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a4ce555t.png",
+            "label": 1,
+            "output": 0.9575822949409485
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03995a8ct.png",
+            "label": 1,
+            "output": 0.9574835896492004
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a776764t.png",
+            "label": 1,
+            "output": 0.9569088220596313
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b6e4254t.png",
+            "label": 1,
+            "output": 0.956895112991333
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ee65904t.png",
+            "label": 1,
+            "output": 0.9566537141799927
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14a595b6t.png",
+            "label": 1,
+            "output": 0.9565351605415344
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e14f45ct.png",
+            "label": 1,
+            "output": 0.95627760887146
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r018e74fet.png",
+            "label": 1,
+            "output": 0.9562047719955444
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01474187t.png",
+            "label": 1,
+            "output": 0.9560718536376953
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r000da54ft.png",
+            "label": 1,
+            "output": 0.9559932947158813
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e698e5dt.png",
+            "label": 1,
+            "output": 0.9557768702507019
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04eda41ct.png",
+            "label": 1,
+            "output": 0.955755352973938
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a07dd25t.png",
+            "label": 1,
+            "output": 0.9557428359985352
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r194c49f5t.png",
+            "label": 1,
+            "output": 0.955639123916626
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09c15af7t.png",
+            "label": 1,
+            "output": 0.9555568695068359
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r191f3cdet.png",
+            "label": 1,
+            "output": 0.9555331468582153
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r101e18b6t.png",
+            "label": 1,
+            "output": 0.9554975628852844
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r043951a3t.png",
+            "label": 1,
+            "output": 0.955394446849823
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b262b72t.png",
+            "label": 1,
+            "output": 0.9553150534629822
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r026cedb7t.png",
+            "label": 1,
+            "output": 0.955221951007843
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bc87c20t.png",
+            "label": 1,
+            "output": 0.9550486207008362
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09851aa4t.png",
+            "label": 1,
+            "output": 0.9549405574798584
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b6c1adbt.png",
+            "label": 1,
+            "output": 0.9545459151268005
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1683028at.png",
+            "label": 1,
+            "output": 0.9543839693069458
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e1a6e2ft.png",
+            "label": 1,
+            "output": 0.9543015956878662
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc355f2t.png",
+            "label": 1,
+            "output": 0.953827977180481
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1efcf847t.png",
+            "label": 1,
+            "output": 0.9532051086425781
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16da5576t.png",
+            "label": 1,
+            "output": 0.9531630873680115
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f71782et.png",
+            "label": 1,
+            "output": 0.9528781175613403
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bf7ff83t.png",
+            "label": 1,
+            "output": 0.9527297019958496
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r075baf3ct.png",
+            "label": 1,
+            "output": 0.952414333820343
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e593c46t.png",
+            "label": 1,
+            "output": 0.9522859454154968
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e8e493ct.png",
+            "label": 1,
+            "output": 0.9521459937095642
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11a5b93dt.png",
+            "label": 1,
+            "output": 0.9520318508148193
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r125034a9t.png",
+            "label": 1,
+            "output": 0.9518164396286011
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d1445b6t.png",
+            "label": 1,
+            "output": 0.9517568945884705
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03640e97t.png",
+            "label": 1,
+            "output": 0.9516143202781677
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b841e5at.png",
+            "label": 1,
+            "output": 0.9513127207756042
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r181d64eat.png",
+            "label": 1,
+            "output": 0.9508733749389648
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0667a51ft.png",
+            "label": 1,
+            "output": 0.9503028392791748
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1344c943t.png",
+            "label": 1,
+            "output": 0.9500335454940796
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a7feb2bt.png",
+            "label": 1,
+            "output": 0.9499476552009583
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1661f358t.png",
+            "label": 1,
+            "output": 0.9490934014320374
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r179bb406t.png",
+            "label": 1,
+            "output": 0.9490934014320374
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e79c6f9t.png",
+            "label": 1,
+            "output": 0.9488756656646729
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f23f4ddt.png",
+            "label": 1,
+            "output": 0.9487701058387756
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r061e2ecft.png",
+            "label": 1,
+            "output": 0.9483357667922974
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r186c09e4t.png",
+            "label": 1,
+            "output": 0.9482149481773376
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bdc7894t.png",
+            "label": 1,
+            "output": 0.9479551911354065
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0aaa70c3t.png",
+            "label": 1,
+            "output": 0.9477866888046265
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d3bc675t.png",
+            "label": 1,
+            "output": 0.9477149248123169
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0487f5cet.png",
+            "label": 1,
+            "output": 0.9476549029350281
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f06581bt.png",
+            "label": 1,
+            "output": 0.9475659132003784
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12a7e9b5t.png",
+            "label": 1,
+            "output": 0.9475551247596741
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fbb5bc1t.png",
+            "label": 1,
+            "output": 0.9474985599517822
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0703243bt.png",
+            "label": 1,
+            "output": 0.9469301700592041
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r113b7fb4t.png",
+            "label": 1,
+            "output": 0.9468910098075867
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r116ce066t.png",
+            "label": 1,
+            "output": 0.9467412829399109
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01a5f38at.png",
+            "label": 1,
+            "output": 0.9463017582893372
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f20d8b5t.png",
+            "label": 1,
+            "output": 0.9461052417755127
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00c0995ft.png",
+            "label": 1,
+            "output": 0.9457459449768066
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r029afdb0t.png",
+            "label": 1,
+            "output": 0.9456899166107178
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ca254b2t.png",
+            "label": 1,
+            "output": 0.9455658197402954
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19924edft.png",
+            "label": 1,
+            "output": 0.9454123973846436
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1889220ft.png",
+            "label": 1,
+            "output": 0.9452729821205139
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1419078bt.png",
+            "label": 1,
+            "output": 0.9450910091400146
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03d2a758t.png",
+            "label": 1,
+            "output": 0.9448255896568298
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05a7750et.png",
+            "label": 1,
+            "output": 0.9447202682495117
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f979863t.png",
+            "label": 1,
+            "output": 0.9446762204170227
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10134c59t.png",
+            "label": 1,
+            "output": 0.94466632604599
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa53167t.png",
+            "label": 1,
+            "output": 0.9444255828857422
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c09b002t.png",
+            "label": 1,
+            "output": 0.9442986845970154
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c8f3ce5t.png",
+            "label": 1,
+            "output": 0.9440598487854004
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f36ba1bt.png",
+            "label": 1,
+            "output": 0.9438429474830627
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1934e29ft.png",
+            "label": 1,
+            "output": 0.9437853097915649
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01058910t.png",
+            "label": 1,
+            "output": 0.9437054395675659
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r065472d8t.png",
+            "label": 1,
+            "output": 0.9436025619506836
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ea8ccbbt.png",
+            "label": 1,
+            "output": 0.9435045123100281
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b82ae9bt.png",
+            "label": 1,
+            "output": 0.9427151083946228
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19ba7288t.png",
+            "label": 1,
+            "output": 0.9425606727600098
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a0968bft.png",
+            "label": 1,
+            "output": 0.9422515630722046
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r123c6433t.png",
+            "label": 1,
+            "output": 0.9420205950737
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a60a2bdt.png",
+            "label": 1,
+            "output": 0.9418497085571289
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09d5cb41t.png",
+            "label": 1,
+            "output": 0.9415163993835449
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r061433aft.png",
+            "label": 1,
+            "output": 0.9411059617996216
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a711e27t.png",
+            "label": 1,
+            "output": 0.9409382343292236
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1db2847et.png",
+            "label": 1,
+            "output": 0.9408140182495117
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d16ad1et.png",
+            "label": 1,
+            "output": 0.9403958916664124
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0207a52ct.png",
+            "label": 1,
+            "output": 0.9403428435325623
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r116825e2t.png",
+            "label": 1,
+            "output": 0.9400210976600647
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0faffef3t.png",
+            "label": 1,
+            "output": 0.9396483898162842
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a2e85f0t.png",
+            "label": 1,
+            "output": 0.9390478134155273
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f1aef1ft.png",
+            "label": 1,
+            "output": 0.9388142228126526
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13934dc7t.png",
+            "label": 1,
+            "output": 0.9387914538383484
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04851bf9t.png",
+            "label": 1,
+            "output": 0.938468873500824
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r187df69ft.png",
+            "label": 1,
+            "output": 0.9381085634231567
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07598392t.png",
+            "label": 1,
+            "output": 0.9380426406860352
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e52a39dt.png",
+            "label": 1,
+            "output": 0.9374798536300659
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15499cd8t.png",
+            "label": 1,
+            "output": 0.9372655153274536
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0284aa1at.png",
+            "label": 1,
+            "output": 0.9372014403343201
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r189be0d8t.png",
+            "label": 1,
+            "output": 0.9371362328529358
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c1fef8ft.png",
+            "label": 1,
+            "output": 0.9370394945144653
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e367d35t.png",
+            "label": 1,
+            "output": 0.9360683560371399
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06b161adt.png",
+            "label": 1,
+            "output": 0.9357933402061462
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00b8d4a2t.png",
+            "label": 1,
+            "output": 0.9356717467308044
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r102b4aa4t.png",
+            "label": 1,
+            "output": 0.935466468334198
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b5a3035t.png",
+            "label": 1,
+            "output": 0.9350965023040771
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r115c449dt.png",
+            "label": 1,
+            "output": 0.934847354888916
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16dca6f2t.png",
+            "label": 1,
+            "output": 0.9345341324806213
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1234de87t.png",
+            "label": 1,
+            "output": 0.9345131516456604
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1218b33at.png",
+            "label": 1,
+            "output": 0.9345035552978516
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f1178cet.png",
+            "label": 1,
+            "output": 0.9341733455657959
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1824034et.png",
+            "label": 1,
+            "output": 0.934069812297821
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b3220e1t.png",
+            "label": 1,
+            "output": 0.9340456128120422
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f8e5907t.png",
+            "label": 1,
+            "output": 0.933603048324585
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cd4ffb0t.png",
+            "label": 1,
+            "output": 0.9334044456481934
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11bf0779t.png",
+            "label": 1,
+            "output": 0.9333080649375916
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06b7849at.png",
+            "label": 1,
+            "output": 0.9332383275032043
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1655a008t.png",
+            "label": 1,
+            "output": 0.9330427050590515
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18d866e1t.png",
+            "label": 1,
+            "output": 0.9327579736709595
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f2f31e2t.png",
+            "label": 1,
+            "output": 0.9326293468475342
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r017904f0t.png",
+            "label": 1,
+            "output": 0.9325016140937805
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03c8ddcft.png",
+            "label": 1,
+            "output": 0.9325006604194641
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r131a8f7et.png",
+            "label": 1,
+            "output": 0.9322137236595154
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08abaa78t.png",
+            "label": 1,
+            "output": 0.9321032762527466
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bf4e594t.png",
+            "label": 1,
+            "output": 0.9320620894432068
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bbbb097t.png",
+            "label": 1,
+            "output": 0.9317111372947693
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r098a8a22t.png",
+            "label": 1,
+            "output": 0.9315703511238098
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc92a89t.png",
+            "label": 1,
+            "output": 0.9308973550796509
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18fafe10t.png",
+            "label": 1,
+            "output": 0.9308962821960449
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06e1a520t.png",
+            "label": 1,
+            "output": 0.9305616021156311
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e7987b3t.png",
+            "label": 1,
+            "output": 0.9304022192955017
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12cbfb1et.png",
+            "label": 1,
+            "output": 0.9303381443023682
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09ff1dcet.png",
+            "label": 1,
+            "output": 0.9302077293395996
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07e594d6t.png",
+            "label": 1,
+            "output": 0.9290494918823242
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13c7e92dt.png",
+            "label": 1,
+            "output": 0.9289864897727966
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b03e77at.png",
+            "label": 1,
+            "output": 0.9287641048431396
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15c91802t.png",
+            "label": 1,
+            "output": 0.9285309314727783
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r129f09b4t.png",
+            "label": 1,
+            "output": 0.9282529354095459
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09a60f63t.png",
+            "label": 1,
+            "output": 0.9281737804412842
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05d59d7ct.png",
+            "label": 1,
+            "output": 0.9278632998466492
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14dd8f91t.png",
+            "label": 1,
+            "output": 0.9278057813644409
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a8b59bbt.png",
+            "label": 1,
+            "output": 0.9276300668716431
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r098cf7aet.png",
+            "label": 1,
+            "output": 0.9269763231277466
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ec70fd3t.png",
+            "label": 1,
+            "output": 0.9267242550849915
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fae3dbdt.png",
+            "label": 1,
+            "output": 0.9266414642333984
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13493fa3t.png",
+            "label": 1,
+            "output": 0.9265188574790955
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09579ff2t.png",
+            "label": 1,
+            "output": 0.9261267781257629
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1639a65ct.png",
+            "label": 1,
+            "output": 0.9260463118553162
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d1cf607t.png",
+            "label": 1,
+            "output": 0.9248865246772766
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18791531t.png",
+            "label": 1,
+            "output": 0.9246118664741516
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08d9a0cet.png",
+            "label": 1,
+            "output": 0.9242758750915527
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b17f0f0t.png",
+            "label": 1,
+            "output": 0.923995852470398
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f1a3258t.png",
+            "label": 1,
+            "output": 0.9234166145324707
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r125442fat.png",
+            "label": 1,
+            "output": 0.9233614206314087
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18798194t.png",
+            "label": 1,
+            "output": 0.9233580231666565
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05718fd6t.png",
+            "label": 1,
+            "output": 0.9232302308082581
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c243af7t.png",
+            "label": 1,
+            "output": 0.9229910969734192
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f4a44a7t.png",
+            "label": 1,
+            "output": 0.9229379892349243
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ae68527t.png",
+            "label": 1,
+            "output": 0.9224510788917542
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eb7ee5ct.png",
+            "label": 1,
+            "output": 0.922002911567688
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c4ae120t.png",
+            "label": 1,
+            "output": 0.9217513799667358
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r108ba35et.png",
+            "label": 1,
+            "output": 0.9214761853218079
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1af60295t.png",
+            "label": 1,
+            "output": 0.9213769435882568
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13837601t.png",
+            "label": 1,
+            "output": 0.9212992191314697
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0176fbcat.png",
+            "label": 1,
+            "output": 0.9212557673454285
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a2ff882t.png",
+            "label": 1,
+            "output": 0.9210583567619324
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1915909et.png",
+            "label": 1,
+            "output": 0.9206191301345825
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r170df29ct.png",
+            "label": 1,
+            "output": 0.9202399849891663
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1be4943bt.png",
+            "label": 1,
+            "output": 0.9195953011512756
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b59fc2bt.png",
+            "label": 1,
+            "output": 0.9194522500038147
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15efd876t.png",
+            "label": 1,
+            "output": 0.9181220531463623
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fbe1b0ft.png",
+            "label": 1,
+            "output": 0.9174933433532715
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa63558t.png",
+            "label": 1,
+            "output": 0.9173239469528198
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19d72b0ct.png",
+            "label": 1,
+            "output": 0.9172636270523071
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18ce12dct.png",
+            "label": 1,
+            "output": 0.9170138835906982
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r121f7893t.png",
+            "label": 1,
+            "output": 0.9170046448707581
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r038422cft.png",
+            "label": 1,
+            "output": 0.9168242812156677
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c83ec1dt.png",
+            "label": 1,
+            "output": 0.916770875453949
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13928401t.png",
+            "label": 1,
+            "output": 0.9163509011268616
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10f2ac48t.png",
+            "label": 1,
+            "output": 0.9161717295646667
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fe270aet.png",
+            "label": 1,
+            "output": 0.9160792231559753
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0965e155t.png",
+            "label": 1,
+            "output": 0.9160228371620178
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0744a10et.png",
+            "label": 1,
+            "output": 0.9159746170043945
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d1dd61ft.png",
+            "label": 1,
+            "output": 0.9157023429870605
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa4cc99t.png",
+            "label": 1,
+            "output": 0.9156889915466309
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15028ceft.png",
+            "label": 1,
+            "output": 0.9151676297187805
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fb0a690t.png",
+            "label": 1,
+            "output": 0.9151036143302917
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0676c50at.png",
+            "label": 1,
+            "output": 0.9149149656295776
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17217693t.png",
+            "label": 1,
+            "output": 0.9148103594779968
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f5beb66t.png",
+            "label": 1,
+            "output": 0.9144704341888428
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e3303ebt.png",
+            "label": 1,
+            "output": 0.9141250848770142
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b3979d0t.png",
+            "label": 1,
+            "output": 0.9135337471961975
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07e1e8cbt.png",
+            "label": 1,
+            "output": 0.9131948351860046
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ee6f90et.png",
+            "label": 1,
+            "output": 0.9131454229354858
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e9c8a5dt.png",
+            "label": 1,
+            "output": 0.9130085110664368
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ebb5ca2t.png",
+            "label": 1,
+            "output": 0.9129325747489929
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a808003t.png",
+            "label": 1,
+            "output": 0.9128924012184143
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0150031ft.png",
+            "label": 1,
+            "output": 0.9127050042152405
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dea56e5t.png",
+            "label": 1,
+            "output": 0.9125131368637085
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d431afft.png",
+            "label": 1,
+            "output": 0.9120771288871765
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f40decct.png",
+            "label": 1,
+            "output": 0.9120724201202393
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r198ae140t.png",
+            "label": 1,
+            "output": 0.9120083451271057
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ca2ef38t.png",
+            "label": 1,
+            "output": 0.9118613004684448
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c4d4720t.png",
+            "label": 1,
+            "output": 0.9118368029594421
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08414c5at.png",
+            "label": 1,
+            "output": 0.9110698699951172
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0bc0e549t.png",
+            "label": 1,
+            "output": 0.9100982546806335
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02189767t.png",
+            "label": 1,
+            "output": 0.91002357006073
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c5ec853t.png",
+            "label": 1,
+            "output": 0.9097825884819031
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r059ce7d0t.png",
+            "label": 1,
+            "output": 0.9097465872764587
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1be2a3d5t.png",
+            "label": 1,
+            "output": 0.9084889888763428
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r006fcc20t.png",
+            "label": 1,
+            "output": 0.9083793759346008
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r022af74ct.png",
+            "label": 1,
+            "output": 0.9081594944000244
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e5dfc8et.png",
+            "label": 1,
+            "output": 0.9080043435096741
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c24a571t.png",
+            "label": 1,
+            "output": 0.9077099561691284
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a170ddbt.png",
+            "label": 1,
+            "output": 0.9075925946235657
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r083b7636t.png",
+            "label": 1,
+            "output": 0.9074777364730835
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05839451t.png",
+            "label": 1,
+            "output": 0.9069263935089111
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b9e9917t.png",
+            "label": 1,
+            "output": 0.906461238861084
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0450c4c0t.png",
+            "label": 1,
+            "output": 0.9059734344482422
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c0d0adct.png",
+            "label": 1,
+            "output": 0.9048241972923279
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07df029bt.png",
+            "label": 1,
+            "output": 0.9040359854698181
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r107730b5t.png",
+            "label": 1,
+            "output": 0.9037958979606628
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r056daad2t.png",
+            "label": 1,
+            "output": 0.9033823013305664
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f3569c0t.png",
+            "label": 1,
+            "output": 0.9029542803764343
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r066358d3t.png",
+            "label": 1,
+            "output": 0.9028169512748718
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19b49f2ct.png",
+            "label": 1,
+            "output": 0.9026899933815002
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1567e512t.png",
+            "label": 1,
+            "output": 0.902184784412384
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11865f77t.png",
+            "label": 1,
+            "output": 0.9020535349845886
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r179ed8d7t.png",
+            "label": 1,
+            "output": 0.9015727639198303
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a9783cdt.png",
+            "label": 1,
+            "output": 0.9014158248901367
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r133c5a52t.png",
+            "label": 1,
+            "output": 0.9006642699241638
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r188eb234t.png",
+            "label": 1,
+            "output": 0.899994969367981
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eba1984t.png",
+            "label": 1,
+            "output": 0.8998697400093079
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r046852c1t.png",
+            "label": 1,
+            "output": 0.8995063900947571
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r113ee9edt.png",
+            "label": 1,
+            "output": 0.8993670344352722
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c7fcc38t.png",
+            "label": 1,
+            "output": 0.8980173468589783
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10a9ca2at.png",
+            "label": 1,
+            "output": 0.8976399898529053
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c56a2bct.png",
+            "label": 1,
+            "output": 0.8971226215362549
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ad9cd64t.png",
+            "label": 1,
+            "output": 0.8967083692550659
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a0852c6t.png",
+            "label": 1,
+            "output": 0.8966155052185059
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r170b020bt.png",
+            "label": 1,
+            "output": 0.8964652419090271
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0282ca06t.png",
+            "label": 1,
+            "output": 0.8962035179138184
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r129f24bet.png",
+            "label": 1,
+            "output": 0.895671546459198
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1378de81t.png",
+            "label": 1,
+            "output": 0.8955361843109131
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r037a250ft.png",
+            "label": 1,
+            "output": 0.8948230743408203
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a28d44bt.png",
+            "label": 1,
+            "output": 0.8939297795295715
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14a51689t.png",
+            "label": 1,
+            "output": 0.8934868574142456
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r169f694ft.png",
+            "label": 1,
+            "output": 0.8933202028274536
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1297fd0bt.png",
+            "label": 1,
+            "output": 0.893153190612793
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08c76321t.png",
+            "label": 1,
+            "output": 0.8931318521499634
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15f16465t.png",
+            "label": 1,
+            "output": 0.8930485248565674
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1070b804t.png",
+            "label": 1,
+            "output": 0.8928779363632202
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c6377bat.png",
+            "label": 1,
+            "output": 0.8928754925727844
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1322c4d6t.png",
+            "label": 1,
+            "output": 0.8927015066146851
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09c8e042t.png",
+            "label": 1,
+            "output": 0.8926143646240234
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cfe520bt.png",
+            "label": 1,
+            "output": 0.8923670649528503
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r150058a4t.png",
+            "label": 1,
+            "output": 0.8920193910598755
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r103a4f26t.png",
+            "label": 1,
+            "output": 0.8914234638214111
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r144e095dt.png",
+            "label": 1,
+            "output": 0.8911166191101074
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r142787e2t.png",
+            "label": 1,
+            "output": 0.8905289769172668
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e251abet.png",
+            "label": 1,
+            "output": 0.8893640637397766
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13e56300t.png",
+            "label": 1,
+            "output": 0.8892242312431335
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d56c1d7t.png",
+            "label": 1,
+            "output": 0.8892239332199097
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14df59fet.png",
+            "label": 1,
+            "output": 0.8891197443008423
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r072421a1t.png",
+            "label": 1,
+            "output": 0.8889378905296326
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18e0516bt.png",
+            "label": 1,
+            "output": 0.8888393044471741
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04317453t.png",
+            "label": 1,
+            "output": 0.8883013725280762
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18302db2t.png",
+            "label": 1,
+            "output": 0.8881314396858215
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ef15cb3t.png",
+            "label": 1,
+            "output": 0.8879894018173218
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r012d1dbet.png",
+            "label": 1,
+            "output": 0.887688398361206
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a020c3ft.png",
+            "label": 1,
+            "output": 0.885796844959259
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a8ee526t.png",
+            "label": 1,
+            "output": 0.8855758905410767
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c5a4928t.png",
+            "label": 1,
+            "output": 0.8855443596839905
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r069e346et.png",
+            "label": 1,
+            "output": 0.8854228258132935
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00679daet.png",
+            "label": 1,
+            "output": 0.8850244283676147
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a779af2t.png",
+            "label": 1,
+            "output": 0.8845028281211853
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b61ed37t.png",
+            "label": 1,
+            "output": 0.8844464421272278
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r162b2209t.png",
+            "label": 1,
+            "output": 0.8825080990791321
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc3dd23t.png",
+            "label": 1,
+            "output": 0.8824784755706787
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04e818bat.png",
+            "label": 1,
+            "output": 0.8821552395820618
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12daa983t.png",
+            "label": 1,
+            "output": 0.8812748789787292
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08f2d4c6t.png",
+            "label": 1,
+            "output": 0.8811063766479492
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1904147dt.png",
+            "label": 1,
+            "output": 0.8810768723487854
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1565a7e7t.png",
+            "label": 1,
+            "output": 0.880544126033783
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bcfab73t.png",
+            "label": 1,
+            "output": 0.8803906440734863
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b32a6bct.png",
+            "label": 1,
+            "output": 0.8802348375320435
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r002fc3e2t.png",
+            "label": 1,
+            "output": 0.8802029490470886
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a91c337t.png",
+            "label": 1,
+            "output": 0.8801419138908386
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r042d5308t.png",
+            "label": 1,
+            "output": 0.8801384568214417
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14c2d3fct.png",
+            "label": 1,
+            "output": 0.8798858523368835
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ef16e0dt.png",
+            "label": 1,
+            "output": 0.8797467947006226
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a1d24b2t.png",
+            "label": 1,
+            "output": 0.8783262968063354
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aef663et.png",
+            "label": 1,
+            "output": 0.8779674172401428
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13bb381ct.png",
+            "label": 1,
+            "output": 0.8778114914894104
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07cf907dt.png",
+            "label": 1,
+            "output": 0.8776711225509644
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r141665bdt.png",
+            "label": 1,
+            "output": 0.8776494264602661
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19d92967t.png",
+            "label": 1,
+            "output": 0.8771528601646423
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r033daaa0t.png",
+            "label": 1,
+            "output": 0.8770310878753662
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a64ce0bt.png",
+            "label": 1,
+            "output": 0.8770142197608948
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18ea00c8t.png",
+            "label": 1,
+            "output": 0.8768343925476074
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16d46fa3t.png",
+            "label": 1,
+            "output": 0.8765048980712891
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b8b1b14t.png",
+            "label": 1,
+            "output": 0.876404881477356
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a7346d0t.png",
+            "label": 1,
+            "output": 0.8761252760887146
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r052e9174t.png",
+            "label": 1,
+            "output": 0.8757925629615784
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r165355c0t.png",
+            "label": 1,
+            "output": 0.8757156133651733
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1372056ct.png",
+            "label": 1,
+            "output": 0.8750783801078796
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r140f3432t.png",
+            "label": 1,
+            "output": 0.8750395774841309
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15d1c836t.png",
+            "label": 1,
+            "output": 0.8749328851699829
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r066ef803t.png",
+            "label": 1,
+            "output": 0.8748865723609924
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e35d1fct.png",
+            "label": 1,
+            "output": 0.8748222589492798
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a8d7a86t.png",
+            "label": 1,
+            "output": 0.874453067779541
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r033bb79dt.png",
+            "label": 1,
+            "output": 0.8739749193191528
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cd8d9a4t.png",
+            "label": 1,
+            "output": 0.873369574546814
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d203f37t.png",
+            "label": 1,
+            "output": 0.8733322024345398
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19fe3107t.png",
+            "label": 1,
+            "output": 0.872991144657135
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17c76042t.png",
+            "label": 1,
+            "output": 0.8727712035179138
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09a992e9t.png",
+            "label": 1,
+            "output": 0.8727389574050903
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02897203t.png",
+            "label": 1,
+            "output": 0.8724057674407959
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r182ed662t.png",
+            "label": 1,
+            "output": 0.8718423247337341
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ced1907t.png",
+            "label": 1,
+            "output": 0.8707893490791321
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r096982ddt.png",
+            "label": 1,
+            "output": 0.8707752227783203
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c9e4ff8t.png",
+            "label": 1,
+            "output": 0.8699789047241211
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d527f65t.png",
+            "label": 1,
+            "output": 0.8693037629127502
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r038922cbt.png",
+            "label": 1,
+            "output": 0.8692384362220764
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05647b9at.png",
+            "label": 1,
+            "output": 0.8688914179801941
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d9eaf70t.png",
+            "label": 1,
+            "output": 0.8686524033546448
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r019eb1cbt.png",
+            "label": 1,
+            "output": 0.8678105473518372
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c99500bt.png",
+            "label": 1,
+            "output": 0.8673263788223267
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17f60607t.png",
+            "label": 1,
+            "output": 0.8671931028366089
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r066b256at.png",
+            "label": 1,
+            "output": 0.8671111464500427
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cc04f4ft.png",
+            "label": 1,
+            "output": 0.8668979406356812
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12e170d4t.png",
+            "label": 1,
+            "output": 0.8668586611747742
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c3a8ea0t.png",
+            "label": 1,
+            "output": 0.8666182160377502
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10940798t.png",
+            "label": 1,
+            "output": 0.8657701015472412
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1011a436t.png",
+            "label": 1,
+            "output": 0.8653460144996643
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0db011b4t.png",
+            "label": 1,
+            "output": 0.8650042414665222
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08996953t.png",
+            "label": 1,
+            "output": 0.8639677166938782
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d4377f7t.png",
+            "label": 1,
+            "output": 0.8637110590934753
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r128dfb38t.png",
+            "label": 1,
+            "output": 0.8634002208709717
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07ffdc87t.png",
+            "label": 1,
+            "output": 0.8631436824798584
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d6e15d3t.png",
+            "label": 1,
+            "output": 0.862426221370697
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b0cd69et.png",
+            "label": 1,
+            "output": 0.862205445766449
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a3c52a0t.png",
+            "label": 1,
+            "output": 0.8620705604553223
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ce35df8t.png",
+            "label": 1,
+            "output": 0.8619997501373291
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0408fe9ft.png",
+            "label": 1,
+            "output": 0.8618990182876587
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10944b31t.png",
+            "label": 1,
+            "output": 0.8612579107284546
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a2095b2t.png",
+            "label": 1,
+            "output": 0.8612040281295776
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09dc6407t.png",
+            "label": 1,
+            "output": 0.860832929611206
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r056d6bebt.png",
+            "label": 1,
+            "output": 0.8608002066612244
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a7bb1d6t.png",
+            "label": 1,
+            "output": 0.860751211643219
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04aceb4et.png",
+            "label": 1,
+            "output": 0.8605802059173584
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06836fdat.png",
+            "label": 1,
+            "output": 0.8600676655769348
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02f5c155t.png",
+            "label": 1,
+            "output": 0.8600399494171143
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0db31c3ft.png",
+            "label": 1,
+            "output": 0.8598353266716003
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00d161b7t.png",
+            "label": 1,
+            "output": 0.8596872687339783
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1717ae55t.png",
+            "label": 1,
+            "output": 0.8591463565826416
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r110cc74ct.png",
+            "label": 1,
+            "output": 0.8587294220924377
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f48d12dt.png",
+            "label": 1,
+            "output": 0.8581154942512512
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r175da907t.png",
+            "label": 1,
+            "output": 0.8574033379554749
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a343192t.png",
+            "label": 1,
+            "output": 0.8568295836448669
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f1a9df4t.png",
+            "label": 1,
+            "output": 0.8563476800918579
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ab1679et.png",
+            "label": 1,
+            "output": 0.8558260202407837
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a7e4791t.png",
+            "label": 1,
+            "output": 0.8540120720863342
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15ab6ac6t.png",
+            "label": 1,
+            "output": 0.8527625799179077
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04172edct.png",
+            "label": 1,
+            "output": 0.8514159917831421
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12cebbd2t.png",
+            "label": 1,
+            "output": 0.8511466979980469
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r154d7294t.png",
+            "label": 1,
+            "output": 0.8501946926116943
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r142335f0t.png",
+            "label": 1,
+            "output": 0.8498746752738953
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r062cab38t.png",
+            "label": 1,
+            "output": 0.8495377898216248
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r128cc6fbt.png",
+            "label": 1,
+            "output": 0.8486567735671997
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08cbbab9t.png",
+            "label": 1,
+            "output": 0.8485144376754761
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f4ece9bt.png",
+            "label": 1,
+            "output": 0.848422110080719
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r169c7350t.png",
+            "label": 1,
+            "output": 0.8480919599533081
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r180a7062t.png",
+            "label": 1,
+            "output": 0.8478395938873291
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r092b4511t.png",
+            "label": 1,
+            "output": 0.8478150963783264
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10a207det.png",
+            "label": 1,
+            "output": 0.8477770090103149
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r146771d7t.png",
+            "label": 1,
+            "output": 0.8475032448768616
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r171d73aat.png",
+            "label": 1,
+            "output": 0.847154974937439
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d00d8ect.png",
+            "label": 1,
+            "output": 0.8467822074890137
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r142b504bt.png",
+            "label": 1,
+            "output": 0.8467394113540649
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ab0a205t.png",
+            "label": 1,
+            "output": 0.8466870188713074
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r068812d7t.png",
+            "label": 1,
+            "output": 0.8464277982711792
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12a97b08t.png",
+            "label": 1,
+            "output": 0.845901370048523
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r018ba134t.png",
+            "label": 1,
+            "output": 0.8453682661056519
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f86049ct.png",
+            "label": 1,
+            "output": 0.8441305160522461
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03ed2669t.png",
+            "label": 1,
+            "output": 0.8438847064971924
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d0ff43at.png",
+            "label": 1,
+            "output": 0.8435705900192261
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r152d9ff5t.png",
+            "label": 1,
+            "output": 0.8435152173042297
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b1c1019t.png",
+            "label": 1,
+            "output": 0.8428491353988647
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17ad56act.png",
+            "label": 1,
+            "output": 0.8415048122406006
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r041c02cat.png",
+            "label": 1,
+            "output": 0.8414377570152283
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1468a9e1t.png",
+            "label": 1,
+            "output": 0.8410429954528809
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08079988t.png",
+            "label": 1,
+            "output": 0.8402859568595886
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c764979t.png",
+            "label": 1,
+            "output": 0.8400890231132507
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08ac875ct.png",
+            "label": 1,
+            "output": 0.8398040533065796
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14f241e4t.png",
+            "label": 1,
+            "output": 0.839669942855835
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17fe8532t.png",
+            "label": 1,
+            "output": 0.8382249474525452
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1426cde6t.png",
+            "label": 1,
+            "output": 0.837774395942688
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c9fdcf4t.png",
+            "label": 1,
+            "output": 0.8364125490188599
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b5b85d0t.png",
+            "label": 1,
+            "output": 0.8357871174812317
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f38373ct.png",
+            "label": 1,
+            "output": 0.8357563018798828
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r181dd93dt.png",
+            "label": 1,
+            "output": 0.8351548314094543
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11850456t.png",
+            "label": 1,
+            "output": 0.8349361419677734
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b4e82c4t.png",
+            "label": 1,
+            "output": 0.8342080116271973
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f3f14cbt.png",
+            "label": 1,
+            "output": 0.8337527513504028
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a57cb29t.png",
+            "label": 1,
+            "output": 0.8336091637611389
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r008ed083t.png",
+            "label": 1,
+            "output": 0.8330159783363342
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00816405t.png",
+            "label": 1,
+            "output": 0.8326961398124695
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc4e4act.png",
+            "label": 1,
+            "output": 0.8320717811584473
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06aa7dabt.png",
+            "label": 1,
+            "output": 0.8309139609336853
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r070a874ct.png",
+            "label": 1,
+            "output": 0.8295378684997559
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18d1abact.png",
+            "label": 1,
+            "output": 0.8290610313415527
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1882b6e6t.png",
+            "label": 1,
+            "output": 0.8283846378326416
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17b873bct.png",
+            "label": 1,
+            "output": 0.8277854919433594
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08873591t.png",
+            "label": 1,
+            "output": 0.8267096877098083
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d2bb70at.png",
+            "label": 1,
+            "output": 0.8266578912734985
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a2d8b02t.png",
+            "label": 1,
+            "output": 0.8263930082321167
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16654024t.png",
+            "label": 1,
+            "output": 0.8263340592384338
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09f764ect.png",
+            "label": 1,
+            "output": 0.8257029056549072
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c402787t.png",
+            "label": 1,
+            "output": 0.825219452381134
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06bfc92at.png",
+            "label": 1,
+            "output": 0.8250844478607178
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1743fb6bt.png",
+            "label": 1,
+            "output": 0.8230653405189514
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r039a851bt.png",
+            "label": 1,
+            "output": 0.8216379284858704
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r097d3563t.png",
+            "label": 1,
+            "output": 0.8212637305259705
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13de1e12t.png",
+            "label": 1,
+            "output": 0.8207365274429321
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d679eaet.png",
+            "label": 1,
+            "output": 0.8204814195632935
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09488b39t.png",
+            "label": 1,
+            "output": 0.820162832736969
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13fccd2ft.png",
+            "label": 1,
+            "output": 0.8199604153633118
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f91360ct.png",
+            "label": 1,
+            "output": 0.8193677067756653
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r108ae9b6t.png",
+            "label": 1,
+            "output": 0.8189196586608887
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1dbef145t.png",
+            "label": 1,
+            "output": 0.816186249256134
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r021429abt.png",
+            "label": 1,
+            "output": 0.8159908056259155
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14a9a843t.png",
+            "label": 1,
+            "output": 0.8158138394355774
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0773471dt.png",
+            "label": 1,
+            "output": 0.8150333762168884
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02b7536at.png",
+            "label": 1,
+            "output": 0.8149286508560181
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r053d2196t.png",
+            "label": 1,
+            "output": 0.8145730495452881
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16509308t.png",
+            "label": 1,
+            "output": 0.8140758872032166
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fd69c12t.png",
+            "label": 1,
+            "output": 0.8132739067077637
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ebdd2d2t.png",
+            "label": 1,
+            "output": 0.8131936192512512
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1baf2ce0t.png",
+            "label": 1,
+            "output": 0.8129581212997437
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1461e2d7t.png",
+            "label": 1,
+            "output": 0.8124743103981018
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r163317d6t.png",
+            "label": 1,
+            "output": 0.8112977147102356
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r198ea6a5t.png",
+            "label": 1,
+            "output": 0.8109252452850342
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r061db45ft.png",
+            "label": 1,
+            "output": 0.8097953200340271
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05d9d749t.png",
+            "label": 1,
+            "output": 0.809586763381958
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0833f646t.png",
+            "label": 1,
+            "output": 0.8093089461326599
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r059cae86t.png",
+            "label": 1,
+            "output": 0.8088979125022888
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r042d7b17t.png",
+            "label": 1,
+            "output": 0.8075196743011475
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r06743f8ft.png",
+            "label": 1,
+            "output": 0.8071995973587036
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r159d3942t.png",
+            "label": 1,
+            "output": 0.8067776560783386
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e69b067t.png",
+            "label": 1,
+            "output": 0.8067066073417664
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08b12799t.png",
+            "label": 1,
+            "output": 0.8059589862823486
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14556dabt.png",
+            "label": 1,
+            "output": 0.8046572208404541
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02059ab4t.png",
+            "label": 1,
+            "output": 0.8044378161430359
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b1f92a9t.png",
+            "label": 1,
+            "output": 0.8036355376243591
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e504ebbt.png",
+            "label": 1,
+            "output": 0.800792396068573
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a8fe570t.png",
+            "label": 1,
+            "output": 0.8005106449127197
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r169a9b07t.png",
+            "label": 1,
+            "output": 0.7994401454925537
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a0f5585t.png",
+            "label": 1,
+            "output": 0.7993518710136414
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fe7b1c6t.png",
+            "label": 1,
+            "output": 0.7977791428565979
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ca6cc12t.png",
+            "label": 1,
+            "output": 0.7976524233818054
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a877849t.png",
+            "label": 1,
+            "output": 0.7975550889968872
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f25b326t.png",
+            "label": 1,
+            "output": 0.7967194318771362
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12c1798bt.png",
+            "label": 1,
+            "output": 0.7967085838317871
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03aa5df1t.png",
+            "label": 1,
+            "output": 0.7950709462165833
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11b292cbt.png",
+            "label": 1,
+            "output": 0.7947537899017334
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12c64de9t.png",
+            "label": 1,
+            "output": 0.7940508723258972
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04a210b3t.png",
+            "label": 1,
+            "output": 0.7940084934234619
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r184f08dat.png",
+            "label": 1,
+            "output": 0.7937151789665222
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d89edd8t.png",
+            "label": 1,
+            "output": 0.7935502529144287
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d796d4ft.png",
+            "label": 1,
+            "output": 0.7931097149848938
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc23d6et.png",
+            "label": 1,
+            "output": 0.7927508354187012
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f3e6681t.png",
+            "label": 1,
+            "output": 0.7924234867095947
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r085a5f53t.png",
+            "label": 1,
+            "output": 0.7917280793190002
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13b45303t.png",
+            "label": 1,
+            "output": 0.7914096713066101
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cc0e4e1t.png",
+            "label": 1,
+            "output": 0.791301965713501
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0d8d62edt.png",
+            "label": 1,
+            "output": 0.7900952100753784
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c486c0at.png",
+            "label": 1,
+            "output": 0.787873387336731
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r040b3002t.png",
+            "label": 1,
+            "output": 0.7872380018234253
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f98115dt.png",
+            "label": 1,
+            "output": 0.7869890332221985
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r18990432t.png",
+            "label": 1,
+            "output": 0.786899983882904
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03193652t.png",
+            "label": 1,
+            "output": 0.7864950895309448
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09efa609t.png",
+            "label": 1,
+            "output": 0.7850131392478943
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r065a0da9t.png",
+            "label": 1,
+            "output": 0.7847607731819153
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00b3931bt.png",
+            "label": 1,
+            "output": 0.7847607731819153
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bf00696t.png",
+            "label": 1,
+            "output": 0.7839362621307373
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r079d086et.png",
+            "label": 1,
+            "output": 0.7832247018814087
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1077d1f2t.png",
+            "label": 1,
+            "output": 0.7831878662109375
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12cf98bet.png",
+            "label": 1,
+            "output": 0.7826991081237793
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05f66e6dt.png",
+            "label": 1,
+            "output": 0.7826285362243652
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02210c2at.png",
+            "label": 1,
+            "output": 0.7819377183914185
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0250eb80t.png",
+            "label": 1,
+            "output": 0.7812764048576355
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02f1ba48t.png",
+            "label": 1,
+            "output": 0.7811211347579956
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11e134c7t.png",
+            "label": 1,
+            "output": 0.7805638909339905
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b17fd57t.png",
+            "label": 1,
+            "output": 0.7792171239852905
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10cf67d1t.png",
+            "label": 1,
+            "output": 0.7769829630851746
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07cfb432t.png",
+            "label": 1,
+            "output": 0.7768421769142151
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c874ac4t.png",
+            "label": 1,
+            "output": 0.7750288844108582
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r081ad6a3t.png",
+            "label": 1,
+            "output": 0.774406909942627
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1301676dt.png",
+            "label": 1,
+            "output": 0.7732574939727783
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c795771t.png",
+            "label": 1,
+            "output": 0.7721453905105591
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10c5fc29t.png",
+            "label": 1,
+            "output": 0.7703524231910706
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c03e364t.png",
+            "label": 1,
+            "output": 0.7703471779823303
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00a940e1t.png",
+            "label": 1,
+            "output": 0.7701631784439087
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08df6903t.png",
+            "label": 1,
+            "output": 0.7680374979972839
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1d53fccat.png",
+            "label": 1,
+            "output": 0.7676929235458374
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b42926ct.png",
+            "label": 1,
+            "output": 0.7673498392105103
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r001d260dt.png",
+            "label": 1,
+            "output": 0.7666897177696228
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r088dcebft.png",
+            "label": 1,
+            "output": 0.7662604451179504
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11a4e1cbt.png",
+            "label": 1,
+            "output": 0.7655715942382812
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03f70ccdt.png",
+            "label": 1,
+            "output": 0.7646188735961914
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0af5a8cct.png",
+            "label": 1,
+            "output": 0.763275146484375
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r02b3a1ddt.png",
+            "label": 1,
+            "output": 0.7631778717041016
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e661e0dt.png",
+            "label": 1,
+            "output": 0.762949526309967
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0356ea60t.png",
+            "label": 1,
+            "output": 0.7603493332862854
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eb9e900t.png",
+            "label": 1,
+            "output": 0.7593660950660706
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r14c67ed2t.png",
+            "label": 1,
+            "output": 0.758265495300293
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r084889d5t.png",
+            "label": 1,
+            "output": 0.7580992579460144
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1104e9e6t.png",
+            "label": 1,
+            "output": 0.757205069065094
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r03f41fdct.png",
+            "label": 1,
+            "output": 0.7562850713729858
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09445479t.png",
+            "label": 1,
+            "output": 0.7561099529266357
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f5c8451t.png",
+            "label": 1,
+            "output": 0.7558990716934204
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fa22d02t.png",
+            "label": 1,
+            "output": 0.7530763745307922
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r164c1e13t.png",
+            "label": 1,
+            "output": 0.7519441246986389
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b665b37t.png",
+            "label": 1,
+            "output": 0.7519311308860779
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b735401t.png",
+            "label": 1,
+            "output": 0.750537097454071
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0518cf5dt.png",
+            "label": 1,
+            "output": 0.7502002716064453
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r191488c6t.png",
+            "label": 1,
+            "output": 0.7497199177742004
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c23e440t.png",
+            "label": 1,
+            "output": 0.7487666010856628
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0fdfc4f0t.png",
+            "label": 1,
+            "output": 0.7480841279029846
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f5ad4e0t.png",
+            "label": 1,
+            "output": 0.7469403743743896
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0648cff8t.png",
+            "label": 1,
+            "output": 0.7464711666107178
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1de108dft.png",
+            "label": 1,
+            "output": 0.745944619178772
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r072649fdt.png",
+            "label": 1,
+            "output": 0.7432941794395447
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c6b4a23t.png",
+            "label": 1,
+            "output": 0.7427962422370911
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r056f233bt.png",
+            "label": 1,
+            "output": 0.7424858212471008
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bca2388t.png",
+            "label": 1,
+            "output": 0.7411812543869019
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17754c77t.png",
+            "label": 1,
+            "output": 0.7395829558372498
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r056c0ee6t.png",
+            "label": 1,
+            "output": 0.7394655346870422
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c5e9567t.png",
+            "label": 1,
+            "output": 0.7392892241477966
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cbdc6f8t.png",
+            "label": 1,
+            "output": 0.7386313676834106
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07d13149t.png",
+            "label": 1,
+            "output": 0.7382591962814331
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r087a13a6t.png",
+            "label": 1,
+            "output": 0.7377762794494629
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r126a22b8t.png",
+            "label": 1,
+            "output": 0.7341867089271545
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa43470t.png",
+            "label": 1,
+            "output": 0.73416668176651
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08b41f18t.png",
+            "label": 1,
+            "output": 0.7333246469497681
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b13d2a2t.png",
+            "label": 1,
+            "output": 0.7320063710212708
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r101d6690t.png",
+            "label": 1,
+            "output": 0.7309712171554565
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0f6d3b31t.png",
+            "label": 1,
+            "output": 0.7298106551170349
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1c1e3ec9t.png",
+            "label": 1,
+            "output": 0.729736328125
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e63dd12t.png",
+            "label": 1,
+            "output": 0.7277737855911255
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1554cfadt.png",
+            "label": 1,
+            "output": 0.7238956689834595
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0e63ca9ft.png",
+            "label": 1,
+            "output": 0.717013955116272
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1aa7459at.png",
+            "label": 1,
+            "output": 0.7145484089851379
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r10e36316t.png",
+            "label": 1,
+            "output": 0.7136082053184509
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1b790721t.png",
+            "label": 1,
+            "output": 0.7135477662086487
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04989a70t.png",
+            "label": 1,
+            "output": 0.7134451866149902
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1db351a2t.png",
+            "label": 1,
+            "output": 0.7131133675575256
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bfbaab3t.png",
+            "label": 1,
+            "output": 0.7117462158203125
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cea5432t.png",
+            "label": 1,
+            "output": 0.7109900116920471
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01cbb7fdt.png",
+            "label": 1,
+            "output": 0.7095043063163757
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r193b12aet.png",
+            "label": 1,
+            "output": 0.7077862620353699
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r192ae577t.png",
+            "label": 1,
+            "output": 0.705569326877594
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1cde4afbt.png",
+            "label": 1,
+            "output": 0.7052111029624939
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00617aa1t.png",
+            "label": 1,
+            "output": 0.7048717141151428
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r00879054t.png",
+            "label": 1,
+            "output": 0.7038120627403259
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r05d35656t.png",
+            "label": 1,
+            "output": 0.7023990154266357
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ab86ea2t.png",
+            "label": 1,
+            "output": 0.7023186087608337
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1023c21et.png",
+            "label": 1,
+            "output": 0.7015801072120667
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r012b0f30t.png",
+            "label": 1,
+            "output": 0.7014532685279846
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19835fbft.png",
+            "label": 1,
+            "output": 0.7012550234794617
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01170470t.png",
+            "label": 1,
+            "output": 0.6975758671760559
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r12946364t.png",
+            "label": 1,
+            "output": 0.6956373453140259
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1ca0784dt.png",
+            "label": 1,
+            "output": 0.6884660720825195
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01cf60c7t.png",
+            "label": 1,
+            "output": 0.6879554986953735
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0515a051t.png",
+            "label": 1,
+            "output": 0.6840643286705017
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e8acc5ct.png",
+            "label": 1,
+            "output": 0.6839873790740967
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1e5c27c1t.png",
+            "label": 1,
+            "output": 0.6826407313346863
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r13ae7d1et.png",
+            "label": 1,
+            "output": 0.6825843453407288
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r17492cd5t.png",
+            "label": 1,
+            "output": 0.6816087961196899
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a7b8c42t.png",
+            "label": 1,
+            "output": 0.6813622713088989
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r035ef2c2t.png",
+            "label": 1,
+            "output": 0.68072509765625
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c9910e4t.png",
+            "label": 1,
+            "output": 0.6805631518363953
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1900f7c7t.png",
+            "label": 1,
+            "output": 0.6737793684005737
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0905697bt.png",
+            "label": 1,
+            "output": 0.668747067451477
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r133bb357t.png",
+            "label": 1,
+            "output": 0.6659702062606812
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r083ca67ct.png",
+            "label": 1,
+            "output": 0.6541224122047424
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r049f471dt.png",
+            "label": 1,
+            "output": 0.6526427865028381
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1570dd6at.png",
+            "label": 1,
+            "output": 0.6518580317497253
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c1f588dt.png",
+            "label": 1,
+            "output": 0.6420389413833618
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07db8a54t.png",
+            "label": 1,
+            "output": 0.6418514251708984
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0b7b1156t.png",
+            "label": 1,
+            "output": 0.6366366147994995
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eea5a7et.png",
+            "label": 1,
+            "output": 0.6335122585296631
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ff7a848t.png",
+            "label": 1,
+            "output": 0.6305467486381531
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0a71c689t.png",
+            "label": 1,
+            "output": 0.6292381286621094
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r04e7644dt.png",
+            "label": 1,
+            "output": 0.6270995736122131
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r11d981d2t.png",
+            "label": 1,
+            "output": 0.61653071641922
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0ed16e26t.png",
+            "label": 1,
+            "output": 0.6158862113952637
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1602555bt.png",
+            "label": 1,
+            "output": 0.6075489521026611
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19be5c05t.png",
+            "label": 1,
+            "output": 0.6075083613395691
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r15dfc1b8t.png",
+            "label": 1,
+            "output": 0.6047074794769287
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r015b453ft.png",
+            "label": 1,
+            "output": 0.6046653389930725
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r163967d4t.png",
+            "label": 1,
+            "output": 0.6032182574272156
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0cde6159t.png",
+            "label": 1,
+            "output": 0.6011236310005188
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0eedd456t.png",
+            "label": 1,
+            "output": 0.5999386310577393
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19183258t.png",
+            "label": 1,
+            "output": 0.5951805114746094
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01292fd8t.png",
+            "label": 1,
+            "output": 0.5936992764472961
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r07b99141t.png",
+            "label": 1,
+            "output": 0.5919289588928223
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1618da9dt.png",
+            "label": 1,
+            "output": 0.588871419429779
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r09696ba3t.png",
+            "label": 1,
+            "output": 0.586441695690155
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0281b52at.png",
+            "label": 1,
+            "output": 0.586105465888977
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r08b04f65t.png",
+            "label": 1,
+            "output": 0.5796819925308228
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a5903fct.png",
+            "label": 1,
+            "output": 0.5716169476509094
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r110f894ft.png",
+            "label": 1,
+            "output": 0.5668065547943115
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1bc3a653t.png",
+            "label": 1,
+            "output": 0.565925121307373
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0c925d34t.png",
+            "label": 1,
+            "output": 0.5615746974945068
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1a499b96t.png",
+            "label": 1,
+            "output": 0.5469338297843933
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01291f20t.png",
+            "label": 1,
+            "output": 0.5402711629867554
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1694427et.png",
+            "label": 1,
+            "output": 0.5281141400337219
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r16a02a12t.png",
+            "label": 1,
+            "output": 0.5167776942253113
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r1f2c2acft.png",
+            "label": 1,
+            "output": 0.5167776942253113
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r01d9da09t.png",
+            "label": 1,
+            "output": 0.5150341391563416
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r19c9183at.png",
+            "label": 1,
+            "output": 0.5031238198280334
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r0701ca45t.png",
+            "label": 1,
+            "output": 0.5022188425064087
+        },
+        {
+            "path": "data/test/synthbuster/firefly/1_fake/r104153eat.png",
+            "label": 1,
+            "output": 0.4867187440395355
+        }
+    ]
+}

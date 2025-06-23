@@ -3,16 +3,19 @@ import torch
 import numpy as np
 from torchvision import transforms
 import matplotlib.pyplot as plt
-from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn
-from src.data import EvaluationDataset
+from matplotlib.gridspec import GridSpec
+from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn, get_generators, get_real_images
+from src.data import EvaluationDataset, TestDataset
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import pickle
-from src.models import IntermediatePatch, SigLIPIntermediate
+from src.models import IntermediatePatch, SigLIPIntermediate, RineModel
 from sklearn.metrics import RocCurveDisplay, PrecisionRecallDisplay, roc_curve, precision_recall_curve, roc_auc_score, average_precision_score, auc
 import tqdm
 import json
 from torch.utils.data import DataLoader
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 from math import floor
+import random
 
 def plot_pr(labels, output, ax, name=""):
     pr_curve = precision_recall_curve(labels, output)
@@ -393,6 +396,7 @@ def visualize_patch_impact(
         stride,
         patch_size,
         ax,
+        colorbar=False,
     ):
     """
     Visualizes the impact of each patch on the model's output.
@@ -408,110 +412,107 @@ def visualize_patch_impact(
     img = img[:, :, :h_img, :w_img]
     with torch.no_grad():   
         output = model.forward_slide(img, reshape=False, stride=stride).sigmoid().squeeze(0)
+        pred = output.mean()
         
     hotspot_image = np.zeros((h_img, w_img), dtype=np.float32)
     for i in range(output.shape[0]):
         for j in range(output.shape[1]):
             patch = output[i, j].expand(patch_size, patch_size)
             hotspot_image[i * patch_size:(i + 1) * patch_size, j * patch_size:(j + 1) * patch_size] = patch.cpu().numpy()
-    ax.imshow(hotspot_image, cmap="plasma", alpha=0.5)
+    im = ax.imshow(hotspot_image, cmap="plasma", alpha=0.35, vmin=0, vmax=1)
+    ax.text(0.5, 0.1, f"Prediction: {100 * pred.item():.2f}%",
+                          ha='center', va='top', transform=ax.transAxes,
+                            fontsize=10, bbox=dict(facecolor='white', alpha=0.35, edgecolor='none'))
     ax.axis("off")
+
+    if colorbar:
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("right", size="5%", pad=0.05)
+        plt.colorbar(im, cax=cax)
 
 def plot_image_prediction(
         json_path,
         model,
         transform,
-        device: torch.device,
+        save_path,
         gen_name="default",
         patch_size=14,
         stride=112,
-        ncols=6,
-        nrows=4,
+        ranges=(0, 0.1),
+        num_images=15,
     ):
     plt.style.use('seaborn-v0_8')
+    os.makedirs(f"results/visualizations/patch_impact/{save_path}", exist_ok=True)
     with open(json_path, "rb") as f:
         data = json.load(f)
-    images = data["images"]
-
-    checks = [False] * 6
-    # Increased figure size and reduced spacing
-    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(ncols * 4, nrows * 3.5))
-    
-    # Reduce spacing between subplots
-    plt.subplots_adjust(left=0.05, bottom=0.05, right=0.95, top=0.92, wspace=0.15, hspace=0.25)    
+    images = data["images"] 
     
     # Store selected images for each confidence level
-    selected_images = [None] * 6
+    selected_images = []
     
     # Find one image for each confidence level
     for im in images:
         img_path = im["path"]
         label = im["label"]
         output = im["output"]
-        
-        if all(checks):
-            break
 
-        if output < 0.1 and not checks[0]:
-            checks[0] = True
-            selected_images[0] = (img_path, label, output, "Very Low Confidence Prediction")
-        elif output < 0.25 and output > 0.1 and not checks[1]:
-            checks[1] = True
-            selected_images[1] = (img_path, label, output, "Low Confidence Prediction")
-        elif 0.25 <= output < 0.5 and not checks[2]:
-            checks[2] = True
-            selected_images[2] = (img_path, label, output, "Medium Confidence Prediction")
-        elif 0.5 <= output < 0.75 and not checks[3]:
-            checks[3] = True
-            selected_images[3] = (img_path, label, output, "High Confidence Prediction")
-        elif 0.75 <= output < 0.9 and not checks[4]:
-            checks[4] = True
-            selected_images[4] = (img_path, label, output, "Very High Confidence Prediction")
-        elif output >= 0.9 and not checks[5]:
-            checks[5] = True
-            selected_images[5] = (img_path, label, output, "Extreme Confidence Prediction")
+        if output > ranges[0] and output < ranges[1]:
+            selected_images.append((img_path, label, output))
 
+    selected_images.sort(key=lambda x: x[2])
+    num_images = min(num_images, len(selected_images))
     # Plot for each selected image
-    for col, image_data in enumerate(selected_images):
-        print(f"Processing image {col + 1}/{ncols} for generator {gen_name}...")
+    for j, image_data in enumerate(selected_images[:num_images]):
+        print(f"Processing image {image_data[0]} {j + 1}/{num_images} for generator {gen_name}...")
         if image_data is None:
             continue
-            
-        img_path, label, output, title = image_data
+    
+        img_path, label, output = image_data
         img = Image.open(img_path).convert("RGB")
-        img_256 = transforms.Resize(256)(img)
-        img_512 = transforms.Resize(512)(img)
+        img_width, img_height = img.size
+        max_dim = max(img_width, img_height)
+        norm_width = img_width / max_dim
+        norm_height = img_height / max_dim
+
+        # Scale the figure: 4 columns (so width × 4), height stays
+        scale = 4  # adjust for overall size (acts like a zoom factor)
+        fig_width = scale * 2 * norm_width
+        fig_height = 1.1 * scale * norm_height
+
+        fig = plt.figure(figsize=(fig_width, fig_height))
+        gs = GridSpec(1, 2, width_ratios=[1, 1.05])
+                    
+        # img_256 = transforms.Resize(256)(img)
+        # img_512 = transforms.Resize(512)(img)
         
-        axes[0, col].imshow(img)
-        axes[0, col].set_title(title, fontsize=11, pad=5)
-        axes[0, col].axis('off')
-        axes[0, col].text(0.5, -0.1, f"Label: {label}, Output: {output:.4f}",
-                          ha='center', va='top', transform=axes[0, col].transAxes,
-                          fontsize=9, bbox=dict(facecolor='white', alpha=0.5, edgecolor='none'))
+        ax = fig.add_subplot(gs[0, 0])
+        ax.imshow(img)
+        ax.set_title("Original image", fontsize=11, pad=5)
+        ax.axis('off')
+        ax.text(0.5, 0.1, f"Label: {label}",
+                          ha='center', va='top', transform=ax.transAxes,
+                          fontsize=10, bbox=dict(facecolor='white', alpha=0.5, edgecolor='none'))
         
-        for i, (im, name) in enumerate(zip([img, img_512, img_256], ["Original", "512x512", "256x256"])):
-            axes[i + 1, col].imshow(im)
-            axes[i + 1, col].set_title(f"{name}", fontsize=9, pad=3)
-            im = transform(im)
+        # for i, (im, name) in enumerate(zip([img, img_512, img_256], ["Original", "Resize 512", "Resize 256"])):
+        ax = fig.add_subplot(gs[0, 1])
+        name = f"({img.size[0]}x{img.size[1]})"
 
-            visualize_patch_impact(
-                img=im,
-                model=model,
-                stride=stride,
-                patch_size=patch_size,
-                ax=axes[i + 1, col],
-            )
+        ax.imshow(img, alpha=0.5)
+        ax.set_title(f"{name}", fontsize=10, pad=3)
+        img = transform(img)
 
-    # Hide unused subplots
-    for col in range(ncols):
-        if selected_images[col] is None:
-            for row in range(nrows):
-                axes[row, col].axis('off')
-
-    os.makedirs("results/visualizations/patch_impact", exist_ok=True)
-    plt.tight_layout(pad=1.0)
-    plt.savefig(os.path.join("results", "visualizations", "patch_impact", f"image_prediction_{gen_name}.png"))
-    print(f"Saved patch impact visualization to results/visualizations/patch_impact/image_prediction_{gen_name}.png")
+        visualize_patch_impact(
+            img=img,
+            model=model,
+            stride=stride,
+            patch_size=patch_size,
+            ax=ax,
+            colorbar=True
+        )
+        plt.tight_layout(pad=1.0)
+        plt.savefig(os.path.join("results", "visualizations", "patch_impact", save_path, f"image_prediction_{ranges[0]}_{j}_{gen_name}.png"))
+        plt.close()
+    print(f"Saved patch impact visualization to results/visualizations/patch_impact/{save_path}")
 
 def save_predictions(
         experiment,
@@ -522,7 +523,6 @@ def save_predictions(
         **kwargs
     ):
     model.eval()
-    gen_name = gen_name.split("/")[-1]
     print(f"Saving worst and best predictions for {gen_name}...")
     examples = {
         "images": [],
@@ -536,6 +536,7 @@ def save_predictions(
             images = images.float().to(device)
             labels = labels.numpy().tolist()
         output = model.predict(images, **kwargs)
+        output = np.atleast_1d(output).astype(np.float32)
         
         for i in range(len(labels)):
             examples["images"].append({
@@ -543,6 +544,7 @@ def save_predictions(
                 "label": labels[i].item() if isinstance(labels[i], torch.Tensor) else labels[i],
                 "output": output[i].item(),
             })
+
     examples["images"].sort(key=lambda x: x["output"], reverse=True)
     os.makedirs(f"results/predictions/{experiment['save_path']}", exist_ok=True)
 
@@ -552,8 +554,6 @@ def save_predictions(
 
 if __name__ == "__main__":
     # visualize_detection_curves(['IntermediatePatch', 'Rine_4_class', 'Rine_latent_diffusion', 'SPAI'])
-    
-    gen_name = "synthbuster/midjourney-v5"
 
     experiment = json.load(
         open(f"ckpt/IntermediatePatch/2_nproj_1024_proj_dim/experiment.json", "rb")
@@ -569,6 +569,18 @@ if __name__ == "__main__":
     )
 
     # experiment = json.load(
+    #     open(f"ckpt/RineModel/2_nproj_1024_proj_dim/experiment.json", "rb")
+    # )
+    # model = RineModel(
+    #     backbone=experiment["backbone"],
+    #     nproj=experiment["nproj"],
+    #     proj_dim=experiment["proj_dim"],
+    #     device=torch.device("cuda:0"),
+    # )
+    # model.load_state_dict(
+    #     torch.load(f"ckpt/RineModel/2_nproj_1024_proj_dim/train.pth", map_location="cuda:0")
+    # )
+    # experiment = json.load(
     #     open(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/experiment.json", "rb")
     # )
     # model = SigLIPIntermediate(
@@ -579,26 +591,6 @@ if __name__ == "__main__":
     # )
     # model.load_state_dict(
     #     torch.load(f"ckpt/IntermediatePatchSigLIP/3_nproj_512_proj_dim/train.pth", map_location="cuda:0")
-    # )
-    # stride = 128
-    # patch_size = 16
-    # tr = transforms.Resize(256)
-    # tr = lambda x: x
-
-    # visualize_image_impact(
-    #     img=tr(img).unsqueeze(0).to("cuda:0"),
-    #     model=model,
-    # )
-
-    # generator = "progan"
-    # dl = torch.utils.data.DataLoader(
-    #     dataset=EvaluationDataset(
-    #         generator=generator,
-    #         transforms=tr,
-    #     ),
-    #     batch_size=64,
-    #     shuffle=False,
-    #     num_workers=2,
     # )
 
     # # tr = get_transform("val")
@@ -615,32 +607,55 @@ if __name__ == "__main__":
 
     device = "cuda:0"
     transform = get_transform("no_crop_no_norm")
+    target = "fake"
+    for gen_name in get_generators():
+        print(f"Processing generator {gen_name.split("/")[-1]}...")
+        for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
+            plot_image_prediction(
+                json_path=f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json",
+                model=model,
+                transform=transform,
+                gen_name=gen_name.split("/")[-1],
+                patch_size=14,
+                stride=112,
+                ranges=rang,
+                save_path=f"{experiment["save_path"]}/fake",
+                num_images=3
+            )
 
-    plot_image_prediction(
-        json_path=f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json",
-        model=model,
-        transform=transform,
-        device=device,
-        gen_name=gen_name.split("/")[-1],
-        patch_size=14,
-        stride=112,
-    )
+    target = "real"
+    for gen_name, real_name in get_generators(True): # get_generators()[:22]:
+        print(f"Processing generator {real_name}...")
 
-    # loader = DataLoader(
-    #                     EvaluationDataset(gen_name, transforms=transform, target="fake"),
-    #                     batch_size=8,
-    #                     shuffle=False,
-    #                     pin_memory=True,
-    #                     drop_last=False,
-    #                     collate_fn=image_enlisting_collate_fn
-    #                 )
+        if not os.path.exists(f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json"):
+            loader = DataLoader(
+                                EvaluationDataset(gen_name, transforms=transform, target=target),
+                                batch_size=8,
+                                shuffle=False,
+                                pin_memory=True,
+                                drop_last=False,
+                                collate_fn=image_enlisting_collate_fn
+                            )
+            print(f"Loaded {len(loader.dataset)} images from {real_name} for {target} target.")
+            save_predictions(
+                experiment=experiment,
+                model=model,
+                gen_name=f"{real_name}_real",
+                dl=loader,
+                device="cuda:0",
+                method="mean",
+                window_slide=True
+            )
 
-    # save_predictions(
-    #     experiment=experiment,
-    #     model=model,
-    #     gen_name=gen_name,
-    #     dl=loader,
-    #     device="cuda:0",
-    #     method="mean",
-    #     window_slide=True
-    # )
+        for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
+            plot_image_prediction(
+                json_path=f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json",
+                model=model,
+                transform=transform,
+                gen_name=real_name,
+                patch_size=14,
+                stride=112,
+                ranges=rang,
+                save_path=f"{experiment['save_path']}/real",
+                num_images=3
+            )

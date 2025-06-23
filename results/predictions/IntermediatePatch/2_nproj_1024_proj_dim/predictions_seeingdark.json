@@ -1,0 +1,904 @@
+{
+    "images": [
+        {
+            "path": "data/test/seeingdark/1_fake/10185_00_300_out.png",
+            "label": 1,
+            "output": 0.9889271259307861
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10187_00_300_out.png",
+            "label": 1,
+            "output": 0.9871290922164917
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10185_00_250_out.png",
+            "label": 1,
+            "output": 0.9856476783752441
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10198_00_250_out.png",
+            "label": 1,
+            "output": 0.9839603900909424
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10187_00_250_out.png",
+            "label": 1,
+            "output": 0.9831939935684204
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10198_00_100_out.png",
+            "label": 1,
+            "output": 0.9828265905380249
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10198_00_300_out.png",
+            "label": 1,
+            "output": 0.9809467196464539
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10213_00_300_out.png",
+            "label": 1,
+            "output": 0.9799833297729492
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10191_00_300_out.png",
+            "label": 1,
+            "output": 0.9786309003829956
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10077_00_300_out.png",
+            "label": 1,
+            "output": 0.9761611819267273
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10213_00_250_out.png",
+            "label": 1,
+            "output": 0.9752774834632874
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10199_00_300_out.png",
+            "label": 1,
+            "output": 0.9745274186134338
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10191_00_250_out.png",
+            "label": 1,
+            "output": 0.9740955829620361
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10226_00_300_out.png",
+            "label": 1,
+            "output": 0.9740431904792786
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10105_00_300_out.png",
+            "label": 1,
+            "output": 0.9695823192596436
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10199_00_250_out.png",
+            "label": 1,
+            "output": 0.9676499962806702
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10228_00_250_out.png",
+            "label": 1,
+            "output": 0.9676163196563721
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10228_00_300_out.png",
+            "label": 1,
+            "output": 0.9675081372261047
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10217_00_300_out.png",
+            "label": 1,
+            "output": 0.9661517143249512
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10226_00_250_out.png",
+            "label": 1,
+            "output": 0.9660914540290833
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10217_00_250_out.png",
+            "label": 1,
+            "output": 0.9625018239021301
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10148_00_300_out.png",
+            "label": 1,
+            "output": 0.9600940346717834
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10159_00_100_out.png",
+            "label": 1,
+            "output": 0.9592825770378113
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10160_00_100_out.png",
+            "label": 1,
+            "output": 0.9570048451423645
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10185_00_100_out.png",
+            "label": 1,
+            "output": 0.9507551193237305
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10161_00_250_out.png",
+            "label": 1,
+            "output": 0.9462051391601562
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10187_00_100_out.png",
+            "label": 1,
+            "output": 0.9453228116035461
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10029_00_300_out.png",
+            "label": 1,
+            "output": 0.9449122548103333
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10227_00_300_out.png",
+            "label": 1,
+            "output": 0.9440587162971497
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10106_00_300_out.png",
+            "label": 1,
+            "output": 0.9433133006095886
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10228_00_100_out.png",
+            "label": 1,
+            "output": 0.942979633808136
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10161_00_300_out.png",
+            "label": 1,
+            "output": 0.9407554864883423
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10203_00_300_out.png",
+            "label": 1,
+            "output": 0.9398638010025024
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10148_00_250_out.png",
+            "label": 1,
+            "output": 0.936767041683197
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10093_00_300_out.png",
+            "label": 1,
+            "output": 0.9365127682685852
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10140_00_300_out.png",
+            "label": 1,
+            "output": 0.9349314570426941
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10226_00_100_out.png",
+            "label": 1,
+            "output": 0.934528112411499
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10165_00_250_out.png",
+            "label": 1,
+            "output": 0.9344590902328491
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10174_00_250_out.png",
+            "label": 1,
+            "output": 0.934194028377533
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10074_00_300_out.png",
+            "label": 1,
+            "output": 0.9335060715675354
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10217_00_100_out.png",
+            "label": 1,
+            "output": 0.9330549836158752
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10227_00_250_out.png",
+            "label": 1,
+            "output": 0.9321184754371643
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10191_00_100_out.png",
+            "label": 1,
+            "output": 0.9317983388900757
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10111_00_300_out.png",
+            "label": 1,
+            "output": 0.930780827999115
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10139_00_300_out.png",
+            "label": 1,
+            "output": 0.9301817417144775
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10213_00_100_out.png",
+            "label": 1,
+            "output": 0.9297740459442139
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10178_00_300_out.png",
+            "label": 1,
+            "output": 0.9283021092414856
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10172_00_100_out.png",
+            "label": 1,
+            "output": 0.9282412528991699
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10203_00_250_out.png",
+            "label": 1,
+            "output": 0.9280156493186951
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10027_00_300_out.png",
+            "label": 1,
+            "output": 0.9207388758659363
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10192_00_300_out.png",
+            "label": 1,
+            "output": 0.9207290410995483
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10125_00_250_out.png",
+            "label": 1,
+            "output": 0.9205508232116699
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10160_00_250_out.png",
+            "label": 1,
+            "output": 0.9192367196083069
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10148_00_100_out.png",
+            "label": 1,
+            "output": 0.9188733696937561
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10193_00_250_out.png",
+            "label": 1,
+            "output": 0.9182488918304443
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10116_00_300_out.png",
+            "label": 1,
+            "output": 0.9171922206878662
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10090_00_250_out.png",
+            "label": 1,
+            "output": 0.917145311832428
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10192_00_100_out.png",
+            "label": 1,
+            "output": 0.9169237017631531
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10159_00_250_out.png",
+            "label": 1,
+            "output": 0.9162191152572632
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10174_00_100_out.png",
+            "label": 1,
+            "output": 0.9139794707298279
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10192_00_250_out.png",
+            "label": 1,
+            "output": 0.9116131067276001
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10178_00_250_out.png",
+            "label": 1,
+            "output": 0.9102880358695984
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10159_00_300_out.png",
+            "label": 1,
+            "output": 0.9072669148445129
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10199_00_100_out.png",
+            "label": 1,
+            "output": 0.9050477147102356
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10174_00_300_out.png",
+            "label": 1,
+            "output": 0.9012579917907715
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10103_00_300_out.png",
+            "label": 1,
+            "output": 0.9007375836372375
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10165_00_300_out.png",
+            "label": 1,
+            "output": 0.8986566662788391
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10087_00_300_out.png",
+            "label": 1,
+            "output": 0.8963313102722168
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10161_00_100_out.png",
+            "label": 1,
+            "output": 0.8959179520606995
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10165_00_100_out.png",
+            "label": 1,
+            "output": 0.8931105136871338
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10040_00_250_out.png",
+            "label": 1,
+            "output": 0.8918589353561401
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10193_00_300_out.png",
+            "label": 1,
+            "output": 0.889507532119751
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10099_00_250_out.png",
+            "label": 1,
+            "output": 0.8892648816108704
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10110_00_250_out.png",
+            "label": 1,
+            "output": 0.8853054642677307
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10020_00_300_out.png",
+            "label": 1,
+            "output": 0.883320689201355
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10203_00_100_out.png",
+            "label": 1,
+            "output": 0.8814406991004944
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10027_00_100_out.png",
+            "label": 1,
+            "output": 0.879077672958374
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10029_00_100_out.png",
+            "label": 1,
+            "output": 0.8777700066566467
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10160_00_300_out.png",
+            "label": 1,
+            "output": 0.875190019607544
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10016_00_250_out.png",
+            "label": 1,
+            "output": 0.8731420040130615
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10043_00_300_out.png",
+            "label": 1,
+            "output": 0.8722031116485596
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10099_00_100_out.png",
+            "label": 1,
+            "output": 0.8721740245819092
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10178_00_100_out.png",
+            "label": 1,
+            "output": 0.8721216917037964
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10055_00_300_out.png",
+            "label": 1,
+            "output": 0.8717401027679443
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10022_00_250_out.png",
+            "label": 1,
+            "output": 0.8711258172988892
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10019_00_300_out.png",
+            "label": 1,
+            "output": 0.8709552884101868
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10153_00_300_out.png",
+            "label": 1,
+            "output": 0.8682593107223511
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10034_00_250_out.png",
+            "label": 1,
+            "output": 0.864861011505127
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10193_00_100_out.png",
+            "label": 1,
+            "output": 0.8643771409988403
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10227_00_100_out.png",
+            "label": 1,
+            "output": 0.862148106098175
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10153_00_250_out.png",
+            "label": 1,
+            "output": 0.8612646460533142
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10068_00_300_out.png",
+            "label": 1,
+            "output": 0.860653281211853
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10162_00_300_out.png",
+            "label": 1,
+            "output": 0.8581543564796448
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10125_00_100_out.png",
+            "label": 1,
+            "output": 0.8571135997772217
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10167_00_300_out.png",
+            "label": 1,
+            "output": 0.8571001887321472
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10176_00_300_out.png",
+            "label": 1,
+            "output": 0.8568587303161621
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10163_00_300_out.png",
+            "label": 1,
+            "output": 0.8564947843551636
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10090_00_100_out.png",
+            "label": 1,
+            "output": 0.8564115166664124
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10101_00_300_out.png",
+            "label": 1,
+            "output": 0.8505688309669495
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10035_00_250_out.png",
+            "label": 1,
+            "output": 0.8497453927993774
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10003_00_250_out.png",
+            "label": 1,
+            "output": 0.8442587852478027
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10089_00_250_out.png",
+            "label": 1,
+            "output": 0.8436937928199768
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10030_00_250_out.png",
+            "label": 1,
+            "output": 0.8420039415359497
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10006_00_250_out.png",
+            "label": 1,
+            "output": 0.8416604995727539
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10064_00_300_out.png",
+            "label": 1,
+            "output": 0.8388462662696838
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10024_00_300_out.png",
+            "label": 1,
+            "output": 0.8359265327453613
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10068_00_250_out.png",
+            "label": 1,
+            "output": 0.8325996994972229
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10054_00_250_out.png",
+            "label": 1,
+            "output": 0.8283964991569519
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10155_00_250_out.png",
+            "label": 1,
+            "output": 0.8276605606079102
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10011_00_250_out.png",
+            "label": 1,
+            "output": 0.8224298357963562
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10020_00_100_out.png",
+            "label": 1,
+            "output": 0.8215028047561646
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10172_00_250_out.png",
+            "label": 1,
+            "output": 0.8211055994033813
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10068_00_100_out.png",
+            "label": 1,
+            "output": 0.8195388317108154
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10051_00_300_out.png",
+            "label": 1,
+            "output": 0.8155799508094788
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10154_00_300_out.png",
+            "label": 1,
+            "output": 0.8155124187469482
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10043_00_100_out.png",
+            "label": 1,
+            "output": 0.8147231936454773
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10097_00_250_out.png",
+            "label": 1,
+            "output": 0.8140593767166138
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10040_00_100_out.png",
+            "label": 1,
+            "output": 0.8110026121139526
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10094_00_100_out.png",
+            "label": 1,
+            "output": 0.8069834113121033
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10172_00_300_out.png",
+            "label": 1,
+            "output": 0.801781952381134
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10082_00_300_out.png",
+            "label": 1,
+            "output": 0.7998263239860535
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10032_00_250_out.png",
+            "label": 1,
+            "output": 0.7983771562576294
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10138_00_250_out.png",
+            "label": 1,
+            "output": 0.7983313798904419
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10094_00_250_out.png",
+            "label": 1,
+            "output": 0.7980498671531677
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10154_00_250_out.png",
+            "label": 1,
+            "output": 0.7971767783164978
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10133_00_250_out.png",
+            "label": 1,
+            "output": 0.7969030737876892
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10126_00_300_out.png",
+            "label": 1,
+            "output": 0.7943244576454163
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10022_00_100_out.png",
+            "label": 1,
+            "output": 0.7888599634170532
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10055_00_250_out.png",
+            "label": 1,
+            "output": 0.786985456943512
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10153_00_100_out.png",
+            "label": 1,
+            "output": 0.7821056842803955
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10125_00_300_out.png",
+            "label": 1,
+            "output": 0.78182053565979
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10019_00_100_out.png",
+            "label": 1,
+            "output": 0.7808539271354675
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10144_00_250_out.png",
+            "label": 1,
+            "output": 0.7807992100715637
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10089_00_100_out.png",
+            "label": 1,
+            "output": 0.7787148356437683
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10113_00_250_out.png",
+            "label": 1,
+            "output": 0.7754723429679871
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10110_00_100_out.png",
+            "label": 1,
+            "output": 0.771935760974884
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10034_00_100_out.png",
+            "label": 1,
+            "output": 0.7718150019645691
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10024_00_100_out.png",
+            "label": 1,
+            "output": 0.7666715383529663
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10155_00_300_out.png",
+            "label": 1,
+            "output": 0.7660213708877563
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10154_00_100_out.png",
+            "label": 1,
+            "output": 0.7583715915679932
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10155_00_100_out.png",
+            "label": 1,
+            "output": 0.7536634802818298
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10016_00_100_out.png",
+            "label": 1,
+            "output": 0.7530031800270081
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10035_00_100_out.png",
+            "label": 1,
+            "output": 0.750078558921814
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10170_00_300_out.png",
+            "label": 1,
+            "output": 0.7491297721862793
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10134_00_250_out.png",
+            "label": 1,
+            "output": 0.7490187287330627
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10045_00_250_out.png",
+            "label": 1,
+            "output": 0.740532398223877
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10030_00_100_out.png",
+            "label": 1,
+            "output": 0.738578200340271
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10069_00_250_out.png",
+            "label": 1,
+            "output": 0.7356899976730347
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10064_00_100_out.png",
+            "label": 1,
+            "output": 0.7276832461357117
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10117_00_250_out.png",
+            "label": 1,
+            "output": 0.7218323349952698
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10054_00_100_out.png",
+            "label": 1,
+            "output": 0.7214541435241699
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10113_00_100_out.png",
+            "label": 1,
+            "output": 0.7214055061340332
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10049_00_300_out.png",
+            "label": 1,
+            "output": 0.7107450366020203
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10119_00_250_out.png",
+            "label": 1,
+            "output": 0.7093852162361145
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10097_00_100_out.png",
+            "label": 1,
+            "output": 0.7091220021247864
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10051_00_100_out.png",
+            "label": 1,
+            "output": 0.6982513070106506
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10133_00_100_out.png",
+            "label": 1,
+            "output": 0.6978372931480408
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10063_00_300_out.png",
+            "label": 1,
+            "output": 0.6896636486053467
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10134_00_100_out.png",
+            "label": 1,
+            "output": 0.6853587031364441
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10040_00_300_out.png",
+            "label": 1,
+            "output": 0.6786129474639893
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10045_00_100_out.png",
+            "label": 1,
+            "output": 0.6780888438224792
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10138_00_100_out.png",
+            "label": 1,
+            "output": 0.671255886554718
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10011_00_100_out.png",
+            "label": 1,
+            "output": 0.6598116159439087
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10032_00_100_out.png",
+            "label": 1,
+            "output": 0.6497569680213928
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10006_00_100_out.png",
+            "label": 1,
+            "output": 0.6394097805023193
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10049_00_100_out.png",
+            "label": 1,
+            "output": 0.6384355425834656
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10003_00_100_out.png",
+            "label": 1,
+            "output": 0.6383959054946899
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10144_00_100_out.png",
+            "label": 1,
+            "output": 0.6315640211105347
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10047_00_300_out.png",
+            "label": 1,
+            "output": 0.6260852813720703
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10055_00_100_out.png",
+            "label": 1,
+            "output": 0.5962863564491272
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10119_00_100_out.png",
+            "label": 1,
+            "output": 0.591156542301178
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10063_00_100_out.png",
+            "label": 1,
+            "output": 0.5805966854095459
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10069_00_100_out.png",
+            "label": 1,
+            "output": 0.5759788155555725
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10121_00_250_out.png",
+            "label": 1,
+            "output": 0.5743302702903748
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10117_00_100_out.png",
+            "label": 1,
+            "output": 0.5487785935401917
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10047_00_100_out.png",
+            "label": 1,
+            "output": 0.5309941172599792
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10145_00_300_out.png",
+            "label": 1,
+            "output": 0.49743372201919556
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10145_00_250_out.png",
+            "label": 1,
+            "output": 0.4455271065235138
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10121_00_100_out.png",
+            "label": 1,
+            "output": 0.40251272916793823
+        },
+        {
+            "path": "data/test/seeingdark/1_fake/10145_00_100_out.png",
+            "label": 1,
+            "output": 0.37176671624183655
+        }
+    ]
+}
