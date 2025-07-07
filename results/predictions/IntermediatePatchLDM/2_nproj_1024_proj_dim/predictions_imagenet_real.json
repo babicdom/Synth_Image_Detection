@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qafswzymfy.JPEG",
+            "label": 0,
+            "output": 0.9950018525123596
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uyfkdpzowl.JPEG",
+            "label": 0,
+            "output": 0.986643373966217
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jsozceeudr.JPEG",
+            "label": 0,
+            "output": 0.964082658290863
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jrdflpqmct.JPEG",
+            "label": 0,
+            "output": 0.9480102062225342
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xuzzmcdpux.JPEG",
+            "label": 0,
+            "output": 0.9117937088012695
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lizvdcrrbp.JPEG",
+            "label": 0,
+            "output": 0.8735353350639343
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bbqlufpjnl.JPEG",
+            "label": 0,
+            "output": 0.8683009147644043
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vthfgmonzr.JPEG",
+            "label": 0,
+            "output": 0.8349964618682861
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dojapmtjlo.JPEG",
+            "label": 0,
+            "output": 0.8036534786224365
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xrkvaduave.JPEG",
+            "label": 0,
+            "output": 0.7912034392356873
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hjshyxnjca.JPEG",
+            "label": 0,
+            "output": 0.7848649621009827
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/devyzpyxmr.JPEG",
+            "label": 0,
+            "output": 0.7814338803291321
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fzkskaljde.JPEG",
+            "label": 0,
+            "output": 0.7713099122047424
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/djfymdweky.JPEG",
+            "label": 0,
+            "output": 0.7675007581710815
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ttfwqkviia.JPEG",
+            "label": 0,
+            "output": 0.7619546055793762
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qlqolbjcgb.JPEG",
+            "label": 0,
+            "output": 0.7532380223274231
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikiqryhfmf.JPEG",
+            "label": 0,
+            "output": 0.7506817579269409
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lsvzbqhxgl.JPEG",
+            "label": 0,
+            "output": 0.746143102645874
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/txviitvyvk.JPEG",
+            "label": 0,
+            "output": 0.7277402281761169
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/odyhbcgchi.JPEG",
+            "label": 0,
+            "output": 0.7016989588737488
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/imkvcjrnck.JPEG",
+            "label": 0,
+            "output": 0.695360541343689
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/apdgetedbs.JPEG",
+            "label": 0,
+            "output": 0.6938837766647339
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wrmxjiicmz.JPEG",
+            "label": 0,
+            "output": 0.6824409365653992
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fgbgiwekim.JPEG",
+            "label": 0,
+            "output": 0.6791774034500122
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tptqwsoovh.JPEG",
+            "label": 0,
+            "output": 0.6772376894950867
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gmjuidkgzm.JPEG",
+            "label": 0,
+            "output": 0.6765608787536621
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zrifjlbkwb.JPEG",
+            "label": 0,
+            "output": 0.6662801504135132
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bcqofpsyca.JPEG",
+            "label": 0,
+            "output": 0.6654009222984314
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/stzvgskice.JPEG",
+            "label": 0,
+            "output": 0.6622694134712219
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kqtezbdvua.JPEG",
+            "label": 0,
+            "output": 0.6614693999290466
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hxyxqnzbzd.JPEG",
+            "label": 0,
+            "output": 0.6518563032150269
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/psvmrypqai.JPEG",
+            "label": 0,
+            "output": 0.6465290784835815
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bulfplvjow.JPEG",
+            "label": 0,
+            "output": 0.6439317464828491
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wrplkwvjrk.JPEG",
+            "label": 0,
+            "output": 0.6362447738647461
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hhmqvefsdm.JPEG",
+            "label": 0,
+            "output": 0.6303593516349792
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vtswogmbhi.JPEG",
+            "label": 0,
+            "output": 0.6220920085906982
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/olxtdigiux.JPEG",
+            "label": 0,
+            "output": 0.6112778186798096
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xvpiclvxzd.JPEG",
+            "label": 0,
+            "output": 0.6054133176803589
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gcenmxpfnz.JPEG",
+            "label": 0,
+            "output": 0.603084921836853
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jzcptodnmr.JPEG",
+            "label": 0,
+            "output": 0.5929884910583496
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fdetgrcfyf.JPEG",
+            "label": 0,
+            "output": 0.5892512798309326
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oyxvwvxuzr.JPEG",
+            "label": 0,
+            "output": 0.5880913734436035
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uvwnmuvfio.JPEG",
+            "label": 0,
+            "output": 0.5864273309707642
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/idrkdekvux.JPEG",
+            "label": 0,
+            "output": 0.5837488770484924
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xqlumlknls.JPEG",
+            "label": 0,
+            "output": 0.581106960773468
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikesdclcne.JPEG",
+            "label": 0,
+            "output": 0.5800573229789734
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yxdmgabgrh.JPEG",
+            "label": 0,
+            "output": 0.5678849220275879
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/etiolecymt.JPEG",
+            "label": 0,
+            "output": 0.5633536577224731
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zwkapmobkx.JPEG",
+            "label": 0,
+            "output": 0.5592555999755859
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nardlyjuyu.JPEG",
+            "label": 0,
+            "output": 0.550116777420044
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jbsbxfrewb.JPEG",
+            "label": 0,
+            "output": 0.5461464524269104
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rzvoxvfpaz.JPEG",
+            "label": 0,
+            "output": 0.5458242893218994
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zatnelrcct.JPEG",
+            "label": 0,
+            "output": 0.54141765832901
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mbtqfbwlry.JPEG",
+            "label": 0,
+            "output": 0.528549313545227
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pcudblgobu.JPEG",
+            "label": 0,
+            "output": 0.5242573022842407
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mpozbazafp.JPEG",
+            "label": 0,
+            "output": 0.5191511511802673
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ohycivlfdy.JPEG",
+            "label": 0,
+            "output": 0.5176897644996643
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dhepjncjkt.JPEG",
+            "label": 0,
+            "output": 0.5127179026603699
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ujqqamorwl.JPEG",
+            "label": 0,
+            "output": 0.5081318020820618
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yfbwcnyvch.JPEG",
+            "label": 0,
+            "output": 0.5046690106391907
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ahwxcijnxm.JPEG",
+            "label": 0,
+            "output": 0.498818963766098
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aoyyeorqer.JPEG",
+            "label": 0,
+            "output": 0.4938938319683075
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gudkwzmgfo.JPEG",
+            "label": 0,
+            "output": 0.49119848012924194
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kyrjicorfj.JPEG",
+            "label": 0,
+            "output": 0.48684993386268616
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ujtxojadtt.JPEG",
+            "label": 0,
+            "output": 0.47514888644218445
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/spnummyudf.JPEG",
+            "label": 0,
+            "output": 0.4661853611469269
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/svpwqjhjbu.JPEG",
+            "label": 0,
+            "output": 0.4640542268753052
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/etawvbajib.JPEG",
+            "label": 0,
+            "output": 0.4616607129573822
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eoacigirrk.JPEG",
+            "label": 0,
+            "output": 0.45624154806137085
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/osigoexsbv.JPEG",
+            "label": 0,
+            "output": 0.4554774761199951
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cjmyrxrisl.JPEG",
+            "label": 0,
+            "output": 0.45415812730789185
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/agjsmczzat.JPEG",
+            "label": 0,
+            "output": 0.4452999532222748
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fwnswugajt.JPEG",
+            "label": 0,
+            "output": 0.444125235080719
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vqrdytkinp.JPEG",
+            "label": 0,
+            "output": 0.434181272983551
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jgaqinqawj.JPEG",
+            "label": 0,
+            "output": 0.43327146768569946
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mszjipjvvf.JPEG",
+            "label": 0,
+            "output": 0.43316948413848877
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rhwouyajcq.JPEG",
+            "label": 0,
+            "output": 0.42877399921417236
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jgmtkjqepx.JPEG",
+            "label": 0,
+            "output": 0.4210529327392578
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikpmthprsw.JPEG",
+            "label": 0,
+            "output": 0.4174576997756958
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nipnhttkcg.JPEG",
+            "label": 0,
+            "output": 0.4163917899131775
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nfysclasrr.JPEG",
+            "label": 0,
+            "output": 0.41422975063323975
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/crwemtqnoq.JPEG",
+            "label": 0,
+            "output": 0.4079965353012085
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xjokdvoxpk.JPEG",
+            "label": 0,
+            "output": 0.4014890193939209
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xyhvtzywzh.JPEG",
+            "label": 0,
+            "output": 0.40017980337142944
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hxkeijjlvb.JPEG",
+            "label": 0,
+            "output": 0.39408940076828003
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/osrdcrocjh.JPEG",
+            "label": 0,
+            "output": 0.39193689823150635
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bkyusgjzud.JPEG",
+            "label": 0,
+            "output": 0.39187973737716675
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tigzfxjaeg.JPEG",
+            "label": 0,
+            "output": 0.39174237847328186
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gropzgdcno.JPEG",
+            "label": 0,
+            "output": 0.39145734906196594
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jgcuwqiqsa.JPEG",
+            "label": 0,
+            "output": 0.39049190282821655
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wgrmpdejfv.JPEG",
+            "label": 0,
+            "output": 0.3900375962257385
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mfmhhrlxuy.JPEG",
+            "label": 0,
+            "output": 0.389487087726593
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vcuznpgkuo.JPEG",
+            "label": 0,
+            "output": 0.3857189416885376
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cnthnmxcwh.JPEG",
+            "label": 0,
+            "output": 0.3843454122543335
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hhlwjuqsbz.JPEG",
+            "label": 0,
+            "output": 0.38433265686035156
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vueczavslq.JPEG",
+            "label": 0,
+            "output": 0.38389143347740173
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pptvyzosrk.JPEG",
+            "label": 0,
+            "output": 0.3821801245212555
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tunmixwvbf.JPEG",
+            "label": 0,
+            "output": 0.3817812502384186
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tibxcunvom.JPEG",
+            "label": 0,
+            "output": 0.376407653093338
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eqtzpzsbnp.JPEG",
+            "label": 0,
+            "output": 0.37206122279167175
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nkdchwutlw.JPEG",
+            "label": 0,
+            "output": 0.36847543716430664
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ddeuvxknie.JPEG",
+            "label": 0,
+            "output": 0.3683954179286957
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aqawlsbyzw.JPEG",
+            "label": 0,
+            "output": 0.3672727942466736
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/crqwxhlcfy.JPEG",
+            "label": 0,
+            "output": 0.36418887972831726
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xbftnrscst.JPEG",
+            "label": 0,
+            "output": 0.36408302187919617
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qieisvwywb.JPEG",
+            "label": 0,
+            "output": 0.36157649755477905
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oulguvnvpq.JPEG",
+            "label": 0,
+            "output": 0.3592318594455719
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/paozbcurkw.JPEG",
+            "label": 0,
+            "output": 0.35715481638908386
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bthfwgfwqz.JPEG",
+            "label": 0,
+            "output": 0.35585179924964905
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wyyltkwttn.JPEG",
+            "label": 0,
+            "output": 0.35215887427330017
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jqnuoffbtb.JPEG",
+            "label": 0,
+            "output": 0.3519023060798645
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/suxizjuvkp.JPEG",
+            "label": 0,
+            "output": 0.3514961898326874
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rsiiuivgsv.JPEG",
+            "label": 0,
+            "output": 0.34857437014579773
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mykongsfgc.JPEG",
+            "label": 0,
+            "output": 0.34613144397735596
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/amcjhcqbxr.JPEG",
+            "label": 0,
+            "output": 0.34207767248153687
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hhhwzgcieg.JPEG",
+            "label": 0,
+            "output": 0.34181511402130127
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/llaiteusmv.JPEG",
+            "label": 0,
+            "output": 0.33677029609680176
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lavlfbgnkn.JPEG",
+            "label": 0,
+            "output": 0.33663642406463623
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mrdnzxhmlr.JPEG",
+            "label": 0,
+            "output": 0.3352612555027008
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/orgateeurw.JPEG",
+            "label": 0,
+            "output": 0.335065096616745
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sxwaupvkta.JPEG",
+            "label": 0,
+            "output": 0.3345537781715393
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dbcoycuiyt.JPEG",
+            "label": 0,
+            "output": 0.33218780159950256
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bfuqjvwwlk.JPEG",
+            "label": 0,
+            "output": 0.33115339279174805
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bdwbeyarpc.JPEG",
+            "label": 0,
+            "output": 0.32604825496673584
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oxkzwdrxay.JPEG",
+            "label": 0,
+            "output": 0.3247529864311218
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/umnlmiykjp.JPEG",
+            "label": 0,
+            "output": 0.3206351399421692
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jdoqiuxxvj.JPEG",
+            "label": 0,
+            "output": 0.3190462589263916
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wxhrxapobk.JPEG",
+            "label": 0,
+            "output": 0.31121575832366943
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oqlgvyltdu.JPEG",
+            "label": 0,
+            "output": 0.3072599768638611
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tfdqevjhtk.JPEG",
+            "label": 0,
+            "output": 0.30637773871421814
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tzirqivkgc.JPEG",
+            "label": 0,
+            "output": 0.3010868430137634
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uxbgzfafqm.JPEG",
+            "label": 0,
+            "output": 0.2987768352031708
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yhwhnweccm.JPEG",
+            "label": 0,
+            "output": 0.2963123023509979
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ugrxyyeknx.JPEG",
+            "label": 0,
+            "output": 0.2913949191570282
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iqjkwjvday.JPEG",
+            "label": 0,
+            "output": 0.28636738657951355
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/toteczliil.JPEG",
+            "label": 0,
+            "output": 0.28627386689186096
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rrcbbbylog.JPEG",
+            "label": 0,
+            "output": 0.28200045228004456
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qitcgxcdmj.JPEG",
+            "label": 0,
+            "output": 0.277556836605072
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vjkzbfozoo.JPEG",
+            "label": 0,
+            "output": 0.2760359048843384
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nnuuhindgj.JPEG",
+            "label": 0,
+            "output": 0.2756606936454773
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/opueqmfkcd.JPEG",
+            "label": 0,
+            "output": 0.2756291627883911
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bjipeebzgu.JPEG",
+            "label": 0,
+            "output": 0.27045974135398865
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gaephzrdih.JPEG",
+            "label": 0,
+            "output": 0.26860734820365906
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bxoicyhddk.JPEG",
+            "label": 0,
+            "output": 0.2680959701538086
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ceyagwkqcf.JPEG",
+            "label": 0,
+            "output": 0.2666250765323639
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/splerbaidx.JPEG",
+            "label": 0,
+            "output": 0.2649695575237274
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oucmaedfum.JPEG",
+            "label": 0,
+            "output": 0.26448410749435425
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nvglpmddru.JPEG",
+            "label": 0,
+            "output": 0.26224929094314575
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kobditubhr.JPEG",
+            "label": 0,
+            "output": 0.25602731108665466
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/texcjvnjug.JPEG",
+            "label": 0,
+            "output": 0.2511776387691498
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iibymqusjk.JPEG",
+            "label": 0,
+            "output": 0.2502526640892029
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ijeyjgrtgr.JPEG",
+            "label": 0,
+            "output": 0.24945056438446045
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/annkzxvqsz.JPEG",
+            "label": 0,
+            "output": 0.24915911257266998
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rdhrjwoyvx.JPEG",
+            "label": 0,
+            "output": 0.24880100786685944
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tnxiofobrb.JPEG",
+            "label": 0,
+            "output": 0.24700430035591125
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sneggiimdk.JPEG",
+            "label": 0,
+            "output": 0.24593333899974823
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/msujwlrujo.JPEG",
+            "label": 0,
+            "output": 0.2454724907875061
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yfnrrhachx.JPEG",
+            "label": 0,
+            "output": 0.24133114516735077
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kkxuptmzof.JPEG",
+            "label": 0,
+            "output": 0.24017606675624847
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tflsufulfn.JPEG",
+            "label": 0,
+            "output": 0.23764002323150635
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/niehixqsig.JPEG",
+            "label": 0,
+            "output": 0.23237921297550201
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hcyfeanpao.JPEG",
+            "label": 0,
+            "output": 0.23158976435661316
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yxyqoryjpu.JPEG",
+            "label": 0,
+            "output": 0.2312946617603302
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vftoepxxkj.JPEG",
+            "label": 0,
+            "output": 0.23118136823177338
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ntbjfhgaww.JPEG",
+            "label": 0,
+            "output": 0.22996428608894348
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mgeezotzdw.JPEG",
+            "label": 0,
+            "output": 0.22898586094379425
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/izrfhzbwzc.JPEG",
+            "label": 0,
+            "output": 0.22606270015239716
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cqxwvqbknx.JPEG",
+            "label": 0,
+            "output": 0.22361791133880615
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sswokizojd.JPEG",
+            "label": 0,
+            "output": 0.22308959066867828
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hwfnoawnsx.JPEG",
+            "label": 0,
+            "output": 0.2213020920753479
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sxbarbxbis.JPEG",
+            "label": 0,
+            "output": 0.21918821334838867
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qmqkkwwggi.JPEG",
+            "label": 0,
+            "output": 0.21854540705680847
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jrzuxwwxsh.JPEG",
+            "label": 0,
+            "output": 0.2178603559732437
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hnihvkmnje.JPEG",
+            "label": 0,
+            "output": 0.21718855202198029
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gjpzqplype.JPEG",
+            "label": 0,
+            "output": 0.2162902057170868
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bebadtkmes.JPEG",
+            "label": 0,
+            "output": 0.21609608829021454
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/enrmnsxepz.JPEG",
+            "label": 0,
+            "output": 0.21214659512043
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yldbjbxfzj.JPEG",
+            "label": 0,
+            "output": 0.21011148393154144
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/attqnlwqgz.JPEG",
+            "label": 0,
+            "output": 0.2079056203365326
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bolqiuvdbo.JPEG",
+            "label": 0,
+            "output": 0.20693431794643402
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aqdcxmcowi.JPEG",
+            "label": 0,
+            "output": 0.20687633752822876
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nhmcszkgcq.JPEG",
+            "label": 0,
+            "output": 0.20659226179122925
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wqvahtytps.JPEG",
+            "label": 0,
+            "output": 0.20624272525310516
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rtkpyywobl.JPEG",
+            "label": 0,
+            "output": 0.20581012964248657
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ondtlaugas.JPEG",
+            "label": 0,
+            "output": 0.20448240637779236
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jjplgayvlc.JPEG",
+            "label": 0,
+            "output": 0.20411774516105652
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hnzpgeledt.JPEG",
+            "label": 0,
+            "output": 0.2038072943687439
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iwsairnpes.JPEG",
+            "label": 0,
+            "output": 0.2026146948337555
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/raxqxyzhrc.JPEG",
+            "label": 0,
+            "output": 0.20234112441539764
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xbwwtavscv.JPEG",
+            "label": 0,
+            "output": 0.20005135238170624
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bpadvommfd.JPEG",
+            "label": 0,
+            "output": 0.19847553968429565
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vkjmgldjai.JPEG",
+            "label": 0,
+            "output": 0.1969839185476303
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uprjbmydux.JPEG",
+            "label": 0,
+            "output": 0.196698859333992
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lqdjvtnjqn.JPEG",
+            "label": 0,
+            "output": 0.19649270176887512
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ywhajfzors.JPEG",
+            "label": 0,
+            "output": 0.19595669209957123
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cmuzaenxtt.JPEG",
+            "label": 0,
+            "output": 0.1952761858701706
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/csvtttfwut.JPEG",
+            "label": 0,
+            "output": 0.1923881322145462
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gswbqatuhn.JPEG",
+            "label": 0,
+            "output": 0.18818046152591705
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jabklaioxf.JPEG",
+            "label": 0,
+            "output": 0.18736250698566437
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nrzbgujfll.JPEG",
+            "label": 0,
+            "output": 0.18726247549057007
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rzrzcujvqg.JPEG",
+            "label": 0,
+            "output": 0.18492664396762848
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dncoarxujc.JPEG",
+            "label": 0,
+            "output": 0.18455316126346588
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qtwdrpnjgz.JPEG",
+            "label": 0,
+            "output": 0.18440282344818115
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uqyyhogjkx.JPEG",
+            "label": 0,
+            "output": 0.1835019439458847
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rgnjmqxait.JPEG",
+            "label": 0,
+            "output": 0.18293362855911255
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zdqmadvhbl.JPEG",
+            "label": 0,
+            "output": 0.18065416812896729
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xnidvmnavp.JPEG",
+            "label": 0,
+            "output": 0.17884379625320435
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uyrgewsxvy.JPEG",
+            "label": 0,
+            "output": 0.17794360220432281
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gbkfcdebke.JPEG",
+            "label": 0,
+            "output": 0.17473265528678894
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vmlzuywhlr.JPEG",
+            "label": 0,
+            "output": 0.17311327159404755
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dldztvvwrt.JPEG",
+            "label": 0,
+            "output": 0.17213810980319977
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gqpoiykvcs.JPEG",
+            "label": 0,
+            "output": 0.1715507060289383
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/usipjcyjoy.JPEG",
+            "label": 0,
+            "output": 0.16926229000091553
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vfhdjmajxv.JPEG",
+            "label": 0,
+            "output": 0.16547518968582153
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ygsthmtuoh.JPEG",
+            "label": 0,
+            "output": 0.16391779482364655
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ewspkgvjkv.JPEG",
+            "label": 0,
+            "output": 0.1637086719274521
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jkepwzmrqu.JPEG",
+            "label": 0,
+            "output": 0.16152234375476837
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ixykpgtooh.JPEG",
+            "label": 0,
+            "output": 0.15951305627822876
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mfzrfiyjrf.JPEG",
+            "label": 0,
+            "output": 0.1592993289232254
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dxvmhjeycz.JPEG",
+            "label": 0,
+            "output": 0.15913039445877075
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pyydtwntke.JPEG",
+            "label": 0,
+            "output": 0.1587827205657959
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mrxqbknovu.JPEG",
+            "label": 0,
+            "output": 0.15858568251132965
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/smmiazxocc.JPEG",
+            "label": 0,
+            "output": 0.1577664613723755
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wdjkwiwroa.JPEG",
+            "label": 0,
+            "output": 0.15672434866428375
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yatxnhyhyw.JPEG",
+            "label": 0,
+            "output": 0.15605692565441132
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mzuykzukvb.JPEG",
+            "label": 0,
+            "output": 0.1520709991455078
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ncyvrxsbym.JPEG",
+            "label": 0,
+            "output": 0.15200529992580414
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/llbqajpkux.JPEG",
+            "label": 0,
+            "output": 0.15013353526592255
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eayzvzrytx.JPEG",
+            "label": 0,
+            "output": 0.14927294850349426
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vipmyyceny.JPEG",
+            "label": 0,
+            "output": 0.14809846878051758
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pjvqcnpfqy.JPEG",
+            "label": 0,
+            "output": 0.14740872383117676
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nuhcuxjnpx.JPEG",
+            "label": 0,
+            "output": 0.14708629250526428
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mkkaiicgks.JPEG",
+            "label": 0,
+            "output": 0.14479507505893707
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zniuujlsax.JPEG",
+            "label": 0,
+            "output": 0.14308880269527435
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qjrpujocxn.JPEG",
+            "label": 0,
+            "output": 0.14290165901184082
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kpzyfbuxhi.JPEG",
+            "label": 0,
+            "output": 0.14230693876743317
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kqmbpossfq.JPEG",
+            "label": 0,
+            "output": 0.14228957891464233
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/exlwmokuxv.JPEG",
+            "label": 0,
+            "output": 0.1387171745300293
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/owavsapwhv.JPEG",
+            "label": 0,
+            "output": 0.13775032758712769
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iwkrlrqsbn.JPEG",
+            "label": 0,
+            "output": 0.1377166211605072
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pwhjtzqmis.JPEG",
+            "label": 0,
+            "output": 0.137074813246727
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/izuqfuuvtc.JPEG",
+            "label": 0,
+            "output": 0.1364945024251938
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xpdelxvksw.JPEG",
+            "label": 0,
+            "output": 0.13575175404548645
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eufbtfldxd.JPEG",
+            "label": 0,
+            "output": 0.13558347523212433
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xhhbffrquk.JPEG",
+            "label": 0,
+            "output": 0.13558241724967957
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cpyrataump.JPEG",
+            "label": 0,
+            "output": 0.13504469394683838
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/guljtnkdnj.JPEG",
+            "label": 0,
+            "output": 0.13500571250915527
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oaepibbwpe.JPEG",
+            "label": 0,
+            "output": 0.13456913828849792
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gkbjdvwiuz.JPEG",
+            "label": 0,
+            "output": 0.13451547920703888
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xmppkkdynh.JPEG",
+            "label": 0,
+            "output": 0.13320297002792358
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wgmfkffpbs.JPEG",
+            "label": 0,
+            "output": 0.13291817903518677
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mhaimbeqgl.JPEG",
+            "label": 0,
+            "output": 0.13196192681789398
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oertmmpfuq.JPEG",
+            "label": 0,
+            "output": 0.1311759650707245
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zoxknkpgoh.JPEG",
+            "label": 0,
+            "output": 0.13096883893013
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lnavxqqxfa.JPEG",
+            "label": 0,
+            "output": 0.13039672374725342
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fjjzjquuqt.JPEG",
+            "label": 0,
+            "output": 0.12858924269676208
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qdnqcoyzar.JPEG",
+            "label": 0,
+            "output": 0.12774400413036346
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yecvsijdsn.JPEG",
+            "label": 0,
+            "output": 0.1272708922624588
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yinujujzud.JPEG",
+            "label": 0,
+            "output": 0.12603995203971863
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rjddhlzmqd.JPEG",
+            "label": 0,
+            "output": 0.12500934302806854
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/psosqfwlqc.JPEG",
+            "label": 0,
+            "output": 0.1246958002448082
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kqhrtvmeux.JPEG",
+            "label": 0,
+            "output": 0.12336309254169464
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rbihqctsdb.JPEG",
+            "label": 0,
+            "output": 0.12334668636322021
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wxmydpmpup.JPEG",
+            "label": 0,
+            "output": 0.12303885817527771
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bsoomuiluf.JPEG",
+            "label": 0,
+            "output": 0.12253299355506897
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jzpjgkemjx.JPEG",
+            "label": 0,
+            "output": 0.12132219970226288
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sndlxnwwey.JPEG",
+            "label": 0,
+            "output": 0.12000447511672974
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jezlovnknx.JPEG",
+            "label": 0,
+            "output": 0.11991766840219498
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zaqfmruinv.JPEG",
+            "label": 0,
+            "output": 0.11935868114233017
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kguycdreay.JPEG",
+            "label": 0,
+            "output": 0.11678875237703323
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fizdknwdwf.JPEG",
+            "label": 0,
+            "output": 0.11653280258178711
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uwzfugbfno.JPEG",
+            "label": 0,
+            "output": 0.11617645621299744
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kszghluqlw.JPEG",
+            "label": 0,
+            "output": 0.11594180762767792
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mzhrvznlhw.JPEG",
+            "label": 0,
+            "output": 0.11564003676176071
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gudshwhvvv.JPEG",
+            "label": 0,
+            "output": 0.11484816670417786
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mqbzprykrc.JPEG",
+            "label": 0,
+            "output": 0.11268530786037445
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qpjsgmteke.JPEG",
+            "label": 0,
+            "output": 0.11222648620605469
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qhuylytsyy.JPEG",
+            "label": 0,
+            "output": 0.11092530190944672
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sqtxlhaqbh.JPEG",
+            "label": 0,
+            "output": 0.1098300963640213
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/leadpebgwn.JPEG",
+            "label": 0,
+            "output": 0.10833606868982315
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hzrxscnjew.JPEG",
+            "label": 0,
+            "output": 0.1077391505241394
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kiimhjeatg.JPEG",
+            "label": 0,
+            "output": 0.10773058980703354
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sevosnzutr.JPEG",
+            "label": 0,
+            "output": 0.10661797970533371
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fuqmkbouip.JPEG",
+            "label": 0,
+            "output": 0.1038057953119278
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tivixbdipm.JPEG",
+            "label": 0,
+            "output": 0.10352075845003128
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ofgvdkgdnd.JPEG",
+            "label": 0,
+            "output": 0.10301478207111359
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ftampoyprn.JPEG",
+            "label": 0,
+            "output": 0.1024005189538002
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mubozyqcgp.JPEG",
+            "label": 0,
+            "output": 0.10212098807096481
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jjmznfxyeg.JPEG",
+            "label": 0,
+            "output": 0.10185737162828445
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gsjragxgrg.JPEG",
+            "label": 0,
+            "output": 0.09967990219593048
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/shkxdbeqpn.JPEG",
+            "label": 0,
+            "output": 0.09738297015428543
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wcuupgwotu.JPEG",
+            "label": 0,
+            "output": 0.09556381404399872
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bbdiioaqyn.JPEG",
+            "label": 0,
+            "output": 0.09556308388710022
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gzzhkwcczo.JPEG",
+            "label": 0,
+            "output": 0.09506803005933762
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tbxpyvxjym.JPEG",
+            "label": 0,
+            "output": 0.09479561448097229
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/acpwmtyztu.JPEG",
+            "label": 0,
+            "output": 0.09449248760938644
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ovebmmaneb.JPEG",
+            "label": 0,
+            "output": 0.0944441556930542
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dimuqznulw.JPEG",
+            "label": 0,
+            "output": 0.09268016368150711
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/djumibnmaq.JPEG",
+            "label": 0,
+            "output": 0.09221085160970688
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gxexzzlcld.JPEG",
+            "label": 0,
+            "output": 0.09172317385673523
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lakovwneny.JPEG",
+            "label": 0,
+            "output": 0.09129416942596436
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/frrzmsczog.JPEG",
+            "label": 0,
+            "output": 0.08996960520744324
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ayibbogxvl.JPEG",
+            "label": 0,
+            "output": 0.08977680653333664
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bobirihsmf.JPEG",
+            "label": 0,
+            "output": 0.08960630744695663
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/efykeyysvi.JPEG",
+            "label": 0,
+            "output": 0.08910730481147766
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uvweqxeurs.JPEG",
+            "label": 0,
+            "output": 0.08870215713977814
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hlwefvuprq.JPEG",
+            "label": 0,
+            "output": 0.08784127980470657
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wfyfdsoqjb.JPEG",
+            "label": 0,
+            "output": 0.08754276484251022
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bfiknazsha.JPEG",
+            "label": 0,
+            "output": 0.08736894279718399
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iuwybjqiha.JPEG",
+            "label": 0,
+            "output": 0.08648736029863358
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cswedhbgpd.JPEG",
+            "label": 0,
+            "output": 0.08639710396528244
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ficowhhyiy.JPEG",
+            "label": 0,
+            "output": 0.08626745641231537
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yjjufldsnq.JPEG",
+            "label": 0,
+            "output": 0.08576707541942596
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qngsmynlht.JPEG",
+            "label": 0,
+            "output": 0.08562325686216354
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yoqkeajskn.JPEG",
+            "label": 0,
+            "output": 0.08517700433731079
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/danyxpbnqf.JPEG",
+            "label": 0,
+            "output": 0.08491244167089462
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/trssloofom.JPEG",
+            "label": 0,
+            "output": 0.08381428569555283
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ajldduomvc.JPEG",
+            "label": 0,
+            "output": 0.08366713672876358
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rgiwpyxekm.JPEG",
+            "label": 0,
+            "output": 0.08286266028881073
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/crzzjqmtan.JPEG",
+            "label": 0,
+            "output": 0.08167897164821625
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fgkquzymgd.JPEG",
+            "label": 0,
+            "output": 0.0816408097743988
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kxyebvmqsl.JPEG",
+            "label": 0,
+            "output": 0.08159628510475159
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fegqolkrls.JPEG",
+            "label": 0,
+            "output": 0.08110085874795914
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fmlqvsmgwg.JPEG",
+            "label": 0,
+            "output": 0.0809926763176918
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/viwuulrpyk.JPEG",
+            "label": 0,
+            "output": 0.08082721382379532
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wkkhoodytf.JPEG",
+            "label": 0,
+            "output": 0.07967793196439743
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fnqlfrabai.JPEG",
+            "label": 0,
+            "output": 0.07903850823640823
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zchftlmgnh.JPEG",
+            "label": 0,
+            "output": 0.07849039137363434
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/joshvzhgck.JPEG",
+            "label": 0,
+            "output": 0.07847030460834503
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ffuzczfqav.JPEG",
+            "label": 0,
+            "output": 0.07837171107530594
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lgpvmdfncv.JPEG",
+            "label": 0,
+            "output": 0.07753905653953552
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mizxozzqsb.JPEG",
+            "label": 0,
+            "output": 0.07700948417186737
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hwfugtliat.JPEG",
+            "label": 0,
+            "output": 0.0761352926492691
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sssvouruij.JPEG",
+            "label": 0,
+            "output": 0.07576707005500793
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eolimvhygz.JPEG",
+            "label": 0,
+            "output": 0.07515832781791687
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bzuoezatge.JPEG",
+            "label": 0,
+            "output": 0.0749857947230339
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/olxnaenbde.JPEG",
+            "label": 0,
+            "output": 0.0734502449631691
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nhcqvlreou.JPEG",
+            "label": 0,
+            "output": 0.07338295876979828
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pekxwkfhua.JPEG",
+            "label": 0,
+            "output": 0.07278753072023392
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vpwnxqxbks.JPEG",
+            "label": 0,
+            "output": 0.07253197580575943
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xfhgbduucl.JPEG",
+            "label": 0,
+            "output": 0.0720348209142685
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/heasqjcmsg.JPEG",
+            "label": 0,
+            "output": 0.07043570280075073
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ybpiflwjwj.JPEG",
+            "label": 0,
+            "output": 0.0698455274105072
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikidgqmbia.JPEG",
+            "label": 0,
+            "output": 0.06954973936080933
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nrqrcqxudf.JPEG",
+            "label": 0,
+            "output": 0.06922946870326996
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nypkpjmzri.JPEG",
+            "label": 0,
+            "output": 0.06742575019598007
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ogdtdsagel.JPEG",
+            "label": 0,
+            "output": 0.06730075925588608
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/afwwethmvf.JPEG",
+            "label": 0,
+            "output": 0.06719987094402313
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hxfciehznr.JPEG",
+            "label": 0,
+            "output": 0.06716393679380417
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ranqpkoerl.JPEG",
+            "label": 0,
+            "output": 0.06706754118204117
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nrglavnpuu.JPEG",
+            "label": 0,
+            "output": 0.06642954796552658
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qvxgfrmtjl.JPEG",
+            "label": 0,
+            "output": 0.0661504790186882
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yzkphttipt.JPEG",
+            "label": 0,
+            "output": 0.06562300771474838
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ljluvxkeau.JPEG",
+            "label": 0,
+            "output": 0.06539677828550339
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wrxxltdsxi.JPEG",
+            "label": 0,
+            "output": 0.0653478354215622
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eaesoxacae.JPEG",
+            "label": 0,
+            "output": 0.06494039297103882
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/obmkmjnvet.JPEG",
+            "label": 0,
+            "output": 0.06463128328323364
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lsdusudljb.JPEG",
+            "label": 0,
+            "output": 0.06454937160015106
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sbuowwvzjw.JPEG",
+            "label": 0,
+            "output": 0.06398819386959076
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fgizsruyxb.JPEG",
+            "label": 0,
+            "output": 0.0634213536977768
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/elpsbyigve.JPEG",
+            "label": 0,
+            "output": 0.06297294795513153
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lpvhehbmzv.JPEG",
+            "label": 0,
+            "output": 0.06192140281200409
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fjyemnydtk.JPEG",
+            "label": 0,
+            "output": 0.061640117317438126
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uesrfqrmys.JPEG",
+            "label": 0,
+            "output": 0.061251550912857056
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bbupregfhp.JPEG",
+            "label": 0,
+            "output": 0.06085452437400818
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ommdrgxtbr.JPEG",
+            "label": 0,
+            "output": 0.060575224459171295
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sepihwqglu.JPEG",
+            "label": 0,
+            "output": 0.06056123971939087
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qnqvwdpmam.JPEG",
+            "label": 0,
+            "output": 0.06027849391102791
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/otvbonovtr.JPEG",
+            "label": 0,
+            "output": 0.060076430439949036
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nejpnuzhor.JPEG",
+            "label": 0,
+            "output": 0.059605881571769714
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/khmsldutff.JPEG",
+            "label": 0,
+            "output": 0.05936410278081894
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jlmbbubxmr.JPEG",
+            "label": 0,
+            "output": 0.0590103454887867
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kgmqyotoqo.JPEG",
+            "label": 0,
+            "output": 0.05877630412578583
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bqeilhkbun.JPEG",
+            "label": 0,
+            "output": 0.058740727603435516
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rakzbwxeme.JPEG",
+            "label": 0,
+            "output": 0.05855022743344307
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cxjsjqusph.JPEG",
+            "label": 0,
+            "output": 0.05814666673541069
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lsmostdlua.JPEG",
+            "label": 0,
+            "output": 0.05801890417933464
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ftojusbwcq.JPEG",
+            "label": 0,
+            "output": 0.05800909176468849
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/klcsuijwqh.JPEG",
+            "label": 0,
+            "output": 0.05768809840083122
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yvwtaordyd.JPEG",
+            "label": 0,
+            "output": 0.057377975434064865
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xvulqfblsf.JPEG",
+            "label": 0,
+            "output": 0.05704260244965553
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hmasnickhh.JPEG",
+            "label": 0,
+            "output": 0.05666050687432289
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ukoxsbspvb.JPEG",
+            "label": 0,
+            "output": 0.05580878257751465
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qyjvmgdrmq.JPEG",
+            "label": 0,
+            "output": 0.05515813082456589
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/surgjkswmj.JPEG",
+            "label": 0,
+            "output": 0.054601721465587616
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fpjptmloys.JPEG",
+            "label": 0,
+            "output": 0.054322972893714905
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jtprghimeh.JPEG",
+            "label": 0,
+            "output": 0.05424949526786804
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qyaknxvzwp.JPEG",
+            "label": 0,
+            "output": 0.05422171577811241
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vpokhpnoyy.JPEG",
+            "label": 0,
+            "output": 0.05417374521493912
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vvdfxbwxxd.JPEG",
+            "label": 0,
+            "output": 0.05390346422791481
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pccthywpgs.JPEG",
+            "label": 0,
+            "output": 0.053876299411058426
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/czkhjnfjgr.JPEG",
+            "label": 0,
+            "output": 0.05270453914999962
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ccbrpvitlb.JPEG",
+            "label": 0,
+            "output": 0.052658721804618835
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uzjbonpwla.JPEG",
+            "label": 0,
+            "output": 0.0513463169336319
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qejahcqthz.JPEG",
+            "label": 0,
+            "output": 0.05106821656227112
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gwwprxqtre.JPEG",
+            "label": 0,
+            "output": 0.05006515607237816
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tjonndufse.JPEG",
+            "label": 0,
+            "output": 0.04969478026032448
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ahnijblsap.JPEG",
+            "label": 0,
+            "output": 0.049537964165210724
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hajmuavfdr.JPEG",
+            "label": 0,
+            "output": 0.04838644713163376
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aadlygmazf.JPEG",
+            "label": 0,
+            "output": 0.048300210386514664
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uqgovdwcrr.JPEG",
+            "label": 0,
+            "output": 0.048291418701410294
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rprdsmygod.JPEG",
+            "label": 0,
+            "output": 0.04806503653526306
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bbsnktsonl.JPEG",
+            "label": 0,
+            "output": 0.04787842556834221
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/psvhorutyv.JPEG",
+            "label": 0,
+            "output": 0.04764646664261818
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bwvinmojcw.JPEG",
+            "label": 0,
+            "output": 0.04756978899240494
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ndjgpgfppo.JPEG",
+            "label": 0,
+            "output": 0.04741115868091583
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vitzpaholy.JPEG",
+            "label": 0,
+            "output": 0.047295305877923965
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/snjzonvpow.JPEG",
+            "label": 0,
+            "output": 0.04713902994990349
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ovuipynpix.JPEG",
+            "label": 0,
+            "output": 0.04702841863036156
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hrayggkgxb.JPEG",
+            "label": 0,
+            "output": 0.04696451872587204
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oqgbxaotgn.JPEG",
+            "label": 0,
+            "output": 0.04685664549469948
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jopvgvsrel.JPEG",
+            "label": 0,
+            "output": 0.04647930711507797
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oqargxuywp.JPEG",
+            "label": 0,
+            "output": 0.04617323353886604
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dexhjtncni.JPEG",
+            "label": 0,
+            "output": 0.04603586345911026
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kbpanibqgu.JPEG",
+            "label": 0,
+            "output": 0.04591381549835205
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jroisduzzw.JPEG",
+            "label": 0,
+            "output": 0.045595090836286545
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tgihtkfpyi.JPEG",
+            "label": 0,
+            "output": 0.045537304133176804
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/owbarkgfyc.JPEG",
+            "label": 0,
+            "output": 0.04525076970458031
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vsivgpmche.JPEG",
+            "label": 0,
+            "output": 0.04506923258304596
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mocygqjmlh.JPEG",
+            "label": 0,
+            "output": 0.04491236433386803
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kkamuhddsi.JPEG",
+            "label": 0,
+            "output": 0.044879309833049774
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nytqcbcfth.JPEG",
+            "label": 0,
+            "output": 0.04402881860733032
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qgdbbafuhn.JPEG",
+            "label": 0,
+            "output": 0.042850933969020844
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ccatehwpeu.JPEG",
+            "label": 0,
+            "output": 0.04278014227747917
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dbmufhmuzs.JPEG",
+            "label": 0,
+            "output": 0.04215042665600777
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ocmzcjegeg.JPEG",
+            "label": 0,
+            "output": 0.04161912947893143
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rpwhvvwxag.JPEG",
+            "label": 0,
+            "output": 0.04155682772397995
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikptlvvios.JPEG",
+            "label": 0,
+            "output": 0.04139302298426628
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gdnoweboab.JPEG",
+            "label": 0,
+            "output": 0.04082202911376953
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vblsrmonrr.JPEG",
+            "label": 0,
+            "output": 0.04058903455734253
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hsvrfsodig.JPEG",
+            "label": 0,
+            "output": 0.04029964655637741
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iojhamvzyv.JPEG",
+            "label": 0,
+            "output": 0.04016219824552536
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sjigynomsm.JPEG",
+            "label": 0,
+            "output": 0.03981452062726021
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zmqpqnavds.JPEG",
+            "label": 0,
+            "output": 0.03893311694264412
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gpwdhgxzbq.JPEG",
+            "label": 0,
+            "output": 0.03853480890393257
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tqgzodmdpm.JPEG",
+            "label": 0,
+            "output": 0.03798694908618927
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kzflnrbcwz.JPEG",
+            "label": 0,
+            "output": 0.03787269443273544
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fwqtzyeait.JPEG",
+            "label": 0,
+            "output": 0.037794895470142365
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xqyjzhnfqu.JPEG",
+            "label": 0,
+            "output": 0.03771897777915001
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eecrzmaxjv.JPEG",
+            "label": 0,
+            "output": 0.03717365488409996
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qxiyuhxevk.JPEG",
+            "label": 0,
+            "output": 0.03681664168834686
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zacjdmmloj.JPEG",
+            "label": 0,
+            "output": 0.0367535725235939
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nhlvajciai.JPEG",
+            "label": 0,
+            "output": 0.0365385040640831
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/npfhwxylge.JPEG",
+            "label": 0,
+            "output": 0.03643585741519928
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ttxhncprvt.JPEG",
+            "label": 0,
+            "output": 0.03627972677350044
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/swhkqaywlh.JPEG",
+            "label": 0,
+            "output": 0.035719387233257294
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bicflvshvw.JPEG",
+            "label": 0,
+            "output": 0.03565169498324394
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dsxuevcdxk.JPEG",
+            "label": 0,
+            "output": 0.03514979034662247
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dbifuulczh.JPEG",
+            "label": 0,
+            "output": 0.03470408171415329
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bucfscjvsb.JPEG",
+            "label": 0,
+            "output": 0.03465741500258446
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pcuxcikgcq.JPEG",
+            "label": 0,
+            "output": 0.0344851091504097
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/idvfzzxvyh.JPEG",
+            "label": 0,
+            "output": 0.03408657759428024
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/flzalpsilp.JPEG",
+            "label": 0,
+            "output": 0.03371192887425423
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yaaqlxnzhi.JPEG",
+            "label": 0,
+            "output": 0.0334429033100605
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rigaxqbjbr.JPEG",
+            "label": 0,
+            "output": 0.03339456766843796
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fuahrcqbgk.JPEG",
+            "label": 0,
+            "output": 0.03320544958114624
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jgyprvacek.JPEG",
+            "label": 0,
+            "output": 0.03269200772047043
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/muszivpifs.JPEG",
+            "label": 0,
+            "output": 0.0318884514272213
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jvctzionai.JPEG",
+            "label": 0,
+            "output": 0.0314045287668705
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tuptxvyplv.JPEG",
+            "label": 0,
+            "output": 0.03138480708003044
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/marjmzmnja.JPEG",
+            "label": 0,
+            "output": 0.03126729652285576
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/efgchmasis.JPEG",
+            "label": 0,
+            "output": 0.031008437275886536
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gvvfxpftgt.JPEG",
+            "label": 0,
+            "output": 0.030843093991279602
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aofcqpcyfk.JPEG",
+            "label": 0,
+            "output": 0.030667606741189957
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/stnicrfcsk.JPEG",
+            "label": 0,
+            "output": 0.030665939673781395
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cmgdpkxuef.JPEG",
+            "label": 0,
+            "output": 0.030660398304462433
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/apwufqzgrg.JPEG",
+            "label": 0,
+            "output": 0.030581319704651833
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jecdlrpjba.JPEG",
+            "label": 0,
+            "output": 0.030493495985865593
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lqrkxsvuvt.JPEG",
+            "label": 0,
+            "output": 0.030385103076696396
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ykhbfkbqqc.JPEG",
+            "label": 0,
+            "output": 0.030280962586402893
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lkwvbsljma.JPEG",
+            "label": 0,
+            "output": 0.029819808900356293
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mzwodmlccu.JPEG",
+            "label": 0,
+            "output": 0.029653331264853477
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/newahshtuc.JPEG",
+            "label": 0,
+            "output": 0.029504192993044853
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qwawgjhkcz.JPEG",
+            "label": 0,
+            "output": 0.02914932370185852
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qofcjlhwbv.JPEG",
+            "label": 0,
+            "output": 0.029147515073418617
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pcvfvfsxek.JPEG",
+            "label": 0,
+            "output": 0.029045846313238144
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hkhpikinqs.JPEG",
+            "label": 0,
+            "output": 0.028990045189857483
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/igjyxqgebm.JPEG",
+            "label": 0,
+            "output": 0.028940822929143906
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ztytemyoxv.JPEG",
+            "label": 0,
+            "output": 0.02827605977654457
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kvaphythne.JPEG",
+            "label": 0,
+            "output": 0.028189411386847496
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jezexlfhiq.JPEG",
+            "label": 0,
+            "output": 0.028138505294919014
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xnesojheqr.JPEG",
+            "label": 0,
+            "output": 0.028108447790145874
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ughldndbio.JPEG",
+            "label": 0,
+            "output": 0.027505353093147278
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jmqnijkden.JPEG",
+            "label": 0,
+            "output": 0.027161329984664917
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dtvfjwtgbk.JPEG",
+            "label": 0,
+            "output": 0.026681678369641304
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vazvwojjfh.JPEG",
+            "label": 0,
+            "output": 0.026457156985998154
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xdpqtpwyiz.JPEG",
+            "label": 0,
+            "output": 0.02597450092434883
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xvrgnnvmdu.JPEG",
+            "label": 0,
+            "output": 0.02579513005912304
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ajefhvvxek.JPEG",
+            "label": 0,
+            "output": 0.025625888258218765
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jhuyduptth.JPEG",
+            "label": 0,
+            "output": 0.02542193979024887
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dhjedfczru.JPEG",
+            "label": 0,
+            "output": 0.0252631064504385
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aksszgcpfr.JPEG",
+            "label": 0,
+            "output": 0.025214413180947304
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ntwekxxoly.JPEG",
+            "label": 0,
+            "output": 0.025071147829294205
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ilaptngbkl.JPEG",
+            "label": 0,
+            "output": 0.024542585015296936
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ybbbdeihcf.JPEG",
+            "label": 0,
+            "output": 0.024465208873152733
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gwfboomsuw.JPEG",
+            "label": 0,
+            "output": 0.024339890107512474
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/irplnnyutq.JPEG",
+            "label": 0,
+            "output": 0.024282407015562057
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aakydlwfer.JPEG",
+            "label": 0,
+            "output": 0.02419034205377102
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gbzvqfsaud.JPEG",
+            "label": 0,
+            "output": 0.02407301776111126
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mlxvdfndsh.JPEG",
+            "label": 0,
+            "output": 0.023765556514263153
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uzunqwixgv.JPEG",
+            "label": 0,
+            "output": 0.023645443841814995
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zbnbosutcn.JPEG",
+            "label": 0,
+            "output": 0.02354569174349308
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rtiaijvnif.JPEG",
+            "label": 0,
+            "output": 0.02334469184279442
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ypdjyjlopx.JPEG",
+            "label": 0,
+            "output": 0.023051265627145767
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/npgjxoaxcz.JPEG",
+            "label": 0,
+            "output": 0.022764986380934715
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ffduxyansq.JPEG",
+            "label": 0,
+            "output": 0.02275398187339306
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cvohxivzjd.JPEG",
+            "label": 0,
+            "output": 0.022658199071884155
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/znwafizosm.JPEG",
+            "label": 0,
+            "output": 0.0226052924990654
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dexbjiwpmb.JPEG",
+            "label": 0,
+            "output": 0.0225982703268528
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mbkwfjqeay.JPEG",
+            "label": 0,
+            "output": 0.02232595905661583
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/enmfgbxzpf.JPEG",
+            "label": 0,
+            "output": 0.02231471799314022
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sdpkvjboba.JPEG",
+            "label": 0,
+            "output": 0.022208217531442642
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fzzunuvfgl.JPEG",
+            "label": 0,
+            "output": 0.022138653323054314
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mtftroydhh.JPEG",
+            "label": 0,
+            "output": 0.02180759236216545
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ettedwuoqe.JPEG",
+            "label": 0,
+            "output": 0.02179686166346073
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vfjqbhhdhb.JPEG",
+            "label": 0,
+            "output": 0.021686309948563576
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fvbwueqmmc.JPEG",
+            "label": 0,
+            "output": 0.021181752905249596
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nhlzsfyryf.JPEG",
+            "label": 0,
+            "output": 0.02092912793159485
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/shyyqqechu.JPEG",
+            "label": 0,
+            "output": 0.02091110870242119
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/owymrcrmoo.JPEG",
+            "label": 0,
+            "output": 0.020368702709674835
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zxnpcvwbfb.JPEG",
+            "label": 0,
+            "output": 0.020201006904244423
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gtidkpfxcc.JPEG",
+            "label": 0,
+            "output": 0.0200019683688879
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mkigwustvn.JPEG",
+            "label": 0,
+            "output": 0.019927017390727997
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yyfgzdkznw.JPEG",
+            "label": 0,
+            "output": 0.019792992621660233
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/apfyxprqpm.JPEG",
+            "label": 0,
+            "output": 0.019682005047798157
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wxulzwiqwm.JPEG",
+            "label": 0,
+            "output": 0.019669706001877785
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vocoamkcza.JPEG",
+            "label": 0,
+            "output": 0.01942051574587822
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/arnnhazyia.JPEG",
+            "label": 0,
+            "output": 0.019345859065651894
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gliascthpi.JPEG",
+            "label": 0,
+            "output": 0.019337404519319534
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/orebaohval.JPEG",
+            "label": 0,
+            "output": 0.01927093416452408
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lkbpelvrth.JPEG",
+            "label": 0,
+            "output": 0.019017508253455162
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ukcwfevbtz.JPEG",
+            "label": 0,
+            "output": 0.019000278785824776
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gbmtgdhzrx.JPEG",
+            "label": 0,
+            "output": 0.018675347790122032
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gaezkwugoh.JPEG",
+            "label": 0,
+            "output": 0.018593747168779373
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jvfamsvrme.JPEG",
+            "label": 0,
+            "output": 0.018589040264487267
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mcsihazpje.JPEG",
+            "label": 0,
+            "output": 0.01846064068377018
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tvdnjojlmh.JPEG",
+            "label": 0,
+            "output": 0.01837128959596157
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zzrnxnjzyx.JPEG",
+            "label": 0,
+            "output": 0.01835903711616993
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cbmykoukdb.JPEG",
+            "label": 0,
+            "output": 0.018179602921009064
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cdjghtyvsn.JPEG",
+            "label": 0,
+            "output": 0.017974980175495148
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pksmcsxxra.JPEG",
+            "label": 0,
+            "output": 0.017753349617123604
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vcsznknzhw.JPEG",
+            "label": 0,
+            "output": 0.017652908340096474
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yhxjifarjw.JPEG",
+            "label": 0,
+            "output": 0.017401913180947304
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gckzbyionz.JPEG",
+            "label": 0,
+            "output": 0.01734592579305172
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jpkbhfmhql.JPEG",
+            "label": 0,
+            "output": 0.017303943634033203
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jqihknjmkf.JPEG",
+            "label": 0,
+            "output": 0.01730160042643547
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/htpewtqebr.JPEG",
+            "label": 0,
+            "output": 0.017133239656686783
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aociqzuesd.JPEG",
+            "label": 0,
+            "output": 0.01702599599957466
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xfblvcbesb.JPEG",
+            "label": 0,
+            "output": 0.016821246594190598
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ttwsrquzox.JPEG",
+            "label": 0,
+            "output": 0.016679486259818077
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nyrfgpglht.JPEG",
+            "label": 0,
+            "output": 0.016588712111115456
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/usxygmfmlb.JPEG",
+            "label": 0,
+            "output": 0.016564417630434036
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hdtfurantf.JPEG",
+            "label": 0,
+            "output": 0.01650490239262581
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jsytpmwrvb.JPEG",
+            "label": 0,
+            "output": 0.016450539231300354
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cmjapngcpn.JPEG",
+            "label": 0,
+            "output": 0.01642257161438465
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wnjjxqinho.JPEG",
+            "label": 0,
+            "output": 0.01637515053153038
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ivswfntzwh.JPEG",
+            "label": 0,
+            "output": 0.01585817150771618
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iqijagswok.JPEG",
+            "label": 0,
+            "output": 0.015757722780108452
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cubclpdlyb.JPEG",
+            "label": 0,
+            "output": 0.015461965464055538
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ducatuyxdz.JPEG",
+            "label": 0,
+            "output": 0.015320367179811
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/clnogwmxno.JPEG",
+            "label": 0,
+            "output": 0.01502204965800047
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/viedszojsm.JPEG",
+            "label": 0,
+            "output": 0.01466535683721304
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fzrimmsozw.JPEG",
+            "label": 0,
+            "output": 0.014619541354477406
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vispixnoqk.JPEG",
+            "label": 0,
+            "output": 0.014459369704127312
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dwgrruvbsz.JPEG",
+            "label": 0,
+            "output": 0.01439767237752676
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rdtvftkyww.JPEG",
+            "label": 0,
+            "output": 0.01385881844907999
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fnjmysjhqo.JPEG",
+            "label": 0,
+            "output": 0.013492164202034473
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ueoeojrsyj.JPEG",
+            "label": 0,
+            "output": 0.013272454962134361
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ajwadbiyry.JPEG",
+            "label": 0,
+            "output": 0.013174762018024921
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mpzjrdeutv.JPEG",
+            "label": 0,
+            "output": 0.013164022006094456
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kjkmmniwcv.JPEG",
+            "label": 0,
+            "output": 0.013028813526034355
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mtclcgxdyh.JPEG",
+            "label": 0,
+            "output": 0.01292408350855112
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aujwkgbadp.JPEG",
+            "label": 0,
+            "output": 0.012788855470716953
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jirfxpsjiz.JPEG",
+            "label": 0,
+            "output": 0.012754451483488083
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/djtbqkzsak.JPEG",
+            "label": 0,
+            "output": 0.01256262231618166
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/utfokfmmbf.JPEG",
+            "label": 0,
+            "output": 0.012502312660217285
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/spuypppvyh.JPEG",
+            "label": 0,
+            "output": 0.012459216639399529
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gwwimiekeh.JPEG",
+            "label": 0,
+            "output": 0.012457543052732944
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lqsafjohri.JPEG",
+            "label": 0,
+            "output": 0.012414067052304745
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/voafpawbtb.JPEG",
+            "label": 0,
+            "output": 0.01238000113517046
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pbdegkyycl.JPEG",
+            "label": 0,
+            "output": 0.01235263142734766
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ynescstwdk.JPEG",
+            "label": 0,
+            "output": 0.012298704124987125
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tmuzzrstsf.JPEG",
+            "label": 0,
+            "output": 0.012293634004890919
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mijuwhirnm.JPEG",
+            "label": 0,
+            "output": 0.012288544327020645
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/njslnjximf.JPEG",
+            "label": 0,
+            "output": 0.012237255461513996
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ogjsxmnkxw.JPEG",
+            "label": 0,
+            "output": 0.012118583545088768
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vwkbynfcdl.JPEG",
+            "label": 0,
+            "output": 0.01206875964999199
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jxacexpmcn.JPEG",
+            "label": 0,
+            "output": 0.012001611292362213
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/usrafpawra.JPEG",
+            "label": 0,
+            "output": 0.012001139111816883
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fiejjmdcwg.JPEG",
+            "label": 0,
+            "output": 0.011976798996329308
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pukjffussu.JPEG",
+            "label": 0,
+            "output": 0.011884355917572975
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fdklbxclqv.JPEG",
+            "label": 0,
+            "output": 0.011825035326182842
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pvrfveosdy.JPEG",
+            "label": 0,
+            "output": 0.01174898725003004
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pxefeippis.JPEG",
+            "label": 0,
+            "output": 0.011702858842909336
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ikelctrgra.JPEG",
+            "label": 0,
+            "output": 0.011619726195931435
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jhnbcswvmq.JPEG",
+            "label": 0,
+            "output": 0.011611907742917538
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qsuodtmksx.JPEG",
+            "label": 0,
+            "output": 0.011598644778132439
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mfoxhwrofa.JPEG",
+            "label": 0,
+            "output": 0.011519520543515682
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vrffpjmuir.JPEG",
+            "label": 0,
+            "output": 0.011497444473206997
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jkdydiqkym.JPEG",
+            "label": 0,
+            "output": 0.01147493813186884
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/auannvrmrm.JPEG",
+            "label": 0,
+            "output": 0.011416924186050892
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/omsyxrsufp.JPEG",
+            "label": 0,
+            "output": 0.011372494511306286
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rxsgddveyy.JPEG",
+            "label": 0,
+            "output": 0.011355328373610973
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tefyzlckhu.JPEG",
+            "label": 0,
+            "output": 0.011333856731653214
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bvbspxdfxz.JPEG",
+            "label": 0,
+            "output": 0.011293082498013973
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yeysnhxrmp.JPEG",
+            "label": 0,
+            "output": 0.011169781908392906
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gayjhkcdkw.JPEG",
+            "label": 0,
+            "output": 0.011164945550262928
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/onojezltok.JPEG",
+            "label": 0,
+            "output": 0.011032065376639366
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fwhacyybom.JPEG",
+            "label": 0,
+            "output": 0.01100468635559082
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vrwfguctin.JPEG",
+            "label": 0,
+            "output": 0.01096662413328886
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vwklacfxmw.JPEG",
+            "label": 0,
+            "output": 0.01092416513711214
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mcrhlmdumo.JPEG",
+            "label": 0,
+            "output": 0.01072215661406517
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/alzrdyourf.JPEG",
+            "label": 0,
+            "output": 0.010586750693619251
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ydufoinjbm.JPEG",
+            "label": 0,
+            "output": 0.010564343072474003
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lmbvfedfye.JPEG",
+            "label": 0,
+            "output": 0.010535892099142075
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cubsnkbrrm.JPEG",
+            "label": 0,
+            "output": 0.010473811067640781
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gufjiiwgrf.JPEG",
+            "label": 0,
+            "output": 0.010384687222540379
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ouirlfwsyx.JPEG",
+            "label": 0,
+            "output": 0.010292133316397667
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lxdnodpvuz.JPEG",
+            "label": 0,
+            "output": 0.01019945740699768
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tvhyjyjvbi.JPEG",
+            "label": 0,
+            "output": 0.010113727301359177
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iwbpqeobxw.JPEG",
+            "label": 0,
+            "output": 0.009978296235203743
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zzrybysskm.JPEG",
+            "label": 0,
+            "output": 0.009923811070621014
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cspmbvyjpm.JPEG",
+            "label": 0,
+            "output": 0.009898686781525612
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/evwfvofdll.JPEG",
+            "label": 0,
+            "output": 0.009747734293341637
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ixyzaufrnr.JPEG",
+            "label": 0,
+            "output": 0.009506994858384132
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pirwlvliku.JPEG",
+            "label": 0,
+            "output": 0.00947724562138319
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sltdkynkrd.JPEG",
+            "label": 0,
+            "output": 0.009303673170506954
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iqruwytkxd.JPEG",
+            "label": 0,
+            "output": 0.009209237061440945
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wsbgevekgf.JPEG",
+            "label": 0,
+            "output": 0.009154146537184715
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uvsazktssr.JPEG",
+            "label": 0,
+            "output": 0.009134585969150066
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eqndltlggi.JPEG",
+            "label": 0,
+            "output": 0.009103548713028431
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gfdekurnbz.JPEG",
+            "label": 0,
+            "output": 0.009051979519426823
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/abaxzegfoi.JPEG",
+            "label": 0,
+            "output": 0.00899666827172041
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/znxaufdjpv.JPEG",
+            "label": 0,
+            "output": 0.008898260071873665
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ffubnjdhop.JPEG",
+            "label": 0,
+            "output": 0.008816701360046864
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ucxiudybpx.JPEG",
+            "label": 0,
+            "output": 0.008560847491025925
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tinlvxgqxw.JPEG",
+            "label": 0,
+            "output": 0.008550423197448254
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jfqdxkbnuz.JPEG",
+            "label": 0,
+            "output": 0.008503025397658348
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jeyotfdecp.JPEG",
+            "label": 0,
+            "output": 0.008422764018177986
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/panagqebev.JPEG",
+            "label": 0,
+            "output": 0.008358573541045189
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hiqkigzfrk.JPEG",
+            "label": 0,
+            "output": 0.008275290951132774
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bfczagsxfw.JPEG",
+            "label": 0,
+            "output": 0.008136531338095665
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vpruwhsipu.JPEG",
+            "label": 0,
+            "output": 0.008132887072861195
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yimxruvwud.JPEG",
+            "label": 0,
+            "output": 0.007995803840458393
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/myekqhvgnw.JPEG",
+            "label": 0,
+            "output": 0.00798941683024168
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yutcusvily.JPEG",
+            "label": 0,
+            "output": 0.007930830121040344
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nwpodhovep.JPEG",
+            "label": 0,
+            "output": 0.007827050983905792
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/njfscemusa.JPEG",
+            "label": 0,
+            "output": 0.0078124795109033585
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vwrsjumkmz.JPEG",
+            "label": 0,
+            "output": 0.0077578965574502945
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zkioiunenq.JPEG",
+            "label": 0,
+            "output": 0.007715693674981594
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/flislizwvd.JPEG",
+            "label": 0,
+            "output": 0.007707086857408285
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/krqkilakxw.JPEG",
+            "label": 0,
+            "output": 0.007673724088817835
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xmyblzhwwh.JPEG",
+            "label": 0,
+            "output": 0.007467059418559074
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mtuopsldka.JPEG",
+            "label": 0,
+            "output": 0.007241202052682638
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ascyfbgfmn.JPEG",
+            "label": 0,
+            "output": 0.007212862838059664
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bghliglwng.JPEG",
+            "label": 0,
+            "output": 0.007161059882491827
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kwqbkshqjn.JPEG",
+            "label": 0,
+            "output": 0.007160000503063202
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hjovhnpjdf.JPEG",
+            "label": 0,
+            "output": 0.00714727072045207
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/drnfeijjlp.JPEG",
+            "label": 0,
+            "output": 0.007076990325003862
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hbdtraluzp.JPEG",
+            "label": 0,
+            "output": 0.007047183811664581
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ftobdflmuz.JPEG",
+            "label": 0,
+            "output": 0.0069289966486394405
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uzslfnchhd.JPEG",
+            "label": 0,
+            "output": 0.006884950213134289
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qhhsiahqdz.JPEG",
+            "label": 0,
+            "output": 0.00683379964902997
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/slrtleyncm.JPEG",
+            "label": 0,
+            "output": 0.006784734781831503
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/asxtxajrfc.JPEG",
+            "label": 0,
+            "output": 0.006735360715538263
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/olecerouzv.JPEG",
+            "label": 0,
+            "output": 0.0066187079064548016
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xsmkmdlmux.JPEG",
+            "label": 0,
+            "output": 0.0065703075379133224
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hdcbgrxqza.JPEG",
+            "label": 0,
+            "output": 0.006567348726093769
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ovjpkblzon.JPEG",
+            "label": 0,
+            "output": 0.006543582770973444
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yrantjwhqk.JPEG",
+            "label": 0,
+            "output": 0.006472304929047823
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/utlevcsfzc.JPEG",
+            "label": 0,
+            "output": 0.006459084339439869
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wjvuvyodzv.JPEG",
+            "label": 0,
+            "output": 0.006420348305255175
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vlnusbscnx.JPEG",
+            "label": 0,
+            "output": 0.006317906081676483
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wbcncldemw.JPEG",
+            "label": 0,
+            "output": 0.0062979767099022865
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gllomgthtj.JPEG",
+            "label": 0,
+            "output": 0.006207211408764124
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mbanczcffd.JPEG",
+            "label": 0,
+            "output": 0.006155575159937143
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xxxlutdoia.JPEG",
+            "label": 0,
+            "output": 0.006089859176427126
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pzvgfnoiln.JPEG",
+            "label": 0,
+            "output": 0.005810685455799103
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gdomuubpmo.JPEG",
+            "label": 0,
+            "output": 0.0057980976998806
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/huksdpnufs.JPEG",
+            "label": 0,
+            "output": 0.005609243642538786
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zdteumqsqf.JPEG",
+            "label": 0,
+            "output": 0.005605473183095455
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bhlyixirpi.JPEG",
+            "label": 0,
+            "output": 0.005536813288927078
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/adkpoxtrlp.JPEG",
+            "label": 0,
+            "output": 0.005506623070687056
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aahxgrlfqt.JPEG",
+            "label": 0,
+            "output": 0.005498194135725498
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/snkshpixle.JPEG",
+            "label": 0,
+            "output": 0.005481840576976538
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bxmsmmxizq.JPEG",
+            "label": 0,
+            "output": 0.005481744185090065
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nmdxktenko.JPEG",
+            "label": 0,
+            "output": 0.005448510404676199
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tknxjephgy.JPEG",
+            "label": 0,
+            "output": 0.005423639435321093
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eltlpjgnai.JPEG",
+            "label": 0,
+            "output": 0.005298554431647062
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vsocilgayn.JPEG",
+            "label": 0,
+            "output": 0.005260096862912178
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hypftiguck.JPEG",
+            "label": 0,
+            "output": 0.0052223121747374535
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uxbuickkha.JPEG",
+            "label": 0,
+            "output": 0.0052029709331691265
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mltvjsqnjm.JPEG",
+            "label": 0,
+            "output": 0.005199516657739878
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jbteyioohc.JPEG",
+            "label": 0,
+            "output": 0.005023241974413395
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iedkqtkbtj.JPEG",
+            "label": 0,
+            "output": 0.0050193234346807
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tycynadkoj.JPEG",
+            "label": 0,
+            "output": 0.005012167152017355
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pfvgbusewt.JPEG",
+            "label": 0,
+            "output": 0.004996597766876221
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kjacqcuxqc.JPEG",
+            "label": 0,
+            "output": 0.004954029805958271
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xnyhohvpna.JPEG",
+            "label": 0,
+            "output": 0.004944698419421911
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/odhzcmznnr.JPEG",
+            "label": 0,
+            "output": 0.004769124556332827
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oegsdqwgax.JPEG",
+            "label": 0,
+            "output": 0.004745432175695896
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gxvvzagtkn.JPEG",
+            "label": 0,
+            "output": 0.004715160001069307
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qtlexhtorg.JPEG",
+            "label": 0,
+            "output": 0.004622273612767458
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aieykhstre.JPEG",
+            "label": 0,
+            "output": 0.004574862774461508
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sxbfuikltb.JPEG",
+            "label": 0,
+            "output": 0.004561274778097868
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gtjyzhcqoi.JPEG",
+            "label": 0,
+            "output": 0.004520910792052746
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/abzfomfxjd.JPEG",
+            "label": 0,
+            "output": 0.004464024677872658
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/htqmkwgkwb.JPEG",
+            "label": 0,
+            "output": 0.004436441697180271
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/segiubdggo.JPEG",
+            "label": 0,
+            "output": 0.004432953894138336
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mnbrpiakwa.JPEG",
+            "label": 0,
+            "output": 0.004429948516190052
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tecfsxrdsg.JPEG",
+            "label": 0,
+            "output": 0.004424738232046366
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aaksjqrtil.JPEG",
+            "label": 0,
+            "output": 0.004386252257972956
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tdegwqcdxk.JPEG",
+            "label": 0,
+            "output": 0.004352791700512171
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qhnjseyjbw.JPEG",
+            "label": 0,
+            "output": 0.004312626551836729
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/izmzwnwzxb.JPEG",
+            "label": 0,
+            "output": 0.004285542294383049
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fksurkvzeg.JPEG",
+            "label": 0,
+            "output": 0.004215656314045191
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qlhvuhhqol.JPEG",
+            "label": 0,
+            "output": 0.004107871558517218
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vcbnrxukwp.JPEG",
+            "label": 0,
+            "output": 0.004107112530618906
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rjdnzhbvwc.JPEG",
+            "label": 0,
+            "output": 0.004088441375643015
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mfcceezfwn.JPEG",
+            "label": 0,
+            "output": 0.00406170729547739
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/olxhrrlaut.JPEG",
+            "label": 0,
+            "output": 0.004047342110425234
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/szkmirkryb.JPEG",
+            "label": 0,
+            "output": 0.004003013949841261
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vapzubzcvf.JPEG",
+            "label": 0,
+            "output": 0.0039950464852154255
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hkjmvhgmso.JPEG",
+            "label": 0,
+            "output": 0.003952021710574627
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/umhgkshvea.JPEG",
+            "label": 0,
+            "output": 0.0038265548646450043
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nvsdiqcxdc.JPEG",
+            "label": 0,
+            "output": 0.0037927485536783934
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wzdhwjmvgy.JPEG",
+            "label": 0,
+            "output": 0.003779388964176178
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hpmppyffov.JPEG",
+            "label": 0,
+            "output": 0.003744407556951046
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kzaxlmhpyk.JPEG",
+            "label": 0,
+            "output": 0.003678674576804042
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/okuolqaypa.JPEG",
+            "label": 0,
+            "output": 0.003620473900809884
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/owwrkfwvmg.JPEG",
+            "label": 0,
+            "output": 0.0036201314069330692
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fvfgzexjcm.JPEG",
+            "label": 0,
+            "output": 0.003595598740503192
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/opipzckzef.JPEG",
+            "label": 0,
+            "output": 0.0035944285336881876
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lcaexbqxar.JPEG",
+            "label": 0,
+            "output": 0.0035898005589842796
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sgnnltafbd.JPEG",
+            "label": 0,
+            "output": 0.003577594645321369
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qaafihkbbk.JPEG",
+            "label": 0,
+            "output": 0.0035569623578339815
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zcsnybxdqj.JPEG",
+            "label": 0,
+            "output": 0.003414306789636612
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/njnnphhwll.JPEG",
+            "label": 0,
+            "output": 0.003413874888792634
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jhcimomcij.JPEG",
+            "label": 0,
+            "output": 0.0033931448124349117
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vsoitgrurd.JPEG",
+            "label": 0,
+            "output": 0.0033770923037081957
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/iqiospmdok.JPEG",
+            "label": 0,
+            "output": 0.0033386219292879105
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hisyohahzi.JPEG",
+            "label": 0,
+            "output": 0.00330940168350935
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fzmzemtxkr.JPEG",
+            "label": 0,
+            "output": 0.003304447280243039
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gmeufzjqxw.JPEG",
+            "label": 0,
+            "output": 0.0032818634063005447
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ajaqvfgsih.JPEG",
+            "label": 0,
+            "output": 0.0032684903126209974
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/szebyvzlqt.JPEG",
+            "label": 0,
+            "output": 0.003195136087015271
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sdbpzpettf.JPEG",
+            "label": 0,
+            "output": 0.003184661967679858
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bqmyueubdu.JPEG",
+            "label": 0,
+            "output": 0.0031150123104453087
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qkkcelqgiq.JPEG",
+            "label": 0,
+            "output": 0.003111047437414527
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/phqxvaxgfc.JPEG",
+            "label": 0,
+            "output": 0.0031057982705533504
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lvtmqaadzz.JPEG",
+            "label": 0,
+            "output": 0.003104736329987645
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dpsfehmqme.JPEG",
+            "label": 0,
+            "output": 0.003077341942116618
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/werhusireg.JPEG",
+            "label": 0,
+            "output": 0.003040856448933482
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xucelwnaqz.JPEG",
+            "label": 0,
+            "output": 0.0030132881365716457
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/llmwutwhbl.JPEG",
+            "label": 0,
+            "output": 0.003012533765286207
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wmgazqjjux.JPEG",
+            "label": 0,
+            "output": 0.0029264241456985474
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/medbpbsmum.JPEG",
+            "label": 0,
+            "output": 0.0029152524657547474
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lxjrxqzveb.JPEG",
+            "label": 0,
+            "output": 0.002897953148931265
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hvuyhhryut.JPEG",
+            "label": 0,
+            "output": 0.002883889712393284
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vofhkesmtv.JPEG",
+            "label": 0,
+            "output": 0.0028753161896020174
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ifqwneltpg.JPEG",
+            "label": 0,
+            "output": 0.0028503076173365116
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bqcltegxdf.JPEG",
+            "label": 0,
+            "output": 0.002773679094389081
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wynbrdoyde.JPEG",
+            "label": 0,
+            "output": 0.002757325069978833
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tnsrlfrflx.JPEG",
+            "label": 0,
+            "output": 0.002684795530512929
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ponotiiits.JPEG",
+            "label": 0,
+            "output": 0.0026618908159434795
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/blaonzaskp.JPEG",
+            "label": 0,
+            "output": 0.002636679681017995
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oftwvuyony.JPEG",
+            "label": 0,
+            "output": 0.002588400850072503
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/clutkoqhvu.JPEG",
+            "label": 0,
+            "output": 0.0024707517586648464
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jfmstwhypd.JPEG",
+            "label": 0,
+            "output": 0.0024591346736997366
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uzgkdnsvbt.JPEG",
+            "label": 0,
+            "output": 0.002446140395477414
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vyjvqkrjmv.JPEG",
+            "label": 0,
+            "output": 0.0024085119366645813
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eelzocmtws.JPEG",
+            "label": 0,
+            "output": 0.0023774271830916405
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qvizqxsbvw.JPEG",
+            "label": 0,
+            "output": 0.002376559190452099
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lvndezxcir.JPEG",
+            "label": 0,
+            "output": 0.00237072235904634
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kxwkjgbtdq.JPEG",
+            "label": 0,
+            "output": 0.002336981939151883
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yytnnkmkun.JPEG",
+            "label": 0,
+            "output": 0.0023343234788626432
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hsweljupee.JPEG",
+            "label": 0,
+            "output": 0.0022827847860753536
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wsbyyiugsn.JPEG",
+            "label": 0,
+            "output": 0.002211251761764288
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wtzwjbopzy.JPEG",
+            "label": 0,
+            "output": 0.0021734207402914762
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cddswasamx.JPEG",
+            "label": 0,
+            "output": 0.002165480749681592
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qvldneoiwj.JPEG",
+            "label": 0,
+            "output": 0.002164645818993449
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lttnaabznd.JPEG",
+            "label": 0,
+            "output": 0.0021297838538885117
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aowpbzokmp.JPEG",
+            "label": 0,
+            "output": 0.002126774750649929
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xiubxgyhcs.JPEG",
+            "label": 0,
+            "output": 0.002114709001034498
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uqiwgwkalw.JPEG",
+            "label": 0,
+            "output": 0.0020819229539483786
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xaetznfnpu.JPEG",
+            "label": 0,
+            "output": 0.0020717643201351166
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gwhfxugran.JPEG",
+            "label": 0,
+            "output": 0.002070342656224966
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bljmtryslc.JPEG",
+            "label": 0,
+            "output": 0.002049453090876341
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dawfktkzad.JPEG",
+            "label": 0,
+            "output": 0.0020271434914320707
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cyencgbdne.JPEG",
+            "label": 0,
+            "output": 0.0020070907194167376
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/timdfnwgho.JPEG",
+            "label": 0,
+            "output": 0.0019692115020006895
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rtbrwgwkho.JPEG",
+            "label": 0,
+            "output": 0.00196094554848969
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tfubqflahj.JPEG",
+            "label": 0,
+            "output": 0.0019326612818986177
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jnrpfsvjdm.JPEG",
+            "label": 0,
+            "output": 0.0019057414028793573
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ruyafogtjk.JPEG",
+            "label": 0,
+            "output": 0.0019018624443560839
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wotrziuyhj.JPEG",
+            "label": 0,
+            "output": 0.0018560992320999503
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vmjmkqeggv.JPEG",
+            "label": 0,
+            "output": 0.0018524944316595793
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/idxzmkymeu.JPEG",
+            "label": 0,
+            "output": 0.0018417109968140721
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ewldxwaqfh.JPEG",
+            "label": 0,
+            "output": 0.0018351615872234106
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/czqsnkbvng.JPEG",
+            "label": 0,
+            "output": 0.0018331182654947042
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/titltoewou.JPEG",
+            "label": 0,
+            "output": 0.0018182402709499002
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rlarzjlvnd.JPEG",
+            "label": 0,
+            "output": 0.0018122975016012788
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/slecdbiljb.JPEG",
+            "label": 0,
+            "output": 0.0018048861529678106
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xctsfejxfy.JPEG",
+            "label": 0,
+            "output": 0.0018034339882433414
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qsndeimedb.JPEG",
+            "label": 0,
+            "output": 0.0017762054922059178
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ppufoaihkk.JPEG",
+            "label": 0,
+            "output": 0.0017718859016895294
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pieahxylhf.JPEG",
+            "label": 0,
+            "output": 0.0017267001094296575
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xphjlaxygh.JPEG",
+            "label": 0,
+            "output": 0.001724320463836193
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/slmgcnpjiz.JPEG",
+            "label": 0,
+            "output": 0.0017229729564860463
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jckrxjozhx.JPEG",
+            "label": 0,
+            "output": 0.0017227191710844636
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bcdxmvfonp.JPEG",
+            "label": 0,
+            "output": 0.0017168601043522358
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aynkpajrmy.JPEG",
+            "label": 0,
+            "output": 0.001692313700914383
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/arfbiucpar.JPEG",
+            "label": 0,
+            "output": 0.0016907689860090613
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pcwvbmjrea.JPEG",
+            "label": 0,
+            "output": 0.0016583472024649382
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jrkctxyekx.JPEG",
+            "label": 0,
+            "output": 0.001637107226997614
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/amthaokcfg.JPEG",
+            "label": 0,
+            "output": 0.0016141296364367008
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ueehiquixb.JPEG",
+            "label": 0,
+            "output": 0.0016057138564065099
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ygbcaqrvep.JPEG",
+            "label": 0,
+            "output": 0.0015647432301193476
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ktsfcdbxkp.JPEG",
+            "label": 0,
+            "output": 0.0015255114994943142
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kpmxquicco.JPEG",
+            "label": 0,
+            "output": 0.0014937524683773518
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wsreukpzwe.JPEG",
+            "label": 0,
+            "output": 0.0014780793571844697
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kgwpuybmdo.JPEG",
+            "label": 0,
+            "output": 0.001465359702706337
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rdudakwwfl.JPEG",
+            "label": 0,
+            "output": 0.0014646692434325814
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/orgclftabd.JPEG",
+            "label": 0,
+            "output": 0.0014366323594003916
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zxaydtvcbx.JPEG",
+            "label": 0,
+            "output": 0.0014330605044960976
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tbganwxklb.JPEG",
+            "label": 0,
+            "output": 0.0014228899963200092
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/likeehktbp.JPEG",
+            "label": 0,
+            "output": 0.00141088233795017
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yptdaozbuw.JPEG",
+            "label": 0,
+            "output": 0.001407708739861846
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/touiowfclv.JPEG",
+            "label": 0,
+            "output": 0.0014028440928086638
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ybksklcxnr.JPEG",
+            "label": 0,
+            "output": 0.0013882163912057877
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gczswsnqpp.JPEG",
+            "label": 0,
+            "output": 0.0013390473322942853
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ycojahdoqs.JPEG",
+            "label": 0,
+            "output": 0.001312884734943509
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ulpnibnvvc.JPEG",
+            "label": 0,
+            "output": 0.001254321075975895
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/flcafzqbyt.JPEG",
+            "label": 0,
+            "output": 0.0012466766638681293
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tgkezflbjz.JPEG",
+            "label": 0,
+            "output": 0.001224674517288804
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zcaqqmomfv.JPEG",
+            "label": 0,
+            "output": 0.0011965463636443019
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sjezxhpiwr.JPEG",
+            "label": 0,
+            "output": 0.0011872074101120234
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/isrzfmrbjo.JPEG",
+            "label": 0,
+            "output": 0.0011838277569040656
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hzfxwrmqch.JPEG",
+            "label": 0,
+            "output": 0.0011738439789041877
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rlzfziqqrd.JPEG",
+            "label": 0,
+            "output": 0.0011715159052982926
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xoxubdjnhe.JPEG",
+            "label": 0,
+            "output": 0.0011488852323964238
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jgvhyrcgyx.JPEG",
+            "label": 0,
+            "output": 0.0011219705920666456
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vutxbsgjsz.JPEG",
+            "label": 0,
+            "output": 0.0011053902562707663
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/truenadnmf.JPEG",
+            "label": 0,
+            "output": 0.0011016689240932465
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/edqamoutbf.JPEG",
+            "label": 0,
+            "output": 0.0010972932213917375
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lcyxnaodgl.JPEG",
+            "label": 0,
+            "output": 0.001083195791579783
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hptzommwzk.JPEG",
+            "label": 0,
+            "output": 0.001053616520948708
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rxrwofckks.JPEG",
+            "label": 0,
+            "output": 0.001041569048538804
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/glmtywqxhj.JPEG",
+            "label": 0,
+            "output": 0.0010356740094721317
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/smlabsrifo.JPEG",
+            "label": 0,
+            "output": 0.0010325888870283961
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sgggkqzghg.JPEG",
+            "label": 0,
+            "output": 0.0010213247733190656
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yfxdzkbfpk.JPEG",
+            "label": 0,
+            "output": 0.0010165460407733917
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vwsjebonhl.JPEG",
+            "label": 0,
+            "output": 0.0009913098765537143
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zhkybzbekn.JPEG",
+            "label": 0,
+            "output": 0.000982992583885789
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/myjibkfcjw.JPEG",
+            "label": 0,
+            "output": 0.0009770870674401522
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nzfqdevtuu.JPEG",
+            "label": 0,
+            "output": 0.0009761499823071063
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qbannzwxnv.JPEG",
+            "label": 0,
+            "output": 0.0009437963017262518
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hgcafbxres.JPEG",
+            "label": 0,
+            "output": 0.0009376730304211378
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ntpnrhhljv.JPEG",
+            "label": 0,
+            "output": 0.000931581249460578
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lfpytrxtnd.JPEG",
+            "label": 0,
+            "output": 0.0009299110970459878
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fneghrqtsf.JPEG",
+            "label": 0,
+            "output": 0.0009204742964357138
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oegbyamziq.JPEG",
+            "label": 0,
+            "output": 0.000914537173230201
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xtupempfsd.JPEG",
+            "label": 0,
+            "output": 0.0009110718965530396
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jykjuscrhb.JPEG",
+            "label": 0,
+            "output": 0.0009036900009959936
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/irrlegedjp.JPEG",
+            "label": 0,
+            "output": 0.000898896309081465
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kkqnltzvmr.JPEG",
+            "label": 0,
+            "output": 0.0008709218818694353
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xlwfiidgib.JPEG",
+            "label": 0,
+            "output": 0.0008681011968292296
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/plszaygqda.JPEG",
+            "label": 0,
+            "output": 0.0008632073295302689
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aesvfgnjye.JPEG",
+            "label": 0,
+            "output": 0.0008588265045545995
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fihznganle.JPEG",
+            "label": 0,
+            "output": 0.0008464336860924959
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gchslncruv.JPEG",
+            "label": 0,
+            "output": 0.0008249199599958956
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/temvvnfwvq.JPEG",
+            "label": 0,
+            "output": 0.0008213584078475833
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fxxzogdrnu.JPEG",
+            "label": 0,
+            "output": 0.0007984666153788567
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wekyyrslyw.JPEG",
+            "label": 0,
+            "output": 0.0007944979006424546
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/exoglvpvei.JPEG",
+            "label": 0,
+            "output": 0.0007900808705016971
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/uydofqnwdz.JPEG",
+            "label": 0,
+            "output": 0.0007899870979599655
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xbgkvftfss.JPEG",
+            "label": 0,
+            "output": 0.0007884345250204206
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yqqmbglayb.JPEG",
+            "label": 0,
+            "output": 0.000764536380302161
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wiweponjic.JPEG",
+            "label": 0,
+            "output": 0.000750010134652257
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rsekavebcp.JPEG",
+            "label": 0,
+            "output": 0.0007465606322512031
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qgkzujpyka.JPEG",
+            "label": 0,
+            "output": 0.0007371351821348071
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tgzykjsqqa.JPEG",
+            "label": 0,
+            "output": 0.0007341498858295381
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pcaodmknyo.JPEG",
+            "label": 0,
+            "output": 0.000731246720533818
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/envczpiyds.JPEG",
+            "label": 0,
+            "output": 0.0007305751205421984
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/onkjvikzsj.JPEG",
+            "label": 0,
+            "output": 0.0007199196261353791
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bnhkqppcfl.JPEG",
+            "label": 0,
+            "output": 0.0007061234209686518
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/echehlitmr.JPEG",
+            "label": 0,
+            "output": 0.0007034809095785022
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ciwgbjibcd.JPEG",
+            "label": 0,
+            "output": 0.000675119343213737
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bbmeviacjm.JPEG",
+            "label": 0,
+            "output": 0.0006731299799866974
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rpeighzltg.JPEG",
+            "label": 0,
+            "output": 0.0006449139909818769
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gxkmzinhug.JPEG",
+            "label": 0,
+            "output": 0.0006371291819959879
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oddyrvltgg.JPEG",
+            "label": 0,
+            "output": 0.0006228997372090816
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kysxvylzkk.JPEG",
+            "label": 0,
+            "output": 0.0006071384414099157
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nnylgyqsxs.JPEG",
+            "label": 0,
+            "output": 0.0006064017652533948
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/msccvtyrqo.JPEG",
+            "label": 0,
+            "output": 0.0006024648318998516
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oovxyyombs.JPEG",
+            "label": 0,
+            "output": 0.0005939799593761563
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lpofppxlqt.JPEG",
+            "label": 0,
+            "output": 0.0005843680119141936
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ahbiztymlj.JPEG",
+            "label": 0,
+            "output": 0.000572061282582581
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jcbooxfwcy.JPEG",
+            "label": 0,
+            "output": 0.0005639593000523746
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hzsujxzlcn.JPEG",
+            "label": 0,
+            "output": 0.0005526363966055214
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gzmbdszeyt.JPEG",
+            "label": 0,
+            "output": 0.0005415963241830468
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gacytxnrbg.JPEG",
+            "label": 0,
+            "output": 0.0005228589870966971
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ygqiosrden.JPEG",
+            "label": 0,
+            "output": 0.0005111424834467471
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fcgojsqxhw.JPEG",
+            "label": 0,
+            "output": 0.00049327511806041
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/sinwhncecv.JPEG",
+            "label": 0,
+            "output": 0.0004896625760011375
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qqdphhznqg.JPEG",
+            "label": 0,
+            "output": 0.000481262628454715
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pbblbgdzjz.JPEG",
+            "label": 0,
+            "output": 0.0004803476040251553
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zhkktdnkhl.JPEG",
+            "label": 0,
+            "output": 0.00046992560965009034
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/albdpubxka.JPEG",
+            "label": 0,
+            "output": 0.00046458517317660153
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ayzndlluru.JPEG",
+            "label": 0,
+            "output": 0.0004644140135496855
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gyzuhrjhfj.JPEG",
+            "label": 0,
+            "output": 0.000459574832348153
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/cciqgyfbnw.JPEG",
+            "label": 0,
+            "output": 0.00045205821515992284
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hxayxhqfnz.JPEG",
+            "label": 0,
+            "output": 0.00044867180986329913
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/arjjdokwee.JPEG",
+            "label": 0,
+            "output": 0.00042196089634671807
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/smdvfqmevj.JPEG",
+            "label": 0,
+            "output": 0.0004148425068706274
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qtpttlawjz.JPEG",
+            "label": 0,
+            "output": 0.0003970551770180464
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/effiwpkvcy.JPEG",
+            "label": 0,
+            "output": 0.0003942686889786273
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/drpsdefmzh.JPEG",
+            "label": 0,
+            "output": 0.0003700317465700209
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lzletadhdl.JPEG",
+            "label": 0,
+            "output": 0.0003691806923598051
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dtoeuxdocm.JPEG",
+            "label": 0,
+            "output": 0.0003576214949134737
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hectwezedz.JPEG",
+            "label": 0,
+            "output": 0.00035734125413000584
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mobwrxioai.JPEG",
+            "label": 0,
+            "output": 0.00035489577567204833
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/awjhtixyqd.JPEG",
+            "label": 0,
+            "output": 0.00035249278880655766
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ajdylzvnwn.JPEG",
+            "label": 0,
+            "output": 0.0003479970619082451
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vumdsauhht.JPEG",
+            "label": 0,
+            "output": 0.0003445996262598783
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rzkutenljp.JPEG",
+            "label": 0,
+            "output": 0.000334714975906536
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lmrswyanpv.JPEG",
+            "label": 0,
+            "output": 0.00032951970933936536
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/picuojlsec.JPEG",
+            "label": 0,
+            "output": 0.0003174614976160228
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hcnhiyscgm.JPEG",
+            "label": 0,
+            "output": 0.00031380372820422053
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/yyrtmboyuo.JPEG",
+            "label": 0,
+            "output": 0.00031080658663995564
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/adizyjvxam.JPEG",
+            "label": 0,
+            "output": 0.000305779161863029
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wdxoxbbogy.JPEG",
+            "label": 0,
+            "output": 0.00030449285986833274
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/fjxuybiebs.JPEG",
+            "label": 0,
+            "output": 0.0002879723906517029
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ltwpiurdob.JPEG",
+            "label": 0,
+            "output": 0.0002872041950467974
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/msdsnlzcre.JPEG",
+            "label": 0,
+            "output": 0.000285918649751693
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/bxfbgvlfqu.JPEG",
+            "label": 0,
+            "output": 0.00027132671675644815
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ypvdkreobg.JPEG",
+            "label": 0,
+            "output": 0.00026457267813384533
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/szocurmzdp.JPEG",
+            "label": 0,
+            "output": 0.0002559643762651831
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/suhpchcpza.JPEG",
+            "label": 0,
+            "output": 0.0002498817630112171
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qbhxmjxsev.JPEG",
+            "label": 0,
+            "output": 0.0002440279786242172
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nhmoimaaqz.JPEG",
+            "label": 0,
+            "output": 0.0002386735868640244
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vmouwpueqp.JPEG",
+            "label": 0,
+            "output": 0.00022788318165112287
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jqcakwrejy.JPEG",
+            "label": 0,
+            "output": 0.00022575407638214529
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wedprdqjkr.JPEG",
+            "label": 0,
+            "output": 0.00022390710364561528
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/aqfnjpltvb.JPEG",
+            "label": 0,
+            "output": 0.00022027536761015654
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/imcwvnqwdv.JPEG",
+            "label": 0,
+            "output": 0.00021766532154288143
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xvwgzjvahe.JPEG",
+            "label": 0,
+            "output": 0.0002169491199310869
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/njrelhtzux.JPEG",
+            "label": 0,
+            "output": 0.00021677052427548915
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hnsubaglth.JPEG",
+            "label": 0,
+            "output": 0.00021224224474281073
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/tzgkmgcgjt.JPEG",
+            "label": 0,
+            "output": 0.00021221404313109815
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/qgxnqynxwh.JPEG",
+            "label": 0,
+            "output": 0.00021144737547729164
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hnfbzeaoqb.JPEG",
+            "label": 0,
+            "output": 0.00020345418306533247
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pwvremoaiz.JPEG",
+            "label": 0,
+            "output": 0.0002021733089350164
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xdudczawtx.JPEG",
+            "label": 0,
+            "output": 0.00019795064872596413
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/oocykwkype.JPEG",
+            "label": 0,
+            "output": 0.0001963493850780651
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/mqzlaxdcyf.JPEG",
+            "label": 0,
+            "output": 0.0001897137553896755
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ftmhbluvwz.JPEG",
+            "label": 0,
+            "output": 0.00018508928769733757
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gnjefwyemy.JPEG",
+            "label": 0,
+            "output": 0.000184682197868824
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jhnzthaool.JPEG",
+            "label": 0,
+            "output": 0.00017630688671488315
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/kvomczokut.JPEG",
+            "label": 0,
+            "output": 0.00017496531654614955
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ivvevnakub.JPEG",
+            "label": 0,
+            "output": 0.00017488092998974025
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jhcbtfuziq.JPEG",
+            "label": 0,
+            "output": 0.00017418967036064714
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jnifdomopt.JPEG",
+            "label": 0,
+            "output": 0.0001628282479941845
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wketmynlnj.JPEG",
+            "label": 0,
+            "output": 0.00016117037739604712
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ircqbpmpmn.JPEG",
+            "label": 0,
+            "output": 0.00016116382903419435
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ybihqfczqf.JPEG",
+            "label": 0,
+            "output": 0.00014833513705525547
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/gtqyrcambg.JPEG",
+            "label": 0,
+            "output": 0.00014214096881914884
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ezfvndjxht.JPEG",
+            "label": 0,
+            "output": 0.00013961484364699572
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xjsfnrjtst.JPEG",
+            "label": 0,
+            "output": 0.00013618191587738693
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nvwywbybsj.JPEG",
+            "label": 0,
+            "output": 0.00012754503404721618
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/eowkckioii.JPEG",
+            "label": 0,
+            "output": 0.00012489265645854175
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lvsgpxrabw.JPEG",
+            "label": 0,
+            "output": 0.0001217212193296291
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/jefxajnwbk.JPEG",
+            "label": 0,
+            "output": 0.0001116684652515687
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ybpkzmxsoj.JPEG",
+            "label": 0,
+            "output": 0.0001104386174120009
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/buiozdnamh.JPEG",
+            "label": 0,
+            "output": 0.00010934293823083863
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vuvkrfmrfw.JPEG",
+            "label": 0,
+            "output": 0.00010819530143635347
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/myypljgqkg.JPEG",
+            "label": 0,
+            "output": 9.734919876791537e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/siheeokstl.JPEG",
+            "label": 0,
+            "output": 9.6704694442451e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/xahepmkkki.JPEG",
+            "label": 0,
+            "output": 9.229443094227463e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wipphellrw.JPEG",
+            "label": 0,
+            "output": 8.789097773842514e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/zynieagnms.JPEG",
+            "label": 0,
+            "output": 8.1872713053599e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/figfzyfhkt.JPEG",
+            "label": 0,
+            "output": 6.848267366876826e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lkealtdsyd.JPEG",
+            "label": 0,
+            "output": 6.667141860816628e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vmrobijbmc.JPEG",
+            "label": 0,
+            "output": 6.37314806226641e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/pepkgtkonx.JPEG",
+            "label": 0,
+            "output": 6.0500427935039625e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/opljqzrrmw.JPEG",
+            "label": 0,
+            "output": 6.03726803092286e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/dsxzmqgrfv.JPEG",
+            "label": 0,
+            "output": 5.042658813181333e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/vlwnndwtuh.JPEG",
+            "label": 0,
+            "output": 5.011126631870866e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ywjlbpxbjz.JPEG",
+            "label": 0,
+            "output": 4.096856719115749e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/wpptcqobpu.JPEG",
+            "label": 0,
+            "output": 3.854984606732614e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lxlphyyeaw.JPEG",
+            "label": 0,
+            "output": 3.656708577182144e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/irwxnqcndk.JPEG",
+            "label": 0,
+            "output": 3.340265175211243e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/rpggiliowp.JPEG",
+            "label": 0,
+            "output": 2.951042006316129e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/hrdlxdegxy.JPEG",
+            "label": 0,
+            "output": 2.8242950065759942e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/skkprfujmw.JPEG",
+            "label": 0,
+            "output": 2.783240233839024e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/whqsatsqum.JPEG",
+            "label": 0,
+            "output": 2.530283381929621e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/ykyioyylud.JPEG",
+            "label": 0,
+            "output": 2.320540625078138e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/nmgqcqjyhs.JPEG",
+            "label": 0,
+            "output": 1.46070860864711e-05
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/itvslvcuiy.JPEG",
+            "label": 0,
+            "output": 8.413272553298157e-06
+        },
+        {
+            "path": "data/test/diffusion_datasets/imagenet/0_real/lzgwytfbdh.JPEG",
+            "label": 0,
+            "output": 3.3667872685327893e-06
+        }
+    ]
+}

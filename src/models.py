@@ -14,6 +14,7 @@ import pickle
 from typing import Union
 import timm
 from torchvision import transforms
+from src.utils import custom_unfold
 
 CLIP_SEQ_LENGTH=256
 
@@ -120,7 +121,36 @@ class GLIP(nn.Module):
         
         p_cls = self.head_cls(z_cls).squeeze()
         p = self.head(z).squeeze()
-        return p, p_cls, z, z_cls
+        if p.dim() == 2:
+            p = p.permute(1, 0)
+        return p, z, p_cls, z_cls
+    
+    def forward_slide(self, img, stride=112, crop_size=224, batch_size_p=64, beta=0.5):
+        """Inference by sliding-window with overlap.
+        If h_crop > h_img or w_crop > w_img, the small patch will be used to
+        decode without padding.
+        """
+        if type(img) == list:
+            img = img[0].unsqueeze(0)
+        if type(stride) == int:
+            stride = (stride, stride)
+        if type(crop_size) == int:
+            crop_size = (crop_size, crop_size)
+
+        imgs = custom_unfold(
+            img,
+            crop_size=crop_size,
+            stride=stride,
+        )
+        logits = []
+        for img in imgs:
+            logits_img = []
+            for i in range(0, img.shape[0], batch_size_p):
+                batch_imgs = img[i:i + batch_size_p]
+                logits_i, _, logits_o, _ = self.forward(batch_imgs)
+                logits_img.append(logits_i.sigmoid().mean(-1) * beta + logits_o.sigmoid() * (1 - beta))
+            logits.append(torch.cat(logits_img, dim=0).mean())
+        return torch.stack(logits, dim=0)
 
     def predict(
         self, 
@@ -128,9 +158,10 @@ class GLIP(nn.Module):
         **kwargs
     ):
         with torch.no_grad():
-            if kwargs.get("window_slide", False):
-            o, _ = self.forward(x)
-            return o.sigmoid().flatten().cpu().numpy()
+            beta = kwargs.get("beta", 1.0)
+            #if kwargs.get("window_slide", False):
+            o_l, _, o_g, _ = self.forward(x)
+            return beta * o_l.sigmoid().mean(-1).flatten().cpu().numpy() + (1 - beta) * o_g.sigmoid().flatten().cpu().numpy()
 
 class GL_RINE(nn.Module):
     def __init__(
@@ -830,10 +861,11 @@ class RineModel(nn.Module):
         z = self.proj2(z)
 
         p = self.head(z)
-
+        if p.dim() == 2:
+            p = p.squeeze()
         return p, z
 
-    def forward_slide(self, img, stride=112, crop_size=224, batch_size=64):
+    def forward_slide(self, img, stride=112, crop_size=224, batch_size_p=64, beta=0.5):
         """Inference by sliding-window with overlap.
         If h_crop > h_img or w_crop > w_img, the small patch will be used to
         decode without padding.
@@ -845,36 +877,18 @@ class RineModel(nn.Module):
         if type(crop_size) == int:
             crop_size = (crop_size, crop_size)
 
-        h_stride, w_stride = stride
-        h_crop, w_crop = crop_size
-        batch_size, _, h_img, w_img = img.shape
-
-        h_grids = max(h_img - h_crop + h_stride - 1, 0) // h_stride + 1
-        w_grids = max(w_img - w_crop + w_stride - 1, 0) // w_stride + 1
-
-        imgs = []
-        for h_idx in range(h_grids):
-            for w_idx in range(w_grids):
-                y1 = h_idx * h_stride
-                x1 = w_idx * w_stride
-                y2 = min(y1 + h_crop, h_img)
-                x2 = min(x1 + w_crop, w_img)
-                y1 = max(y2 - h_crop, 0)
-                x1 = max(x2 - w_crop, 0)
-
-                crop_img = img[:, :, y1:y2, x1:x2]
-                crop_img = transforms.Normalize(
-                    mean=(0.48145466, 0.4578275, 0.40821073),
-                    std=(0.26862954, 0.26130258, 0.27577711),
-                )(crop_img)
-                imgs.append(crop_img)
-        imgs = torch.cat(imgs, dim=0)
+        imgs = custom_unfold(
+            img,
+            crop_size=crop_size,
+            stride=stride,
+        )
         logits = []
-        for i in range(0, imgs.shape[0], batch_size):
-            batch_imgs = imgs[i:i + batch_size]
-            logits_i, _ = self.forward(batch_imgs)
-            logits.append(logits_i)
-        return torch.cat(logits, dim=0).sigmoid().mean()
+        for img in imgs:
+            for i in range(0, img.shape[0], batch_size_p):
+                batch_imgs = img[i:i + batch_size_p]
+                logits_i, _ = self.forward(batch_imgs)
+                logits.append(logits_i)
+        return torch.cat(logits, dim=0).sigmoid().mean(0).flatten()
     
 
     def predict(self, img, **kwargs):
@@ -892,7 +906,7 @@ class RineModel(nn.Module):
                     return o.squeeze().flatten().cpu().numpy()
             else:
                 logits, _ = self.forward(img)
-                return logits.sigmoid().flatten().tolist()
+                return logits.sigmoid().flatten().cpu().numpy()
         
     def load_weights(self, ckpt):
         state_dict = torch.load(ckpt, map_location='cpu')

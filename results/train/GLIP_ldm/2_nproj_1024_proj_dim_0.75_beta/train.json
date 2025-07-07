@@ -1,0 +1,36 @@
+{
+  "epochs": 2,
+  "config": {
+    "backbone": [
+      "ViT-L/14",
+      1024
+    ],
+    "nproj": 4,
+    "proj_dim": 1024,
+    "crop": 224,
+    "imgsize": 224,
+    "training_set": "ldm",
+    "contrastive": true,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "lr_step": 2,
+    "lr_gamma": 0.5,
+    "epochs": 2,
+    "factor": 0.2,
+    "beta": 0.75,
+    "window_slide": false,
+    "save_path": "GLIP_ldm/2_nproj_1024_proj_dim_0.75_beta"
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.9999813706243665,
+      0.9999947770630866
+    ],
+    "val_auc": [
+      0.9999810325,
+      0.99999475
+    ],
+    "test": {}
+  }
+}

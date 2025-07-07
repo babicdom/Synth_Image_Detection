@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008757_4.webp",
+            "label": 1,
+            "output": 0.5851460695266724
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003969_5.webp",
+            "label": 1,
+            "output": 0.5699477791786194
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002974_3.webp",
+            "label": 1,
+            "output": 0.5533381104469299
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000830_4.webp",
+            "label": 1,
+            "output": 0.541686475276947
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002489_7.webp",
+            "label": 1,
+            "output": 0.5058118104934692
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004091_0.webp",
+            "label": 1,
+            "output": 0.49076539278030396
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000635_7.webp",
+            "label": 1,
+            "output": 0.48519349098205566
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000740_7.webp",
+            "label": 1,
+            "output": 0.48024773597717285
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007695_1.webp",
+            "label": 1,
+            "output": 0.47837889194488525
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003424_7.webp",
+            "label": 1,
+            "output": 0.4662383794784546
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007158_2.webp",
+            "label": 1,
+            "output": 0.4606579840183258
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000605_6.webp",
+            "label": 1,
+            "output": 0.4482407867908478
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007129_0.webp",
+            "label": 1,
+            "output": 0.44406718015670776
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004081_0.webp",
+            "label": 1,
+            "output": 0.43254056572914124
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000397_0.webp",
+            "label": 1,
+            "output": 0.42799612879753113
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002160_1.webp",
+            "label": 1,
+            "output": 0.41298362612724304
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002223_2.webp",
+            "label": 1,
+            "output": 0.41270411014556885
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006739_2.webp",
+            "label": 1,
+            "output": 0.4102175831794739
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001291_6.webp",
+            "label": 1,
+            "output": 0.4079233705997467
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003460_5.webp",
+            "label": 1,
+            "output": 0.3998112976551056
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004826_5.webp",
+            "label": 1,
+            "output": 0.3972741961479187
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009193_5.webp",
+            "label": 1,
+            "output": 0.39385786652565
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005410_3.webp",
+            "label": 1,
+            "output": 0.3891003727912903
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003195_0.webp",
+            "label": 1,
+            "output": 0.3818587362766266
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007276_2.webp",
+            "label": 1,
+            "output": 0.37856370210647583
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009470_2.webp",
+            "label": 1,
+            "output": 0.3668087124824524
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003647_0.webp",
+            "label": 1,
+            "output": 0.36505401134490967
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008887_2.webp",
+            "label": 1,
+            "output": 0.3628528416156769
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001038_2.webp",
+            "label": 1,
+            "output": 0.36028343439102173
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006521_0.webp",
+            "label": 1,
+            "output": 0.3594245910644531
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006292_4.webp",
+            "label": 1,
+            "output": 0.35245391726493835
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007204_2.webp",
+            "label": 1,
+            "output": 0.3489168882369995
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005465_4.webp",
+            "label": 1,
+            "output": 0.33335453271865845
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005185_6.webp",
+            "label": 1,
+            "output": 0.3329610228538513
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009710_2.webp",
+            "label": 1,
+            "output": 0.3241529166698456
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005295_6.webp",
+            "label": 1,
+            "output": 0.3147399127483368
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002865_6.webp",
+            "label": 1,
+            "output": 0.31282511353492737
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008397_5.webp",
+            "label": 1,
+            "output": 0.31264206767082214
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002921_6.webp",
+            "label": 1,
+            "output": 0.30625423789024353
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003874_7.webp",
+            "label": 1,
+            "output": 0.306096613407135
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003647_4.webp",
+            "label": 1,
+            "output": 0.3042766749858856
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000838_7.webp",
+            "label": 1,
+            "output": 0.3027893304824829
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007047_4.webp",
+            "label": 1,
+            "output": 0.2986181974411011
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007997_2.webp",
+            "label": 1,
+            "output": 0.297733873128891
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007455_1.webp",
+            "label": 1,
+            "output": 0.2952350974082947
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005572_7.webp",
+            "label": 1,
+            "output": 0.2904689311981201
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001569_1.webp",
+            "label": 1,
+            "output": 0.2862386405467987
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007626_5.webp",
+            "label": 1,
+            "output": 0.2860170900821686
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005923_7.webp",
+            "label": 1,
+            "output": 0.28533387184143066
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004795_2.webp",
+            "label": 1,
+            "output": 0.2832072079181671
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003460_7.webp",
+            "label": 1,
+            "output": 0.283131867647171
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005933_2.webp",
+            "label": 1,
+            "output": 0.27781736850738525
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009393_6.webp",
+            "label": 1,
+            "output": 0.275475412607193
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002903_5.webp",
+            "label": 1,
+            "output": 0.2747705578804016
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007537_5.webp",
+            "label": 1,
+            "output": 0.2733389139175415
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005432_3.webp",
+            "label": 1,
+            "output": 0.2708611488342285
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001660_1.webp",
+            "label": 1,
+            "output": 0.2652667164802551
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007084_0.webp",
+            "label": 1,
+            "output": 0.26500457525253296
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000838_2.webp",
+            "label": 1,
+            "output": 0.2617437541484833
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008723_7.webp",
+            "label": 1,
+            "output": 0.2607821822166443
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001203_6.webp",
+            "label": 1,
+            "output": 0.2604859173297882
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003874_2.webp",
+            "label": 1,
+            "output": 0.26023754477500916
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008078_0.webp",
+            "label": 1,
+            "output": 0.2597283124923706
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004526_4.webp",
+            "label": 1,
+            "output": 0.2590436339378357
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006789_4.webp",
+            "label": 1,
+            "output": 0.259033739566803
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000830_6.webp",
+            "label": 1,
+            "output": 0.2573649287223816
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008366_5.webp",
+            "label": 1,
+            "output": 0.25519707798957825
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000352_3.webp",
+            "label": 1,
+            "output": 0.2517262101173401
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003293_1.webp",
+            "label": 1,
+            "output": 0.2507471740245819
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008895_4.webp",
+            "label": 1,
+            "output": 0.2492895871400833
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004087_6.webp",
+            "label": 1,
+            "output": 0.24927164614200592
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003366_2.webp",
+            "label": 1,
+            "output": 0.24833805859088898
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006589_7.webp",
+            "label": 1,
+            "output": 0.24694347381591797
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000744_0.webp",
+            "label": 1,
+            "output": 0.24526318907737732
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002704_2.webp",
+            "label": 1,
+            "output": 0.2428988814353943
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003082_4.webp",
+            "label": 1,
+            "output": 0.2405511736869812
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001291_5.webp",
+            "label": 1,
+            "output": 0.23842260241508484
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002092_3.webp",
+            "label": 1,
+            "output": 0.23698939383029938
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006268_0.webp",
+            "label": 1,
+            "output": 0.23226132988929749
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006431_7.webp",
+            "label": 1,
+            "output": 0.2257487028837204
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009997_3.webp",
+            "label": 1,
+            "output": 0.22363559901714325
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004318_6.webp",
+            "label": 1,
+            "output": 0.2233600616455078
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004729_2.webp",
+            "label": 1,
+            "output": 0.22285149991512299
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007096_7.webp",
+            "label": 1,
+            "output": 0.2166539579629898
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007634_3.webp",
+            "label": 1,
+            "output": 0.21388046443462372
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004330_4.webp",
+            "label": 1,
+            "output": 0.2133616805076599
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005388_7.webp",
+            "label": 1,
+            "output": 0.21137675642967224
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002565_2.webp",
+            "label": 1,
+            "output": 0.21120288968086243
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008812_7.webp",
+            "label": 1,
+            "output": 0.21056857705116272
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007250_6.webp",
+            "label": 1,
+            "output": 0.207947239279747
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001495_2.webp",
+            "label": 1,
+            "output": 0.2079332172870636
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008782_6.webp",
+            "label": 1,
+            "output": 0.2057962417602539
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000959_3.webp",
+            "label": 1,
+            "output": 0.20521008968353271
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004833_6.webp",
+            "label": 1,
+            "output": 0.20478121936321259
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005394_2.webp",
+            "label": 1,
+            "output": 0.20394623279571533
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005218_2.webp",
+            "label": 1,
+            "output": 0.20377101004123688
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007476_4.webp",
+            "label": 1,
+            "output": 0.2024356871843338
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005671_5.webp",
+            "label": 1,
+            "output": 0.2007565200328827
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000329_5.webp",
+            "label": 1,
+            "output": 0.19967573881149292
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006264_2.webp",
+            "label": 1,
+            "output": 0.1995205134153366
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003545_0.webp",
+            "label": 1,
+            "output": 0.19746243953704834
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000838_1.webp",
+            "label": 1,
+            "output": 0.19402508437633514
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006764_1.webp",
+            "label": 1,
+            "output": 0.1940244436264038
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006717_4.webp",
+            "label": 1,
+            "output": 0.19356630742549896
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002196_2.webp",
+            "label": 1,
+            "output": 0.1923079490661621
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002623_4.webp",
+            "label": 1,
+            "output": 0.1921224743127823
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006521_4.webp",
+            "label": 1,
+            "output": 0.19197183847427368
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006456_1.webp",
+            "label": 1,
+            "output": 0.19171571731567383
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005990_7.webp",
+            "label": 1,
+            "output": 0.19086752831935883
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002625_6.webp",
+            "label": 1,
+            "output": 0.189570352435112
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007293_4.webp",
+            "label": 1,
+            "output": 0.18899622559547424
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001722_1.webp",
+            "label": 1,
+            "output": 0.18852517008781433
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003001_7.webp",
+            "label": 1,
+            "output": 0.18811891973018646
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004270_5.webp",
+            "label": 1,
+            "output": 0.1869208663702011
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003241_0.webp",
+            "label": 1,
+            "output": 0.18604709208011627
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002108_0.webp",
+            "label": 1,
+            "output": 0.1848096251487732
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009423_6.webp",
+            "label": 1,
+            "output": 0.18325218558311462
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002933_2.webp",
+            "label": 1,
+            "output": 0.18283842504024506
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008056_3.webp",
+            "label": 1,
+            "output": 0.18253512680530548
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002538_6.webp",
+            "label": 1,
+            "output": 0.18242891132831573
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002006_1.webp",
+            "label": 1,
+            "output": 0.18184824287891388
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000473_7.webp",
+            "label": 1,
+            "output": 0.18034574389457703
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004751_0.webp",
+            "label": 1,
+            "output": 0.18007348477840424
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005925_4.webp",
+            "label": 1,
+            "output": 0.17994235455989838
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001888_6.webp",
+            "label": 1,
+            "output": 0.179795041680336
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005394_7.webp",
+            "label": 1,
+            "output": 0.1795513778924942
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003597_0.webp",
+            "label": 1,
+            "output": 0.17903408408164978
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006930_6.webp",
+            "label": 1,
+            "output": 0.17880341410636902
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008200_5.webp",
+            "label": 1,
+            "output": 0.17798198759555817
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000270_7.webp",
+            "label": 1,
+            "output": 0.17752420902252197
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006866_5.webp",
+            "label": 1,
+            "output": 0.1768941879272461
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000290_7.webp",
+            "label": 1,
+            "output": 0.17506492137908936
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006737_7.webp",
+            "label": 1,
+            "output": 0.17503780126571655
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005059_7.webp",
+            "label": 1,
+            "output": 0.17429086565971375
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001511_6.webp",
+            "label": 1,
+            "output": 0.1737867146730423
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002623_0.webp",
+            "label": 1,
+            "output": 0.17325474321842194
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002482_1.webp",
+            "label": 1,
+            "output": 0.1706196516752243
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007592_0.webp",
+            "label": 1,
+            "output": 0.17059552669525146
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004251_6.webp",
+            "label": 1,
+            "output": 0.17027956247329712
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001814_4.webp",
+            "label": 1,
+            "output": 0.16976529359817505
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008096_2.webp",
+            "label": 1,
+            "output": 0.16887250542640686
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005728_7.webp",
+            "label": 1,
+            "output": 0.16827081143856049
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002247_6.webp",
+            "label": 1,
+            "output": 0.16778463125228882
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001026_6.webp",
+            "label": 1,
+            "output": 0.16727299988269806
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002386_4.webp",
+            "label": 1,
+            "output": 0.16696937382221222
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000787_1.webp",
+            "label": 1,
+            "output": 0.1659005582332611
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004055_6.webp",
+            "label": 1,
+            "output": 0.1645897924900055
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007087_2.webp",
+            "label": 1,
+            "output": 0.1635413020849228
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007348_6.webp",
+            "label": 1,
+            "output": 0.16351664066314697
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001835_1.webp",
+            "label": 1,
+            "output": 0.16284897923469543
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002255_1.webp",
+            "label": 1,
+            "output": 0.1611373871564865
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003352_4.webp",
+            "label": 1,
+            "output": 0.16065482795238495
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004197_4.webp",
+            "label": 1,
+            "output": 0.1598529815673828
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009979_4.webp",
+            "label": 1,
+            "output": 0.1595941036939621
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000896_5.webp",
+            "label": 1,
+            "output": 0.1593790501356125
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001864_5.webp",
+            "label": 1,
+            "output": 0.1589464545249939
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002620_4.webp",
+            "label": 1,
+            "output": 0.1589120626449585
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000959_6.webp",
+            "label": 1,
+            "output": 0.1583125740289688
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004325_6.webp",
+            "label": 1,
+            "output": 0.1582675278186798
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001080_5.webp",
+            "label": 1,
+            "output": 0.15768404304981232
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008245_7.webp",
+            "label": 1,
+            "output": 0.15755273401737213
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000848_6.webp",
+            "label": 1,
+            "output": 0.15699633955955505
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007402_1.webp",
+            "label": 1,
+            "output": 0.156593456864357
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004087_5.webp",
+            "label": 1,
+            "output": 0.15636232495307922
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000628_4.webp",
+            "label": 1,
+            "output": 0.15573585033416748
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004091_4.webp",
+            "label": 1,
+            "output": 0.15548135340213776
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004844_1.webp",
+            "label": 1,
+            "output": 0.15438322722911835
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009038_0.webp",
+            "label": 1,
+            "output": 0.1542091965675354
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001263_3.webp",
+            "label": 1,
+            "output": 0.15371233224868774
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005440_3.webp",
+            "label": 1,
+            "output": 0.15320755541324615
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004157_7.webp",
+            "label": 1,
+            "output": 0.15226133167743683
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001026_3.webp",
+            "label": 1,
+            "output": 0.1511489599943161
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001264_3.webp",
+            "label": 1,
+            "output": 0.1509246677160263
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003511_4.webp",
+            "label": 1,
+            "output": 0.15049265325069427
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006778_2.webp",
+            "label": 1,
+            "output": 0.1503550261259079
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003591_6.webp",
+            "label": 1,
+            "output": 0.1501990407705307
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008501_4.webp",
+            "label": 1,
+            "output": 0.14872752130031586
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004844_7.webp",
+            "label": 1,
+            "output": 0.14859884977340698
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004522_2.webp",
+            "label": 1,
+            "output": 0.1481139361858368
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006217_7.webp",
+            "label": 1,
+            "output": 0.14745105803012848
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008328_0.webp",
+            "label": 1,
+            "output": 0.14608654379844666
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002676_1.webp",
+            "label": 1,
+            "output": 0.14552713930606842
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009842_7.webp",
+            "label": 1,
+            "output": 0.145209401845932
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005002_6.webp",
+            "label": 1,
+            "output": 0.144558385014534
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002151_4.webp",
+            "label": 1,
+            "output": 0.14259518682956696
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002314_6.webp",
+            "label": 1,
+            "output": 0.142195925116539
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000381_7.webp",
+            "label": 1,
+            "output": 0.14157196879386902
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008096_4.webp",
+            "label": 1,
+            "output": 0.1409357786178589
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006799_2.webp",
+            "label": 1,
+            "output": 0.14091548323631287
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004857_0.webp",
+            "label": 1,
+            "output": 0.14039717614650726
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002196_7.webp",
+            "label": 1,
+            "output": 0.13949251174926758
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009298_3.webp",
+            "label": 1,
+            "output": 0.1379617303609848
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006174_0.webp",
+            "label": 1,
+            "output": 0.137571781873703
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007355_0.webp",
+            "label": 1,
+            "output": 0.13546757400035858
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008790_0.webp",
+            "label": 1,
+            "output": 0.13361482322216034
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003700_7.webp",
+            "label": 1,
+            "output": 0.13338637351989746
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002853_5.webp",
+            "label": 1,
+            "output": 0.13321149349212646
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008672_2.webp",
+            "label": 1,
+            "output": 0.13311204314231873
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008516_2.webp",
+            "label": 1,
+            "output": 0.1326400488615036
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000176_5.webp",
+            "label": 1,
+            "output": 0.13064509630203247
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008452_4.webp",
+            "label": 1,
+            "output": 0.13031412661075592
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008164_6.webp",
+            "label": 1,
+            "output": 0.13015152513980865
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000070_2.webp",
+            "label": 1,
+            "output": 0.1300165206193924
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006764_2.webp",
+            "label": 1,
+            "output": 0.12988905608654022
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003334_0.webp",
+            "label": 1,
+            "output": 0.12908771634101868
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008955_3.webp",
+            "label": 1,
+            "output": 0.1285114884376526
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002226_1.webp",
+            "label": 1,
+            "output": 0.12696442008018494
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001801_2.webp",
+            "label": 1,
+            "output": 0.12688305974006653
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009560_2.webp",
+            "label": 1,
+            "output": 0.12684176862239838
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002264_2.webp",
+            "label": 1,
+            "output": 0.12564441561698914
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000854_5.webp",
+            "label": 1,
+            "output": 0.12539124488830566
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004304_7.webp",
+            "label": 1,
+            "output": 0.12434665858745575
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007083_0.webp",
+            "label": 1,
+            "output": 0.12384015321731567
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002255_6.webp",
+            "label": 1,
+            "output": 0.12320839613676071
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008188_2.webp",
+            "label": 1,
+            "output": 0.12274616211652756
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009152_5.webp",
+            "label": 1,
+            "output": 0.12271008640527725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004235_6.webp",
+            "label": 1,
+            "output": 0.1221066266298294
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005664_5.webp",
+            "label": 1,
+            "output": 0.12155475467443466
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000795_7.webp",
+            "label": 1,
+            "output": 0.12096212059259415
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001281_6.webp",
+            "label": 1,
+            "output": 0.12075664848089218
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002278_3.webp",
+            "label": 1,
+            "output": 0.12069759517908096
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002903_7.webp",
+            "label": 1,
+            "output": 0.12044420093297958
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007303_3.webp",
+            "label": 1,
+            "output": 0.11979850381612778
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004057_4.webp",
+            "label": 1,
+            "output": 0.11972597986459732
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007857_5.webp",
+            "label": 1,
+            "output": 0.11945000290870667
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001859_7.webp",
+            "label": 1,
+            "output": 0.11943481117486954
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004680_3.webp",
+            "label": 1,
+            "output": 0.11941485852003098
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007831_6.webp",
+            "label": 1,
+            "output": 0.11933542042970657
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008426_3.webp",
+            "label": 1,
+            "output": 0.1189979687333107
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000427_2.webp",
+            "label": 1,
+            "output": 0.11882292479276657
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006187_5.webp",
+            "label": 1,
+            "output": 0.11825010925531387
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008225_7.webp",
+            "label": 1,
+            "output": 0.11697828769683838
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004097_4.webp",
+            "label": 1,
+            "output": 0.11687543988227844
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001449_1.webp",
+            "label": 1,
+            "output": 0.11498241126537323
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007631_3.webp",
+            "label": 1,
+            "output": 0.11489531397819519
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009402_6.webp",
+            "label": 1,
+            "output": 0.114210344851017
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000664_2.webp",
+            "label": 1,
+            "output": 0.113009512424469
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008452_6.webp",
+            "label": 1,
+            "output": 0.11265498399734497
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001510_2.webp",
+            "label": 1,
+            "output": 0.11264178156852722
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005537_4.webp",
+            "label": 1,
+            "output": 0.1124064102768898
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000293_3.webp",
+            "label": 1,
+            "output": 0.11156179755926132
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001281_4.webp",
+            "label": 1,
+            "output": 0.11151634901762009
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002649_7.webp",
+            "label": 1,
+            "output": 0.11103292554616928
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003228_4.webp",
+            "label": 1,
+            "output": 0.1110038086771965
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007661_6.webp",
+            "label": 1,
+            "output": 0.11098820716142654
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005049_1.webp",
+            "label": 1,
+            "output": 0.11010531336069107
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004366_3.webp",
+            "label": 1,
+            "output": 0.10962611436843872
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005713_2.webp",
+            "label": 1,
+            "output": 0.10823661834001541
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008426_6.webp",
+            "label": 1,
+            "output": 0.10822036862373352
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005990_3.webp",
+            "label": 1,
+            "output": 0.10781966894865036
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009694_6.webp",
+            "label": 1,
+            "output": 0.10778792202472687
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007737_6.webp",
+            "label": 1,
+            "output": 0.10729540139436722
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002548_0.webp",
+            "label": 1,
+            "output": 0.10725269466638565
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007605_2.webp",
+            "label": 1,
+            "output": 0.10712786018848419
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007084_7.webp",
+            "label": 1,
+            "output": 0.10640208423137665
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000702_4.webp",
+            "label": 1,
+            "output": 0.10589803010225296
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007751_3.webp",
+            "label": 1,
+            "output": 0.10476647317409515
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006773_2.webp",
+            "label": 1,
+            "output": 0.10451458394527435
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001087_4.webp",
+            "label": 1,
+            "output": 0.10403550416231155
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001891_6.webp",
+            "label": 1,
+            "output": 0.10403481870889664
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003985_6.webp",
+            "label": 1,
+            "output": 0.10375719517469406
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005754_2.webp",
+            "label": 1,
+            "output": 0.10367082804441452
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008815_4.webp",
+            "label": 1,
+            "output": 0.10364509373903275
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004174_0.webp",
+            "label": 1,
+            "output": 0.10319022834300995
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009201_2.webp",
+            "label": 1,
+            "output": 0.10289230197668076
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007513_0.webp",
+            "label": 1,
+            "output": 0.10269196331501007
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007204_1.webp",
+            "label": 1,
+            "output": 0.10260656476020813
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005728_0.webp",
+            "label": 1,
+            "output": 0.10238991677761078
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005402_1.webp",
+            "label": 1,
+            "output": 0.10232298076152802
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007526_0.webp",
+            "label": 1,
+            "output": 0.1019567996263504
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006847_6.webp",
+            "label": 1,
+            "output": 0.10189910978078842
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007699_7.webp",
+            "label": 1,
+            "output": 0.10172616690397263
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003062_0.webp",
+            "label": 1,
+            "output": 0.10168172419071198
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009327_5.webp",
+            "label": 1,
+            "output": 0.10148195922374725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009515_5.webp",
+            "label": 1,
+            "output": 0.10135771334171295
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004589_6.webp",
+            "label": 1,
+            "output": 0.1012568548321724
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001320_0.webp",
+            "label": 1,
+            "output": 0.10107450187206268
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000303_4.webp",
+            "label": 1,
+            "output": 0.1006762757897377
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008471_7.webp",
+            "label": 1,
+            "output": 0.10062962770462036
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000085_2.webp",
+            "label": 1,
+            "output": 0.10051987320184708
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001629_6.webp",
+            "label": 1,
+            "output": 0.1004805639386177
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006478_7.webp",
+            "label": 1,
+            "output": 0.10015477985143661
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007356_4.webp",
+            "label": 1,
+            "output": 0.09998597204685211
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005567_1.webp",
+            "label": 1,
+            "output": 0.09965542703866959
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008650_0.webp",
+            "label": 1,
+            "output": 0.09950578957796097
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004469_4.webp",
+            "label": 1,
+            "output": 0.09926921874284744
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000427_3.webp",
+            "label": 1,
+            "output": 0.09922189265489578
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004916_2.webp",
+            "label": 1,
+            "output": 0.09889234602451324
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009433_5.webp",
+            "label": 1,
+            "output": 0.09857530146837234
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002565_5.webp",
+            "label": 1,
+            "output": 0.09810598939657211
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008500_5.webp",
+            "label": 1,
+            "output": 0.09780195355415344
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005711_5.webp",
+            "label": 1,
+            "output": 0.09769867360591888
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004743_7.webp",
+            "label": 1,
+            "output": 0.0976421907544136
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004295_1.webp",
+            "label": 1,
+            "output": 0.09755661338567734
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000493_1.webp",
+            "label": 1,
+            "output": 0.09744931012392044
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005806_0.webp",
+            "label": 1,
+            "output": 0.09705573320388794
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007356_5.webp",
+            "label": 1,
+            "output": 0.09699273854494095
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002169_2.webp",
+            "label": 1,
+            "output": 0.09694689512252808
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004873_4.webp",
+            "label": 1,
+            "output": 0.09653967618942261
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007429_0.webp",
+            "label": 1,
+            "output": 0.0960049256682396
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003597_1.webp",
+            "label": 1,
+            "output": 0.09445136785507202
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009765_2.webp",
+            "label": 1,
+            "output": 0.09411880373954773
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003228_3.webp",
+            "label": 1,
+            "output": 0.09404142200946808
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001280_3.webp",
+            "label": 1,
+            "output": 0.09238948673009872
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003330_7.webp",
+            "label": 1,
+            "output": 0.09230497479438782
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002111_2.webp",
+            "label": 1,
+            "output": 0.0921291708946228
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003086_6.webp",
+            "label": 1,
+            "output": 0.09196773171424866
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007282_5.webp",
+            "label": 1,
+            "output": 0.0917152538895607
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001117_2.webp",
+            "label": 1,
+            "output": 0.09169518202543259
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006705_0.webp",
+            "label": 1,
+            "output": 0.09127369523048401
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000563_5.webp",
+            "label": 1,
+            "output": 0.09076415747404099
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009210_2.webp",
+            "label": 1,
+            "output": 0.09029579162597656
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006595_2.webp",
+            "label": 1,
+            "output": 0.09019274264574051
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006289_2.webp",
+            "label": 1,
+            "output": 0.08990432322025299
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002460_1.webp",
+            "label": 1,
+            "output": 0.08946254104375839
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009443_2.webp",
+            "label": 1,
+            "output": 0.08938462287187576
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000639_1.webp",
+            "label": 1,
+            "output": 0.08908654004335403
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001229_5.webp",
+            "label": 1,
+            "output": 0.08884996920824051
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002085_5.webp",
+            "label": 1,
+            "output": 0.0885944664478302
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000541_3.webp",
+            "label": 1,
+            "output": 0.08762854337692261
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006891_0.webp",
+            "label": 1,
+            "output": 0.0871366485953331
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002296_0.webp",
+            "label": 1,
+            "output": 0.08702940493822098
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000852_3.webp",
+            "label": 1,
+            "output": 0.0863417536020279
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009011_4.webp",
+            "label": 1,
+            "output": 0.08606991171836853
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007429_6.webp",
+            "label": 1,
+            "output": 0.08581162244081497
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003512_0.webp",
+            "label": 1,
+            "output": 0.08574420213699341
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006921_3.webp",
+            "label": 1,
+            "output": 0.08553499728441238
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008782_4.webp",
+            "label": 1,
+            "output": 0.0853792279958725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008543_6.webp",
+            "label": 1,
+            "output": 0.08506070077419281
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002692_0.webp",
+            "label": 1,
+            "output": 0.08487138152122498
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007355_1.webp",
+            "label": 1,
+            "output": 0.08479999005794525
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001593_5.webp",
+            "label": 1,
+            "output": 0.08457311242818832
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005741_6.webp",
+            "label": 1,
+            "output": 0.08449429273605347
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008930_3.webp",
+            "label": 1,
+            "output": 0.08440058678388596
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003619_6.webp",
+            "label": 1,
+            "output": 0.08396732062101364
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002856_0.webp",
+            "label": 1,
+            "output": 0.08391816169023514
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008671_5.webp",
+            "label": 1,
+            "output": 0.08362140506505966
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003218_5.webp",
+            "label": 1,
+            "output": 0.0833035260438919
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004818_6.webp",
+            "label": 1,
+            "output": 0.0830196663737297
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005063_3.webp",
+            "label": 1,
+            "output": 0.08263234794139862
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007446_1.webp",
+            "label": 1,
+            "output": 0.08257889002561569
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006509_7.webp",
+            "label": 1,
+            "output": 0.08240219950675964
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000515_1.webp",
+            "label": 1,
+            "output": 0.08207079023122787
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009103_3.webp",
+            "label": 1,
+            "output": 0.0820293128490448
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007275_3.webp",
+            "label": 1,
+            "output": 0.08163608610630035
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009443_3.webp",
+            "label": 1,
+            "output": 0.08157803863286972
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005338_5.webp",
+            "label": 1,
+            "output": 0.08110971003770828
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004728_7.webp",
+            "label": 1,
+            "output": 0.08074194192886353
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001346_5.webp",
+            "label": 1,
+            "output": 0.0806427150964737
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008693_7.webp",
+            "label": 1,
+            "output": 0.0801093652844429
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006501_4.webp",
+            "label": 1,
+            "output": 0.08009520173072815
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006356_4.webp",
+            "label": 1,
+            "output": 0.0797683447599411
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007751_1.webp",
+            "label": 1,
+            "output": 0.079458087682724
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006705_2.webp",
+            "label": 1,
+            "output": 0.07925554364919662
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005098_3.webp",
+            "label": 1,
+            "output": 0.07916178554296494
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004548_6.webp",
+            "label": 1,
+            "output": 0.07915373891592026
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005271_5.webp",
+            "label": 1,
+            "output": 0.07858103513717651
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004695_2.webp",
+            "label": 1,
+            "output": 0.07827413827180862
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002192_2.webp",
+            "label": 1,
+            "output": 0.07819776237010956
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007887_4.webp",
+            "label": 1,
+            "output": 0.078115314245224
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000986_6.webp",
+            "label": 1,
+            "output": 0.0780121311545372
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005939_2.webp",
+            "label": 1,
+            "output": 0.07755410671234131
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000698_2.webp",
+            "label": 1,
+            "output": 0.0771639347076416
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005190_1.webp",
+            "label": 1,
+            "output": 0.07703772932291031
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003855_2.webp",
+            "label": 1,
+            "output": 0.07702060043811798
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003600_3.webp",
+            "label": 1,
+            "output": 0.07658310979604721
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007493_2.webp",
+            "label": 1,
+            "output": 0.07656868547201157
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008189_6.webp",
+            "label": 1,
+            "output": 0.07615873217582703
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006394_3.webp",
+            "label": 1,
+            "output": 0.07483656704425812
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005916_7.webp",
+            "label": 1,
+            "output": 0.07463371753692627
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009424_5.webp",
+            "label": 1,
+            "output": 0.07435985654592514
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005415_6.webp",
+            "label": 1,
+            "output": 0.07427424192428589
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002541_0.webp",
+            "label": 1,
+            "output": 0.07396011799573898
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005735_7.webp",
+            "label": 1,
+            "output": 0.07392603158950806
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007616_6.webp",
+            "label": 1,
+            "output": 0.07246043533086777
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000899_6.webp",
+            "label": 1,
+            "output": 0.07241865247488022
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005959_4.webp",
+            "label": 1,
+            "output": 0.07234037667512894
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006315_7.webp",
+            "label": 1,
+            "output": 0.07146048545837402
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004346_3.webp",
+            "label": 1,
+            "output": 0.07097536325454712
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008986_3.webp",
+            "label": 1,
+            "output": 0.07072653621435165
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002074_6.webp",
+            "label": 1,
+            "output": 0.07061430811882019
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006295_0.webp",
+            "label": 1,
+            "output": 0.07040125876665115
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001593_1.webp",
+            "label": 1,
+            "output": 0.07037410885095596
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003865_7.webp",
+            "label": 1,
+            "output": 0.07026402652263641
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000486_6.webp",
+            "label": 1,
+            "output": 0.07013850659132004
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009134_1.webp",
+            "label": 1,
+            "output": 0.0698043629527092
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008284_2.webp",
+            "label": 1,
+            "output": 0.06980182230472565
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002567_1.webp",
+            "label": 1,
+            "output": 0.06960304081439972
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002657_7.webp",
+            "label": 1,
+            "output": 0.06915827840566635
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003115_4.webp",
+            "label": 1,
+            "output": 0.06905625015497208
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006782_1.webp",
+            "label": 1,
+            "output": 0.06881126016378403
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003668_6.webp",
+            "label": 1,
+            "output": 0.06862135976552963
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009140_2.webp",
+            "label": 1,
+            "output": 0.06851637363433838
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001405_1.webp",
+            "label": 1,
+            "output": 0.06841203570365906
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007682_2.webp",
+            "label": 1,
+            "output": 0.06811107695102692
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006592_1.webp",
+            "label": 1,
+            "output": 0.06800460070371628
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006414_4.webp",
+            "label": 1,
+            "output": 0.06755583733320236
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006565_1.webp",
+            "label": 1,
+            "output": 0.06746362894773483
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003768_5.webp",
+            "label": 1,
+            "output": 0.06740317493677139
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009549_5.webp",
+            "label": 1,
+            "output": 0.0673692598938942
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003694_4.webp",
+            "label": 1,
+            "output": 0.06725883483886719
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007049_3.webp",
+            "label": 1,
+            "output": 0.06701097637414932
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008420_0.webp",
+            "label": 1,
+            "output": 0.06689354032278061
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008574_3.webp",
+            "label": 1,
+            "output": 0.06688237935304642
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005045_3.webp",
+            "label": 1,
+            "output": 0.06687357276678085
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009091_4.webp",
+            "label": 1,
+            "output": 0.06680306047201157
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004989_1.webp",
+            "label": 1,
+            "output": 0.06654930114746094
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009462_5.webp",
+            "label": 1,
+            "output": 0.06647156178951263
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004432_3.webp",
+            "label": 1,
+            "output": 0.06644624471664429
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009515_7.webp",
+            "label": 1,
+            "output": 0.06618943065404892
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005402_6.webp",
+            "label": 1,
+            "output": 0.0660528913140297
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000208_3.webp",
+            "label": 1,
+            "output": 0.06547781080007553
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007148_5.webp",
+            "label": 1,
+            "output": 0.0653919205069542
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005410_1.webp",
+            "label": 1,
+            "output": 0.0652407705783844
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003597_7.webp",
+            "label": 1,
+            "output": 0.0651150718331337
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003033_1.webp",
+            "label": 1,
+            "output": 0.06496450304985046
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001621_2.webp",
+            "label": 1,
+            "output": 0.0649513378739357
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003883_4.webp",
+            "label": 1,
+            "output": 0.0648917406797409
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008452_1.webp",
+            "label": 1,
+            "output": 0.06463751196861267
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002810_6.webp",
+            "label": 1,
+            "output": 0.06457966566085815
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009675_3.webp",
+            "label": 1,
+            "output": 0.06448990851640701
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002624_4.webp",
+            "label": 1,
+            "output": 0.06437484920024872
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000278_0.webp",
+            "label": 1,
+            "output": 0.0640677809715271
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003621_4.webp",
+            "label": 1,
+            "output": 0.06378292292356491
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004815_7.webp",
+            "label": 1,
+            "output": 0.06354387104511261
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000789_3.webp",
+            "label": 1,
+            "output": 0.06351779401302338
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001910_6.webp",
+            "label": 1,
+            "output": 0.06326889991760254
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002990_1.webp",
+            "label": 1,
+            "output": 0.06321181356906891
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002561_2.webp",
+            "label": 1,
+            "output": 0.06313428282737732
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004353_3.webp",
+            "label": 1,
+            "output": 0.06311599165201187
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008471_6.webp",
+            "label": 1,
+            "output": 0.062043122947216034
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006006_0.webp",
+            "label": 1,
+            "output": 0.06172959506511688
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004612_5.webp",
+            "label": 1,
+            "output": 0.06171397864818573
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009955_1.webp",
+            "label": 1,
+            "output": 0.06171027570962906
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005558_1.webp",
+            "label": 1,
+            "output": 0.061627909541130066
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005628_3.webp",
+            "label": 1,
+            "output": 0.06146784499287605
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004433_2.webp",
+            "label": 1,
+            "output": 0.061349619179964066
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003694_3.webp",
+            "label": 1,
+            "output": 0.061138007789850235
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002839_0.webp",
+            "label": 1,
+            "output": 0.061123378574848175
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006545_7.webp",
+            "label": 1,
+            "output": 0.06095680594444275
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005852_4.webp",
+            "label": 1,
+            "output": 0.06078990176320076
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001877_6.webp",
+            "label": 1,
+            "output": 0.06075561046600342
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000749_2.webp",
+            "label": 1,
+            "output": 0.0606854148209095
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006255_4.webp",
+            "label": 1,
+            "output": 0.05995255708694458
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000918_6.webp",
+            "label": 1,
+            "output": 0.0598854124546051
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003016_7.webp",
+            "label": 1,
+            "output": 0.05979883298277855
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003467_0.webp",
+            "label": 1,
+            "output": 0.0597844198346138
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006106_7.webp",
+            "label": 1,
+            "output": 0.05971108376979828
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006626_1.webp",
+            "label": 1,
+            "output": 0.05938074737787247
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002460_0.webp",
+            "label": 1,
+            "output": 0.059347450733184814
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001796_2.webp",
+            "label": 1,
+            "output": 0.059294313192367554
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008071_3.webp",
+            "label": 1,
+            "output": 0.059279199689626694
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006511_6.webp",
+            "label": 1,
+            "output": 0.059184618294239044
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001954_7.webp",
+            "label": 1,
+            "output": 0.05890277400612831
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002053_0.webp",
+            "label": 1,
+            "output": 0.05878586322069168
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002594_7.webp",
+            "label": 1,
+            "output": 0.05845761299133301
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007813_6.webp",
+            "label": 1,
+            "output": 0.058453477919101715
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001046_4.webp",
+            "label": 1,
+            "output": 0.05789056792855263
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005402_3.webp",
+            "label": 1,
+            "output": 0.05784708261489868
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007731_0.webp",
+            "label": 1,
+            "output": 0.057733964174985886
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000323_5.webp",
+            "label": 1,
+            "output": 0.057609230279922485
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000876_5.webp",
+            "label": 1,
+            "output": 0.05691792070865631
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003212_4.webp",
+            "label": 1,
+            "output": 0.05667877942323685
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009627_1.webp",
+            "label": 1,
+            "output": 0.056675177067518234
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009041_3.webp",
+            "label": 1,
+            "output": 0.05621020868420601
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007211_4.webp",
+            "label": 1,
+            "output": 0.05594179406762123
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000939_0.webp",
+            "label": 1,
+            "output": 0.05591905862092972
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006328_7.webp",
+            "label": 1,
+            "output": 0.05583672225475311
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001786_3.webp",
+            "label": 1,
+            "output": 0.055732689797878265
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009205_2.webp",
+            "label": 1,
+            "output": 0.055692363530397415
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000336_6.webp",
+            "label": 1,
+            "output": 0.05557645484805107
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007150_2.webp",
+            "label": 1,
+            "output": 0.055440254509449005
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009667_0.webp",
+            "label": 1,
+            "output": 0.0553102120757103
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004301_3.webp",
+            "label": 1,
+            "output": 0.0552009753882885
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001223_0.webp",
+            "label": 1,
+            "output": 0.05510881170630455
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008013_4.webp",
+            "label": 1,
+            "output": 0.05450575053691864
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003313_5.webp",
+            "label": 1,
+            "output": 0.05445221811532974
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003991_0.webp",
+            "label": 1,
+            "output": 0.054298318922519684
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005833_5.webp",
+            "label": 1,
+            "output": 0.054253220558166504
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004303_2.webp",
+            "label": 1,
+            "output": 0.05423847958445549
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007169_5.webp",
+            "label": 1,
+            "output": 0.05400862544775009
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004053_2.webp",
+            "label": 1,
+            "output": 0.053995173424482346
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003137_4.webp",
+            "label": 1,
+            "output": 0.05391012877225876
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000427_7.webp",
+            "label": 1,
+            "output": 0.05383828654885292
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000638_7.webp",
+            "label": 1,
+            "output": 0.053612735122442245
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009137_6.webp",
+            "label": 1,
+            "output": 0.05309680476784706
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003823_0.webp",
+            "label": 1,
+            "output": 0.05298389866948128
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001954_3.webp",
+            "label": 1,
+            "output": 0.05284705013036728
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009076_6.webp",
+            "label": 1,
+            "output": 0.05238012596964836
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000437_5.webp",
+            "label": 1,
+            "output": 0.052279032766819
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008991_0.webp",
+            "label": 1,
+            "output": 0.052141934633255005
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000748_6.webp",
+            "label": 1,
+            "output": 0.052059173583984375
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003532_1.webp",
+            "label": 1,
+            "output": 0.05201638117432594
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003197_3.webp",
+            "label": 1,
+            "output": 0.0517929382622242
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005965_2.webp",
+            "label": 1,
+            "output": 0.051625192165374756
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003791_4.webp",
+            "label": 1,
+            "output": 0.051621027290821075
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003429_7.webp",
+            "label": 1,
+            "output": 0.05150511488318443
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001611_2.webp",
+            "label": 1,
+            "output": 0.05127163603901863
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005683_4.webp",
+            "label": 1,
+            "output": 0.05126730352640152
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002274_5.webp",
+            "label": 1,
+            "output": 0.05109374225139618
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002810_0.webp",
+            "label": 1,
+            "output": 0.05084279179573059
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002715_7.webp",
+            "label": 1,
+            "output": 0.05054758861660957
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001589_0.webp",
+            "label": 1,
+            "output": 0.05051752179861069
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002102_5.webp",
+            "label": 1,
+            "output": 0.05047953873872757
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000311_0.webp",
+            "label": 1,
+            "output": 0.05045922473073006
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006510_3.webp",
+            "label": 1,
+            "output": 0.05042464658617973
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007689_7.webp",
+            "label": 1,
+            "output": 0.04994303733110428
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009057_3.webp",
+            "label": 1,
+            "output": 0.04986269026994705
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004918_6.webp",
+            "label": 1,
+            "output": 0.04984063655138016
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005385_7.webp",
+            "label": 1,
+            "output": 0.04971034452319145
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007413_3.webp",
+            "label": 1,
+            "output": 0.04969678446650505
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007746_2.webp",
+            "label": 1,
+            "output": 0.049695003777742386
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004695_5.webp",
+            "label": 1,
+            "output": 0.04953906312584877
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002971_3.webp",
+            "label": 1,
+            "output": 0.04947172850370407
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000315_0.webp",
+            "label": 1,
+            "output": 0.04941020905971527
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005558_0.webp",
+            "label": 1,
+            "output": 0.049234140664339066
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001176_5.webp",
+            "label": 1,
+            "output": 0.04904155805706978
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005858_4.webp",
+            "label": 1,
+            "output": 0.04873281344771385
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005005_2.webp",
+            "label": 1,
+            "output": 0.048706453293561935
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007153_6.webp",
+            "label": 1,
+            "output": 0.048680808395147324
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005592_7.webp",
+            "label": 1,
+            "output": 0.048338353633880615
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000849_1.webp",
+            "label": 1,
+            "output": 0.048287201672792435
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006721_7.webp",
+            "label": 1,
+            "output": 0.04818005487322807
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002601_3.webp",
+            "label": 1,
+            "output": 0.04792288318276405
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002389_0.webp",
+            "label": 1,
+            "output": 0.047793351113796234
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001098_7.webp",
+            "label": 1,
+            "output": 0.04771070554852486
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001629_7.webp",
+            "label": 1,
+            "output": 0.04768851771950722
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001628_1.webp",
+            "label": 1,
+            "output": 0.04750161990523338
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009952_0.webp",
+            "label": 1,
+            "output": 0.04722165688872337
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005551_0.webp",
+            "label": 1,
+            "output": 0.04722119867801666
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008505_6.webp",
+            "label": 1,
+            "output": 0.047214385122060776
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000500_6.webp",
+            "label": 1,
+            "output": 0.04646148160099983
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007247_5.webp",
+            "label": 1,
+            "output": 0.046428412199020386
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000208_7.webp",
+            "label": 1,
+            "output": 0.04640878364443779
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005062_1.webp",
+            "label": 1,
+            "output": 0.04630846902728081
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009474_4.webp",
+            "label": 1,
+            "output": 0.04600401222705841
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002818_0.webp",
+            "label": 1,
+            "output": 0.045938171446323395
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003954_2.webp",
+            "label": 1,
+            "output": 0.04525117203593254
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000054_2.webp",
+            "label": 1,
+            "output": 0.04519347846508026
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004398_7.webp",
+            "label": 1,
+            "output": 0.0451737679541111
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009732_0.webp",
+            "label": 1,
+            "output": 0.04509672150015831
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002480_4.webp",
+            "label": 1,
+            "output": 0.045053064823150635
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000063_3.webp",
+            "label": 1,
+            "output": 0.04480903968214989
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000374_5.webp",
+            "label": 1,
+            "output": 0.04424242302775383
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001408_4.webp",
+            "label": 1,
+            "output": 0.04390145465731621
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001918_7.webp",
+            "label": 1,
+            "output": 0.04386141151189804
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006388_5.webp",
+            "label": 1,
+            "output": 0.04377476125955582
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007887_0.webp",
+            "label": 1,
+            "output": 0.04363654926419258
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003571_0.webp",
+            "label": 1,
+            "output": 0.04357435554265976
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001437_3.webp",
+            "label": 1,
+            "output": 0.043533217161893845
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009649_1.webp",
+            "label": 1,
+            "output": 0.04348403215408325
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006123_0.webp",
+            "label": 1,
+            "output": 0.04315107688307762
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004798_6.webp",
+            "label": 1,
+            "output": 0.043137673288583755
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006254_1.webp",
+            "label": 1,
+            "output": 0.04298150911927223
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009995_4.webp",
+            "label": 1,
+            "output": 0.042893290519714355
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000276_0.webp",
+            "label": 1,
+            "output": 0.042780373245477676
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000045_6.webp",
+            "label": 1,
+            "output": 0.04253954440355301
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000658_3.webp",
+            "label": 1,
+            "output": 0.042473435401916504
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009209_6.webp",
+            "label": 1,
+            "output": 0.042183686047792435
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005965_7.webp",
+            "label": 1,
+            "output": 0.041936036199331284
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003762_3.webp",
+            "label": 1,
+            "output": 0.04181375727057457
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003865_6.webp",
+            "label": 1,
+            "output": 0.04178277403116226
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003233_0.webp",
+            "label": 1,
+            "output": 0.04159073159098625
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005508_6.webp",
+            "label": 1,
+            "output": 0.04145025461912155
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009429_7.webp",
+            "label": 1,
+            "output": 0.04129502549767494
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004432_6.webp",
+            "label": 1,
+            "output": 0.0412103645503521
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003888_7.webp",
+            "label": 1,
+            "output": 0.04118042066693306
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000802_3.webp",
+            "label": 1,
+            "output": 0.041114505380392075
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004756_4.webp",
+            "label": 1,
+            "output": 0.04108704254031181
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001954_1.webp",
+            "label": 1,
+            "output": 0.0410817489027977
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001246_4.webp",
+            "label": 1,
+            "output": 0.04093106463551521
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003207_6.webp",
+            "label": 1,
+            "output": 0.040646348148584366
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008752_2.webp",
+            "label": 1,
+            "output": 0.040558602660894394
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000799_5.webp",
+            "label": 1,
+            "output": 0.04051682725548744
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005933_6.webp",
+            "label": 1,
+            "output": 0.04036116972565651
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000175_5.webp",
+            "label": 1,
+            "output": 0.040259622037410736
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000237_6.webp",
+            "label": 1,
+            "output": 0.04023320600390434
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003621_5.webp",
+            "label": 1,
+            "output": 0.04009851813316345
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007689_4.webp",
+            "label": 1,
+            "output": 0.03990646079182625
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007312_3.webp",
+            "label": 1,
+            "output": 0.039799124002456665
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000611_4.webp",
+            "label": 1,
+            "output": 0.0395977608859539
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004494_6.webp",
+            "label": 1,
+            "output": 0.039538439363241196
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001250_7.webp",
+            "label": 1,
+            "output": 0.03951647877693176
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005956_0.webp",
+            "label": 1,
+            "output": 0.039491839706897736
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006434_6.webp",
+            "label": 1,
+            "output": 0.03946506232023239
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008632_3.webp",
+            "label": 1,
+            "output": 0.039342742413282394
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005766_0.webp",
+            "label": 1,
+            "output": 0.039303578436374664
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006929_3.webp",
+            "label": 1,
+            "output": 0.03924987465143204
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002097_7.webp",
+            "label": 1,
+            "output": 0.039172809571027756
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006733_0.webp",
+            "label": 1,
+            "output": 0.03915885463356972
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006044_0.webp",
+            "label": 1,
+            "output": 0.039097342640161514
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004996_7.webp",
+            "label": 1,
+            "output": 0.039049092680215836
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004461_7.webp",
+            "label": 1,
+            "output": 0.03889099508523941
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007801_0.webp",
+            "label": 1,
+            "output": 0.0388740636408329
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007788_4.webp",
+            "label": 1,
+            "output": 0.03876134380698204
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003668_4.webp",
+            "label": 1,
+            "output": 0.038721177726984024
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004739_4.webp",
+            "label": 1,
+            "output": 0.038673654198646545
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004399_2.webp",
+            "label": 1,
+            "output": 0.03865612670779228
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007413_6.webp",
+            "label": 1,
+            "output": 0.03865531086921692
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001651_5.webp",
+            "label": 1,
+            "output": 0.03862249478697777
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001681_7.webp",
+            "label": 1,
+            "output": 0.03815842047333717
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001907_4.webp",
+            "label": 1,
+            "output": 0.0381099209189415
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007413_2.webp",
+            "label": 1,
+            "output": 0.03810632973909378
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008775_7.webp",
+            "label": 1,
+            "output": 0.038076046854257584
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004494_1.webp",
+            "label": 1,
+            "output": 0.038016725331544876
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002630_6.webp",
+            "label": 1,
+            "output": 0.03798278048634529
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002630_4.webp",
+            "label": 1,
+            "output": 0.03791533783078194
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002097_4.webp",
+            "label": 1,
+            "output": 0.03789079561829567
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009304_3.webp",
+            "label": 1,
+            "output": 0.03787534683942795
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007610_7.webp",
+            "label": 1,
+            "output": 0.03781820833683014
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009394_6.webp",
+            "label": 1,
+            "output": 0.03770529851317406
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005263_4.webp",
+            "label": 1,
+            "output": 0.03749902918934822
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006210_3.webp",
+            "label": 1,
+            "output": 0.037285562604665756
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004053_5.webp",
+            "label": 1,
+            "output": 0.03673756122589111
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000827_2.webp",
+            "label": 1,
+            "output": 0.036618806421756744
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007174_3.webp",
+            "label": 1,
+            "output": 0.036496203392744064
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000505_1.webp",
+            "label": 1,
+            "output": 0.03618267551064491
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005562_6.webp",
+            "label": 1,
+            "output": 0.036076419055461884
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006202_4.webp",
+            "label": 1,
+            "output": 0.03604995831847191
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002247_2.webp",
+            "label": 1,
+            "output": 0.03597670793533325
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005279_2.webp",
+            "label": 1,
+            "output": 0.03571893647313118
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008534_6.webp",
+            "label": 1,
+            "output": 0.035512376576662064
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009315_0.webp",
+            "label": 1,
+            "output": 0.03546455129981041
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005332_2.webp",
+            "label": 1,
+            "output": 0.035361792892217636
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009369_5.webp",
+            "label": 1,
+            "output": 0.035312335938215256
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001264_4.webp",
+            "label": 1,
+            "output": 0.03530241921544075
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003176_6.webp",
+            "label": 1,
+            "output": 0.03506826236844063
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004891_7.webp",
+            "label": 1,
+            "output": 0.035021621733903885
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009402_7.webp",
+            "label": 1,
+            "output": 0.0349845290184021
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008239_5.webp",
+            "label": 1,
+            "output": 0.03488096594810486
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005819_5.webp",
+            "label": 1,
+            "output": 0.03479548543691635
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007801_1.webp",
+            "label": 1,
+            "output": 0.03461209684610367
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007573_1.webp",
+            "label": 1,
+            "output": 0.03455708920955658
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008657_7.webp",
+            "label": 1,
+            "output": 0.034517522901296616
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009942_0.webp",
+            "label": 1,
+            "output": 0.03446933999657631
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008956_4.webp",
+            "label": 1,
+            "output": 0.03438550978899002
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001571_7.webp",
+            "label": 1,
+            "output": 0.0343485102057457
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005646_6.webp",
+            "label": 1,
+            "output": 0.03432261198759079
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008533_5.webp",
+            "label": 1,
+            "output": 0.034316785633563995
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005026_2.webp",
+            "label": 1,
+            "output": 0.03426339849829674
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000935_5.webp",
+            "label": 1,
+            "output": 0.03415246307849884
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004806_3.webp",
+            "label": 1,
+            "output": 0.034122247248888016
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003972_3.webp",
+            "label": 1,
+            "output": 0.03402813524007797
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008583_1.webp",
+            "label": 1,
+            "output": 0.03400770574808121
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003289_4.webp",
+            "label": 1,
+            "output": 0.03400592878460884
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007056_7.webp",
+            "label": 1,
+            "output": 0.03383553773164749
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005757_1.webp",
+            "label": 1,
+            "output": 0.033825136721134186
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001867_4.webp",
+            "label": 1,
+            "output": 0.033472295850515366
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007340_6.webp",
+            "label": 1,
+            "output": 0.03340136632323265
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002074_2.webp",
+            "label": 1,
+            "output": 0.033038150519132614
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003173_0.webp",
+            "label": 1,
+            "output": 0.03300808370113373
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005062_0.webp",
+            "label": 1,
+            "output": 0.03295478969812393
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006748_7.webp",
+            "label": 1,
+            "output": 0.032922714948654175
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002291_0.webp",
+            "label": 1,
+            "output": 0.03282887861132622
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004913_7.webp",
+            "label": 1,
+            "output": 0.032714784145355225
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006810_1.webp",
+            "label": 1,
+            "output": 0.032660484313964844
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004711_0.webp",
+            "label": 1,
+            "output": 0.03264553099870682
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001651_4.webp",
+            "label": 1,
+            "output": 0.03261459618806839
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003303_6.webp",
+            "label": 1,
+            "output": 0.032550547271966934
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004578_2.webp",
+            "label": 1,
+            "output": 0.03230149298906326
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001785_2.webp",
+            "label": 1,
+            "output": 0.032249048352241516
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006607_4.webp",
+            "label": 1,
+            "output": 0.032188981771469116
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006083_2.webp",
+            "label": 1,
+            "output": 0.03210883215069771
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007932_3.webp",
+            "label": 1,
+            "output": 0.032083868980407715
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003461_4.webp",
+            "label": 1,
+            "output": 0.031983450055122375
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009112_4.webp",
+            "label": 1,
+            "output": 0.03196100890636444
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000964_4.webp",
+            "label": 1,
+            "output": 0.031940046697854996
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000257_2.webp",
+            "label": 1,
+            "output": 0.031755901873111725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001272_5.webp",
+            "label": 1,
+            "output": 0.031743790954351425
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005854_4.webp",
+            "label": 1,
+            "output": 0.031583864241838455
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001280_0.webp",
+            "label": 1,
+            "output": 0.03137645497918129
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008286_6.webp",
+            "label": 1,
+            "output": 0.031282853335142136
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009549_1.webp",
+            "label": 1,
+            "output": 0.031073719263076782
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003940_1.webp",
+            "label": 1,
+            "output": 0.030967574566602707
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004913_3.webp",
+            "label": 1,
+            "output": 0.03088284283876419
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000251_0.webp",
+            "label": 1,
+            "output": 0.030851993709802628
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001664_1.webp",
+            "label": 1,
+            "output": 0.030824333429336548
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005708_0.webp",
+            "label": 1,
+            "output": 0.030750859528779984
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006503_1.webp",
+            "label": 1,
+            "output": 0.03074343316257
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006532_2.webp",
+            "label": 1,
+            "output": 0.030737780034542084
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003512_5.webp",
+            "label": 1,
+            "output": 0.03063242696225643
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006722_0.webp",
+            "label": 1,
+            "output": 0.030385958030819893
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007671_5.webp",
+            "label": 1,
+            "output": 0.030198801308870316
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009112_6.webp",
+            "label": 1,
+            "output": 0.030038999393582344
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000746_0.webp",
+            "label": 1,
+            "output": 0.03001214750111103
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008663_7.webp",
+            "label": 1,
+            "output": 0.029957519844174385
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008431_3.webp",
+            "label": 1,
+            "output": 0.02986721880733967
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008419_2.webp",
+            "label": 1,
+            "output": 0.029812052845954895
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009931_7.webp",
+            "label": 1,
+            "output": 0.02948116697371006
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000746_4.webp",
+            "label": 1,
+            "output": 0.029333313927054405
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005137_0.webp",
+            "label": 1,
+            "output": 0.029305974021553993
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000931_3.webp",
+            "label": 1,
+            "output": 0.029302818700671196
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004918_7.webp",
+            "label": 1,
+            "output": 0.029188908636569977
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000220_1.webp",
+            "label": 1,
+            "output": 0.029090626165270805
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001664_7.webp",
+            "label": 1,
+            "output": 0.029003314673900604
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004584_7.webp",
+            "label": 1,
+            "output": 0.028943799436092377
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009412_3.webp",
+            "label": 1,
+            "output": 0.028792085126042366
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007171_5.webp",
+            "label": 1,
+            "output": 0.02842973731458187
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006776_5.webp",
+            "label": 1,
+            "output": 0.028377758339047432
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005484_2.webp",
+            "label": 1,
+            "output": 0.028257301077246666
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000196_5.webp",
+            "label": 1,
+            "output": 0.028104005381464958
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001705_2.webp",
+            "label": 1,
+            "output": 0.028099022805690765
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003556_6.webp",
+            "label": 1,
+            "output": 0.028088150545954704
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007933_0.webp",
+            "label": 1,
+            "output": 0.027931349352002144
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007371_2.webp",
+            "label": 1,
+            "output": 0.027892645448446274
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003120_6.webp",
+            "label": 1,
+            "output": 0.02785659208893776
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001417_1.webp",
+            "label": 1,
+            "output": 0.02783099375665188
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009598_6.webp",
+            "label": 1,
+            "output": 0.02781405672430992
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006884_1.webp",
+            "label": 1,
+            "output": 0.027782345190644264
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000326_0.webp",
+            "label": 1,
+            "output": 0.027706656605005264
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000396_7.webp",
+            "label": 1,
+            "output": 0.02766401693224907
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001460_1.webp",
+            "label": 1,
+            "output": 0.02756117470562458
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003415_2.webp",
+            "label": 1,
+            "output": 0.02745344676077366
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006081_2.webp",
+            "label": 1,
+            "output": 0.02743072621524334
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003514_3.webp",
+            "label": 1,
+            "output": 0.027261978015303612
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000175_6.webp",
+            "label": 1,
+            "output": 0.027254074811935425
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009966_0.webp",
+            "label": 1,
+            "output": 0.027252182364463806
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002744_1.webp",
+            "label": 1,
+            "output": 0.02720530703663826
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008644_1.webp",
+            "label": 1,
+            "output": 0.027165213599801064
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005377_0.webp",
+            "label": 1,
+            "output": 0.027145233005285263
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008628_7.webp",
+            "label": 1,
+            "output": 0.027079273015260696
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007401_0.webp",
+            "label": 1,
+            "output": 0.026931991800665855
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008412_1.webp",
+            "label": 1,
+            "output": 0.02692899852991104
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004966_7.webp",
+            "label": 1,
+            "output": 0.02680935151875019
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004444_2.webp",
+            "label": 1,
+            "output": 0.02677755616605282
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004038_4.webp",
+            "label": 1,
+            "output": 0.026623239740729332
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006083_3.webp",
+            "label": 1,
+            "output": 0.02632463164627552
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003574_0.webp",
+            "label": 1,
+            "output": 0.02627357840538025
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004966_5.webp",
+            "label": 1,
+            "output": 0.026265636086463928
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000744_2.webp",
+            "label": 1,
+            "output": 0.025861771777272224
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004261_7.webp",
+            "label": 1,
+            "output": 0.025855764746665955
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003450_7.webp",
+            "label": 1,
+            "output": 0.025797482579946518
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004282_1.webp",
+            "label": 1,
+            "output": 0.025523671880364418
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003762_7.webp",
+            "label": 1,
+            "output": 0.0255153626203537
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004508_5.webp",
+            "label": 1,
+            "output": 0.02542741782963276
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008657_3.webp",
+            "label": 1,
+            "output": 0.025424284860491753
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006277_5.webp",
+            "label": 1,
+            "output": 0.02541259489953518
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009805_4.webp",
+            "label": 1,
+            "output": 0.02539951168000698
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007233_1.webp",
+            "label": 1,
+            "output": 0.025397751480340958
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009278_6.webp",
+            "label": 1,
+            "output": 0.025360669940710068
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008620_5.webp",
+            "label": 1,
+            "output": 0.025353142991662025
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000267_1.webp",
+            "label": 1,
+            "output": 0.025288961827754974
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008997_1.webp",
+            "label": 1,
+            "output": 0.025148989632725716
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002508_0.webp",
+            "label": 1,
+            "output": 0.024960340932011604
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003527_7.webp",
+            "label": 1,
+            "output": 0.024762144312262535
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002466_2.webp",
+            "label": 1,
+            "output": 0.024718893691897392
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004432_2.webp",
+            "label": 1,
+            "output": 0.024691130965948105
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002913_3.webp",
+            "label": 1,
+            "output": 0.02468905784189701
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003398_2.webp",
+            "label": 1,
+            "output": 0.024668864905834198
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001435_5.webp",
+            "label": 1,
+            "output": 0.024626871570944786
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003201_5.webp",
+            "label": 1,
+            "output": 0.024569721892476082
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004522_5.webp",
+            "label": 1,
+            "output": 0.02449248917400837
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006210_0.webp",
+            "label": 1,
+            "output": 0.024422379210591316
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002480_5.webp",
+            "label": 1,
+            "output": 0.024409055709838867
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005469_4.webp",
+            "label": 1,
+            "output": 0.024259764701128006
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005711_7.webp",
+            "label": 1,
+            "output": 0.024051770567893982
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003142_1.webp",
+            "label": 1,
+            "output": 0.023990778252482414
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006608_6.webp",
+            "label": 1,
+            "output": 0.023859551176428795
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007502_0.webp",
+            "label": 1,
+            "output": 0.02384449914097786
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007162_6.webp",
+            "label": 1,
+            "output": 0.023809010162949562
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009264_7.webp",
+            "label": 1,
+            "output": 0.0237127672880888
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004857_5.webp",
+            "label": 1,
+            "output": 0.02350674755871296
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009732_7.webp",
+            "label": 1,
+            "output": 0.02349751442670822
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004713_4.webp",
+            "label": 1,
+            "output": 0.023484541103243828
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000673_4.webp",
+            "label": 1,
+            "output": 0.023347780108451843
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000433_0.webp",
+            "label": 1,
+            "output": 0.023221736773848534
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006475_7.webp",
+            "label": 1,
+            "output": 0.023155273869633675
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000045_5.webp",
+            "label": 1,
+            "output": 0.02304212562739849
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003676_6.webp",
+            "label": 1,
+            "output": 0.022954266518354416
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005290_5.webp",
+            "label": 1,
+            "output": 0.022932779043912888
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000133_2.webp",
+            "label": 1,
+            "output": 0.02290254458785057
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002744_0.webp",
+            "label": 1,
+            "output": 0.02281082049012184
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003272_6.webp",
+            "label": 1,
+            "output": 0.022719277068972588
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004284_0.webp",
+            "label": 1,
+            "output": 0.022654006257653236
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001898_3.webp",
+            "label": 1,
+            "output": 0.022642942145466805
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007149_2.webp",
+            "label": 1,
+            "output": 0.022627176716923714
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002175_7.webp",
+            "label": 1,
+            "output": 0.02257663942873478
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002392_5.webp",
+            "label": 1,
+            "output": 0.022535640746355057
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004203_1.webp",
+            "label": 1,
+            "output": 0.022492241114377975
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004506_0.webp",
+            "label": 1,
+            "output": 0.02233855240046978
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005345_1.webp",
+            "label": 1,
+            "output": 0.022234028205275536
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005200_0.webp",
+            "label": 1,
+            "output": 0.022150179371237755
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002202_7.webp",
+            "label": 1,
+            "output": 0.021721184253692627
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005977_6.webp",
+            "label": 1,
+            "output": 0.021691810339689255
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000045_4.webp",
+            "label": 1,
+            "output": 0.02153477445244789
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004284_2.webp",
+            "label": 1,
+            "output": 0.02150062471628189
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006819_0.webp",
+            "label": 1,
+            "output": 0.0213681198656559
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001254_1.webp",
+            "label": 1,
+            "output": 0.02135644294321537
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002432_2.webp",
+            "label": 1,
+            "output": 0.021242884919047356
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002876_7.webp",
+            "label": 1,
+            "output": 0.020984092727303505
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008013_2.webp",
+            "label": 1,
+            "output": 0.020901311188936234
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001453_0.webp",
+            "label": 1,
+            "output": 0.02076999470591545
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008455_4.webp",
+            "label": 1,
+            "output": 0.020674929022789
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009369_3.webp",
+            "label": 1,
+            "output": 0.020539702847599983
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002244_7.webp",
+            "label": 1,
+            "output": 0.02053510770201683
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000556_0.webp",
+            "label": 1,
+            "output": 0.02029079757630825
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001907_2.webp",
+            "label": 1,
+            "output": 0.020273759961128235
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007234_3.webp",
+            "label": 1,
+            "output": 0.020202361047267914
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002481_4.webp",
+            "label": 1,
+            "output": 0.020178642123937607
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007111_3.webp",
+            "label": 1,
+            "output": 0.02016719989478588
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006595_7.webp",
+            "label": 1,
+            "output": 0.020133884623646736
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009760_2.webp",
+            "label": 1,
+            "output": 0.01972041465342045
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006558_5.webp",
+            "label": 1,
+            "output": 0.019716981798410416
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009087_1.webp",
+            "label": 1,
+            "output": 0.019611366093158722
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000014_1.webp",
+            "label": 1,
+            "output": 0.019528711214661598
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004716_2.webp",
+            "label": 1,
+            "output": 0.01947639137506485
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003781_4.webp",
+            "label": 1,
+            "output": 0.019404985010623932
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001987_1.webp",
+            "label": 1,
+            "output": 0.01937098614871502
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004050_7.webp",
+            "label": 1,
+            "output": 0.019300658255815506
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001786_7.webp",
+            "label": 1,
+            "output": 0.01903793215751648
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003474_7.webp",
+            "label": 1,
+            "output": 0.018946584314107895
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008862_0.webp",
+            "label": 1,
+            "output": 0.018847240135073662
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008532_7.webp",
+            "label": 1,
+            "output": 0.01883520931005478
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002692_7.webp",
+            "label": 1,
+            "output": 0.018793629482388496
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009843_1.webp",
+            "label": 1,
+            "output": 0.018706830218434334
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001664_0.webp",
+            "label": 1,
+            "output": 0.018664736300706863
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003301_1.webp",
+            "label": 1,
+            "output": 0.018607135862112045
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002012_0.webp",
+            "label": 1,
+            "output": 0.018323449417948723
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002413_5.webp",
+            "label": 1,
+            "output": 0.018292872235178947
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004632_4.webp",
+            "label": 1,
+            "output": 0.018177606165409088
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002291_5.webp",
+            "label": 1,
+            "output": 0.018082719296216965
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009220_3.webp",
+            "label": 1,
+            "output": 0.01805122382938862
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006884_0.webp",
+            "label": 1,
+            "output": 0.01799549162387848
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005453_5.webp",
+            "label": 1,
+            "output": 0.01793522946536541
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002888_3.webp",
+            "label": 1,
+            "output": 0.01792978122830391
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009000_6.webp",
+            "label": 1,
+            "output": 0.01790696382522583
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005460_7.webp",
+            "label": 1,
+            "output": 0.017646782100200653
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003667_4.webp",
+            "label": 1,
+            "output": 0.017441755160689354
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005262_6.webp",
+            "label": 1,
+            "output": 0.017408428713679314
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008745_4.webp",
+            "label": 1,
+            "output": 0.017104361206293106
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005967_0.webp",
+            "label": 1,
+            "output": 0.01703457534313202
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002525_5.webp",
+            "label": 1,
+            "output": 0.016964111477136612
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008226_0.webp",
+            "label": 1,
+            "output": 0.01688377372920513
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009843_4.webp",
+            "label": 1,
+            "output": 0.016828112304210663
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004785_0.webp",
+            "label": 1,
+            "output": 0.016820482909679413
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006109_6.webp",
+            "label": 1,
+            "output": 0.016739409416913986
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004072_2.webp",
+            "label": 1,
+            "output": 0.016564130783081055
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008794_7.webp",
+            "label": 1,
+            "output": 0.016558201983571053
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009840_0.webp",
+            "label": 1,
+            "output": 0.016357295215129852
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002242_5.webp",
+            "label": 1,
+            "output": 0.01633320562541485
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009364_2.webp",
+            "label": 1,
+            "output": 0.016186561435461044
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003558_0.webp",
+            "label": 1,
+            "output": 0.016152359545230865
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009412_1.webp",
+            "label": 1,
+            "output": 0.016096949577331543
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006451_2.webp",
+            "label": 1,
+            "output": 0.01599341258406639
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009114_4.webp",
+            "label": 1,
+            "output": 0.015992145985364914
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005532_1.webp",
+            "label": 1,
+            "output": 0.015921667218208313
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000457_1.webp",
+            "label": 1,
+            "output": 0.015819180756807327
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006165_4.webp",
+            "label": 1,
+            "output": 0.015694444999098778
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008835_5.webp",
+            "label": 1,
+            "output": 0.015602278523147106
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008620_6.webp",
+            "label": 1,
+            "output": 0.01555579248815775
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005746_0.webp",
+            "label": 1,
+            "output": 0.015511684119701385
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003144_6.webp",
+            "label": 1,
+            "output": 0.015476838685572147
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009033_3.webp",
+            "label": 1,
+            "output": 0.015469345264136791
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004480_1.webp",
+            "label": 1,
+            "output": 0.01538331899791956
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001235_4.webp",
+            "label": 1,
+            "output": 0.015356993302702904
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003541_0.webp",
+            "label": 1,
+            "output": 0.015179482288658619
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002547_5.webp",
+            "label": 1,
+            "output": 0.015020755119621754
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005290_6.webp",
+            "label": 1,
+            "output": 0.014997399412095547
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007917_1.webp",
+            "label": 1,
+            "output": 0.014909631572663784
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002688_5.webp",
+            "label": 1,
+            "output": 0.01483203936368227
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002879_7.webp",
+            "label": 1,
+            "output": 0.01483071781694889
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001571_2.webp",
+            "label": 1,
+            "output": 0.01482358481734991
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000390_5.webp",
+            "label": 1,
+            "output": 0.014798683114349842
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003391_2.webp",
+            "label": 1,
+            "output": 0.014611165970563889
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002362_6.webp",
+            "label": 1,
+            "output": 0.01447987463325262
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005275_5.webp",
+            "label": 1,
+            "output": 0.014449451118707657
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000654_1.webp",
+            "label": 1,
+            "output": 0.014260807074606419
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006424_1.webp",
+            "label": 1,
+            "output": 0.014126491732895374
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001253_7.webp",
+            "label": 1,
+            "output": 0.01380685530602932
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005277_2.webp",
+            "label": 1,
+            "output": 0.013806506060063839
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009843_5.webp",
+            "label": 1,
+            "output": 0.013766461052000523
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007053_5.webp",
+            "label": 1,
+            "output": 0.013736065477132797
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004886_3.webp",
+            "label": 1,
+            "output": 0.013647690415382385
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001430_1.webp",
+            "label": 1,
+            "output": 0.01357594970613718
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009006_4.webp",
+            "label": 1,
+            "output": 0.01352717261761427
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009000_4.webp",
+            "label": 1,
+            "output": 0.013486307114362717
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001771_2.webp",
+            "label": 1,
+            "output": 0.013470777310431004
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001806_4.webp",
+            "label": 1,
+            "output": 0.013439979404211044
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003461_0.webp",
+            "label": 1,
+            "output": 0.013408021070063114
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009243_3.webp",
+            "label": 1,
+            "output": 0.013355182483792305
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002736_4.webp",
+            "label": 1,
+            "output": 0.013336616568267345
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000456_2.webp",
+            "label": 1,
+            "output": 0.01317073404788971
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000388_2.webp",
+            "label": 1,
+            "output": 0.013162539340555668
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000326_1.webp",
+            "label": 1,
+            "output": 0.013029983267188072
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007659_5.webp",
+            "label": 1,
+            "output": 0.012872623279690742
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001796_4.webp",
+            "label": 1,
+            "output": 0.012798975221812725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009087_2.webp",
+            "label": 1,
+            "output": 0.012776436284184456
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008643_7.webp",
+            "label": 1,
+            "output": 0.012680456973612309
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001329_0.webp",
+            "label": 1,
+            "output": 0.012494920752942562
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004851_4.webp",
+            "label": 1,
+            "output": 0.012424075976014137
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005363_2.webp",
+            "label": 1,
+            "output": 0.012389883399009705
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002751_6.webp",
+            "label": 1,
+            "output": 0.012287994846701622
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001362_4.webp",
+            "label": 1,
+            "output": 0.012258850038051605
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009026_5.webp",
+            "label": 1,
+            "output": 0.012210836634039879
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007109_7.webp",
+            "label": 1,
+            "output": 0.012199906632304192
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005140_6.webp",
+            "label": 1,
+            "output": 0.012167936190962791
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000547_4.webp",
+            "label": 1,
+            "output": 0.012162764556705952
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008729_4.webp",
+            "label": 1,
+            "output": 0.012086328119039536
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004224_7.webp",
+            "label": 1,
+            "output": 0.012059081345796585
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006630_4.webp",
+            "label": 1,
+            "output": 0.012036856263875961
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001072_4.webp",
+            "label": 1,
+            "output": 0.011993100866675377
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002848_5.webp",
+            "label": 1,
+            "output": 0.011897824704647064
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003637_1.webp",
+            "label": 1,
+            "output": 0.011822039261460304
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008923_4.webp",
+            "label": 1,
+            "output": 0.011759269051253796
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004072_5.webp",
+            "label": 1,
+            "output": 0.011685437522828579
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006063_1.webp",
+            "label": 1,
+            "output": 0.011663786135613918
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003881_5.webp",
+            "label": 1,
+            "output": 0.01163845881819725
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001470_1.webp",
+            "label": 1,
+            "output": 0.011540655046701431
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001120_4.webp",
+            "label": 1,
+            "output": 0.01152157410979271
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002357_3.webp",
+            "label": 1,
+            "output": 0.011486978270113468
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008439_5.webp",
+            "label": 1,
+            "output": 0.011424290016293526
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001860_7.webp",
+            "label": 1,
+            "output": 0.011048626154661179
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002734_4.webp",
+            "label": 1,
+            "output": 0.011043116450309753
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003112_2.webp",
+            "label": 1,
+            "output": 0.010980533435940742
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002089_2.webp",
+            "label": 1,
+            "output": 0.01096511073410511
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000658_1.webp",
+            "label": 1,
+            "output": 0.010580186732113361
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005655_3.webp",
+            "label": 1,
+            "output": 0.0105538759380579
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008923_5.webp",
+            "label": 1,
+            "output": 0.010420922189950943
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009442_2.webp",
+            "label": 1,
+            "output": 0.010196562856435776
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007256_4.webp",
+            "label": 1,
+            "output": 0.01017866563051939
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002654_7.webp",
+            "label": 1,
+            "output": 0.010073754005134106
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003714_7.webp",
+            "label": 1,
+            "output": 0.00989923533052206
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009575_3.webp",
+            "label": 1,
+            "output": 0.009892974980175495
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005079_2.webp",
+            "label": 1,
+            "output": 0.009865800850093365
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005775_6.webp",
+            "label": 1,
+            "output": 0.009844409301877022
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004706_0.webp",
+            "label": 1,
+            "output": 0.009743696078658104
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007116_1.webp",
+            "label": 1,
+            "output": 0.009733508341014385
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005160_3.webp",
+            "label": 1,
+            "output": 0.009488689713180065
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004254_3.webp",
+            "label": 1,
+            "output": 0.009377488866448402
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003247_5.webp",
+            "label": 1,
+            "output": 0.009366083890199661
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002048_5.webp",
+            "label": 1,
+            "output": 0.009335954673588276
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001482_3.webp",
+            "label": 1,
+            "output": 0.009194486774504185
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001460_6.webp",
+            "label": 1,
+            "output": 0.009185153990983963
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004227_7.webp",
+            "label": 1,
+            "output": 0.009068909101188183
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002689_6.webp",
+            "label": 1,
+            "output": 0.0089957807213068
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004506_1.webp",
+            "label": 1,
+            "output": 0.008993114344775677
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007946_3.webp",
+            "label": 1,
+            "output": 0.008961506187915802
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004886_2.webp",
+            "label": 1,
+            "output": 0.008847865276038647
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004013_7.webp",
+            "label": 1,
+            "output": 0.008841639384627342
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002020_5.webp",
+            "label": 1,
+            "output": 0.00881359726190567
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000085_5.webp",
+            "label": 1,
+            "output": 0.008758354000747204
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009205_5.webp",
+            "label": 1,
+            "output": 0.008715523406863213
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006083_0.webp",
+            "label": 1,
+            "output": 0.008707313798367977
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009094_2.webp",
+            "label": 1,
+            "output": 0.008661659434437752
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004794_7.webp",
+            "label": 1,
+            "output": 0.00839755218476057
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007038_1.webp",
+            "label": 1,
+            "output": 0.00831907894462347
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004679_6.webp",
+            "label": 1,
+            "output": 0.008312586694955826
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008700_1.webp",
+            "label": 1,
+            "output": 0.008283172734081745
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005227_7.webp",
+            "label": 1,
+            "output": 0.008168297819793224
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005768_0.webp",
+            "label": 1,
+            "output": 0.008141705766320229
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000421_0.webp",
+            "label": 1,
+            "output": 0.008122947067022324
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000285_1.webp",
+            "label": 1,
+            "output": 0.00808676891028881
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006810_0.webp",
+            "label": 1,
+            "output": 0.007939521223306656
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007991_2.webp",
+            "label": 1,
+            "output": 0.007789714727550745
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001574_3.webp",
+            "label": 1,
+            "output": 0.007778448984026909
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007081_7.webp",
+            "label": 1,
+            "output": 0.007773090619593859
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001358_2.webp",
+            "label": 1,
+            "output": 0.007624021265655756
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002610_1.webp",
+            "label": 1,
+            "output": 0.007538976147770882
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008871_0.webp",
+            "label": 1,
+            "output": 0.007339581847190857
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004606_6.webp",
+            "label": 1,
+            "output": 0.007310457993298769
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001329_7.webp",
+            "label": 1,
+            "output": 0.007140275556594133
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004273_2.webp",
+            "label": 1,
+            "output": 0.007112239953130484
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007919_0.webp",
+            "label": 1,
+            "output": 0.007071220315992832
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002610_4.webp",
+            "label": 1,
+            "output": 0.00670646084472537
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004578_1.webp",
+            "label": 1,
+            "output": 0.006519676186144352
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007026_7.webp",
+            "label": 1,
+            "output": 0.00649685226380825
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002645_1.webp",
+            "label": 1,
+            "output": 0.006344279274344444
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000005614_3.webp",
+            "label": 1,
+            "output": 0.006271257530897856
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002449_3.webp",
+            "label": 1,
+            "output": 0.006256083492189646
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004273_6.webp",
+            "label": 1,
+            "output": 0.005975030828267336
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004806_5.webp",
+            "label": 1,
+            "output": 0.0059063551016151905
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009583_4.webp",
+            "label": 1,
+            "output": 0.005843614228069782
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004147_4.webp",
+            "label": 1,
+            "output": 0.005775787401944399
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002720_1.webp",
+            "label": 1,
+            "output": 0.005758123006671667
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006448_0.webp",
+            "label": 1,
+            "output": 0.005309115629643202
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000036_2.webp",
+            "label": 1,
+            "output": 0.0050712814554572105
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001401_3.webp",
+            "label": 1,
+            "output": 0.00507117435336113
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000004690_4.webp",
+            "label": 1,
+            "output": 0.004922546911984682
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006605_7.webp",
+            "label": 1,
+            "output": 0.004911272786557674
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000658_5.webp",
+            "label": 1,
+            "output": 0.004881227854639292
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001221_1.webp",
+            "label": 1,
+            "output": 0.004854951053857803
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000312_3.webp",
+            "label": 1,
+            "output": 0.004767115227878094
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007357_5.webp",
+            "label": 1,
+            "output": 0.004377136472612619
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007234_5.webp",
+            "label": 1,
+            "output": 0.004345783498138189
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000003667_2.webp",
+            "label": 1,
+            "output": 0.004098816774785519
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006204_1.webp",
+            "label": 1,
+            "output": 0.003938131965696812
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000002806_3.webp",
+            "label": 1,
+            "output": 0.0038829254917800426
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006434_2.webp",
+            "label": 1,
+            "output": 0.0038400012999773026
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007200_4.webp",
+            "label": 1,
+            "output": 0.003772055497393012
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008521_6.webp",
+            "label": 1,
+            "output": 0.0036578779108822346
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001304_2.webp",
+            "label": 1,
+            "output": 0.0034123207442462444
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006678_3.webp",
+            "label": 1,
+            "output": 0.0033914174418896437
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000006190_6.webp",
+            "label": 1,
+            "output": 0.003370406571775675
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000000724_3.webp",
+            "label": 1,
+            "output": 0.003005723701789975
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000001221_3.webp",
+            "label": 1,
+            "output": 0.0027759200893342495
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000008226_2.webp",
+            "label": 1,
+            "output": 0.002530415076762438
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007423_7.webp",
+            "label": 1,
+            "output": 0.0023342801723629236
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007680_4.webp",
+            "label": 1,
+            "output": 0.0021814368665218353
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000009598_0.webp",
+            "label": 1,
+            "output": 0.001877712202258408
+        },
+        {
+            "path": "data/test/spai/stable-diffusion-3/1_fake/000007342_4.webp",
+            "label": 1,
+            "output": 0.0017877854406833649
+        }
+    ]
+}

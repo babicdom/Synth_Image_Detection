@@ -1,0 +1,904 @@
+{
+    "images": [
+        {
+            "path": "data/test/seeingdark/0_real/10034_00_100_gt.png",
+            "label": 0,
+            "output": 0.5170377492904663
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10034_00_250_gt.png",
+            "label": 0,
+            "output": 0.5170377492904663
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10003_00_250_gt.png",
+            "label": 0,
+            "output": 0.24041850864887238
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10003_00_100_gt.png",
+            "label": 0,
+            "output": 0.24041850864887238
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10113_00_250_gt.png",
+            "label": 0,
+            "output": 0.19762706756591797
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10113_00_100_gt.png",
+            "label": 0,
+            "output": 0.19762706756591797
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10051_00_300_gt.png",
+            "label": 0,
+            "output": 0.1876375675201416
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10051_00_100_gt.png",
+            "label": 0,
+            "output": 0.1876375675201416
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10094_00_100_gt.png",
+            "label": 0,
+            "output": 0.16041199862957
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10094_00_250_gt.png",
+            "label": 0,
+            "output": 0.16041199862957
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10063_00_300_gt.png",
+            "label": 0,
+            "output": 0.15194162726402283
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10063_00_100_gt.png",
+            "label": 0,
+            "output": 0.15194162726402283
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10139_00_300_gt.png",
+            "label": 0,
+            "output": 0.1467454433441162
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10172_00_250_gt.png",
+            "label": 0,
+            "output": 0.13797204196453094
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10172_00_100_gt.png",
+            "label": 0,
+            "output": 0.13797204196453094
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10068_00_300_gt.png",
+            "label": 0,
+            "output": 0.1351349800825119
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10097_00_250_gt.png",
+            "label": 0,
+            "output": 0.13172388076782227
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10097_00_100_gt.png",
+            "label": 0,
+            "output": 0.13172388076782227
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10103_00_300_gt.png",
+            "label": 0,
+            "output": 0.12627921998500824
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10093_00_300_gt.png",
+            "label": 0,
+            "output": 0.12312737107276917
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10099_00_100_gt.png",
+            "label": 0,
+            "output": 0.12108196318149567
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10099_00_250_gt.png",
+            "label": 0,
+            "output": 0.12108196318149567
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10116_00_300_gt.png",
+            "label": 0,
+            "output": 0.1204913854598999
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10047_00_300_gt.png",
+            "label": 0,
+            "output": 0.11392517387866974
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10047_00_100_gt.png",
+            "label": 0,
+            "output": 0.11392517387866974
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10040_00_100_gt.png",
+            "label": 0,
+            "output": 0.11225955188274384
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10040_00_250_gt.png",
+            "label": 0,
+            "output": 0.11225955188274384
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10134_00_100_gt.png",
+            "label": 0,
+            "output": 0.11212485283613205
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10134_00_250_gt.png",
+            "label": 0,
+            "output": 0.11212485283613205
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10172_00_300_gt.png",
+            "label": 0,
+            "output": 0.10849974304437637
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10054_00_100_gt.png",
+            "label": 0,
+            "output": 0.10714948177337646
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10054_00_250_gt.png",
+            "label": 0,
+            "output": 0.10714948177337646
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10020_00_100_gt.png",
+            "label": 0,
+            "output": 0.10491856932640076
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10020_00_300_gt.png",
+            "label": 0,
+            "output": 0.10491856932640076
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10089_00_100_gt.png",
+            "label": 0,
+            "output": 0.10468899458646774
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10089_00_250_gt.png",
+            "label": 0,
+            "output": 0.10468899458646774
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10064_00_300_gt.png",
+            "label": 0,
+            "output": 0.10357736796140671
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10064_00_100_gt.png",
+            "label": 0,
+            "output": 0.10357736796140671
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10077_00_300_gt.png",
+            "label": 0,
+            "output": 0.10026665031909943
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10043_00_300_gt.png",
+            "label": 0,
+            "output": 0.09838419407606125
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10043_00_100_gt.png",
+            "label": 0,
+            "output": 0.09838419407606125
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10105_00_300_gt.png",
+            "label": 0,
+            "output": 0.0870058536529541
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10032_00_100_gt.png",
+            "label": 0,
+            "output": 0.08681134134531021
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10032_00_250_gt.png",
+            "label": 0,
+            "output": 0.08681134134531021
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10027_00_300_gt.png",
+            "label": 0,
+            "output": 0.08486652374267578
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10027_00_100_gt.png",
+            "label": 0,
+            "output": 0.08486652374267578
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10055_00_300_gt.png",
+            "label": 0,
+            "output": 0.08051016181707382
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10101_00_300_gt.png",
+            "label": 0,
+            "output": 0.0802113488316536
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10138_00_250_gt.png",
+            "label": 0,
+            "output": 0.07829039543867111
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10138_00_100_gt.png",
+            "label": 0,
+            "output": 0.07829039543867111
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10040_00_300_gt.png",
+            "label": 0,
+            "output": 0.07636918872594833
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10133_00_250_gt.png",
+            "label": 0,
+            "output": 0.07611178606748581
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10133_00_100_gt.png",
+            "label": 0,
+            "output": 0.07611178606748581
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10170_00_300_gt.png",
+            "label": 0,
+            "output": 0.0666612833738327
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10176_00_300_gt.png",
+            "label": 0,
+            "output": 0.06565249711275101
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10082_00_300_gt.png",
+            "label": 0,
+            "output": 0.06468746066093445
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10006_00_250_gt.png",
+            "label": 0,
+            "output": 0.06343462318181992
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10006_00_100_gt.png",
+            "label": 0,
+            "output": 0.06343462318181992
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10140_00_300_gt.png",
+            "label": 0,
+            "output": 0.0628492459654808
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10119_00_100_gt.png",
+            "label": 0,
+            "output": 0.06124940887093544
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10119_00_250_gt.png",
+            "label": 0,
+            "output": 0.06124940887093544
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10090_00_100_gt.png",
+            "label": 0,
+            "output": 0.059334203600883484
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10090_00_250_gt.png",
+            "label": 0,
+            "output": 0.059334203600883484
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10030_00_100_gt.png",
+            "label": 0,
+            "output": 0.058199938386678696
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10030_00_250_gt.png",
+            "label": 0,
+            "output": 0.058199938386678696
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10167_00_300_gt.png",
+            "label": 0,
+            "output": 0.05655549839138985
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10022_00_250_gt.png",
+            "label": 0,
+            "output": 0.055319640785455704
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10022_00_100_gt.png",
+            "label": 0,
+            "output": 0.055319640785455704
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10045_00_250_gt.png",
+            "label": 0,
+            "output": 0.054714977741241455
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10045_00_100_gt.png",
+            "label": 0,
+            "output": 0.054714977741241455
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10016_00_100_gt.png",
+            "label": 0,
+            "output": 0.053908199071884155
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10016_00_250_gt.png",
+            "label": 0,
+            "output": 0.053908199071884155
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10029_00_300_gt.png",
+            "label": 0,
+            "output": 0.05365065857768059
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10029_00_100_gt.png",
+            "label": 0,
+            "output": 0.05365065857768059
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10198_00_250_gt.png",
+            "label": 0,
+            "output": 0.052488911896944046
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10198_00_300_gt.png",
+            "label": 0,
+            "output": 0.052488911896944046
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10198_00_100_gt.png",
+            "label": 0,
+            "output": 0.052488911896944046
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10024_00_300_gt.png",
+            "label": 0,
+            "output": 0.051154352724552155
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10024_00_100_gt.png",
+            "label": 0,
+            "output": 0.051154352724552155
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10110_00_100_gt.png",
+            "label": 0,
+            "output": 0.04156644642353058
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10110_00_250_gt.png",
+            "label": 0,
+            "output": 0.04156644642353058
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10106_00_300_gt.png",
+            "label": 0,
+            "output": 0.03766945004463196
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10160_00_250_gt.png",
+            "label": 0,
+            "output": 0.03766576200723648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10160_00_300_gt.png",
+            "label": 0,
+            "output": 0.03766576200723648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10160_00_100_gt.png",
+            "label": 0,
+            "output": 0.03766576200723648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10162_00_300_gt.png",
+            "label": 0,
+            "output": 0.03585479035973549
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10035_00_250_gt.png",
+            "label": 0,
+            "output": 0.03220079839229584
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10035_00_100_gt.png",
+            "label": 0,
+            "output": 0.03220079839229584
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10019_00_300_gt.png",
+            "label": 0,
+            "output": 0.032192081212997437
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10019_00_100_gt.png",
+            "label": 0,
+            "output": 0.032192081212997437
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10111_00_300_gt.png",
+            "label": 0,
+            "output": 0.03153565898537636
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10159_00_100_gt.png",
+            "label": 0,
+            "output": 0.0304801594465971
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10159_00_300_gt.png",
+            "label": 0,
+            "output": 0.0304801594465971
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10159_00_250_gt.png",
+            "label": 0,
+            "output": 0.0304801594465971
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10117_00_250_gt.png",
+            "label": 0,
+            "output": 0.03004458360373974
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10117_00_100_gt.png",
+            "label": 0,
+            "output": 0.03004458360373974
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10125_00_300_gt.png",
+            "label": 0,
+            "output": 0.029542509466409683
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10178_00_100_gt.png",
+            "label": 0,
+            "output": 0.028344934806227684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10178_00_300_gt.png",
+            "label": 0,
+            "output": 0.028344934806227684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10178_00_250_gt.png",
+            "label": 0,
+            "output": 0.028344934806227684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10125_00_100_gt.png",
+            "label": 0,
+            "output": 0.027860714122653008
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10125_00_250_gt.png",
+            "label": 0,
+            "output": 0.027860714122653008
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10126_00_300_gt.png",
+            "label": 0,
+            "output": 0.027772918343544006
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10144_00_100_gt.png",
+            "label": 0,
+            "output": 0.026386955752968788
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10144_00_250_gt.png",
+            "label": 0,
+            "output": 0.026386955752968788
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10055_00_250_gt.png",
+            "label": 0,
+            "output": 0.026239318773150444
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10055_00_100_gt.png",
+            "label": 0,
+            "output": 0.026239318773150444
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10153_00_300_gt.png",
+            "label": 0,
+            "output": 0.025832252576947212
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10153_00_250_gt.png",
+            "label": 0,
+            "output": 0.025832252576947212
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10153_00_100_gt.png",
+            "label": 0,
+            "output": 0.025832252576947212
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10163_00_300_gt.png",
+            "label": 0,
+            "output": 0.02549298107624054
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10074_00_300_gt.png",
+            "label": 0,
+            "output": 0.025310350582003593
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10121_00_100_gt.png",
+            "label": 0,
+            "output": 0.023824602365493774
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10121_00_250_gt.png",
+            "label": 0,
+            "output": 0.023824602365493774
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10174_00_300_gt.png",
+            "label": 0,
+            "output": 0.021928081288933754
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10174_00_250_gt.png",
+            "label": 0,
+            "output": 0.021928081288933754
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10174_00_100_gt.png",
+            "label": 0,
+            "output": 0.021928081288933754
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10068_00_250_gt.png",
+            "label": 0,
+            "output": 0.021695539355278015
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10068_00_100_gt.png",
+            "label": 0,
+            "output": 0.021695539355278015
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10145_00_250_gt.png",
+            "label": 0,
+            "output": 0.021247539669275284
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10145_00_300_gt.png",
+            "label": 0,
+            "output": 0.021247539669275284
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10145_00_100_gt.png",
+            "label": 0,
+            "output": 0.021247539669275284
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10187_00_100_gt.png",
+            "label": 0,
+            "output": 0.01999901980161667
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10187_00_250_gt.png",
+            "label": 0,
+            "output": 0.01999901980161667
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10187_00_300_gt.png",
+            "label": 0,
+            "output": 0.01999901980161667
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10165_00_250_gt.png",
+            "label": 0,
+            "output": 0.019747193902730942
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10165_00_300_gt.png",
+            "label": 0,
+            "output": 0.019747193902730942
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10165_00_100_gt.png",
+            "label": 0,
+            "output": 0.019747193902730942
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10185_00_100_gt.png",
+            "label": 0,
+            "output": 0.019364668056368828
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10185_00_250_gt.png",
+            "label": 0,
+            "output": 0.019364668056368828
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10185_00_300_gt.png",
+            "label": 0,
+            "output": 0.019364668056368828
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10069_00_250_gt.png",
+            "label": 0,
+            "output": 0.01903681457042694
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10069_00_100_gt.png",
+            "label": 0,
+            "output": 0.01903681457042694
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10087_00_300_gt.png",
+            "label": 0,
+            "output": 0.018316077068448067
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10011_00_100_gt.png",
+            "label": 0,
+            "output": 0.01755567453801632
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10011_00_250_gt.png",
+            "label": 0,
+            "output": 0.01755567453801632
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10148_00_300_gt.png",
+            "label": 0,
+            "output": 0.015399656258523464
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10148_00_100_gt.png",
+            "label": 0,
+            "output": 0.015399656258523464
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10148_00_250_gt.png",
+            "label": 0,
+            "output": 0.015399656258523464
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10049_00_100_gt.png",
+            "label": 0,
+            "output": 0.013091662898659706
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10049_00_300_gt.png",
+            "label": 0,
+            "output": 0.013091662898659706
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10203_00_100_gt.png",
+            "label": 0,
+            "output": 0.013086145743727684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10203_00_250_gt.png",
+            "label": 0,
+            "output": 0.013086145743727684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10203_00_300_gt.png",
+            "label": 0,
+            "output": 0.013086145743727684
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10161_00_250_gt.png",
+            "label": 0,
+            "output": 0.011968806385993958
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10161_00_100_gt.png",
+            "label": 0,
+            "output": 0.011968806385993958
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10161_00_300_gt.png",
+            "label": 0,
+            "output": 0.011968806385993958
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10191_00_300_gt.png",
+            "label": 0,
+            "output": 0.011887353844940662
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10191_00_250_gt.png",
+            "label": 0,
+            "output": 0.011887353844940662
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10191_00_100_gt.png",
+            "label": 0,
+            "output": 0.011887353844940662
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10199_00_100_gt.png",
+            "label": 0,
+            "output": 0.011305166408419609
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10199_00_250_gt.png",
+            "label": 0,
+            "output": 0.011305166408419609
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10199_00_300_gt.png",
+            "label": 0,
+            "output": 0.011305166408419609
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10227_00_100_gt.png",
+            "label": 0,
+            "output": 0.009475834667682648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10227_00_300_gt.png",
+            "label": 0,
+            "output": 0.009475834667682648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10227_00_250_gt.png",
+            "label": 0,
+            "output": 0.009475834667682648
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10213_00_250_gt.png",
+            "label": 0,
+            "output": 0.00762107502669096
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10213_00_300_gt.png",
+            "label": 0,
+            "output": 0.00762107502669096
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10213_00_100_gt.png",
+            "label": 0,
+            "output": 0.00762107502669096
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10154_00_250_gt.png",
+            "label": 0,
+            "output": 0.007498740218579769
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10154_00_100_gt.png",
+            "label": 0,
+            "output": 0.007498740218579769
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10154_00_300_gt.png",
+            "label": 0,
+            "output": 0.007498740218579769
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10228_00_100_gt.png",
+            "label": 0,
+            "output": 0.007185869384557009
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10228_00_250_gt.png",
+            "label": 0,
+            "output": 0.007185869384557009
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10228_00_300_gt.png",
+            "label": 0,
+            "output": 0.007185869384557009
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10155_00_300_gt.png",
+            "label": 0,
+            "output": 0.005695546977221966
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10155_00_100_gt.png",
+            "label": 0,
+            "output": 0.005695546977221966
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10155_00_250_gt.png",
+            "label": 0,
+            "output": 0.005695546977221966
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10192_00_250_gt.png",
+            "label": 0,
+            "output": 0.005159208085387945
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10192_00_300_gt.png",
+            "label": 0,
+            "output": 0.005159208085387945
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10192_00_100_gt.png",
+            "label": 0,
+            "output": 0.005159208085387945
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10217_00_250_gt.png",
+            "label": 0,
+            "output": 0.004981343634426594
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10217_00_300_gt.png",
+            "label": 0,
+            "output": 0.004981343634426594
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10217_00_100_gt.png",
+            "label": 0,
+            "output": 0.004981343634426594
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10226_00_100_gt.png",
+            "label": 0,
+            "output": 0.004339680075645447
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10226_00_300_gt.png",
+            "label": 0,
+            "output": 0.004339680075645447
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10226_00_250_gt.png",
+            "label": 0,
+            "output": 0.004339680075645447
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10193_00_100_gt.png",
+            "label": 0,
+            "output": 0.001671343226917088
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10193_00_250_gt.png",
+            "label": 0,
+            "output": 0.001671343226917088
+        },
+        {
+            "path": "data/test/seeingdark/0_real/10193_00_300_gt.png",
+            "label": 0,
+            "output": 0.001671343226917088
+        }
+    ]
+}

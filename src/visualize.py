@@ -4,7 +4,7 @@ import numpy as np
 from torchvision import transforms
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
-from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn, get_generators, get_real_images
+from src.utils import patchify_image, get_transform, get_loader, image_enlisting_collate_fn, get_generators, get_real_images, custom_unfold
 from src.data import EvaluationDataset, TestDataset
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 import pickle
@@ -49,12 +49,12 @@ def visualize_detection_curves(model_names, base_path="results/curves"):
         model_names (list): List of model names to visualize
         base_path (str): Path containing the curve JSON files
     """
+    os.makedirs(f"results/visualizations/comparison", exist_ok=True)
     plt.style.use('seaborn-v0_8')
-    fig, axs = plt.subplots(3, 2, figsize=(15, 20))
     suffixes = ['all', 'ldm', 'gan']
 
     for row_idx, suffix in enumerate(suffixes):
-        arch_title = suffix.upper() + ' Models'
+        fig, axs = plt.subplots(1, 2, figsize=(15, 6), sharey=True)
         for idx, model in enumerate(model_names):
             file_path = os.path.join(base_path, f"{model}_{suffix}_curves.json")
             if not os.path.exists(file_path):
@@ -68,44 +68,52 @@ def visualize_detection_curves(model_names, base_path="results/curves"):
                 lw, alpha, zorder = 3, 1.0, 3
             else:
                 lw, alpha, zorder = 1.5, 0.3, 1
+            if idx == 0:
+                model = "Ours"
+            elif model == "Rine_latent_diffusion":
+                model = "Rine"
+            elif model == "Rine_all_classes":
+                model = "Rine"
+            elif model == "SPAI_progan":
+                model = "SPAI"
 
             # ROC Curve
             roc = curve_data['roc_curve']
             roc_auc = auc(roc[0], roc[1])
-            axs[row_idx, 0].plot(
+            axs[0].plot(
                 roc[0], roc[1],
                 lw=lw, alpha=alpha, zorder=zorder,
-                label=f"{model} (AUC = {roc_auc:.2f})"
+                label=f"{model} (AUC = {100*roc_auc:.2f})"
             )
 
             # Precision-Recall Curve
             precision, recall, _ = curve_data['precision_recall_curve']
             average_precision = auc(recall, precision)
-            axs[row_idx, 1].plot(
+            axs[1].plot(
                 recall, precision,
                 lw=lw, alpha=alpha, zorder=zorder,
-                label=f"{model} (AP = {average_precision:.2f})"
+                label=f"{model} (AP = {100*average_precision:.2f})"
             )
 
         # Format ROC subplot
-        axs[row_idx, 0].set_title(f'ROC Curves - {arch_title}', fontsize=14)
-        axs[row_idx, 0].set_xlabel('False Positive Rate', fontsize=12)
-        axs[row_idx, 0].set_ylabel('True Positive Rate', fontsize=12)
-        axs[row_idx, 0].plot([0, 1], [0, 1], 'k--', lw=1)
-        axs[row_idx, 0].grid(True)
-        axs[row_idx, 0].legend(loc='lower right', fontsize=10)
+        axs[0].set_title(f"ROC Curve Comparison", fontsize=14)
+        axs[0].set_xlabel('False Positive Rate', fontsize=12)
+        axs[0].set_ylabel('True Positive Rate', fontsize=12)
+        axs[0].plot([0, 1], [0, 1], 'k--', lw=1)
+        axs[0].grid(True)
+        axs[0].legend(loc='lower right', fontsize=10)
 
         # Format Precision-Recall subplot
-        axs[row_idx, 1].set_title(f'Precision-Recall Curves - {arch_title}', fontsize=14)
-        axs[row_idx, 1].set_xlabel('Recall', fontsize=12)
-        axs[row_idx, 1].set_ylabel('Precision', fontsize=12)
-        axs[row_idx, 1].set_ylim([0.0, 1.05])
-        axs[row_idx, 1].grid(True)
-        axs[row_idx, 1].legend(loc='lower left', fontsize=10)
-
-    plt.tight_layout(pad=3.0)
-    os.makedirs(f"results/visualizations/comparison", exist_ok=True)
-    plt.savefig(os.path.join("results", "visualizations", 'comparison', f"comparison.png"))
+        axs[1].set_title(f"Precision-Recall Curve Comparison", fontsize=14)
+        axs[1].set_xlabel('Recall', fontsize=12)
+        axs[1].set_ylabel('Precision', fontsize=12)
+        axs[1].set_ylim([0.0, 1.05])
+        axs[1].grid(True)
+        axs[1].legend(loc='lower left', fontsize=10)
+            
+        # Save the figure
+        plt.tight_layout(pad=3.0)
+        plt.savefig(f"results/visualizations/comparison/{suffix}_comparison.png")
 
 def visualize_prediction_distribution(
         data,
@@ -325,7 +333,8 @@ def make_contact_sheet(imagelist, ncolrow, textlist = None, textlist2 = None, la
 def visualize_patchify(
         image, 
         patch_size=(224, 224), 
-        stride=(16, 16)
+        stride=(16, 16),
+        name="patchified_image",
     ):
     """
     Visualize the patchified image.
@@ -351,17 +360,27 @@ def visualize_patchify(
         ncols=num_patches_w,
         figsize=(num_patches_w * 2, num_patches_h * 2),
     )
+
     if num_patches == 1:
         axes = np.array([[axes]])
     for i in range(num_patches):
         ax = axes[i // num_patches_w, i % num_patches_w]
         im = transforms.ToPILImage()(patches[0, i])
         ax.imshow(im)
-        ax.set_title(f"Patch {i + 1}")
+        # ax.set_title(f"Patch {i + 1}")
         ax.axis('off')
     plt.tight_layout()
+    # Make margins for the figure 0 inches
+    plt.subplots_adjust(
+        left=0,
+        right=1,
+        top=1,
+        bottom=0,
+        wspace=0.1,  # control horizontal spacing between subplots
+        hspace=0.1   # control vertical spacing between subplots
+    )
     os.makedirs("results/visualizations", exist_ok=True)
-    plt.savefig(os.path.join("results", "visualizations", "patchified_image.png"))
+    plt.savefig(os.path.join("results", "visualizations", name + ".png"))
     plt.close()
 
     h_grids = max(h_img - h_crop + h_stride - 1, 0) // h_stride + 1
@@ -389,6 +408,7 @@ def visualize_patchify(
     os.makedirs("results/visualizations", exist_ok=True)
     plt.savefig(os.path.join("results", "visualizations", "patchified_image_new.png"))
     plt.close()
+    return patches
 
 def visualize_patch_impact(
         img,
@@ -553,20 +573,36 @@ def save_predictions(
     print(f"Saved worst and best predictions to results/predictions/{experiment['save_path']}")
 
 if __name__ == "__main__":
-    # visualize_detection_curves(['IntermediatePatch', 'Rine_4_class', 'Rine_latent_diffusion', 'SPAI'])
+    # img = Image.open("data/test/spai/stable-diffusion-3/1_fake/000005394_7.webp").convert("RGB")
+    # patch_size = (512, 512)
+    # stride = (256, 256)
+    # patches = visualize_patchify(
+    #     image=transforms.ToTensor()(img).unsqueeze(0),
+    #     patch_size=patch_size,
+    #     stride=stride,
+    # )
+    # print(patches.shape)
+    # for i in range(patches.shape[1]):
+    #     visualize_patchify(
+    #         image=patches[0, i].unsqueeze(0),
+    #         patch_size=(16, 16),
+    #         stride=(16, 16),
+    #         name=f"patch_{i}",
+    #     )
+    visualize_detection_curves(['WindowIntermediatePacth', 'Rine_all_classes', 'SPAI_progan'])
 
-    experiment = json.load(
-        open(f"ckpt/IntermediatePatch/2_nproj_1024_proj_dim/experiment.json", "rb")
-    )
-    model = IntermediatePatch(
-        backbone=experiment["backbone"],
-        nproj=experiment["nproj"],
-        proj_dim=experiment["proj_dim"],
-        device=torch.device("cuda:0"),
-    )
-    model.load_state_dict(
-        torch.load(f"ckpt/IntermediatePatch/2_nproj_1024_proj_dim/train.pth", map_location="cuda:0")
-    )
+    # experiment = json.load(
+    #     open(f"ckpt/IntermediatePatchLDM/2_nproj_1024_proj_dim/experiment.json", "rb")
+    # )
+    # model = IntermediatePatch(
+    #     backbone=experiment["backbone"],
+    #     nproj=experiment["nproj"],
+    #     proj_dim=experiment["proj_dim"],
+    #     device=torch.device("cuda:0"),
+    # )
+    # model.load_state_dict(
+    #     torch.load(f"ckpt/IntermediatePatchLDM/2_nproj_1024_proj_dim/train.pth", map_location="cuda:0")
+    # )
 
     # experiment = json.load(
     #     open(f"ckpt/RineModel/2_nproj_1024_proj_dim/experiment.json", "rb")
@@ -605,57 +641,79 @@ if __name__ == "__main__":
     # #     device=torch.device("cuda:0"),
     # # )
 
-    device = "cuda:0"
-    transform = get_transform("no_crop_no_norm")
-    target = "fake"
-    for gen_name in get_generators():
-        print(f"Processing generator {gen_name.split("/")[-1]}...")
-        for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
-            plot_image_prediction(
-                json_path=f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json",
-                model=model,
-                transform=transform,
-                gen_name=gen_name.split("/")[-1],
-                patch_size=14,
-                stride=112,
-                ranges=rang,
-                save_path=f"{experiment["save_path"]}/fake",
-                num_images=3
-            )
+    # device = "cuda:0"
+    # transform = get_transform("no_crop_no_norm")
+    # target = "fake"
+    # for gen_name in get_generators():
+    #     if not os.path.exists(f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json"):
+    #         print(f"Processing generator {gen_name.split('/')[-1]}...")
+    #         loader = DataLoader(
+    #                             EvaluationDataset(gen_name, transforms=transform, target=target),
+    #                             batch_size=8,
+    #                             shuffle=False,
+    #                             pin_memory=True,
+    #                             drop_last=False,
+    #                             collate_fn=image_enlisting_collate_fn
+    #                         )
+    #         save_predictions(
+    #             experiment=experiment,
+    #             model=model,
+    #             gen_name=gen_name.split("/")[-1],
+    #             dl=loader,
+    #             device=device,
+    #             method="mean",
+    #             window_slide=True
+    #         )
 
-    target = "real"
-    for gen_name, real_name in get_generators(True): # get_generators()[:22]:
-        print(f"Processing generator {real_name}...")
+    #         for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
+    #             plot_image_prediction(
+    #                 json_path=f"results/predictions/{experiment['save_path']}/predictions_{gen_name.split('/')[-1]}.json",
+    #                 model=model,
+    #                 transform=transform,
+    #                 gen_name=gen_name.split("/")[-1],
+    #                 patch_size=14,
+    #                 stride=112,
+    #                 ranges=rang,
+    #                 save_path=f"{experiment['save_path']}/fake",
+    #                 num_images=3
+    #             )
+    #     else:
+    #         print(f"Skipping {gen_name} as predictions already exist.")
 
-        if not os.path.exists(f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json"):
-            loader = DataLoader(
-                                EvaluationDataset(gen_name, transforms=transform, target=target),
-                                batch_size=8,
-                                shuffle=False,
-                                pin_memory=True,
-                                drop_last=False,
-                                collate_fn=image_enlisting_collate_fn
-                            )
-            print(f"Loaded {len(loader.dataset)} images from {real_name} for {target} target.")
-            save_predictions(
-                experiment=experiment,
-                model=model,
-                gen_name=f"{real_name}_real",
-                dl=loader,
-                device="cuda:0",
-                method="mean",
-                window_slide=True
-            )
+    # target = "real"
+    # for gen_name, real_name in get_generators(True): # get_generators()[:22]:
+    #     if not os.path.exists(f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json"):
+    #         print(f"Processing generator {real_name}...")
+    #         loader = DataLoader(
+    #                             EvaluationDataset(gen_name, transforms=transform, target=target),
+    #                             batch_size=8,
+    #                             shuffle=False,
+    #                             pin_memory=True,
+    #                             drop_last=False,
+    #                             collate_fn=image_enlisting_collate_fn
+    #                         )
+    #         print(f"Loaded {len(loader.dataset)} images from {real_name} for {target} target.")
+    #         save_predictions(
+    #             experiment=experiment,
+    #             model=model,
+    #             gen_name=f"{real_name}_real",
+    #             dl=loader,
+    #             device="cuda:0",
+    #             method="mean",
+    #             window_slide=True
+    #         )
 
-        for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
-            plot_image_prediction(
-                json_path=f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json",
-                model=model,
-                transform=transform,
-                gen_name=real_name,
-                patch_size=14,
-                stride=112,
-                ranges=rang,
-                save_path=f"{experiment['save_path']}/real",
-                num_images=3
-            )
+    #         for rang in [(0.0, 0.1), (0.1, 0.2), (0.2, 0.3), (0.3, 0.4), (0.4, 0.5), (0.5, 0.6), (0.6, 0.7), (0.7, 0.8), (0.8, 0.9), (0.9, 1)]:
+    #             plot_image_prediction(
+    #                 json_path=f"results/predictions/{experiment['save_path']}/predictions_{real_name}_real.json",
+    #                 model=model,
+    #                 transform=transform,
+    #                 gen_name=real_name,
+    #                 patch_size=14,
+    #                 stride=112,
+    #                 ranges=rang,
+    #                 save_path=f"{experiment['save_path']}/real",
+    #                 num_images=3
+    #             )
+    #     else:
+    #         print(f"Skipping {real_name} as predictions already exist.")

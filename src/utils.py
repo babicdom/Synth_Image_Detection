@@ -468,7 +468,7 @@ def get_generators(pair=False):
             ("whichfaceisreal", "whichfaceisreal"),
             ("diffusion_datasets/guided", "imagenet"),
             ("diffusion_datasets/glide_100_10", "laion"),
-            ("synthbuster/firefly", "laion"),
+            ("synthbuster/firefly", "raise"),
         ]
     else:
         return [
@@ -774,6 +774,23 @@ def transformer_train_loss(factor, contrastive, unsqueeze=False):
         return loss_
     return _transformer_train_loss
 
+def global_local_train_loss(factor, contrastive, beta=0.5):
+    def _global_local_train_loss(output, labels):
+        local_loss = bce_mean(output[0], labels.unsqueeze(1).repeat(1, output[0].shape[1]))
+        if contrastive:
+            local_loss += factor * supcon(
+                F.normalize(
+                    output[1].reshape(-1, output[1].shape[-1])).unsqueeze(1),
+                    labels.unsqueeze(1).repeat(1, output[1].shape[0]).reshape(-1, 1)
+            )
+        global_loss = bce_mean(output[2], labels.float())
+        if contrastive:
+            global_loss += factor * supcon(
+                F.normalize(output[3]).unsqueeze(1), labels
+            )
+        return beta * local_loss + (1 - beta) * global_loss
+    return _global_local_train_loss
+
 def train(
     experiment,
     model,
@@ -1000,3 +1017,53 @@ def patchify_image(
     img = img.contiguous()
     img = img.view(img.size(0), -1, img.size(3), kh, kw)
     return img
+
+def custom_unfold(img, crop_size, stride, normalize=True):
+    """
+    img: Tensor of shape [B, C, H, W]
+    crop_size: tuple (h_crop, w_crop)
+    stride: tuple (h_stride, w_stride)
+    normalize: whether to apply CLIP-style normalization to each patch
+    Returns: Tensor of shape [B, N_patches, C, h_crop, w_crop]
+    """
+    B, C, H, W = img.shape
+    h_crop, w_crop = crop_size
+    h_stride, w_stride = stride
+
+    h_grids = max(H - h_crop + h_stride - 1, 0) // h_stride + 1
+    w_grids = max(W - w_crop + w_stride - 1, 0) // w_stride + 1
+
+    # Normalize transform
+    normalize_fn = transforms.Normalize(
+        mean=(0.48145466, 0.4578275, 0.40821073),
+        std=(0.26862954, 0.26130258, 0.27577711),
+    ) if normalize else None
+
+    all_patches = []
+
+    for b in range(B):
+        img_patches = []
+        for h_idx in range(h_grids):
+            for w_idx in range(w_grids):
+                y1 = h_idx * h_stride
+                x1 = w_idx * w_stride
+                y2 = min(y1 + h_crop, H)
+                x2 = min(x1 + w_crop, W)
+                y1 = max(y2 - h_crop, 0)
+                x1 = max(x2 - w_crop, 0)
+
+                patch = img[b:b+1, :, y1:y2, x1:x2]  # Shape: [1, C, h_crop, w_crop]
+
+                if normalize_fn is not None:
+                    patch = normalize_fn(patch)
+
+                img_patches.append(patch)
+
+        # Stack patches for this image along a new dimension
+        img_patches = torch.cat(img_patches, dim=0)  # Shape: [N_patches, C, h_crop, w_crop]
+        all_patches.append(img_patches)
+
+    # Stack all batches: [B, N_patches, C, h_crop, w_crop]
+    all_patches = torch.stack(all_patches, dim=0)
+
+    return all_patches

@@ -1,0 +1,5004 @@
+{
+    "images": [
+        {
+            "path": "data/test/spai/gigagan/1_fake/07011.png",
+            "label": 1,
+            "output": 0.9946804642677307
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02772.png",
+            "label": 1,
+            "output": 0.9905068278312683
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05044.png",
+            "label": 1,
+            "output": 0.989443302154541
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06919.png",
+            "label": 1,
+            "output": 0.9829422831535339
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00410.png",
+            "label": 1,
+            "output": 0.9828462600708008
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03878.png",
+            "label": 1,
+            "output": 0.9802252054214478
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05782.png",
+            "label": 1,
+            "output": 0.9784749150276184
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04011.png",
+            "label": 1,
+            "output": 0.9753115773200989
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01770.png",
+            "label": 1,
+            "output": 0.9730494022369385
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00591.png",
+            "label": 1,
+            "output": 0.972247838973999
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04728.png",
+            "label": 1,
+            "output": 0.9718946218490601
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03601.png",
+            "label": 1,
+            "output": 0.9718026518821716
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04958.png",
+            "label": 1,
+            "output": 0.9700232148170471
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03965.png",
+            "label": 1,
+            "output": 0.9678733944892883
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05251.png",
+            "label": 1,
+            "output": 0.967128336429596
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02611.png",
+            "label": 1,
+            "output": 0.9662566781044006
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03577.png",
+            "label": 1,
+            "output": 0.9632515907287598
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08090.png",
+            "label": 1,
+            "output": 0.9631786942481995
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05114.png",
+            "label": 1,
+            "output": 0.9608575105667114
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00942.png",
+            "label": 1,
+            "output": 0.9588606357574463
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02938.png",
+            "label": 1,
+            "output": 0.9582669138908386
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01784.png",
+            "label": 1,
+            "output": 0.958023726940155
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06780.png",
+            "label": 1,
+            "output": 0.9580206274986267
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01236.png",
+            "label": 1,
+            "output": 0.9557142853736877
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02960.png",
+            "label": 1,
+            "output": 0.9550747871398926
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01878.png",
+            "label": 1,
+            "output": 0.9539235234260559
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09857.png",
+            "label": 1,
+            "output": 0.9532623887062073
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02003.png",
+            "label": 1,
+            "output": 0.9530430436134338
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01735.png",
+            "label": 1,
+            "output": 0.9526869654655457
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09422.png",
+            "label": 1,
+            "output": 0.9525148272514343
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00007.png",
+            "label": 1,
+            "output": 0.952438473701477
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02935.png",
+            "label": 1,
+            "output": 0.9516078233718872
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01709.png",
+            "label": 1,
+            "output": 0.9510915875434875
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08630.png",
+            "label": 1,
+            "output": 0.9508312940597534
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08327.png",
+            "label": 1,
+            "output": 0.9496369361877441
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01493.png",
+            "label": 1,
+            "output": 0.9474334716796875
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00432.png",
+            "label": 1,
+            "output": 0.9456301331520081
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00331.png",
+            "label": 1,
+            "output": 0.9445056319236755
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00881.png",
+            "label": 1,
+            "output": 0.9440187811851501
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08302.png",
+            "label": 1,
+            "output": 0.9437464475631714
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08956.png",
+            "label": 1,
+            "output": 0.9428775906562805
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05409.png",
+            "label": 1,
+            "output": 0.9424829483032227
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06008.png",
+            "label": 1,
+            "output": 0.9424232840538025
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04195.png",
+            "label": 1,
+            "output": 0.9418923258781433
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03486.png",
+            "label": 1,
+            "output": 0.9409378170967102
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07604.png",
+            "label": 1,
+            "output": 0.9399948120117188
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07293.png",
+            "label": 1,
+            "output": 0.9372663497924805
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05753.png",
+            "label": 1,
+            "output": 0.9367354512214661
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06864.png",
+            "label": 1,
+            "output": 0.9366597533226013
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03190.png",
+            "label": 1,
+            "output": 0.934907078742981
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09779.png",
+            "label": 1,
+            "output": 0.9348084926605225
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03432.png",
+            "label": 1,
+            "output": 0.9338449835777283
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01122.png",
+            "label": 1,
+            "output": 0.9331722259521484
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05800.png",
+            "label": 1,
+            "output": 0.9323128461837769
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01996.png",
+            "label": 1,
+            "output": 0.9321819543838501
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08282.png",
+            "label": 1,
+            "output": 0.9312416315078735
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03302.png",
+            "label": 1,
+            "output": 0.9309887886047363
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04910.png",
+            "label": 1,
+            "output": 0.9309402704238892
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05972.png",
+            "label": 1,
+            "output": 0.9308165311813354
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04357.png",
+            "label": 1,
+            "output": 0.929847240447998
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09558.png",
+            "label": 1,
+            "output": 0.9293150901794434
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00460.png",
+            "label": 1,
+            "output": 0.929158627986908
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09965.png",
+            "label": 1,
+            "output": 0.9289366602897644
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06823.png",
+            "label": 1,
+            "output": 0.9269869327545166
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01051.png",
+            "label": 1,
+            "output": 0.9265353083610535
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07353.png",
+            "label": 1,
+            "output": 0.9257932901382446
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00798.png",
+            "label": 1,
+            "output": 0.9255554676055908
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05505.png",
+            "label": 1,
+            "output": 0.9251746535301208
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08923.png",
+            "label": 1,
+            "output": 0.9243032932281494
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00855.png",
+            "label": 1,
+            "output": 0.9240855574607849
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06891.png",
+            "label": 1,
+            "output": 0.9229905605316162
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04747.png",
+            "label": 1,
+            "output": 0.9221099019050598
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09916.png",
+            "label": 1,
+            "output": 0.9213187098503113
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06985.png",
+            "label": 1,
+            "output": 0.9205437898635864
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09014.png",
+            "label": 1,
+            "output": 0.9197013974189758
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06076.png",
+            "label": 1,
+            "output": 0.9179884195327759
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03990.png",
+            "label": 1,
+            "output": 0.9175073504447937
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05624.png",
+            "label": 1,
+            "output": 0.9172551035881042
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06972.png",
+            "label": 1,
+            "output": 0.9172419309616089
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07685.png",
+            "label": 1,
+            "output": 0.9162870049476624
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04271.png",
+            "label": 1,
+            "output": 0.9156611561775208
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06871.png",
+            "label": 1,
+            "output": 0.914924681186676
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07990.png",
+            "label": 1,
+            "output": 0.9140001535415649
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01665.png",
+            "label": 1,
+            "output": 0.9137375354766846
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04017.png",
+            "label": 1,
+            "output": 0.9135581851005554
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01921.png",
+            "label": 1,
+            "output": 0.9133409857749939
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00713.png",
+            "label": 1,
+            "output": 0.9132135510444641
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04640.png",
+            "label": 1,
+            "output": 0.912495493888855
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00035.png",
+            "label": 1,
+            "output": 0.9120151400566101
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09665.png",
+            "label": 1,
+            "output": 0.9119398593902588
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00405.png",
+            "label": 1,
+            "output": 0.9111096262931824
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08349.png",
+            "label": 1,
+            "output": 0.9105379581451416
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01734.png",
+            "label": 1,
+            "output": 0.9102531671524048
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07957.png",
+            "label": 1,
+            "output": 0.9097990393638611
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04600.png",
+            "label": 1,
+            "output": 0.9094829559326172
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05206.png",
+            "label": 1,
+            "output": 0.9092264771461487
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07862.png",
+            "label": 1,
+            "output": 0.9085986614227295
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00078.png",
+            "label": 1,
+            "output": 0.9069754481315613
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01188.png",
+            "label": 1,
+            "output": 0.9060508608818054
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00988.png",
+            "label": 1,
+            "output": 0.9054545760154724
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07903.png",
+            "label": 1,
+            "output": 0.9049510955810547
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04467.png",
+            "label": 1,
+            "output": 0.904312252998352
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08287.png",
+            "label": 1,
+            "output": 0.9042989611625671
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07273.png",
+            "label": 1,
+            "output": 0.9041454792022705
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06813.png",
+            "label": 1,
+            "output": 0.9039488434791565
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05810.png",
+            "label": 1,
+            "output": 0.9028146862983704
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04675.png",
+            "label": 1,
+            "output": 0.9019264578819275
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03111.png",
+            "label": 1,
+            "output": 0.9015388488769531
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02475.png",
+            "label": 1,
+            "output": 0.9012411832809448
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01666.png",
+            "label": 1,
+            "output": 0.900276780128479
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05816.png",
+            "label": 1,
+            "output": 0.9001713395118713
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09031.png",
+            "label": 1,
+            "output": 0.9000024795532227
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02019.png",
+            "label": 1,
+            "output": 0.8999868631362915
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05548.png",
+            "label": 1,
+            "output": 0.899422287940979
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07481.png",
+            "label": 1,
+            "output": 0.8992976546287537
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02905.png",
+            "label": 1,
+            "output": 0.8992069363594055
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01517.png",
+            "label": 1,
+            "output": 0.8988985419273376
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09469.png",
+            "label": 1,
+            "output": 0.897783100605011
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06552.png",
+            "label": 1,
+            "output": 0.8975547552108765
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02758.png",
+            "label": 1,
+            "output": 0.8971026539802551
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06907.png",
+            "label": 1,
+            "output": 0.8969428539276123
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01795.png",
+            "label": 1,
+            "output": 0.8967652916908264
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07107.png",
+            "label": 1,
+            "output": 0.8964905738830566
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01273.png",
+            "label": 1,
+            "output": 0.8961045742034912
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08438.png",
+            "label": 1,
+            "output": 0.8960655927658081
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06683.png",
+            "label": 1,
+            "output": 0.895714521408081
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03385.png",
+            "label": 1,
+            "output": 0.8956907391548157
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08078.png",
+            "label": 1,
+            "output": 0.8956586122512817
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02924.png",
+            "label": 1,
+            "output": 0.8956133127212524
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00141.png",
+            "label": 1,
+            "output": 0.8933807611465454
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08959.png",
+            "label": 1,
+            "output": 0.8928051590919495
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03096.png",
+            "label": 1,
+            "output": 0.8922480344772339
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07530.png",
+            "label": 1,
+            "output": 0.892134964466095
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03936.png",
+            "label": 1,
+            "output": 0.8913925290107727
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03105.png",
+            "label": 1,
+            "output": 0.8912714719772339
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03617.png",
+            "label": 1,
+            "output": 0.8901897668838501
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04904.png",
+            "label": 1,
+            "output": 0.8901093006134033
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05053.png",
+            "label": 1,
+            "output": 0.8898340463638306
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09634.png",
+            "label": 1,
+            "output": 0.8892344236373901
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00493.png",
+            "label": 1,
+            "output": 0.8887838125228882
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03509.png",
+            "label": 1,
+            "output": 0.8885478973388672
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00273.png",
+            "label": 1,
+            "output": 0.8884859085083008
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09381.png",
+            "label": 1,
+            "output": 0.8881093263626099
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05465.png",
+            "label": 1,
+            "output": 0.8869091868400574
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09815.png",
+            "label": 1,
+            "output": 0.8866268396377563
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00465.png",
+            "label": 1,
+            "output": 0.8863304257392883
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03317.png",
+            "label": 1,
+            "output": 0.8860864043235779
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07001.png",
+            "label": 1,
+            "output": 0.8856441974639893
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06162.png",
+            "label": 1,
+            "output": 0.8849292397499084
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00098.png",
+            "label": 1,
+            "output": 0.8842743039131165
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06892.png",
+            "label": 1,
+            "output": 0.8840954303741455
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08882.png",
+            "label": 1,
+            "output": 0.8831469416618347
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08256.png",
+            "label": 1,
+            "output": 0.8831264972686768
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08853.png",
+            "label": 1,
+            "output": 0.8826546669006348
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03167.png",
+            "label": 1,
+            "output": 0.8806999921798706
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05258.png",
+            "label": 1,
+            "output": 0.8804421424865723
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07555.png",
+            "label": 1,
+            "output": 0.8798651695251465
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05868.png",
+            "label": 1,
+            "output": 0.8794273734092712
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05475.png",
+            "label": 1,
+            "output": 0.8792965412139893
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05556.png",
+            "label": 1,
+            "output": 0.8781565427780151
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06792.png",
+            "label": 1,
+            "output": 0.8780856132507324
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01850.png",
+            "label": 1,
+            "output": 0.8769065737724304
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03078.png",
+            "label": 1,
+            "output": 0.8764694929122925
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01346.png",
+            "label": 1,
+            "output": 0.8747087717056274
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07968.png",
+            "label": 1,
+            "output": 0.8743553757667542
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06360.png",
+            "label": 1,
+            "output": 0.8743115663528442
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01413.png",
+            "label": 1,
+            "output": 0.8741498589515686
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05345.png",
+            "label": 1,
+            "output": 0.8737038373947144
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07936.png",
+            "label": 1,
+            "output": 0.8734857439994812
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01559.png",
+            "label": 1,
+            "output": 0.8734259009361267
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01032.png",
+            "label": 1,
+            "output": 0.8730124235153198
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00975.png",
+            "label": 1,
+            "output": 0.8728883266448975
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00237.png",
+            "label": 1,
+            "output": 0.8714527487754822
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06078.png",
+            "label": 1,
+            "output": 0.8709425330162048
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08254.png",
+            "label": 1,
+            "output": 0.8708153367042542
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07713.png",
+            "label": 1,
+            "output": 0.8704133033752441
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07365.png",
+            "label": 1,
+            "output": 0.8700264692306519
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06847.png",
+            "label": 1,
+            "output": 0.869657039642334
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09454.png",
+            "label": 1,
+            "output": 0.8695725202560425
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07111.png",
+            "label": 1,
+            "output": 0.8694118857383728
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08249.png",
+            "label": 1,
+            "output": 0.86818528175354
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01613.png",
+            "label": 1,
+            "output": 0.8674329519271851
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05328.png",
+            "label": 1,
+            "output": 0.8671152591705322
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05430.png",
+            "label": 1,
+            "output": 0.8668479919433594
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07334.png",
+            "label": 1,
+            "output": 0.8668469190597534
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05049.png",
+            "label": 1,
+            "output": 0.8663554787635803
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04504.png",
+            "label": 1,
+            "output": 0.8663375377655029
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02544.png",
+            "label": 1,
+            "output": 0.8653228878974915
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00525.png",
+            "label": 1,
+            "output": 0.8648132085800171
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00572.png",
+            "label": 1,
+            "output": 0.8640851378440857
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06607.png",
+            "label": 1,
+            "output": 0.8639602065086365
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00241.png",
+            "label": 1,
+            "output": 0.8632855415344238
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04967.png",
+            "label": 1,
+            "output": 0.8628504872322083
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03552.png",
+            "label": 1,
+            "output": 0.8619040846824646
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09029.png",
+            "label": 1,
+            "output": 0.8607951998710632
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03833.png",
+            "label": 1,
+            "output": 0.8602865934371948
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06609.png",
+            "label": 1,
+            "output": 0.8599470853805542
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08668.png",
+            "label": 1,
+            "output": 0.859585165977478
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03904.png",
+            "label": 1,
+            "output": 0.8584035634994507
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02706.png",
+            "label": 1,
+            "output": 0.8582736253738403
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06886.png",
+            "label": 1,
+            "output": 0.8579569458961487
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07127.png",
+            "label": 1,
+            "output": 0.8574507832527161
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06904.png",
+            "label": 1,
+            "output": 0.8568935394287109
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05129.png",
+            "label": 1,
+            "output": 0.8567243814468384
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01916.png",
+            "label": 1,
+            "output": 0.8565985560417175
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08840.png",
+            "label": 1,
+            "output": 0.8564575910568237
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00422.png",
+            "label": 1,
+            "output": 0.8562296032905579
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05281.png",
+            "label": 1,
+            "output": 0.8562154769897461
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02358.png",
+            "label": 1,
+            "output": 0.8560527563095093
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02918.png",
+            "label": 1,
+            "output": 0.8552339673042297
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06235.png",
+            "label": 1,
+            "output": 0.8547357320785522
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03625.png",
+            "label": 1,
+            "output": 0.8546373844146729
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06965.png",
+            "label": 1,
+            "output": 0.8537824153900146
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08993.png",
+            "label": 1,
+            "output": 0.8535130620002747
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04285.png",
+            "label": 1,
+            "output": 0.8533499240875244
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01134.png",
+            "label": 1,
+            "output": 0.8533257246017456
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09065.png",
+            "label": 1,
+            "output": 0.853046715259552
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02651.png",
+            "label": 1,
+            "output": 0.8526661992073059
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02767.png",
+            "label": 1,
+            "output": 0.8517301678657532
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03678.png",
+            "label": 1,
+            "output": 0.8517175316810608
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07714.png",
+            "label": 1,
+            "output": 0.851176381111145
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06534.png",
+            "label": 1,
+            "output": 0.8509455323219299
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04425.png",
+            "label": 1,
+            "output": 0.8497849106788635
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04769.png",
+            "label": 1,
+            "output": 0.8489306569099426
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07142.png",
+            "label": 1,
+            "output": 0.848791778087616
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08064.png",
+            "label": 1,
+            "output": 0.8487133979797363
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01909.png",
+            "label": 1,
+            "output": 0.8483968377113342
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01662.png",
+            "label": 1,
+            "output": 0.8482254147529602
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02603.png",
+            "label": 1,
+            "output": 0.8480904698371887
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05861.png",
+            "label": 1,
+            "output": 0.8480729460716248
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04947.png",
+            "label": 1,
+            "output": 0.8475973010063171
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03231.png",
+            "label": 1,
+            "output": 0.8472214341163635
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00600.png",
+            "label": 1,
+            "output": 0.8468800783157349
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05184.png",
+            "label": 1,
+            "output": 0.8465563058853149
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03044.png",
+            "label": 1,
+            "output": 0.846350908279419
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07872.png",
+            "label": 1,
+            "output": 0.8461423516273499
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02717.png",
+            "label": 1,
+            "output": 0.8459259271621704
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05953.png",
+            "label": 1,
+            "output": 0.845454216003418
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06747.png",
+            "label": 1,
+            "output": 0.8447380661964417
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06577.png",
+            "label": 1,
+            "output": 0.8445594310760498
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09945.png",
+            "label": 1,
+            "output": 0.8443884253501892
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00361.png",
+            "label": 1,
+            "output": 0.8441082239151001
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05469.png",
+            "label": 1,
+            "output": 0.8439363241195679
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01500.png",
+            "label": 1,
+            "output": 0.8437195420265198
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02703.png",
+            "label": 1,
+            "output": 0.8423691391944885
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08748.png",
+            "label": 1,
+            "output": 0.842262864112854
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00931.png",
+            "label": 1,
+            "output": 0.8421504497528076
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07799.png",
+            "label": 1,
+            "output": 0.8420987725257874
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04607.png",
+            "label": 1,
+            "output": 0.8414565324783325
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03216.png",
+            "label": 1,
+            "output": 0.8411713242530823
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07729.png",
+            "label": 1,
+            "output": 0.8407135605812073
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01077.png",
+            "label": 1,
+            "output": 0.8399133682250977
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00827.png",
+            "label": 1,
+            "output": 0.8394858241081238
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02407.png",
+            "label": 1,
+            "output": 0.8388110995292664
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06244.png",
+            "label": 1,
+            "output": 0.838699460029602
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03193.png",
+            "label": 1,
+            "output": 0.8386505842208862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03555.png",
+            "label": 1,
+            "output": 0.8385061621665955
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07046.png",
+            "label": 1,
+            "output": 0.8374890685081482
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03334.png",
+            "label": 1,
+            "output": 0.8369001150131226
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06657.png",
+            "label": 1,
+            "output": 0.8368051648139954
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05585.png",
+            "label": 1,
+            "output": 0.8363186717033386
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00527.png",
+            "label": 1,
+            "output": 0.8359790444374084
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06555.png",
+            "label": 1,
+            "output": 0.8358570337295532
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09483.png",
+            "label": 1,
+            "output": 0.8353448510169983
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06093.png",
+            "label": 1,
+            "output": 0.8350487947463989
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02594.png",
+            "label": 1,
+            "output": 0.8348888158798218
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05130.png",
+            "label": 1,
+            "output": 0.8342903852462769
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07196.png",
+            "label": 1,
+            "output": 0.8338918089866638
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01645.png",
+            "label": 1,
+            "output": 0.8335256576538086
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03130.png",
+            "label": 1,
+            "output": 0.8330138325691223
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02463.png",
+            "label": 1,
+            "output": 0.8329872488975525
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02833.png",
+            "label": 1,
+            "output": 0.8325489163398743
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02624.png",
+            "label": 1,
+            "output": 0.8325446844100952
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05287.png",
+            "label": 1,
+            "output": 0.8320971131324768
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06257.png",
+            "label": 1,
+            "output": 0.830321729183197
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05310.png",
+            "label": 1,
+            "output": 0.8294751644134521
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08151.png",
+            "label": 1,
+            "output": 0.8286358714103699
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04591.png",
+            "label": 1,
+            "output": 0.8284540772438049
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03682.png",
+            "label": 1,
+            "output": 0.8280467391014099
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08761.png",
+            "label": 1,
+            "output": 0.8272563219070435
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08594.png",
+            "label": 1,
+            "output": 0.8270198702812195
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03006.png",
+            "label": 1,
+            "output": 0.8257848024368286
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05322.png",
+            "label": 1,
+            "output": 0.8255361318588257
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00544.png",
+            "label": 1,
+            "output": 0.8245929479598999
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05934.png",
+            "label": 1,
+            "output": 0.8239958882331848
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00487.png",
+            "label": 1,
+            "output": 0.8235541582107544
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06720.png",
+            "label": 1,
+            "output": 0.8233970403671265
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00940.png",
+            "label": 1,
+            "output": 0.8230010271072388
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02978.png",
+            "label": 1,
+            "output": 0.8227600455284119
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05254.png",
+            "label": 1,
+            "output": 0.8219125866889954
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07853.png",
+            "label": 1,
+            "output": 0.8211145997047424
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07573.png",
+            "label": 1,
+            "output": 0.8201006054878235
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00367.png",
+            "label": 1,
+            "output": 0.8195385932922363
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01286.png",
+            "label": 1,
+            "output": 0.8192991018295288
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00134.png",
+            "label": 1,
+            "output": 0.8190407156944275
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08909.png",
+            "label": 1,
+            "output": 0.8188430666923523
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01520.png",
+            "label": 1,
+            "output": 0.8175331354141235
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08383.png",
+            "label": 1,
+            "output": 0.8170232176780701
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09273.png",
+            "label": 1,
+            "output": 0.8168548345565796
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09303.png",
+            "label": 1,
+            "output": 0.8163341879844666
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00426.png",
+            "label": 1,
+            "output": 0.815767765045166
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09487.png",
+            "label": 1,
+            "output": 0.8152087330818176
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05123.png",
+            "label": 1,
+            "output": 0.8150772452354431
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05294.png",
+            "label": 1,
+            "output": 0.814717173576355
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08556.png",
+            "label": 1,
+            "output": 0.8141177296638489
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02372.png",
+            "label": 1,
+            "output": 0.8139978051185608
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03781.png",
+            "label": 1,
+            "output": 0.8139365315437317
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07775.png",
+            "label": 1,
+            "output": 0.8137151598930359
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01557.png",
+            "label": 1,
+            "output": 0.8133144378662109
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00392.png",
+            "label": 1,
+            "output": 0.8133135437965393
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01702.png",
+            "label": 1,
+            "output": 0.8127546906471252
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01472.png",
+            "label": 1,
+            "output": 0.8120508193969727
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07381.png",
+            "label": 1,
+            "output": 0.810978889465332
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05755.png",
+            "label": 1,
+            "output": 0.8103318214416504
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07037.png",
+            "label": 1,
+            "output": 0.8095182180404663
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03358.png",
+            "label": 1,
+            "output": 0.809499204158783
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06834.png",
+            "label": 1,
+            "output": 0.8092092871665955
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06100.png",
+            "label": 1,
+            "output": 0.8083844780921936
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05332.png",
+            "label": 1,
+            "output": 0.8083639144897461
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06048.png",
+            "label": 1,
+            "output": 0.8066884279251099
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03561.png",
+            "label": 1,
+            "output": 0.8062893152236938
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03751.png",
+            "label": 1,
+            "output": 0.8062120676040649
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02178.png",
+            "label": 1,
+            "output": 0.805224597454071
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02735.png",
+            "label": 1,
+            "output": 0.8052220940589905
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00918.png",
+            "label": 1,
+            "output": 0.8050087094306946
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06073.png",
+            "label": 1,
+            "output": 0.8045039176940918
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03972.png",
+            "label": 1,
+            "output": 0.8041089177131653
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03646.png",
+            "label": 1,
+            "output": 0.8040302991867065
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07774.png",
+            "label": 1,
+            "output": 0.8040223717689514
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03609.png",
+            "label": 1,
+            "output": 0.8036238551139832
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09844.png",
+            "label": 1,
+            "output": 0.8035567998886108
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02431.png",
+            "label": 1,
+            "output": 0.8020610809326172
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00239.png",
+            "label": 1,
+            "output": 0.8018532395362854
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03639.png",
+            "label": 1,
+            "output": 0.8016113638877869
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02264.png",
+            "label": 1,
+            "output": 0.8009011745452881
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00920.png",
+            "label": 1,
+            "output": 0.8007234334945679
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00878.png",
+            "label": 1,
+            "output": 0.8004268407821655
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00453.png",
+            "label": 1,
+            "output": 0.8003260493278503
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07934.png",
+            "label": 1,
+            "output": 0.7996674180030823
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02964.png",
+            "label": 1,
+            "output": 0.799597978591919
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00926.png",
+            "label": 1,
+            "output": 0.7990434169769287
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00698.png",
+            "label": 1,
+            "output": 0.7990369200706482
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01919.png",
+            "label": 1,
+            "output": 0.7987548112869263
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02201.png",
+            "label": 1,
+            "output": 0.7978337407112122
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02053.png",
+            "label": 1,
+            "output": 0.7973594069480896
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00126.png",
+            "label": 1,
+            "output": 0.7972927093505859
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04725.png",
+            "label": 1,
+            "output": 0.7960448265075684
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09909.png",
+            "label": 1,
+            "output": 0.7957507967948914
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01432.png",
+            "label": 1,
+            "output": 0.7953426241874695
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07590.png",
+            "label": 1,
+            "output": 0.7946951389312744
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09477.png",
+            "label": 1,
+            "output": 0.7945769429206848
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02413.png",
+            "label": 1,
+            "output": 0.7941087484359741
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08483.png",
+            "label": 1,
+            "output": 0.7939146757125854
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07500.png",
+            "label": 1,
+            "output": 0.793897807598114
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09146.png",
+            "label": 1,
+            "output": 0.7936456799507141
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00565.png",
+            "label": 1,
+            "output": 0.7930988073348999
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00628.png",
+            "label": 1,
+            "output": 0.793082594871521
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08629.png",
+            "label": 1,
+            "output": 0.7925081849098206
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03635.png",
+            "label": 1,
+            "output": 0.7923141121864319
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00644.png",
+            "label": 1,
+            "output": 0.7915919423103333
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01542.png",
+            "label": 1,
+            "output": 0.7908030152320862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05974.png",
+            "label": 1,
+            "output": 0.7902292609214783
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07692.png",
+            "label": 1,
+            "output": 0.7894982695579529
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03571.png",
+            "label": 1,
+            "output": 0.7893478274345398
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04767.png",
+            "label": 1,
+            "output": 0.7892228364944458
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09369.png",
+            "label": 1,
+            "output": 0.7889047861099243
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04650.png",
+            "label": 1,
+            "output": 0.7888180017471313
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06287.png",
+            "label": 1,
+            "output": 0.7881434559822083
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02496.png",
+            "label": 1,
+            "output": 0.788038432598114
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01178.png",
+            "label": 1,
+            "output": 0.7879332900047302
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01544.png",
+            "label": 1,
+            "output": 0.7876246571540833
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03538.png",
+            "label": 1,
+            "output": 0.78620445728302
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01042.png",
+            "label": 1,
+            "output": 0.7853233814239502
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08480.png",
+            "label": 1,
+            "output": 0.785295844078064
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01736.png",
+            "label": 1,
+            "output": 0.7852635979652405
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06843.png",
+            "label": 1,
+            "output": 0.7851559519767761
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07836.png",
+            "label": 1,
+            "output": 0.7846095561981201
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05396.png",
+            "label": 1,
+            "output": 0.7831574082374573
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07986.png",
+            "label": 1,
+            "output": 0.7829416990280151
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04822.png",
+            "label": 1,
+            "output": 0.7829120755195618
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01927.png",
+            "label": 1,
+            "output": 0.7801284790039062
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07477.png",
+            "label": 1,
+            "output": 0.7800354361534119
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09405.png",
+            "label": 1,
+            "output": 0.7796380519866943
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02570.png",
+            "label": 1,
+            "output": 0.7788044214248657
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03250.png",
+            "label": 1,
+            "output": 0.7782297730445862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00214.png",
+            "label": 1,
+            "output": 0.7781504392623901
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07854.png",
+            "label": 1,
+            "output": 0.7777599096298218
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06234.png",
+            "label": 1,
+            "output": 0.7769972085952759
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09582.png",
+            "label": 1,
+            "output": 0.7766739130020142
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08788.png",
+            "label": 1,
+            "output": 0.7762209177017212
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09433.png",
+            "label": 1,
+            "output": 0.7761711478233337
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05500.png",
+            "label": 1,
+            "output": 0.7754851579666138
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06320.png",
+            "label": 1,
+            "output": 0.7751667499542236
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03861.png",
+            "label": 1,
+            "output": 0.7740722894668579
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08885.png",
+            "label": 1,
+            "output": 0.773944079875946
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00768.png",
+            "label": 1,
+            "output": 0.7737218737602234
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03921.png",
+            "label": 1,
+            "output": 0.7726879715919495
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05630.png",
+            "label": 1,
+            "output": 0.7720009684562683
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05116.png",
+            "label": 1,
+            "output": 0.7703236937522888
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08684.png",
+            "label": 1,
+            "output": 0.7691718935966492
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01449.png",
+            "label": 1,
+            "output": 0.768703818321228
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02504.png",
+            "label": 1,
+            "output": 0.7680675983428955
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01304.png",
+            "label": 1,
+            "output": 0.7679650187492371
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05963.png",
+            "label": 1,
+            "output": 0.7666608095169067
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02240.png",
+            "label": 1,
+            "output": 0.7663756012916565
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06732.png",
+            "label": 1,
+            "output": 0.7661204934120178
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01834.png",
+            "label": 1,
+            "output": 0.7658734917640686
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07181.png",
+            "label": 1,
+            "output": 0.7658491730690002
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05128.png",
+            "label": 1,
+            "output": 0.765653669834137
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04684.png",
+            "label": 1,
+            "output": 0.7651599049568176
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05586.png",
+            "label": 1,
+            "output": 0.7648555636405945
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03416.png",
+            "label": 1,
+            "output": 0.7637585401535034
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08555.png",
+            "label": 1,
+            "output": 0.7633957862854004
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03564.png",
+            "label": 1,
+            "output": 0.7631633877754211
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03272.png",
+            "label": 1,
+            "output": 0.7625819444656372
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02148.png",
+            "label": 1,
+            "output": 0.762506902217865
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09198.png",
+            "label": 1,
+            "output": 0.7621405124664307
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02985.png",
+            "label": 1,
+            "output": 0.7619721293449402
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09928.png",
+            "label": 1,
+            "output": 0.761764645576477
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02969.png",
+            "label": 1,
+            "output": 0.7605798840522766
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05378.png",
+            "label": 1,
+            "output": 0.7601560950279236
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08673.png",
+            "label": 1,
+            "output": 0.7598606944084167
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01800.png",
+            "label": 1,
+            "output": 0.7596779465675354
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04296.png",
+            "label": 1,
+            "output": 0.7591365575790405
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02571.png",
+            "label": 1,
+            "output": 0.7589889764785767
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01044.png",
+            "label": 1,
+            "output": 0.758427083492279
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05771.png",
+            "label": 1,
+            "output": 0.7572516798973083
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01868.png",
+            "label": 1,
+            "output": 0.7570293545722961
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06035.png",
+            "label": 1,
+            "output": 0.7564188241958618
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04909.png",
+            "label": 1,
+            "output": 0.7563913464546204
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01711.png",
+            "label": 1,
+            "output": 0.7563191652297974
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00163.png",
+            "label": 1,
+            "output": 0.7562311291694641
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06938.png",
+            "label": 1,
+            "output": 0.7556528449058533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00989.png",
+            "label": 1,
+            "output": 0.7552376389503479
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02223.png",
+            "label": 1,
+            "output": 0.7548404335975647
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08735.png",
+            "label": 1,
+            "output": 0.7538384199142456
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01114.png",
+            "label": 1,
+            "output": 0.7533799409866333
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00140.png",
+            "label": 1,
+            "output": 0.7533440589904785
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08298.png",
+            "label": 1,
+            "output": 0.7528482675552368
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06521.png",
+            "label": 1,
+            "output": 0.7527850866317749
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08325.png",
+            "label": 1,
+            "output": 0.7526970505714417
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01151.png",
+            "label": 1,
+            "output": 0.7524544596672058
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00571.png",
+            "label": 1,
+            "output": 0.7522374987602234
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02643.png",
+            "label": 1,
+            "output": 0.7522248029708862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01224.png",
+            "label": 1,
+            "output": 0.7521071434020996
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05247.png",
+            "label": 1,
+            "output": 0.7509164214134216
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01415.png",
+            "label": 1,
+            "output": 0.7502444386482239
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09947.png",
+            "label": 1,
+            "output": 0.7501657605171204
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06644.png",
+            "label": 1,
+            "output": 0.749681830406189
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01929.png",
+            "label": 1,
+            "output": 0.7494784593582153
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07350.png",
+            "label": 1,
+            "output": 0.7488011121749878
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08006.png",
+            "label": 1,
+            "output": 0.7472328543663025
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04588.png",
+            "label": 1,
+            "output": 0.7471979260444641
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07576.png",
+            "label": 1,
+            "output": 0.7465283870697021
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04555.png",
+            "label": 1,
+            "output": 0.7459753751754761
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04711.png",
+            "label": 1,
+            "output": 0.7454588413238525
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09801.png",
+            "label": 1,
+            "output": 0.7453763484954834
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01938.png",
+            "label": 1,
+            "output": 0.7448866963386536
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02726.png",
+            "label": 1,
+            "output": 0.7433063387870789
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01087.png",
+            "label": 1,
+            "output": 0.7433034777641296
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05547.png",
+            "label": 1,
+            "output": 0.7416145205497742
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09636.png",
+            "label": 1,
+            "output": 0.7402877807617188
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00561.png",
+            "label": 1,
+            "output": 0.7398860454559326
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03603.png",
+            "label": 1,
+            "output": 0.7390007972717285
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00093.png",
+            "label": 1,
+            "output": 0.7384369373321533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05055.png",
+            "label": 1,
+            "output": 0.7384160161018372
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00951.png",
+            "label": 1,
+            "output": 0.7383312582969666
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08837.png",
+            "label": 1,
+            "output": 0.7381642460823059
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04886.png",
+            "label": 1,
+            "output": 0.7378560900688171
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03670.png",
+            "label": 1,
+            "output": 0.7375377416610718
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09095.png",
+            "label": 1,
+            "output": 0.73719322681427
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08632.png",
+            "label": 1,
+            "output": 0.736179530620575
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03305.png",
+            "label": 1,
+            "output": 0.7361615300178528
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00307.png",
+            "label": 1,
+            "output": 0.7349682450294495
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07322.png",
+            "label": 1,
+            "output": 0.7347009181976318
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07236.png",
+            "label": 1,
+            "output": 0.7346252202987671
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00515.png",
+            "label": 1,
+            "output": 0.7344553470611572
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08653.png",
+            "label": 1,
+            "output": 0.7327017188072205
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04539.png",
+            "label": 1,
+            "output": 0.7324836254119873
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02182.png",
+            "label": 1,
+            "output": 0.7322112321853638
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05855.png",
+            "label": 1,
+            "output": 0.7316427230834961
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06712.png",
+            "label": 1,
+            "output": 0.7310218811035156
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08943.png",
+            "label": 1,
+            "output": 0.7304868102073669
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01934.png",
+            "label": 1,
+            "output": 0.7297883629798889
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09387.png",
+            "label": 1,
+            "output": 0.7297707200050354
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09931.png",
+            "label": 1,
+            "output": 0.729306161403656
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06848.png",
+            "label": 1,
+            "output": 0.7292917370796204
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09614.png",
+            "label": 1,
+            "output": 0.7289199233055115
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01900.png",
+            "label": 1,
+            "output": 0.7287202477455139
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01521.png",
+            "label": 1,
+            "output": 0.7286719679832458
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06754.png",
+            "label": 1,
+            "output": 0.7285816669464111
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06347.png",
+            "label": 1,
+            "output": 0.727709949016571
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02707.png",
+            "label": 1,
+            "output": 0.7266259789466858
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06220.png",
+            "label": 1,
+            "output": 0.7254089117050171
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06806.png",
+            "label": 1,
+            "output": 0.7247945070266724
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04420.png",
+            "label": 1,
+            "output": 0.7235113382339478
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01978.png",
+            "label": 1,
+            "output": 0.7229706645011902
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08689.png",
+            "label": 1,
+            "output": 0.7229683995246887
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01947.png",
+            "label": 1,
+            "output": 0.7224085330963135
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09675.png",
+            "label": 1,
+            "output": 0.7221983671188354
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08708.png",
+            "label": 1,
+            "output": 0.7220205068588257
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09007.png",
+            "label": 1,
+            "output": 0.7219408750534058
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07184.png",
+            "label": 1,
+            "output": 0.7209126353263855
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06487.png",
+            "label": 1,
+            "output": 0.7205423712730408
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07317.png",
+            "label": 1,
+            "output": 0.7198370099067688
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08029.png",
+            "label": 1,
+            "output": 0.7197350859642029
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01103.png",
+            "label": 1,
+            "output": 0.7196978330612183
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07548.png",
+            "label": 1,
+            "output": 0.7182030081748962
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00452.png",
+            "label": 1,
+            "output": 0.7176237106323242
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03679.png",
+            "label": 1,
+            "output": 0.716149628162384
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00102.png",
+            "label": 1,
+            "output": 0.7159568667411804
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09078.png",
+            "label": 1,
+            "output": 0.7158979177474976
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05530.png",
+            "label": 1,
+            "output": 0.7158815860748291
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07785.png",
+            "label": 1,
+            "output": 0.7145791053771973
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00442.png",
+            "label": 1,
+            "output": 0.7145206332206726
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04680.png",
+            "label": 1,
+            "output": 0.7135075926780701
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06570.png",
+            "label": 1,
+            "output": 0.7129592299461365
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00823.png",
+            "label": 1,
+            "output": 0.7124828696250916
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05274.png",
+            "label": 1,
+            "output": 0.7119946479797363
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00413.png",
+            "label": 1,
+            "output": 0.7115575075149536
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02976.png",
+            "label": 1,
+            "output": 0.7107163071632385
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04906.png",
+            "label": 1,
+            "output": 0.7102320194244385
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07600.png",
+            "label": 1,
+            "output": 0.7094848155975342
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08712.png",
+            "label": 1,
+            "output": 0.7088055610656738
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03163.png",
+            "label": 1,
+            "output": 0.7082033157348633
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05768.png",
+            "label": 1,
+            "output": 0.7079347372055054
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03709.png",
+            "label": 1,
+            "output": 0.7070367932319641
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07808.png",
+            "label": 1,
+            "output": 0.7065296769142151
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07924.png",
+            "label": 1,
+            "output": 0.7054511904716492
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00856.png",
+            "label": 1,
+            "output": 0.7049112319946289
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08504.png",
+            "label": 1,
+            "output": 0.7046976685523987
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04877.png",
+            "label": 1,
+            "output": 0.7046002745628357
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07123.png",
+            "label": 1,
+            "output": 0.7042223811149597
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09849.png",
+            "label": 1,
+            "output": 0.7041632533073425
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02967.png",
+            "label": 1,
+            "output": 0.7040801048278809
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02518.png",
+            "label": 1,
+            "output": 0.7039516568183899
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06325.png",
+            "label": 1,
+            "output": 0.7035301327705383
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08103.png",
+            "label": 1,
+            "output": 0.7023255228996277
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06393.png",
+            "label": 1,
+            "output": 0.7012071013450623
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04601.png",
+            "label": 1,
+            "output": 0.6994253396987915
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06870.png",
+            "label": 1,
+            "output": 0.6984499096870422
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05781.png",
+            "label": 1,
+            "output": 0.6983844637870789
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01138.png",
+            "label": 1,
+            "output": 0.6983444094657898
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02416.png",
+            "label": 1,
+            "output": 0.6978927254676819
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07157.png",
+            "label": 1,
+            "output": 0.6973345875740051
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07759.png",
+            "label": 1,
+            "output": 0.6972202658653259
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03563.png",
+            "label": 1,
+            "output": 0.6953607201576233
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02002.png",
+            "label": 1,
+            "output": 0.6952477097511292
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08719.png",
+            "label": 1,
+            "output": 0.6952436566352844
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07161.png",
+            "label": 1,
+            "output": 0.6941431760787964
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06941.png",
+            "label": 1,
+            "output": 0.693977952003479
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03340.png",
+            "label": 1,
+            "output": 0.6933605670928955
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00521.png",
+            "label": 1,
+            "output": 0.6930280327796936
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05699.png",
+            "label": 1,
+            "output": 0.6926525235176086
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03378.png",
+            "label": 1,
+            "output": 0.6923761963844299
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06253.png",
+            "label": 1,
+            "output": 0.6916319131851196
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02037.png",
+            "label": 1,
+            "output": 0.6899647116661072
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06342.png",
+            "label": 1,
+            "output": 0.6899240016937256
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01377.png",
+            "label": 1,
+            "output": 0.689842700958252
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00357.png",
+            "label": 1,
+            "output": 0.6898419857025146
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02414.png",
+            "label": 1,
+            "output": 0.6897774338722229
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02356.png",
+            "label": 1,
+            "output": 0.6885337233543396
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02589.png",
+            "label": 1,
+            "output": 0.6876380443572998
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02851.png",
+            "label": 1,
+            "output": 0.6873919367790222
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07020.png",
+            "label": 1,
+            "output": 0.6863790154457092
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01376.png",
+            "label": 1,
+            "output": 0.6862173080444336
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06715.png",
+            "label": 1,
+            "output": 0.6861286163330078
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04815.png",
+            "label": 1,
+            "output": 0.6852856874465942
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06559.png",
+            "label": 1,
+            "output": 0.6849815845489502
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02470.png",
+            "label": 1,
+            "output": 0.6846988201141357
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09733.png",
+            "label": 1,
+            "output": 0.6842108368873596
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03469.png",
+            "label": 1,
+            "output": 0.6839482188224792
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05939.png",
+            "label": 1,
+            "output": 0.6838465332984924
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00110.png",
+            "label": 1,
+            "output": 0.683588981628418
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06161.png",
+            "label": 1,
+            "output": 0.6822032928466797
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06796.png",
+            "label": 1,
+            "output": 0.6816979646682739
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09720.png",
+            "label": 1,
+            "output": 0.6813448071479797
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05733.png",
+            "label": 1,
+            "output": 0.6809970140457153
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02533.png",
+            "label": 1,
+            "output": 0.6807227730751038
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07861.png",
+            "label": 1,
+            "output": 0.6807147264480591
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08250.png",
+            "label": 1,
+            "output": 0.680587112903595
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09256.png",
+            "label": 1,
+            "output": 0.6794556379318237
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04432.png",
+            "label": 1,
+            "output": 0.6786960959434509
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01082.png",
+            "label": 1,
+            "output": 0.6786243915557861
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03586.png",
+            "label": 1,
+            "output": 0.6781028509140015
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08963.png",
+            "label": 1,
+            "output": 0.6771296262741089
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02511.png",
+            "label": 1,
+            "output": 0.6770621538162231
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09028.png",
+            "label": 1,
+            "output": 0.6768922805786133
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06120.png",
+            "label": 1,
+            "output": 0.6747444868087769
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03621.png",
+            "label": 1,
+            "output": 0.6747392416000366
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07865.png",
+            "label": 1,
+            "output": 0.674714207649231
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05502.png",
+            "label": 1,
+            "output": 0.6744887232780457
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04278.png",
+            "label": 1,
+            "output": 0.6741094589233398
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04019.png",
+            "label": 1,
+            "output": 0.6740708947181702
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07756.png",
+            "label": 1,
+            "output": 0.6736137866973877
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05832.png",
+            "label": 1,
+            "output": 0.6731663942337036
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07691.png",
+            "label": 1,
+            "output": 0.6723759770393372
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05732.png",
+            "label": 1,
+            "output": 0.6718547344207764
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06514.png",
+            "label": 1,
+            "output": 0.6718102097511292
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00393.png",
+            "label": 1,
+            "output": 0.6716657280921936
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07199.png",
+            "label": 1,
+            "output": 0.6712637543678284
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06443.png",
+            "label": 1,
+            "output": 0.6699775457382202
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01491.png",
+            "label": 1,
+            "output": 0.668229877948761
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01150.png",
+            "label": 1,
+            "output": 0.6677929162979126
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03311.png",
+            "label": 1,
+            "output": 0.6672294735908508
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03374.png",
+            "label": 1,
+            "output": 0.666630744934082
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08362.png",
+            "label": 1,
+            "output": 0.6659793853759766
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03786.png",
+            "label": 1,
+            "output": 0.6651462316513062
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02776.png",
+            "label": 1,
+            "output": 0.6644026041030884
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09607.png",
+            "label": 1,
+            "output": 0.6631971001625061
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09618.png",
+            "label": 1,
+            "output": 0.6627780795097351
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00106.png",
+            "label": 1,
+            "output": 0.6615781188011169
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00295.png",
+            "label": 1,
+            "output": 0.6607694625854492
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03362.png",
+            "label": 1,
+            "output": 0.6593232750892639
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01281.png",
+            "label": 1,
+            "output": 0.6590157747268677
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06019.png",
+            "label": 1,
+            "output": 0.6580740213394165
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07761.png",
+            "label": 1,
+            "output": 0.6577615737915039
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07897.png",
+            "label": 1,
+            "output": 0.657222330570221
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01351.png",
+            "label": 1,
+            "output": 0.6570038199424744
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02456.png",
+            "label": 1,
+            "output": 0.6568024158477783
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04408.png",
+            "label": 1,
+            "output": 0.6566378474235535
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01496.png",
+            "label": 1,
+            "output": 0.6563851833343506
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08107.png",
+            "label": 1,
+            "output": 0.6563810110092163
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04429.png",
+            "label": 1,
+            "output": 0.6562436819076538
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02989.png",
+            "label": 1,
+            "output": 0.6560245752334595
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08281.png",
+            "label": 1,
+            "output": 0.65338534116745
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03113.png",
+            "label": 1,
+            "output": 0.6533195376396179
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05033.png",
+            "label": 1,
+            "output": 0.652786910533905
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03973.png",
+            "label": 1,
+            "output": 0.6524895429611206
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01830.png",
+            "label": 1,
+            "output": 0.6523156762123108
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03879.png",
+            "label": 1,
+            "output": 0.6520164012908936
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06641.png",
+            "label": 1,
+            "output": 0.6519551277160645
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07152.png",
+            "label": 1,
+            "output": 0.6516116261482239
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06926.png",
+            "label": 1,
+            "output": 0.6503472924232483
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05740.png",
+            "label": 1,
+            "output": 0.6496689319610596
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00287.png",
+            "label": 1,
+            "output": 0.6496596336364746
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02677.png",
+            "label": 1,
+            "output": 0.6495847702026367
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05131.png",
+            "label": 1,
+            "output": 0.6486749053001404
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06773.png",
+            "label": 1,
+            "output": 0.6486507654190063
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07952.png",
+            "label": 1,
+            "output": 0.6475594639778137
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04447.png",
+            "label": 1,
+            "output": 0.6474751234054565
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04695.png",
+            "label": 1,
+            "output": 0.647367537021637
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06653.png",
+            "label": 1,
+            "output": 0.6469624042510986
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09002.png",
+            "label": 1,
+            "output": 0.6455515027046204
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07308.png",
+            "label": 1,
+            "output": 0.6453889012336731
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05657.png",
+            "label": 1,
+            "output": 0.6448842883110046
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00796.png",
+            "label": 1,
+            "output": 0.6438398361206055
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07484.png",
+            "label": 1,
+            "output": 0.6431649923324585
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07994.png",
+            "label": 1,
+            "output": 0.6425639986991882
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05534.png",
+            "label": 1,
+            "output": 0.6425371766090393
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02415.png",
+            "label": 1,
+            "output": 0.6423245668411255
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08843.png",
+            "label": 1,
+            "output": 0.6417873501777649
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03373.png",
+            "label": 1,
+            "output": 0.6417477130889893
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01914.png",
+            "label": 1,
+            "output": 0.6415233612060547
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01891.png",
+            "label": 1,
+            "output": 0.6415196061134338
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07651.png",
+            "label": 1,
+            "output": 0.640892744064331
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06148.png",
+            "label": 1,
+            "output": 0.6401471495628357
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07043.png",
+            "label": 1,
+            "output": 0.6401289105415344
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07544.png",
+            "label": 1,
+            "output": 0.639638364315033
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08426.png",
+            "label": 1,
+            "output": 0.639285683631897
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04033.png",
+            "label": 1,
+            "output": 0.6390812397003174
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02654.png",
+            "label": 1,
+            "output": 0.6388578414916992
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00795.png",
+            "label": 1,
+            "output": 0.6377357840538025
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04269.png",
+            "label": 1,
+            "output": 0.6369147300720215
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07898.png",
+            "label": 1,
+            "output": 0.6366485357284546
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07949.png",
+            "label": 1,
+            "output": 0.6353259086608887
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08066.png",
+            "label": 1,
+            "output": 0.6353235244750977
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09708.png",
+            "label": 1,
+            "output": 0.6345118880271912
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08694.png",
+            "label": 1,
+            "output": 0.6343020796775818
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06333.png",
+            "label": 1,
+            "output": 0.6336934566497803
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04793.png",
+            "label": 1,
+            "output": 0.6327292919158936
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09724.png",
+            "label": 1,
+            "output": 0.6312511563301086
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08531.png",
+            "label": 1,
+            "output": 0.6300188899040222
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05726.png",
+            "label": 1,
+            "output": 0.6296817660331726
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00923.png",
+            "label": 1,
+            "output": 0.6292405128479004
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08011.png",
+            "label": 1,
+            "output": 0.6288157105445862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09579.png",
+            "label": 1,
+            "output": 0.6286767721176147
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09682.png",
+            "label": 1,
+            "output": 0.6282805800437927
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04365.png",
+            "label": 1,
+            "output": 0.6282370090484619
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02311.png",
+            "label": 1,
+            "output": 0.6277806162834167
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02492.png",
+            "label": 1,
+            "output": 0.6271998286247253
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05905.png",
+            "label": 1,
+            "output": 0.6259702444076538
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04990.png",
+            "label": 1,
+            "output": 0.625935971736908
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06515.png",
+            "label": 1,
+            "output": 0.6248668432235718
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00401.png",
+            "label": 1,
+            "output": 0.6234026551246643
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05893.png",
+            "label": 1,
+            "output": 0.622855007648468
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09326.png",
+            "label": 1,
+            "output": 0.6226698160171509
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05879.png",
+            "label": 1,
+            "output": 0.6207231283187866
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01490.png",
+            "label": 1,
+            "output": 0.6189800500869751
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04935.png",
+            "label": 1,
+            "output": 0.6188020706176758
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01048.png",
+            "label": 1,
+            "output": 0.6182817220687866
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08131.png",
+            "label": 1,
+            "output": 0.6175190806388855
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07336.png",
+            "label": 1,
+            "output": 0.6162567138671875
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01090.png",
+            "label": 1,
+            "output": 0.615250825881958
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09301.png",
+            "label": 1,
+            "output": 0.6152191162109375
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08035.png",
+            "label": 1,
+            "output": 0.6144578456878662
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05741.png",
+            "label": 1,
+            "output": 0.6139160990715027
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04568.png",
+            "label": 1,
+            "output": 0.6133710145950317
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03942.png",
+            "label": 1,
+            "output": 0.6132203936576843
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00244.png",
+            "label": 1,
+            "output": 0.6129434108734131
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01202.png",
+            "label": 1,
+            "output": 0.6127358078956604
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07176.png",
+            "label": 1,
+            "output": 0.6117019653320312
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07601.png",
+            "label": 1,
+            "output": 0.6105949878692627
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09485.png",
+            "label": 1,
+            "output": 0.6101248860359192
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09546.png",
+            "label": 1,
+            "output": 0.6096657514572144
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06536.png",
+            "label": 1,
+            "output": 0.6082618832588196
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01817.png",
+            "label": 1,
+            "output": 0.6074485182762146
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00227.png",
+            "label": 1,
+            "output": 0.6066465973854065
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09952.png",
+            "label": 1,
+            "output": 0.6055329442024231
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04713.png",
+            "label": 1,
+            "output": 0.6037136316299438
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04701.png",
+            "label": 1,
+            "output": 0.6020440459251404
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02962.png",
+            "label": 1,
+            "output": 0.6017072796821594
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05659.png",
+            "label": 1,
+            "output": 0.6015335917472839
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09730.png",
+            "label": 1,
+            "output": 0.6004317402839661
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06824.png",
+            "label": 1,
+            "output": 0.5999290347099304
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03189.png",
+            "label": 1,
+            "output": 0.5986675024032593
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02667.png",
+            "label": 1,
+            "output": 0.5984530448913574
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03572.png",
+            "label": 1,
+            "output": 0.5975841283798218
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02785.png",
+            "label": 1,
+            "output": 0.5964637994766235
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08195.png",
+            "label": 1,
+            "output": 0.5963258147239685
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06804.png",
+            "label": 1,
+            "output": 0.5957192182540894
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08841.png",
+            "label": 1,
+            "output": 0.5949764847755432
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03204.png",
+            "label": 1,
+            "output": 0.5941555500030518
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07049.png",
+            "label": 1,
+            "output": 0.5941331386566162
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06535.png",
+            "label": 1,
+            "output": 0.5939422249794006
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03015.png",
+            "label": 1,
+            "output": 0.5938348174095154
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04468.png",
+            "label": 1,
+            "output": 0.5927873253822327
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08018.png",
+            "label": 1,
+            "output": 0.5926278829574585
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01074.png",
+            "label": 1,
+            "output": 0.5923245549201965
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04631.png",
+            "label": 1,
+            "output": 0.5923033952713013
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06337.png",
+            "label": 1,
+            "output": 0.5890007019042969
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07764.png",
+            "label": 1,
+            "output": 0.5877181887626648
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04858.png",
+            "label": 1,
+            "output": 0.5873035788536072
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09306.png",
+            "label": 1,
+            "output": 0.5872009992599487
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05243.png",
+            "label": 1,
+            "output": 0.5860177278518677
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06143.png",
+            "label": 1,
+            "output": 0.5838539600372314
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09416.png",
+            "label": 1,
+            "output": 0.5826036334037781
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00440.png",
+            "label": 1,
+            "output": 0.5823235511779785
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06902.png",
+            "label": 1,
+            "output": 0.5813375115394592
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09320.png",
+            "label": 1,
+            "output": 0.5810558795928955
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09753.png",
+            "label": 1,
+            "output": 0.5801700353622437
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08061.png",
+            "label": 1,
+            "output": 0.5796415209770203
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08922.png",
+            "label": 1,
+            "output": 0.5793702602386475
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06911.png",
+            "label": 1,
+            "output": 0.5782913565635681
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08665.png",
+            "label": 1,
+            "output": 0.5772679448127747
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03885.png",
+            "label": 1,
+            "output": 0.5763506293296814
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00841.png",
+            "label": 1,
+            "output": 0.5760312676429749
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06550.png",
+            "label": 1,
+            "output": 0.5757530331611633
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06603.png",
+            "label": 1,
+            "output": 0.5753830671310425
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09463.png",
+            "label": 1,
+            "output": 0.5746108889579773
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07738.png",
+            "label": 1,
+            "output": 0.5717747807502747
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04475.png",
+            "label": 1,
+            "output": 0.5717242956161499
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09578.png",
+            "label": 1,
+            "output": 0.5716282725334167
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06297.png",
+            "label": 1,
+            "output": 0.5713343620300293
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00557.png",
+            "label": 1,
+            "output": 0.5712055563926697
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06153.png",
+            "label": 1,
+            "output": 0.5709134340286255
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04892.png",
+            "label": 1,
+            "output": 0.5705774426460266
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00348.png",
+            "label": 1,
+            "output": 0.5701929330825806
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00844.png",
+            "label": 1,
+            "output": 0.5694717168807983
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00190.png",
+            "label": 1,
+            "output": 0.5690787434577942
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00204.png",
+            "label": 1,
+            "output": 0.5685271620750427
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02092.png",
+            "label": 1,
+            "output": 0.5649248957633972
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08518.png",
+            "label": 1,
+            "output": 0.5648030042648315
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07755.png",
+            "label": 1,
+            "output": 0.5632699131965637
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03081.png",
+            "label": 1,
+            "output": 0.563122570514679
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09574.png",
+            "label": 1,
+            "output": 0.5628696084022522
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05099.png",
+            "label": 1,
+            "output": 0.5620908737182617
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09507.png",
+            "label": 1,
+            "output": 0.561571478843689
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09094.png",
+            "label": 1,
+            "output": 0.5611402988433838
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08564.png",
+            "label": 1,
+            "output": 0.5604789853096008
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06156.png",
+            "label": 1,
+            "output": 0.5603753924369812
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03268.png",
+            "label": 1,
+            "output": 0.5603650212287903
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09201.png",
+            "label": 1,
+            "output": 0.5590597987174988
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08506.png",
+            "label": 1,
+            "output": 0.5574500560760498
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05717.png",
+            "label": 1,
+            "output": 0.5568170547485352
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04511.png",
+            "label": 1,
+            "output": 0.5562644004821777
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05802.png",
+            "label": 1,
+            "output": 0.5557793974876404
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01027.png",
+            "label": 1,
+            "output": 0.5545328259468079
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00568.png",
+            "label": 1,
+            "output": 0.5537331700325012
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04771.png",
+            "label": 1,
+            "output": 0.5535293221473694
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03070.png",
+            "label": 1,
+            "output": 0.5532311797142029
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00394.png",
+            "label": 1,
+            "output": 0.5531163215637207
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06990.png",
+            "label": 1,
+            "output": 0.5530959963798523
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03085.png",
+            "label": 1,
+            "output": 0.5523011684417725
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00033.png",
+            "label": 1,
+            "output": 0.5512498021125793
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06542.png",
+            "label": 1,
+            "output": 0.5509658455848694
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04239.png",
+            "label": 1,
+            "output": 0.5498517751693726
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03827.png",
+            "label": 1,
+            "output": 0.5482151508331299
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03238.png",
+            "label": 1,
+            "output": 0.5477840900421143
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03814.png",
+            "label": 1,
+            "output": 0.5469611287117004
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01128.png",
+            "label": 1,
+            "output": 0.5463014245033264
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07303.png",
+            "label": 1,
+            "output": 0.5461513996124268
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04991.png",
+            "label": 1,
+            "output": 0.5424417853355408
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09713.png",
+            "label": 1,
+            "output": 0.5401182174682617
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03568.png",
+            "label": 1,
+            "output": 0.5397937893867493
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00915.png",
+            "label": 1,
+            "output": 0.5397244691848755
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09343.png",
+            "label": 1,
+            "output": 0.539027214050293
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01049.png",
+            "label": 1,
+            "output": 0.5365549921989441
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00968.png",
+            "label": 1,
+            "output": 0.5359722375869751
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09649.png",
+            "label": 1,
+            "output": 0.5358686447143555
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07769.png",
+            "label": 1,
+            "output": 0.5355205535888672
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03134.png",
+            "label": 1,
+            "output": 0.5346877574920654
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05329.png",
+            "label": 1,
+            "output": 0.5340631604194641
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05792.png",
+            "label": 1,
+            "output": 0.5324077606201172
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03188.png",
+            "label": 1,
+            "output": 0.5314988493919373
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07148.png",
+            "label": 1,
+            "output": 0.5311054587364197
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04192.png",
+            "label": 1,
+            "output": 0.530385434627533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00329.png",
+            "label": 1,
+            "output": 0.529673159122467
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00015.png",
+            "label": 1,
+            "output": 0.5288084149360657
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06023.png",
+            "label": 1,
+            "output": 0.526599645614624
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05987.png",
+            "label": 1,
+            "output": 0.5236003994941711
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01502.png",
+            "label": 1,
+            "output": 0.5225316882133484
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02145.png",
+            "label": 1,
+            "output": 0.5225270390510559
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03101.png",
+            "label": 1,
+            "output": 0.5222441554069519
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02435.png",
+            "label": 1,
+            "output": 0.5218295454978943
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08333.png",
+            "label": 1,
+            "output": 0.5211161375045776
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02303.png",
+            "label": 1,
+            "output": 0.5188023447990417
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01471.png",
+            "label": 1,
+            "output": 0.5177898406982422
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02032.png",
+            "label": 1,
+            "output": 0.517609179019928
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03859.png",
+            "label": 1,
+            "output": 0.5165517926216125
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00732.png",
+            "label": 1,
+            "output": 0.5154440402984619
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01967.png",
+            "label": 1,
+            "output": 0.514129638671875
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08611.png",
+            "label": 1,
+            "output": 0.5140635371208191
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06147.png",
+            "label": 1,
+            "output": 0.5136940479278564
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05511.png",
+            "label": 1,
+            "output": 0.5132834315299988
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05743.png",
+            "label": 1,
+            "output": 0.5128310918807983
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01171.png",
+            "label": 1,
+            "output": 0.5116697549819946
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08138.png",
+            "label": 1,
+            "output": 0.5108639597892761
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01522.png",
+            "label": 1,
+            "output": 0.5071675181388855
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01590.png",
+            "label": 1,
+            "output": 0.5068361163139343
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08055.png",
+            "label": 1,
+            "output": 0.5065078139305115
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03283.png",
+            "label": 1,
+            "output": 0.5060350298881531
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07205.png",
+            "label": 1,
+            "output": 0.5059007406234741
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05458.png",
+            "label": 1,
+            "output": 0.5021388530731201
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07286.png",
+            "label": 1,
+            "output": 0.5005837678909302
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06857.png",
+            "label": 1,
+            "output": 0.498722642660141
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04368.png",
+            "label": 1,
+            "output": 0.4985901117324829
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00896.png",
+            "label": 1,
+            "output": 0.4947175979614258
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08562.png",
+            "label": 1,
+            "output": 0.494245707988739
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06690.png",
+            "label": 1,
+            "output": 0.49252045154571533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06058.png",
+            "label": 1,
+            "output": 0.4922623038291931
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08147.png",
+            "label": 1,
+            "output": 0.48996222019195557
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03734.png",
+            "label": 1,
+            "output": 0.4897926151752472
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03750.png",
+            "label": 1,
+            "output": 0.4888671338558197
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08231.png",
+            "label": 1,
+            "output": 0.4882655739784241
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09247.png",
+            "label": 1,
+            "output": 0.4877989590167999
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01295.png",
+            "label": 1,
+            "output": 0.4857294261455536
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05209.png",
+            "label": 1,
+            "output": 0.4856324791908264
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02806.png",
+            "label": 1,
+            "output": 0.48512110114097595
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08063.png",
+            "label": 1,
+            "output": 0.483988493680954
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07398.png",
+            "label": 1,
+            "output": 0.48359066247940063
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03256.png",
+            "label": 1,
+            "output": 0.4833775460720062
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04526.png",
+            "label": 1,
+            "output": 0.4823493957519531
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09232.png",
+            "label": 1,
+            "output": 0.4804416000843048
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05595.png",
+            "label": 1,
+            "output": 0.4746072590351105
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05672.png",
+            "label": 1,
+            "output": 0.4736473262310028
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00717.png",
+            "label": 1,
+            "output": 0.47266319394111633
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02779.png",
+            "label": 1,
+            "output": 0.4712640941143036
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09027.png",
+            "label": 1,
+            "output": 0.4705364406108856
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07470.png",
+            "label": 1,
+            "output": 0.47048282623291016
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07549.png",
+            "label": 1,
+            "output": 0.4696793258190155
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03224.png",
+            "label": 1,
+            "output": 0.4692111313343048
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03613.png",
+            "label": 1,
+            "output": 0.46900227665901184
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07344.png",
+            "label": 1,
+            "output": 0.4663393795490265
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07006.png",
+            "label": 1,
+            "output": 0.46562591195106506
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00306.png",
+            "label": 1,
+            "output": 0.4644702076911926
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03871.png",
+            "label": 1,
+            "output": 0.462930291891098
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05975.png",
+            "label": 1,
+            "output": 0.46216776967048645
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01148.png",
+            "label": 1,
+            "output": 0.4600207209587097
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00834.png",
+            "label": 1,
+            "output": 0.4599851071834564
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03511.png",
+            "label": 1,
+            "output": 0.4539264440536499
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00672.png",
+            "label": 1,
+            "output": 0.4538995027542114
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07654.png",
+            "label": 1,
+            "output": 0.4524584114551544
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05313.png",
+            "label": 1,
+            "output": 0.45121821761131287
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02525.png",
+            "label": 1,
+            "output": 0.4508695900440216
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05653.png",
+            "label": 1,
+            "output": 0.4489530324935913
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01931.png",
+            "label": 1,
+            "output": 0.4483643174171448
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05012.png",
+            "label": 1,
+            "output": 0.4477563798427582
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01492.png",
+            "label": 1,
+            "output": 0.4467392563819885
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01118.png",
+            "label": 1,
+            "output": 0.446160227060318
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09586.png",
+            "label": 1,
+            "output": 0.4457719922065735
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08958.png",
+            "label": 1,
+            "output": 0.4397382140159607
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05327.png",
+            "label": 1,
+            "output": 0.4389798939228058
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08734.png",
+            "label": 1,
+            "output": 0.4389670193195343
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01302.png",
+            "label": 1,
+            "output": 0.4379640817642212
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08114.png",
+            "label": 1,
+            "output": 0.4350995421409607
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06302.png",
+            "label": 1,
+            "output": 0.433682382106781
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07429.png",
+            "label": 1,
+            "output": 0.43148913979530334
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07087.png",
+            "label": 1,
+            "output": 0.4312093257904053
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05220.png",
+            "label": 1,
+            "output": 0.42663097381591797
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06264.png",
+            "label": 1,
+            "output": 0.42606309056282043
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04225.png",
+            "label": 1,
+            "output": 0.4256909489631653
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02176.png",
+            "label": 1,
+            "output": 0.42549100518226624
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07927.png",
+            "label": 1,
+            "output": 0.4248342216014862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03454.png",
+            "label": 1,
+            "output": 0.4244441092014313
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08173.png",
+            "label": 1,
+            "output": 0.42249420285224915
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02195.png",
+            "label": 1,
+            "output": 0.42209765315055847
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01007.png",
+            "label": 1,
+            "output": 0.42191004753112793
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08623.png",
+            "label": 1,
+            "output": 0.4215283691883087
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01063.png",
+            "label": 1,
+            "output": 0.42005324363708496
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00912.png",
+            "label": 1,
+            "output": 0.419637531042099
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02834.png",
+            "label": 1,
+            "output": 0.41864824295043945
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04281.png",
+            "label": 1,
+            "output": 0.4174935221672058
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08600.png",
+            "label": 1,
+            "output": 0.41725194454193115
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00899.png",
+            "label": 1,
+            "output": 0.4087616801261902
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09525.png",
+            "label": 1,
+            "output": 0.40769079327583313
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01729.png",
+            "label": 1,
+            "output": 0.4059790372848511
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07232.png",
+            "label": 1,
+            "output": 0.40407100319862366
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07186.png",
+            "label": 1,
+            "output": 0.40378013253211975
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08919.png",
+            "label": 1,
+            "output": 0.4033606946468353
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04093.png",
+            "label": 1,
+            "output": 0.40222543478012085
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05165.png",
+            "label": 1,
+            "output": 0.4015296697616577
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06836.png",
+            "label": 1,
+            "output": 0.4013185203075409
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09090.png",
+            "label": 1,
+            "output": 0.4003000855445862
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01501.png",
+            "label": 1,
+            "output": 0.39621901512145996
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00125.png",
+            "label": 1,
+            "output": 0.3944903612136841
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09230.png",
+            "label": 1,
+            "output": 0.3936874568462372
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05533.png",
+            "label": 1,
+            "output": 0.3915151059627533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07888.png",
+            "label": 1,
+            "output": 0.3900691866874695
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01805.png",
+            "label": 1,
+            "output": 0.387155145406723
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00079.png",
+            "label": 1,
+            "output": 0.3863525986671448
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05390.png",
+            "label": 1,
+            "output": 0.38398370146751404
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05636.png",
+            "label": 1,
+            "output": 0.3812296986579895
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01860.png",
+            "label": 1,
+            "output": 0.38116514682769775
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00282.png",
+            "label": 1,
+            "output": 0.3804258406162262
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02305.png",
+            "label": 1,
+            "output": 0.38014140725135803
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06975.png",
+            "label": 1,
+            "output": 0.3780398666858673
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02802.png",
+            "label": 1,
+            "output": 0.3770281970500946
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07538.png",
+            "label": 1,
+            "output": 0.37687429785728455
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07403.png",
+            "label": 1,
+            "output": 0.37558671832084656
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01328.png",
+            "label": 1,
+            "output": 0.3753461539745331
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08727.png",
+            "label": 1,
+            "output": 0.375259667634964
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06694.png",
+            "label": 1,
+            "output": 0.3723602890968323
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07696.png",
+            "label": 1,
+            "output": 0.37006357312202454
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07594.png",
+            "label": 1,
+            "output": 0.3697364628314972
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03643.png",
+            "label": 1,
+            "output": 0.36928942799568176
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08134.png",
+            "label": 1,
+            "output": 0.36905908584594727
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04741.png",
+            "label": 1,
+            "output": 0.3667813539505005
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07109.png",
+            "label": 1,
+            "output": 0.36628973484039307
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08446.png",
+            "label": 1,
+            "output": 0.3662430942058563
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00162.png",
+            "label": 1,
+            "output": 0.36601442098617554
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07459.png",
+            "label": 1,
+            "output": 0.3657214939594269
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06449.png",
+            "label": 1,
+            "output": 0.3611394166946411
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07705.png",
+            "label": 1,
+            "output": 0.35933610796928406
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03114.png",
+            "label": 1,
+            "output": 0.3555179834365845
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03299.png",
+            "label": 1,
+            "output": 0.3532553017139435
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00308.png",
+            "label": 1,
+            "output": 0.34870973229408264
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01298.png",
+            "label": 1,
+            "output": 0.34324124455451965
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08113.png",
+            "label": 1,
+            "output": 0.3413549065589905
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02713.png",
+            "label": 1,
+            "output": 0.3399343192577362
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04690.png",
+            "label": 1,
+            "output": 0.3397303521633148
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04641.png",
+            "label": 1,
+            "output": 0.3345320522785187
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06270.png",
+            "label": 1,
+            "output": 0.3337486684322357
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06280.png",
+            "label": 1,
+            "output": 0.33020275831222534
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07595.png",
+            "label": 1,
+            "output": 0.3286592662334442
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04803.png",
+            "label": 1,
+            "output": 0.32836785912513733
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06903.png",
+            "label": 1,
+            "output": 0.32796284556388855
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05770.png",
+            "label": 1,
+            "output": 0.3274068236351013
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08494.png",
+            "label": 1,
+            "output": 0.32738760113716125
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09986.png",
+            "label": 1,
+            "output": 0.3268914520740509
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03286.png",
+            "label": 1,
+            "output": 0.3262083828449249
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09106.png",
+            "label": 1,
+            "output": 0.32503998279571533
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05245.png",
+            "label": 1,
+            "output": 0.31862613558769226
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09185.png",
+            "label": 1,
+            "output": 0.31795114278793335
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07945.png",
+            "label": 1,
+            "output": 0.3175426125526428
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04578.png",
+            "label": 1,
+            "output": 0.31711533665657043
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05933.png",
+            "label": 1,
+            "output": 0.3165771961212158
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04856.png",
+            "label": 1,
+            "output": 0.31154417991638184
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00999.png",
+            "label": 1,
+            "output": 0.30910834670066833
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03075.png",
+            "label": 1,
+            "output": 0.3066381514072418
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02628.png",
+            "label": 1,
+            "output": 0.30051305890083313
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07668.png",
+            "label": 1,
+            "output": 0.29695919156074524
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05666.png",
+            "label": 1,
+            "output": 0.29125261306762695
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03726.png",
+            "label": 1,
+            "output": 0.2818373441696167
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05176.png",
+            "label": 1,
+            "output": 0.28174278140068054
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01703.png",
+            "label": 1,
+            "output": 0.26521068811416626
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/00330.png",
+            "label": 1,
+            "output": 0.2627975642681122
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09297.png",
+            "label": 1,
+            "output": 0.2600414752960205
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08010.png",
+            "label": 1,
+            "output": 0.2572544813156128
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08292.png",
+            "label": 1,
+            "output": 0.25246062874794006
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09215.png",
+            "label": 1,
+            "output": 0.24733850359916687
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07177.png",
+            "label": 1,
+            "output": 0.24548213183879852
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05721.png",
+            "label": 1,
+            "output": 0.24045608937740326
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/08077.png",
+            "label": 1,
+            "output": 0.23060810565948486
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02279.png",
+            "label": 1,
+            "output": 0.22675654292106628
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07441.png",
+            "label": 1,
+            "output": 0.22313852608203888
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05862.png",
+            "label": 1,
+            "output": 0.21685107052326202
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/06590.png",
+            "label": 1,
+            "output": 0.1997460126876831
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02692.png",
+            "label": 1,
+            "output": 0.18417538702487946
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05179.png",
+            "label": 1,
+            "output": 0.17003795504570007
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/05192.png",
+            "label": 1,
+            "output": 0.16962917149066925
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/03746.png",
+            "label": 1,
+            "output": 0.1663651317358017
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07449.png",
+            "label": 1,
+            "output": 0.1609707772731781
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/02004.png",
+            "label": 1,
+            "output": 0.15181845426559448
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/01232.png",
+            "label": 1,
+            "output": 0.11921314150094986
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09079.png",
+            "label": 1,
+            "output": 0.10061628371477127
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/09190.png",
+            "label": 1,
+            "output": 0.09787072241306305
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/07916.png",
+            "label": 1,
+            "output": 0.0898396372795105
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04204.png",
+            "label": 1,
+            "output": 0.08841750025749207
+        },
+        {
+            "path": "data/test/spai/gigagan/1_fake/04054.png",
+            "label": 1,
+            "output": 0.04134266823530197
+        }
+    ]
+}

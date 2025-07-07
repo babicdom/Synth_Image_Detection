@@ -1,0 +1,59 @@
+{
+  "epochs": 2,
+  "config": {
+    "backbone": [
+      "ViT-L/14",
+      1024
+    ],
+    "nproj": 2,
+    "proj_dim": 1024,
+    "crop": 224,
+    "imgsize": 224,
+    "training_set": "progan",
+    "contrastive": true,
+    "batch_size": 64,
+    "classes": [
+      "sofa",
+      "chair",
+      "cat",
+      "tvmonitor",
+      "train",
+      "person",
+      "pottedplant",
+      "airplane",
+      "dog",
+      "bird",
+      "bus",
+      "diningtable",
+      "bottle",
+      "cow",
+      "horse",
+      "sheep",
+      "motorbike",
+      "car",
+      "bicycle",
+      "boat"
+    ],
+    "ds_frac": 0.2,
+    "lr": 0.0001,
+    "lr_step": 2,
+    "lr_gamma": 0.5,
+    "epochs": 2,
+    "factor": 0.2,
+    "beta": 0.75,
+    "window_slide": false,
+    "save_path": "GLIP_50/2_nproj_1024_proj_dim_0.5_beta"
+  },
+  "results": {
+    "val_loss": [],
+    "val_ap": [
+      0.9999891140548115,
+      0.9999991868894706
+    ],
+    "val_auc": [
+      0.999989125,
+      0.9999991875
+    ],
+    "test": {}
+  }
+}
